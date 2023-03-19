@@ -46,6 +46,7 @@ From there, I gathered more recent data from the sources below. I started with t
 | [Springfield (MO) PD](https://www.springfieldmo.gov/3755/Officer-Involved-Shootings)                                                                                                                                	| 2008-2022      	| Springfield (MO) PD  	|
 | [Vermont open data portal](https://data.vermont.gov/Public-Safety/Vermont-State-Police-Officer-Involved-Shootings-19/du86-kfnp?category=Public-Safety&view_name=Vermont-State-Police-Officer-Involved-Shootings-19) 	| 1977-2022      	| Vermont State Police 	|
 | This [article by Mike White](https://cvpcs.asu.edu/sites/default/files/content/projects/ER%20-%20external%20DF.pdf)                                                                                                 	| 1970-1992      	| Philadelphia PD      	|
+| This [ACLU report](https://www.aclusocal.org/sites/default/files/aclu_socal_report_on_apd_use_of_force_nov_2017.pdf) from November 2017                                                                             	| 2003-2016      	| Anaheim PD           	|
 
 \* Note that the pre-2015 numbers for Cincinnati include fatal and nonfatal shootings (animal shootings are excluded). Unfortunately, I can't yet determine how many were fatal or nonfatal. Same goes for LVMPD. 
 
