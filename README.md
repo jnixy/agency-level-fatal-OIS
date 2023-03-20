@@ -51,6 +51,7 @@ From there, I gathered more recent data from the sources below. I started with t
 | This [ACLU report](https://www.aclusocal.org/sites/default/files/aclu_socal_report_on_apd_use_of_force_nov_2017.pdf) from November 2017                                                                             	| 2003-2016      	| Anaheim PD                                                         	|
 | [Binder, Scharf, & Galvin (1983)](https://nij.ojp.gov/library/publications/use-deadly-force-police-officers-final-report)                                                                                           	| 1976-1979      	| Detroit, Honolulu, Newark, Oakland, San Diego, San Jose, St. Louis 	|
 | *The Texas Tribune's* ["Unholstered" Data](https://apps.texastribune.org/unholstered/)                                                                                                                              	| 2010-2015      	| 36 largest cities in Texas                                         	|
+| [Vice News](https://news.vice.com/en_us/article/a3jjpa/nonfatal-police-shootings-data)                                                                                                                              	| 2010-2016      	| 50 largest local police departments                                	|
 
 \* Note that the pre-2015 numbers for Cincinnati include fatal and nonfatal shootings (animal shootings are excluded). Unfortunately, I can't yet determine how many were fatal or nonfatal. Same goes for LVMPD. 
 
