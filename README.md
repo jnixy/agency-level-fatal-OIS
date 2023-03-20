@@ -2,6 +2,8 @@
 
 I'm building a database of fatal officer-involved shootings at the agency-year level, going back in time as far as possible. [This recent article in *The Lancet*](https://t.co/zDLTHrysAv) suggests police are killing more people today than they did in the 1980s, but [I remain skeptical](https://twitter.com/jnixy/status/1635677916762886149). Thus, I'm trying to compile annual counts of people shot and killed by on-duty officers for as many agencies as I can. 
 
+...So far, I've got at least a few years of data for **134** agencies.
+
 ## Methods and Sources
 
 I started with this excellent book: 
@@ -48,6 +50,7 @@ From there, I gathered more recent data from the sources below. I started with t
 | This [article by Mike White](https://cvpcs.asu.edu/sites/default/files/content/projects/ER%20-%20external%20DF.pdf)                                                                                                 	| 1970-1992      	| Philadelphia PD                                                    	|
 | This [ACLU report](https://www.aclusocal.org/sites/default/files/aclu_socal_report_on_apd_use_of_force_nov_2017.pdf) from November 2017                                                                             	| 2003-2016      	| Anaheim PD                                                         	|
 | [Binder, Scharf, & Galvin (1983)](https://nij.ojp.gov/library/publications/use-deadly-force-police-officers-final-report)                                                                                           	| 1976-1979      	| Detroit, Honolulu, Newark, Oakland, San Diego, San Jose, St. Louis 	|
+| *The Texas Tribune's* ["Unholstered" Data](https://apps.texastribune.org/unholstered/)                                                                                                                              	| 2010-2015      	| 36 largest cities in Texas                                         	|
 
 \* Note that the pre-2015 numbers for Cincinnati include fatal and nonfatal shootings (animal shootings are excluded). Unfortunately, I can't yet determine how many were fatal or nonfatal. Same goes for LVMPD. 
 
