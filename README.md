@@ -2,7 +2,7 @@
 
 I'm building a database of fatal officer-involved shootings at the agency-year level, going back in time as far as possible. [This recent article in *The Lancet*](https://t.co/zDLTHrysAv) suggests police are killing more people today than they did in the 1980s, but [I remain skeptical](https://twitter.com/jnixy/status/1635677916762886149). Thus, I'm trying to compile annual counts of people shot and killed by on-duty officers for as many agencies as I can. 
 
-...So far, I've got at least a few years of data for **373** agencies.
+...So far, I've got at least a few years of data for **417** agencies.
 
 ## Methods and Sources
 
