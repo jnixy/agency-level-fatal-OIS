@@ -55,6 +55,7 @@ From there, I gathered more recent data from the sources below. I started with t
 | This [ACLU report](https://www.aclusocal.org/sites/default/files/aclu_socal_report_on_apd_use_of_force_nov_2017.pdf) from November 2017                                                                             	|    2003-2016   	| Anaheim PD                                                         	|
 | This [article by Mike White](https://cvpcs.asu.edu/sites/default/files/content/projects/ER%20-%20external%20DF.pdf)                                                                                                 	|    1970-1992   	| Philadelphia PD                                                    	|
 | This [article by David Klinger](https://journals.sagepub.com/doi/10.1177/1088767911430861)                                                                                                                          	|    1996-2008   	| LAPD, LASD                                                         	|
+| This [report](https://scholarworks.alaska.edu/handle/11122/11933) on police shootings in Alaska                                                                                                                       |    2010-2020    | Anchorage PD                                                        |
 
 \* Note that the pre-2015 numbers for Cincinnati include fatal and nonfatal shootings (animal shootings are excluded). Unfortunately, I can't yet determine how many were fatal or nonfatal. Same goes for LVMPD. 
 
