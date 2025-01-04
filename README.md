@@ -1,5 +1,13 @@
 # agency-level-fatal-OIS
 
+## 1.4.2025 Update
+
+I've added the `wapo_historical_merge` folder, which includes `ori_codes.csv` and `merge_script.R`. This will merge the data I've collected with WAPO's [Fatal Force](https://github.com/washingtonpost/data-police-shootings) data, and reshape into agency-year format (i.e., where each agency has a row for every year from 1970 to the present year). Read more about it in this [blog post](https://jnix.netlify.app/post/post27-historical-ois-update/).
+
+At the time of this update, the merged dataset will include at least some years of data for **~3200 agencies** (albeit mostly from 2015 to present).
+
+## Background
+
 I'm building a database of fatal officer-involved shootings at the agency-year level, going back in time as far as possible. [This recent article in *The Lancet*](https://t.co/zDLTHrysAv) suggests police are killing more people today than they did in the 1980s, but [I remain skeptical](https://twitter.com/jnixy/status/1635677916762886149). Thus, I'm trying to compile annual counts of people shot and killed by on-duty officers for as many agencies as I can. 
 
 ...So far, I've got at least a few years of data for **417** agencies.
@@ -63,6 +71,6 @@ From there, I gathered more recent data from the sources below. I started with t
 
 1. **Any mistakes are mine**. I did my best to make sure the data permit apples to apples comparisons. That is, each number in the data *should* represent a person fatally shot by an on-duty police officer. In some cases, however, I'm  not 100% confident an agency's data are subject-level, as opposed to incident-level (e.g., Austin from 2000 to 2007). Like I said, this is a work in progress.
 
-2. **I'm still digging, and will continue to update this dataset as I go**. For example, I found broken links to datasets purporting to include data for Oklahoma, Idaho, and San Diego County. I also found a report on police shootings in Alaska that unfortunately didn't enable me to break out fatal police shootings. I've sent emails to the various authors, so hopefully I'll hear back soon. 
+2. **I'm still digging, and will continue to update this dataset as I go**. For example, I found broken links to datasets purporting to include data for Oklahoma, Idaho, and San Diego County. I also found a report on police shootings in Alaska that unfortunately didn't enable me to break out fatal police shootings. I sent emails to the various authors, with some luck (e.g., Alaska). Here's hoping I can track those other databases down eventually.
 
 3. I'm aware that [Mapping Police Violence](https://mappingpoliceviolence.us/) goes back to 2013 and [Fatal Encounters](https://fatalencounters.org/) goes back to 2000. I started with WAPO as that's the dataset I've worked with the most in the past, and am therefore most comfortable using. Eventually, I'll sort through Fatal Encounters and fill in more of the empty cells in my dataset, but just eyeballing the data, I'm almost certain everything before ~2013 is less reliable.
