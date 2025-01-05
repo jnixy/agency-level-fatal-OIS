@@ -6,7 +6,7 @@ alameda_county_ca,CA00100
 albany_ga,GA04701
 albert_lea_mn,MN02401
 albuquerque_nm,NM00101
-alex_mn,MN02101
+alexandria_mn,MN02101
 alpharetta_ga,GA06004
 amarillo_tx,TX18801
 anaheim_ca,CA03001
@@ -305,7 +305,6 @@ ramsey_county_mn,MN06200
 ramsey_pd_mn,MN00213
 red_lake_mn,MN06300
 reno_nv,NV01601
-ria_mn,
 richardson_tx,TX05720
 richfield_mn,MN02718
 richmond_county_ga,GA12102
@@ -376,7 +375,7 @@ troup_county_ga,GA14100
 tucson_az,AZ01003
 tulsa_ok,OK07205
 tyler_tx,TX21204
-unified_pd,
+unified_pd,UT01800
 union_city_ga,GA06006
 utah_county_ut,UT02500
 utah_doc,
