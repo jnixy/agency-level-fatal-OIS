@@ -241,9 +241,9 @@ my_plot <- ggplot(df_yearly_summary, aes(x = year, y = avg_shootings, color = da
   
   # Plot labels and theme
   labs(
-    title = "Fatal OIS per year, 1970-2024 (sources: WAPO, my agency-level-fatal-OIS Github repo)",
+    title = "Fatal OIS per agency per year, 1970-2024 (sources: WAPO, my agency-level-fatal-OIS Github repo)",
     x = "Year",
-    y = "Total Shootings"
+    y = "Fatal OIS per Agency"
   ) +
   theme_minimal() +
   theme(
