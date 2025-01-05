@@ -107,7 +107,7 @@ missing_oricode <- nix_agency_long %>%
 
 print(missing_oricode)
 
-# Let's filter these 7 agencies out *for now*
+# Let's filter these 6 agencies out *for now*
 nix_agency_long <- nix_agency_long %>%
   filter(oricodes != "")
 
