@@ -265,3 +265,40 @@ ggsave(
   scale = 1.5    # Enlarge everything by 1.5x
 )
 
+# Plot a specific agency or agencies
+# Just edit line 270 below, and change the number of columns in line 279 as needed
+agencies_to_keep <- c("los_angeles_ca", "new_york_city", "philadelphia_pa")
+
+subset_data <- merged_data %>%
+  filter(agency %in% agencies_to_keep)
+
+# Plotting with facets
+ggplot(subset_data, aes(x = year, y = total_shootings_nix)) +
+  geom_line() +
+  geom_point() +
+  facet_wrap(~ agency, ncol = 3) +
+  labs(
+    title = "Fatal Officer-Involved Shootings (OIS) per Year in 3 Large Agencies",
+    x = "Year",
+    y = "# of Fatal OIS"
+  ) +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(size = 16, face = "bold", hjust = 0.5),  # Title size and alignment
+    axis.title.x = element_text(size = 14, face = "bold"),  # X-axis label size
+    axis.title.y = element_text(size = 14, face = "bold"),  # Y-axis label size
+    axis.text = element_text(size = 12),  # Axis tick mark text size
+    strip.text = element_text(size = 13, face = "bold"),  # Facet title size
+    legend.title = element_text(size = 12),  # Legend title size
+    legend.text = element_text(size = 10)   # Legend text size
+  )
+
+# Save the plot as a high-resolution PNG
+ggsave(
+  filename = "lapd_nypd_ppd.png",    # File name
+  plot = last_plot(),                     # Use the last plot or specify the plot object
+  device = "png",                         # File format
+  dpi = 300,                              # Resolution in dots per inch
+  width = 10,                             # Width of the image in inches
+  height = 6                              # Height of the image in inches
+)
