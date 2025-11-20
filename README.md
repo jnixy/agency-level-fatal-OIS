@@ -1,5 +1,9 @@
 # agency-level-fatal-OIS
 
+## 11.20.2025 update
+
+One of our [VIPR Lab](https://www.viprlab.org/) students, [Ash Bruha](https://www.viprlab.org/author/ash-bruha/), has been hard at work digging up more historical data. She found fOIS data for **Seattle PD** for 1980 through mid-2001 in [this report by SPD](https://s3-us-west-2.amazonaws.com/docs.puppycidedb.com/seattlepd/UseofForce2000.PDF), and for **Denver PD** for 1996-2006 in this [independent monitor's report](https://s3-us-west-2.amazonaws.com/docs.puppycidedb.com/denverpd/OIM/Annual+Reports/2006_Annual+Report.pdf). 
+
 ## 1.4.2025 Update
 
 I've added the `wapo_historical_merge` folder, which includes `ori_codes.csv` and `merge_script.R`. This will merge the data I've collected with WAPO's [Fatal Force](https://github.com/washingtonpost/data-police-shootings) data, and reshape into agency-year format (i.e., where each agency has a row for every year from 1970 to the present year). Read more about it in this [blog post](https://jnix.netlify.app/post/post27-historical-ois-update/).
