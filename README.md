@@ -1,6 +1,6 @@
 # agency-level-fatal-OIS
 
-## 11.20.2025 update
+## 11.20.2025 Update
 
 One of our [VIPR Lab](https://www.viprlab.org/) students, [Ash Bruha](https://www.viprlab.org/author/ash-bruha/), has been hard at work digging up more historical data. She found fOIS data for **Seattle PD** for 1980 through mid-2001 in [this report by SPD](https://s3-us-west-2.amazonaws.com/docs.puppycidedb.com/seattlepd/UseofForce2000.PDF), and for **Denver PD** for 1996-2006 in this [independent monitor's report](https://s3-us-west-2.amazonaws.com/docs.puppycidedb.com/denverpd/OIM/Annual+Reports/2006_Annual+Report.pdf). 
 
