@@ -1,0 +1,201 @@
+state,fe_agency_name,fe_deaths
+AL,Alabama Department of Public Safety,12
+AZ,U.S. Customs and Border Protection,11
+CA,U.S. Customs and Border Protection,11
+IL,Cook County Sheriff's Office,10
+IN,Marion County Sheriff's Office,9
+TX,U.S. Customs and Border Protection,9
+CA,U.S. Federal Bureau of Investigation,8
+FL,U.S. Federal Bureau of Investigation,8
+MI,U.S. Federal Bureau of Investigation,8
+NJ,New Jersey Department of Corrections,8
+TX,U.S. Federal Bureau of Investigation,8
+PA,U.S. Federal Bureau of Investigation,7
+TX,Harris County Constable's Office Precinct 1,7
+TX,Harris County Constable's Office Precinct 4,7
+VA,U.S. Federal Bureau of Investigation,7
+CA,Bay Area Rapid Transit Police Department,6
+CA,Riverside County District Attorney's Office,6
+CO,Colorado Department of Corrections,6
+FL,U.S. Bureau of Alcohol Tobacco Firearms and Explosives,6
+MI,Michigan Department of Corrections,6
+NY,Nassau County Sheriff's Office,6
+OH,U.S. Federal Bureau of Investigation,6
+WV,U.S. Marshals Service,6
+AL,Alabama Law Enforcement Agency,5
+AR,Garland County Sheriff's Office,5
+FL,Bay County Sheriff's Office,5
+GA,U.S. Federal Bureau of Investigation,5
+IL,U.S. Federal Bureau of Investigation,5
+MD,U.S. Federal Bureau of Investigation,5
+MI,Lenawee County Sheriff's Office,5
+MI,Sterling Heights Police Department,5
+NJ,Seaside Heights Police Department,5
+NM,U.S. Border Patrol,5
+OH,Bedford Police Department,5
+SC,Anderson Police Department,5
+TX,U.S. Customs and Border Patrol,5
+UT,Lindon City Police Department,5
+VA,Hampton Police Department,5
+AZ,U.S. Forest Service,4
+CA,California Department of Corrections and Rehabilitation,4
+CA,California Department of Fish and Wildlife,4
+CA,Laguna Beach Police Department,4
+CA,Rohnert Park Department of Public Safety,4
+CA,San Mateo Police Department,4
+CA,U.S. Bureau of Land Management,4
+FL,Bradenton Police Department,4
+FL,U.S. Drug Enforcement Administration,4
+GA,Glynn County Police Department,4
+IL,East St. Louis Police Department,4
+IL,Maywood Police Department,4
+IL,Riverdale Police Department,4
+IN,Hammond Police Department,4
+KS,Kansas Bureau of Investigation,4
+LA,Monroe Police Department,4
+LA,St. John the Baptist Parish Sheriff's Office,4
+MD,Maryland Transportation Authority Police,4
+MO,U.S. Drug Enforcement Administration,4
+MS,Ridgeland Police Department,4
+NJ,East Orange Police Department,4
+NM,Navajo Nation Police,4
+NY,Metropolitan Transportation Authority Police,4
+NY,New York City Department of Correction,4
+NY,U.S. Federal Bureau of Investigation,4
+PA,Chester Township Police Department,4
+PA,Hazleton Police Department,4
+PA,Middletown Township Police Department,4
+TX,U.S. Drug Enforcement Administration,4
+TX,Williamson County Sheriff's Office,4
+VA,Franklin County Sheriff's Office,4
+WA,Whatcom County Sheriff's Office,4
+AL,Montgomery County Sheriff's Office,3
+AL,Talladega Police Department,3
+AL,U.S. Federal Bureau of Investigation,3
+AL,Warrior Police Department,3
+AR,Arkansas Department of Corrections,3
+AR,Arkansas Game and Fish Commission,3
+AZ,U.S. Federal Bureau of Investigation,3
+CA,California Department of Corrections,3
+CA,Pinole Police Department,3
+CA,Sanger Police Department,3
+CA,Suisun City Police Department,3
+CA,Sutter County Sheriff's Office,3
+CA,Turlock Police Department,3
+CA,U.S. Department of Homeland Security,3
+CA,U.S. Drug Enforcement Administration,3
+CT,Willimantic Police Department,3
+DC,U.S. Capitol Police,3
+FL,Lake City Police Department,3
+FL,Riviera Beach Police Department,3
+FL,U.S. Department of Homeland Security,3
+GA,Duluth Police Department,3
+GA,Georgia Bureau of Investigation,3
+GA,Metropolitan Atlanta Rapid Transit Authority Police Department,3
+HI,Hawaii Department of Public Safety,3
+HI,Kauai Police Department,3
+IA,Boone County Sheriff's Office,3
+ID,Kootenai County Sheriff's Office,3
+IL,Robbins Police Department,3
+IN,West Terre Haute Police Department,3
+KS,Johnson County Sheriff's Office,3
+LA,Lafourche Parish Sheriff's Office,3
+LA,U.S. Federal Bureau of Investigation,3
+MA,New Bedford Police Department,3
+MA,Somerville Police Department,3
+MD,Annapolis Police Department,3
+MD,U.S. Pentagon Force Protection Agency,3
+MD,Washington Metropolitan Police Department,3
+MI,Clinton Township Police Department,3
+MI,Crawford County Sheriff's Office,3
+MI,Portage Police Department,3
+MI,Traverse City Police Department,3
+MI,Westland Police Department,3
+MO,St. Charles County Police Department,3
+MS,Leake County Sheriff's Office,3
+MS,Marshall County Sheriff's Office,3
+MS,Mississippi Bureau of Investigation,3
+MS,Yazoo County Sheriff's Office,3
+MT,U.S. Bureau of Indian Affairs,3
+ND,U.S. Bureau of Indian Affairs,3
+NH,Concord Police Department,3
+NJ,Bergen County Police Department,3
+NJ,Franklin Township Police Department,3
+NJ,Mercer County Sheriff's Office,3
+NM,U.S. Federal Bureau of Investigation,3
+NY,New York State Division of Parole,3
+OH,Bowling Green Police Department,3
+OH,Springfield Police Department,3
+OH,Springfield Police Division,3
+OK,Oklahoma County Sheriff's Office,3
+OK,Perry Police Department,3
+OK,Yukon Police Department,3
+OR,Klamath County Sheriff's Office,3
+PA,Aston Township Police Department,3
+PA,Penn Hills Police Department,3
+PA,Pennsylvania State Constable,3
+PA,Scranton Police Department,3
+PA,University of Pennsylvania Police Department,3
+PA,Warminster Township Police Department,3
+SC,Kershaw County Sheriff's Office,3
+TN,Roane County Sheriff's Office,3
+TX,Dallas Area Rapid Transit Police Department,3
+TX,Ellis County Sheriff's Office,3
+TX,Harris County Constable's Office Precinct 3,3
+TX,Harris County Constable's Office Precinct 6,3
+TX,Kilgore Police Department,3
+WV,Martinsburg Police Department,3
+AK,Bethel Police Department,2
+AK,North Pole Police Department,2
+AL,Alabama Department of Conservation and Natural Resources,2
+AL,Alexander City Police Department,2
+AL,Childersburg Police Department,2
+AL,Cullman County Sheriff's Office,2
+AL,Foley Police Department,2
+AL,Fort Payne Police Department,2
+AL,Glencoe Police Department,2
+AL,Greenville Police Department,2
+AL,Pelham Police Department,2
+AL,Prattville Police Department,2
+AR,Alexander Police Department,2
+AR,Hot Springs Police Department,2
+AR,Marion Police Department,2
+AR,Sherwood Police Department,2
+AZ,Apache County Sheriff's Office,2
+AZ,La Paz County Sheriff's Office,2
+AZ,Navajo Police Department,2
+AZ,Quartzsite Police Department,2
+AZ,Show Low Police Department,2
+AZ,U.S. Bureau of Alcohol Tobacco Firearms and Explosives,2
+AZ,U.S. Immigration and Customs Enforcement,2
+CA,Alameda Police Department,2
+CA,American Canyon Police Department,2
+CA,Benicia Police Department,2
+CA,Bureau of Narcotics Enforcement,2
+CA,Burlingame Police Department,2
+CA,California State University Police Department,2
+CA,Carlsbad Police Department,2
+CA,Cypress Police Department,2
+CA,Folsom Police Department,2
+CA,Lassen County Sheriff's Office,2
+CA,Menlo Park Police Department,2
+CA,Orange Cove Police Department,2
+CA,Paso Robles Police Department,2
+CA,Petaluma Police Department,2
+CA,Plumas County Sheriff's Office,2
+CA,Port Hueneme Police Department,2
+CA,San Luis Obispo Police Department,2
+CA,U.S. Bureau of Alcohol Tobacco Firearms and Explosives,2
+CA,U.S. Forest Service,2
+CA,U.S. Immigration and Customs Enforcement,2
+CA,Upland Police Department,2
+CO,Logan County Sheriff's Office,2
+CO,Morgan County Sheriff's Office,2
+CO,Rio Blanco County Sheriff's Office,2
+CO,Woodland Park Police Department,2
+CT,East Haven Police Department,2
+CT,Seymour Police Department,2
+DC,Prince George's County Police Department,2
+FL,Apopka Police Department,2
+FL,Coral Springs Police Department,2
+FL,Defuniak Springs Police Department,2

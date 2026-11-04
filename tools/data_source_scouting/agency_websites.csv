@@ -1,0 +1,417 @@
+slug,ori_code,city,state,found_url,confidence_score,notes,timestamp
+abilene_tx,TX22101,Abilene,TX,https://abilenetx.gov/,80,HTTP 200,2026-01-10T09:54:20.349664
+adairsville_ga,GA00802,Adairsville,GA,,0,,2026-01-10T09:54:21.917711
+aitkin_county_mn,MN00100,Aitkin County,MN,https://www.aitkincountymn.gov/,80,HTTP 200,2026-01-10T09:54:23.528561
+alameda_county_ca,CA00100,Alameda County,CA,https://www.alamedacountyca.gov/,80,HTTP 200,2026-01-10T09:54:25.130937
+albany_ga,GA04701,Albany,GA,,0,,2026-01-10T09:54:29.077476
+albert_lea_mn,MN02401,Albert Lea,MN,https://www.cityofalbertlea.org/,40,HTTP 200,2026-01-10T09:54:34.310197
+albuquerque_nm,NM00101,Albuquerque,NM,,0,,2026-01-10T09:54:36.395968
+alexandria_mn,MN02101,Alexandria,MN,,0,,2026-01-10T09:54:40.431237
+alpharetta_ga,GA06004,Alpharetta,GA,https://www.alpharetta.ga.us,60,HTTP 200,2026-01-10T09:54:44.403945
+amarillo_tx,TX18801,Amarillo,TX,https://www.amarillopolice.org/,60,HTTP 200,2026-01-10T09:55:02.840573
+anaheim_ca,CA03001,Anaheim,CA,https://cityofanaheim.com/,30,HTTP 200,2026-01-10T09:55:20.693929
+anchorage_ak,AK00101,Anchorage,AK,https://www.cityofanchorage.org/,40,HTTP 200,2026-01-10T09:55:25.414229
+anoka_county_mn,MN00200,Anoka County,MN,https://www.anokacountymn.gov/,80,HTTP 200,2026-01-10T09:55:27.731125
+apple_valley_mn,MN01910,Apple Valley,MN,https://www.applevalleymn.gov/,80,HTTP 200,2026-01-10T09:55:29.680562
+arlington_county,,Arlington County,,,0,,2026-01-10T09:55:30.442438
+arlington_tx,TX22001,Arlington,TX,,0,,2026-01-10T09:55:34.846032
+athens_clarke_county_ga,GA02901,Athens Clarke County,GA,,0,,2026-01-10T09:55:36.394673
+atkinson_county_ga,GA00200,Atkinson County,GA,,0,,2026-01-10T09:55:38.380737
+atlanta_ga,GAAPD00,Atlanta,GA,https://atlanta-police.org/,60,HTTP 200,2026-01-10T09:55:52.150906
+aurora_co,CO00101,Aurora,CO,https://aurorane.gov/,80,HTTP 200,2026-01-10T09:55:54.257684
+austin_mn,MN05001,Austin,MN,https://www.austintexas.gov/,80,HTTP 200,2026-01-10T09:55:56.181238
+austin_tx,TX22701,Austin,TX,https://retired.austintexas.gov,80,HTTP 200,2026-01-10T09:55:57.703515
+avondale_estates_ga,GA04403,Avondale Estates,GA,https://dps.georgia.gov/,80,HTTP 200,2026-01-10T09:56:01.015496
+backus_mn,,Backus,MN,,0,,2026-01-10T09:56:03.035089
+bainbridge_ga,GA04301,Bainbridge,GA,,0,,2026-01-10T09:56:05.619512
+bakersfield_ca,CA01502,Bakersfield,CA,http://ww25.cityofbakersfield.us/?subid1=20260111-0256-09a7-8cb3-f722a4b9c2c4,60,HTTP 200,2026-01-10T09:56:11.204280
+baltimore_md,MDBPD00,Baltimore,MD,https://www.baltimorepolice.org/,60,HTTP 200,2026-01-10T09:56:15.634594
+bartow_county_ga,GA00800,Bartow County,GA,https://www.bartowcountyga.gov/,80,HTTP 200,2026-01-10T09:56:17.665771
+beaumont_tx,TX12301,Beaumont,TX,https://www.beaumonttexas.gov/,80,HTTP 200,2026-01-10T09:56:19.961617
+beltrami_county_mn,MN00400,Beltrami County,MN,,0,,2026-01-10T09:56:21.945813
+bemidji_mn,MN00401,Bemidji,MN,,0,,2026-01-10T09:56:23.941299
+bibb_county_ga,GA01100,Bibb County,GA,,0,,2026-01-10T09:56:26.866891
+blaine_mn,MN00202,Blaine,MN,https://blainemn.gov/,80,HTTP 200,2026-01-10T09:56:28.665972
+bleckley_county_ga,GA01200,Bleckley County,GA,,0,,2026-01-10T09:56:30.751811
+bloomington_mn,MN02701,Bloomington,MN,https://www.bloomingtonmn.gov/,80,HTTP 200,2026-01-10T09:56:31.959982
+blue_earth_county_mn,MN00700,Blue Earth County,MN,,0,,2026-01-10T09:56:33.939009
+boise_id,ID00101,Boise,ID,https://www.cityofboise.org/,40,HTTP 200,2026-01-10T09:56:46.220526
+boston_ma,MA01301,Boston,MA,,0,,2026-01-10T09:56:49.718783
+box_elder_county_ut,UT00200,Box Elder County,UT,,0,,2026-01-10T09:56:51.909484
+brantley_county_ga,GA01300,Brantley County,GA,https://brantleyso.org/,60,HTTP 200,2026-01-10T09:56:54.794123
+braselton_ga,GA07806,Braselton,GA,,0,,2026-01-10T09:56:57.369215
+brooklyn_center_mn,MN02702,Brooklyn Center,MN,,0,,2026-01-10T09:57:00.423353
+brooklyn_park_mn,MN02703,Brooklyn Park,MN,,0,,2026-01-10T09:57:02.462619
+broward_county_fl,FL00600,Broward County,FL,http://ww25.browardsheriff.org/?subid1=20260111-0257-0652-bca0-8e88a791d687,60,HTTP 200,2026-01-10T09:57:06.100672
+brownsville_tx,TX03101,Brownsville,TX,https://www.brownsvilletx.gov/,80,HTTP 200,2026-01-10T09:57:08.248653
+buchanan_ga,GA07103,Buchanan,GA,https://www.buchananga.gov/,80,HTTP 200,2026-01-10T09:57:09.829387
+buffalo_ny,NY01401,Buffalo,NY,https://www.buffalony.gov/,80,HTTP 200,2026-01-10T09:57:11.311313
+bulloch_county_ga,GA01600,Bulloch County,GA,,0,,2026-01-10T09:57:13.628504
+burke_county_ga,GA01700,Burke County,GA,https://www.burkecountysheriff.com/,50,HTTP 200,2026-01-10T09:57:17.653660
+burnsville_mn,MN01901,Burnsville,MN,https://burnsvillemn.gov/,80,HTTP 200,2026-01-10T09:57:18.744680
+byron_ga,GA11102,Byron,GA,https://www.cityofbyron.com/,30,HTTP 200,2026-01-10T09:57:41.707876
+calhoun_ga,GA06401,Calhoun,GA,,0,,2026-01-10T09:57:44.392419
+camden_county_ga,GA02000,Camden County,GA,https://www.camdencountyga.gov/,80,HTTP 200,2026-01-10T09:57:47.198981
+carroll_county_ga,GA02200,Carroll County,GA,https://www.carrollcountyga.gov/,80,HTTP 200,2026-01-10T09:57:49.964804
+carrollton_ga,GA02201,Carrollton,GA,,0,,2026-01-10T09:57:53.466222
+cartersville_ga,GA00801,Cartersville,GA,https://cartersvillega.gov/,80,HTTP 200,2026-01-10T09:57:54.559745
+cartoosa_county_ga,GA02300,Cartoosa County,GA,,0,,2026-01-10T09:57:56.665327
+carver_county_mn,MN01000,Carver County,MN,,0,,2026-01-10T09:58:00.102678
+cass_county_mn,MN01100,Cass County,MN,https://www.casscountymn.gov/,80,HTTP 200,2026-01-10T09:58:02.254810
+centerville_ut,UT00604,Centerville,UT,https://www.centervilleohio.gov,80,HTTP 200,2026-01-10T09:58:04.408673
+chamblee_ga,GA04404,Chamblee,GA,https://www.chambleega.com/,30,HTTP 200,2026-01-10T09:58:09.995430
+chandler_az,AZ00705,Chandler,AZ,https://www.chandleraz.gov/,80,HTTP 200,2026-01-10T09:58:11.174516
+charlotte_nc,NC06001,Charlotte,NC,https://www.cityofcharlotte.org/,40,HTTP 200,2026-01-10T09:58:15.958084
+chaska_mn,MN01002,Chaska,MN,https://chaskamn.gov/,80,HTTP 200,2026-01-10T09:58:17.205235
+chattooga_county_ga,GA02700,Chattooga County,GA,,0,,2026-01-10T09:58:20.061217
+cherokee_county_ga,GA02800,Cherokee County,GA,https://www.cherokeecountyga.gov/,80,HTTP 200,2026-01-10T09:58:22.505215
+chesapeake_va,VA10300,Chesapeake,VA,http://ww25.cityofchesapeake.org/?subid1=20260111-0258-2823-bdf7-811dce0f07b4,40,HTTP 200,2026-01-10T09:58:28.944566
+chicago_il,ILCPD00,Chicago,IL,https://www.chicago.gov/city/en.html,80,HTTP 200,2026-01-10T09:58:31.304726
+chisago_county_mn,MN01300,Chisago County,MN,https://www.chisagocountymn.gov/,80,HTTP 200,2026-01-10T09:58:33.690200
+chula_vista_ca,CA03702,Chula Vista,CA,,0,,2026-01-10T09:58:36.439920
+cincinnati_oh,OHCIP00,Cincinnati,OH,https://cincinnatipolice.org/,60,HTTP 200,2026-01-10T09:58:40.172358
+clarkston_ga,GA04405,Clarkston,GA,https://clarkstonga.gov/,80,HTTP 200,2026-01-10T09:58:41.797780
+clayton_county_pd_ga,GA03101,Clayton County Pd,GA,,0,,2026-01-10T09:58:43.984880
+clayton_county_sheriff_ga,GA03100,Clayton County Sheriff,GA,,0,,2026-01-10T09:58:46.019661
+cleveland_oh,OHCLP00,Cleveland,OH,https://clevelandpolice.org/,60,HTTP 200,2026-01-10T09:58:59.781482
+clinch_county_ga,GA03200,Clinch County,GA,,0,,2026-01-10T09:59:02.542511
+clinton_ut,UT00611,Clinton,UT,,0,,2026-01-10T09:59:05.666512
+cobb_county_pd_ga,GA03302,Cobb County Pd,GA,,0,,2026-01-10T09:59:07.896402
+cobb_county_sheriff_ga,GA03300,Cobb County Sheriff,GA,,0,,2026-01-10T09:59:09.989977
+college_park_ga,GA06001,College Park,GA,,0,,2026-01-10T09:59:12.647433
+college_station_tx,TX02102,College Station,TX,,0,,2026-01-10T09:59:14.877550
+colorado_springs_co,CO02101,Colorado Springs,CO,,0,,2026-01-10T09:59:17.380281
+colquitt_county_ga,GA03500,Colquitt County,GA,https://www.colquittcountyga.gov/,80,HTTP 200,2026-01-10T09:59:19.465986
+columbia_county_ga,GA03600,Columbia County,GA,https://www.columbiacountyga.gov/,80,HTTP 200,2026-01-10T09:59:22.027385
+columbia_heights_mn,MN00204,Columbia Heights,MN,,0,,2026-01-10T09:59:24.136351
+columbus_ga,GA10601,Columbus,GA,https://www.columbusga.gov/,80,HTTP 200,2026-01-10T09:59:25.794517
+columbus_oh,OHCOP00,Columbus,OH,https://www.cityofcolumbus.org/,40,HTTP 200,2026-01-10T09:59:52.196834
+columbus_state_university_ga,GA10604,Columbus State University,GA,https://dps.georgia.gov/,80,HTTP 200,2026-01-10T09:59:55.533009
+commerce_ga,GA07801,Commerce,GA,https://commercega.gov/,80,HTTP 200,2026-01-10T09:59:56.867270
+cook_county_ga,GA03700,Cook County,GA,https://cookcountysheriffil.gov/,100,HTTP 200,2026-01-10T09:59:59.888117
+coon_rapids_mn,MN00205,Coon Rapids,MN,,0,,2026-01-10T10:00:02.095542
+corpus_christi_tx,TX17802,Corpus Christi,TX,,0,,2026-01-10T10:00:14.766970
+cottage_grove_mn,MN08207,Cottage Grove,MN,,0,,2026-01-10T10:00:16.866101
+cottonwood_heights_ut,UT01842,Cottonwood Heights,UT,,0,,2026-01-10T10:00:19.032016
+coweta_county_ga,GA03800,Coweta County,GA,,0,,2026-01-10T10:00:21.335706
+crawford_county_ga,GA03900,Crawford County,GA,,0,,2026-01-10T10:00:24.474729
+crow_wing_county_mn,MN01800,Crow Wing County,MN,,0,,2026-01-10T10:00:26.469759
+cumming_ga,GA05801,Cumming,GA,,0,,2026-01-10T10:00:36.335935
+cuthbert_ga,GA12001,Cuthbert,GA,,0,,2026-01-10T10:00:38.475702
+dakota_county_mn,MN01900,Dakota County,MN,https://dakotacountysheriff.org/,60,HTTP 200,2026-01-10T10:00:43.021595
+dallas_tx,TXDPD00,Dallas,TX,https://www.cityofdallas.org/,40,HTTP 200,2026-01-10T10:00:56.927418
+davis_county_ut,UT00600,Davis County,UT,,0,,2026-01-10T10:00:59.055342
+decatur_county_ga,GA04300,Decatur County,GA,https://www.decaturcountyga.gov/,80,HTTP 200,2026-01-10T10:01:01.963922
+dekalb_county_pd_ga,GA04402,Dekalb County Pd,GA,,0,,2026-01-10T10:01:04.234338
+dekalb_county_sheriff_ga,GA04400,Dekalb County Sheriff,GA,,0,,2026-01-10T10:01:06.329478
+denton_tx,TX06102,Denton,TX,https://www.cityofdenton.com/,30,HTTP 200,2026-01-10T10:01:10.122673
+denver_co,CODPD00,Denver,CO,,0,,2026-01-10T10:01:15.820695
+detroit_mi,MI82349,Detroit,MI,https://detroitmi.gov/,80,HTTP 200,2026-01-10T10:01:16.753630
+douglas_county_ga,GA04800,Douglas County,GA,https://www.douglascountyga.gov/,80,HTTP 200,2026-01-10T10:01:19.165564
+douglas_county_mn,MN02100,Douglas County,MN,https://douglascountysheriff.org/293/Sheriff,60,HTTP 200,2026-01-10T10:01:27.275324
+douglas_ga,GA03401,Douglas,GA,https://www.cityofdouglasga.gov/,80,HTTP 200,2026-01-10T10:01:30.737807
+douglasville_ga,GA04801,Douglasville,GA,,0,,2026-01-10T10:01:33.998841
+duchesne_county_ut,UT00700,Duchesne County,UT,,0,,2026-01-10T10:01:36.144458
+duluth_mn,MN06906,Duluth,MN,https://duluthmn.gov/,80,HTTP 200,2026-01-10T10:01:37.000299
+dunwoody_ga,GA04471,Dunwoody,GA,,0,,2026-01-10T10:02:10.467347
+durham_nc,NC03201,Durham,NC,https://www.durhamnc.gov/,80,HTTP 200,2026-01-10T10:02:13.749435
+eagan_mn,MN01908,Eagan,MN,,0,,2026-01-10T10:02:18.433700
+early_county_ga,GA04900,Early County,GA,,0,,2026-01-10T10:02:20.495014
+east_dublin_ga,GA08702,East Dublin,GA,https://cityofeastdublin.org/wp/,40,HTTP 200,2026-01-10T10:02:25.370660
+east_point_ga,GA06002,East Point,GA,,0,,2026-01-10T10:02:37.569539
+eden_prairie_mn,MN02726,Eden Prairie,MN,,0,,2026-01-10T10:02:39.902211
+edina_mn,MN02706,Edina,MN,https://www.edinamn.gov/,80,HTTP 200,2026-01-10T10:02:41.699602
+effingham_county_ga,GA05100,Effingham County,GA,https://www.effinghamsheriff.org/670/Sheriff,60,HTTP 200,2026-01-10T10:02:45.137024
+el_paso_tx,TX07102,El Paso,TX,,0,,2026-01-10T10:02:48.772360
+emerson_ga,GA00806,Emerson,GA,,0,,2026-01-10T10:03:07.003918
+euharlee_ga,GA00807,Euharlee,GA,,0,,2026-01-10T10:03:09.254133
+evans_county_ga,GA05400,Evans County,GA,https://www.evanssheriff.org/,60,HTTP 200,2026-01-10T10:03:13.002764
+fairmont_mn,MN04601,Fairmont,MN,https://fairmontpolice.org/,60,HTTP 200,2026-01-10T10:03:15.948834
+fannin_county_ga,GA05500,Fannin County,GA,,0,,2026-01-10T10:03:18.092166
+fayette_county_ga,GA05600,Fayette County,GA,https://www.fayettecountyga.gov/,80,HTTP 200,2026-01-10T10:03:20.347744
+fergus_falls_mn,MN05601,Fergus Falls,MN,,0,,2026-01-10T10:03:22.546089
+floyd_county_police_ga,GA05701,Floyd County Police,GA,,0,,2026-01-10T10:03:24.676070
+floyd_county_sheriff_ga,GA05700,Floyd County Sheriff,GA,,0,,2026-01-10T10:03:26.763967
+forest_lake_mn,MN08202,Forest Lake,MN,,0,,2026-01-10T10:03:29.104553
+forsyth_county_ga,GA10201,Forsyth County,GA,https://www.forsythsheriff.org/,60,HTTP 200,2026-01-10T10:03:31.843831
+fort_wayne_in,IN00201,Fort Wayne,IN,https://www.cityoffortwayne.in.gov,80,HTTP 200,2026-01-10T10:03:33.820425
+fort_worth_tx,TX22012,Fort Worth,TX,,0,,2026-01-10T10:03:44.240479
+franklin_county_ga,GA05900,Franklin County,GA,https://franklincountysheriff.org/,60,HTTP 200,2026-01-10T10:03:49.439258
+fremont_ca,CA00105,Fremont,CA,,0,,2026-01-10T10:04:13.862660
+fresno_ca,CA01005,Fresno,CA,https://www.cityoffresno.com/,30,HTTP 200,2026-01-10T10:04:24.616941
+fridley_mn,MN00206,Fridley,MN,,0,,2026-01-10T10:04:29.270308
+fulton_county_police_ga,GA06013,Fulton County Police,GA,,0,,2026-01-10T10:04:31.519537
+fulton_county_sheriff_ga,GA06000,Fulton County Sheriff,GA,,0,,2026-01-10T10:04:33.862581
+ga_state_patrol,GAGSP00,Ga State Patrol,,,0,,2026-01-10T10:04:35.476043
+gainesville_ga,GA06901,Gainesville,GA,https://www.gainesville.org/,40,HTTP 200,2026-01-10T10:04:41.762091
+garland_tx,TX05711,Garland,TX,https://garlandtx.gov/,80,HTTP 200,2026-01-10T10:04:43.659636
+georgia_tech_police,GA06010,Georgia Tech Police,,,0,,2026-01-10T10:04:45.063316
+gilbert_az,AZ00711,Gilbert,AZ,,0,,2026-01-10T10:04:49.522606
+gilbert_mn,MN06909,Gilbert,MN,,0,,2026-01-10T10:04:52.492178
+glendale_az,AZ00713,Glendale,AZ,,0,,2026-01-10T10:04:59.837574
+glynn_county_ga,GA06300,Glynn County,GA,https://www.glynncounty.org/government/departments/sheriffs-office,40,HTTP 200,2026-01-10T10:05:03.188350
+golden_valley_mn,MN02708,Golden Valley,MN,,0,,2026-01-10T10:05:06.543783
+gordon_county_ga,GA06400,Gordon County,GA,https://www.gordoncountyga.gov/,80,HTTP 200,2026-01-10T10:05:08.952671
+grand_county_ut,UT01000,Grand County,UT,,0,,2026-01-10T10:05:11.496409
+grand_prairie_tx,TX05712,Grand Prairie,TX,,0,,2026-01-10T10:05:15.619423
+gransville_ut,UT02302,Gransville,UT,,0,,2026-01-10T10:05:17.759829
+greene_county_ga,GA06600,Greene County,GA,https://www.greenecountyga.gov/,80,HTTP 200,2026-01-10T10:05:20.422831
+greensboro_nc,NC04102,Greensboro,NC,,0,,2026-01-10T10:05:22.902541
+greenville_ga,GA09902,Greenville,GA,https://www.cityofgreenville.org/,40,HTTP 200,2026-01-10T10:05:26.321114
+griffin_ga,GA12601,Griffin,GA,,0,,2026-01-10T10:05:28.929230
+gwinnett_county_ga,GA06700,Gwinnett County,GA,https://www.gwinnettcountysheriff.org/,60,HTTP 200,2026-01-10T10:05:33.565634
+habersham_county_ga,GA06800,Habersham County,GA,,0,,2026-01-10T10:05:35.759464
+hall_county_ga,GA06900,Hall County,GA,,0,,2026-01-10T10:05:42.122171
+harris_county_tx,TX10100,Harris County,TX,https://www.harriscountytx.gov/,80,HTTP 200,2026-01-10T10:05:44.001050
+hastings_mn_mn,MN01903,Hastings Mn,MN,,0,,2026-01-10T10:05:46.014691
+heard_county_ga,GA07400,Heard County,GA,,0,,2026-01-10T10:05:48.124911
+henderson_nv,NV00203,Henderson,NV,https://www.cityofhenderson.org/,60,HTTP 200,2026-01-10T10:05:52.702032
+hennepin_county_mn,MN02700,Hennepin County,MN,https://www.hennepinsheriff.org/,60,HTTP 200,2026-01-10T10:05:55.246892
+henry_county_police_ga,GA07505,Henry County Police,GA,,0,,2026-01-10T10:05:57.682130
+henry_county_sheriff_ga,GA07500,Henry County Sheriff,GA,,0,,2026-01-10T10:05:59.881392
+hermantown_mn,MN06917,Hermantown,MN,,0,,2026-01-10T10:06:01.972391
+hillsborough_county_fl,FL02900,Hillsborough County,FL,,0,,2026-01-10T10:06:04.231059
+hogansville_ga,GA14101,Hogansville,GA,https://www.cityofhogansville.org/,40,HTTP 200,2026-01-10T10:06:07.601558
+honolulu,HI00200,Honolulu,,https://honolulupolice.org/,60,HTTP 200,2026-01-10T10:06:10.406978
+houston_county_ga,GA07600,Houston County,GA,https://www.houstoncountyga.gov/,80,HTTP 200,2026-01-10T10:06:12.752538
+houston_tx,TXHPD00,Houston,TX,https://houstontx.gov/,80,HTTP 200,2026-01-10T10:06:13.734279
+hutchinson_mn,MN04302,Hutchinson,MN,https://hutchinsonmn.gov/,100,HTTP 200,2026-01-10T10:06:14.689098
+indianapolis_in,INIPD00,Indianapolis,IN,,0,,2026-01-10T10:06:18.904446
+irving_tx,TX05715,Irving,TX,https://irvingtx.gov/,80,HTTP 200,2026-01-10T10:06:20.731193
+itasca_county_mn,MN03100,Itasca County,MN,https://www.itascacountymn.gov/,80,HTTP 200,2026-01-10T10:06:22.855200
+jackson_county_ga,GA07800,Jackson County,GA,https://www.jacksonsheriff.org/,60,HTTP 200,2026-01-10T10:06:28.514867
+jackson_ga,GA01801,Jackson,GA,https://www.cityofjackson.us/,80,HTTP 200,2026-01-10T10:06:31.590633
+jacksonville_county_fl,FL01602,Jacksonville County,FL,https://www.jacksonvillesheriff.org/,60,HTTP 200,2026-01-10T10:06:34.201148
+jasper_county_ga,GA07900,Jasper County,GA,https://jaspercountysheriff.org/,60,HTTP 200,2026-01-10T10:06:38.094311
+jeff_davis_county_ga,GA08000,Jeff Davis County,GA,,0,,2026-01-10T10:06:40.360219
+jersey_city_nj,NJ00906,Jersey City,NJ,https://www.jerseycitynj.gov/,80,HTTP 200,2026-01-10T10:06:43.878631
+johns_creek_ga,GA06058,Johns Creek,GA,,0,,2026-01-10T10:06:46.125552
+jonesboro_ga,GA03104,Jonesboro,GA,https://jonesboroga.gov/,80,HTTP 200,2026-01-10T10:06:47.135464
+juab_county_ut,UT01200,Juab County,UT,https://www.juabsheriff.org/,60,HTTP 200,2026-01-10T10:06:50.101853
+kanabec_county_mn,MN03300,Kanabec County,MN,https://www.kanabeccountymn.gov/,80,HTTP 200,2026-01-10T10:06:51.991631
+kansas_city_mo,MOKPD00,Kansas City,MO,,0,,2026-01-10T10:06:54.545125
+killeen_tx,TX01404,Killeen,TX,,0,,2026-01-10T10:06:57.165779
+kingsland_ga,GA02001,Kingsland,GA,,0,,2026-01-10T10:07:00.124994
+lafayette_ga,GA14601,Lafayette,GA,,0,,2026-01-10T10:07:02.625112
+lamar_county_ga,GA08500,Lamar County,GA,https://www.lamarcountyga.com/,30,HTTP 200,2026-01-10T10:07:06.301360
+laredo_tx,TX24001,Laredo,TX,,0,,2026-01-10T10:07:08.894282
+las_vegas_metro_nv,NV00201,Las Vegas Metro,NV,,0,,2026-01-10T10:07:10.970074
+laurens_county_ga,GA08700,Laurens County,GA,https://www.laurenscountysheriff.org/,60,HTTP 200,2026-01-10T10:07:14.775768
+lawrenceville_ga,GA06703,Lawrenceville,GA,https://www.cityoflawrenceville.com/,30,HTTP 200,2026-01-10T10:07:24.464815
+layton_ut,UT00603,Layton,UT,https://www.cityoflayton.com/,30,HTTP 200,2026-01-10T10:07:27.309212
+le_sueur_county_mn,MN04000,Le Sueur County,MN,,0,,2026-01-10T10:07:29.641438
+leesburg_ga,GA08801,Leesburg,GA,,0,,2026-01-10T10:07:32.250514
+lehi_ut,UT02502,Lehi,UT,,0,,2026-01-10T10:07:35.414579
+lewisville_tx,TX06106,Lewisville,TX,,0,,2026-01-10T10:07:39.185984
+liberty_county_ga,GA08900,Liberty County,GA,https://www.libertycountyga.gov/,80,HTTP 200,2026-01-10T10:07:41.740779
+lincoln_ne,NB05501,Lincoln,NE,https://www.cityoflincoln.com/,30,HTTP 200,2026-01-10T10:07:45.633072
+lino_lakes_mn,MN00207,Lino Lakes,MN,,0,,2026-01-10T10:07:48.241471
+little_falls_mn,MN04901,Little Falls,MN,https://www.cityoflittlefalls.com/,30,HTTP 200,2026-01-10T10:07:51.695183
+locust_grove_ga,GA07504,Locust Grove,GA,,0,,2026-01-10T10:07:53.804075
+logan_ut,UT00301,Logan,UT,https://www.cityoflogan.org/,40,HTTP 200,2026-01-10T10:08:01.814589
+loganville_ga,GA14702,Loganville,GA,,0,,2026-01-10T10:08:11.517967
+long_beach_ca,CA01941,Long Beach,CA,,0,,2026-01-10T10:08:24.114246
+los_angeles_ca,CA01942,Los Angeles,CA,https://www.cityoflosangeles.us/,60,HTTP 200,2026-01-10T10:08:29.214435
+los_angeles_county_ca,CA01900,Los Angeles County,CA,,0,,2026-01-10T10:08:31.283827
+louisville_ky,KY05602,Louisville,KY,https://www.lmpd.gov/,100,HTTP 200,2026-01-10T10:08:39.194942
+lowndes_county_ga,GA09200,Lowndes County,GA,,0,,2026-01-10T10:08:41.337887
+lubbock_tx,TX15202,Lubbock,TX,https://www.cityoflubbock.com/,30,HTTP 200,2026-01-10T10:08:56.509842
+lumpkin_county_ga,GA09300,Lumpkin County,GA,,0,,2026-01-10T10:08:58.668715
+macon_bibb_county_ga,GA09600,Macon Bibb County,GA,,0,,2026-01-10T10:09:00.802949
+macon_ga,GA01101,Macon,GA,,0,,2026-01-10T10:09:04.418100
+madison_wi,WI01301,Madison,WI,https://www.cityofmadison.com/,50,HTTP 200,2026-01-10T10:09:08.238844
+mankato_mn,MN00701,Mankato,MN,,0,,2026-01-10T10:09:11.654676
+maplewood_mn,MN06204,Maplewood,MN,https://maplewoodmn.gov/,80,HTTP 200,2026-01-10T10:09:12.868360
+marietta_ga,GA03303,Marietta,GA,https://mariettaga.gov/,80,HTTP 200,2026-01-10T10:09:14.301292
+mcallen_tx,TX10808,Mcallen,TX,,0,,2026-01-10T10:09:17.087600
+mcduffie_county_ga,GA09400,Mcduffie County,GA,,0,,2026-01-10T10:09:19.259000
+mckinney_tx,TX04305,Mckinney,TX,https://www.mckinneytexas.org/3569/Police,40,HTTP 200,2026-01-10T10:09:35.713456
+mcleod_county_mn,MN04300,Mcleod County,MN,https://www.mcleodcountymn.gov/,80,HTTP 200,2026-01-10T10:09:37.763564
+me_state_police,MEMSP00,Me State Police,,,0,,2026-01-10T10:09:39.257227
+memphis_tn,TNMPD00,Memphis,TN,https://memphistn.gov/,80,HTTP 200,2026-01-10T10:09:40.200465
+mesa_az,AZ00717,Mesa,AZ,https://www.cityofmesa.com/,30,HTTP 200,2026-01-10T10:09:56.486946
+mesquite_tx,TX05718,Mesquite,TX,http://ww25.cityofmesquite.org/?subid1=20260111-0310-01a1-b3bd-8584f6efa38b,40,HTTP 200,2026-01-10T10:10:07.312771
+midland_tx,TX16501,Midland,TX,,0,,2026-01-10T10:10:11.352740
+midvale_ut,UT01801,Midvale,UT,,0,,2026-01-10T10:10:32.219043
+midway_ga,GA08902,Midway,GA,,0,,2026-01-10T10:10:36.193488
+millard_county_ut,UT01400,Millard County,UT,https://millardsheriff.gov/,100,HTTP 200,2026-01-10T10:10:39.165507
+mille_lacs_county_mn,MN04800,Mille Lacs County,MN,,0,,2026-01-10T10:10:41.266991
+miltona_mn,,Miltona,MN,,0,,2026-01-10T10:10:43.393944
+milwaukee_wi,WIMPD00,Milwaukee,WI,http://ww25.cityofmilwaukee.org/?subid1=20260111-0310-47e1-94c9-9dc9477aae58,40,HTTP 200,2026-01-10T10:10:59.076014
+minneapolis_mn,MN02711,Minneapolis,MN,https://www.minneapolismn.gov/,80,HTTP 200,2026-01-10T10:11:00.377338
+minnetonka_mn,MN02712,Minnetonka,MN,,0,,2026-01-10T10:11:03.732244
+mn_bca,MNBCA00,Mn Bca,,,0,,2026-01-10T10:11:05.217570
+mn_state_patrol,MNMHP00,Mn State Patrol,,,0,,2026-01-10T10:11:06.687210
+monroe_county_ga,GA10200,Monroe County,GA,,0,,2026-01-10T10:11:09.222616
+monroe_ga,GA14701,Monroe,GA,https://www.monroemi.gov/r_e_s_i_d_e_n_t_s/public_safety,80,HTTP 200,2026-01-10T10:11:16.573321
+morrison_county_mn,MN04900,Morrison County,MN,https://www.morrisoncountymn.gov/,100,HTTP 200,2026-01-10T10:11:18.811938
+moultrie_ga,GA03501,Moultrie,GA,,0,,2026-01-10T10:11:20.921881
+mounds_view_mn,MN06205,Mounds View,MN,,0,,2026-01-10T10:11:23.017213
+murray_county_ga,GA10500,Murray County,GA,,0,,2026-01-10T10:11:25.866678
+nashville_metro_tn,TN01901,Nashville Metro,TN,,0,,2026-01-10T10:11:28.101672
+new_brighton_mn,MN06206,New Brighton,MN,,0,,2026-01-10T10:11:30.282894
+new_hope_mn,MN02714,New Hope,MN,https://www.cityofnewhope.org/,40,HTTP 200,2026-01-10T10:11:38.903897
+new_orleans_la,LANPD00,New Orleans,LA,https://www.cityofneworleans.org/,40,HTTP 200,2026-01-10T10:11:42.284675
+new_york_city,NY03030,New York City,,,0,,2026-01-10T10:11:43.666940
+newark_nj,NJNPD00,Newark,NJ,https://www.newarknj.gov,80,HTTP 200,2026-01-10T10:11:45.282890
+newton_county_ga,GA10700,Newton County,GA,https://www.newtoncountyga.gov/,80,HTTP 200,2026-01-10T10:11:47.640266
+nicollet_county_mn,MN05200,Nicollet County,MN,,0,,2026-01-10T10:11:49.984729
+norfolk_va,VA11700,Norfolk,VA,https://www.norfolk.gov/,80,HTTP 200,2026-01-10T10:11:53.735130
+north_las_vegas,NV00202,North Las Vegas,,,0,,2026-01-10T10:11:56.348626
+north_mankato_mn,MN05201,North Mankato,MN,,0,,2026-01-10T10:11:58.405440
+north_park_ut,UT00310,North Park,UT,,0,,2026-01-10T10:12:00.735312
+norwich_ct,CT00104,Norwich,CT,https://norwichct.gov/,80,HTTP 200,2026-01-10T10:12:02.016444
+oakland_ca,CA00109,Oakland,CA,https://www.cityofoakland.com/,30,HTTP 200,2026-01-10T10:12:05.985218
+odessa_tx,TX06802,Odessa,TX,,0,,2026-01-10T10:12:08.562351
+ogden_ut,UT02901,Ogden,UT,,0,,2026-01-10T10:12:14.109012
+oklahoma_city_ok,OK05506,Oklahoma City,OK,,0,,2026-01-10T10:12:16.858619
+olivia_mn,MN06503,Olivia,MN,,0,,2026-01-10T10:12:18.837348
+olmsted_county_mn,MN05500,Olmsted County,MN,,0,,2026-01-10T10:12:20.802617
+omaha_ne,NB02802,Omaha,NE,,0,,2026-01-10T10:12:28.701851
+orange_county,,Orange County,,,0,,2026-01-10T10:12:35.240850
+orem_ut,UT02503,Orem,UT,https://www.cityoforem.com/,30,HTTP 200,2026-01-10T10:12:38.090835
+orlando_fl,FL04804,Orlando,FL,https://www.orlando.gov/Home,80,HTTP 200,2026-01-10T10:12:39.362864
+orono_mn,MN02715,Orono,MN,https://oronomn.gov/,80,HTTP 200,2026-01-10T10:12:40.727693
+otter_tail_county_mn,MN05600,Otter Tail County,MN,,0,,2026-01-10T10:12:42.721478
+owatonna_mn,MN07401,Owatonna,MN,,0,,2026-01-10T10:12:44.792836
+palm_beach_county_fl,FL05000,Palm Beach County,FL,,0,,2026-01-10T10:12:46.827607
+pasadena_tx,TX10115,Pasadena,TX,https://pasadenatx.gov/,80,HTTP 200,2026-01-10T10:12:47.995889
+paulding_county_ga,GA11000,Paulding County,GA,,0,,2026-01-10T10:12:50.001576
+payson_ut,UT02504,Payson,UT,,0,,2026-01-10T10:12:59.486917
+peachtree_city_ga,GA05602,Peachtree City,GA,,0,,2026-01-10T10:13:02.625518
+pearland_tx,TX02010,Pearland,TX,http://ww25.cityofpearland.org/?subid1=20260111-0313-0541-bf61-ed69bb7605c0,40,HTTP 200,2026-01-10T10:13:08.260609
+pelham_ga,GA10103,Pelham,GA,,0,,2026-01-10T10:13:10.243705
+philadelphia_pa,PAPEP00,Philadelphia,PA,,0,,2026-01-10T10:13:14.462362
+phoenix_az,AZ00723,Phoenix,AZ,,0,,2026-01-10T10:13:19.046970
+pickens_county_ga,GA11200,Pickens County,GA,https://www.pickenscountyga.gov/,80,HTTP 200,2026-01-10T10:13:21.495105
+pike_county_ga,GA11400,Pike County,GA,https://pikecountysheriff.com/,50,HTTP 200,2026-01-10T10:13:29.533290
+pine_county_mn,MN05800,Pine County,MN,https://www.pinecountymn.gov/,80,HTTP 200,2026-01-10T10:13:31.626524
+pine_lake_ga,GA04408,Pine Lake,GA,,0,,2026-01-10T10:13:33.714142
+pittsburgh_pa,PAPPD00,Pittsburgh,PA,,0,,2026-01-10T10:13:37.809524
+plano_tx,TX04306,Plano,TX,https://www.plano.gov/,80,HTTP 200,2026-01-10T10:13:39.378559
+pleasant_view_ut,UT02911,Pleasant View,UT,,0,,2026-01-10T10:13:41.452217
+plymouth_mn,MN02717,Plymouth,MN,https://cityofplymouth.org/,40,HTTP 200,2026-01-10T10:13:53.565943
+polk_county_mn,MN06000,Polk County,MN,https://www.polkcountymn.gov/,80,HTTP 200,2026-01-10T10:13:55.889937
+polk_county_police_ga,GA11503,Polk County Police,GA,,0,,2026-01-10T10:13:57.970402
+polk_county_sheriff_ga,GA11500,Polk County Sheriff,GA,,0,,2026-01-10T10:14:00.045231
+pooler_ga,GA02504,Pooler,GA,,0,,2026-01-10T10:14:02.310701
+port_wentworth_ga,GA02505,Port Wentworth,GA,,0,,2026-01-10T10:14:04.837062
+portland_me,ME00305,Portland,ME,,0,,2026-01-10T10:14:10.231181
+portland_or,OR02602,Portland,OR,,0,,2026-01-10T10:14:14.931997
+provo_ut,UT02506,Provo,UT,,0,,2026-01-10T10:14:20.358679
+putnam_county_ga,GA11700,Putnam County,GA,https://www.putnamcountysheriff.org/,60,HTTP 200,2026-01-10T10:14:25.288927
+raleigh_nc,NC09201,Raleigh,NC,https://raleighnc.gov/,80,HTTP 200,2026-01-10T10:14:26.054709
+ramsey_county_mn,MN06200,Ramsey County,MN,https://www.ramseycountymn.gov/,80,HTTP 200,2026-01-10T10:14:27.922909
+ramsey_pd_mn,MN00213,Ramsey Pd,MN,,0,,2026-01-10T10:14:29.964175
+red_lake_mn,MN06300,Red Lake,MN,,0,,2026-01-10T10:14:31.945856
+reno_nv,NV01601,Reno,NV,,0,,2026-01-10T10:14:41.818413
+richardson_tx,TX05720,Richardson,TX,,0,,2026-01-10T10:14:54.101499
+richfield_mn,MN02718,Richfield,MN,https://richfieldmn.gov/,80,HTTP 200,2026-01-10T10:14:55.036164
+richmond_county_ga,GA12102,Richmond County,GA,https://www.richmondcountysheriffsoffice.com/,50,HTTP 200,2026-01-10T10:14:59.023637
+riverdale_ga,GA03105,Riverdale,GA,https://riverdalega.gov/,80,HTTP 200,2026-01-10T10:15:00.192066
+riverside_ca,CA03313,Riverside,CA,https://riversideca.gov/,80,HTTP 200,2026-01-10T10:15:01.320014
+riverside_county_ca,CA03300,Riverside County,CA,https://www.riversidesheriff.org/,60,HTTP 200,2026-01-10T10:15:06.331697
+robbinsdale_mn,MN02719,Robbinsdale,MN,https://www.robbinsdalemn.gov/,80,HTTP 200,2026-01-10T10:15:07.780253
+rochester_mn,MN05501,Rochester,MN,,0,,2026-01-10T10:15:12.203943
+rockdale_county_ga,GA12200,Rockdale County,GA,https://www.rockdalecountyga.gov/,80,HTTP 200,2026-01-10T10:15:15.571517
+roosevelt_ut,UT00702,Roosevelt,UT,,0,,2026-01-10T10:15:17.693633
+rosemount_mn,MN01905,Rosemount,MN,https://rosemountmn.gov/,80,HTTP 200,2026-01-10T10:15:18.681988
+roseville_mn,MN06208,Roseville,MN,https://www.rosevillepolice.org/,60,HTTP 200,2026-01-10T10:15:23.930882
+roswell_ga,GA06005,Roswell,GA,https://www.cityofroswell.com/,30,HTTP 200,2026-01-10T10:15:26.607874
+round_rock_tx,TX24605,Round Rock,TX,,0,,2026-01-10T10:15:29.278654
+roy_ut,UT02902,Roy,UT,,0,,2026-01-10T10:15:45.263469
+sacramento_ca,CA03404,Sacramento,CA,https://www.cityofsacramento.gov/,80,HTTP 200,2026-01-10T10:15:46.294618
+sacramento_county_ca,CA03400,Sacramento County,CA,,0,,2026-01-10T10:15:48.311745
+salina_ut,UT02107,Salina,UT,,0,,2026-01-10T10:15:50.479504
+salt_lake_city_ut,UT01803,Salt Lake City,UT,,0,,2026-01-10T10:15:53.465750
+san_antonio_tx,TXSPD00,San Antonio,TX,https://www.cityofsanantonio.com/,30,HTTP 200,2026-01-10T10:15:57.598459
+san_diego_ca,CA03711,San Diego,CA,https://www.cityofsandiego.us/,60,HTTP 200,2026-01-10T10:16:07.249848
+san_diego_county_ca,CA03700,San Diego County,CA,,0,,2026-01-10T10:16:09.274218
+san_francisco_ca,CA03801,San Francisco,CA,https://www.cityofsanfrancisco.us/,60,HTTP 200,2026-01-10T10:16:13.237889
+san_jose_ca,CA04313,San Jose,CA,,0,,2026-01-10T10:16:16.767526
+sandy_springs_ga,GA06056,Sandy Springs,GA,,0,,2026-01-10T10:16:19.353683
+sandy_ut,UT01805,Sandy,UT,https://www.ci.sandy.or.us/,60,HTTP 200,2026-01-10T10:16:30.351066
+santa_ana_ca,CA03019,Santa Ana,CA,https://www.cityofsantaana.us/,60,HTTP 200,2026-01-10T10:16:49.049738
+saratoga_springs_ut,UT02522,Saratoga Springs,UT,,0,,2026-01-10T10:16:51.138911
+sardis_ga,GA01703,Sardis,GA,,0,,2026-01-10T10:16:56.822059
+savannah_chatham_metro_ga,GA02503,Savannah Chatham Metro,GA,,0,,2026-01-10T10:16:58.860773
+savannah_ga,GA02503,Savannah,GA,https://savannahga.gov/,80,HTTP 200,2026-01-10T10:17:00.417111
+scott_county_mn,MN07000,Scott County,MN,https://www.scottcountymn.gov/,80,HTTP 200,2026-01-10T10:17:02.352719
+scottsdale_az,AZ00725,Scottsdale,AZ,https://www.scottsdaleaz.gov/,80,HTTP 200,2026-01-10T10:17:03.605469
+seattle_wa,WASPD00,Seattle,WA,,0,,2026-01-10T10:17:25.930553
+sebeka_mn,MN08002,Sebeka,MN,https://cityofsebeka.org/,40,HTTP 200,2026-01-10T10:17:30.299135
+shakopee_mn,MN07004,Shakopee,MN,https://shakopeemn.gov/,80,HTTP 200,2026-01-10T10:17:31.187802
+sherburne_county_mn,MN07100,Sherburne County,MN,,0,,2026-01-10T10:17:33.493643
+sibley_county_mn,MN07200,Sibley County,MN,,0,,2026-01-10T10:17:35.706027
+smithfield_ut,UT00314,Smithfield,UT,,0,,2026-01-10T10:17:37.846075
+smyrna_ga,GA03304,Smyrna,GA,https://www.smyrnapolice.com/,50,HTTP 200,2026-01-10T10:17:47.790399
+snellville_ga,GA06708,Snellville,GA,,0,,2026-01-10T10:17:49.825685
+south_jordan_ut,UT01818,South Jordan,UT,,0,,2026-01-10T10:17:52.561938
+south_ogden_ut,UT02903,South Ogden,UT,,0,,2026-01-10T10:17:54.655959
+south_salt_lake_ut,UT01804,South Salt Lake,UT,,0,,2026-01-10T10:17:56.782930
+spalding_county_ga,GA12600,Spalding County,GA,https://www.spaldingsheriff.org/,60,HTTP 200,2026-01-10T10:17:59.389978
+springfield_mo,MO03903,Springfield,MO,https://www.springfieldmo.gov/,80,HTTP 200,2026-01-10T10:18:00.836501
+st_anthony_mn,MN02720,St Anthony,MN,https://www.cityofstanthony.org/,40,HTTP 200,2026-01-10T10:18:04.691397
+st_cloud_mn,MN07304,St Cloud,MN,https://www.cityofstcloud.com/,30,HTTP 200,2026-01-10T10:18:07.144462
+st_george_ut,UT02701,St George,UT,https://www.cityofstgeorge.org/,40,HTTP 200,2026-01-10T10:18:11.577720
+st_james_mn,MN08302,St James,MN,,0,,2026-01-10T10:18:13.557998
+st_louis_county_mn,MN06900,St Louis County,MN,,0,,2026-01-10T10:18:15.529009
+st_louis_metro_mo,MOSPD00,St Louis Metro,MO,,0,,2026-01-10T10:18:17.571635
+st_louis_park_mn,MN02721,St Louis Park,MN,https://cityofstlouispark.com,30,HTTP 200,2026-01-10T10:18:20.560437
+st_paul_mn,MN06209,St Paul,MN,https://www.cityofstpaul.us/,60,HTTP 200,2026-01-10T10:18:22.918585
+st_petersburg_fl,FL05214,St Petersburg,FL,,0,,2026-01-10T10:18:25.591838
+statesboro_ga,GA01601,Statesboro,GA,https://dps.georgia.gov/,80,HTTP 200,2026-01-10T10:18:32.673870
+stevens_county_mn,MN07500,Stevens County,MN,,0,,2026-01-10T10:18:35.113374
+stillwater_mn,MN08206,Stillwater,MN,,0,,2026-01-10T10:18:40.306645
+stockton_ca,CA03905,Stockton,CA,https://stocktonca.gov/,80,HTTP 200,2026-01-10T10:18:41.205019
+syracuse_ut,UT00612,Syracuse,UT,https://syracuseut.gov/,80,HTTP 200,2026-01-10T10:18:42.512103
+tampa_fl,FL02902,Tampa,FL,,0,,2026-01-10T10:18:46.550468
+taylor_county_ga,GA13300,Taylor County,GA,https://taylorsheriff.org/,60,HTTP 200,2026-01-10T10:18:51.573341
+taylorsville_ut,UT01839,Taylorsville,UT,,0,,2026-01-10T10:18:55.365534
+thomas_county_ga,GA13600,Thomas County,GA,,0,,2026-01-10T10:18:57.675836
+toledo_oh,OH04807,Toledo,OH,https://toledo.oh.gov/,80,HTTP 200,2026-01-10T10:18:58.198764
+tooele_county_ut,UT02300,Tooele County,UT,https://tooelecountysheriff.org/,60,HTTP 200,2026-01-10T10:19:01.207300
+troup_county_ga,GA14100,Troup County,GA,https://www.troupcountyga.gov/,80,HTTP 200,2026-01-10T10:19:03.220699
+tucson_az,AZ01003,Tucson,AZ,https://www.cityoftucson.org/,60,HTTP 200,2026-01-10T10:19:10.331567
+tulsa_ok,OK07205,Tulsa,OK,https://www.tulsapolice.org/,60,HTTP 200,2026-01-10T10:19:25.455098
+tyler_tx,TX21204,Tyler,TX,https://www.tylerpolice.org/,60,HTTP 200,2026-01-10T10:19:41.025587
+unified_pd,UT01800,Unified,PD,,0,,2026-01-10T10:19:42.687089
+union_city_ga,GA06006,Union City,GA,,0,,2026-01-10T10:19:44.700098
+utah_county_ut,UT02500,Utah County,UT,,0,,2026-01-10T10:19:46.820864
+utah_doc,,Utah Doc,,,0,,2026-01-10T10:19:48.185509
+utah_highway_patrol,UTUHP00,Utah Highway Patrol,,,0,,2026-01-10T10:19:49.769919
+utah_state_university,UT00316,Utah State University,,,0,,2026-01-10T10:19:51.130195
+valdosta_ga,GA09201,Valdosta,GA,,0,,2026-01-10T10:19:56.885771
+vidalia_ga,GA13802,Vidalia,GA,https://vidaliaga.gov/,80,HTTP 200,2026-01-10T10:19:58.043050
+virginia_beach_va,VA12800,Virginia Beach,VA,,0,,2026-01-10T10:20:00.596226
+virginia_mn,MN06914,Virginia,MN,,0,,2026-01-10T10:20:03.107272
+vt_state_police,VTVSP00,Vt State Police,,,0,,2026-01-10T10:20:04.481752
+waco_tx,TX15512,Waco,TX,,0,,2026-01-10T10:20:08.956641
+wadena_county_mn,MN08000,Wadena County,MN,,0,,2026-01-10T10:20:10.920363
+wadena_pd_mn,MN08001,Wadena Pd,MN,,0,,2026-01-10T10:20:12.928841
+walker_county_ga,GA14600,Walker County,GA,https://walkercountyga.gov/,80,HTTP 200,2026-01-10T10:20:15.158757
+walton_county_sheriff_ga,GA14700,Walton County Sheriff,GA,,0,,2026-01-10T10:20:17.189499
+warner_robins_ga,GA07602,Warner Robins,GA,,0,,2026-01-10T10:20:19.366652
+washington_county_mn_mn,MN08200,Washington County Mn,MN,,0,,2026-01-10T10:20:21.383810
+washington_dc,DCMPD00,Washington,DC,https://dc.gov,80,HTTP 200,2026-01-10T10:20:22.592537
+waycross_ga,GA14801,Waycross,GA,https://www.waycrossga.gov/,80,HTTP 200,2026-01-10T10:20:24.078743
+wayne_county_ga,GA15100,Wayne County,GA,,0,,2026-01-10T10:20:31.688263
+weber_county_ut,UT02900,Weber County,UT,,0,,2026-01-10T10:20:33.825204
+west_bountiful_ut,UT00609,West Bountiful,UT,,0,,2026-01-10T10:20:35.861385
+west_jordan_ut,UT01806,West Jordan,UT,,0,,2026-01-10T10:20:38.571034
+west_st_paul_mn,MN01907,West St Paul,MN,,0,,2026-01-10T10:20:40.811562
+west_valley_city_ut,UT01825,West Valley City,UT,,0,,2026-01-10T10:20:43.774428
+wheeler_county_ga,GA15300,Wheeler County,GA,,0,,2026-01-10T10:20:46.020611
+white_earth_reservation_mn,MNDI019,White Earth Reservation,MN,,0,,2026-01-10T10:20:48.015629
+whitfield_county_ga,GA15500,Whitfield County,GA,https://www.whitfieldcountyga.gov/,80,HTTP 200,2026-01-10T10:20:50.173434
+wichita_falls_tx,TX24305,Wichita Falls,TX,,0,,2026-01-10T10:20:52.234520
+wichita_ks,KS08703,Wichita,KS,,0,,2026-01-10T10:21:13.098761
+willard_ut,UT00208,Willard,UT,https://www.cityofwillard.org/,40,HTTP 200,2026-01-10T10:21:17.893252
+winona_county_mn,MN08500,Winona County,MN,,0,,2026-01-10T10:21:19.848259
+winston_salem_nc,NC03402,Winston Salem,NC,,0,,2026-01-10T10:21:29.753406
+woodbury_mn,MN08211,Woodbury,MN,https://www.woodburymn.gov/,80,HTTP 200,2026-01-10T10:21:31.629004
+woods_cross_ut,UT00610,Woods Cross,UT,,0,,2026-01-10T10:21:33.906889
+woodstock_ga,GA02805,Woodstock,GA,http://www.woodstockga.gov/,80,HTTP 200,2026-01-10T10:21:35.114391
+worth_county_ga,GA15900,Worth County,GA,,0,,2026-01-10T10:21:37.406192
+wright_county_mn,MN08600,Wright County,MN,https://www.wrightcountymn.gov/,80,HTTP 200,2026-01-10T10:21:39.669672
+zumbrota_mn,MN02508,Zumbrota,MN,,0,,2026-01-10T10:21:41.781993

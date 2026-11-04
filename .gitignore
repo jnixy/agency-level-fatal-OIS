@@ -1,2 +1,12 @@
 .Rhistory
-.gitattributes
+.Rproj.user
+*.log
+# Local working notes (plans, session logs, review scratch) stay off GitHub
+quality_reports/
+# Superseded local folder (raw FE xlsx, old script with local paths)
+fatal_encounters_merge/
+# ICPSR terms of use forbid redistributing the LEAIC (see data/README.md)
+*.rda
+*.xlsx
+# Fatal Encounters is linked, not redistributed (see data/README.md)
+data/raw/fatal_encounters.csv

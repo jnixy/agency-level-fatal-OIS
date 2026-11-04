@@ -1,0 +1,9 @@
+measure,value
+"Qualifying FE deaths, 2000-2021",18838
+  single-agency,17525
+  multi-agency,1306
+  no agency listed,7
+Deaths linked to >= 1 repo agency,16763
+Agency-death links (multi-agency deaths count per agency),17636
+Distinct FE agency names linked,3038
+ORI7 agencies with FE counts (incl. reviewed zeros),2971

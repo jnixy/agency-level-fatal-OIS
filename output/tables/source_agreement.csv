@@ -1,0 +1,8 @@
+comparison,years,agencies,agency_years,total_a,total_b,pct_diff_total,correlation,mean_abs_diff,share_exact,agency_years_nonzero,share_exact_nonzero
+Hand-built vs WaPo,2015-2022,366,2641,2559,2457,-3.986,0.945,0.087,0.952,970,0.868
+Hand-built vs FE,2000-2021,409,5559,4757,4713,-0.925,0.902,0.184,0.912,1593,0.694
+WaPo vs FE (hand-built agencies),2015-2021,410,2870,2295,2511,9.412,0.972,0.128,0.901,987,0.712
+Hand-built vs WaPo (common support),2015-2021,366,2419,2288,2191,-4.24,0.942,0.086,0.952,867,0.865
+Hand-built vs FE (common support),2015-2021,366,2419,2288,2394,4.633,0.93,0.166,0.89,900,0.703
+WaPo vs FE (common support),2015-2021,366,2419,2191,2394,9.265,0.973,0.137,0.897,895,0.722
+WaPo vs FE (all linked agencies),2015-2021,2907,20349,6672,7163,7.359,0.956,0.059,0.948,4944,0.784

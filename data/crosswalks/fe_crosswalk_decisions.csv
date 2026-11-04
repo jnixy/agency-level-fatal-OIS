@@ -1,0 +1,92 @@
+ori7,state,fe_agency_name,decision,note
+KS10502,KS,Kansas City (KS) Police Department,accept,Kansas City KS PD (state in parentheses)
+MOSPD00,MO,St. Louis Metropolitan Police Department,accept,City of St. Louis PD (SLMPD)
+MO09500,MO,St. Louis Metropolitan Police Department,reject,SLMPD is the city department; not St. Louis County PD
+KY05680,KY,Louisville Metro Police Department,accept,LMPD
+KY05680,KY,Louisville Metropolitan Police Department,accept,LMPD spelling variant
+GAGSP00,GA,Georgia State Patrol,accept,FE uses Georgia State Patrol; WaPo/key say Georgia State Police
+GA10604,GA,Columbus State University Campus Police Department,accept,Name variant
+GA08902,GA,Midway Police Department,accept,Name variant (Dept. vs Department)
+GA03101,GA,Clayton Police Department,reject,Death in Clayton city (Rabun Co.); not Clayton County PD
+MN00207,MN,Lino Lakes Public Safety Department,accept,Lino Lakes PD operates as Public Safety Department
+MN06206,MN,New Brighton Police Department,accept,New Brighton Dept of Public Safety
+MN08211,MN,Woodbury Public Safety Department,accept,Woodbury PD operates as Public Safety Department
+NB02802,NE,Omaha Police Department',accept,FE typo (trailing apostrophe)
+PA02202,PA,Harrisburg Police Bureau,accept,Name variant
+MI39499,MI,Kalamazoo Public Safety,accept,Kalamazoo Dept of Public Safety (city)
+MI39500,MI,Kalamazoo Public Safety,reject,City DPS; not Kalamazoo Township PD
+FL01300,FL,Miami-Dade County Police Department,accept,Name variant
+PA02304,PA,Chester Township Police Department,reject,Township; target is Chester City PD
+PA06702,PA,York City Police Department,accept,Name variant
+HI00100,HI,Hawaii Department of Public Safety,reject,State DPS; target is Hawaii County PD
+MO09203,MO,St. Charles County Police Department,reject,County PD; target is St. Charles city PD
+NJ00805,NJ,Franklin Township Police Department,reject,FE name covers two NJ Franklin Townships (Gloucester and Somerset); cannot split by name
+NJ01808,NJ,Franklin Township Police Department,reject,FE name covers two NJ Franklin Townships (Gloucester and Somerset); cannot split by name
+OH03134,OH,Springfield Police Department,reject,City of Springfield (Clark Co.); not Springfield Township
+OH03134,OH,Springfield Police Division,reject,City of Springfield (Clark Co.); not Springfield Township
+OH05707,OH,Miami Township Police Department,accept,All FE deaths under this name are in Miamisburg (Montgomery Co.)
+OH01315,OH,Miami Township Police Department,reject,FE deaths are in Montgomery Co.; this is the Clermont Co. township
+PA04013,PA,Wilkes-Barre City Police Department,accept,Name variant
+AZ01502,AZ,Colorado River Tribal Police Department,accept,Name variant
+MI25398,MI,Flint Township Police Department,reject,Township; target is Flint PD
+TX00000,TX,Texas City Police Department,reject,City PD; not Texas DPS
+CA03600,CA,San Bernardino Sheriff's Department,accept,Name variant (County omitted)
+CA04000,CA,San Luis Obispo Sheriff's Office,accept,Name variant (County omitted)
+FL01312,FL,Opa-locka Police Department,accept,Name variant
+FL05500,FL,St. Johns Sheriff's Office,accept,Name variant (County omitted)
+IADPS00,IA,Iowa City Police Department,reject,City PD; not Iowa DPS
+IL05900,IL,Macoupin County County Sheriff's Office,accept,FE typo (County County)
+MD01604,MD,Montgomery County Department of Police,accept,Name variant
+MI33519,MI,Lansing Township Police Department,reject,Township; target is Lansing PD
+MI38890,MI,Blackman Township Department of Public Safety,accept,Name variant
+MI38890,MI,Blackman Township Police Department,accept,Name variant
+MI63628,MI,Oak Park Department of Public Safety,accept,Name variant
+MI73717,MI,Saginaw Township Police Department,reject,Township; target is Saginaw PD
+MO01004,MO,University of Missouri Police Department,accept,Name variant
+MO10106,MO,Sikeston Department of Public Safety,accept,Name variant
+MT04701,MT,Butte-Silver Bow County Sheriff's Office,accept,Name variant
+NJ00122,NJ,Ventnor City Police Department,accept,Name variant
+NJ00810,NJ,Mantua Police Department,accept,Mantua is a township; name variant
+NJ01319,NJ,Howell Police Department,accept,Howell is a township; name variant
+NJ01810,NJ,Hillsborough Police Department,accept,Hillsborough is a township; name variant
+NM02901,NM,Taos Pueblo Department of Public Safety,accept,Name variant
+OH00901,OH,Fairfield Township Police Department,reject,Township; target is Fairfield city PD
+OH04802,OH,Oregon Police Division,accept,Name variant
+OR02618,OR,Portland State University Department of Public Safety,accept,Name variant
+PA00913,PA,Northampton Police Department,accept,Death in Holland (Bucks Co.); Northampton Township
+PA05114,PA,Philadelphia Housing Authority Police Department,accept,Name variant
+SC03202,SC,Cayce Department of Public Safety,accept,Name variant
+TN03306,TN,Soddy-Daisy Police Department,accept,Name variant
+WI00508,WI,Ashwaubenon Department of Public Safety,accept,Name variant
+WI03100,WI,Kewaunee County County Sheriff's Office,accept,FE typo (County County)
+WI04504,WI,Fox Valley Metro Police Department,accept,Death in Kaukauna (Outagamie Co.); Fox Valley Metro PD
+MN01106,MN,,none_found,No qualifying FE deaths under any Backus name (searched 2026-11-04)
+MN04302,MN,,none_found,No qualifying FE deaths under any Hutchinson name
+MN02107,MN,,none_found,No qualifying FE deaths under any Miltona name
+MN05600,MN,,none_found,No qualifying FE deaths under any Otter Tail name
+MN06300,MN,,none_found,Red Lake County SO; FE's Red Lake Police Department is the tribal PD (Beltrami Co.)
+MN07200,MN,,none_found,No qualifying FE deaths under any Sibley name
+MN08600,MN,,none_found,No qualifying FE deaths under any Wright County name
+UT02911,UT,,none_found,No qualifying FE deaths under any Pleasant View name
+LANPD00,LA,New Orleans Police Department,accept,NOPD; other same-name LEAIC ORIs are NOPD reporting sub-units
+MEMSP00,ME,Maine State Police,accept,Other same-name LEAIC ORIs are MSP units
+PA001SP,PA,Pennsylvania State Police,accept,Statewide agency; LEAIC lists one ORI per troop
+MI01001,MI,Michigan State Police,accept,Statewide agency; LEAIC lists one ORI per post
+WV001SP,WV,West Virginia State Police,accept,Statewide agency; LEAIC lists one ORI per detachment
+NY11304,NY,New York State Police,accept,Statewide agency; LEAIC lists one ORI per troop
+OR001SP,OR,Oregon State Police,accept,Statewide agency; LEAIC lists one ORI per post
+WA01700,WA,King County Sheriff's Office,accept,WAKCS ORIs are KCSO units
+IL00106,IL,Illinois State Police,accept,Statewide agency; LEAIC lists one ORI per district
+OHOHP00,OH,Ohio State Highway Patrol,accept,Statewide agency
+WAWSP00,WA,Washington State Patrol,accept,Statewide agency
+RI00408,RI,Pawtucket Police Department,accept,RI10408 is a Pawtucket PD sub-unit (same county)
+RI00400,RI,Providence Police Department,accept,Other same-name ORIs are Providence PD sub-units
+SC001AB,SC,South Carolina Law Enforcement Division,accept,Statewide agency (SLED)
+CT00051,CT,Fairfield Police Department,accept,Death in Fairfield; CT001SP is a duplicate LEAIC record
+OH01316,OH,Union Township Police Department,accept,Death in Union Twp (Clermont Co.) = OH01316; not Licking Co.
+OH02535,OH,Madison Township Police Department,accept,Death in Groveport (Franklin Co.) = OH02535; not Lake Co.
+OH03134,OH,Springfield Township Police Department,accept,Death in Hamilton Co. = OH03134; not Mahoning or Summit
+OH08310,OH,Hamilton Township Police Department,accept,Death in Loveland (Warren Co.) = OH08310; not Franklin Co.
+OH00902,OH,Hamilton Township Police Department,reject,Township; target is Hamilton city PD
+PA01908,PA,Scott Township Police Department,accept,Death in Bloomsburg (Columbia Co.) = PA01908
+PA04601,PA,Abington Township Police Department,accept,Death in Elkins Park (Montgomery Co.) = PA04601; not Lackawanna
