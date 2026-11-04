@@ -8,6 +8,9 @@ authors:
     affiliation: "University of Nebraska Omaha"
 repository-code: "https://github.com/jnixy/agency-level-fatal-OIS"
 date-released: 2026-11-04
+license:
+  - CC-BY-NC-SA-4.0
+  - MIT
 keywords:
   - police use of force
   - officer-involved shootings

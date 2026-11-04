@@ -53,9 +53,8 @@ AL02906,AL,Millbrook Police Department,exact,,2,2
 AL03100,AL,Etowah County Sheriff's Office,exact,,4,2
 AL03102,AL,Gadsden Police Department,exact,,3,2
 AL03105,AL,Rainbow City Police Department,exact,,2,2
-AL03400,AL,Geneva County Sheriff's Office,exact,,1,2
 AL03700,AL,Henry County Sheriff's Office,exact,,1,2
-AL03800,AL,Houston County Sheriff's Office,exact,,4,2
+AL03800,AL,Houston County Sheriff's Office,exact,,3,2
 AL03801,AL,Dothan Police Department,exact,,6,2
 AL03900,AL,Jackson County Sheriff's Office,exact,,1,2
 AL04100,AL,Lauderdale County Sheriff's Office,exact,,4,2
@@ -71,7 +70,7 @@ AL04701,AL,Huntsville Police Department,exact,,21,2
 AL04702,AL,Madison Police Department,exact,,1,2
 AL04801,AL,Demopolis Police Department,exact,,1,2
 AL04901,AL,Hamilton Police Department,exact,,1,2
-AL05000,AL,Marshall County Sheriff's Office,exact,,4,2
+AL05000,AL,Marshall County Sheriff's Office,exact,,3,2
 AL05001,AL,Albertville Police Department,exact,,3,2
 AL05003,AL,Arab Police Department,exact,,1,2
 AL05200,AL,Morgan County Sheriff's Office,exact,,3,2
@@ -153,7 +152,7 @@ AR06301,AR,Benton Police Department,exact,,4,2
 AR06302,AR,Bryant Police Department,exact,,2,2
 AR06500,AR,Searcy County Sheriff's Office,exact,,2,2
 AR06600,AR,Sebastian County Sheriff's Office,exact,,1,2
-AR06601,AR,Fort Smith Police Department,exact,,6,2
+AR06601,AR,Fort Smith Police Department,exact,,5,2
 AR06900,AR,Stone County Sheriff's Office,exact,,1,2
 AR07000,AR,Union County Sheriff's Office,exact,,3,2
 AR07100,AR,Van Buren County Sheriff's Office,exact,,2,2
@@ -239,7 +238,7 @@ CA00109,CA,Oakland Police Department,exact,,50,1
 CA00111,CA,Pleasanton Police Department,exact,,3,2
 CA00112,CA,San Leandro Police Department,exact,,6,2
 CA00113,CA,Union City Police Department,exact,,4,2
-CA00198,CA,California Highway Patrol,exact,,149,2
+CA00198,CA,California Highway Patrol,exact,,148,2
 CA00400,CA,Butte County Sheriff's Office,exact,,15,2
 CA00402,CA,Chico Police Department,exact,,10,2
 CA00403,CA,Gridley Police Department,exact,,1,2
@@ -250,8 +249,8 @@ CA00700,CA,Contra Costa Sheriff's Office,exact,,2,2
 CA00701,CA,Antioch Police Department,exact,,12,2
 CA00704,CA,Concord Police Department,exact,,8,2
 CA00708,CA,Pittsburg Police Department,exact,,8,2
-CA00710,CA,Richmond Police Department,seed_reviewed,,10,2
-CA00711,CA,San Pablo Police Department,exact,,5,2
+CA00710,CA,Richmond Police Department,seed_reviewed,,9,2
+CA00711,CA,San Pablo Police Department,exact,,4,2
 CA00712,CA,Walnut Creek Police Department,exact,,3,2
 CA00714,CA,Martinez Police Department,exact,,3,2
 CA00723,CA,Danville Police Department,exact,,2,2
@@ -305,7 +304,7 @@ CA01931,CA,Huntington Park Police Department,exact,,6,2
 CA01933,CA,Inglewood Police Department,seed_reviewed,,25,2
 CA0193G,CA,Harbor Police Department,exact,,1,2
 CA01941,CA,Long Beach Police Department,seed_reviewed,,62,1
-CA01942,CA,Los Angeles Police Department,seed_reviewed,,380,1
+CA01942,CA,Los Angeles Police Department,seed_reviewed,,379,1
 CA01947,CA,Montebello Police Department,exact,,5,2
 CA01948,CA,Monterey Park Police Department,exact,,5,2
 CA01953,CA,Pasadena Police Department,exact,,12,2
@@ -346,7 +345,7 @@ CA03003,CA,Buena Park Police Department,exact,,4,2
 CA03004,CA,Costa Mesa Police Department,exact,,4,2
 CA03007,CA,Fountain Valley Police Department,exact,,5,2
 CA03008,CA,Fullerton Police Department,exact,,9,2
-CA03009,CA,Garden Grove Police Department,seed_reviewed,,20,2
+CA03009,CA,Garden Grove Police Department,seed_reviewed,,19,2
 CA03010,CA,Huntington Beach Police Department,exact,,14,2
 CA03012,CA,La Habra Police Department,exact,,6,2
 CA03014,CA,Newport Beach Police Department,exact,,3,2
@@ -391,7 +390,7 @@ CA03604,CA,Fontana Police Department,seed_reviewed,,24,2
 CA03607,CA,Ontario Police Department,seed_reviewed,,19,2
 CA03608,CA,Redlands Police Department,exact,,6,2
 CA03609,CA,Rialto Police Department,seed_reviewed,,13,2
-CA03610,CA,San Bernardino Police Department,seed_reviewed,,57,2
+CA03610,CA,San Bernardino Police Department,seed_reviewed,,56,2
 CA03630,CA,Highland Police Department,exact,,1,2
 CA03700,CA,San Diego County Sheriff's Office,exact,,50,1
 CA03702,CA,Chula Vista Police Department,seed_reviewed,,6,1
@@ -400,7 +399,7 @@ CA03706,CA,Escondido Police Department,exact,,14,2
 CA03708,CA,La Mesa Police Department,exact,,3,2
 CA03709,CA,National City Police Department,seed_reviewed,,5,2
 CA03710,CA,Oceanside Police Department,seed_reviewed,,11,2
-CA03711,CA,San Diego Police Department,exact,,95,1
+CA03711,CA,San Diego Police Department,exact,,94,1
 CA03711,CA,San Diego Police department,exact,,1,1
 CA03801,CA,San Francisco Police Department,seed_reviewed,,49,1
 CA03900,CA,San Joaquin County Sheriff's Office,seed_reviewed,,15,2
@@ -426,7 +425,7 @@ CA04302,CA,Campbell Police Department,exact,,1,2
 CA04304,CA,Gilroy Police Department,exact,,3,2
 CA04308,CA,Milpitas Police Department,exact,,2,2
 CA04312,CA,Palo Alto Police Department,exact,,2,2
-CA04313,CA,San Jose Police Department,seed_reviewed,,49,1
+CA04313,CA,San Jose Police Department,seed_reviewed,,47,1
 CA04314,CA,Santa Clara Police Department,exact,,9,2
 CA04316,CA,Sunnyvale Department of Public Safety,exact,,10,2
 CA04400,CA,Santa Cruz County Sheriff's Office,exact,,4,2
@@ -434,7 +433,7 @@ CA04402,CA,Santa Cruz Police Department,exact,,4,2
 CA04403,CA,Watsonville Police Department,exact,,2,2
 CA04500,CA,Shasta County Sheriff's Office,exact,,8,2
 CA04501,CA,Anderson Police Department,exact,,2,2
-CA04502,CA,Redding Police Department,exact,,23,2
+CA04502,CA,Redding Police Department,exact,,22,2
 CA04700,CA,Siskiyou County Sheriff's Office,exact,,6,2
 CA04803,CA,Fairfield Police Department,seed_reviewed,,7,2
 CA04806,CA,Vacaville Police Department,exact,,7,2
@@ -552,7 +551,7 @@ CT00135,CT,Stamford Police Department,seed_reviewed,,1,2
 CT00138,CT,Stratford Police Department,seed_reviewed,,2,2
 CT00139,CT,Suffield Police Department,exact,,1,2
 CT00140,CT,Thomaston Police Department,exact,,1,2
-CT00151,CT,Waterbury Police Department,exact,,4,2
+CT00151,CT,Waterbury Police Department,exact,,3,2
 CT00159,CT,Wethersfield Police Department,exact,,4,2
 CTCSP00,CT,Connecticut State Police,exact,,16,2
 DCMPD00,DC,Washington Metropolitan Police Department,exact,,63,1
@@ -618,7 +617,7 @@ FL02300,FL,Gulf County Sheriff's Office,exact,,1,2
 FL02400,FL,Hamilton County Sheriff's Office,exact,,1,2
 FL02700,FL,Hernando County Sheriff's Office,exact,,20,2
 FL02800,FL,Highlands County Sheriff's Office,exact,,7,2
-FL02900,FL,Hillsborough County Sheriff's Office,seed_reviewed,,43,1
+FL02900,FL,Hillsborough County Sheriff's Office,seed_reviewed,,39,1
 FL02901,FL,Plant City Police Department,exact,,3,2
 FL02902,FL,Tampa Police Department,exact,,28,1
 FL02903,FL,Temple Terrace Police Department,exact,,1,2
@@ -645,7 +644,7 @@ FL04500,FL,Nassau County Sheriff's Office,seed_reviewed,,10,2
 FL04501,FL,Fernandina Beach Police Department,exact,,1,2
 FL04600,FL,Okaloosa County Sheriff's Office,seed_reviewed,,4,2
 FL04602,FL,Fort Walton Beach Police Department,exact,,1,2
-FL04800,FL,Orange County Sheriff's Office,exact,,50,2
+FL04800,FL,Orange County Sheriff's Office,exact,,49,2
 FL04804,FL,Orlando Police Department,seed_reviewed,,30,1
 FL04806,FL,Winter Park Police Department,exact,,1,2
 FL04900,FL,Osceola County Sheriff's Office,seed_reviewed,,6,2
@@ -679,13 +678,13 @@ FL05700,FL,Santa Rosa County Sheriff's Office,exact,,6,2
 FL05800,FL,Sarasota County Sheriff's Office,exact,,5,2
 FL05801,FL,Sarasota Police Department,exact,,8,2
 FL05803,FL,North Port Police Department,exact,,4,2
-FL05900,FL,Seminole County Sheriff's Office,seed_reviewed,,8,2
+FL05900,FL,Seminole County Sheriff's Office,seed_reviewed,,7,2
 FL05901,FL,Altamonte Springs Police Department,seed_reviewed,,2,2
 FL05902,FL,Casselberry Police Department,exact,,1,2
 FL05905,FL,Sanford Police Department,seed_reviewed,,1,2
 FL06000,FL,Sumter County Sheriff's Office,seed_reviewed,,4,2
 FL06200,FL,Taylor County Sheriff's Office,exact,,1,2
-FL06400,FL,Volusia County Sheriff's Office,seed_reviewed,,21,2
+FL06400,FL,Volusia County Sheriff's Office,seed_reviewed,,20,2
 FL06401,FL,Daytona Beach Police Department,exact,,5,2
 FL06402,FL,DeLand Police Department,exact,,3,2
 FL06404,FL,Ormond Beach Police Department,exact,,1,2
@@ -760,7 +759,7 @@ GA04405,GA,Clarkston Police Department,exact,,1,1
 GA04408,GA,Pine Lake Police Department,exact,,1,1
 GA04471,GA,Dunwoody Police Department,exact,,2,1
 GA04472,GA,Brookhaven Police Department,exact,,1,2
-GA04701,GA,Albany Police Department,seed_reviewed,,4,1
+GA04701,GA,Albany Police Department,seed_reviewed,,3,1
 GA04800,GA,Douglas County Sheriff's Office,exact,,8,1
 GA04801,GA,Douglasville Police Department,exact,,5,1
 GA04900,GA,Early County Sheriff's Office,exact,,1,1
@@ -873,7 +872,7 @@ GA15901,GA,Sylvester Police Department,exact,,1,2
 GAAPD00,GA,Atlanta Police Department,exact,,73,1
 GAGSP00,GA,Georgia State Patrol,manual,FE uses Georgia State Patrol; WaPo/key say Georgia State Police,28,1
 GAUSM01,GA,U.S. Marshals Service,exact,,7,2
-HI00100,HI,Hawaii Police Department,seed_reviewed,,13,2
+HI00100,HI,Hawaii Police Department,seed_reviewed,,12,2
 HI00100,HI,Hawaii County Police Department,seed_reviewed,LEMAS names the Hawaii County police 'Hawaii Police Department',3,2
 HI00200,HI,Honolulu Police Department,exact,,40,1
 HI00500,HI,Maui Police Department,exact,,7,2
@@ -943,7 +942,7 @@ ID04202,ID,Twin Falls Police Department,exact,,3,2
 IDISP00,ID,Idaho State Police,exact,,9,2
 IL00103,IL,Quincy Police Department,exact,,1,2
 IL00106,IL,Illinois State Police,manual,Statewide agency; LEAIC lists one ORI per district,15,2
-IL01001,IL,Champaign Police Department,exact,,3,2
+IL01001,IL,Champaign Police Department,exact,,2,2
 IL01609,IL,Berwyn Police Department,exact,,1,2
 IL01610,IL,Blue Island Police Department,exact,,1,2
 IL01611,IL,Bridgeview Police Department,exact,,1,2
@@ -1019,7 +1018,7 @@ IL10001,IL,Carterville Police Department,exact,,1,2
 IL10004,IL,Marion Police Department,exact,,1,2
 IL10100,IL,Winnebago County Sheriff's Office,seed_reviewed,,2,2
 IL10104,IL,Rockford Police Department,exact,,14,2
-ILCPD00,IL,Chicago Police Department,seed_reviewed,,275,1
+ILCPD00,IL,Chicago Police Department,seed_reviewed,,273,1
 ILUSM01,IL,U.S. Marshals Service,exact,,6,2
 IN00201,IN,Fort Wayne Police Department,exact,,20,1
 IN00900,IN,Cass County Sheriff's Office,exact,,1,2
@@ -1054,7 +1053,6 @@ IN04505,IN,Gary Police Department,seed_reviewed,,14,2
 IN04513,IN,Dyer Police Department,exact,,2,2
 IN04514,IN,Merrillville Police Department,exact,,3,2
 IN04700,IN,Lawrence County Sheriff's Office,exact,,1,2
-IN04701,IN,Bedford Police Department,exact,,1,2
 IN04702,IN,Mitchell Police Department,exact,,1,2
 IN04802,IN,Anderson Police Department,seed_reviewed,,2,2
 IN04901,IN,Beech Grove Police Department,exact,,1,2
@@ -1239,9 +1237,9 @@ LA05100,LA,St. Mary Parish Sheriff's Office,exact,,3,2
 LA05200,LA,St. Tammany Parish Sheriff's Office,exact,,10,2
 LA05202,LA,Slidell Police Department,exact,,3,2
 LA05203,LA,Mandeville Police Department,exact,,1,2
-LA05300,LA,Tangipahoa Parish Sheriff's Office,exact,,7,2
+LA05300,LA,Tangipahoa Parish Sheriff's Office,exact,,6,2
 LA05500,LA,Terrebonne Parish Sheriff's Office,exact,,9,2
-LA05501,LA,Houma Police Department,exact,,5,2
+LA05501,LA,Houma Police Department,exact,,4,2
 LA05600,LA,Union Parish Sheriff's Office,exact,,1,2
 LA05700,LA,Vermilion Parish Sheriff's Office,exact,,1,2
 LA05800,LA,Vernon Parish Sheriff's Office,exact,,3,2
@@ -1282,7 +1280,7 @@ MA01446,MA,Spencer Police Department,exact,,1,2
 MA01454,MA,Webster Police Department,exact,,1,2
 MA01457,MA,Westborough Police Department,exact,,1,2
 MA01460,MA,Worcester Police Department,exact,,1,2
-MD00202,MD,Anne Arundel County Police Department,exact,,13,2
+MD00202,MD,Anne Arundel County Police Department,exact,,12,2
 MD00301,MD,Baltimore County Police Department,seed_reviewed,,58,2
 MD00410,MD,Coppin State University Police Department,exact,,1,2
 MD00800,MD,Cecil County Sheriff's Office,exact,,2,2
@@ -1333,7 +1331,7 @@ MI09239,MI,Bay City Police Department,exact,,1,2
 MI11111,MI,Berrien County Sheriff's Office,exact,,2,2
 MI11248,MI,Benton Harbor Police Department,exact,,2,2
 MI11249,MI,Benton Township Police Department,exact,,1,2
-MI13113,MI,Calhoun County Sheriff's Office,exact,,5,2
+MI13113,MI,Calhoun County Sheriff's Office,exact,,3,2
 MI13237,MI,Battle Creek Police Department,exact,,7,2
 MI15115,MI,Charlevoix County Sheriff's Office,exact,,1,2
 MI16116,MI,Cheboygan County Sheriff's Office,exact,,1,2
@@ -1373,7 +1371,7 @@ MI63628,MI,Oak Park Department of Public Safety,manual,Name variant,1,2
 MI63714,MI,Royal Oak Police Department,exact,,3,2
 MI63751,MI,Southfield Police Department,exact,,4,2
 MI63784,MI,Troy Police Department,seed_reviewed,,1,2
-MI63808,MI,Waterford Township Police Department,exact,,5,2
+MI63808,MI,Waterford Township Police Department,exact,,3,2
 MI63815,MI,West Bloomfield Police Department,exact,,1,2
 MI69169,MI,Otsego County Sheriff's Office,exact,,1,2
 MI70170,MI,Ottawa County Sheriff's Office,exact,,3,2
@@ -1385,7 +1383,7 @@ MI80180,MI,Van Buren County Sheriff's Office,exact,,1,2
 MI82182,MI,Wayne County Sheriff's Office,exact,,7,2
 MI82343,MI,Dearborn Police Department,seed_reviewed,,7,2
 MI82344,MI,Dearborn Heights Police Department,exact,,5,2
-MI82349,MI,Detroit Police Department,exact,,77,1
+MI82349,MI,Detroit Police Department,exact,,74,1
 MI82420,MI,Garden City Police Department,exact,,3,2
 MI82538,MI,Livonia Police Department,seed_reviewed,,2,2
 MI82709,MI,Romulus Police Department,exact,,2,2
@@ -1583,7 +1581,7 @@ MS01703,MS,Hernando Police Department,exact,,1,2
 MS01704,MS,Horn Lake Police Department,exact,,2,2
 MS01801,MS,Hattiesburg Police Department,exact,,4,2
 MS01802,MS,Petal Police Department,exact,,1,2
-MS02000,MS,George County Sheriff's Office,exact,,4,2
+MS02000,MS,George County Sheriff's Office,exact,,3,2
 MS02200,MS,Grenada County Sheriff's Office,exact,,1,2
 MS02300,MS,Hancock County Sheriff's Office,exact,,3,2
 MS02302,MS,Bay St. Louis Police Department,exact,,1,2
@@ -1609,7 +1607,7 @@ MS04101,MS,Tupelo Police Department,exact,,5,2
 MS04300,MS,Lincoln County Sheriff's Office,exact,,2,2
 MS04301,MS,Brookhaven Police Department,exact,,1,2
 MS04400,MS,Lowndes County Sheriff's Office,exact,,4,2
-MS04401,MS,Columbus Police Department,exact,,4,2
+MS04401,MS,Columbus Police Department,exact,,3,2
 MS04500,MS,Madison County Sheriff's Office,exact,,5,2
 MS04504,MS,Madison Police Department,exact,,1,2
 MS04600,MS,Marion County Sheriff's Office,exact,,2,2
@@ -1727,7 +1725,7 @@ NC03605,NC,Gaston County Police Department,seed_reviewed,,3,2
 NC03606,NC,Gastonia Police Department,seed_reviewed,,6,2
 NC03609,NC,Mount Holly Police Department,exact,,2,2
 NC03800,NC,Graham County Sheriff's Office,exact,,1,2
-NC03900,NC,Granville County Sheriff's Office,exact,,2,2
+NC03900,NC,Granville County Sheriff's Office,exact,,1,2
 NC04100,NC,Guilford County Sheriff's Office,seed_reviewed,,7,2
 NC04102,NC,Greensboro Police Department,exact,,13,1
 NC04103,NC,High Point Police Department,seed_reviewed,,5,2
@@ -1830,7 +1828,7 @@ NJ00112,NJ,Hamilton Township Police Department,exact,,1,2
 NJ00119,NJ,Pleasantville Police Department,exact,,1,2
 NJ00122,NJ,Ventnor City Police Department,manual,Name variant,1,2
 NJ00122,NJ,Ventnor Police Department,exact,,1,2
-NJ001SP,NJ,New Jersey State Police,exact,,22,2
+NJ001SP,NJ,New Jersey State Police,exact,,21,2
 NJ00219,NJ,Fort Lee Police Department,exact,,1,2
 NJ00223,NJ,Hackensack Police Department,seed_reviewed,,4,2
 NJ00232,NJ,Lyndhurst Police Department,exact,,2,2
@@ -1852,7 +1850,7 @@ NJ00802,NJ,Deptford Township Police Department,exact,,2,2
 NJ00810,NJ,Mantua Police Department,manual,Mantua is a township; name variant,1,2
 NJ00810,NJ,Mantua Township Police Department,exact,,1,2
 NJ00901,NJ,Bayonne Police Department,seed_reviewed,,2,2
-NJ00906,NJ,Jersey City Police Department,seed_reviewed,,16,1
+NJ00906,NJ,Jersey City Police Department,seed_reviewed,,15,1
 NJ00908,NJ,North Bergen Police Department,exact,,3,2
 NJ00909,NJ,Secaucus Police Department,exact,,1,2
 NJ01103,NJ,Hamilton Police Department,exact,,3,2
@@ -1909,7 +1907,7 @@ NM01902,NM,Tularosa Police Department,exact,,2,2
 NM02000,NM,Quay County Sheriff's Office,exact,,1,2
 NM02101,NM,Espanola Police Department,exact,,2,2
 NM02300,NM,Sandoval County Sheriff's Office,exact,,1,2
-NM02301,NM,Bernalillo Police Department,exact,,2,2
+NM02301,NM,Bernalillo Police Department,exact,,1,2
 NM02306,NM,Rio Rancho Department of Public Safety,exact,,3,2
 NM02400,NM,San Juan County Sheriff's Office,exact,,5,2
 NM02402,NM,Farmington Police Department,seed_reviewed,,8,2
@@ -1960,7 +1958,7 @@ NY02500,NY,Livingston County Sheriff's Office,exact,,1,2
 NY02700,NY,Monroe County Sheriff's Office,seed_reviewed,,1,2
 NY02701,NY,Rochester Police Department,exact,,12,2
 NY02754,NY,Greece Police Department,exact,,2,2
-NY02900,NY,Nassau County Police Department,exact,,13,2
+NY02900,NY,Nassau County Police Department,exact,,12,2
 NY03030,NY,City of New York Police Department,seed_reviewed,,248,1
 NY03202,NY,Utica Police Department,exact,,1,2
 NY03300,NY,Onondaga County Sheriff's Office,exact,,6,2
@@ -2039,7 +2037,6 @@ OH04000,OH,Jackson County Sheriff's Office,exact,,1,2
 OH04300,OH,Lake County Sheriff's Office,exact,,3,2
 OH04312,OH,Willoughby Police Department,exact,,1,2
 OH04400,OH,Lawrence County Sheriff's Office,exact,,1,2
-OH04500,OH,Licking County Sheriff's Office,exact,,1,2
 OH04700,OH,Lorain County Sheriff's Office,exact,,3,2
 OH04704,OH,Elyria Police Department,exact,,3,2
 OH04705,OH,Lorain Police Department,exact,,1,2
@@ -2071,7 +2068,6 @@ OH07000,OH,Richland County Sheriff's Office,exact,,2,2
 OH07001,OH,Mansfield Police Department,exact,,6,2
 OH07002,OH,Ontario Police Department,exact,,1,2
 OH07004,OH,Shelby Police Department,exact,,1,2
-OH07100,OH,Ross County Sheriff's Office,exact,,1,2
 OH07402,OH,Tiffin Police Department,exact,,2,2
 OH07604,OH,Canton Police Department,exact,,3,2
 OH07625,OH,Uniontown Police Department,exact,,1,2
@@ -2190,7 +2186,7 @@ OK07500,OK,Washita County Sheriff's Office,exact,,1,2
 OKDI006,OK,Choctaw Nation Tribal Police Department,exact,,2,2
 OKOHP00,OK,Oklahoma Highway Patrol,exact,,41,2
 OKUSM01,OK,U.S. Marshals Service,exact,,8,2
-OR001SP,OR,Oregon State Police,manual,Statewide agency; LEAIC lists one ORI per post,33,2
+OR001SP,OR,Oregon State Police,manual,Statewide agency; LEAIC lists one ORI per post,32,2
 OR00201,OR,Corvallis Police Department,exact,,2,2
 OR00300,OR,Clackamas County Sheriff's Office,exact,,24,2
 OR00307,OR,Oregon City Police Department,exact,,1,2
@@ -2204,7 +2200,7 @@ OR00900,OR,Deschutes County Sheriff's Office,exact,,3,2
 OR00901,OR,Bend Police Department,exact,,3,2
 OR01000,OR,Douglas County Sheriff's Office,exact,,4,2
 OR01005,OR,Roseburg Police Department,exact,,2,2
-OR01500,OR,Jackson County Sheriff's Office,exact,,6,2
+OR01500,OR,Jackson County Sheriff's Office,exact,,5,2
 OR01504,OR,Medford Police Department,seed_reviewed,,7,2
 OR01700,OR,Josephine County Sheriff's Office,exact,,7,2
 OR01701,OR,Grants Pass Department of Public Safety,exact,,4,2
@@ -2240,7 +2236,7 @@ OR03406,OR,Sherwood Police Department,exact,,1,2
 OR03412,OR,Tualatin Police Department,exact,,4,2
 OR03600,OR,Yamhill County Sheriff's Office,exact,,3,2
 OR03601,OR,McMinnville Police Department,exact,,1,2
-PA001SP,PA,Pennsylvania State Police,manual,Statewide agency; LEAIC lists one ORI per troop,107,2
+PA001SP,PA,Pennsylvania State Police,manual,Statewide agency; LEAIC lists one ORI per troop,106,2
 PA00200,PA,Allegheny County Sheriff's Office,exact,,2,2
 PA00201,PA,Baldwin Borough Police Department,exact,,1,2
 PA00210,PA,Forest Hills Borough Police Department,exact,,1,2
@@ -2297,7 +2293,7 @@ PA06700,PA,York County Sheriff's Office,exact,,4,2
 PA06702,PA,York City Police Department,manual,Name variant,4,2
 PA06709,PA,West Manchester Township Police Department,exact,,3,2
 PA06715,PA,Northern York County Regional Police Department,seed_reviewed,,4,2
-PAPEP00,PA,Philadelphia Police Department,seed_reviewed,,176,1
+PAPEP00,PA,Philadelphia Police Department,seed_reviewed,,175,1
 PAPPD00,PA,Pittsburgh Bureau of Police,seed_reviewed,,32,1
 PAUSM01,PA,U.S. Marshals Service,exact,,9,2
 RI00203,RI,Warwick Police Department,seed_reviewed,,1,2
@@ -2388,7 +2384,7 @@ TN01602,TN,Tullahoma Police Department,exact,,1,2
 TN01700,TN,Crockett County Sheriff's Office,exact,,3,2
 TN01704,TN,Maury City Police Department,exact,,1,2
 TN01800,TN,Cumberland County Sheriff's Office,exact,,4,2
-TN01901,TN,Metropolitan Nashville Police Department,seed_reviewed,,37,1
+TN01901,TN,Metropolitan Nashville Police Department,seed_reviewed,,36,1
 TN01901,TN,Metro Nashville Police Department,seed_reviewed,,1,1
 TN02000,TN,Decatur County Sheriff's Office,exact,,1,2
 TN02100,TN,DeKalb County Sheriff's Department,exact,,1,2
@@ -2481,7 +2477,7 @@ TN09501,TN,Lebanon Police Department,exact,,2,2
 TNMPD00,TN,Memphis Police Department,seed_reviewed,,69,1
 TNTHP01,TN,Tennessee Highway Patrol,exact,,7,2
 TNUSM01,TN,U.S. Marshals Service,exact,,8,2
-TX00000,TX,Texas Department of Public Safety,exact,,71,2
+TX00000,TX,Texas Department of Public Safety,exact,,70,2
 TX00101,TX,Palestine Police Department,exact,,2,2
 TX00300,TX,Angelina County Sheriff's Office,exact,,2,2
 TX00304,TX,Lufkin Police Department,exact,,4,2
@@ -2660,7 +2656,7 @@ TX21204,TX,Tyler Police Department,seed_reviewed,,6,1
 TX21205,TX,Whitehouse Police Department,exact,,1,2
 TX21208,TX,Tyler Junior College Police Department,exact,,1,2
 TX22000,TX,Tarrant County Sheriff's Office,exact,,2,2
-TX22001,TX,Arlington Police Department,exact,,17,1
+TX22001,TX,Arlington Police Department,exact,,16,1
 TX22002,TX,Azle Police Department,exact,,1,2
 TX22003,TX,Bedford Police Department,exact,,1,2
 TX22009,TX,Euless Police Department,exact,,2,2
@@ -2669,7 +2665,7 @@ TX22012,TX,Fort Worth Police Department,seed_reviewed,,45,1
 TX22013,TX,Grapevine Police Department,exact,,3,2
 TX22016,TX,Hurst Police Department,exact,,1,2
 TX22019,TX,Lake Worth Police Department,exact,,1,2
-TX22024,TX,Saginaw Police Department,exact,,2,2
+TX22024,TX,Saginaw Police Department,exact,,1,2
 TX22026,TX,Watauga Police Department,exact,,3,2
 TX22100,TX,Taylor County Sheriff's Office,exact,,2,2
 TX22101,TX,Abilene Police Department,seed_reviewed,,8,1
@@ -2781,7 +2777,7 @@ VA01700,VA,Caroline County Sheriff's Office,exact,,2,2
 VA02101,VA,Chesterfield County Police Department,exact,,10,2
 VA02400,VA,Culpeper County Sheriff's Office,exact,,5,2
 VA02600,VA,Dickenson County Sheriff's Office,exact,,1,2
-VA02901,VA,Fairfax County Police Department,exact,,13,2
+VA02901,VA,Fairfax County Police Department,exact,,12,2
 VA02901,VA,Fairfax County Sheriff's Office,exact,,4,2
 VA03100,VA,Floyd County Sheriff's Office,exact,,3,2
 VA03400,VA,Frederick County Sheriff's Office,exact,,2,2
@@ -2825,7 +2821,7 @@ VA11300,VA,Hopewell Police Department,exact,,3,2
 VA11400,VA,Lynchburg Police Department,seed_reviewed,,1,2
 VA11500,VA,Martinsville Police Department,exact,,1,2
 VA11600,VA,Newport News Police Department,seed_reviewed,,12,2
-VA11700,VA,Norfolk Police Department,seed_reviewed,,31,1
+VA11700,VA,Norfolk Police Department,seed_reviewed,,30,1
 VA12000,VA,Portsmouth Police Department,seed_reviewed,,11,2
 VA12200,VA,Richmond Police Department,seed_reviewed,,19,2
 VA12300,VA,Roanoke Police Department,exact,,8,2
@@ -2886,7 +2882,7 @@ WA02400,WA,Okanogan County Sheriff's Office,exact,,2,2
 WA02403,WA,Omak Police Department,exact,,1,2
 WA02700,WA,Pierce County Sheriff's Office,exact,,43,2
 WA02701,WA,Puyallup Police Department,exact,,2,2
-WA02703,WA,Tacoma Police Department,seed_reviewed,,22,2
+WA02703,WA,Tacoma Police Department,seed_reviewed,,21,2
 WA02707,WA,Fife Police Department,exact,,2,2
 WA02723,WA,Lakewood Police Department,exact,,11,2
 WA02903,WA,Sedro-Woolley Police Department,exact,,2,2
@@ -2986,7 +2982,7 @@ WI07102,WI,Neenah Police Department,exact,,3,2
 WI07103,WI,Oshkosh Police Department,exact,,1,2
 WI07109,WI,Fox Crossing Police Department,exact,,3,2
 WI07200,WI,Wood County Sheriff's Office,exact,,1,2
-WIMPD00,WI,Milwaukee Police Department,seed_reviewed,,58,1
+WIMPD00,WI,Milwaukee Police Department,seed_reviewed,,57,1
 WIUSM01,WI,U.S. Marshals Service,exact,,1,2
 WIWSP00,WI,Wisconsin State Patrol,exact,,2,2
 WV001SP,WV,West Virginia State Police,manual,Statewide agency; LEAIC lists one ORI per detachment,51,2

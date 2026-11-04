@@ -14,7 +14,7 @@ Annual counts of people shot and killed by on-duty police, by agency, going back
   - an exact match on normalized name + state + agency type, accepted only when no other agency in the state (among every agency in the LEAIC and WaPo) has the same name;
   - a hand decision, with a note, recorded in [`data/crosswalks/fe_crosswalk_decisions.csv`](data/crosswalks/fe_crosswalk_decisions.csv).
 
-  Of 18,838 FE fatal police shootings from 2000 to 2021, 16,763 (89%) link to an agency in the panel.
+  FE counts gunshot deaths that FE coded as an intentional use of deadly force. Deaths that FE's own disposition field codes as murder/suicide, accidental, or ruled suicide are dropped (89). That leaves 18,749 deaths from 2000 to 2021, of which 16,706 (89%) link to an agency in the panel.
 - **The WaPo merge was rebuilt.** Changes:
   - It reads local, checksummed copies of the archived v2 data instead of live URLs.
   - It handles agencies that WaPo lists under several ORIs. The old merge silently missed 96 of them.
@@ -32,8 +32,8 @@ Where they overlap, the three sources mostly agree, though FE runs higher than W
 | Comparison | Years | Agency-years | Correlation | Total deaths, difference | Identical counts | Identical, where either > 0 |
 |---|---|---:|---:|---:|---:|---:|
 | Hand-built vs. WaPo | 2015–2022 | 2,641 | .945 | WaPo −4.0% | 95.2% | 86.8% |
-| Hand-built vs. FE | 2000–2021 | 5,559 | .902 | FE −0.9% | 91.2% | 69.4% |
-| WaPo vs. FE (hand-built agencies) | 2015–2021 | 2,870 | .972 | FE +9.4% | 90.1% | 71.2% |
+| Hand-built vs. FE | 2000–2021 | 5,559 | .902 | FE −1.1% | 91.2% | 69.3% |
+| WaPo vs. FE (hand-built agencies) | 2015–2021 | 2,870 | .973 | FE +9.2% | 90.1% | 71.1% |
 
 Most agency-years are zero in both sources, so the last column, which drops agency-years where both are zero, is the tougher test. Agencies that WaPo lists under several ORIs (mostly state police) are left out of these comparisons. [`output/tables/source_agreement.csv`](output/tables/source_agreement.csv) also has each comparison restricted to the years all three sources cover (2015–2021). Agencies where the sources disagree are listed, largest gap first, in [`output/tables/source_disagreements.csv`](output/tables/source_disagreements.csv).
 
@@ -47,9 +47,9 @@ Most agency-years are zero in both sources, so the last column, which drops agen
 | 1970s | 4–15 | — | — |
 | 1980s | 12–14 | — | — |
 | 1990s | 9–17 | — | — |
-| 2000s | 110–169 | — | 2,971 |
-| 2010s | 360–369 | 3,647 (2015+) | 2,971 |
-| 2020s | 225–368 (through 2022) | 3,647 (through 2024) | 2,971 (through 2021) |
+| 2000s | 110–169 | — | 2,967 |
+| 2010s | 360–369 | 3,647 (2015+) | 2,967 |
+| 2020s | 225–368 (through 2022) | 3,647 (through 2024) | 2,967 (through 2021) |
 
 The WaPo and FE columns count agencies with an ORI. WaPo is a national census, so every ORI-coded agency gets a WaPo count, a zero where WaPo recorded no deaths. The FE column counts linked agencies only.
 
@@ -122,6 +122,7 @@ I decided, for now at least, to focus on fatal shootings, since they're more rel
    - **WaPo zeros are real.** WaPo is a national census, so an ORI-coded agency with no WaPo record in 2015–2024 gets 0.
    - **FE zeros are real only for linked agencies.** For an agency linked to FE, 0 means no FE deaths that year. An agency never linked to FE is left NA, because a missed name match is not a zero.
    - **Pre-2013 FE is less reliable.** It was assembled after the fact from news reports, so treat the early years with more caution than WaPo.
+   - **FE's "Deadly force" code is not purely on-duty police shootings.** About 5% of the deaths it keeps have descriptions mentioning a self-inflicted, accidental, or off-duty shooting. Examples include murder-suicides by off-duty officers and a training accident. Some of these are legitimate police shootings (an off-duty officer stopping a robbery), so they are flagged in `n_fe_flagged`, not dropped. Subtract `n_fe_flagged` for a conservative count. Flagged deaths explain roughly half of FE's excess over WaPo.
 4. **Multi-agency incidents.** In both WaPo and FE, a death involving several agencies counts once for each agency listed. `n_fe_multi` reports how many of an agency's FE deaths were shared. Don't sum `n_wapo` or `n_fe` across agencies and call it a national total.
 5. **Agencies WaPo lists under several ORIs** (mostly state police and highway patrols) are each assigned one primary ORI and flagged `wapo_multi_ori`. WaPo also splits Georgia State Patrol into two records; both are assigned to GAGSP00 (see `scripts/02_wapo.R`).
 6. **Mapping Police Violence** (2013+) is not merged yet.
@@ -158,6 +159,11 @@ Found an error, or a source I've missed? Open an issue. Thanks to [Ash Bruha](ht
 ## Citation
 
 See [`CITATION.cff`](CITATION.cff). Please also cite *The Washington Post* and Fatal Encounters if you use their series.
+
+## License
+
+- **Code** (`scripts/`, `tools/`) is released under the [MIT License](LICENSE).
+- **Data** (everything under `data/` and `output/`, plus `agency-level-fatal-ois.csv`) is released under [CC BY-NC-SA 4.0](LICENSE-DATA). The merged panel adapts *The Washington Post*'s Fatal Force data, which carries the same license, and share-alike requires adaptations to keep it.
 
 ## Earlier updates
 

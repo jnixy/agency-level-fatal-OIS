@@ -1,9 +1,12 @@
 measure,value
-"Qualifying FE deaths, 2000-2021",18838
-  single-agency,17525
-  multi-agency,1306
+"FE gunshot deaths coded 'Deadly force', 2000-2021",18838
+"  excluded: disposition murder/suicide, accidental, or ruled suicide",89
+"Qualifying FE deaths, 2000-2021",18749
+"  flagged: description mentions self-inflicted, accidental, or off-duty",926
+  single-agency,17440
+  multi-agency,1302
   no agency listed,7
-Deaths linked to >= 1 repo agency,16763
-Agency-death links (multi-agency deaths count per agency),17636
-Distinct FE agency names linked,3038
-ORI7 agencies with FE counts (incl. reviewed zeros),2971
+Deaths linked to >= 1 repo agency,16706
+Agency-death links (multi-agency deaths count per agency),17577
+Distinct FE agency names linked,3034
+ORI7 agencies with FE counts (incl. reviewed zeros),2967

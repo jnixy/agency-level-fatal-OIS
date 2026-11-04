@@ -18,8 +18,9 @@ One row per agency-year. The panel is deliberately **unbalanced**: an agency has
 | `n_nix` | number | People shot and killed by the agency's on-duty officers, from the hand-built sources (see README). NA means no data. Some series include nonfatal shootings; see README caveats. |
 | `nix_partial` | logical | For agencies with two slugs: TRUE if only one of them has data that year. FALSE for every hand-built row in the current data. |
 | `n_wapo` | integer | *Washington Post* Fatal Force deaths, 2015–2024. 0 for any ORI-coded agency WaPo did not record in a year. NA outside 2015–2024. |
-| `n_fe` | integer | Fatal Encounters deaths, 2000–2021: deaths coded "Gunshot" with intended force "Deadly force". NA if the agency was never linked to FE, or outside 2000–2021. See the note below on FE zeros. |
+| `n_fe` | integer | Fatal Encounters deaths, 2000–2021: deaths coded "Gunshot" with intended force "Deadly force". Excludes deaths that FE's disposition field codes as "Murder/suicide", "Accidental", or "Ruled suicide"; "Ruled suicide by police" (suicide-by-cop) is kept. NA if the agency was never linked to FE, or outside 2000–2021. See the notes below. |
 | `n_fe_multi` | integer | How many of `n_fe` list more than one agency in FE. Counted before linking, so a partner agency outside the panel still makes a death "shared". |
+| `n_fe_flagged` | integer | How many of `n_fe` have an FE description mentioning a self-inflicted, accidental, or off-duty shooting (pattern in `scripts/functions.R`, `FE_FLAG_PATTERN`). These deaths may not be intentional on-duty police shootings. The keyword search also catches legitimate cases, so they are flagged, not dropped. `n_fe - n_fe_flagged` gives a conservative count. |
 
 **Counting rules**
 - In both WaPo and FE, a death involving several agencies counts once for each agency listed. Summing `n_wapo` or `n_fe` across agencies therefore overcounts.

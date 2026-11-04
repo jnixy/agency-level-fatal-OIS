@@ -43,7 +43,7 @@ nix  <- read_csv(here("data", "clean", "nix_agency_year.csv"),
 wapo <- read_csv(here("data", "clean", "wapo_agency_year.csv"),
                  col_types = cols(year = "i", n_wapo = "i", .default = "c"))
 fe   <- read_csv(here("data", "clean", "fe_agency_year.csv"),
-                 col_types = cols(year = "i", n_fe = "i", n_fe_multi = "i", .default = "c"))
+                 col_types = cols(year = "i", n_fe = "i", n_fe_multi = "i", n_fe_flagged = "i", .default = "c"))
 wapo_agencies <- read_csv(here("data", "clean", "wapo_agencies.csv"), col_types = chr)
 
 # 2. Agency metadata (one row per agency_id) -----------------------------------
@@ -94,7 +94,7 @@ if (nrow(orphans) > 0) {
 panel <- joined |>
   inner_join(meta, by = "agency_id") |>
   select(agency_id, ori7, agency_name, state, agency_type, in_nix, slugs,
-         wapo_multi_ori, year, n_nix, nix_partial, n_wapo, n_fe, n_fe_multi) |>
+         wapo_multi_ori, year, n_nix, nix_partial, n_wapo, n_fe, n_fe_multi, n_fe_flagged) |>
   arrange(state, agency_name, year)
 
 stopifnot(

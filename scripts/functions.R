@@ -23,8 +23,25 @@ FE_ROWS      <- 31498L
 FE_LAST_DATE <- "12/31/2021"
 FE_YEARS     <- 2000:2021
 
+# FE's "Deadly force" intent code still includes some deaths that are not
+# police use of force. Deaths FE's own disposition field codes as below are
+# dropped. "Ruled suicide by police" (suicide-by-cop) is a police shooting
+# and is kept.
+FE_EXCLUDE_DISPOSITIONS <- c("murder/suicide", "accidental", "ruled suicide")
+
+# Descriptions suggesting a death may not be an intentional on-duty police
+# shooting. Matches are flagged (n_fe_flagged), not dropped: the search also
+# catches legitimate cases, e.g., an off-duty officer stopping a robbery.
+FE_FLAG_PATTERN <- paste(
+  "shot (himself|herself)", "self-inflicted", "turned the gun on (himself|herself)",
+  "killed (himself|herself)", "accidental(ly)? (discharg|fired|shot)", "accidentally",
+  "training accident", "cleaning (his|her) gun", "off-duty", "off duty",
+  sep = "|")
+
 #' Load FE and keep qualifying deaths: gunshot deaths where FE coded the
-#' intended force as deadly (drops suicides, pursuits, accidental shootings).
+#' intended force as deadly (drops suicides, pursuits, accidental shootings),
+#' minus deaths FE's disposition field codes as murder/suicide, accidental, or
+#' ruled suicide. Adds `fe_flag` (description suggests not an on-duty shooting).
 #' Shared by 03 and 04 so the two can never filter differently.
 #' @return tibble, one row per qualifying death, with `year` and upper-case `state`
 load_fe_qualifying <- function(path = here("data", "raw", "fatal_encounters.csv")) {
@@ -46,10 +63,18 @@ load_fe_qualifying <- function(path = here("data", "raw", "fatal_encounters.csv"
     filter(highest_level_of_force == "Gunshot",
            intended_use_of_force_developing == "Deadly force") |>
     mutate(year = as.integer(str_sub(date_of_injury_resulting_in_death_month_day_year, -4)),
-           state = toupper(str_squish(state)))
+           state = toupper(str_squish(state)),
+           disposition = tolower(str_squish(dispositions_exclusions_internal_use_not_for_analysis)),
+           fe_flag = str_detect(tolower(brief_description), FE_FLAG_PATTERN) %in% TRUE)
   if (anyNA(fe$year)) stop("FE dates that do not end in a 4-digit year")
   if (anyDuplicated(fe$unique_id)) stop("Duplicate FE unique_id")
-  filter(fe, year %in% FE_YEARS)
+  fe <- filter(fe, year %in% FE_YEARS)
+  excluded <- fe$disposition %in% FE_EXCLUDE_DISPOSITIONS
+  out <- fe[!excluded, ]
+  # Kept as attributes so 04 can report them in the linkage table
+  attr(out, "n_gunshot_deadly_force") <- nrow(fe)
+  attr(out, "n_excluded_disposition") <- sum(excluded)
+  out
 }
 
 #' Split FE's comma-separated agency field: one row per death x listed agency.
@@ -57,7 +82,7 @@ load_fe_qualifying <- function(path = here("data", "raw", "fatal_encounters.csv"
 #' (before linking, so an unlinked partner agency still counts as sharing).
 split_fe_agencies <- function(fe_qual) {
   fe_qual |>
-    transmute(unique_id, year, state, fe_agency_name = agency_or_agencies_involved) |>
+    transmute(unique_id, year, state, fe_flag, fe_agency_name = agency_or_agencies_involved) |>
     separate_longer_delim(fe_agency_name, ",") |>
     mutate(fe_agency_name = str_squish(fe_agency_name)) |>
     filter(!is.na(fe_agency_name), fe_agency_name != "") |>

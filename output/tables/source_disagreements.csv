@@ -7,7 +7,6 @@ TX15512,Waco Police Department,TX,fe_vs_wapo,2015-2021,15,6,9
 CA03600,San Bernardino County Sheriff's Department,CA,fe_vs_wapo,2015-2021,42,34,8
 MOSPD00,St. Louis Police Department,MO,fe_vs_wapo,2015-2021,31,23,8
 GAAPD00,Atlanta Police Department,GA,fe_vs_wapo,2015-2021,23,16,7
-FL02900,Hillsborough County Sheriff's Office,FL,fe_vs_wapo,2015-2021,18,12,6
 NV00201,Las Vegas Metropolitan Police Department,NV,fe_vs_wapo,2015-2021,62,56,6
 ARASP00,Arkansas State Police,AR,fe_vs_wapo,2015-2021,11,6,5
 AZ00717,Mesa Police Department,AZ,fe_vs_wapo,2015-2021,30,25,5
@@ -51,7 +50,6 @@ TX24001,Laredo Police Department,TX,fe_vs_wapo,2015-2021,9,6,3
 UT01800,Unified Police Department Of Greater Salt Lake,UT,fe_vs_wapo,2015-2021,14,11,3
 VA04301,Henrico County Police Department,VA,fe_vs_wapo,2015-2021,4,1,3
 WA00800,Cowlitz County Sheriff's Office,WA,fe_vs_wapo,2015-2021,5,2,3
-WIMPD00,Milwaukee Police Department,WI,fe_vs_wapo,2015-2021,17,14,3
 AK00102,Fairbanks Police Department,AK,fe_vs_wapo,2015-2021,8,6,2
 AL00201,Mobile Police Department,AL,fe_vs_wapo,2015-2021,7,5,2
 AL05001,Albertville Police Department,AL,fe_vs_wapo,2015-2021,2,0,2
@@ -64,6 +62,7 @@ CA01933,Inglewood Police Department,CA,fe_vs_wapo,2015-2021,6,4,2
 CA02800,Napa County Sheriff's Office,CA,fe_vs_wapo,2015-2021,4,2,2
 CA03302,Beaumont Police Department,CA,fe_vs_wapo,2015-2021,5,3,2
 CA03700,San Diego County Sheriff's Department,CA,fe_vs_wapo,2015-2021,17,15,2
+CA03711,San Diego Police Department,CA,fe_vs_wapo,2015-2021,25,27,-2
 CA05200,Tehama County Sheriff's Department,CA,fe_vs_wapo,2015-2021,5,3,2
 CA05400,Tulare County Sheriff's Department,CA,fe_vs_wapo,2015-2021,5,7,-2
 CA05406,Tulare Police Department,CA,fe_vs_wapo,2015-2021,3,1,2
@@ -75,9 +74,9 @@ CTCSP00,Connecticut State Police,CT,fe_vs_wapo,2015-2021,5,3,2
 FL00502,Cocoa Police Department,FL,fe_vs_wapo,2015-2021,2,4,-2
 FL00608,Pembroke Pines Police Department,FL,fe_vs_wapo,2015-2021,4,2,2
 FL02700,Hernando County Sheriff's Department,FL,fe_vs_wapo,2015-2021,9,7,2
+FL02900,Hillsborough County Sheriff's Office,FL,fe_vs_wapo,2015-2021,14,12,2
 FL04200,Marion County Sheriff's Office,FL,fe_vs_wapo,2015-2021,9,7,2
 FL05100,Pasco County Sheriff's Office,FL,fe_vs_wapo,2015-2021,8,6,2
-FL05900,Seminole County Sheriff's Office,FL,fe_vs_wapo,2015-2021,3,1,2
 FL06402,De Land Deland Police Department,FL,fe_vs_wapo,2015-2021,2,0,2
 GA06301,Brunswick Police Department,GA,fe_vs_wapo,2015-2021,3,1,2
 GA07505,Henry County Police Department,GA,fe_vs_wapo,2015-2021,5,3,2
@@ -152,6 +151,7 @@ WA01102,Pasco Police Department,WA,fe_vs_wapo,2015-2021,5,3,2
 WA03200,Spokane County Sheriff's Department,WA,fe_vs_wapo,2015-2021,9,7,2
 WI06800,Waukesha County Sheriff's Office,WI,fe_vs_wapo,2015-2021,2,0,2
 WI06805,Waukesha Police Department,WI,fe_vs_wapo,2015-2021,3,5,-2
+WIMPD00,Milwaukee Police Department,WI,fe_vs_wapo,2015-2021,16,14,2
 WV01700,Harrison County Sheriff's Department,WV,fe_vs_wapo,2015-2021,3,1,2
 AKUSM01,U.S. Marshals Service,AK,fe_vs_wapo,2015-2021,1,0,1
 AL00102,Birmingham Police Department,AL,fe_vs_wapo,2015-2021,10,9,1
@@ -161,7 +161,7 @@ AL01400,Chilton County Sheriff's Office,AL,fe_vs_wapo,2015-2021,2,1,1
 AL01800,Cleburne County Sheriff's Office,AL,fe_vs_wapo,2015-2021,1,2,-1
 AL02000,Colbert County Sheriff's Department,AL,fe_vs_wapo,2015-2021,0,1,-1
 AL02400,Crenshaw County Sheriff's Department,AL,fe_vs_wapo,2015-2021,1,2,-1
-AL03400,Geneva County Sheriff's Office,AL,fe_vs_wapo,2015-2021,1,0,1
+AL03800,Houston County Sheriff's Office,AL,fe_vs_wapo,2015-2021,1,2,-1
 AL04100,Lauderdale County Sheriff's Office,AL,fe_vs_wapo,2015-2021,1,0,1
 AL04101,Florence Police Department,AL,fe_vs_wapo,2015-2021,3,2,1
 AL04300,Lee County Sheriff's Office,AL,fe_vs_wapo,2015-2021,4,3,1
@@ -203,7 +203,6 @@ AZ01502,Colorado River Indian Tribes Police Department,AZ,fe_vs_wapo,2015-2021,2
 CA00107,Livermore Police Department,CA,fe_vs_wapo,2015-2021,2,1,1
 CA00108,Newark Police Department,CA,fe_vs_wapo,2015-2021,3,2,1
 CA00109,Oakland Police Department,CA,fe_vs_wapo,2015-2021,10,9,1
-CA00710,Richmond Police Department,CA,fe_vs_wapo,2015-2021,4,3,1
 CA00800,Del Norte County Sheriff's Office,CA,fe_vs_wapo,2015-2021,1,2,-1
 CA00900,El Dorado County Sheriff's Office,CA,fe_vs_wapo,2015-2021,1,0,1
 CA01000,Fresno County Sheriff's Office,CA,fe_vs_wapo,2015-2021,6,5,1
@@ -247,12 +246,12 @@ CA03602,Chino Police Department,CA,fe_vs_wapo,2015-2021,4,3,1
 CA03607,Ontario Police Department,CA,fe_vs_wapo,2015-2021,7,6,1
 CA03609,Rialto Police Department,CA,fe_vs_wapo,2015-2021,6,5,1
 CA03630,Highland Police Department,CA,fe_vs_wapo,2015-2021,0,1,-1
-CA03711,San Diego Police Department,CA,fe_vs_wapo,2015-2021,26,27,-1
 CA03900,San Joaquin County Sheriff's Office,CA,fe_vs_wapo,2015-2021,6,5,1
 CA03905,Stockton Police Department,CA,fe_vs_wapo,2015-2021,12,13,-1
 CA04000,San Luis Obispo County Sheriff's Office,CA,fe_vs_wapo,2015-2021,4,5,-1
 CA04204,Santa Maria Police Department,CA,fe_vs_wapo,2015-2021,4,3,1
 CA04314,Santa Clara Police Department,CA,fe_vs_wapo,2015-2021,3,4,-1
+CA04502,Redding Police Deparment,CA,fe_vs_wapo,2015-2021,11,12,-1
 CA04803,Fairfield Police Department,CA,fe_vs_wapo,2015-2021,2,3,-1
 CA04806,Vacaville Police Department,CA,fe_vs_wapo,2015-2021,3,2,1
 CA04900,Sonoma County Sheriff's Department,CA,fe_vs_wapo,2015-2021,2,1,1
@@ -286,7 +285,6 @@ CO06202,Greeley Police Department,CO,fe_vs_wapo,2015-2021,7,8,-1
 CO06205,LaSalle Police Department,CO,fe_vs_wapo,2015-2021,2,1,1
 CT00043,East Hartford Police Department,CT,fe_vs_wapo,2015-2021,2,1,1
 CT00104,Norwich Police Department,CT,fe_vs_wapo,2015-2021,2,1,1
-CT00151,Waterbury Police Department,CT,fe_vs_wapo,2015-2021,2,1,1
 CT00159,Wethersfield Police Department,CT,fe_vs_wapo,2015-2021,2,1,1
 DE00203,New Castle County Police Department,DE,fe_vs_wapo,2015-2021,3,2,1
 FL00500,Brevard County Sheriff's Office,FL,fe_vs_wapo,2015-2021,10,9,1
@@ -315,8 +313,8 @@ FL05200,Pinellas County Sheriff's Office,FL,fe_vs_wapo,2015-2021,10,9,1
 FL05218,Tarpon Springs Police Department,FL,fe_vs_wapo,2015-2021,3,2,1
 FL05700,Santa Rosa County Sheriff's Office,FL,fe_vs_wapo,2015-2021,2,3,-1
 FL05801,Sarasota Police Department,FL,fe_vs_wapo,2015-2021,1,0,1
+FL05900,Seminole County Sheriff's Office,FL,fe_vs_wapo,2015-2021,2,1,1
 FL06000,Sumter County Sheriff's Department,FL,fe_vs_wapo,2015-2021,3,2,1
-FL06400,Volusia County Sheriff's Department,FL,fe_vs_wapo,2015-2021,16,15,1
 FL06407,Holly Hill Police Department,FL,fe_vs_wapo,2015-2021,1,0,1
 GA00700,Barrow County Sheriff's Office,GA,fe_vs_wapo,2015-2021,2,1,1
 GA02201,Carrollton Police Department,GA,fe_vs_wapo,2015-2021,2,1,1
@@ -348,7 +346,6 @@ GA12600,Spalding County Sheriff's Office,GA,fe_vs_wapo,2015-2021,4,3,1
 GA13200,Tattnall County Sheriff's Department,GA,fe_vs_wapo,2015-2021,2,1,1
 GA14600,Walker County Sheriff's Office,GA,fe_vs_wapo,2015-2021,5,4,1
 GA14701,Monroe Police Department,GA,fe_vs_wapo,2015-2021,1,0,1
-HI00100,Hawaii Police Department,HI,fe_vs_wapo,2015-2021,13,12,1
 HI00200,Honolulu Police Department,HI,fe_vs_wapo,2015-2021,21,22,-1
 IA07700,Polk County Sheriff's Office,IA,fe_vs_wapo,2015-2021,2,1,1
 IA08202,Davenport Police Department,IA,fe_vs_wapo,2015-2021,3,2,1
@@ -401,6 +398,7 @@ LA03200,Livingston Parish Sheriff's Office,LA,fe_vs_wapo,2015-2021,3,2,1
 LA04001,Alexandria Police Department,LA,fe_vs_wapo,2015-2021,0,1,-1
 LA05202,Slidell Police Department,LA,fe_vs_wapo,2015-2021,2,1,1
 LA05500,Terrebonne Parish Sheriff's Office,LA,fe_vs_wapo,2015-2021,6,5,1
+LA05501,Houma Police Department,LA,fe_vs_wapo,2015-2021,4,5,-1
 LA05900,Washington Parish Sheriff's Department,LA,fe_vs_wapo,2015-2021,1,2,-1
 MA00308,Fall River Police Department,MA,fe_vs_wapo,2015-2021,2,3,-1
 MA01103,Braintree Police Department,MA,fe_vs_wapo,2015-2021,3,2,1
@@ -415,7 +413,7 @@ ME00101,Auburn Police Department,ME,fe_vs_wapo,2015-2021,1,2,-1
 ME00206,Presque Isle Police Department,ME,fe_vs_wapo,2015-2021,3,2,1
 MI11248,Benton Harbor Department of Public Safety,MI,fe_vs_wapo,2015-2021,1,0,1
 MI11249,Benton Charter Township Police Department,MI,fe_vs_wapo,2015-2021,0,1,-1
-MI13113,Calhoun County Sheriff's Department,MI,fe_vs_wapo,2015-2021,4,3,1
+MI13113,Calhoun County Sheriff's Department,MI,fe_vs_wapo,2015-2021,2,3,-1
 MI13237,Battle Creek Police Department,MI,fe_vs_wapo,2015-2021,4,3,1
 MI23123,Eaton County Sheriff's Department,MI,fe_vs_wapo,2015-2021,3,4,-1
 MI39139,Kalamazoo County Sheriff's Office,MI,fe_vs_wapo,2015-2021,6,5,1
@@ -472,7 +470,6 @@ NC02900,Davidson County Sheriff's Office,NC,fe_vs_wapo,2015-2021,7,6,1
 NC03201,Durham Police Department,NC,fe_vs_wapo,2015-2021,5,4,1
 NC03300,Edgecombe County Sheriff's Department,NC,fe_vs_wapo,2015-2021,1,2,-1
 NC03603,Cherryville Police Department,NC,fe_vs_wapo,2015-2021,1,0,1
-NC03900,Granville County Sheriff's Office,NC,fe_vs_wapo,2015-2021,1,0,1
 NC04600,Hertford County Sheriff's Office,NC,fe_vs_wapo,2015-2021,0,1,-1
 NC06500,New Hanover County Sheriff's Office,NC,fe_vs_wapo,2015-2021,3,2,1
 NC06800,Orange County Sheriff's Office,NC,fe_vs_wapo,2015-2021,1,2,-1
@@ -503,7 +500,6 @@ NM01303,Jal Police Department,NM,fe_vs_wapo,2015-2021,1,2,-1
 NM01901,Alamogordo Police Department,NM,fe_vs_wapo,2015-2021,1,2,-1
 NM02000,Quay County Sheriff's Office,NM,fe_vs_wapo,2015-2021,1,0,1
 NM02300,Sandoval County Sheriff's Office,NM,fe_vs_wapo,2015-2021,0,1,-1
-NM02301,Bernalillo Police Department,NM,fe_vs_wapo,2015-2021,2,1,1
 NM02600,Santa Fe County Sheriff's Office,NM,fe_vs_wapo,2015-2021,4,3,1
 NM02901,Taos Police Department,NM,fe_vs_wapo,2015-2021,2,1,1
 NM03300,Cibola County Sheriff's Office,NM,fe_vs_wapo,2015-2021,1,0,1
@@ -528,7 +524,6 @@ OH01810,Brooklyn Police Department,OH,fe_vs_wapo,2015-2021,2,1,1
 OH01843,Parma Heights Police Department,OH,fe_vs_wapo,2015-2021,3,2,1
 OH01868,Cuyahoga Metropolitan Housing Authority Police Department,OH,fe_vs_wapo,2015-2021,0,1,-1
 OH02500,Franklin County Sheriff's Office,OH,fe_vs_wapo,2015-2021,7,6,1
-OH04500,Licking County Sheriff's Office,OH,fe_vs_wapo,2015-2021,1,0,1
 OH04700,Lorain County Sheriff's Office,OH,fe_vs_wapo,2015-2021,1,0,1
 OH04807,Toledo Police Department,OH,fe_vs_wapo,2015-2021,8,7,1
 OH05009,Youngstown Police Department,OH,fe_vs_wapo,2015-2021,1,0,1
@@ -549,6 +544,7 @@ OK06800,Sequoyah County Sheriff's Department,OK,fe_vs_wapo,2015-2021,2,3,-1
 OK07201,Broken Arrow Police Department,OK,fe_vs_wapo,2015-2021,1,0,1
 OK07300,Wagoner County Sheriff's Office,OK,fe_vs_wapo,2015-2021,1,0,1
 OK07301,Wagoner Police Department,OK,fe_vs_wapo,2015-2021,2,3,-1
+OR01500,Jackson County Sheriff's Office,OR,fe_vs_wapo,2015-2021,2,3,-1
 OR01701,Grants Pass Police Department,OR,fe_vs_wapo,2015-2021,3,2,1
 OR01801,Klamath Falls Police Department,OR,fe_vs_wapo,2015-2021,2,1,1
 OR02101,Lincoln City Police Department,OR,fe_vs_wapo,2015-2021,1,0,1
