@@ -1,2 +1,5 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Raw files are SHA-256 pinned; never convert their line endings
+data/raw/** -text
