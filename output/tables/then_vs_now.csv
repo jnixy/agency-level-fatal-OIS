@@ -1,0 +1,17 @@
+agency_id,agency_name,state,per_year_early,per_year_recent,years_early,years_recent,first_early,first_recent,last_early,last_recent,label,change,lower_now
+ME00305,Portland Police Department,ME,0.2,0.2,5,10,1990,2015,1994,2024,"Portland, ME",0,FALSE
+VTVSP00,Vermont State Police,VT,0.389,0.7,18,10,1977,2015,1994,2024,"Vermont State Police, VT",0.311,FALSE
+MEMSP00,Maine State Police,ME,1,1.5,5,10,1990,2015,1994,2024,"Maine State Police, ME",0.5,FALSE
+WASPD00,Seattle Police Department,WA,1.6,2,15,10,1980,2015,1994,2024,"Seattle, WA",0.4,FALSE
+INIPD00,Indianapolis Metropolitan Police Department,IN,2.909,4.778,22,9,1970,2015,1991,2024,"Indianapolis, IN",1.869,FALSE
+MOKPD00,Kansas City Police Department,MO,3,3.6,20,10,1972,2015,1991,2024,"Kansas City, MO",0.6,FALSE
+GAAPD00,Atlanta Police Department,GA,4.5,2.4,12,10,1980,2015,1991,2024,"Atlanta, GA",-2.1,TRUE
+MOSPD00,St. Louis Police Department,MO,5.909,3.1,11,10,1977,2015,1991,2024,"St. Louis, MO",-2.809,TRUE
+CA03711,San Diego Police Department,CA,6.062,4.3,16,10,1976,2015,1991,2024,"San Diego, CA",-1.763,TRUE
+TXDPD00,Dallas Police Department,TX,7.818,3.1,22,10,1970,2015,1991,2024,"Dallas, TX",-4.718,TRUE
+DCMPD00,Metropolitan Police Department,DC,8.667,2.2,6,10,1989,2015,1994,2024,"Washington, DC",-6.467,TRUE
+TXHPD00,Houston Police Department,TX,9.75,9.333,12,9,1980,2015,1991,2024,"Houston, TX",-0.417,TRUE
+PAPEP00,Philadelphia Police Department,PA,11.24,4.1,25,10,1970,2015,1994,2024,"Philadelphia, PA",-7.14,TRUE
+ILCPD00,Chicago Police Department,IL,20.895,5.4,19,10,1970,2015,1991,2024,"Chicago, IL",-15.495,TRUE
+CA01942,Los Angeles Police Department,CA,23.429,14.8,21,10,1974,2015,1994,2024,"Los Angeles, CA",-8.629,TRUE
+NY03030,New York Police Department,NY,34.24,8.667,25,9,1970,2015,1994,2024,"New York City, NY",-25.573,TRUE

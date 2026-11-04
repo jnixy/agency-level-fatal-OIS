@@ -25,6 +25,37 @@ Annual counts of people shot and killed by on-duty police, by agency, going back
   - Every fix was confirmed by year-by-year agreement with WaPo or from the LEAIC. The reasons are recorded in [`data/agency_key.csv`](data/agency_key.csv).
 - **Two pairs of columns now share an ORI** and are summed in the panel: Savannah PD and Savannah-Chatham Metro PD, and Bibb Co. SO and Macon-Bibb Co. SO. That's why 416 columns become 414 agencies.
 
+## What these data can show
+
+Are police killing more people now than in decades past? National data can't answer that, because they only start in 2000 (Fatal Encounters) or 2015 (WaPo). But many agencies can be followed back further, and comparing each agency only to itself avoids mistaking changes in *which* agencies are observed for changes in killings.
+
+![Within-agency trend in fatal police shootings](output/figures/trend_index.png)
+
+**How the trend is estimated.** The solid line comes from a Poisson model with agency fixed effects, fit to 413 of the 414 hand-built agencies. It compares each agency with itself, so agencies entering or leaving the data don't move the line.
+
+Some series are left out because they mix in nonfatal shootings or may count incidents rather than people:
+- Las Vegas, all years;
+- Cincinnati before 2015;
+- Austin, 2000–2007.
+
+**How far back it reaches.** Before 2000, the solid line rests on only 4–16 large-city departments. It describes big cities, not the country.
+
+**What it shows.** The headline compares one fixed set of agencies: the 16 with at least five years of data both before 1995 and since 2015, shown as the dashed line. In those agencies, fatal police shootings since 2015 run 51% below their 1970–1994 level (ratio 0.49, 95% CI 0.34–0.72).
+
+![Then vs. now in sixteen long-running agencies](output/figures/then_vs_now.png)
+
+**Then vs. now.** In the same 16 agencies, 10 kill fewer people a year now than before 1995. The drops are largest in New York, Chicago, and Los Angeles.
+
+These are raw counts, not rates per resident, and population change could push the per-resident comparison either way. Some of these cities grew; others, like St. Louis and Philadelphia, shrank. The years observed in each era also vary by agency (see the table).
+
+![Agencies with data before 2000](output/figures/coverage_tiles.png)
+
+**Reach.** The hand-built agencies were involved in at least 32% of everyone shot and killed by police in WaPo's data, 2015–2024. It's "at least" because deaths are matched through each WaPo agency's primary ORI, so some matches are missed. The 25 agencies shown above carry the long-run record back before 2000.
+
+**Sources for these numbers:**
+- Tables: [`output/tables/trend_summary.csv`](output/tables/trend_summary.csv), [`trend_index.csv`](output/tables/trend_index.csv), [`then_vs_now.csv`](output/tables/then_vs_now.csv), and [`coverage_share.csv`](output/tables/coverage_share.csv).
+- Script: [`scripts/07_figures_trends.R`](scripts/07_figures_trends.R).
+
 ## How the sources compare
 
 Where they overlap, the three sources mostly agree, though FE runs higher than WaPo:
