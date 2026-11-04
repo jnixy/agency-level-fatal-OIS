@@ -29,7 +29,6 @@
 #   - output/figures/trend_index.png, then_vs_now.png, coverage_tiles.png
 #   - output/tables/trend_index.csv, then_vs_now.csv, coverage_share.csv,
 #     trend_summary.csv (every number quoted in the README)
-#   - output/trend_models.rds                      -- fitted fixest models
 #
 # Runtime: < 30 sec
 # ==============================================================================
@@ -382,8 +381,8 @@ write_csv(then_vs_now |> mutate(across(where(is.double), \(x) round(x, 3))),
 write_csv(coverage_share |> mutate(share = round(share, 4)),
           file.path(tab_dir, "coverage_share.csv"))
 write_csv(trend_summary, file.path(tab_dir, "trend_summary.csv"))
-saveRDS(list(main = main$model, long = long$model, era = m_era),
-        here("output", "trend_models.rds"))
+# Fitted models are not saved: fixest objects carry their environment, which
+# would publish local paths, and every estimate used is in the tables above
 
 message("07: index from ", n_distinct(main$kept$agency_id), " agencies; era ratio ",
         round(era_ratio, 2), " in ", g_long, " long-panel agencies; ", n_lower, " of ",

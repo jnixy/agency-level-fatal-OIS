@@ -7,6 +7,7 @@ quality_reports/
 fatal_encounters_merge/
 # ICPSR terms of use forbid redistributing the LEAIC (see data/README.md)
 *.rda
+*.rds
 *.xlsx
 # Fatal Encounters is linked, not redistributed (see data/README.md)
 data/raw/fatal_encounters.csv
