@@ -5,7 +5,7 @@
 # Author:   Justin Nix (with Claude Code)
 #
 # Purpose:
-#   Run scripts 01-06 in order, each in a fresh environment so no script can
+#   Run scripts 01-07 in order, each in a fresh environment so no script can
 #   depend on another's leftover objects.
 #
 # Inputs:   raw files described in data/README.md (the LEAIC must be
@@ -19,7 +19,7 @@
 library(here)
 
 steps <- c("01_nix_long.R", "02_wapo.R", "03_fe_crosswalk.R",
-           "04_fe.R", "05_combine.R", "06_figures.R")
+           "04_fe.R", "05_combine.R", "06_figures.R", "07_figures_trends.R")
 
 for (s in steps) {
   message("== ", s)

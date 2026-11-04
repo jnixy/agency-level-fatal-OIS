@@ -39,10 +39,7 @@ wapo_years <- 2015:2024
 # 1. Load ----------------------------------------------------------------------
 wapo_dir <- here("data", "raw", "wapo")
 # The archived snapshot the panel was built from (see data/README.md)
-check_sha256(file.path(wapo_dir, "fatal-police-shootings-data.csv"),
-             "606745b7e5189d0291709390e04db1c7ea2f6f901db31584b3ceb22cc842d05c")
-check_sha256(file.path(wapo_dir, "fatal-police-shootings-agencies.csv"),
-             "45d59f3773af0f9ffbdf739f99b4adeafbdc846c54fd5b46f2631daa670a73da")
+for (f in names(WAPO_SHA256)) check_sha256(file.path(wapo_dir, f), WAPO_SHA256[[f]])
 incidents <- read_csv(file.path(wapo_dir, "fatal-police-shootings-data.csv"),
                       show_col_types = FALSE,
                       col_types = cols(.default = col_character()))

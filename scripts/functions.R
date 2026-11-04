@@ -163,13 +163,35 @@ check_sha256 <- function(path, expected, strict = TRUE) {
 
 # Figures ---------------------------------------------------------------------
 
-# Legend order follows this vector in every figure
+#' Short "City, ST" label from an agency name, for facets and row labels.
+#' @param name agency name; @param state postal code
+#' @return character, e.g. "Chicago, IL"; non-city agencies keep a short name
+city_label <- function(name, state) {
+  city <- name |>
+    str_remove("( Metropolitan)? Police Department$") |>
+    str_replace("^New York$", "New York City") |>
+    str_replace(" County Sheriff's (Department|Office)$", " Co. Sheriff") |>
+    str_replace("^Los Angeles Co\\.", "LA Co.")
+  # DC's agency is "Metropolitan Police Department", which names no city
+  city <- if_else(state == "DC", "Washington", city)
+  paste0(city, ", ", state)
+}
+
+# Legend order follows this vector in every figure (validated with the
+# dataviz palette checker: CVD separation and lightness/chroma bands pass)
 source_colors <- c(
-  "Hand-built (Nix)"   = "#1b4f72",
+  "Hand-built (Nix)"   = "#2e6da4",
   "Washington Post"    = "#c0392b",
   "Fatal Encounters"   = "#d68910"
 )
+spliced_color <- "#9dbfe0"     # lighter tint of the hand-built blue (WaPo-filled years)
 neutral_point_color <- "grey30"
+
+# WaPo snapshot checksums (data/README.md); used by 02 and 07
+WAPO_SHA256 <- c(
+  "fatal-police-shootings-data.csv"     = "606745b7e5189d0291709390e04db1c7ea2f6f901db31584b3ceb22cc842d05c",
+  "fatal-police-shootings-agencies.csv" = "45d59f3773af0f9ffbdf739f99b4adeafbdc846c54fd5b46f2631daa670a73da"
+)
 
 #' base_size 9-11 because figures are drawn at their printed 6.5in width
 theme_project <- function(base_size = 11) {

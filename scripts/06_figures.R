@@ -62,14 +62,7 @@ city_slugs <- c(
   "washington_dc", "san_francisco_ca", "anaheim_ca"
 )
 
-# Panel labels: city + state, from the agency key's state field
-city_label <- function(name, state) {
-  city <- name |>
-    str_remove(" (Metropolitan )?Police Department$") |>
-    str_replace("^New York$", "New York City") |>
-    str_replace("^(Metropolitan)?$", "Washington")   # DC's MPD has no city in its name
-  paste0(city, ", ", state)
-}
+# Panel labels: city + state (city_label() is in scripts/functions.R)
 
 cities <- panel |>
   filter(slugs %in% city_slugs) |>
