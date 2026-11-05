@@ -1,11 +1,11 @@
 # ==============================================================================
-# Agency-level fatal OIS: combine the four sources into one panel
+# Agency-level fatal OIS: combine the five sources into one panel
 # ==============================================================================
 #
 # Author:   Justin Nix (with Claude Code)
 #
 # Purpose:
-#   Join the hand-built, WaPo, FE, and MPV agency-year series side by side. No
+#   Join the hand-built, WaPo, FE, MPV, and SHR agency-year series side by side. No
 #   source is used to fill another's gaps. Each column is NA wherever its
 #   source has no data for that agency-year:
 #     n_nix  NA = no hand-built data for that agency-year
@@ -114,6 +114,8 @@ mpv_full <- expand_grid(agency_id = meta$agency_id[!is.na(meta$ori7)],
 shr_in_panel <- shr |>
   filter(ori7 %in% meta$ori7) |>
   rename(agency_id = ori7)
+message("05: SHR police killings at panel agencies: ", sum(shr_in_panel$n_shr),
+        " of ", sum(shr$n_shr))
 
 joined <- nix |> select(agency_id, year, n_nix, nix_partial) |>
   full_join(wapo_full, by = c("agency_id", "year")) |>
@@ -162,7 +164,7 @@ compare_sources <- function(df, a, b, label) {
          agencies = n_distinct(d$agency_id),
          agency_years = nrow(d),
          total_a = sum(d[[a]]), total_b = sum(d[[b]]),
-         pct_diff_total = 100 * (total_b - total_a) / total_a,
+         pct_diff_total = if (total_a > 0) 100 * (total_b - total_a) / total_a else NA_real_,
          correlation = safe_cor(d[[a]], d[[b]]),
          mean_abs_diff = mean(abs(d[[a]] - d[[b]])),
          share_exact = mean(d[[a]] == d[[b]]),

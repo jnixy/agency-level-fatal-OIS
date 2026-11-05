@@ -3,9 +3,9 @@
 # ==============================================================================
 #
 # Author:   Justin Nix (with Claude Code)
-# Source:   Kaplan, J. Jacob Kaplan's Concatenated Files: UCR Program Data:
-#           Supplementary Homicide Reports (SHR), 1976-2024. ICPSR
-#           [distributor]. https://doi.org/10.3886/E100699V16
+# Source:   Kaplan, J. (2017-). "Jacob Kaplan's Concatenated Files: UCR Program
+#           Data: Supplementary Homicide Reports (SHR), 1976-2024." ICPSR
+#           [distributor], V16. https://doi.org/10.3886/E100699V16
 #
 # Purpose:
 #   Count people killed by police with a firearm per agency-year in the FBI's
@@ -50,10 +50,22 @@ if (!file.exists(SHR_PATH)) {
 check_sha256(SHR_PATH, SHR_SHA256, strict = FALSE)
 shr <- readRDS(SHR_PATH)
 
-stopifnot(all(nchar(shr$ori) == 7))
+# Normalise codes before matching, so a year coded with different case or
+# padding can't silently drop out
+code_cols <- grep("^offender_[0-9]+_(circumstance|weapon)$", names(shr), value = TRUE)
+shr <- shr |>
+  mutate(ori = toupper(str_squish(ori)),
+         across(all_of(code_cols), \(x) str_to_lower(str_squish(as.character(x)))))
+
+stopifnot(
+  !anyNA(shr$ori), all(nchar(shr$ori) == 7),
+  is.numeric(shr$additional_victim_count),
+  all(shr$additional_victim_count %in% c(NA, 0:99))
+)
 
 # 2. Police killings -----------------------------------------------------------
-# Exact duplicate records (same everything) are dropped once
+# Exact duplicate records are dropped once. The comparison includes
+# incident_number and month, so two separate incidents can't collapse
 n_raw <- nrow(shr)
 shr <- distinct(shr)
 n_dupes <- n_raw - nrow(shr)
@@ -67,7 +79,7 @@ stopifnot(all(c(circ_cols, weapon_cols) %in% names(shr)))
 # circumstance only for a later offender, so every slot is checked
 is_police  <- map(circ_cols, \(v) shr[[v]] %in% POLICE_CIRC)
 police_gun <- map2(circ_cols, weapon_cols,
-                   \(c, w) shr[[c]] %in% POLICE_CIRC & shr[[w]] %in% FIREARMS)
+                   \(circ, wpn) shr[[circ]] %in% POLICE_CIRC & shr[[wpn]] %in% FIREARMS)
 
 shr <- shr |>
   mutate(any_police = Reduce(`|`, is_police),
@@ -100,7 +112,9 @@ stopifnot(
   sum(shr_agency_year$n_shr) == sum(police$people[police$police_firearm])
 )
 
-# 5. Export --------------------------------------------------------------------
+# 4. Export --------------------------------------------------------------------
+dir.create(here("data", "clean"), recursive = TRUE, showWarnings = FALSE)
+dir.create(here("output", "tables"), recursive = TRUE, showWarnings = FALSE)
 write_csv(shr_agency_year, here("data", "clean", "shr_agency_year.csv"))
 write_csv(linkage, here("output", "tables", "shr_linkage.csv"))
 message("04c: ", sum(shr_agency_year$n_shr), " people killed by police with a firearm, ",

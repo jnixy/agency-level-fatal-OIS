@@ -6,8 +6,8 @@
 #
 # Purpose:
 #   (1) Coverage: how many agencies each source covers, by year.
-#   (2) Sixteen large cities: all four series overlaid (hand-built, WaPo, FE,
-#       and MPV on-duty), ported from the 2025 merge script's 16-city panel.
+#   (2) Sixteen large cities: all five series overlaid (hand-built, WaPo, FE,
+#       MPV on-duty, and FBI SHR), ported from the 2025 merge script's 16-city panel.
 #   (3) Agreement: agency totals, WaPo vs FE and hand-built vs WaPo.
 #
 # Inputs:
@@ -80,7 +80,9 @@ cities <- panel |>
   complete(year = full_seq(year, 1)) |>
   ungroup() |>
   mutate(source = factor(source_labels[source], levels = source_labels),
-         label = fct_reorder(label, n, .fun = max, .na_rm = TRUE, .desc = TRUE))
+         # Order panels by the non-SHR series, so adding SHR didn't reshuffle them
+         label = fct_reorder(label, if_else(source == "FBI SHR", NA_real_, n),
+                             .fun = max, .na_rm = TRUE, .desc = TRUE))
 
 stopifnot(n_distinct(cities$label) == length(city_slugs))
 
@@ -93,8 +95,8 @@ p_cities <- ggplot(cities, aes(year, n, color = source)) +
   scale_color_manual(values = source_colors) +
   labs(x = NULL, y = "People shot and killed by police", color = NULL,
        caption = paste("Mapping Police Violence counts exclude off-duty killings, matching the hand-built definition.",
-                       "FBI SHR counts are filed by the reporting agency and miss many police killings.", sep = "
-")) +
+                       "FBI SHR counts are filed by the reporting agency and miss many police killings.",
+                       sep = "\n")) +
   guides(color = guide_legend(nrow = 2, byrow = TRUE)) +
   theme_project(base_size = 9) +
   theme(panel.spacing = unit(0.6, "lines"),
