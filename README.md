@@ -45,7 +45,7 @@ Some series are left out because they mix in nonfatal shootings or may count inc
 - Cincinnati before 2015;
 - Austin, 2000–2007.
 
-**How far back it reaches.** Before 2000, the solid line rests on only 4–18 departments, mostly large cities. It describes big cities, not the country.
+**How far back it reaches.** Before 2000, the solid line rests on only 4–19 departments, mostly large cities. It describes big cities, not the country.
 
 **What it shows.** The headline compares one fixed set of agencies: the 17 with at least five years of data both before 1995 and since 2015, shown as the dashed line. In those agencies, fatal police shootings since 2015 run 49% below their 1970–1994 level (ratio 0.51, 95% CI 0.35–0.74).
 
@@ -70,14 +70,14 @@ Where they overlap, the sources mostly agree, though FE runs higher than WaPo:
 | Comparison | Years | Agency-years | Correlation | Total deaths, difference | Identical counts | Identical, where either > 0 |
 |---|---|---:|---:|---:|---:|---:|
 | Hand-built vs. WaPo | 2015–2022 | 2,641 | .945 | WaPo −4.0% | 95.2% | 86.8% |
-| Hand-built vs. FE | 2000–2021 | 5,581 | .903 | FE −1.2% | 91.2% | 69.3% |
+| Hand-built vs. FE | 2000–2021 | 5,587 | .907 | FE −1.2% | 91.2% | 69.3% |
 | WaPo vs. FE (hand-built agencies) | 2015–2021 | 2,870 | .973 | FE +9.2% | 90.1% | 71.1% |
-| Hand-built vs. MPV (on-duty) | 2013–2022 | 3,355 | .933 | MPV −2.2% | 89.9% | 71.5% |
-| Hand-built vs. FBI SHR | 1976–2022 | 3,219 | .881 | SHR −28.1% | 66.1% | 31.7% |
+| Hand-built vs. MPV (on-duty) | 2013–2022 | 3,357 | .936 | MPV −2.2% | 89.9% | 71.4% |
+| Hand-built vs. FBI SHR | 1976–2022 | 3,230 | .875 | SHR −29.0% | 65.9% | 31.5% |
 
 Most agency-years are zero in both sources, so the last column, which drops agency-years where both are zero, is the tougher test. Agencies that WaPo lists under several ORIs (mostly state police) are left out of these comparisons. MPV's gap against the hand-built counts shifts over time: about 10% below in 2013–15 and 3–9% above in 2020–22. This is consistent with MPV recording a growing share of deaths over its life, and it's why the trend figures prefer WaPo where WaPo exists. [`output/tables/source_agreement.csv`](output/tables/source_agreement.csv) also compares MPV with WaPo and FE, and has each comparison restricted to the years all three sources cover (2015–2021). Agencies where the sources disagree are listed, largest gap first, in [`output/tables/source_disagreements.csv`](output/tables/source_disagreements.csv).
 
-**SHR runs well below every other source,** and the gap changes over time. Against the hand-built counts it is 11% low in 1976–89 and 16% low in the 1990s, but 43% low in 2000–09 and 35% low in 2010–22. Against WaPo, FE, and MPV it is 42–57% low (see `source_agreement.csv`). Some agencies report other homicides to SHR but not their own killings, which produces false zeros. New York filed none for most of the 2000s, and Chicago filed none after 2018, when the FBI moved to NIBRS. SHR also files a death under the reporting agency, which is sometimes the investigating agency rather than the one whose officer fired. Treat `n_shr` as a lower bound, and don't read its zeros as zero.
+**SHR runs well below every other source,** and the gap changes over time. Against the hand-built counts it is 11% low in 1976–89 and 20% low in the 1990s, but 43% low in 2000–09 and 35% low in 2010–22. Against WaPo, FE, and MPV it is 42–57% low (see `source_agreement.csv`). Some agencies report other homicides to SHR but not their own killings, which produces false zeros. New York filed none for most of the 2000s, and Chicago filed none after 2018, when the FBI moved to NIBRS. SHR also files a death under the reporting agency, which is sometimes the investigating agency rather than the one whose officer fired. Treat `n_shr` as a lower bound, and don't read its zeros as zero.
 
 ![Sixteen large cities, five sources](output/figures/sixteen_cities.png)
 
@@ -88,9 +88,9 @@ Most agency-years are zero in both sources, so the last column, which drops agen
 | 1969 | 1 (Chicago) | — | — | — | — |
 | 1970s | 4–15 | — | — | — | 1,760–1,929 (1976+) |
 | 1980s | 12–15 | — | — | — | 1,695–1,960 |
-| 1990s | 11–19 | — | — | — | 1,459–1,818 |
-| 2000s | 112–171 | — | 2,967 | — | 1,524–1,721 |
-| 2010s | 360–369 | 3,647 (2015+) | 2,967 | 4,622 (2013+) | 1,584–1,841 |
+| 1990s | 12–20 | — | — | — | 1,459–1,818 |
+| 2000s | 112–172 | — | 2,967 | — | 1,524–1,721 |
+| 2010s | 361–369 | 3,647 (2015+) | 2,967 | 4,622 (2013+) | 1,584–1,841 |
 | 2020s | 225–368 (through 2022) | 3,647 (through 2024) | 2,967 (through 2021) | 4,622 (through 2025) | 1,864–2,098 (through 2024) |
 
 The WaPo, FE, and MPV columns count agencies with an ORI. WaPo and MPV are national censuses, so an agency gets a zero from each where that source recorded no deaths. There is one exception: agencies known only from MPV get NA for WaPo rather than zero, because WaPo having no agency with that code can reflect a coding difference. The FE column counts linked agencies only. The SHR column counts panel agencies that filed any SHR record that year.
@@ -151,6 +151,8 @@ I decided, for now at least, to focus on fatal shootings, since they're more rel
 | [ACLU report](https://www.aclusocal.org/sites/default/files/aclu_socal_report_on_apd_use_of_force_nov_2017.pdf) (Nov. 2017) | 2003–2016 | Anaheim PD |
 | [Mike White](https://cvpcs.asu.edu/sites/default/files/content/projects/ER%20-%20external%20DF.pdf) | 1970–1992 | Philadelphia PD |
 | [David Klinger](https://journals.sagepub.com/doi/10.1177/1088767911430861) | 1996–2008 | LAPD, LASD |
+| LASD Special Counsel Merrick J. Bobb, semiannual reports [5th](https://clearinghouse-umich-production.s3.amazonaws.com/media/doc/5168.pdf) (1996), [10th](https://clearinghouse-umich-production.s3.amazonaws.com/media/doc/5173.pdf) (1999), and [30th](https://clearinghouse-umich-production.s3.amazonaws.com/media/doc/42738.pdf) (2011): people killed in hit shootings. For 1996–2008 the hand-built series keeps Klinger's counts; Bobb's run about 5% higher (155 vs. 147), by at most 2 a year | 1991–1995, 2009 | LASD |
+| [LASD person-level shooting data](https://services.arcgis.com/RmCCgQtiZLDCtblq/arcgis/rest/services/Person_Details_Suspect_Involved_Shootings/FeatureServer/0) (LA County open data): people recorded as deceased | 2010–2014 | LASD |
 | [Report on police shootings in Alaska](https://scholarworks.alaska.edu/handle/11122/11933) | 2010–2020 | Anchorage PD |
 | [SPD use-of-force report](https://s3-us-west-2.amazonaws.com/docs.puppycidedb.com/seattlepd/UseofForce2000.PDF) | 1980–2001 | Seattle PD |
 | [Denver independent monitor](https://s3-us-west-2.amazonaws.com/docs.puppycidedb.com/denverpd/OIM/Annual+Reports/2006_Annual+Report.pdf) | 1996–2006 | Denver PD |
