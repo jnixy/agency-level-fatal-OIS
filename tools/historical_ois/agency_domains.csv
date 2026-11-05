@@ -1,0 +1,17 @@
+slug,url_prefix,note
+phoenix_az,phoenix.gov/police,current site
+phoenix_az,ci.phoenix.az.us/police,pre-2005 city domain
+phoenix_az,phoenix.gov/policesite,old site layout
+san_antonio_tx,sanantonio.gov/sapd,current site
+san_antonio_tx,ci.sat.tx.us/sapd,pre-2004 city domain
+albuquerque_nm,cabq.gov/police,current site
+albuquerque_nm,cabq.gov/apd,alternate path
+jacksonville_county_fl,jaxsheriff.org,JSO domain
+jacksonville_county_fl,coj.net/departments/sheriffs-office,city site
+jacksonville_county_fl,coj.net/Departments/Sheriffs-Office,city site (case variant)
+columbus_oh,columbuspolice.org,CPD domain
+columbus_oh,columbus.gov/police,city site
+columbus_oh,ci.columbus.oh.us,pre-2005 city domain
+oklahoma_city_ok,okc.gov/police,city site
+oklahoma_city_ok,okc.gov/departments/police,city site
+oklahoma_city_ok,ci.okc.ok.us/police,pre-2005 city domain

@@ -24,6 +24,7 @@ One row per agency-year. The panel is deliberately **unbalanced**: an agency has
 | `n_mpv` | integer | Mapping Police Violence deaths where the recorded use of force includes a gunshot, 2013 through the snapshot's last complete year (2025 in the current build). **Includes off-duty killings.** 0 for any ORI-coded agency MPV did not record in a year. |
 | `n_mpv_offduty` | integer | How many of `n_mpv` MPV flags as off-duty killings. `n_mpv - n_mpv_offduty` matches the hand-built (on-duty) definition. |
 | `n_mpv_multi` | integer | How many of `n_mpv` list more than one agency in MPV. |
+| `n_shr` | integer | FBI Supplementary Homicide Reports, 1976–2024 (Kaplan's concatenated files). People whose killing the agency recorded with circumstance "felon killed by police" and a firearm as the officer's weapon. A record counts each of its victims. 0 when the agency filed at least one SHR record (for any homicide) that year; NA when it filed none. Filed under the reporting agency, which is not always the agency whose officer fired. A known undercount, and its zeros can be false; see README. |
 
 **Counting rules**
 - In WaPo, FE, and MPV, a death involving several agencies counts once for each agency listed. Summing `n_wapo`, `n_fe`, or `n_mpv` across agencies therefore overcounts.
@@ -57,11 +58,12 @@ A blank cell means no data. `data/agency_key.csv` maps each slug to its ORI, nam
 
 | File | Contents |
 |---|---|
-| `source_agreement.csv` | Pairwise comparison of the series over overlapping agency-years. Columns: correlation, total-deaths difference (%), mean absolute difference, share of agency-years with identical counts (all, and where either source > 0). Each comparison is also restricted to the common support, 2015–2021, where the hand-built, WaPo, and FE series are all observed. MPV is compared on its on-duty count and including off-duty killings. |
+| `source_agreement.csv` | Pairwise comparison of the series over overlapping agency-years. Columns: correlation, total-deaths difference (%), mean absolute difference, share of agency-years with identical counts (all, and where either source > 0). Each comparison is also restricted to the common support, 2015–2021, where the hand-built, WaPo, and FE series are all observed. MPV is compared on its on-duty count and including off-duty killings. SHR is compared with each of the other sources. |
 | `source_disagreements.csv` | Agency-level totals over each pair's overlap where the sources differ, largest gap first. |
 | `coverage_by_year.csv` | Agencies with data in each source, by year. |
 | `fe_linkage.csv` | How many qualifying FE deaths link to a panel agency. |
 | `mpv_linkage.csv` | MPV snapshot used, gunshot deaths kept, off-duty, and deaths with no recoverable ORI. |
+| `shr_linkage.csv` | SHR records read, exact duplicates dropped, police-killing records, non-firearm records dropped, and people counted. |
 | `mpv_ori_resolution.csv` | How each MPV agency mention got its ORI (MPV's own code, an alias, a name match, or a hand decision). |
 | `fe_top_unmatched_names.csv` | The 200 FE agency names with the most deaths that are not linked. Use these to extend the crosswalk. |
 
