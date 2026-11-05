@@ -4,7 +4,7 @@ agencies_excluded_entirely,1
 agencies_in_index,413
 agencies_dropped_all_zero,0
 pre2000_agencies_min,4
-pre2000_agencies_max,18
+pre2000_agencies_max,19
 long_panel_agencies,17
 era_ratio_recent_vs_early,0.511
 era_ratio_ci_lo,0.351
