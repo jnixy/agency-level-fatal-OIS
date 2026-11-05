@@ -1,0 +1,226 @@
+state,agency,paired,deaths
+TX,United States Marshals Service,TRUE,22
+TX,United States Border Patrol,TRUE,19
+AZ,United States Marshals Service,TRUE,12
+AZ,United States Border Patrol,TRUE,11
+CA,United States Border Patrol,TRUE,11
+FL,United States Marshals Service,TRUE,11
+TN,United States Marshals Service,TRUE,10
+NC,United States Marshals Service,TRUE,9
+NM,United States Marshals Service,TRUE,9
+OK,United States Marshals Service,TRUE,8
+PA,United States Marshals Service,TRUE,8
+UT,United States Marshals Service,TRUE,8
+CA,United States Marshals Service,TRUE,7
+GA,United States Marshals Service,TRUE,7
+FL,Miami Dade Sheriff's Office,TRUE,6
+IL,United States Marshals Service,TRUE,6
+LA,United States Marshals Service,TRUE,6
+MO,United States Marshals Service,TRUE,6
+NM,United States Border Patrol,TRUE,6
+DC,United States Marshals Service,TRUE,5
+MT,United States Marshals Service,TRUE,5
+OH,United States Marshals Service,TRUE,5
+VA,United States Marshals Service,TRUE,5
+WA,United States Marshals Service,TRUE,5
+AR,United States Marshals Service,TRUE,4
+IN,United States Marshals Service,TRUE,4
+KY,United States Marshals Service,TRUE,4
+MI,United States Marshals Service,TRUE,4
+WV,United States Marshals Service,TRUE,4
+AZ,United States Forest Service,TRUE,3
+CA,California Department Of Fish Game Law Enforcement,TRUE,3
+CA,,TRUE,3
+DC,United States Capitol Police,TRUE,3
+IL,Federal Bureau Of Investigation,TRUE,3
+KS,United States Marshals Service,TRUE,3
+MD,United States Marshals Service,TRUE,3
+MI,Federal Bureau Of Investigation,TRUE,3
+MI,Michigan Department Of Corrections,TRUE,3
+MT,Bureau Of Indian Affairs Police,TRUE,3
+ND,Bureau Of Indian Affairs Police,TRUE,3
+NY,United States Marshals Service,TRUE,3
+OK,Choctaw Lighthorse Police Department,TRUE,3
+SD,United States Marshals Service,TRUE,3
+TN,Drug Enforcement Administration,TRUE,3
+TX,Bureau Of Alcohol Tobacco Firearms And Explosives,TRUE,3
+TX,Harris County Constable Precinct 4,TRUE,3
+TX,Harris County Constable Precinct 5,TRUE,3
+AK,United States Marshals Service,TRUE,2
+AL,Alabama Law Enforcement Agency State Bureau Of Investigation,TRUE,2
+AZ,United States Immigration And Customs Enforcement,TRUE,2
+CA,Department Of Homeland Security,TRUE,2
+CA,United States Immigration And Customs Enforcement,TRUE,2
+FL,Department Of Homeland Security,TRUE,2
+GA,South Fulton Police Department,TRUE,2
+ID,Star Police Department,TRUE,2
+MD,Pentagon Force Protection Agency,TRUE,2
+MS,United States Marshals Service,TRUE,2
+NC,Bureau Of Alcohol Tobacco Firearms And Explosives,TRUE,2
+NC,North Carolina Department Of Adult Correction,TRUE,2
+NE,United States Marshals Service,TRUE,2
+NJ,United States Marshals Service,TRUE,2
+NV,Bureau Of Land Management,TRUE,2
+PA,Bureau Of Alcohol Tobacco Firearms And Explosives,TRUE,2
+PA,Pennsylvania Office Of Attorney General,TRUE,2
+SC,United States Marshals Service,TRUE,2
+SD,Oglala Lakota County Sheriff's Office,TRUE,2
+TX,Fort Worth Fire Department Investigations,TRUE,2
+TX,Harris County Constable Precinct 3,TRUE,2
+TX,Homeland Security Investigations,TRUE,2
+TX,Texas Office Of The Attorney General,TRUE,2
+TX,United States Customs And Border Protection,TRUE,2
+VA,United States Park Police,TRUE,2
+WI,United States Marshals Service,TRUE,2
+WY,Bureau Of Indian Affairs,TRUE,2
+WY,United States Marshals Service,TRUE,2
+AK,Alaska Wildlife Troopers,TRUE,1
+AK,Chefornak Village Police,TRUE,1
+AL,Department Of Homeland Security,TRUE,1
+AL,United States Marshals Service,TRUE,1
+AR,Bureau Of Alcohol Tobacco Firearms And Explosives,TRUE,1
+AR,National Park Service,TRUE,1
+AZ,Adult Probation Department Maricopa County Superior Court,TRUE,1
+AZ,Arizona Department Of Transportation Enforcement Compliance Division,TRUE,1
+AZ,Department Of Homeland Security,TRUE,1
+AZ,Internal Revenue Service,TRUE,1
+AZ,Maricopa Community Colleges Police Department,TRUE,1
+AZ,National Park Service,TRUE,1
+AZ,Navajo Nation Epa Criminal Enforcement Department,TRUE,1
+AZ,Queen Creek Police Department,TRUE,1
+AZ,Saint George Police Department,TRUE,1
+AZ,United States Air Force Security Forces,TRUE,1
+AZ,White Mountain Apache Game Fish Rangers,TRUE,1
+CA,Apple Valley Police Department,TRUE,1
+CA,Bureau Of Alcohol Tobacco Firearms And Explosives,TRUE,1
+CA,California Department Of Corrections And Rehabilitation,TRUE,1
+CA,Dublin Police Services,TRUE,1
+CA,Morongo Band Of Mission Indians Reservation Patrol,TRUE,1
+CA,United States Marine Corps Military Police,TRUE,1
+CO,Bureau Of Land Management,TRUE,1
+CO,Burlington Northern And Santa Fe Railway Police Department,TRUE,1
+CO,United States Marshals Service,TRUE,1
+CT,Colchester Police Department,TRUE,1
+DC,Federal Bureau Of Investigation,TRUE,1
+DC,United States Secret Service,TRUE,1
+DE,Federal Bureau Of Investigation,TRUE,1
+FL,Bureau Of Alcohol Tobacco Firearms And Explosives,TRUE,1
+FL,Federal Bureau Of Investigation,TRUE,1
+FL,Florida Institute Of Technology Department Of Security,TRUE,1
+FL,Florida State Fire Marshal,TRUE,1
+FL,United States Border Patrol,TRUE,1
+FL,Veterans Affairs Police,TRUE,1
+GA,Bureau Of Alcohol Tobacco Firearms And Explosives,TRUE,1
+GA,Federal Bureau Of Investigation,TRUE,1
+GA,Spelman College Police Department,TRUE,1
+GA,United States Immigration And Customs Enforcement,TRUE,1
+GA,Veterans Affairs Police,TRUE,1
+HI,Hawaii Department Of Public Safety,TRUE,1
+HI,National Park Service Law Enforcement Rangers,TRUE,1
+HI,United States Marshals Service,TRUE,1
+IA,Iowa Department Of Natural Resources,TRUE,1
+ID,Bureau Of Indian Affairs Police,TRUE,1
+ID,Federal Bureau Of Investigation,TRUE,1
+ID,United States Marshals Service,TRUE,1
+IL,Cook County Hospital Police Department,TRUE,1
+IL,Drug Enforcement Administration,TRUE,1
+IL,United States Department Of Housing And Urban Development,TRUE,1
+IL,United States Immigration And Customs Enforcement,TRUE,1
+IN,Borough Of Palmyra Police Department,TRUE,1
+IN,Bureau Of Alcohol Tobacco Firearms And Explosives,TRUE,1
+IN,Federal Bureau Of Investigation,TRUE,1
+KY,United States Army Military Police Corps,TRUE,1
+LA,Centenary College Of Louisiana Department Of Public Safety,TRUE,1
+LA,City Of New Iberia Police Department,TRUE,1
+LA,Port Fourchon Harbor Police,TRUE,1
+MD,Hudson County Prosecutors Office,TRUE,1
+MD,National Security Agency Police,TRUE,1
+MD,United States Park Police,TRUE,1
+MI,Bureau Of Alcohol Tobacco Firearms And Explosives,TRUE,1
+MI,Detroit Transportation Corporation,TRUE,1
+MI,Michigan Department Of Attorney General,TRUE,1
+MI,Michigan Department Of Natural Resources,TRUE,1
+MI,United States Border Patrol,TRUE,1
+MI,United States Immigration And Customs Enforcement,TRUE,1
+MN,Bureau Of Alcohol Tobacco Firearms And Explosives,TRUE,1
+MN,United States Marshals Service,TRUE,1
+MO,Bureau Of Alcohol Tobacco Firearms And Explosives,TRUE,1
+MO,Department Of Homeland Security,TRUE,1
+MO,North County Police Cooperative,TRUE,1
+MO,Pine Lawn Police Department,TRUE,1
+MS,Mississippi Bureau Of Investigation,TRUE,1
+MS,Mississippi Gaming Commission,TRUE,1
+MT,Montana Department Of Corrections Probation And Parole,TRUE,1
+NC,Drug Enforcement Administration,TRUE,1
+NC,Duke University Police Department,TRUE,1
+NC,North Carolina Department Of Transportation,TRUE,1
+NC,United States Immigration And Customs Enforcement,TRUE,1
+ND,Spirit Lake Nation Tribal Police,TRUE,1
+ND,United States Marshals Service,TRUE,1
+NE,Burlington Northern And Santa Fe Railway Police Department,TRUE,1
+NE,United States Immigration And Customs Enforcement,TRUE,1
+NH,Drug Enforcement Administration,TRUE,1
+NH,New Hampshire Department Of Corrections,TRUE,1
+NJ,Bureau Of Alcohol Tobacco Firearms And Explosives,TRUE,1
+NJ,United States Immigration And Customs Enforcement,TRUE,1
+NM,Mescalero Conservation Law Enforcement Department,TRUE,1
+NM,National Park Service,TRUE,1
+NM,Ohkay Owingeh Tribal Police Department,TRUE,1
+NM,United States Air Force Security Forces,TRUE,1
+NV,Bureau Of Indian Affairs Police,TRUE,1
+NV,Federal Bureau Of Investigation,TRUE,1
+NV,Veterans Affairs Police,TRUE,1
+NY,Drug Enforcement Administration,TRUE,1
+NY,United States Border Patrol,TRUE,1
+NY,United States Park Police,TRUE,1
+OK,Federal Bureau Of Investigation,TRUE,1
+OK,Oklahoma Department Of Wildlife Conservation,TRUE,1
+OK,Oklahoma Tourism Recreation Department State Parks,TRUE,1
+OK,Veterans Affairs Police,TRUE,1
+OR,Bureau Of Alcohol Tobacco Firearms And Explosives,TRUE,1
+OR,Drug Enforcement Administration,TRUE,1
+OR,Federal Bureau Of Investigation,TRUE,1
+PA,German Township Police Department,TRUE,1
+PA,United States Secret Service,TRUE,1
+PA,,TRUE,1
+RI,United States Marshals Service,TRUE,1
+SC,Bureau Of Alcohol Tobacco Firearms And Explosives,TRUE,1
+SC,Spartanburg Methodist College Campus Safety,TRUE,1
+SD,Bureau Of Indian Affairs Police,TRUE,1
+TN,Bureau Of Alcohol Tobacco Firearms And Explosives,TRUE,1
+TN,Fairfield Glade Police Department,TRUE,1
+TN,Parrottsville Police Department,TRUE,1
+TX,Bee County Constable Precinct 1,TRUE,1
+TX,Brazoria County Constable Precinct 1,TRUE,1
+TX,Cameron County Constable Precinct 5,TRUE,1
+TX,Department Of Defense Police,TRUE,1
+TX,Department Of Homeland Security,TRUE,1
+TX,Department Of The Navy Police,TRUE,1
+TX,Fate Department Of Public Safety,TRUE,1
+TX,Federal Protective Service,TRUE,1
+TX,Montgomery County Constable Precinct 4,TRUE,1
+TX,Tarrant County Constable Precinct 7,TRUE,1
+TX,United States Immigration And Customs Enforcement,TRUE,1
+TX,University Of The Incarnate Word Police Department,TRUE,1
+TX,Veterans Affairs Police,TRUE,1
+UT,Bureau Of Alcohol Tobacco Firearms And Explosives,TRUE,1
+UT,Bureau Of Indian Affairs Police,TRUE,1
+UT,Utah State Bureau Of Investigation,TRUE,1
+VA,Bureau Of Alcohol Tobacco Firearms And Explosives,TRUE,1
+VA,Liberty University Police Department,TRUE,1
+VA,Naval Criminal Investigative Service,TRUE,1
+VA,United States Capitol Police,TRUE,1
+VA,United States Immigration And Customs Enforcement,TRUE,1
+VA,,TRUE,1
+VT,Drug Enforcement Administration,TRUE,1
+VT,United States Border Patrol,TRUE,1
+WA,Shoreline Police Department,TRUE,1
+WA,United States Border Patrol,TRUE,1
+WA,Washington State Department Of Corrections,TRUE,1
+WI,Cleveland Division Of Police,TRUE,1
+WI,Columbus Division Of Police,TRUE,1
+WI,Drug Enforcement Administration,TRUE,1
+WI,Federal Bureau Of Investigation,TRUE,1
+WI,Veterans Affairs Police,TRUE,1
+WY,Bureau Of Alcohol Tobacco Firearms And Explosives,TRUE,1
+WY,National Park Service,TRUE,1

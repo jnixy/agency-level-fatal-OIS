@@ -6,9 +6,9 @@ agencies_dropped_all_zero,0
 pre2000_agencies_min,4
 pre2000_agencies_max,16
 long_panel_agencies,16
-era_ratio_recent_vs_early,0.491
-era_ratio_ci_lo,0.336
-era_ratio_ci_hi,0.719
+era_ratio_recent_vs_early,0.501
+era_ratio_ci_lo,0.343
+era_ratio_ci_hi,0.731
 then_now_lower,10
 then_now_total,16
 core_tiles_pre2000,25

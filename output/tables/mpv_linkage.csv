@@ -1,0 +1,14 @@
+measure,value
+Snapshot,mpv_2026-11-04.csv
+Last incident in snapshot,2026-10-23
+Years kept,2013-2025
+Gunshot deaths in years kept,14094
+  off-duty,385
+  with no ORI recoverable (not linked),323
+Deaths linked to >= 1 ORI,13771
+Agency-death links (multi-agency deaths count per agency),15244
+Agency mentions with no ORI recoverable (incl. on linked deaths),487
+  of which on deaths with unequal name/ORI lists,0
+ORI aliases applied (from shared deaths),3
+ORIs mapped to their WaPo agency's primary ORI,23
+ORI7 agencies,4264

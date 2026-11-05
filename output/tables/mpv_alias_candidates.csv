@@ -1,0 +1,121 @@
+ori7,wapo_ori7,matched,shared,state,share,mpv_name,wapo_name,same_county,names_match,accept
+AL00508,AL00500,1,1,AL,1,Daphne Police Department,Baldwin County Sheriff's Department,TRUE,FALSE,FALSE
+AL01802,AL01800,1,1,AL,1,Ranburne Police Department,Cleburne County Sheriff's Office,TRUE,FALSE,FALSE
+AL03804,GA10601,1,1,AL,1,Columbia Police Department,Columbus Police Department,FALSE,FALSE,FALSE
+AL06102,AL06100,1,1,AL,1,Talladega Police Department,Talladega County Sheriff's Office,TRUE,TRUE,FALSE
+AR00303,AR03201,1,1,AR,1,Gassville Police Department,Batesville Police Department,FALSE,FALSE,FALSE
+AR01804,AR04500,1,1,AR,1,Marion Police Department,Marion County Sheriff's Office,FALSE,TRUE,FALSE
+AR02100,AR02000,1,1,AR,1,Desha County Sheriff's Department,Dallas County Sheriff's Office,FALSE,FALSE,FALSE
+AR06007,AR06300,1,1,AR,1,Alexander Police Department,Saline County Sheriff's Department,FALSE,FALSE,FALSE
+AR06200,ARASP00,1,1,AR,1,Saint Francis County Sheriff's Office,Arkansas State Police,FALSE,FALSE,FALSE
+AR06901,AR02603,1,1,AR,1,Mountain View Police Department,Mountain Pine Police Department,FALSE,FALSE,FALSE
+AR07500,TN07900,1,1,AR,1,Yell County Sheriff's Office,Shelby County Sheriff's Office,FALSE,FALSE,FALSE
+AZ00501,AZ01003,1,1,AZ,1,Pima Police Department,Tucson Police Department,FALSE,FALSE,FALSE
+AZ00900,AZ00189,1,1,AZ,1,Navajo County Sheriff's Office,Navajo Nation Police Department,FALSE,FALSE,FALSE
+AZ01408,WA03200,1,1,AZ,1,San Luis Police Department,Spokane County Sheriff's Department,FALSE,FALSE,FALSE
+CA03658,CA03600,1,1,CA,1,Victor Valley College Police Department,San Bernardino County Sheriff's Department,TRUE,FALSE,FALSE
+CA03715,CA0193G,1,1,CA,1,Port Of San Diego Harbor Police Department,Harbor Police Department,FALSE,FALSE,FALSE
+CO04400,CO04402,1,1,CO,1,Morgan County Sheriff's Office,Fort Morgan Police Department,TRUE,FALSE,FALSE
+DE00200,DE00206,1,1,DE,1,New Castle County Sheriff's Office,Wilmington Police Department,TRUE,FALSE,FALSE
+FL00503,FL00502,1,1,FL,1,Cocoa Beach Police Department,Cocoa Police Department,TRUE,FALSE,FALSE
+FL00628,FL00600,1,1,FL,1,Coral Springs Police Department,Broward County Sheriff's Office,TRUE,FALSE,FALSE
+FL01624,FL01602,34,34,FL,1,Jacksonville Sheriff's Office,Jacksonville Sheriff's Office,TRUE,TRUE,TRUE
+FL05316,FL05300,1,1,FL,1,Winter Haven Police Department,Polk County Sheriff's Department,TRUE,FALSE,FALSE
+FL05701,FL05700,1,1,FL,1,Milton Police Department,Santa Rosa County Sheriff's Office,TRUE,FALSE,FALSE
+GA03114,GA12600,1,1,GA,1,Lovejoy Police Department,Spalding County Sheriff's Office,FALSE,FALSE,FALSE
+GA07300,GA06900,1,1,GA,1,Hart County Sheriff's Department,Hall County Sheriff's Department,FALSE,FALSE,FALSE
+GA09700,GA07800,1,1,GA,1,Madison County Sheriff's Office,Jackson County Sheriff's Office,FALSE,FALSE,FALSE
+GA11901,GA03101,1,1,GA,1,Clayton Police Department,Clayton County Police Department,FALSE,TRUE,FALSE
+GA14800,GA15100,1,1,GA,1,Ware County Sheriff's Office,Wayne County Sheriff's Office,FALSE,FALSE,FALSE
+GA15400,GA15300,1,1,GA,1,White County Sheriff's Office,Wheeler County Sheriff's Department,FALSE,FALSE,FALSE
+GADPS02,GAGSP00,9,9,GA,1,Georgia State Patrol,Georgia State Police,FALSE,FALSE,TRUE
+IA04800,IA04803,1,1,IA,1,Iowa County Sheriff's Office,Williamsburg Police Department,TRUE,FALSE,FALSE
+IL08217,IL00106,1,1,IL,1,Washington Park Police Department,Illinois State Police,FALSE,FALSE,FALSE
+IN00100,IN00900,1,1,IN,1,Adams County Sheriff's Office,Cass County Sheriff's Department,FALSE,FALSE,FALSE
+IN08402,IN08401,1,1,IN,1,West Terre Haute Police Department,Terre Haute Police Department,TRUE,FALSE,FALSE
+IN08502,IN08500,1,1,IN,1,Wabash Police Department,Wabash County Sheriff's Department,TRUE,TRUE,FALSE
+IN08700,IN06100,1,1,IN,1,Warrick County Sheriff's Office,Parke County Sheriff's Office,FALSE,FALSE,FALSE
+KS00500,OH05101,1,1,KS,1,Barton County Sheriff's Office,Marion Police Department,FALSE,FALSE,FALSE
+KS01400,KS04000,1,1,KS,1,Clay County Sheriff's Office,Harvey County Sheriff's Department,FALSE,FALSE,FALSE
+KS02500,KS02600,1,1,KS,1,Elk County Sheriff's Office,Ellis County Sheriff's Office,FALSE,FALSE,FALSE
+KS05003,KS05000,1,1,KS,1,Chetopa Police Department,Labette County Sheriff's Office,TRUE,FALSE,FALSE
+KS05100,KS08500,1,1,KS,1,Lane County Sheriff's Department,Saline County Sheriff's Office,FALSE,FALSE,FALSE
+KS08100,KS02301,1,1,KS,1,Riley County Police Department,Lawrence Police Department,FALSE,FALSE,FALSE
+KY03000,KY03001,1,1,KY,1,Daviess County Sheriff's Office,Owensboro Police Department,TRUE,FALSE,FALSE
+KY04000,KY06900,1,1,KY,1,Garrard County Sheriff's Office,Lincoln County Sheriff's Office,FALSE,FALSE,FALSE
+KY09802,KY001SP,1,1,KY,1,Elkhorn City Police Department,Kentucky State Police,FALSE,FALSE,FALSE
+LA03701,LALSP00,1,1,LA,1,Monroe Police Department,Louisiana State Police,FALSE,FALSE,FALSE
+LA04303,LA04300,1,1,LA,1,Converse Police Department,Sabine Parish Sheriff's Office,TRUE,FALSE,FALSE
+LA05901,LA05900,1,1,LA,1,Bogalusa Police Department,Washington Parish Sheriff's Department,TRUE,FALSE,FALSE
+MA01200,MA01220,1,1,MA,1,Plymouth County Sheriff's Office,Plymouth County Sheriff's Department,TRUE,TRUE,FALSE
+MD01900,MD300SP,1,1,MD,1,St Marys County Sheriff's Office,Maryland State Police,FALSE,FALSE,FALSE
+MI73718,MI73717,1,1,MI,1,Saginaw Township Police Department,Saginaw Police Department,TRUE,TRUE,FALSE
+MI80463,MI63808,1,1,MI,1,Hartford Police Department,Waterford Police Department,FALSE,FALSE,FALSE
+MI82490,MI01001,1,1,MI,1,Inkster Police Department,Michigan State Police,FALSE,FALSE,FALSE
+MO02505,KS01901,1,1,MO,1,Plattsburg Police Department,Pittsburg Police Department,FALSE,FALSE,FALSE
+MO08304,MO09581,1,1,MO,1,Weston Police Department,Wellston Police Department,FALSE,FALSE,FALSE
+MO09220,MO09200,1,1,MO,1,Saint Charles County Police Department,St. Charles County Sheriff's Department,TRUE,TRUE,FALSE
+MS01500,MS04301,1,1,MS,1,Copiah County Sheriff's Department,Brookhaven Police Department,FALSE,FALSE,FALSE
+MS03702,NC07801,1,1,MS,1,Lumberton Police Department,Lumberton Police Department,FALSE,TRUE,FALSE
+MT04500,MT01500,1,1,MT,1,Sanders County Sheriff's Office,Flathead County Sheriff's Office,FALSE,FALSE,FALSE
+NC03602,NC03605,1,1,NC,1,Bessemer City Police Department,Gaston County Police Department,TRUE,FALSE,FALSE
+NC08102,NC08100,1,1,NC,1,Rutherfordton Police Department,Rutherford County Sheriff's Office,TRUE,FALSE,FALSE
+NC09250,NC08800,1,1,NC,1,Wake County Alcohol Beverage Control Law Enforcement,Transylvania County Sheriff's Department,FALSE,FALSE,FALSE
+NJ00329,NJ00330,1,1,NJ,1,Pemberton Borough Police,Pemberton Township Police Department,TRUE,FALSE,FALSE
+NJ00500,NJ00589,1,1,NJ,1,Cape May County Sheriff's Office,Cape May County Prosecutor's Office,TRUE,FALSE,FALSE
+NJ01021,NJ00810,1,1,NJ,1,Raritan Township Police Department,Mantua Township Police Department,FALSE,FALSE,FALSE
+NM01704,AZ00189,2,2,NM,1,Ramah Navajo Police Department,Navajo Nation Police Department,FALSE,FALSE,FALSE
+NY01200,NY01229,1,1,NY,1,Delaware County Sheriff's Office,Walton Village Police Department,TRUE,FALSE,FALSE
+NY05101,NY05100,6,6,NY,1,Suffolk County Police Department,Suffolk County Sheriff's Office,TRUE,TRUE,TRUE
+NY10100,KS08703,11,1,NY,0.091,New York State Police,Wichita Police Department,FALSE,FALSE,FALSE
+NY10100,NY03200,11,1,NY,0.091,New York State Police,Oneida County Sheriff's Department,FALSE,FALSE,FALSE
+NY10100,NY04500,11,1,NY,0.091,New York State Police,Saratoga County Sheriff's Department,FALSE,FALSE,FALSE
+NY10100,NY11304,11,8,NY,0.727,New York State Police,New York State Police,FALSE,TRUE,FALSE
+OH00510,OH02527,1,1,OH,1,Ohio University Police Department,Ohio State University Police Department,FALSE,FALSE,FALSE
+OH00609,OH07812,1,1,OH,1,Waynesfield Police Department,Howland Township Police Department,FALSE,FALSE,FALSE
+OH00918,OH00901,2,2,OH,1,Fairfield Police Department,Fairfield Police Department,TRUE,TRUE,FALSE
+OH02536,OH08310,1,1,OH,1,Hamilton Township Police Department,Hamilton Township Police Department,FALSE,TRUE,FALSE
+OH02554,OHCOP00,1,1,OH,1,Columbus Airport Authority Police,Columbus Police Department,FALSE,FALSE,FALSE
+OH05020,OH01316,1,1,OH,1,Milton Township Police Department,Union Township Police Department,FALSE,FALSE,FALSE
+OH06401,OH05716,1,1,OH,1,Crooksville Police Department,Brookville Police Department,FALSE,FALSE,FALSE
+OH08600,OH08606,1,1,OH,1,Williams County Sheriff's Office,Edon Police Department,TRUE,FALSE,FALSE
+OK01602,OK01600,1,1,OK,1,Cache Police Department,Comanche County Sheriff's Office,TRUE,FALSE,FALSE
+OK03202,OK03200,1,1,OK,1,Wetumka Police Department,Hughes County Sheriff's Department,TRUE,FALSE,FALSE
+OK04920,OK04900,1,1,OK,1,Sportsmen Acres Police Department,Mayes County Sheriff's Department,TRUE,FALSE,FALSE
+OK05700,OK05702,1,1,OK,1,Osage County Sheriff's Office,Fairfax Police Department,TRUE,FALSE,FALSE
+OR00400,OR001SP,1,1,OR,1,Clatsop County Sheriff's Office,Oregon State Police,FALSE,FALSE,FALSE
+PA00113,PA00614,1,1,PA,1,Reading Township Police Department,Reading Police Department,FALSE,TRUE,FALSE
+PA00219,PAPPD00,1,1,PA,1,Penn Hills Township Police Department,Pittsburgh Police Department,FALSE,FALSE,FALSE
+PA00706,PA001SP,1,1,PA,1,Roaring Spring Borough Police Department,Pennsylvania State Police,FALSE,FALSE,FALSE
+PA01312,PA001SP,1,1,PA,1,Beaver Meadows Borough Police Department,Pennsylvania State Police,FALSE,FALSE,FALSE
+PA01500,PA01545,1,1,PA,1,Chester County Sheriff's Office,Chester County Sheriff's Office,TRUE,TRUE,FALSE
+PA02618,PA001SP,1,1,PA,1,Perryopolis Borough Police Department,Pennsylvania State Police,FALSE,FALSE,FALSE
+PA03527,PA01908,1,1,PA,1,Scott Township Police Department,Scott Township Police (Columbia Co.),FALSE,FALSE,FALSE
+PA03720,PA001SP,1,1,PA,1,Mahoning Township Police Department,Pennsylvania State Police,FALSE,FALSE,FALSE
+PA04660,PA04650,1,1,PA,1,Upper Perk Police District,Upper Perkiomen Police Department,TRUE,FALSE,FALSE
+PA05113,PA05114,1,1,PA,1,Philadelphia Housing Authority Police Department,Philadelphia Housing Authority,TRUE,TRUE,FALSE
+PA05448,PA03708,1,1,PA,1,New Castle Township Police Department,Union Township Police (Lawrence Co.),FALSE,FALSE,FALSE
+PA05700,PA001SP,1,1,PA,1,Sullivan County Sheriff's Office,Pennsylvania State Police,FALSE,FALSE,FALSE
+SC00601,SC00200,1,1,SC,1,Barnwell Police Department,Aiken County Sheriff's Office,FALSE,FALSE,FALSE
+SC01201,SC01200,1,1,SC,1,Chester Police Department,Chester County Sheriff's Department,TRUE,TRUE,FALSE
+TN01201,TN03900,1,1,TN,1,Henderson Police Department,Henderson County Sheriff's Department,FALSE,TRUE,FALSE
+TN04100,TN09200,1,1,TN,1,Hickman County Sheriff's Office,Weakley County Sheriff's Department,FALSE,FALSE,FALSE
+TN06300,TN06301,1,1,TN,1,Montgomery County Sheriff's Office,Clarksville Police Department,TRUE,FALSE,FALSE
+TX03300,TX00000,1,1,TX,1,Carson County Sheriff's Office,Texas Department of Public Safety,FALSE,FALSE,FALSE
+TX10125,TX02001,1,1,TX,1,Webster Police Department,Alvin Police Department,FALSE,FALSE,FALSE
+TX13910,TX18400,1,1,TX,1,Reno Police Department,Parker County Sheriff's Department,FALSE,FALSE,FALSE
+TX17014,TX07001,1,1,TX,1,Willis Police Department,Ennis Police Department,FALSE,FALSE,FALSE
+TX17202,TXUSM01,1,1,TX,1,Lone Star Police Department,U.S. Marshals Service,FALSE,FALSE,FALSE
+TX20000,TX20003,1,1,TX,1,Runnels County Sheriff's Office,Winters Police Department,TRUE,FALSE,FALSE
+TX23801,TX00000,1,1,TX,1,Monahans Police Department,Texas Department of Public Safety,FALSE,FALSE,FALSE
+UT01500,UT02900,1,1,UT,1,Morgan County Sheriff's Office,Weber County Sheriff's Department,FALSE,FALSE,FALSE
+UT02103,UT01802,1,1,UT,1,Aurora Police Department,Murray Police Department,FALSE,FALSE,FALSE
+VA02900,VA02901,1,1,VA,1,Fairfax County Sheriff's Office,Fairfax County Sheriff's Office,TRUE,TRUE,FALSE
+VA03800,VA001SP,2,1,VA,0.5,Grayson County Sheriff's Office,Virginia State Police,FALSE,FALSE,FALSE
+VA03800,VA03802,2,1,VA,0.5,Grayson County Sheriff's Office,Independence Police Department,TRUE,FALSE,FALSE
+WA02502,WA01722,1,1,WA,1,South Bend Police Department,Snoqualmie Police Department,FALSE,FALSE,FALSE
+WA02709,WA02701,1,1,WA,1,Milton Police Department,Puyallup Police Department,TRUE,FALSE,FALSE
+WI05408,WI05401,1,1,WI,1,Beloit Police Department,Beloit Police Department,TRUE,TRUE,FALSE
+WI06528,WI06512,1,1,WI,1,Geneva Lake Law Enforcement,Geneva Police Department,TRUE,FALSE,FALSE
+WI06807,WI06805,1,1,WI,1,Delafield Police Department,Waukesha Police Department,TRUE,FALSE,FALSE
+WV01004,WV001SP,1,1,WV,1,Mount Hope Police Department,West Virginia State Police,FALSE,FALSE,FALSE

@@ -9,5 +9,8 @@ fatal_encounters_merge/
 *.rda
 *.rds
 *.xlsx
-# Fatal Encounters is linked, not redistributed (see data/README.md)
+# Fatal Encounters and MPV are linked, not redistributed (see data/README.md)
 data/raw/fatal_encounters.csv
+data/raw/mpv/
+__pycache__/
+*.pyc

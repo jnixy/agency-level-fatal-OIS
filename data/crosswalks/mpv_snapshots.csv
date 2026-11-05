@@ -1,0 +1,2 @@
+snapshot_date,file,sha256,rows,last_incident_date,source
+2026-11-04,mpv_2026-11-04.csv,2fe6bf36abbbe967645bb1b466cd8b046dabf14118b2e1eef5248cb0d9a9860e,16386,2026-10-23,airtable
