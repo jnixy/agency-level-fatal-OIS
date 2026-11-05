@@ -91,6 +91,12 @@ split_fe_agencies <- function(fe_qual) {
     ungroup()
 }
 
+# Mapping Police Violence -------------------------------------------------------
+
+# use_of_force can list several ("Gunshot,Conducted Energy Device"); any
+# mention of a gunshot counts as a shooting death
+MPV_GUNSHOT <- "gunshot"
+
 # Agency names ----------------------------------------------------------------
 
 #' Strip agency-type boilerplate so "Omaha Police Department" ~ "OMAHA POLICE DEPT."

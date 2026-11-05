@@ -1,23 +1,26 @@
 # ==============================================================================
-# Agency-level fatal OIS: combine the three sources into one panel
+# Agency-level fatal OIS: combine the four sources into one panel
 # ==============================================================================
 #
 # Author:   Justin Nix (with Claude Code)
 #
 # Purpose:
-#   Join the hand-built, WaPo, and FE agency-year series side by side. No
+#   Join the hand-built, WaPo, FE, and MPV agency-year series side by side. No
 #   source is used to fill another's gaps. Each column is NA wherever its
 #   source has no data for that agency-year:
 #     n_nix  NA = no hand-built data for that agency-year
 #     n_wapo 0 for every ORI-coded agency 2015-2024 (WaPo is a national census)
 #     n_fe   0/count 2000-2021 for linked agencies, NA where never linked
+#     n_mpv  0 for every ORI-coded agency, 2013 to the snapshot's last complete
+#            year (MPV is a national census; includes off-duty, see n_mpv_offduty)
 #   The panel is deliberately unbalanced: an agency has rows only for years
 #   some source covers. A missing row means no source, not zero deaths.
 #   Also writes source-agreement and coverage tables.
 #
 # Inputs:
 #   - data/agency_key.csv
-#   - data/clean/{nix,wapo,fe}_agency_year.csv, data/clean/wapo_agencies.csv
+#   - data/clean/{nix,wapo,fe,mpv}_agency_year.csv
+#   - data/clean/wapo_agencies.csv, data/clean/mpv_agencies.csv
 #
 # Outputs:
 #   - output/agency_year_panel.csv           -- the published merged file
@@ -45,6 +48,11 @@ wapo <- read_csv(here("data", "clean", "wapo_agency_year.csv"),
 fe   <- read_csv(here("data", "clean", "fe_agency_year.csv"),
                  col_types = cols(year = "i", n_fe = "i", n_fe_multi = "i", n_fe_flagged = "i", .default = "c"))
 wapo_agencies <- read_csv(here("data", "clean", "wapo_agencies.csv"), col_types = chr)
+mpv  <- read_csv(here("data", "clean", "mpv_agency_year.csv"),
+                 col_types = cols(year = "i", n_mpv = "i", n_mpv_offduty = "i",
+                                  n_mpv_multi = "i", .default = "c"))
+mpv_agencies <- read_csv(here("data", "clean", "mpv_agencies.csv"), col_types = chr)
+mpv_years <- sort(unique(mpv$year))
 
 # 2. Agency metadata (one row per agency_id) -----------------------------------
 key_meta <- agency_key |>
@@ -62,7 +70,13 @@ wapo_meta <- wapo_agencies |>
             agency_name = str_remove(wapo_name, " \\|.*$"),
             state = wapo_state, agency_type = wapo_type, slugs = NA_character_)
 
-meta <- bind_rows(key_meta, wapo_meta) |>
+# Agencies only MPV has recorded (e.g., killings since WaPo ended)
+mpv_meta <- mpv_agencies |>
+  filter(!ori7 %in% c(key_meta$ori7, wapo_meta$ori7)) |>
+  transmute(agency_id = ori7, ori7, agency_name = coalesce(mpv_name, ori7),
+            state = mpv_state, agency_type = NA_character_, slugs = NA_character_)
+
+meta <- bind_rows(key_meta, wapo_meta, mpv_meta) |>
   left_join(wapo_agencies |> select(ori7, wapo_multi_ori), by = "ori7") |>
   mutate(in_nix = !is.na(slugs),
          wapo_multi_ori = replace_na(as.logical(wapo_multi_ori), FALSE))
@@ -73,16 +87,27 @@ stopifnot(
 )
 
 # 3. Panel ---------------------------------------------------------------------
-# WaPo zero rows for every ORI-coded agency, so hand-built agencies WaPo never
-# recorded still show n_wapo = 0 in 2015-2024
-wapo_full <- expand_grid(agency_id = meta$agency_id[!is.na(meta$ori7)],
+# WaPo zero rows for every hand-built or WaPo-coded agency, so hand-built
+# agencies WaPo never recorded still show n_wapo = 0 in 2015-2024. Agencies
+# known only from MPV get NA, not 0: WaPo having no agency with that ORI can
+# mean a coding difference (secondary agency, unmatched alias) rather than
+# no deaths.
+wapo_full <- expand_grid(agency_id = meta$agency_id[!is.na(meta$ori7) &
+                                                      !meta$agency_id %in% mpv_meta$agency_id],
                          year = wapo_years) |>
   left_join(wapo |> rename(agency_id = ori7), by = c("agency_id", "year")) |>
   mutate(n_wapo = replace_na(n_wapo, 0L))
 
+# Same logic for MPV over its complete years
+mpv_full <- expand_grid(agency_id = meta$agency_id[!is.na(meta$ori7)],
+                        year = mpv_years) |>
+  left_join(mpv |> rename(agency_id = ori7), by = c("agency_id", "year")) |>
+  mutate(across(c(n_mpv, n_mpv_offduty, n_mpv_multi), \(x) replace_na(x, 0L)))
+
 joined <- nix |> select(agency_id, year, n_nix, nix_partial) |>
   full_join(wapo_full, by = c("agency_id", "year")) |>
-  full_join(fe |> rename(agency_id = ori7), by = c("agency_id", "year"))
+  full_join(fe |> rename(agency_id = ori7), by = c("agency_id", "year")) |>
+  full_join(mpv_full, by = c("agency_id", "year"))
 
 # Every agency-year must have metadata; an inner join would drop it silently
 orphans <- anti_join(joined, meta, by = "agency_id")
@@ -94,7 +119,8 @@ if (nrow(orphans) > 0) {
 panel <- joined |>
   inner_join(meta, by = "agency_id") |>
   select(agency_id, ori7, agency_name, state, agency_type, in_nix, slugs,
-         wapo_multi_ori, year, n_nix, nix_partial, n_wapo, n_fe, n_fe_multi, n_fe_flagged) |>
+         wapo_multi_ori, year, n_nix, nix_partial, n_wapo, n_fe, n_fe_multi, n_fe_flagged,
+         n_mpv, n_mpv_offduty, n_mpv_multi) |>
   arrange(state, agency_name, year)
 
 stopifnot(
@@ -103,7 +129,8 @@ stopifnot(
   # nothing lost in the joins
   sum(panel$n_nix, na.rm = TRUE) == sum(nix$n_nix),
   sum(panel$n_wapo, na.rm = TRUE) == sum(wapo$n_wapo),
-  sum(panel$n_fe, na.rm = TRUE) == sum(fe$n_fe)
+  sum(panel$n_fe, na.rm = TRUE) == sum(fe$n_fe),
+  sum(panel$n_mpv, na.rm = TRUE) == sum(mpv$n_mpv)
 )
 
 # 4. Agreement on overlapping agency-years -------------------------------------
@@ -130,7 +157,9 @@ compare_sources <- function(df, a, b, label) {
          share_exact_nonzero = mean(nz[[a]] == nz[[b]]))
 }
 
-comparable <- panel |> filter(!wapo_multi_ori)
+# n_mpv_onduty matches the hand-built definition (people shot by on-duty officers)
+comparable <- panel |> filter(!wapo_multi_ori) |>
+  mutate(n_mpv_onduty = n_mpv - n_mpv_offduty)
 nix_panel  <- comparable |> filter(in_nix)
 # Common support: all three sources observed (2015-2021)
 common     <- nix_panel |> filter(!is.na(n_nix), !is.na(n_wapo), !is.na(n_fe))
@@ -142,7 +171,11 @@ agreement <- bind_rows(
   compare_sources(common, "n_nix", "n_wapo", "Hand-built vs WaPo (common support)"),
   compare_sources(common, "n_nix", "n_fe",   "Hand-built vs FE (common support)"),
   compare_sources(common, "n_wapo", "n_fe",  "WaPo vs FE (common support)"),
-  compare_sources(comparable, "n_wapo", "n_fe", "WaPo vs FE (all linked agencies)")
+  compare_sources(comparable, "n_wapo", "n_fe", "WaPo vs FE (all linked agencies)"),
+  compare_sources(nix_panel, "n_nix", "n_mpv_onduty", "Hand-built vs MPV on-duty"),
+  compare_sources(nix_panel, "n_nix", "n_mpv", "Hand-built vs MPV (incl. off-duty)"),
+  compare_sources(comparable, "n_wapo", "n_mpv", "WaPo vs MPV (all agencies)"),
+  compare_sources(comparable, "n_fe", "n_mpv", "FE vs MPV (all linked agencies)")
 ) |>
   mutate(across(where(is.double), \(x) round(x, 3)))
 
@@ -166,6 +199,7 @@ coverage <- panel |>
   summarise(agencies_nix = sum(!is.na(n_nix)),
             agencies_wapo = sum(!is.na(n_wapo)),
             agencies_fe = sum(!is.na(n_fe)),
+            agencies_mpv = sum(!is.na(n_mpv)),
             deaths_nix = sum(n_nix, na.rm = TRUE),
             .groups = "drop")
 
@@ -176,4 +210,5 @@ write_csv(disagreements, here("output", "tables", "source_disagreements.csv"))
 write_csv(coverage, here("output", "tables", "coverage_by_year.csv"))
 message("05: panel has ", n_distinct(panel$agency_id), " agencies, ",
         nrow(panel), " agency-years (", sum(!is.na(panel$n_nix)), " hand-built, ",
-        sum(!is.na(panel$n_wapo)), " WaPo, ", sum(!is.na(panel$n_fe)), " FE)")
+        sum(!is.na(panel$n_wapo)), " WaPo, ", sum(!is.na(panel$n_fe)), " FE, ",
+        sum(!is.na(panel$n_mpv)), " MPV)")
