@@ -6,8 +6,8 @@
 #
 # Purpose:
 #   (1) Coverage: how many agencies each source covers, by year.
-#   (2) Sixteen large cities: the three series overlaid (ported from the
-#       2025 merge script's 16-city panel).
+#   (2) Sixteen large cities: all four series overlaid (hand-built, WaPo, FE,
+#       and MPV on-duty), ported from the 2025 merge script's 16-city panel.
 #   (3) Agreement: agency totals, WaPo vs FE and hand-built vs WaPo.
 #
 # Inputs:
@@ -34,7 +34,7 @@ coverage <- read_csv(here("output", "tables", "coverage_by_year.csv"),
                      show_col_types = FALSE)
 
 source_labels <- c(n_nix = "Hand-built (Nix)", n_wapo = "Washington Post",
-                   n_fe = "Fatal Encounters")
+                   n_fe = "Fatal Encounters", n_mpv = "Mapping Police Violence")
 
 # 2. Coverage ------------------------------------------------------------------
 cov_long <- coverage |>
@@ -66,8 +66,11 @@ city_slugs <- c(
 
 cities <- panel |>
   filter(slugs %in% city_slugs) |>
-  mutate(label = city_label(agency_name, state)) |>
-  pivot_longer(c(n_nix, n_wapo, n_fe), names_to = "source", values_to = "n") |>
+  # MPV includes off-duty killings; plot its on-duty count so all four series
+  # share the hand-built definition (people shot by on-duty officers)
+  mutate(label = city_label(agency_name, state),
+         n_mpv = n_mpv - n_mpv_offduty) |>
+  pivot_longer(c(n_nix, n_wapo, n_fe, n_mpv), names_to = "source", values_to = "n") |>
   # Fill missing years with NA within each series so lines break at gaps
   # instead of drawing straight across decades with no data
   group_by(label, source) |>
@@ -86,9 +89,12 @@ p_cities <- ggplot(cities, aes(year, n, color = source)) +
   scale_x_continuous(breaks = c(1970, 1995, 2020)) +
   scale_y_continuous(limits = c(0, NA), expand = expansion(mult = c(0, 0.08))) +
   scale_color_manual(values = source_colors) +
-  labs(x = NULL, y = "People shot and killed by police", color = NULL) +
+  labs(x = NULL, y = "People shot and killed by police", color = NULL,
+       caption = "Mapping Police Violence counts exclude off-duty killings, matching the hand-built definition.") +
+  guides(color = guide_legend(nrow = 2, byrow = TRUE)) +
   theme_project(base_size = 9) +
-  theme(panel.spacing = unit(0.6, "lines"))
+  theme(panel.spacing = unit(0.6, "lines"),
+        plot.caption = element_text(hjust = 0, color = "grey35"))
 
 ggsave(file.path(fig_dir, "sixteen_cities.png"), p_cities,
        width = 6.5, height = 7, dpi = 300, bg = "white")
