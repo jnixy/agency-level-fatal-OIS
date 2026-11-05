@@ -4,7 +4,7 @@ Annual counts of people shot and killed by on-duty police, by agency, going back
 
 **If you just want the data:**
 
-- [`output/agency_year_panel.csv`](output/agency_year_panel.csv) is the merged file: one row per agency-year, 4,623 agencies, 1969–2025 (145,547 agency-years). Variables are documented in [`CODEBOOK.md`](CODEBOOK.md).
+- [`output/agency_year_panel.csv`](output/agency_year_panel.csv) is the merged file: one row per agency-year, 4,623 agencies, 1969–2025 (145,555 agency-years). Variables are documented in [`CODEBOOK.md`](CODEBOOK.md).
 - [`agency-level-fatal-ois.csv`](agency-level-fatal-ois.csv) is the original hand-built file: wide, one column per agency. It keeps the same path and format it has always had.
 
 ## November 2026 update
@@ -45,19 +45,19 @@ Some series are left out because they mix in nonfatal shootings or may count inc
 - Cincinnati before 2015;
 - Austin, 2000–2007.
 
-**How far back it reaches.** Before 2000, the solid line rests on only 4–16 large-city departments. It describes big cities, not the country.
+**How far back it reaches.** Before 2000, the solid line rests on only 4–17 large-city departments. It describes big cities, not the country.
 
-**What it shows.** The headline compares one fixed set of agencies: the 16 with at least five years of data both before 1995 and since 2015, shown as the dashed line. In those agencies, fatal police shootings since 2015 run 50% below their 1970–1994 level (ratio 0.50, 95% CI 0.34–0.73).
+**What it shows.** The headline compares one fixed set of agencies: the 17 with at least five years of data both before 1995 and since 2015, shown as the dashed line. In those agencies, fatal police shootings since 2015 run 49% below their 1970–1994 level (ratio 0.51, 95% CI 0.35–0.75).
 
-![Then vs. now in sixteen long-running agencies](output/figures/then_vs_now.png)
+![Then vs. now in seventeen long-running agencies](output/figures/then_vs_now.png)
 
-**Then vs. now.** In the same 16 agencies, 10 kill fewer people a year now than before 1995. The drops are largest in New York, Chicago, and Los Angeles.
+**Then vs. now.** In the same 17 agencies, 10 kill fewer people a year now than before 1995. The drops are largest in New York, Chicago, and Los Angeles.
 
 These are raw counts, not rates per resident, and population change could push the per-resident comparison either way. Some of these cities grew; others, like St. Louis and Philadelphia, shrank. The years observed in each era also vary by agency (see the table).
 
 ![Agencies with data before 2000](output/figures/coverage_tiles.png)
 
-**Reach.** The hand-built agencies were involved in at least 32% of everyone shot and killed by police in WaPo's data, 2015–2024. It's "at least" because deaths are matched through each WaPo agency's primary ORI, so some matches are missed. The 25 agencies shown above carry the long-run record back before 2000.
+**Reach.** The hand-built agencies were involved in at least 32% of everyone shot and killed by police in WaPo's data, 2015–2024. It's "at least" because deaths are matched through each WaPo agency's primary ORI, so some matches are missed. The 26 agencies shown above carry the long-run record back before 2000.
 
 **Sources for these numbers:**
 - Tables: [`output/tables/trend_summary.csv`](output/tables/trend_summary.csv), [`trend_index.csv`](output/tables/trend_index.csv), [`then_vs_now.csv`](output/tables/then_vs_now.csv), and [`coverage_share.csv`](output/tables/coverage_share.csv).
@@ -70,14 +70,14 @@ Where they overlap, the sources mostly agree, though FE runs higher than WaPo:
 | Comparison | Years | Agency-years | Correlation | Total deaths, difference | Identical counts | Identical, where either > 0 |
 |---|---|---:|---:|---:|---:|---:|
 | Hand-built vs. WaPo | 2015–2022 | 2,641 | .945 | WaPo −4.0% | 95.2% | 86.8% |
-| Hand-built vs. FE | 2000–2021 | 5,561 | .903 | FE −1.2% | 91.2% | 69.3% |
+| Hand-built vs. FE | 2000–2021 | 5,569 | .903 | FE −1.2% | 91.2% | 69.4% |
 | WaPo vs. FE (hand-built agencies) | 2015–2021 | 2,870 | .973 | FE +9.2% | 90.1% | 71.1% |
 | Hand-built vs. MPV (on-duty) | 2013–2022 | 3,355 | .933 | MPV −2.2% | 89.9% | 71.5% |
-| Hand-built vs. FBI SHR | 1976–2022 | 3,188 | .881 | SHR −28.1% | 65.8% | 31.4% |
+| Hand-built vs. FBI SHR | 1976–2022 | 3,199 | .881 | SHR −28.0% | 65.8% | 31.4% |
 
 Most agency-years are zero in both sources, so the last column, which drops agency-years where both are zero, is the tougher test. Agencies that WaPo lists under several ORIs (mostly state police) are left out of these comparisons. MPV's gap against the hand-built counts shifts over time: about 10% below in 2013–15 and 3–9% above in 2020–22. This is consistent with MPV recording a growing share of deaths over its life, and it's why the trend figures prefer WaPo where WaPo exists. [`output/tables/source_agreement.csv`](output/tables/source_agreement.csv) also compares MPV with WaPo and FE, and has each comparison restricted to the years all three sources cover (2015–2021). Agencies where the sources disagree are listed, largest gap first, in [`output/tables/source_disagreements.csv`](output/tables/source_disagreements.csv).
 
-**SHR runs well below every other source,** and the gap changes over time. Against the hand-built counts it is 11% low in 1976–89 and 16% low in the 1990s, but 43% low in 2000–09 and 35% low in 2010–22. Against WaPo, FE, and MPV it is 42–57% low (see `source_agreement.csv`). Some agencies report other homicides to SHR but not their own killings, which produces false zeros. New York filed none for most of the 2000s, and Chicago filed none after 2018, when the FBI moved to NIBRS. SHR also files a death under the reporting agency, which is sometimes the investigating agency rather than the one whose officer fired. Treat `n_shr` as a lower bound, and don't read its zeros as zero.
+**SHR runs well below every other source,** and the gap changes over time. Against the hand-built counts it is 10% low in 1976–89 and 16% low in the 1990s, but 43% low in 2000–09 and 35% low in 2010–22. Against WaPo, FE, and MPV it is 42–57% low (see `source_agreement.csv`). Some agencies report other homicides to SHR but not their own killings, which produces false zeros. New York filed none for most of the 2000s, and Chicago filed none after 2018, when the FBI moved to NIBRS. SHR also files a death under the reporting agency, which is sometimes the investigating agency rather than the one whose officer fired. Treat `n_shr` as a lower bound, and don't read its zeros as zero.
 
 ![Sixteen large cities, five sources](output/figures/sixteen_cities.png)
 
@@ -87,9 +87,9 @@ Most agency-years are zero in both sources, so the last column, which drops agen
 |---|---:|---:|---:|---:|---:|
 | 1969 | 1 (Chicago) | — | — | — | — |
 | 1970s | 4–15 | — | — | — | 1,760–1,929 (1976+) |
-| 1980s | 12–14 | — | — | — | 1,695–1,960 |
-| 1990s | 9–17 | — | — | — | 1,459–1,818 |
-| 2000s | 110–169 | — | 2,967 | — | 1,524–1,721 |
+| 1980s | 12–15 | — | — | — | 1,695–1,960 |
+| 1990s | 9–18 | — | — | — | 1,459–1,818 |
+| 2000s | 111–169 | — | 2,967 | — | 1,524–1,721 |
 | 2010s | 360–369 | 3,647 (2015+) | 2,967 | 4,622 (2013+) | 1,584–1,841 |
 | 2020s | 225–368 (through 2022) | 3,647 (through 2024) | 2,967 (through 2021) | 4,622 (through 2025) | 1,864–2,098 (through 2024) |
 
@@ -142,6 +142,7 @@ I decided, for now at least, to focus on fatal shootings, since they're more rel
 | [Springfield (MO) PD](https://www.springfieldmo.gov/3755/Officer-Involved-Shootings) | 2008–2022 | Springfield (MO) PD |
 | [Austin open data portal](https://data.austintexas.gov/Public-Safety/Officer-Involved-Shooting-2000-2014/63p6-iegi) | 2000–2014 | Austin PD |
 | [Dallas open data portal](https://www.dallasopendata.com/Public-Safety/Dallas-Police-Officer-Involved-Shootings/4gmt-jyx2) | 2003–2022 | Dallas PD |
+| *Omaha World-Herald* lists of fatal shootings by Omaha police (Jan. 3, 1991; Feb. 15 and 17, 2002; May 24, 2007; Mar. 18, 2008), via NewsBank. 1991 is inferred from a 1990–2000 total; 1992 is still missing | 1981–2007 | Omaha PD |
 | Jacksonville Sheriff's Office, [*Police Involved Shootings*](https://web.archive.org/web/20150717050006/http://www.jaxsheriff.org/departments/sheriffs-office/docs/sheriff-john-rutherford/police-involved-shootings-final.aspx) (Jan. 2009; archived copy) | 2007–2008 | Jacksonville SO |
 | [Cincinnati open data portal](https://data.cincinnati-oh.gov/Safety/PDI-Police-Data-Initiative-Officer-Involved-Shooti/r6q4-muts) | 1996–2019 | Cincinnati PD |
 | [Vermont open data portal](https://data.vermont.gov/Public-Safety/Vermont-State-Police-Officer-Involved-Shootings-19/du86-kfnp) | 1977–2022 | Vermont State Police |
