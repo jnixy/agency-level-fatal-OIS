@@ -75,7 +75,7 @@ Where they overlap, the sources mostly agree, though FE runs higher than WaPo:
 
 Most agency-years are zero in both sources, so the last column, which drops agency-years where both are zero, is the tougher test. Agencies that WaPo lists under several ORIs (mostly state police) are left out of these comparisons. MPV's gap against the hand-built counts shifts over time: about 10% below in 2013–15 and 3–9% above in 2020–22. This is consistent with MPV recording a growing share of deaths over its life, and it's why the trend figures prefer WaPo where WaPo exists. [`output/tables/source_agreement.csv`](output/tables/source_agreement.csv) also compares MPV with WaPo and FE, and has each comparison restricted to the years all three sources cover (2015–2021). Agencies where the sources disagree are listed, largest gap first, in [`output/tables/source_disagreements.csv`](output/tables/source_disagreements.csv).
 
-![Sixteen large cities, three sources](output/figures/sixteen_cities.png)
+![Sixteen large cities, four sources](output/figures/sixteen_cities.png)
 
 ## Coverage
 
