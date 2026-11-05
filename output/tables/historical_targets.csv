@@ -1,0 +1,415 @@
+rank,agency_id,ori7,agency_name,state,agency_type,wapo_deaths,fe_deaths_2000_on,nix_start,nix_end,nix_years,nix_internal_gaps,years_missing,score
+1,AZ00723,AZ00723,Phoenix Police Department,AZ,local_police,125,216,2009,2022,14,0,29,3625
+2,TXSPD00,TXSPD00,San Antonio Police Department,TX,local_police,81,112,2010,2022,13,0,30,2430
+3,CA03300,CA03300,Riverside County Sheriff's Office,CA,sheriff,63,116,2015,2022,8,0,35,2205
+4,CA01900,CA01900,Los Angeles County Sheriff's Department,CA,sheriff,117,328,1996,2022,21,6,16,1872
+5,NM00101,NM00101,Albuquerque Police Department,NM,local_police,54,93,2010,2022,13,0,30,1620
+6,OK05506,OK05506,Oklahoma City Police Department,OK,local_police,45,88,2015,2022,8,0,35,1575
+7,TX10100,TX10100,Harris County Sheriff's Office,TX,sheriff,45,85,2015,2022,8,0,35,1575
+8,FL01602,FL01602,Jacksonville Sheriff's Office,FL,local_police,54,106,2009,2022,14,0,29,1566
+9,OHCOP00,OHCOP00,Columbus Police Department,OH,local_police,50,103,2010,2022,13,0,30,1500
+10,AZ00717,AZ00717,Mesa Police Department,AZ,local_police,38,69,2015,2022,8,0,35,1330
+11,AZ01003,AZ01003,Tucson Police Department,AZ,local_police,41,82,2010,2022,13,0,30,1230
+12,CA01502,CA01502,Bakersfield Police Department,CA,local_police,32,57,2015,2022,8,0,35,1120
+13,OK07205,OK07205,Tulsa Police Department,OK,local_police,37,70,2008,2022,15,0,28,1036
+14,CO02101,CO02101,Colorado Springs Police Department,CO,local_police,29,38,2015,2022,8,0,35,1015
+15,CO00101,CO00101,Aurora Police Department,CO,local_police,27,44,2015,2022,8,0,35,945
+16,CA01005,CA01005,Fresno Police Department,CA,local_police,26,79,2015,2022,8,0,35,910
+17,CA01941,CA01941,Long Beach Police Department,CA,local_police,26,62,2015,2022,8,0,35,910
+18,TX22701,TX22701,Austin Police Department,TX,local_police,45,54,2000,2022,23,0,20,900
+19,KY05680,KY05680,Louisville Metro Police Department,KY,local_police,30,43,2010,2022,13,0,30,900
+20,OR02602,OR02602,Portland Police Department,OR,local_police,28,54,2010,2022,13,0,30,840
+21,CA03400,CA03400,Sacramento County Sheriff's Department,CA,sheriff,24,46,2015,2022,8,0,35,840
+22,GAGSP00,GAGSP00,Georgia State Police,GA,state,27,28,2010,2022,13,0,30,810
+23,TX22012,TX22012,Fort Worth Police Department,TX,local_police,27,45,2010,2022,13,0,30,810
+24,NV00201,NV00201,Las Vegas Metropolitan Police Department,NV,local_police,77,168,1990,2022,30,3,10,770
+25,CODPD00,CODPD00,Denver Police Department,CO,local_police,45,85,1996,2022,27,0,16,720
+26,GA03302,GA03302,Cobb County Police Department,GA,local_police,23,37,2010,2020,11,0,30,690
+27,MDBPD00,MDBPD00,Baltimore Police Department,MD,local_police,23,103,2010,2022,13,0,30,690
+28,NC06001,NC06001,Charlotte Mecklenburg Police Department,NC,local_police,27,39,2005,2022,18,0,25,675
+29,AZ00713,AZ00713,Glendale Police Department,AZ,local_police,19,24,2015,2022,8,0,35,665
+30,CA03700,CA03700,San Diego County Sheriff's Department,CA,sheriff,19,50,2015,2022,8,0,35,665
+31,FL02900,FL02900,Hillsborough County Sheriff's Office,FL,sheriff,19,39,2015,2022,8,0,35,665
+32,ID00101,ID00101,Boise Police Department,ID,local_police,19,17,2015,2022,8,0,35,665
+33,TNMPD00,TNMPD00,Memphis Police Department,TN,local_police,21,69,2010,2022,13,0,30,630
+34,TX17802,TX17802,Corpus Christi Police Department,TX,local_police,21,24,2010,2022,13,0,30,630
+35,FL04804,FL04804,Orlando Police Department,FL,local_police,21,30,2009,2022,14,0,29,609
+36,AK00101,AK00101,Anchorage Police Department,AK,local_police,20,29,2010,2022,13,0,30,600
+37,TX07102,TX07102,El Paso Police Department,TX,local_police,20,32,2010,2022,13,0,30,600
+38,WIMPD00,WIMPD00,Milwaukee Police Department,WI,local_police,20,57,2010,2022,13,0,30,600
+39,CA03404,CA03404,Sacramento Police Department,CA,local_police,17,39,2015,2022,8,0,35,595
+40,CA03905,CA03905,Stockton Police Department,CA,local_police,17,41,2015,2022,8,0,35,595
+41,KS08703,KS08703,Wichita Police Department,KS,local_police,17,27,2015,2022,8,0,35,595
+42,NV01601,NV01601,Reno Police Department,NV,local_police,17,29,2015,2022,8,0,35,595
+43,FL00600,FL00600,Broward County Sheriff's Office,FL,sheriff,20,48,2009,2022,14,0,29,580
+44,TX22001,TX22001,Arlington Police Department,TX,local_police,19,16,2010,2022,13,0,30,570
+45,NV00202,NV00202,North Las Vegas Police Department,NV,local_police,16,20,2015,2022,8,0,35,560
+46,NB02802,NB02802,Omaha Police Department,NE,local_police,18,36,2010,2022,13,0,30,540
+47,TX18801,TX18801,Amarillo Police Department,TX,local_police,23,27,2002,2022,21,0,22,506
+48,CA03801,CA03801,San Francisco Police Department,CA,local_police,25,49,2000,2022,23,0,20,500
+49,AZ00705,AZ00705,Chandler Police Department,AZ,local_police,14,15,2015,2022,8,0,35,490
+50,CA03019,CA03019,Santa Ana Police Department,CA,local_police,14,39,2015,2022,8,0,35,490
+51,GA04402,GA04402,DeKalb County Police Department,GA,local_police,15,56,2010,2022,13,0,30,450
+52,UT01800,UT01800,Unified Police Department Of Greater Salt Lake,UT,local_police,17,26,2005,2014,10,0,25,425
+53,UT01803,UT01803,Salt Lake City Police Department,UT,local_police,17,34,2005,2022,18,0,25,425
+54,TN01901,TN01901,Nashville Police Department,TN,local_police,14,37,2010,2022,13,0,30,420
+55,CA03000,CA03000,Orange County Sheriff's Department,CA,sheriff,12,19,2015,2022,8,0,35,420
+56,NV00203,NV00203,Henderson Police Department,NV,local_police,12,26,2015,2022,8,0,35,420
+57,OH04807,OH04807,Toledo Police Department,OH,local_police,12,23,2015,2022,8,0,35,420
+58,PAPPD00,PAPPD00,Pittsburgh Police Department,PA,local_police,12,32,2015,2022,8,0,35,420
+59,VA12800,VA12800,Virginia Beach Police Department,VA,local_police,12,19,2015,2022,8,0,35,420
+60,CA03001,CA03001,Anaheim Police Department,CA,local_police,18,38,2003,2022,20,0,23,414
+61,MO03903,MO03903,Springfield Police Department,MO,local_police,14,16,2008,2022,15,0,28,392
+62,GA02503,GA02503,Savannah-Chatham Metropolitan Police Department,GA,local_police,13,18,2010,2020,11,0,30,390
+63,GA06702,GA06702,Gwinnett County Police Department,GA,local_police,13,33,2010,2020,11,0,30,390
+64,IN00201,IN00201,Fort Wayne Police Department,IN,local_police,11,20,2015,2022,8,0,35,385
+65,VA11700,VA11700,Norfolk Police Department,VA,local_police,11,30,2015,2022,8,0,35,385
+66,GA03101,GA03101,Clayton County Police Department,GA,local_police,12,18,2010,2020,11,0,30,360
+67,MA01301,MA01301,Boston Police Department,MA,local_police,12,35,2010,2022,13,0,30,360
+68,UT02901,UT02901,Ogden Police Department,UT,local_police,14,15,2005,2014,10,0,25,350
+69,NC04102,NC04102,Greensboro Police Department,NC,local_police,10,13,2015,2022,8,0,35,350
+70,FL02902,FL02902,Tampa Police Department,FL,local_police,11,28,2009,2022,14,0,29,319
+71,FL05000,FL05000,Palm Beach County Sheriff's Department,FL,sheriff,11,56,2009,2022,14,0,29,319
+72,CA00105,CA00105,Fremont Police Department,CA,local_police,9,16,2015,2022,8,0,35,315
+73,MN06209,MN06209,St. Paul Police Department,MN,local_police,15,28,2000,2022,23,0,20,300
+74,TX12301,TX12301,Beaumont Police Department,TX,local_police,10,10,2010,2022,13,0,30,300
+75,AZ00725,AZ00725,Scottsdale Police Department,AZ,local_police,8,20,2015,2022,8,0,35,280
+76,CA03313,CA03313,Riverside Police Department,CA,local_police,8,31,2015,2022,8,0,35,280
+77,NC09201,NC09201,Raleigh Police Department,NC,local_police,8,8,2015,2022,8,0,35,280
+78,OHCLP00,OHCLP00,Cleveland Police Department,OH,local_police,8,54,2015,2022,8,0,35,280
+79,LANPD00,LANPD00,New Orleans Police Department,LA,local_police,9,49,2010,2022,13,0,30,270
+80,TX05715,TX05715,Irving Police Department,TX,local_police,9,12,2010,2022,13,0,30,270
+81,TX15202,TX15202,Lubbock Police Department,TX,local_police,9,12,2010,2022,13,0,30,270
+82,MN02711,MN02711,Minneapolis Police Department,MN,local_police,13,31,2000,2022,23,0,20,260
+83,TX05718,TX05718,Mesquite Police Department,TX,local_police,8,9,2010,2022,13,0,30,240
+84,TX22101,TX22101,Abilene Police Department,TX,local_police,8,8,2010,2022,13,0,30,240
+85,UT01806,UT01806,West Jordan Police Department,UT,local_police,9,8,2005,2014,10,0,25,225
+86,GA03800,GA03800,Coweta County Sheriff's Department,GA,sheriff,7,2,2010,2020,11,0,30,210
+87,GA05800,GA05800,Forsyth County Sheriff's Department,GA,sheriff,7,8,2010,2020,11,0,30,210
+88,GA14700,GA14700,Walton County Sheriff's Department,GA,sheriff,7,9,2010,2020,11,0,30,210
+89,TX05711,TX05711,Garland Police Department,TX,local_police,7,23,2010,2022,13,0,30,210
+90,TX10115,TX10115,Pasadena Police Department,TX,local_police,7,12,2010,2022,13,0,30,210
+91,FL05214,FL05214,St. Petersburg Police Department,FL,local_police,6,21,2015,2022,8,0,35,210
+92,NC03402,NC03402,Winston-Salem Police Department,NC,local_police,6,9,2015,2022,8,0,35,210
+93,DCMPD00,DCMPD00,Metropolitan Police Department,DC,local_police,22,63,1989,2022,17,17,9,198
+94,GA04800,GA04800,Douglas County Sheriff's Department,GA,sheriff,6,8,2010,2020,11,0,30,180
+95,GA06900,GA06900,Hall County Sheriff's Department,GA,sheriff,6,8,2010,2020,11,0,30,180
+96,TX01404,TX01404,Killeen Police Department,TX,local_police,6,7,2010,2022,13,0,30,180
+97,TX05712,TX05712,Grand Prairie Police Department,TX,local_police,6,9,2010,2022,13,0,30,180
+98,TX06802,TX06802,Odessa Police Department,TX,local_police,6,6,2010,2022,13,0,30,180
+99,TX15512,TX15512,Waco Police Department,TX,local_police,6,16,2010,2022,13,0,30,180
+100,TX16501,TX16501,Midland Police Department,TX,local_police,6,16,2010,2022,13,0,30,180
+101,TX24001,TX24001,Laredo Police Department,TX,local_police,6,10,2010,2022,13,0,30,180
+102,AZ00711,AZ00711,Gilbert Police Department,AZ,local_police,5,3,2015,2022,8,0,35,175
+103,CA00100,CA00100,Alameda County Sheriff's Office,CA,sheriff,5,20,2015,2022,8,0,35,175
+104,CA03702,CA03702,Chula Vista Police Department,CA,local_police,5,6,2015,2022,8,0,35,175
+105,NC03201,NC03201,Durham Police Department,NC,local_police,5,14,2015,2022,8,0,35,175
+106,NY01401,NY01401,Buffalo Police Department,NY,local_police,5,11,2015,2022,8,0,35,175
+107,MEMSP00,MEMSP00,Maine State Police,ME,state,15,25,1990,2022,31,2,10,150
+108,GA00800,GA00800,Bartow County Sheriff's Office,GA,sheriff,5,7,2010,2020,11,0,30,150
+109,GA01100,GA01100,Bibb County Sheriff's Department,GA,sheriff,5,6,2010,2020,11,0,30,150
+110,GA01600,GA01600,Bulloch County Sheriff's Office,GA,sheriff,5,4,2010,2020,11,0,30,150
+111,GA02200,GA02200,Carroll County Sheriff's Office,GA,sheriff,5,5,2010,2020,11,0,30,150
+112,GA07600,GA07600,Houston County Sheriff's Office,GA,sheriff,5,5,2010,2020,11,0,30,150
+113,GA12600,GA12600,Spalding County Sheriff's Office,GA,sheriff,5,5,2010,2020,11,0,30,150
+114,GA14600,GA14600,Walker County Sheriff's Office,GA,sheriff,5,7,2010,2020,11,0,30,150
+115,TX03101,TX03101,Brownsville Police Department,TX,local_police,5,10,2010,2022,13,0,30,150
+116,TX04305,TX04305,McKinney Police Department,TX,local_police,5,4,2010,2022,13,0,30,150
+117,TX04306,TX04306,Plano Police Department,TX,local_police,5,5,2010,2022,13,0,30,150
+118,OHCIP00,OHCIP00,Cincinnati Police Department,OH,local_police,9,33,1996,2019,22,2,16,144
+119,NB05501,NB05501,Lincoln Police Department,NE,local_police,4,6,2015,2022,8,0,35,140
+120,NJ00906,NJ00906,Jersey City Police Department,NJ,local_police,4,15,2015,2022,8,0,35,140
+121,UT02500,UT02500,Utah County Sheriff's Office,UT,sheriff,5,7,2005,2014,10,0,25,125
+122,UT02902,UT02902,Roy Police Department,UT,local_police,5,5,2005,2014,10,0,25,125
+123,GA02300,GA02300,Catoosa County Sheriff's Office,GA,sheriff,4,3,2010,2020,11,0,30,120
+124,GA02800,GA02800,Cherokee County Sheriff's Office,GA,sheriff,4,4,2010,2020,11,0,30,120
+125,GA02901,GA02901,Athens-Clarke Police Department,GA,local_police,4,11,2010,2020,11,0,30,120
+126,GA03304,GA03304,Smyrna Police Department,GA,constable,4,4,2010,2020,11,0,30,120
+127,GA04404,GA04404,Chamblee Police Department,GA,local_police,4,7,2010,2020,11,0,30,120
+128,GA06800,GA06800,Habersham County Sheriff's Department,GA,sheriff,4,2,2010,2020,11,0,30,120
+129,GA07505,GA07505,Henry County Police Department,GA,local_police,4,11,2010,2020,11,0,30,120
+130,GA09200,GA09200,Lowndes County Sheriff's Office,GA,sheriff,4,5,2010,2020,11,0,30,120
+131,GA10601,GA10601,Columbus Police Department,GA,local_police,4,10,2010,2020,11,0,30,120
+132,GA11000,GA11000,Paulding County Sheriff's Department,GA,sheriff,4,8,2010,2020,11,0,30,120
+133,GA11200,GA11200,Pickens County Sheriff's Office,GA,sheriff,4,3,2010,2020,11,0,30,120
+134,GA12100,GA12100,Richmond County Sheriff's Office,GA,sheriff,4,17,2010,2020,11,0,30,120
+135,GA15500,GA15500,Whitfield County Sheriff's Office,GA,sheriff,4,5,2010,2020,11,0,30,120
+136,TX02102,TX02102,College Station Police Department,TX,local_police,4,4,2010,2022,13,0,30,120
+137,VA00701,VA00701,Arlington County Police Department,VA,local_police,3,3,2015,2022,8,0,35,105
+138,WI01301,WI01301,Madison Police Department,WI,local_police,3,14,2015,2022,8,0,35,105
+139,UT00611,UT00611,Clinton Police Department,UT,local_police,4,2,2005,2014,10,0,25,100
+140,UT01805,UT01805,Sandy Police Department,UT,local_police,4,2,2005,2014,10,0,25,100
+141,UT01825,UT01825,West Valley City Police Department,UT,local_police,4,19,2005,2014,10,0,25,100
+142,GA02000,GA02000,Camden County Sheriff's Office,GA,sheriff,3,3,2010,2020,11,0,30,90
+143,GA03100,GA03100,Clayton County Sheriff's Office,GA,sheriff,3,5,2010,2020,11,0,30,90
+144,GA03900,GA03900,Crawford County Sheriff's Office,GA,sheriff,3,2,2010,2020,11,0,30,90
+145,GA05100,GA05100,Effingham County Sheriff's Office,GA,sheriff,3,4,2010,2020,11,0,30,90
+146,GA05400,GA05400,Evans County Sheriff's Department,GA,sheriff,3,3,2010,2020,11,0,30,90
+147,GA06005,GA06005,Roswell Police Department,GA,constable,3,6,2010,2020,11,0,30,90
+148,GA06400,GA06400,Gordon County Sheriff's Office,GA,sheriff,3,2,2010,2020,11,0,30,90
+149,GA06401,GA06401,Calhoun Police Department,GA,local_police,3,2,2010,2020,11,0,30,90
+150,GA06703,GA06703,Lawrenceville Police Department,GA,local_police,3,2,2010,2020,11,0,30,90
+151,GA06901,GA06901,Gainesville Police Department,GA,constable,3,3,2010,2020,11,0,30,90
+152,GA07500,GA07500,Henry County Sheriff's Department,GA,sheriff,3,2,2010,2020,11,0,30,90
+153,GA10700,GA10700,Newton County Sheriff's Office,GA,sheriff,3,4,2010,2020,11,0,30,90
+154,GA13600,GA13600,Thomas County Sheriff's Office,GA,sheriff,3,2,2010,2020,11,0,30,90
+155,TX02010,TX02010,Pearland Police Department,TX,local_police,3,5,2010,2022,13,0,30,90
+156,TX06102,TX06102,Denton Police Department,TX,local_police,3,5,2010,2022,13,0,30,90
+157,TX24305,TX24305,Wichita Falls Police Department,TX,local_police,3,6,2010,2022,13,0,30,90
+158,TX24605,TX24605,Round Rock Police Department,TX,local_police,3,5,2010,2022,13,0,30,90
+159,UT01804,UT01804,South Salt Lake Police Department,UT,local_police,3,4,2005,2014,10,0,25,75
+160,UT01839,UT01839,Taylorsville Police Department,UT,local_police,3,1,2005,2014,10,0,25,75
+161,UT02503,UT02503,Orem Police Department,UT,local_police,3,5,2005,2014,10,0,25,75
+162,UT02900,UT02900,Weber County Sheriff's Department,UT,sheriff,3,5,2005,2014,10,0,25,75
+163,VA10300,VA10300,Chesapeake Police Department,VA,local_police,2,11,2015,2022,8,0,35,70
+164,MN01901,MN01901,Burnsville Police Department,MN,local_police,3,3,2000,2022,23,0,20,60
+165,MN06900,MN06900,St. Louis County Sheriff's Office,MN,sheriff,3,4,2000,2022,23,0,20,60
+166,GA02001,GA02001,Kingsland Police Department,GA,local_police,2,3,2010,2020,11,0,30,60
+167,GA02805,GA02805,Woodstock Police Department,GA,local_police,2,3,2010,2020,11,0,30,60
+168,GA03105,GA03105,Riverdale Police Department,GA,local_police,2,3,2010,2020,11,0,30,60
+169,GA03300,GA03300,Cobb County Sheriff's Department,GA,sheriff,2,6,2010,2020,11,0,30,60
+170,GA04701,GA04701,Albany Police Department,GA,local_police,2,3,2010,2020,11,0,30,60
+171,GA05600,GA05600,Fayette County Sheriff's Office,GA,sheriff,2,3,2010,2020,11,0,30,60
+172,GA05701,GA05701,Floyd County Police Department,GA,local_police,2,1,2010,2020,11,0,30,60
+173,GA08900,GA08900,Liberty County Sheriff's Office,GA,sheriff,2,3,2010,2020,11,0,30,60
+174,GA10200,GA10200,Monroe County Sheriff's Department,GA,sheriff,2,2,2010,2020,11,0,30,60
+175,GA14100,GA14100,Troup County Sheriff's Office,GA,sheriff,2,5,2010,2020,11,0,30,60
+176,TX10808,TX10808,McAllen Police Department,TX,local_police,2,4,2010,2022,13,0,30,60
+177,UT00301,UT00301,Logan Police Department,UT,local_police,2,2,2005,2014,10,0,25,50
+178,UT00600,UT00600,Davis County Sheriff's Office,UT,sheriff,2,4,2005,2014,10,0,25,50
+179,UT00603,UT00603,Layton Police Department,UT,local_police,2,3,2005,2014,10,0,25,50
+180,UT01818,UT01818,South Jordan Police Department,UT,local_police,2,4,2005,2014,10,0,25,50
+181,UT01842,UT01842,Cottonwood Heights Police Department,UT,local_police,2,2,2005,2014,10,0,25,50
+182,UT02522,UT02522,Saratoga Springs Police Department,UT,local_police,2,2,2005,2014,10,0,25,50
+183,UT02701,UT02701,St. George Police Department,UT,local_police,2,2,2005,2014,10,0,25,50
+184,UT02903,UT02903,South Ogden Police Department,UT,local_police,2,2,2005,2014,10,0,25,50
+185,MN01000,MN01000,Carver County Sheriff's Department,MN,sheriff,2,3,2000,2022,23,0,20,40
+186,MN01908,MN01908,Eagan Police Department,MN,local_police,2,2,2000,2022,23,0,20,40
+187,MN02702,MN02702,Brooklyn Center Police Department,MN,local_police,2,5,2000,2022,23,0,20,40
+188,MN02714,MN02714,New Hope Police Department,MN,local_police,2,3,2000,2022,23,0,20,40
+189,MN02719,MN02719,Robbinsdale Police Department,MN,local_police,2,1,2000,2022,23,0,20,40
+190,MN04302,MN04302,Hutchinson Police Department,MN,local_police,2,0,2000,2022,23,0,20,40
+191,MN05001,MN05001,Austin Police Department,MN,local_police,2,2,2000,2022,23,0,20,40
+192,MN05501,MN05501,Rochester Police Department,MN,local_police,2,1,2000,2022,23,0,20,40
+193,MN06000,MN06000,Polk County Sheriff's Office,MN,sheriff,2,1,2000,2022,23,0,20,40
+194,MN06208,MN06208,Roseville Police Department,MN,local_police,2,3,2000,2022,23,0,20,40
+195,MN06906,MN06906,Duluth Police Department,MN,local_police,2,5,2000,2022,23,0,20,40
+196,MN08000,MN08000,Wadena County Sheriff's Office,MN,sheriff,2,2,2000,2022,23,0,20,40
+197,MN08002,MN08002,Sebeka Police Department,MN,local_police,2,2,2000,2022,23,0,20,40
+198,MN08200,MN08200,Washington County Sheriff's Office,MN,sheriff,2,2,2000,2022,23,0,20,40
+199,MN08206,MN08206,Stillwater Police Department,MN,local_police,2,3,2000,2022,23,0,20,40
+200,MN08600,MN08600,Wright County Sheriff's Office,MN,sheriff,2,0,2000,2022,23,0,20,40
+201,MNMHP00,MNMHP00,Minnesota State Patrol,MN,state,2,11,2000,2022,23,0,20,40
+202,GA00200,GA00200,Atkinson County Sheriff's Department,GA,sheriff,1,1,2010,2020,11,0,30,30
+203,GA00801,GA00801,Cartersville Police Department,GA,local_police,1,2,2010,2020,11,0,30,30
+204,GA00806,GA00806,Emerson Police Department,GA,local_police,1,1,2010,2020,11,0,30,30
+205,GA01200,GA01200,Bleckley County Sheriff's Office,GA,sheriff,1,1,2010,2020,11,0,30,30
+206,GA01700,GA01700,Burke County Sheriff's Department,GA,sheriff,1,1,2010,2020,11,0,30,30
+207,GA01801,GA01801,Jackson Police Department,GA,local_police,1,1,2010,2020,11,0,30,30
+208,GA02201,GA02201,Carrollton Police Department,GA,local_police,1,2,2010,2020,11,0,30,30
+209,GA02505,GA02505,Port Wentworth Police Department,GA,local_police,1,2,2010,2020,11,0,30,30
+210,GA02700,GA02700,Chattooga County Sheriff's Office,GA,sheriff,1,1,2010,2020,11,0,30,30
+211,GA03303,GA03303,Marietta Police Department,GA,local_police,1,4,2010,2020,11,0,30,30
+212,GA03401,GA03401,Douglas Police Department,GA,local_police,1,1,2010,2020,11,0,30,30
+213,GA03500,GA03500,Colquitt County Sheriff's Office,GA,sheriff,1,2,2010,2020,11,0,30,30
+214,GA03600,GA03600,Columbia County Sheriff's Office,GA,sheriff,1,4,2010,2020,11,0,30,30
+215,GA03700,GA03700,Cook County Sheriff's Department,GA,sheriff,1,1,2010,2020,11,0,30,30
+216,GA04300,GA04300,Decatur County Sheriff's Department,GA,sheriff,1,1,2010,2020,11,0,30,30
+217,GA04301,GA04301,Bainbridge Police Department,GA,local_police,1,1,2010,2020,11,0,30,30
+218,GA04400,GA04400,DeKalb County Sheriff's Office,GA,sheriff,1,7,2010,2020,11,0,30,30
+219,GA04471,GA04471,Dunwoody Police Department,GA,local_police,1,2,2010,2020,11,0,30,30
+220,GA04900,GA04900,Early County Sheriff's Office,GA,sheriff,1,1,2010,2020,11,0,30,30
+221,GA05602,GA05602,Peachtree Police Department,GA,local_police,1,1,2010,2020,11,0,30,30
+222,GA05700,GA05700,Floyd County Sheriff's Office,GA,sheriff,1,1,2010,2020,11,0,30,30
+223,GA05900,GA05900,Franklin County Sheriff's Department,GA,sheriff,1,1,2010,2020,11,0,30,30
+224,GA06000,GA06000,Fulton County Sheriff's Office,GA,sheriff,1,6,2010,2020,11,0,30,30
+225,GA06001,GA06001,College Park Police Department,GA,local_police,1,4,2010,2020,11,0,30,30
+226,GA06002,GA06002,East Point Police Department,GA,local_police,1,5,2010,2020,11,0,30,30
+227,GA06004,GA06004,Alpharetta Department of Public Safety,GA,local_police,1,2,2010,2020,11,0,30,30
+228,GA06006,GA06006,Union City Police Department,GA,local_police,1,3,2010,2020,11,0,30,30
+229,GA06010,GA06010,Georgia Tech Campus Police Department,GA,special,1,1,2010,2022,13,0,30,30
+230,GA06013,GA06013,Fulton County Police Department,GA,local_police,1,8,2010,2020,11,0,30,30
+231,GA06056,GA06056,Sandy Springs Police Department,GA,local_police,1,1,2010,2020,11,0,30,30
+232,GA06058,GA06058,Johns Creek Police Department,GA,local_police,1,3,2010,2020,11,0,30,30
+233,GA06600,GA06600,Greene County Sheriff's Department,GA,sheriff,1,1,2010,2020,11,0,30,30
+234,GA06708,GA06708,Snellville Police Department,GA,local_police,1,1,2010,2020,11,0,30,30
+235,GA07400,GA07400,Heard County Sheriff's Office,GA,sheriff,1,3,2010,2020,11,0,30,30
+236,GA07504,GA07504,Locust Grove Police Department,GA,local_police,1,2,2010,2020,11,0,30,30
+237,GA07602,GA07602,Warner Robins Police Department,GA,local_police,1,4,2010,2020,11,0,30,30
+238,GA07800,GA07800,Jackson County Sheriff's Office,GA,sheriff,1,2,2010,2020,11,0,30,30
+239,GA07801,GA07801,Commerce Police Department,GA,local_police,1,2,2010,2020,11,0,30,30
+240,GA07806,GA07806,Braselton Police Department,GA,local_police,1,1,2010,2020,11,0,30,30
+241,GA07900,GA07900,Jasper County Sheriff's Department,GA,sheriff,1,1,2010,2020,11,0,30,30
+242,GA08700,GA08700,Laurens County Sheriff's Office,GA,sheriff,1,2,2010,2020,11,0,30,30
+243,GA09201,GA09201,Valdosta Police Department,GA,local_police,1,1,2010,2020,11,0,30,30
+244,GA09300,GA09300,Lumpkin County Sheriff's Department,GA,sheriff,1,1,2010,2020,11,0,30,30
+245,GA09902,GA09902,Greenville Police Department,GA,local_police,1,1,2010,2020,11,0,30,30
+246,GA11102,GA11102,Byron Police Department,GA,local_police,1,1,2010,2020,11,0,30,30
+247,GA11400,GA11400,Pike County Sheriff's Department,GA,sheriff,1,1,2010,2020,11,0,30,30
+248,GA11700,GA11700,Putnam County Sheriff's Office,GA,sheriff,1,1,2010,2020,11,0,30,30
+249,GA12001,GA12001,Cuthbert Police Department,GA,local_police,1,1,2010,2020,11,0,30,30
+250,GA12200,GA12200,Rockdale County Sheriff's Office,GA,sheriff,1,4,2010,2020,11,0,30,30
+251,GA14101,GA14101,Hogansville Police Department,GA,local_police,1,1,2010,2020,11,0,30,30
+252,GA14601,GA14601,LaFayette Police Department,GA,local_police,1,1,2010,2020,11,0,30,30
+253,GA15100,GA15100,Wayne County Sheriff's Office,GA,sheriff,1,1,2010,2020,11,0,30,30
+254,GA15300,GA15300,Wheeler County Sheriff's Department,GA,sheriff,1,1,2010,2020,11,0,30,30
+255,GA15900,GA15900,Worth County Sheriff's Department,GA,sheriff,1,1,2010,2020,11,0,30,30
+256,TX05720,TX05720,Richardson Police Department,TX,local_police,1,2,2010,2022,13,0,30,30
+257,CT00104,CT00104,Norwich Police Department,CT,local_police,1,3,2006,2022,16,1,26,26
+258,UT00604,UT00604,Centerville City Police Department,UT,local_police,1,3,2005,2014,10,0,25,25
+259,UT00612,UT00612,Syracuse Police Department,UT,local_police,1,2,2005,2014,10,0,25,25
+260,UT00702,UT00702,Roosevelt Police Department,UT,local_police,1,3,2005,2014,10,0,25,25
+261,UT02300,UT02300,Tooele County Sheriff's Department,UT,sheriff,1,2,2005,2014,10,0,25,25
+262,UT02302,UT02302,Grantsville Police Department,UT,local_police,1,2,2005,2014,10,0,25,25
+263,UT02506,UT02506,Provo Police Department,UT,local_police,1,4,2005,2014,10,0,25,25
+264,UTUHP00,UTUHP00,Utah Highway Patrol,UT,state,1,6,2005,2014,10,0,25,25
+265,ME00305,ME00305,Portland Police Department,ME,local_police,2,5,1990,2022,31,2,10,20
+266,MN00100,MN00100,Aitkin County Sheriff's Office,MN,sheriff,1,1,2000,2022,23,0,20,20
+267,MN00200,MN00200,Anoka County Sheriff's Office,MN,sheriff,1,3,2000,2022,23,0,20,20
+268,MN00204,MN00204,Columbia Heights Police Department,MN,local_police,1,1,2000,2022,23,0,20,20
+269,MN00206,MN00206,Fridley Police Department,MN,local_police,1,2,2000,2022,23,0,20,20
+270,MN00207,MN00207,Lino Lakes Police Department,MN,local_police,1,1,2000,2022,23,0,20,20
+271,MN00401,MN00401,Bemidji Police Department,MN,local_police,1,2,2000,2022,23,0,20,20
+272,MN00700,MN00700,Blue Earth County Sheriff's Department,MN,sheriff,1,1,2000,2022,23,0,20,20
+273,MN00701,MN00701,Mankato Police Department,MN,local_police,1,4,2000,2022,23,0,20,20
+274,MN01100,MN01100,Cass County Sheriff's Department,MN,sheriff,1,1,2000,2022,23,0,20,20
+275,MN01300,MN01300,Chisago County Sheriff's Department,MN,sheriff,1,3,2000,2022,23,0,20,20
+276,MN01900,MN01900,Dakota County Sheriff's Office,MN,sheriff,1,2,2000,2022,23,0,20,20
+277,MN01903,MN01903,Hastings Police Department,MN,local_police,1,2,2000,2022,23,0,20,20
+278,MN02100,MN02100,Douglas County Sheriff's Office,MN,sheriff,1,1,2000,2022,23,0,20,20
+279,MN02401,MN02401,Albert Lea Police Department,MN,local_police,1,1,2000,2022,23,0,20,20
+280,MN02701,MN02701,Bloomington Police Department,MN,local_police,1,2,2000,2022,23,0,20,20
+281,MN02717,MN02717,Plymouth Police Department,MN,local_police,1,1,2000,2022,23,0,20,20
+282,MN02718,MN02718,Richfield Police Department,MN,local_police,1,2,2000,2022,23,0,20,20
+283,MN02720,MN02720,St. Anthony Police Department,MN,local_police,1,1,2000,2022,23,0,20,20
+284,MN02721,MN02721,St. Louis Park Police Department,MN,local_police,1,3,2000,2022,23,0,20,20
+285,MN03100,MN03100,Itasca County Sheriff's Office,MN,sheriff,1,1,2000,2022,23,0,20,20
+286,MN03300,MN03300,Kanabec County Sheriff's Department,MN,sheriff,1,1,2000,2022,23,0,20,20
+287,MN04300,MN04300,McLeod County Sheriff's Office,MN,sheriff,1,1,2000,2022,23,0,20,20
+288,MN04601,MN04601,Fairmont Police Department,MN,local_police,1,1,2000,2022,23,0,20,20
+289,MN04800,MN04800,Mille Lacs County Sheriff's Office,MN,sheriff,1,2,2000,2022,23,0,20,20
+290,MN05600,MN05600,Otter Tail County Sheriff's Office,MN,sheriff,1,0,2000,2022,23,0,20,20
+291,MN05800,MN05800,Pine County Sheriff's Office,MN,sheriff,1,1,2000,2022,23,0,20,20
+292,MN06200,MN06200,Ramsey County Sheriff's Office,MN,sheriff,1,1,2000,2022,23,0,20,20
+293,MN06205,MN06205,Mounds View Police Department,MN,local_police,1,1,2000,2022,23,0,20,20
+294,MN06503,MN06503,Olivia Police Department,MN,local_police,1,1,2000,2022,23,0,20,20
+295,MN06909,MN06909,Gilbert Police Department,MN,local_police,1,1,2000,2022,23,0,20,20
+296,MN06914,MN06914,Virginia Police Department,MN,local_police,1,1,2000,2022,23,0,20,20
+297,MN06917,MN06917,Hermantown Police Department,MN,local_police,1,1,2000,2022,23,0,20,20
+298,MN07004,MN07004,Shakopee Police Department,MN,local_police,1,3,2000,2022,23,0,20,20
+299,MN07304,MN07304,St. Cloud Police Department,MN,local_police,1,1,2000,2022,23,0,20,20
+300,MN07500,MN07500,Stevens County Sheriff's Department,MN,sheriff,1,1,2000,2022,23,0,20,20
+301,MN08202,MN08202,Forest Lake Police Department,MN,local_police,1,1,2000,2022,23,0,20,20
+302,MN08302,MN08302,St. James Police Department,MN,local_police,1,1,2000,2022,23,0,20,20
+303,MNBCA00,MNBCA00,Minnesota Bureau of Criminal Apprehension,MN,state,1,1,2000,2022,23,0,20,20
+304,CA01942,CA01942,Los Angeles Police Department,CA,local_police,144,379,1974,2022,49,0,0,0
+305,TXHPD00,TXHPD00,Houston Police Department,TX,local_police,88,206,1980,2021,29,13,0,0
+306,NY03030,NY03030,New York Police Department,NY,local_police,86,248,1970,2021,52,0,0,0
+307,ILCPD00,ILCPD00,Chicago Police Department,IL,local_police,54,273,1969,2022,33,21,0,0
+308,CA03711,CA03711,San Diego Police Department,CA,local_police,43,95,1976,2022,29,18,0,0
+309,INIPD00,INIPD00,Indianapolis Metropolitan Police Department,IN,local_police,42,55,1970,2021,34,18,0,0
+310,PAPEP00,PAPEP00,Philadelphia Police Department,PA,local_police,39,175,1970,2022,53,0,0,0
+311,MOKPD00,MOKPD00,Kansas City Police Department,MO,local_police,36,87,1972,2022,33,18,0,0
+312,MOSPD00,MOSPD00,St. Louis Police Department,MO,local_police,31,93,1977,2022,24,22,0,0
+313,HI00200,HI00200,Honolulu Police Department,HI,local_police,28,40,1977,2022,16,30,0,0
+314,MI82349,MI82349,Detroit Police Department,MI,local_police,28,74,1976,2022,11,36,0,0
+315,TXDPD00,TXDPD00,Dallas Police Department,TX,local_police,26,90,1970,2022,42,11,0,0
+316,CA04313,CA04313,San Jose Police Department,CA,local_police,25,47,1976,2022,17,30,0,0
+317,GAAPD00,GAAPD00,Atlanta Police Department,GA,local_police,24,73,1980,2022,25,18,0,0
+318,WASPD00,WASPD00,Seattle Police Department,WA,local_police,20,57,1980,2022,39,4,0,0
+319,NJNPD00,NJNPD00,Newark Police Department,NJ,local_police,11,35,1976,1979,4,0,0,0
+320,CA00109,CA00109,Oakland Police Department,CA,local_police,10,50,1977,2022,11,35,0,0
+321,VTVSP00,VTVSP00,Vermont State Police,VT,state,5,14,1977,2022,46,0,0,0
+322,GA00802,GA00802,Adairsville Police Department,GA,local_police,0,1,2010,2020,11,0,30,0
+323,GA00807,GA00807,Euharlee Police Department,GA,local_police,0,1,2010,2020,11,0,30,0
+324,GA01101,GA01101,Macon Police Department,GA,local_police,0,6,2010,2020,11,0,30,0
+325,GA01300,GA01300,Brantley County Sheriff's Office,GA,sheriff,0,1,2010,2020,11,0,30,0
+326,GA01601,GA01601,Statesboro Police Department,GA,local_police,0,1,2010,2020,11,0,30,0
+327,GA01703,GA01703,Sardis Police Department,GA,local_police,0,1,2010,2020,11,0,30,0
+328,GA02504,GA02504,Pooler Police Department,GA,local_police,0,1,2010,2020,11,0,30,0
+329,GA03104,GA03104,Jonesboro Police Department,GA,local_police,0,1,2010,2020,11,0,30,0
+330,GA03200,GA03200,Clinch County Sheriff's Office,GA,sheriff,0,1,2010,2020,11,0,30,0
+331,GA03501,GA03501,Moultrie Police Department,GA,local_police,0,2,2010,2020,11,0,30,0
+332,GA04403,GA04403,Avondale Estates Police Department,GA,local_police,0,2,2010,2020,11,0,30,0
+333,GA04405,GA04405,Clarkston Police Department,GA,local_police,0,1,2010,2020,11,0,30,0
+334,GA04408,GA04408,Pine Lake Police Department,GA,local_police,0,1,2010,2020,11,0,30,0
+335,GA04801,GA04801,Douglasville Police Department,GA,local_police,0,5,2010,2020,11,0,30,0
+336,GA05500,GA05500,Fannin County Sheriff's Office,GA,sheriff,0,1,2010,2020,11,0,30,0
+337,GA05801,GA05801,Cumming Police Department,GA,local_police,0,1,2010,2020,11,0,30,0
+338,GA06300,GA06300,Glynn County Sheriff's Office,GA,sheriff,0,1,2010,2020,11,0,30,0
+339,GA07103,GA07103,Buchanan Police Department,GA,local_police,0,1,2010,2020,11,0,30,0
+340,GA08000,GA08000,Jeff Davis County Sheriff's Office,GA,sheriff,0,1,2010,2020,11,0,30,0
+341,GA08500,GA08500,Lamar County Sheriff's Office,GA,sheriff,0,1,2010,2020,11,0,30,0
+342,GA08702,GA08702,East Dublin Police Department,GA,local_police,0,1,2010,2020,11,0,30,0
+343,GA08801,GA08801,Leesburg Police Department,GA,local_police,0,1,2010,2020,11,0,30,0
+344,GA08902,GA08902,Midway Police Dept.,GA,local_police,0,1,2010,2020,11,0,30,0
+345,GA09400,GA09400,Mcduffie County Sheriff's Office,GA,sheriff,0,1,2010,2020,11,0,30,0
+346,GA10103,GA10103,Pelham Police Department,GA,local_police,0,1,2010,2020,11,0,30,0
+347,GA10500,GA10500,Murray County Sheriffs Office,GA,sheriff,0,2,2010,2020,11,0,30,0
+348,GA10604,GA10604,Columbus State University Police Dept.,GA,special,0,1,2010,2020,11,0,30,0
+349,GA11500,GA11500,Polk County Sheriff's Office,GA,sheriff,0,1,2010,2020,11,0,30,0
+350,GA11503,GA11503,Polk County Police Department,GA,local_police,0,1,2010,2020,11,0,30,0
+351,GA12601,GA12601,Griffin Police Department,GA,local_police,0,1,2010,2020,11,0,30,0
+352,GA13300,GA13300,Taylor County Sheriff's Office,GA,sheriff,0,1,2010,2020,11,0,30,0
+353,GA13802,GA13802,Vidalia Police Department,GA,local_police,0,1,2010,2020,11,0,30,0
+354,GA14701,GA14701,Monroe Police Department,GA,local_police,0,1,2010,2020,11,0,30,0
+355,GA14702,GA14702,Loganville Police Department,GA,local_police,0,1,2010,2020,11,0,30,0
+356,GA14801,GA14801,Waycross Police Department,GA,local_police,0,1,2010,2020,11,0,30,0
+357,MN00202,MN00202,Blaine Police Department,MN,local_police,0,1,2000,2022,23,0,20,0
+358,MN00205,MN00205,Coon Rapids Police Department,MN,local_police,0,1,2000,2022,23,0,20,0
+359,MN00213,MN00213,Ramsey Police Department,MN,local_police,0,1,2000,2022,23,0,20,0
+360,MN00400,MN00400,Beltrami County Sheriff's Office,MN,sheriff,0,3,2000,2022,23,0,20,0
+361,MN01002,MN01002,Chaska Police Department,MN,local_police,0,2,2000,2022,23,0,20,0
+362,MN01106,MN01106,Backus Police Department,MN,local_police,0,0,2000,2022,23,0,20,0
+363,MN01800,MN01800,Crow Wing County Sheriff's Office,MN,sheriff,0,1,2000,2022,23,0,20,0
+364,MN01905,MN01905,Rosemount Police Department,MN,local_police,0,1,2000,2022,23,0,20,0
+365,MN01907,MN01907,West St. Paul Police Department,MN,local_police,0,1,2000,2022,23,0,20,0
+366,MN01910,MN01910,Apple Valley Police Department,MN,local_police,0,1,2000,2022,23,0,20,0
+367,MN02101,MN02101,Alexandria Police Department,MN,local_police,0,1,2000,2022,23,0,20,0
+368,MN02107,MN02107,Miltona Police Department,MN,local_police,0,0,2000,2022,23,0,20,0
+369,MN02508,MN02508,Zumbrota Police Department,MN,local_police,0,1,2000,2022,23,0,20,0
+370,MN02700,MN02700,Hennepin County Sheriff's Office,MN,sheriff,0,2,2000,2022,23,0,20,0
+371,MN02703,MN02703,Brooklyn Park Police Department,MN,local_police,0,3,2000,2022,23,0,20,0
+372,MN02706,MN02706,Edina Police Department,MN,local_police,0,3,2000,2022,23,0,20,0
+373,MN02708,MN02708,Golden Valley Police Department,MN,local_police,0,1,2000,2022,23,0,20,0
+374,MN02712,MN02712,Minnetonka Police Department,MN,local_police,0,1,2000,2022,23,0,20,0
+375,MN02715,MN02715,Orono Police Department,MN,local_police,0,1,2000,2022,23,0,20,0
+376,MN02726,MN02726,Eden Prairie Police Department,MN,local_police,0,1,2000,2022,23,0,20,0
+377,MN04000,MN04000,Le Sueur County Sheriff's Office,MN,sheriff,0,2,2000,2022,23,0,20,0
+378,MN04900,MN04900,Morrison County Sheriff's Office,MN,sheriff,0,2,2000,2022,23,0,20,0
+379,MN04901,MN04901,Little Falls Police Department,MN,local_police,0,1,2000,2022,23,0,20,0
+380,MN05200,MN05200,Nicollet County Sheriff's Office,MN,sheriff,0,1,2000,2022,23,0,20,0
+381,MN05201,MN05201,North Mankato Police Department,MN,local_police,0,2,2000,2022,23,0,20,0
+382,MN05500,MN05500,Olmsted County Sheriff's Office,MN,sheriff,0,2,2000,2022,23,0,20,0
+383,MN05601,MN05601,Fergus Falls Police Department,MN,local_police,0,1,2000,2022,23,0,20,0
+384,MN06204,MN06204,Maplewood Police Department,MN,local_police,0,1,2000,2022,23,0,20,0
+385,MN06206,MN06206,New Brighton Dept Of Public Safety,MN,local_police,0,1,2000,2022,23,0,20,0
+386,MN06300,MN06300,Red Lake County Sheriff's Office,MN,sheriff,0,0,2000,2022,23,0,20,0
+387,MN07000,MN07000,Scott County Sheriff's Office,MN,sheriff,0,1,2000,2022,23,0,20,0
+388,MN07100,MN07100,Sherburne County Sheriff's Office,MN,sheriff,0,1,2000,2022,23,0,20,0
+389,MN07200,MN07200,Sibley County Sheriff's Office,MN,sheriff,0,0,2000,2022,23,0,20,0
+390,MN07401,MN07401,Owatonna Police Department,MN,local_police,0,1,2000,2022,23,0,20,0
+391,MN08001,MN08001,Wadena Police Department,MN,local_police,0,1,2000,2022,23,0,20,0
+392,MN08207,MN08207,Cottage Grove Police Department,MN,local_police,0,2,2000,2022,23,0,20,0
+393,MN08211,MN08211,Woodbury Police Department,MN,local_police,0,4,2000,2022,23,0,20,0
+394,MN08500,MN08500,Winona County Sheriff's Office,MN,sheriff,0,1,2000,2022,23,0,20,0
+395,MNDI019,MNDI019,White Earth Tribal Police Department,MN,local_police,0,1,2000,2022,23,0,20,0
+396,TX06106,TX06106,Lewisville Police Department,TX,local_police,0,2,2010,2022,13,0,30,0
+397,TX21204,TX21204,Tyler Police Department,TX,local_police,0,6,2010,2022,13,0,30,0
+398,UT00200,UT00200,Box Elder County Sheriff's Office,UT,sheriff,0,1,2005,2014,10,0,25,0
+399,UT00208,UT00208,Willard Police Dept,UT,local_police,0,1,2005,2014,10,0,25,0
+400,UT00310,UT00310,North Park Police Department,UT,local_police,0,1,2005,2014,10,0,25,0
+401,UT00314,UT00314,Smithfield Police Department,UT,local_police,0,1,2005,2014,10,0,25,0
+402,UT00316,UT00316,Utah State University Police Dept,UT,special,0,1,2005,2014,10,0,25,0
+403,UT00609,UT00609,West Bountiful Police Department,UT,local_police,0,1,2005,2014,10,0,25,0
+404,UT00610,UT00610,Woods Cross Police Department,UT,local_police,0,2,2005,2014,10,0,25,0
+405,UT00700,UT00700,Duchesne County Sheriff's Office,UT,sheriff,0,1,2005,2014,10,0,25,0
+406,UT01000,UT01000,Grand County Sheriff's Office,UT,sheriff,0,1,2005,2014,10,0,25,0
+407,UT01200,UT01200,Juab County Sheriff's Office,UT,sheriff,0,1,2005,2014,10,0,25,0
+408,UT01400,UT01400,Millard County Sheriff's Office,UT,sheriff,0,1,2005,2014,10,0,25,0
+409,UT01801,UT01801,Midvale Police Department,UT,local_police,0,1,2005,2014,10,0,25,0
+410,UT02107,UT02107,Salina Police Department,UT,local_police,0,1,2005,2014,10,0,25,0
+411,UT02502,UT02502,Lehi Police Department,UT,local_police,0,2,2005,2014,10,0,25,0
+412,UT02504,UT02504,Payson Police Department,UT,local_police,0,1,2005,2014,10,0,25,0
+413,UT02911,UT02911,Pleasant View Police Department,UT,local_police,0,0,2005,2014,10,0,25,0
+414,utah_doc,NA,Utah Department of Corrections,UT,state,0,0,2005,2014,10,0,25,0
