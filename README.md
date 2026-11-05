@@ -4,7 +4,7 @@ Annual counts of people shot and killed by on-duty police, by agency, going back
 
 **If you just want the data:**
 
-- [`output/agency_year_panel.csv`](output/agency_year_panel.csv) is the merged file: one row per agency-year, 4,623 agencies, 1969–2025 (145,555 agency-years). Variables are documented in [`CODEBOOK.md`](CODEBOOK.md).
+- [`output/agency_year_panel.csv`](output/agency_year_panel.csv) is the merged file: one row per agency-year, 4,623 agencies, 1969–2025 (145,556 agency-years). Variables are documented in [`CODEBOOK.md`](CODEBOOK.md).
 - [`agency-level-fatal-ois.csv`](agency-level-fatal-ois.csv) is the original hand-built file: wide, one column per agency. It keeps the same path and format it has always had.
 
 ## November 2026 update
@@ -45,7 +45,7 @@ Some series are left out because they mix in nonfatal shootings or may count inc
 - Cincinnati before 2015;
 - Austin, 2000–2007.
 
-**How far back it reaches.** Before 2000, the solid line rests on only 4–17 large-city departments. It describes big cities, not the country.
+**How far back it reaches.** Before 2000, the solid line rests on only 4–18 departments, mostly large cities. It describes big cities, not the country.
 
 **What it shows.** The headline compares one fixed set of agencies: the 17 with at least five years of data both before 1995 and since 2015, shown as the dashed line. In those agencies, fatal police shootings since 2015 run 49% below their 1970–1994 level (ratio 0.51, 95% CI 0.35–0.74).
 
@@ -57,7 +57,7 @@ These are raw counts, not rates per resident, and population change could push t
 
 ![Agencies with data before 2000](output/figures/coverage_tiles.png)
 
-**Reach.** The hand-built agencies were involved in at least 32% of everyone shot and killed by police in WaPo's data, 2015–2024. It's "at least" because deaths are matched through each WaPo agency's primary ORI, so some matches are missed. The 26 agencies shown above carry the long-run record back before 2000.
+**Reach.** The hand-built agencies were involved in at least 32% of everyone shot and killed by police in WaPo's data, 2015–2024. It's "at least" because deaths are matched through each WaPo agency's primary ORI, so some matches are missed. The 27 agencies shown above carry the long-run record back before 2000.
 
 **Sources for these numbers:**
 - Tables: [`output/tables/trend_summary.csv`](output/tables/trend_summary.csv), [`trend_index.csv`](output/tables/trend_index.csv), [`then_vs_now.csv`](output/tables/then_vs_now.csv), and [`coverage_share.csv`](output/tables/coverage_share.csv).
@@ -70,10 +70,10 @@ Where they overlap, the sources mostly agree, though FE runs higher than WaPo:
 | Comparison | Years | Agency-years | Correlation | Total deaths, difference | Identical counts | Identical, where either > 0 |
 |---|---|---:|---:|---:|---:|---:|
 | Hand-built vs. WaPo | 2015–2022 | 2,641 | .945 | WaPo −4.0% | 95.2% | 86.8% |
-| Hand-built vs. FE | 2000–2021 | 5,571 | .903 | FE −1.1% | 91.2% | 69.4% |
+| Hand-built vs. FE | 2000–2021 | 5,581 | .903 | FE −1.2% | 91.2% | 69.3% |
 | WaPo vs. FE (hand-built agencies) | 2015–2021 | 2,870 | .973 | FE +9.2% | 90.1% | 71.1% |
 | Hand-built vs. MPV (on-duty) | 2013–2022 | 3,355 | .933 | MPV −2.2% | 89.9% | 71.5% |
-| Hand-built vs. FBI SHR | 1976–2022 | 3,201 | .881 | SHR −28.1% | 65.9% | 31.6% |
+| Hand-built vs. FBI SHR | 1976–2022 | 3,219 | .881 | SHR −28.1% | 66.1% | 31.7% |
 
 Most agency-years are zero in both sources, so the last column, which drops agency-years where both are zero, is the tougher test. Agencies that WaPo lists under several ORIs (mostly state police) are left out of these comparisons. MPV's gap against the hand-built counts shifts over time: about 10% below in 2013–15 and 3–9% above in 2020–22. This is consistent with MPV recording a growing share of deaths over its life, and it's why the trend figures prefer WaPo where WaPo exists. [`output/tables/source_agreement.csv`](output/tables/source_agreement.csv) also compares MPV with WaPo and FE, and has each comparison restricted to the years all three sources cover (2015–2021). Agencies where the sources disagree are listed, largest gap first, in [`output/tables/source_disagreements.csv`](output/tables/source_disagreements.csv).
 
@@ -88,8 +88,8 @@ Most agency-years are zero in both sources, so the last column, which drops agen
 | 1969 | 1 (Chicago) | — | — | — | — |
 | 1970s | 4–15 | — | — | — | 1,760–1,929 (1976+) |
 | 1980s | 12–15 | — | — | — | 1,695–1,960 |
-| 1990s | 10–18 | — | — | — | 1,459–1,818 |
-| 2000s | 111–170 | — | 2,967 | — | 1,524–1,721 |
+| 1990s | 11–19 | — | — | — | 1,459–1,818 |
+| 2000s | 112–171 | — | 2,967 | — | 1,524–1,721 |
 | 2010s | 360–369 | 3,647 (2015+) | 2,967 | 4,622 (2013+) | 1,584–1,841 |
 | 2020s | 225–368 (through 2022) | 3,647 (through 2024) | 2,967 (through 2021) | 4,622 (through 2025) | 1,864–2,098 (through 2024) |
 
@@ -143,6 +143,7 @@ I decided, for now at least, to focus on fatal shootings, since they're more rel
 | [Austin open data portal](https://data.austintexas.gov/Public-Safety/Officer-Involved-Shooting-2000-2014/63p6-iegi) | 2000–2014 | Austin PD |
 | [Dallas open data portal](https://www.dallasopendata.com/Public-Safety/Dallas-Police-Officer-Involved-Shootings/4gmt-jyx2) | 2003–2022 | Dallas PD |
 | *Omaha World-Herald* lists of fatal shootings by Omaha police (Jan. 3, 1991; Feb. 15 and 17, 2002; May 24, 2007; Mar. 18, 2008) and coverage of individual cases, via NewsBank. 1992 is derived from a 1990–2000 total; 2009 rests on finding no reported killings | 1981–2009 | Omaha PD |
+| *Omaha World-Herald* coverage of Lincoln police shootings (Oct. 22, 1991; Aug. 4, 1992; Jan. 5, 2008, which calls that shooting the first fatal one by a Lincoln officer in more than 15 years; Mar. 19, 2009), via NewsBank | 1991–2009 | Lincoln PD |
 | Jacksonville Sheriff's Office, [*Police Involved Shootings*](https://web.archive.org/web/20150717050006/http://www.jaxsheriff.org/departments/sheriffs-office/docs/sheriff-john-rutherford/police-involved-shootings-final.aspx) (Jan. 2009; archived copy) | 2007–2008 | Jacksonville SO |
 | [Cincinnati open data portal](https://data.cincinnati-oh.gov/Safety/PDI-Police-Data-Initiative-Officer-Involved-Shooti/r6q4-muts) | 1996–2019 | Cincinnati PD |
 | [Vermont open data portal](https://data.vermont.gov/Public-Safety/Vermont-State-Police-Officer-Involved-Shootings-19/du86-kfnp) | 1977–2022 | Vermont State Police |
