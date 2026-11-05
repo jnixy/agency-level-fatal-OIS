@@ -19,7 +19,7 @@
 library(here)
 
 steps <- c("01_nix_long.R", "02_wapo.R", "03_fe_crosswalk.R",
-           "04_fe.R", "04b_mpv.R", "05_combine.R", "06_figures.R", "07_figures_trends.R")
+           "04_fe.R", "04b_mpv.R", "04c_shr.R", "05_combine.R", "06_figures.R", "07_figures_trends.R")
 
 for (s in steps) {
   message("== ", s)

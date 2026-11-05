@@ -12,5 +12,7 @@ fatal_encounters_merge/
 # Fatal Encounters and MPV are linked, not redistributed (see data/README.md)
 data/raw/fatal_encounters.csv
 data/raw/mpv/
+# Kaplan's SHR is distributed by ICPSR (openICPSR 100699); linked, not redistributed
+data/raw/shr/
 __pycache__/
 *.pyc

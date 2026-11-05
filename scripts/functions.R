@@ -189,7 +189,8 @@ source_colors <- c(
   "Hand-built (Nix)"   = "#2e6da4",
   "Washington Post"    = "#c0392b",
   "Fatal Encounters"   = "#d68910",
-  "Mapping Police Violence" = "#7d3c98"
+  "Mapping Police Violence" = "#7d3c98",
+  "FBI SHR"            = "#5d6d7e"
 )
 spliced_color <- "#9dbfe0"     # lighter tint of the hand-built blue (WaPo-filled years)
 neutral_point_color <- "grey30"

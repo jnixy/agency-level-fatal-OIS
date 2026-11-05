@@ -13,13 +13,16 @@
 #     n_fe   0/count 2000-2021 for linked agencies, NA where never linked
 #     n_mpv  0 for every ORI-coded agency, 2013 to the snapshot's last complete
 #            year (MPV is a national census; includes off-duty, see n_mpv_offduty)
+#     n_shr  FBI SHR, 1976-2024: 0/count where the agency filed any SHR record
+#            that year, NA where it filed none. Only agencies already in the
+#            panel (SHR adds years, not agencies)
 #   The panel is deliberately unbalanced: an agency has rows only for years
 #   some source covers. A missing row means no source, not zero deaths.
 #   Also writes source-agreement and coverage tables.
 #
 # Inputs:
 #   - data/agency_key.csv
-#   - data/clean/{nix,wapo,fe,mpv}_agency_year.csv
+#   - data/clean/{nix,wapo,fe,mpv,shr}_agency_year.csv
 #   - data/clean/wapo_agencies.csv, data/clean/mpv_agencies.csv
 #
 # Outputs:
@@ -53,6 +56,8 @@ mpv  <- read_csv(here("data", "clean", "mpv_agency_year.csv"),
                                   n_mpv_multi = "i", .default = "c"))
 mpv_agencies <- read_csv(here("data", "clean", "mpv_agencies.csv"), col_types = chr)
 mpv_years <- sort(unique(mpv$year))
+shr  <- read_csv(here("data", "clean", "shr_agency_year.csv"),
+                 col_types = cols(year = "i", n_shr = "i", .default = "c"))
 
 # 2. Agency metadata (one row per agency_id) -----------------------------------
 key_meta <- agency_key |>
@@ -104,10 +109,17 @@ mpv_full <- expand_grid(agency_id = meta$agency_id[!is.na(meta$ori7)],
   left_join(mpv |> rename(agency_id = ori7), by = c("agency_id", "year")) |>
   mutate(across(c(n_mpv, n_mpv_offduty, n_mpv_multi), \(x) replace_na(x, 0L)))
 
+# SHR covers every reporting agency in the country; keep only agencies the
+# panel already has, so SHR extends their years without adding agencies
+shr_in_panel <- shr |>
+  filter(ori7 %in% meta$ori7) |>
+  rename(agency_id = ori7)
+
 joined <- nix |> select(agency_id, year, n_nix, nix_partial) |>
   full_join(wapo_full, by = c("agency_id", "year")) |>
   full_join(fe |> rename(agency_id = ori7), by = c("agency_id", "year")) |>
-  full_join(mpv_full, by = c("agency_id", "year"))
+  full_join(mpv_full, by = c("agency_id", "year")) |>
+  full_join(shr_in_panel, by = c("agency_id", "year"))
 
 # Every agency-year must have metadata; an inner join would drop it silently
 orphans <- anti_join(joined, meta, by = "agency_id")
@@ -120,7 +132,7 @@ panel <- joined |>
   inner_join(meta, by = "agency_id") |>
   select(agency_id, ori7, agency_name, state, agency_type, in_nix, slugs,
          wapo_multi_ori, year, n_nix, nix_partial, n_wapo, n_fe, n_fe_multi, n_fe_flagged,
-         n_mpv, n_mpv_offduty, n_mpv_multi) |>
+         n_mpv, n_mpv_offduty, n_mpv_multi, n_shr) |>
   arrange(state, agency_name, year)
 
 stopifnot(
@@ -130,7 +142,8 @@ stopifnot(
   sum(panel$n_nix, na.rm = TRUE) == sum(nix$n_nix),
   sum(panel$n_wapo, na.rm = TRUE) == sum(wapo$n_wapo),
   sum(panel$n_fe, na.rm = TRUE) == sum(fe$n_fe),
-  sum(panel$n_mpv, na.rm = TRUE) == sum(mpv$n_mpv)
+  sum(panel$n_mpv, na.rm = TRUE) == sum(mpv$n_mpv),
+  sum(panel$n_shr, na.rm = TRUE) == sum(shr_in_panel$n_shr)
 )
 
 # 4. Agreement on overlapping agency-years -------------------------------------
@@ -175,7 +188,11 @@ agreement <- bind_rows(
   compare_sources(nix_panel, "n_nix", "n_mpv_onduty", "Hand-built vs MPV on-duty"),
   compare_sources(nix_panel, "n_nix", "n_mpv", "Hand-built vs MPV (incl. off-duty)"),
   compare_sources(comparable, "n_wapo", "n_mpv", "WaPo vs MPV (all agencies)"),
-  compare_sources(comparable, "n_fe", "n_mpv", "FE vs MPV (all linked agencies)")
+  compare_sources(comparable, "n_fe", "n_mpv", "FE vs MPV (all linked agencies)"),
+  compare_sources(nix_panel, "n_nix", "n_shr", "Hand-built vs SHR"),
+  compare_sources(comparable, "n_wapo", "n_shr", "WaPo vs SHR (all agencies)"),
+  compare_sources(comparable, "n_fe", "n_shr", "FE vs SHR (all linked agencies)"),
+  compare_sources(comparable, "n_mpv_onduty", "n_shr", "MPV on-duty vs SHR (all agencies)")
 ) |>
   mutate(across(where(is.double), \(x) round(x, 3)))
 
@@ -200,6 +217,7 @@ coverage <- panel |>
             agencies_wapo = sum(!is.na(n_wapo)),
             agencies_fe = sum(!is.na(n_fe)),
             agencies_mpv = sum(!is.na(n_mpv)),
+            agencies_shr = sum(!is.na(n_shr)),
             deaths_nix = sum(n_nix, na.rm = TRUE),
             .groups = "drop")
 
@@ -211,4 +229,4 @@ write_csv(coverage, here("output", "tables", "coverage_by_year.csv"))
 message("05: panel has ", n_distinct(panel$agency_id), " agencies, ",
         nrow(panel), " agency-years (", sum(!is.na(panel$n_nix)), " hand-built, ",
         sum(!is.na(panel$n_wapo)), " WaPo, ", sum(!is.na(panel$n_fe)), " FE, ",
-        sum(!is.na(panel$n_mpv)), " MPV)")
+        sum(!is.na(panel$n_mpv)), " MPV, ", sum(!is.na(panel$n_shr)), " SHR)")
