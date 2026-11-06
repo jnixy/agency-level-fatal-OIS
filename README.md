@@ -45,19 +45,19 @@ Some series are left out because they mix in nonfatal shootings or may count inc
 - Cincinnati before 2015;
 - Austin, 2000–2007.
 
-**How far back it reaches.** Before 2000, the solid line rests on only 4–26 departments, mostly large cities. It describes big cities, not the country.
+**How far back it reaches.** Before 2000, the solid line rests on only 4–27 departments, mostly large cities. It describes big cities, not the country.
 
-**What it shows.** The headline compares one fixed set of agencies: the 24 with at least five years of data both before 1995 and since 2015, shown as the dashed line. In those agencies, fatal police shootings since 2015 run 38% below their 1970–1994 level (ratio 0.62, 95% CI 0.42–0.90).
+**What it shows.** The headline compares one fixed set of agencies: the 25 with at least five years of data both before 1995 and since 2015, shown as the dashed line. In those agencies, fatal police shootings since 2015 run 38% below their 1970–1994 level (ratio 0.62, 95% CI 0.43–0.90).
 
-![Then vs. now in twenty-four long-running agencies](output/figures/then_vs_now.png)
+![Then vs. now in twenty-five long-running agencies](output/figures/then_vs_now.png)
 
-**Then vs. now.** In the same 24 agencies, 11 kill fewer people a year now than before 1995. The drops are largest in New York, Chicago, and Los Angeles.
+**Then vs. now.** In the same 25 agencies, 12 kill fewer people a year now than before 1995. The drops are largest in New York, Chicago, and Los Angeles.
 
 These are raw counts, not rates per resident, and population change could push the per-resident comparison either way. Some of these cities grew; others, like St. Louis and Philadelphia, shrank. The years observed in each era also vary by agency (see the table).
 
 ![Agencies with data before 2000](output/figures/coverage_tiles.png)
 
-**Reach.** The hand-built agencies were involved in at least 32% of everyone shot and killed by police in WaPo's data, 2015–2024. It's "at least" because deaths are matched through each WaPo agency's primary ORI, so some matches are missed. The 33 agencies shown above carry the long-run record back before 2000.
+**Reach.** The hand-built agencies were involved in at least 32% of everyone shot and killed by police in WaPo's data, 2015–2024. It's "at least" because deaths are matched through each WaPo agency's primary ORI, so some matches are missed. The 34 agencies shown above carry the long-run record back before 2000.
 
 **Sources for these numbers:**
 - Tables: [`output/tables/trend_summary.csv`](output/tables/trend_summary.csv), [`trend_index.csv`](output/tables/trend_index.csv), [`then_vs_now.csv`](output/tables/then_vs_now.csv), and [`coverage_share.csv`](output/tables/coverage_share.csv).
@@ -73,7 +73,7 @@ Where they overlap, the sources mostly agree, though FE runs higher than WaPo:
 | Hand-built vs. FE | 2000–2021 | 5,587 | .907 | FE −1.2% | 91.2% | 69.3% |
 | WaPo vs. FE (hand-built agencies) | 2015–2021 | 2,870 | .973 | FE +9.2% | 90.1% | 71.1% |
 | Hand-built vs. MPV (on-duty) | 2013–2022 | 3,357 | .936 | MPV −2.2% | 89.9% | 71.4% |
-| Hand-built vs. FBI SHR | 1976–2022 | 3,314 | .874 | SHR −28.3% | 65.4% | 31.8% |
+| Hand-built vs. FBI SHR | 1976–2022 | 3,326 | .874 | SHR −28.2% | 65.4% | 32.0% |
 
 Most agency-years are zero in both sources, so the last column, which drops agency-years where both are zero, is the tougher test. Agencies that WaPo lists under several ORIs (mostly state police) are left out of these comparisons. MPV's gap against the hand-built counts shifts over time: about 10% below in 2013–15 and 3–9% above in 2020–22. This is consistent with MPV recording a growing share of deaths over its life, and it's why the trend figures prefer WaPo where WaPo exists. [`output/tables/source_agreement.csv`](output/tables/source_agreement.csv) also compares MPV with WaPo and FE, and has each comparison restricted to the years all three sources cover (2015–2021). Agencies where the sources disagree are listed, largest gap first, in [`output/tables/source_disagreements.csv`](output/tables/source_disagreements.csv).
 
@@ -87,8 +87,8 @@ Most agency-years are zero in both sources, so the last column, which drops agen
 |---|---:|---:|---:|---:|---:|
 | 1969 | 1 (Chicago) | — | — | — | — |
 | 1970s | 4–15 | — | — | — | 1,760–1,929 (1976+) |
-| 1980s | 12–20 | — | — | — | 1,695–1,960 |
-| 1990s | 18–27 | — | — | — | 1,459–1,818 |
+| 1980s | 12–21 | — | — | — | 1,695–1,960 |
+| 1990s | 19–28 | — | — | — | 1,459–1,818 |
 | 2000s | 112–172 | — | 2,967 | — | 1,524–1,721 |
 | 2010s | 361–369 | 3,647 (2015+) | 2,967 | 4,622 (2013+) | 1,584–1,841 |
 | 2020s | 225–368 (through 2022) | 3,647 (through 2024) | 2,967 (through 2021) | 4,622 (through 2025) | 1,864–2,098 (through 2024) |
@@ -151,6 +151,7 @@ I decided, for now at least, to focus on fatal shootings, since they're more rel
 | *Tulsa World*, case-by-case reconstruction via NewsBank: every Tulsa police shooting reported in the paper, kept when the person died and the officer was on duty (suicides during standoffs and other agencies excluded). Each year was searched with short full-text, "shot by police", and district-attorney queries; cases and exclusions are logged in [`data/historical/historical_ois_evidence.csv`](data/historical/historical_ois_evidence.csv). It matches two counts in the paper: one police shooting on its full 1991 homicide list, and 14 deaths from 1989 through Oct. 1998. It totals 18, the same as SHR | 1989–1999 | Tulsa PD |
 | *San Antonio Express-News*, case-by-case reconstruction via NewsBank: every San Antonio police shooting reported in the paper, kept when the person died and the officer was on duty (off-duty officers, suicides, and other agencies excluded). Each year was searched four or five ways; cases and exclusions are logged in [`data/historical/historical_ois_evidence.csv`](data/historical/historical_ois_evidence.csv). SHR has no San Antonio data before 2000, so counts the paper printed itself serve as checks: a department poll gives 1990 (two deaths, since the archive is thin before October 1990); the paper's own 1996 figure is used for that year; and its 1992 and 1998 tallies match the cases found. It totals 20; one 1999 death may have been self-inflicted | 1990–1999 | San Antonio PD |
 | *The Sacramento Bee*, case-by-case reconstruction via NewsBank for two agencies: every shooting reported in the paper, kept when the person died and the officer or deputy was on duty (off-duty killings, the CHP, and neighboring agencies excluded). Each period was searched with headline and full-text queries; cases and exclusions are logged in [`data/historical/historical_ois_evidence.csv`](data/historical/historical_ois_evidence.csv). Sacramento PD totals 18 against 23 in SHR and matches SHR in 12 of 15 years. The sheriff's count (28 against 47 in SHR) should be read as a floor: SHR appears to credit the sheriff with some deaths it only investigated, and several sheriff's killings were by off-duty deputies | 1985–1999 | Sacramento PD; Sacramento County SD |
+| *The Oregonian*, case-by-case reconstruction via NewsBank: every Portland police shooting reported in the paper, kept when the person died and the officer was on duty (Multnomah County deputies and suburban agencies excluded); cases and exclusions are logged in [`data/historical/historical_ois_evidence.csv`](data/historical/historical_ois_evidence.csv). Counts the paper printed serve as checks: a Police Bureau study of 1988–91 (11 killed), a list of every police killing from December 1990 to January 1992, and year counts for 1992 and 1996. 1988 is derived from the Bureau study because the paper's 1988 archive is thin. It totals 26, the same as SHR | 1988–1999 | Portland PD |
 | [Cincinnati open data portal](https://data.cincinnati-oh.gov/Safety/PDI-Police-Data-Initiative-Officer-Involved-Shooti/r6q4-muts) | 1996–2019 | Cincinnati PD |
 | [Vermont open data portal](https://data.vermont.gov/Public-Safety/Vermont-State-Police-Officer-Involved-Shootings-19/du86-kfnp) | 1977–2022 | Vermont State Police |
 | [COPS Office report on LVMPD](https://cops.usdoj.gov/RIC/Publications/cops-p273-pub.pdf) | 1990–2011 | Las Vegas Metro PD |
