@@ -73,7 +73,7 @@ Where they overlap, the sources mostly agree, though FE runs higher than WaPo:
 | Hand-built vs. FE | 2000–2021 | 5,587 | .907 | FE −1.2% | 91.2% | 69.3% |
 | WaPo vs. FE (hand-built agencies) | 2015–2021 | 2,870 | .973 | FE +9.2% | 90.1% | 71.1% |
 | Hand-built vs. MPV (on-duty) | 2013–2022 | 3,357 | .936 | MPV −2.2% | 89.9% | 71.4% |
-| Hand-built vs. FBI SHR | 1976–2022 | 3,252 | .875 | SHR −28.7% | 65.7% | 31.4% |
+| Hand-built vs. FBI SHR | 1976–2022 | 3,257 | .875 | SHR −28.7% | 65.7% | 31.5% |
 
 Most agency-years are zero in both sources, so the last column, which drops agency-years where both are zero, is the tougher test. Agencies that WaPo lists under several ORIs (mostly state police) are left out of these comparisons. MPV's gap against the hand-built counts shifts over time: about 10% below in 2013–15 and 3–9% above in 2020–22. This is consistent with MPV recording a growing share of deaths over its life, and it's why the trend figures prefer WaPo where WaPo exists. [`output/tables/source_agreement.csv`](output/tables/source_agreement.csv) also compares MPV with WaPo and FE, and has each comparison restricted to the years all three sources cover (2015–2021). Agencies where the sources disagree are listed, largest gap first, in [`output/tables/source_disagreements.csv`](output/tables/source_disagreements.csv).
 
@@ -88,7 +88,7 @@ Most agency-years are zero in both sources, so the last column, which drops agen
 | 1969 | 1 (Chicago) | — | — | — | — |
 | 1970s | 4–15 | — | — | — | 1,760–1,929 (1976+) |
 | 1980s | 12–17 | — | — | — | 1,695–1,960 |
-| 1990s | 12–22 | — | — | — | 1,459–1,818 |
+| 1990s | 13–22 | — | — | — | 1,459–1,818 |
 | 2000s | 112–172 | — | 2,967 | — | 1,524–1,721 |
 | 2010s | 361–369 | 3,647 (2015+) | 2,967 | 4,622 (2013+) | 1,584–1,841 |
 | 2020s | 225–368 (through 2022) | 3,647 (through 2024) | 2,967 (through 2021) | 4,622 (through 2025) | 1,864–2,098 (through 2024) |
@@ -146,7 +146,7 @@ I decided, for now at least, to focus on fatal shootings, since they're more rel
 | *Omaha World-Herald* coverage of Lincoln police shootings (Oct. 22, 1991; Aug. 4, 1992; Jan. 5, 2008, which calls that shooting the first fatal one by a Lincoln officer in more than 15 years; Mar. 19, 2009), via NewsBank | 1991–2009 | Lincoln PD |
 | Jacksonville Sheriff's Office, [*Police Involved Shootings*](https://web.archive.org/web/20150717050006/http://www.jaxsheriff.org/departments/sheriffs-office/docs/sheriff-john-rutherford/police-involved-shootings-final.aspx) (Jan. 2009; archived copy) | 2007–2008 | Jacksonville SO |
 | *The Daily Oklahoman*, case-by-case reconstruction via NewsBank: every OKC police shooting reported in the paper, kept when the person died and the officer was on duty (off-duty officers, other agencies, and Housing Authority guards excluded). Each year was searched three to five ways; cases and exclusions are logged in [`data/historical/historical_ois_evidence.csv`](data/historical/historical_ois_evidence.csv). Because it relies on finding every story, it may slightly undercount: it totals 27, against 36 in SHR, about 4 of which are off-duty killings | 1982–1994 | Oklahoma City PD |
-| *The Columbus Dispatch*, case-by-case reconstruction via NewsBank: every Columbus police shooting reported in the paper, kept when the person died and the officer was on duty (off-duty and special-duty officers, deputies, and other agencies excluded). Each year was searched with headline, short full-text, and grand-jury queries; cases and exclusions are logged in [`data/historical/historical_ois_evidence.csv`](data/historical/historical_ois_evidence.csv). Three running counts in the paper (Jan. 1990, May 1990, Jul. 1992) agree. It may slightly undercount: it totals 17, against 15 in SHR | 1986–1994 | Columbus (OH) PD |
+| *The Columbus Dispatch*, case-by-case reconstruction via NewsBank: every Columbus police shooting reported in the paper, kept when the person died and the officer was on duty (off-duty and special-duty officers, deputies, and other agencies excluded). Each year was searched with headline, short full-text, and grand-jury queries; cases and exclusions are logged in [`data/historical/historical_ois_evidence.csv`](data/historical/historical_ois_evidence.csv). Three running counts in the paper (Jan. 1990, May 1990, Jul. 1992) agree. For 1995–99 it matches a list the paper published in 2001. It may slightly undercount: it totals 23, against 21 in SHR | 1986–1999 | Columbus (OH) PD |
 | [Cincinnati open data portal](https://data.cincinnati-oh.gov/Safety/PDI-Police-Data-Initiative-Officer-Involved-Shooti/r6q4-muts) | 1996–2019 | Cincinnati PD |
 | [Vermont open data portal](https://data.vermont.gov/Public-Safety/Vermont-State-Police-Officer-Involved-Shootings-19/du86-kfnp) | 1977–2022 | Vermont State Police |
 | [COPS Office report on LVMPD](https://cops.usdoj.gov/RIC/Publications/cops-p273-pub.pdf) | 1990–2011 | Las Vegas Metro PD |
