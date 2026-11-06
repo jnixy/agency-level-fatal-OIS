@@ -10,6 +10,9 @@ era_ratio_recent_vs_early,0.674
 era_ratio_ci_lo,0.464
 era_ratio_ci_hi,0.979
 then_now_lower,12
+then_now_fewer_sig,8
+then_now_more_sig,10
+then_now_same,11
 then_now_total,29
 core_tiles_pre2000,38
 agencies_starting_2000_plus,376
