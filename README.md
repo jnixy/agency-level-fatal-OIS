@@ -40,18 +40,17 @@ Are police killing more people now than in decades past? National data can't ans
 
 **How the trend is estimated.** The solid line comes from a Poisson model with agency fixed effects, fit to 413 of the 414 hand-built agencies. It compares each agency with itself, so agencies entering or leaving the data don't move the line. The hand-built series end in 2022. For agencies whose series run into 2021–22, 2023–24 are filled with WaPo counts and 2025 with MPV on-duty counts. WaPo is used where it exists because it tracks the hand-built counts more closely in the years just before the switch.
 
-Some series are left out because they mix in nonfatal shootings or may count incidents rather than people:
+Some series are left out because they mix in nonfatal shootings:
 - Las Vegas, all years;
-- Cincinnati before 2015;
-- Austin, 2000–2007.
+- Cincinnati before 2015.
 
-**How far back it reaches.** Before 2000, the solid line rests on only 4–27 departments, mostly large cities. It describes big cities, not the country.
+**How far back it reaches.** Before 2000, the solid line rests on only 4–28 departments, mostly large cities. It describes big cities, not the country.
 
-**What it shows.** The headline compares one fixed set of agencies: the 25 with at least five years of data both before 1995 and since 2015, shown as the dashed line. In those agencies, fatal police shootings since 2015 run 38% below their 1970–1994 level (ratio 0.62, 95% CI 0.43–0.90).
+**What it shows.** The headline compares one fixed set of agencies: the 26 with at least five years of data both before 1995 and since 2015, shown as the dashed line. In those agencies, fatal police shootings since 2015 run 36% below their 1970–1994 level (ratio 0.64, 95% CI 0.44–0.92).
 
 ![Then vs. now in twenty-five long-running agencies](output/figures/then_vs_now.png)
 
-**Then vs. now.** In the same 25 agencies, 12 kill fewer people a year now than before 1995. The drops are largest in New York, Chicago, and Los Angeles.
+**Then vs. now.** In the same 26 agencies, 12 kill fewer people a year now than before 1995. The drops are largest in New York, Chicago, and Los Angeles.
 
 These are raw counts, not rates per resident, and population change could push the per-resident comparison either way. Some of these cities grew; others, like St. Louis and Philadelphia, shrank. The years observed in each era also vary by agency (see the table).
 
@@ -140,9 +139,9 @@ I decided, for now at least, to focus on fatal shootings, since they're more rel
 | [San Francisco PD](https://www.sanfranciscopolice.org/sites/default/files/2022-02/SFPDOISInvestigationsSheet20220215.pdf) | 2000–2022 | San Francisco PD |
 | [Houston PD](https://www.houstontx.gov/police/ois/) | 2005–2022 | Houston PD |
 | [Springfield (MO) PD](https://www.springfieldmo.gov/3755/Officer-Involved-Shootings) | 2008–2022 | Springfield (MO) PD |
-| [Austin open data portal](https://data.austintexas.gov/Public-Safety/Officer-Involved-Shooting-2000-2014/63p6-iegi) | 2000–2014 | Austin PD |
+| [Austin open data portal](https://data.austintexas.gov/Public-Safety/Officer-Involved-Shooting-2000-2014/63p6-iegi) | 2008–2014 (2000–07 replaced by the Statesman reconstruction) | Austin PD |
 | [Dallas open data portal](https://www.dallasopendata.com/Public-Safety/Dallas-Police-Officer-Involved-Shootings/4gmt-jyx2) | 2003–2022 | Dallas PD |
-| Local newspapers via NewsBank: see [Newspaper reconstructions](#newspaper-reconstructions) below | 1981–2009 | Omaha, Lincoln, Oklahoma City, Columbus, Denver, Tulsa, San Antonio, Sacramento PD, Sacramento Co. SD, Portland (OR) |
+| Local newspapers via NewsBank: see [Newspaper reconstructions](#newspaper-reconstructions) below | 1981–2009 | Omaha, Lincoln, Oklahoma City, Columbus, Denver, Tulsa, San Antonio, Sacramento PD, Sacramento Co. SD, Portland (OR), Austin |
 | Jacksonville Sheriff's Office, [*Police Involved Shootings*](https://web.archive.org/web/20150717050006/http://www.jaxsheriff.org/departments/sheriffs-office/docs/sheriff-john-rutherford/police-involved-shootings-final.aspx) (Jan. 2009; archived copy) | 2007–2008 | Jacksonville SO |
 | [Cincinnati open data portal](https://data.cincinnati-oh.gov/Safety/PDI-Police-Data-Initiative-Officer-Involved-Shooti/r6q4-muts) | 1996–2019 | Cincinnati PD |
 | [Vermont open data portal](https://data.vermont.gov/Public-Safety/Vermont-State-Police-Officer-Involved-Shootings-19/du86-kfnp) | 1977–2022 | Vermont State Police |
@@ -160,7 +159,7 @@ I decided, for now at least, to focus on fatal shootings, since they're more rel
 
 ### Newspaper reconstructions
 
-For ten agencies, the years before the hand-built series begins come from local newspapers, searched through NewsBank's Access World News. A death counts when the paper reports that an on-duty officer of that agency shot and killed someone. Off-duty officers, other agencies at the same scene, and suicides during standoffs are left out. Each year was searched several ways (headlines, full text, and grand jury or district attorney rulings), and every case and every exclusion is logged with its source in [`data/historical/historical_ois_evidence.csv`](data/historical/historical_ois_evidence.csv). Where the paper printed its own list, running count, or year-end figure, the reconstruction is checked against it. Because the method depends on finding every story, it can undercount, especially where the archive is thin.
+For eleven agencies, the years before the hand-built series begins come from local newspapers (for Austin, 2000–2007 as well), searched through NewsBank's Access World News. A death counts when the paper reports that an on-duty officer of that agency shot and killed someone. Off-duty officers, other agencies at the same scene, and suicides during standoffs are left out. Each year was searched several ways (headlines, full text, and grand jury or district attorney rulings), and every case and every exclusion is logged with its source in [`data/historical/historical_ois_evidence.csv`](data/historical/historical_ois_evidence.csv). Where the paper printed its own list, running count, or year-end figure, the reconstruction is checked against it. Because the method depends on finding every story, it can undercount, especially where the archive is thin.
 
 The SHR column is the FBI's count of people killed by the agency's officers with a firearm over the same years. It has no on/off-duty field, so it includes some off-duty killings that are left out here.
 
@@ -176,13 +175,13 @@ The SHR column is the FBI's count of people killed by the agency's officers with
 | Sacramento PD | *The Sacramento Bee* | 1985–1999 | 18 | 21 | Matches SHR in 12 of 15 years |
 | Sacramento County SD | *The Sacramento Bee* | 1985–1999 | 28 | 43 | Best read as a floor: SHR appears to credit the sheriff with some deaths it only investigated, and several were by off-duty deputies |
 | Portland PD (OR) | *The Oregonian* | 1988–1999 | 26 | 26 | Checked against a Police Bureau study of 1988–91, a list of every police killing from Dec. 1990 to Jan. 1992, and year counts for 1992 and 1996. 1988 is derived from the Bureau study because the 1988 archive is thin |
+| Austin PD | *Austin American-Statesman* | 1989–2007 | 19 | 18 | 1989–99: 12 (SHR 12); checked against the paper's counts for 1991–93, 1994 and early 1999. 2000–07: 7, replacing the city's open-data file, which has the same total but differs in 2000 and 2005–07; the paper calls a July 2001 killing the first since 1999. One 1994 death by an off-duty sergeant working security is left out |
 
 
 ## Caveats
 
 1. **Any mistakes are mine.** I did my best to make sure the data permit apples-to-apples comparisons. Each number *should* represent a person fatally shot by an on-duty officer. A few exceptions are known:
    - **Cincinnati before 2015 and all of LVMPD** count fatal and nonfatal shootings together (animal shootings excluded). That's why Cincinnati is the big outlier in [`output/figures/source_agreement.png`](output/figures/source_agreement.png).
-   - **Austin 2000–2007** may be incident-level rather than person-level.
    - **Athens-Clarke 2019:** the hand-built count (5) equals WaPo's police department and sheriff's office combined. The AJC data may combine the two agencies.
 2. **Blank is not zero** in the hand-built series. A blank means I have no data for that agency-year.
 3. **How the national sources are counted:**

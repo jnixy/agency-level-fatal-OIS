@@ -64,9 +64,10 @@ INDEX_BREAKS  <- c(25, 50, 100, 200, 400, 800)
 TREND_EXCLUSIONS <- tribble(
   ~agency_id, ~first, ~last, ~reason,
   "OHCIP00",  -Inf,   2014,  "Cincinnati before 2015: fatal and nonfatal shootings mixed",
-  "NV00201",  -Inf,   Inf,   "LVMPD: hand-built figures mix fatal and nonfatal shootings",
-  "TX22701",  2000,   2007,  "Austin 2000-07: may count incidents rather than people"
+  "NV00201",  -Inf,   Inf,   "LVMPD: hand-built figures mix fatal and nonfatal shootings"
 )
+# Austin 2000-07 was excluded here until Nov 2026; those years now come from the
+# Statesman reconstruction (person-level), so the exclusion was lifted.
 
 # 1. Load ----------------------------------------------------------------------
 panel <- read_csv(here("output", "agency_year_panel.csv"), show_col_types = FALSE)
