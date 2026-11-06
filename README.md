@@ -48,9 +48,9 @@ Some series are left out because they mix in nonfatal shootings:
 
 **What it shows.** The headline compares one fixed set of agencies: the 29 with at least five years of data both before 1995 and since 2015, shown as the dashed line. In those agencies, fatal police shootings since 2015 run 33% below their 1970–1994 level (ratio 0.67, 95% CI 0.46–0.98).
 
-![Then vs. now in twenty-five long-running agencies](output/figures/then_vs_now.png)
+![Then vs. now in 29 long-running agencies](output/figures/then_vs_now.png)
 
-**Then vs. now.** In the same 29 agencies, 12 kill fewer people a year now than before 1995. The drops are largest in New York, Chicago, and Los Angeles.
+**Then vs. now.** In the same 29 agencies, 8 kill clearly fewer people a year now than before 1995, 10 kill clearly more, and in 11 the change is too small to tell from chance (exact Poisson test of the two eras' yearly rates, p < .05). The drops are largest in New York, Chicago, and Los Angeles; the biggest increases are in San Antonio, Harris County, and Austin.
 
 These are raw counts, not rates per resident, and population change could push the per-resident comparison either way. Some of these cities grew; others, like St. Louis and Philadelphia, shrank. The years observed in each era also vary by agency (see the table).
 

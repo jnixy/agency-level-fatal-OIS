@@ -56,6 +56,7 @@ SPLICE_YEARS  <- c(SPLICE_WAPO, SPLICE_MPV)
 EARLY_ERA     <- 1970:1994
 RECENT_ERA    <- 2015:2025
 MIN_ERA_YEARS <- 5L            # years of data required in each era
+CHANGE_ALPHA  <- 0.05          # then-vs-now: below this, an agency's change is called real
 WAPO_YEARS    <- 2015:2024
 CHECK_WINDOW  <- 1980:1991     # balanced window used to verify the index math
 INDEX_BREAKS  <- c(25, 50, 100, 200, 400, 800)
@@ -234,51 +235,64 @@ ggsave(file.path(fig_dir, "trend_index.png"), p_trend,
 then_vs_now <- era_df |>
   group_by(agency_id, agency_name, state, era) |>
   summarise(years = n(), first = min(year), last = max(year),
-            per_year = mean(y), .groups = "drop") |>
+            per_year = mean(y), deaths = sum(y), .groups = "drop") |>
   pivot_wider(id_cols = c(agency_id, agency_name, state),
-              names_from = era, values_from = c(per_year, years, first, last)) |>
+              names_from = era, values_from = c(per_year, years, first, last, deaths)) |>
   mutate(label = city_label(agency_name, state),
          change = per_year_recent - per_year_early,
-         lower_now = change < 0) |>
+         lower_now = change < 0,
+         # Exact Poisson comparison of the two eras' rates per year, so small
+         # agencies aren't called "up" or "down" on a difference of one death
+         p_change = pmap_dbl(list(deaths_recent, deaths_early, years_recent, years_early),
+                             \(dr, de, yr, ye) poisson.test(round(c(dr, de)), c(yr, ye))$p.value),
+         direction = case_when(p_change >= CHANGE_ALPHA ~ "About the same",
+                               change < 0 ~ "Fewer now",
+                               TRUE ~ "More now")) |>
   arrange(per_year_early)
 
 n_lower <- sum(then_vs_now$lower_now)
 n_total <- nrow(then_vs_now)
-stopifnot(n_total == g_long)
+n_fewer <- sum(then_vs_now$direction == "Fewer now")
+n_more  <- sum(then_vs_now$direction == "More now")
+n_same  <- sum(then_vs_now$direction == "About the same")
+stopifnot(n_total == g_long, n_fewer + n_more + n_same == n_total)
+
+direction_colors <- c("Fewer now" = source_colors[["Hand-built (Nix)"]],
+                      "More now" = "#b5462f",
+                      "About the same" = "grey20")  # darker than the grey early-era dot
 
 dumbbell <- then_vs_now |> mutate(label = fct_inorder(label))
 top_row <- slice_tail(dumbbell, n = 1)
 
 p_then_now <- ggplot(dumbbell, aes(y = label)) +
-  geom_segment(aes(x = per_year_early, xend = per_year_recent, yend = label),
-               color = "grey75", linewidth = 1.2) +
+  geom_segment(aes(x = per_year_early, xend = per_year_recent, yend = label,
+                   color = direction), linewidth = 1.2, alpha = 0.35) +
   geom_point(aes(x = per_year_early), color = "grey55", size = 2.8) +
-  geom_point(aes(x = per_year_recent), color = source_colors[["Hand-built (Nix)"]], size = 2.8) +
+  geom_point(aes(x = per_year_recent, color = direction), size = 2.8) +
+  scale_color_manual(values = direction_colors, name = NULL,
+                     breaks = c("Fewer now", "About the same", "More now")) +
   # Direct labels on the top row instead of a legend
   geom_text(data = top_row, aes(x = per_year_early,
                                 label = sprintf("%d–%d", min(EARLY_ERA), max(EARLY_ERA))),
             vjust = -1.1, size = 3, color = "grey45") +
   geom_text(data = top_row, aes(x = per_year_recent,
                                 label = sprintf("%d–%d", min(RECENT_ERA), max(RECENT_ERA))),
-            vjust = -1.1, size = 3, color = source_colors[["Hand-built (Nix)"]]) +
+            vjust = -1.1, size = 3, color = "grey30") +
   scale_x_continuous(expand = expansion(mult = c(0.02, 0.1))) +
   scale_y_discrete(expand = expansion(add = c(0.6, 1.2))) +
   labs(x = "Average people shot and killed per year", y = NULL,
-       # The title reports whichever direction most agencies moved, so it
-       # can't go stale if the data change
-       title = if (n_lower >= n_total / 2) {
-         sprintf("%d of %d long-running agencies kill fewer people a year than before 1995",
-                 n_lower, n_total)
-       } else {
-         sprintf("%d of %d long-running agencies kill more people a year than before 1995",
-                 n_total - n_lower, n_total)
-       },
+       # Built from the counts so it can't go stale if the data change
+       title = str_wrap(sprintf(
+         "Since 2015, %d of %d long-running agencies kill clearly fewer people a year than before 1995, %d clearly more",
+         n_fewer, n_total, n_more), 62),
        subtitle = str_wrap(sprintf(paste0(
-         "Agencies with at least %d years of data in both eras; years observed vary by ",
-         "agency. Counts, not rates: populations changed."), MIN_ERA_YEARS), 95)) +
+         "In the other %d, the change is too small to tell from chance (exact Poisson test, ",
+         "p < %.2f). Agencies with at least %d years of data in both eras; years observed vary by ",
+         "agency. Counts, not rates: populations changed."), n_same, CHANGE_ALPHA, MIN_ERA_YEARS), 95)) +
   theme_project() +
   theme(plot.title.position = "plot", panel.grid.major.y = element_blank(),
-        plot.subtitle = element_text(size = 9.5))
+        plot.subtitle = element_text(size = 9.5), legend.position = "top",
+        legend.justification = "left")
 
 ggsave(file.path(fig_dir, "then_vs_now.png"), p_then_now,
        width = 6.5, height = 1.8 + 0.28 * n_total, dpi = 300, bg = "white")
@@ -376,6 +390,9 @@ trend_summary <- tribble(
   "era_ratio_ci_lo",               round(era_ci[1], 3),
   "era_ratio_ci_hi",               round(era_ci[2], 3),
   "then_now_lower",                n_lower,
+  "then_now_fewer_sig",            n_fewer,
+  "then_now_more_sig",             n_more,
+  "then_now_same",                 n_same,
   "then_now_total",                n_total,
   "core_tiles_pre2000",            nrow(core),
   "agencies_starting_2000_plus",   n_later,
