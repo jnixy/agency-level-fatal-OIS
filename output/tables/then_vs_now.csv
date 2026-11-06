@@ -1,6 +1,7 @@
 agency_id,agency_name,state,per_year_early,per_year_recent,years_early,years_recent,first_early,first_recent,last_early,last_recent,label,change,lower_now
 ME00305,Portland Police Department,ME,0.2,0.182,5,11,1990,2015,1994,2025,"Portland, ME",-0.018,TRUE
 VTVSP00,Vermont State Police,VT,0.389,0.727,18,11,1977,2015,1994,2025,"Vermont State Police, VT",0.338,FALSE
+TX10100,Harris County Sheriff's Office,TX,0.778,4.545,9,11,1986,2015,1994,2025,"Harris Co. Sheriff, TX",3.768,FALSE
 NB02802,Omaha Police Department,NE,0.786,1.818,14,11,1981,2015,1994,2025,"Omaha, NE",1.032,FALSE
 MEMSP00,Maine State Police,ME,1,1.455,5,11,1990,2015,1994,2025,"Maine State Police, ME",0.455,FALSE
 OK07205,Tulsa Police Department,OK,1.167,3.909,6,11,1989,2015,1994,2025,"Tulsa, OK",2.742,FALSE
