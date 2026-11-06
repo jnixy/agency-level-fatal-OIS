@@ -3,10 +3,12 @@ ME00305,Portland Police Department,ME,0.2,0.182,5,11,1990,2015,1994,2025,"Portla
 VTVSP00,Vermont State Police,VT,0.389,0.727,18,11,1977,2015,1994,2025,"Vermont State Police, VT",0.338,FALSE
 NB02802,Omaha Police Department,NE,0.786,1.818,14,11,1981,2015,1994,2025,"Omaha, NE",1.032,FALSE
 MEMSP00,Maine State Police,ME,1,1.455,5,11,1990,2015,1994,2025,"Maine State Police, ME",0.455,FALSE
+OK07205,Tulsa Police Department,OK,1.167,3.909,6,11,1989,2015,1994,2025,"Tulsa, OK",2.742,FALSE
 WASPD00,Seattle Police Department,WA,1.6,2.091,15,11,1980,2015,1994,2025,"Seattle, WA",0.491,FALSE
 OHCOP00,Columbus Police Department,OH,1.889,4.818,9,11,1986,2015,1994,2025,"Columbus, OH",2.929,FALSE
 OK05506,Oklahoma City Police Department,OK,2.077,4.545,13,11,1982,2015,1994,2025,"Oklahoma City, OK",2.469,FALSE
 INIPD00,Indianapolis Metropolitan Police Department,IN,2.909,4.7,22,10,1970,2015,1991,2025,"Indianapolis, IN",1.791,FALSE
+CODPD00,Denver Police Department,CO,3,4.727,5,11,1990,2015,1994,2025,"Denver, CO",1.727,FALSE
 MOKPD00,Kansas City Police Department,MO,3,3.545,20,11,1972,2015,1991,2025,"Kansas City, MO",0.545,FALSE
 GAAPD00,Atlanta Police Department,GA,4.5,2.273,12,11,1980,2015,1991,2025,"Atlanta, GA",-2.227,TRUE
 MOSPD00,St. Louis Police Department,MO,5.909,3.273,11,11,1977,2015,1991,2025,"St. Louis, MO",-2.636,TRUE
