@@ -18908,21 +18908,21 @@ CA03400,CA03400,Sacramento County Sheriff's Department,CA,sheriff,TRUE,sacrament
 CA03400,CA03400,Sacramento County Sheriff's Department,CA,sheriff,TRUE,sacramento_county_ca,FALSE,1982,,,,,,,,,,0
 CA03400,CA03400,Sacramento County Sheriff's Department,CA,sheriff,TRUE,sacramento_county_ca,FALSE,1983,,,,,,,,,,2
 CA03400,CA03400,Sacramento County Sheriff's Department,CA,sheriff,TRUE,sacramento_county_ca,FALSE,1984,,,,,,,,,,0
-CA03400,CA03400,Sacramento County Sheriff's Department,CA,sheriff,TRUE,sacramento_county_ca,FALSE,1985,,,,,,,,,,1
-CA03400,CA03400,Sacramento County Sheriff's Department,CA,sheriff,TRUE,sacramento_county_ca,FALSE,1986,,,,,,,,,,4
-CA03400,CA03400,Sacramento County Sheriff's Department,CA,sheriff,TRUE,sacramento_county_ca,FALSE,1987,,,,,,,,,,2
-CA03400,CA03400,Sacramento County Sheriff's Department,CA,sheriff,TRUE,sacramento_county_ca,FALSE,1988,,,,,,,,,,5
-CA03400,CA03400,Sacramento County Sheriff's Department,CA,sheriff,TRUE,sacramento_county_ca,FALSE,1989,,,,,,,,,,5
-CA03400,CA03400,Sacramento County Sheriff's Department,CA,sheriff,TRUE,sacramento_county_ca,FALSE,1990,,,,,,,,,,2
-CA03400,CA03400,Sacramento County Sheriff's Department,CA,sheriff,TRUE,sacramento_county_ca,FALSE,1991,,,,,,,,,,7
-CA03400,CA03400,Sacramento County Sheriff's Department,CA,sheriff,TRUE,sacramento_county_ca,FALSE,1992,,,,,,,,,,3
-CA03400,CA03400,Sacramento County Sheriff's Department,CA,sheriff,TRUE,sacramento_county_ca,FALSE,1993,,,,,,,,,,3
-CA03400,CA03400,Sacramento County Sheriff's Department,CA,sheriff,TRUE,sacramento_county_ca,FALSE,1994,,,,,,,,,,2
-CA03400,CA03400,Sacramento County Sheriff's Department,CA,sheriff,TRUE,sacramento_county_ca,FALSE,1995,,,,,,,,,,2
-CA03400,CA03400,Sacramento County Sheriff's Department,CA,sheriff,TRUE,sacramento_county_ca,FALSE,1996,,,,,,,,,,3
-CA03400,CA03400,Sacramento County Sheriff's Department,CA,sheriff,TRUE,sacramento_county_ca,FALSE,1997,,,,,,,,,,2
-CA03400,CA03400,Sacramento County Sheriff's Department,CA,sheriff,TRUE,sacramento_county_ca,FALSE,1998,,,,,,,,,,1
-CA03400,CA03400,Sacramento County Sheriff's Department,CA,sheriff,TRUE,sacramento_county_ca,FALSE,1999,,,,,,,,,,1
+CA03400,CA03400,Sacramento County Sheriff's Department,CA,sheriff,TRUE,sacramento_county_ca,FALSE,1985,1,FALSE,,,,,,,,1
+CA03400,CA03400,Sacramento County Sheriff's Department,CA,sheriff,TRUE,sacramento_county_ca,FALSE,1986,3,FALSE,,,,,,,,4
+CA03400,CA03400,Sacramento County Sheriff's Department,CA,sheriff,TRUE,sacramento_county_ca,FALSE,1987,1,FALSE,,,,,,,,2
+CA03400,CA03400,Sacramento County Sheriff's Department,CA,sheriff,TRUE,sacramento_county_ca,FALSE,1988,3,FALSE,,,,,,,,5
+CA03400,CA03400,Sacramento County Sheriff's Department,CA,sheriff,TRUE,sacramento_county_ca,FALSE,1989,4,FALSE,,,,,,,,5
+CA03400,CA03400,Sacramento County Sheriff's Department,CA,sheriff,TRUE,sacramento_county_ca,FALSE,1990,2,FALSE,,,,,,,,2
+CA03400,CA03400,Sacramento County Sheriff's Department,CA,sheriff,TRUE,sacramento_county_ca,FALSE,1991,5,FALSE,,,,,,,,7
+CA03400,CA03400,Sacramento County Sheriff's Department,CA,sheriff,TRUE,sacramento_county_ca,FALSE,1992,1,FALSE,,,,,,,,3
+CA03400,CA03400,Sacramento County Sheriff's Department,CA,sheriff,TRUE,sacramento_county_ca,FALSE,1993,2,FALSE,,,,,,,,3
+CA03400,CA03400,Sacramento County Sheriff's Department,CA,sheriff,TRUE,sacramento_county_ca,FALSE,1994,2,FALSE,,,,,,,,2
+CA03400,CA03400,Sacramento County Sheriff's Department,CA,sheriff,TRUE,sacramento_county_ca,FALSE,1995,1,FALSE,,,,,,,,2
+CA03400,CA03400,Sacramento County Sheriff's Department,CA,sheriff,TRUE,sacramento_county_ca,FALSE,1996,0,FALSE,,,,,,,,3
+CA03400,CA03400,Sacramento County Sheriff's Department,CA,sheriff,TRUE,sacramento_county_ca,FALSE,1997,2,FALSE,,,,,,,,2
+CA03400,CA03400,Sacramento County Sheriff's Department,CA,sheriff,TRUE,sacramento_county_ca,FALSE,1998,1,FALSE,,,,,,,,1
+CA03400,CA03400,Sacramento County Sheriff's Department,CA,sheriff,TRUE,sacramento_county_ca,FALSE,1999,0,FALSE,,,,,,,,1
 CA03400,CA03400,Sacramento County Sheriff's Department,CA,sheriff,TRUE,sacramento_county_ca,FALSE,2000,,,,4,0,0,,,,3
 CA03400,CA03400,Sacramento County Sheriff's Department,CA,sheriff,TRUE,sacramento_county_ca,FALSE,2001,,,,1,0,0,,,,2
 CA03400,CA03400,Sacramento County Sheriff's Department,CA,sheriff,TRUE,sacramento_county_ca,FALSE,2002,,,,1,0,0,,,,2
@@ -18958,21 +18958,21 @@ CA03404,CA03404,Sacramento Police Department,CA,local_police,TRUE,sacramento_ca,
 CA03404,CA03404,Sacramento Police Department,CA,local_police,TRUE,sacramento_ca,FALSE,1982,,,,,,,,,,0
 CA03404,CA03404,Sacramento Police Department,CA,local_police,TRUE,sacramento_ca,FALSE,1983,,,,,,,,,,0
 CA03404,CA03404,Sacramento Police Department,CA,local_police,TRUE,sacramento_ca,FALSE,1984,,,,,,,,,,2
-CA03404,CA03404,Sacramento Police Department,CA,local_police,TRUE,sacramento_ca,FALSE,1985,,,,,,,,,,2
-CA03404,CA03404,Sacramento Police Department,CA,local_police,TRUE,sacramento_ca,FALSE,1986,,,,,,,,,,1
-CA03404,CA03404,Sacramento Police Department,CA,local_police,TRUE,sacramento_ca,FALSE,1987,,,,,,,,,,1
-CA03404,CA03404,Sacramento Police Department,CA,local_police,TRUE,sacramento_ca,FALSE,1988,,,,,,,,,,2
-CA03404,CA03404,Sacramento Police Department,CA,local_police,TRUE,sacramento_ca,FALSE,1989,,,,,,,,,,0
-CA03404,CA03404,Sacramento Police Department,CA,local_police,TRUE,sacramento_ca,FALSE,1990,,,,,,,,,,1
-CA03404,CA03404,Sacramento Police Department,CA,local_police,TRUE,sacramento_ca,FALSE,1991,,,,,,,,,,1
-CA03404,CA03404,Sacramento Police Department,CA,local_police,TRUE,sacramento_ca,FALSE,1992,,,,,,,,,,1
-CA03404,CA03404,Sacramento Police Department,CA,local_police,TRUE,sacramento_ca,FALSE,1993,,,,,,,,,,3
-CA03404,CA03404,Sacramento Police Department,CA,local_police,TRUE,sacramento_ca,FALSE,1994,,,,,,,,,,2
-CA03404,CA03404,Sacramento Police Department,CA,local_police,TRUE,sacramento_ca,FALSE,1995,,,,,,,,,,2
-CA03404,CA03404,Sacramento Police Department,CA,local_police,TRUE,sacramento_ca,FALSE,1996,,,,,,,,,,2
-CA03404,CA03404,Sacramento Police Department,CA,local_police,TRUE,sacramento_ca,FALSE,1997,,,,,,,,,,1
-CA03404,CA03404,Sacramento Police Department,CA,local_police,TRUE,sacramento_ca,FALSE,1998,,,,,,,,,,2
-CA03404,CA03404,Sacramento Police Department,CA,local_police,TRUE,sacramento_ca,FALSE,1999,,,,,,,,,,0
+CA03404,CA03404,Sacramento Police Department,CA,local_police,TRUE,sacramento_ca,FALSE,1985,2,FALSE,,,,,,,,2
+CA03404,CA03404,Sacramento Police Department,CA,local_police,TRUE,sacramento_ca,FALSE,1986,1,FALSE,,,,,,,,1
+CA03404,CA03404,Sacramento Police Department,CA,local_police,TRUE,sacramento_ca,FALSE,1987,1,FALSE,,,,,,,,1
+CA03404,CA03404,Sacramento Police Department,CA,local_police,TRUE,sacramento_ca,FALSE,1988,2,FALSE,,,,,,,,2
+CA03404,CA03404,Sacramento Police Department,CA,local_police,TRUE,sacramento_ca,FALSE,1989,0,FALSE,,,,,,,,0
+CA03404,CA03404,Sacramento Police Department,CA,local_police,TRUE,sacramento_ca,FALSE,1990,1,FALSE,,,,,,,,1
+CA03404,CA03404,Sacramento Police Department,CA,local_police,TRUE,sacramento_ca,FALSE,1991,1,FALSE,,,,,,,,1
+CA03404,CA03404,Sacramento Police Department,CA,local_police,TRUE,sacramento_ca,FALSE,1992,1,FALSE,,,,,,,,1
+CA03404,CA03404,Sacramento Police Department,CA,local_police,TRUE,sacramento_ca,FALSE,1993,3,FALSE,,,,,,,,3
+CA03404,CA03404,Sacramento Police Department,CA,local_police,TRUE,sacramento_ca,FALSE,1994,2,FALSE,,,,,,,,2
+CA03404,CA03404,Sacramento Police Department,CA,local_police,TRUE,sacramento_ca,FALSE,1995,1,FALSE,,,,,,,,2
+CA03404,CA03404,Sacramento Police Department,CA,local_police,TRUE,sacramento_ca,FALSE,1996,2,FALSE,,,,,,,,2
+CA03404,CA03404,Sacramento Police Department,CA,local_police,TRUE,sacramento_ca,FALSE,1997,0,FALSE,,,,,,,,1
+CA03404,CA03404,Sacramento Police Department,CA,local_police,TRUE,sacramento_ca,FALSE,1998,1,FALSE,,,,,,,,2
+CA03404,CA03404,Sacramento Police Department,CA,local_police,TRUE,sacramento_ca,FALSE,1999,0,FALSE,,,,,,,,0
 CA03404,CA03404,Sacramento Police Department,CA,local_police,TRUE,sacramento_ca,FALSE,2000,,,,2,0,0,,,,4
 CA03404,CA03404,Sacramento Police Department,CA,local_police,TRUE,sacramento_ca,FALSE,2001,,,,4,1,0,,,,3
 CA03404,CA03404,Sacramento Police Department,CA,local_police,TRUE,sacramento_ca,FALSE,2002,,,,1,0,0,,,,1
