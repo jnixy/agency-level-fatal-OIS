@@ -44,13 +44,13 @@ Some series are left out because they mix in nonfatal shootings:
 - Las Vegas, all years;
 - Cincinnati before 2015.
 
-**How far back it reaches.** Before 2000, the solid line rests on only 4–31 departments, mostly large cities. It describes big cities, not the country.
+**How far back it reaches.** Before 2000, the solid line rests on only 4–32 departments, mostly large cities. It describes big cities, not the country.
 
-**What it shows.** The headline compares one fixed set of agencies: the 29 with at least five years of data both before 1995 and since 2015, shown as the dashed line. In those agencies, fatal police shootings since 2015 run 33% below their 1970–1994 level (ratio 0.67, 95% CI 0.46–0.98).
+**What it shows.** The headline compares one fixed set of agencies: the 30 with at least five years of data both before 1995 and since 2015, shown as the dashed line. In those agencies, fatal police shootings since 2015 run 32% below their 1970–1994 level (ratio 0.68, 95% CI 0.47–0.99).
 
-![Then vs. now in 29 long-running agencies](output/figures/then_vs_now.png)
+![Then vs. now in 30 long-running agencies](output/figures/then_vs_now.png)
 
-**Then vs. now.** In the same 29 agencies, 8 kill clearly fewer people a year now than before 1995, 10 kill clearly more, and in 11 the change is too small to tell from chance (exact Poisson test of the two eras' yearly rates, p < .05). The drops are largest in New York, Chicago, and Los Angeles; the biggest increases are in San Antonio, Harris County, and Austin.
+**Then vs. now.** In the same 30 agencies, 8 kill clearly fewer people a year now than before 1995, 10 kill clearly more, and in 12 the change is too small to tell from chance (exact Poisson test of the two eras' yearly rates, p < .05). The drops are largest in New York, Chicago, and Los Angeles; the biggest increases are in San Antonio, Harris County, and Austin.
 
 These are raw counts, not rates per resident, and population change could push the per-resident comparison either way. Some of these cities grew; others, like St. Louis and Philadelphia, shrank. The years observed in each era also vary by agency (see the table).
 
@@ -141,7 +141,7 @@ I decided, for now at least, to focus on fatal shootings, since they're more rel
 | [Springfield (MO) PD](https://www.springfieldmo.gov/3755/Officer-Involved-Shootings) | 2008–2022 | Springfield (MO) PD |
 | [Austin open data portal](https://data.austintexas.gov/Public-Safety/Officer-Involved-Shooting-2000-2014/63p6-iegi) | 2008–2014 (2000–07 replaced by the Statesman reconstruction) | Austin PD |
 | [Dallas open data portal](https://www.dallasopendata.com/Public-Safety/Dallas-Police-Officer-Involved-Shootings/4gmt-jyx2) | 2003–2022 | Dallas PD |
-| Local newspapers via NewsBank: see [Newspaper reconstructions](#newspaper-reconstructions) below | 1981–2009 | Omaha, Lincoln, Oklahoma City, Columbus, Denver, Tulsa, San Antonio, Sacramento PD, Sacramento Co. SD, Portland (OR), Austin, Harris Co. SO, Charlotte, Fresno |
+| Local newspapers via NewsBank: see [Newspaper reconstructions](#newspaper-reconstructions) below | 1981–2009 | Omaha, Lincoln, Oklahoma City, Columbus, Denver, Tulsa, San Antonio, Sacramento PD, Sacramento Co. SD, Portland (OR), Austin, Harris Co. SO, Charlotte, Fresno, San Jose |
 | Jacksonville Sheriff's Office, [*Police Involved Shootings*](https://web.archive.org/web/20150717050006/http://www.jaxsheriff.org/departments/sheriffs-office/docs/sheriff-john-rutherford/police-involved-shootings-final.aspx) (Jan. 2009; archived copy) | 2007–2008 | Jacksonville SO |
 | [Cincinnati open data portal](https://data.cincinnati-oh.gov/Safety/PDI-Police-Data-Initiative-Officer-Involved-Shooti/r6q4-muts) | 1996–2019 | Cincinnati PD |
 | [Vermont open data portal](https://data.vermont.gov/Public-Safety/Vermont-State-Police-Officer-Involved-Shootings-19/du86-kfnp) | 1977–2022 | Vermont State Police |
@@ -159,7 +159,7 @@ I decided, for now at least, to focus on fatal shootings, since they're more rel
 
 ### Newspaper reconstructions
 
-For fourteen agencies, the years before the hand-built series begins come from local newspapers (for Austin, 2000–2007 as well), searched through NewsBank's Access World News. A death counts when the paper reports that an on-duty officer of that agency shot and killed someone. Off-duty officers, other agencies at the same scene, and suicides during standoffs are left out. Each year was searched several ways (headlines, full text, and grand jury or district attorney rulings), and every case and every exclusion is logged with its source in [`data/historical/historical_ois_evidence.csv`](data/historical/historical_ois_evidence.csv). Where the paper printed its own list, running count, or year-end figure, the reconstruction is checked against it. Because the method depends on finding every story, it can undercount, especially where the archive is thin.
+For fifteen agencies, the years before the hand-built series begins come from local newspapers (for Austin, 2000–2007 as well), searched through NewsBank's Access World News. A death counts when the paper reports that an on-duty officer of that agency shot and killed someone. Off-duty officers, other agencies at the same scene, and suicides during standoffs are left out. Each year was searched several ways (headlines, full text, and grand jury or district attorney rulings), and every case and every exclusion is logged with its source in [`data/historical/historical_ois_evidence.csv`](data/historical/historical_ois_evidence.csv). Where the paper printed its own list, running count, or year-end figure, the reconstruction is checked against it. Because the method depends on finding every story, it can undercount, especially where the archive is thin.
 
 The SHR column is the FBI's count of people killed by the agency's officers with a firearm over the same years. It has no on/off-duty field, so it includes some off-duty killings that are left out here.
 
@@ -179,6 +179,7 @@ The SHR column is the FBI's count of people killed by the agency's officers with
 | Harris County SO (TX) | *Houston Chronicle* | 1986–1999 | 10 | 17 | Best read as a floor. Most of the gap is deaths caused by off-duty deputies, often working uniformed extra jobs, which are left out (at least 10 such deaths in these years). The 1996 death came in a Customs-led raid with deputies; the paper doesn't say whose shots killed him |
 | Charlotte PD / CMPD | *The Charlotte Observer* | 1985–2004 | 24 | 25 | Charlotte PD only before the October 1993 merger with Mecklenburg County Police. Matches SHR in 11 of 20 years; checked against the paper's counts for 1977–86, for 1999 (no deaths), and from January 2000 to August 2001 (the paper's count leaves out a boy shot in 2000 by an officer who was then killed) |
 | Fresno PD | *The Fresno Bee* | 1987–1999 | 24 | 22 | Starts in 1987 because the archive begins in March 1986. 1995 is the Bee's own count of five deaths (the department reported four); 1990 and 1998 agree with counts or lists the paper printed |
+| San Jose PD | *San Jose Mercury News* | 1986–1999 | 29 | 31 | Matches SHR in 7 of 14 years. 1992, 1993, and 1999 are counts the paper printed; the paper's figure of four for 1991 counts "police shootings in the city", and only three were by San Jose police. No San Jose police killing was found in 1998, where SHR has 3 |
 
 
 ## Caveats
