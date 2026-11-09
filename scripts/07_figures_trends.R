@@ -5,7 +5,7 @@
 # Author:   Justin Nix (with Claude Code)
 #
 # Purpose:
-#   Three figures that show what the hand-built series can do.
+#   Figures and tables that show what the hand-built series can do.
 #   (1) A within-agency trend index. A Poisson model with agency fixed effects
 #       compares each agency only to itself, so agencies entering or leaving
 #       the sample don't move the trend (the flaw in the 2025 blog figure,
@@ -14,8 +14,11 @@
 #       agencies observed in both eras.
 #   (2) Then vs. now: average deaths per year before 1995 and since 2015 for
 #       the same fixed set of agencies.
-#   (3) Coverage: which agency-years the hand-built data cover, and the share
-#       of WaPo deaths (2015-2024) involving one of these agencies.
+#   (3) Coverage: which agency-years the hand-built data cover (newspaper
+#       reconstructions marked), and the share of WaPo deaths (2015-2024)
+#       involving one of these agencies.
+#   (4) Sensitivity: the era ratio with and without newspaper-reconstructed
+#       agency-years.
 #   Hand-built series end in 2022; 2023-2024 are filled with WaPo counts and
 #   2025 with MPV on-duty counts (MPV ran a few % above hand-built counts in
 #   2021-22, WaPo closer, so WaPo is used wherever it exists) for
@@ -26,11 +29,13 @@
 #   - output/tables/source_agreement.csv           -- from 05_combine.R
 #   - data/raw/wapo/fatal-police-shootings-data.csv
 #   - data/clean/wapo_agency_oris.csv              -- from 02_wapo.R
+#   - data/historical/historical_ois_evidence.csv  -- newspaper-sourced years
 #
 # Outputs:
 #   - output/figures/trend_index.png, then_vs_now.png, coverage_tiles.png
 #   - output/tables/trend_index.csv, then_vs_now.csv, coverage_share.csv,
-#     trend_summary.csv (every number quoted in the README)
+#     era_ratio_sensitivity.csv, trend_summary.csv (every number quoted in
+#     the README)
 #
 # Runtime: < 30 sec
 # ==============================================================================
@@ -61,12 +66,7 @@ WAPO_YEARS    <- 2015:2024
 CHECK_WINDOW  <- 1980:1991     # balanced window used to verify the index math
 INDEX_BREAKS  <- c(25, 50, 100, 200, 400, 800)
 
-# Series that aren't person-level fatal shootings (see README caveats)
-TREND_EXCLUSIONS <- tribble(
-  ~agency_id, ~first, ~last, ~reason,
-  "OHCIP00",  -Inf,   2014,  "Cincinnati before 2015: fatal and nonfatal shootings mixed",
-  "NV00201",  -Inf,   Inf,   "LVMPD: hand-built figures mix fatal and nonfatal shootings"
-)
+# Series that aren't person-level fatal shootings: TREND_EXCLUSIONS in functions.R
 # Austin 2000-07 was excluded here until Nov 2026; those years now come from the
 # Statesman reconstruction (person-level), so the exclusion was lifted.
 
@@ -75,7 +75,8 @@ panel <- read_csv(here("output", "agency_year_panel.csv"), show_col_types = FALS
 agreement <- read_csv(here("output", "tables", "source_agreement.csv"), show_col_types = FALSE)
 
 # 2. Trend series ----------------------------------------------------------------
-nix_agencies <- panel |> filter(in_nix)
+# Flag on the full panel: flag_newspaper() checks every reconstructed year lands on a row
+nix_agencies <- panel |> flag_newspaper() |> filter(in_nix)
 
 # Splice WaPo only onto series still running at the end of the hand-built
 # data, so 2023-24 extend a series rather than revive one
@@ -94,21 +95,25 @@ trend <- nix_agencies |>
   left_join(TREND_EXCLUSIONS |> select(agency_id, first, last), by = "agency_id") |>
   filter(is.na(first) | !(year >= first & year <= last)) |>
   filter(!is.na(y), year >= FIRST_YEAR) |>
-  select(agency_id, agency_name, state, year, y, spliced)
+  select(agency_id, agency_name, state, year, y, spliced, newspaper, n_shr)
 
 stopifnot(!anyDuplicated(trend[c("agency_id", "year")]))
 
 # One fixed set of agencies for the headline comparison and Figure 2
 era_of <- function(year) case_when(year %in% EARLY_ERA ~ "early",
                                    year %in% RECENT_ERA ~ "recent")
-long_ids <- trend |>
-  mutate(era = era_of(year)) |>
-  filter(!is.na(era)) |>
-  count(agency_id, era) |>
-  filter(n >= MIN_ERA_YEARS) |>
-  count(agency_id) |>
-  filter(n == 2) |>
-  select(agency_id)
+#' Agencies with at least MIN_ERA_YEARS of data in both eras
+long_panel_ids <- function(df) {
+  df |>
+    mutate(era = era_of(year)) |>
+    filter(!is.na(era)) |>
+    count(agency_id, era) |>
+    filter(n >= MIN_ERA_YEARS) |>
+    count(agency_id) |>
+    filter(n == 2) |>
+    select(agency_id)
+}
+long_ids <- long_panel_ids(trend)
 
 # 3. Figure 1: within-agency trend index -----------------------------------------
 #' Fit the year-effects index. Agencies with no deaths in any year carry no
@@ -143,17 +148,54 @@ main <- fit_index(trend)
 long <- fit_index(trend |> semi_join(long_ids, by = "agency_id"))
 
 # Headline: one model, one fixed set of agencies, one ratio with a CI
-era_df <- trend |>
-  semi_join(long_ids, by = "agency_id") |>
-  mutate(era = era_of(year)) |>
-  filter(!is.na(era))
-m_era <- fepois(y ~ i(era, ref = "early") | agency_id, data = era_df,
-                cluster = ~agency_id, notes = FALSE)
-era_est <- coeftable(m_era)[1, ]
-g_long <- n_distinct(era_df$agency_id)
-era_crit <- qt(0.975, df = g_long - 1)
-era_ratio <- exp(era_est[["Estimate"]])
-era_ci <- exp(era_est[["Estimate"]] + c(-1, 1) * era_crit * era_est[["Std. Error"]])
+to_era <- function(df) df |> mutate(era = era_of(year)) |> filter(!is.na(era))
+era_df <- trend |> semi_join(long_ids, by = "agency_id") |> to_era()
+#' Era ratio (recent vs early) with a t(G-1) CI, clustered by agency
+#' @return tibble(agencies, ratio, ci_lo, ci_hi)
+fit_era <- function(df) {
+  # All-zero agencies carry no information and fepois drops them; set them
+  # aside first so G (clusters, and the t df) counts only agencies used
+  kept <- df |> group_by(agency_id) |> filter(sum(y) > 0) |> ungroup()
+  m <- fepois(y ~ i(era, ref = "early") | agency_id, data = kept,
+              cluster = ~agency_id, notes = FALSE)
+  stopifnot(nobs(m) == nrow(kept), rownames(coeftable(m))[1] == "era::recent")
+  est <- coeftable(m)[1, ]
+  g <- n_distinct(kept$agency_id)
+  ci <- exp(est[["Estimate"]] + c(-1, 1) * qt(0.975, df = g - 1) * est[["Std. Error"]])
+  tibble(agencies = g, ratio = exp(est[["Estimate"]]), ci_lo = ci[1], ci_hi = ci[2])
+}
+era_fit <- fit_era(era_df)
+g_long <- era_fit$agencies
+era_ratio <- era_fit$ratio
+era_ci <- c(era_fit$ci_lo, era_fit$ci_hi)
+
+#' Newspaper-year count raised to SHR's where SHR is higher (other years unchanged)
+shr_bound <- function(y, shr, newspaper) {
+  if_else(newspaper & !is.na(shr), pmax(y, shr), y)
+}
+
+# Sensitivity: how much the newspaper reconstructions move the headline.
+# "Without" changes both the agency set and some agencies' early windows, so
+# the cleaner like-for-like comparator is the non-newspaper agencies only.
+no_news <- trend |> filter(!newspaper)
+news_long <- era_df |> filter(newspaper) |> distinct(agency_id)
+era_sensitivity <- bind_rows(
+  fit_era(era_df) |> mutate(sample = "All long-panel agencies (headline)"),
+  fit_era(no_news |> semi_join(long_panel_ids(no_news), by = "agency_id") |> to_era()) |>
+    mutate(sample = "Without newspaper-reconstructed years"),
+  fit_era(era_df |> semi_join(news_long, by = "agency_id")) |>
+    mutate(sample = "Only agencies with newspaper-reconstructed years"),
+  fit_era(era_df |> anti_join(news_long, by = "agency_id")) |>
+    mutate(sample = "Only agencies without newspaper-reconstructed years"),
+  # Upper bound for newspaper undercounts: a search can miss deaths, so in
+  # newspaper years use SHR's count wherever it is higher. SHR also counts
+  # off-duty killings, so this overstates the correction.
+  fit_era(era_df |> mutate(y = shr_bound(y, n_shr, newspaper))) |>
+    mutate(sample = "All long-panel agencies, newspaper years raised to SHR where higher"),
+  fit_era(era_df |> semi_join(news_long, by = "agency_id") |>
+            mutate(y = shr_bound(y, n_shr, newspaper))) |>
+    mutate(sample = "Only agencies with newspaper years, raised to SHR where higher")
+) |> relocate(sample)
 
 # Correctness check of the index construction: on a balanced panel, Poisson
 # fixed-effects year ratios equal ratios of summed counts exactly
@@ -332,13 +374,14 @@ stopifnot(coverage_share$wapo_deaths == n_distinct(incidents$id))
 
 tiles <- nix_agencies |>
   mutate(spliced = year %in% SPLICE_YEARS & agency_id %in% splice_ok$agency_id,
-         status = case_when(year <= LAST_NIX & !is.na(n_nix) ~ "Hand-built",
+         status = case_when(year <= LAST_NIX & !is.na(n_nix) & newspaper ~ "Newspaper reconstruction",
+                            year <= LAST_NIX & !is.na(n_nix) ~ "Hand-built (other sources)",
                             spliced ~ "WaPo (2023–24) / MPV (2025)")) |>
   filter(!is.na(status))
 
 # One labeled row per agency is only readable for the long-run core
 first_year <- tiles |>
-  filter(status == "Hand-built") |>
+  filter(status != "WaPo (2023–24) / MPV (2025)") |>
   group_by(agency_id, agency_name, state) |>
   summarise(first = min(year), years = n(), .groups = "drop")
 core <- first_year |>
@@ -350,9 +393,11 @@ n_later <- nrow(first_year) - nrow(core)
 p_tiles <- ggplot(tiles |> inner_join(core |> select(agency_id, label), by = "agency_id"),
                   aes(year, label, fill = status)) +
   geom_tile(height = 0.8, width = 0.9) +
-  scale_fill_manual(values = c("Hand-built" = source_colors[["Hand-built (Nix)"]],
+  scale_fill_manual(values = c("Hand-built (other sources)" = source_colors[["Hand-built (Nix)"]],
+                               "Newspaper reconstruction" = newspaper_color,
                                "WaPo (2023–24) / MPV (2025)" = spliced_color),
                     name = NULL) +
+  guides(fill = guide_legend(nrow = 2, byrow = TRUE)) +
   scale_x_continuous(breaks = seq(1970, 2020, 10), expand = expansion(add = 0.5)) +
   labs(x = NULL, y = NULL,
        title = str_wrap(sprintf(paste0("Agencies in these data were involved in at least %s ",
@@ -376,6 +421,12 @@ ggsave(file.path(fig_dir, "coverage_tiles.png"), p_tiles,
        width = 6.5, height = 2.1 + 0.2 * nrow(core), dpi = 300, bg = "white")
 
 # 6. Export --------------------------------------------------------------------
+# Same filters as the SHR benchmark in 06_figures.R, so the numbers agree
+news_rows <- nix_agencies |>
+  filter(newspaper, !(nix_partial %in% TRUE)) |>
+  anti_join(TREND_EXCLUSIONS, by = "agency_id")
+stopifnot(!anyNA(news_rows$n_nix))
+news_shr <- news_rows |> filter(!is.na(n_shr))
 excluded_entirely <- TREND_EXCLUSIONS |> filter(is.infinite(first), is.infinite(last))
 trend_summary <- tribble(
   ~metric,                         ~value,
@@ -397,7 +448,15 @@ trend_summary <- tribble(
   "core_tiles_pre2000",            nrow(core),
   "agencies_starting_2000_plus",   n_later,
   "wapo_share_lower_bound",        round(coverage_share$share, 4),
-  "index_check_balanced_agencies", nrow(balanced_ids)
+  "index_check_balanced_agencies", nrow(balanced_ids),
+  "newspaper_agencies",            n_distinct(news_rows$agency_id),
+  "newspaper_agency_years",        nrow(news_rows),
+  "newspaper_deaths",              sum(news_rows$n_nix),
+  "newspaper_years_with_shr",      nrow(news_shr),
+  "newspaper_deaths_in_shr_years", sum(news_shr$n_nix),
+  "shr_deaths_in_newspaper_years", sum(news_shr$n_shr),
+  "newspaper_years_exact_shr",     sum(news_shr$n_nix == news_shr$n_shr),
+  "long_panel_with_newspaper",     nrow(news_long)
 )
 
 write_csv(trend_index |> mutate(across(where(is.double), \(x) round(x, 4))),
@@ -406,6 +465,8 @@ write_csv(then_vs_now |> mutate(across(where(is.double), \(x) round(x, 3))),
           file.path(tab_dir, "then_vs_now.csv"))
 write_csv(coverage_share |> mutate(share = round(share, 4)),
           file.path(tab_dir, "coverage_share.csv"))
+write_csv(era_sensitivity |> mutate(across(where(is.double), \(x) round(x, 3))),
+          file.path(tab_dir, "era_ratio_sensitivity.csv"))
 write_csv(trend_summary, file.path(tab_dir, "trend_summary.csv"))
 # Fitted models are not saved: fixest objects carry their environment, which
 # would publish local paths, and every estimate used is in the tables above

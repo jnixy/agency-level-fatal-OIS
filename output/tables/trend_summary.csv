@@ -18,3 +18,11 @@ core_tiles_pre2000,38
 agencies_starting_2000_plus,376
 wapo_share_lower_bound,0.319
 index_check_balanced_agencies,12
+newspaper_agencies,16
+newspaper_agency_years,235
+newspaper_deaths,334
+newspaper_years_with_shr,218
+newspaper_deaths_in_shr_years,319
+shr_deaths_in_newspaper_years,348
+newspaper_years_exact_shr,125
+long_panel_with_newspaper,15
