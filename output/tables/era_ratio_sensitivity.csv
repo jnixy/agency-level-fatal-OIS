@@ -3,3 +3,5 @@ All long-panel agencies (headline),30,0.684,0.472,0.99
 Without newspaper-reconstructed years,16,0.501,0.343,0.731
 Only agencies with newspaper-reconstructed years,15,1.508,0.84,2.707
 Only agencies without newspaper-reconstructed years,15,0.508,0.339,0.761
+"All long-panel agencies, newspaper years raised to SHR where higher",30,0.671,0.468,0.961
+"Only agencies with newspaper years, raised to SHR where higher",15,1.356,0.795,2.312

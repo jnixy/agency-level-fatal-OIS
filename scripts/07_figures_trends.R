@@ -95,7 +95,7 @@ trend <- nix_agencies |>
   left_join(TREND_EXCLUSIONS |> select(agency_id, first, last), by = "agency_id") |>
   filter(is.na(first) | !(year >= first & year <= last)) |>
   filter(!is.na(y), year >= FIRST_YEAR) |>
-  select(agency_id, agency_name, state, year, y, spliced, newspaper)
+  select(agency_id, agency_name, state, year, y, spliced, newspaper, n_shr)
 
 stopifnot(!anyDuplicated(trend[c("agency_id", "year")]))
 
@@ -169,6 +169,11 @@ g_long <- era_fit$agencies
 era_ratio <- era_fit$ratio
 era_ci <- c(era_fit$ci_lo, era_fit$ci_hi)
 
+#' Newspaper-year count raised to SHR's where SHR is higher (other years unchanged)
+shr_bound <- function(y, shr, newspaper) {
+  if_else(newspaper & !is.na(shr), pmax(y, shr), y)
+}
+
 # Sensitivity: how much the newspaper reconstructions move the headline.
 # "Without" changes both the agency set and some agencies' early windows, so
 # the cleaner like-for-like comparator is the non-newspaper agencies only.
@@ -181,7 +186,15 @@ era_sensitivity <- bind_rows(
   fit_era(era_df |> semi_join(news_long, by = "agency_id")) |>
     mutate(sample = "Only agencies with newspaper-reconstructed years"),
   fit_era(era_df |> anti_join(news_long, by = "agency_id")) |>
-    mutate(sample = "Only agencies without newspaper-reconstructed years")
+    mutate(sample = "Only agencies without newspaper-reconstructed years"),
+  # Upper bound for newspaper undercounts: a search can miss deaths, so in
+  # newspaper years use SHR's count wherever it is higher. SHR also counts
+  # off-duty killings, so this overstates the correction.
+  fit_era(era_df |> mutate(y = shr_bound(y, n_shr, newspaper))) |>
+    mutate(sample = "All long-panel agencies, newspaper years raised to SHR where higher"),
+  fit_era(era_df |> semi_join(news_long, by = "agency_id") |>
+            mutate(y = shr_bound(y, n_shr, newspaper))) |>
+    mutate(sample = "Only agencies with newspaper years, raised to SHR where higher")
 ) |> relocate(sample)
 
 # Correctness check of the index construction: on a balanced panel, Poisson
