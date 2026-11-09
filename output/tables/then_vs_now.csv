@@ -22,7 +22,7 @@ MOKPD00,Kansas City Police Department,MO,3,3.545,20,11,1972,2015,1991,2025,60,39
 GAAPD00,Atlanta Police Department,GA,4.5,2.273,12,11,1980,2015,1991,2025,54,25,"Atlanta, GA",-2.227,TRUE,0.005,Fewer now
 MOSPD00,St. Louis Police Department,MO,5.909,3.273,11,11,1977,2015,1991,2025,65,36,"St. Louis, MO",-2.636,TRUE,0.005,Fewer now
 CA03711,San Diego Police Department,CA,6.062,4.545,16,11,1976,2015,1991,2025,97,50,"San Diego, CA",-1.517,TRUE,0.111,About the same
-TXDPD00,Dallas Police Department,TX,7.818,3.091,22,11,1970,2015,1991,2025,172,34,"Dallas, TX",-4.727,TRUE,0,Fewer now
+TXDPD00,Dallas Police Department,TX,7.2,3.091,25,11,1970,2015,1994,2025,180,34,"Dallas, TX",-4.109,TRUE,0,Fewer now
 DCMPD00,Metropolitan Police Department,DC,8.667,2.455,6,11,1989,2015,1994,2025,52,27,"Washington, DC",-6.212,TRUE,0,Fewer now
 TXHPD00,Houston Police Department,TX,9.75,9.8,12,10,1980,2015,1991,2025,117,98,"Houston, TX",0.05,FALSE,1,About the same
 PAPEP00,Philadelphia Police Department,PA,11.24,4.273,25,11,1970,2015,1994,2025,281,47,"Philadelphia, PA",-6.967,TRUE,0,Fewer now
