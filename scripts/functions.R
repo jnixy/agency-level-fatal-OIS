@@ -183,6 +183,56 @@ city_label <- function(name, state) {
   paste0(city, ", ", state)
 }
 
+# Newspaper reconstructions -----------------------------------------------------
+
+#' Agency-years whose hand-built count comes from a newspaper reconstruction:
+#' rows of the evidence table used in the panel whose source is NewsBank.
+#' Matching is case-insensitive.
+#' @return tibble(slug, year), slugs upper-cased for case-insensitive joins
+load_newspaper_years <- function(
+    path = here("data", "historical", "historical_ois_evidence.csv")) {
+  stopifnot(file.exists(path))
+  out <- read_csv(path, col_types = cols(.default = col_character())) |>
+    filter(str_to_lower(str_squish(use_in_panel)) == "yes",
+           str_detect(source_url, regex("newsbank", ignore_case = TRUE))) |>
+    transmute(slug = str_to_upper(str_squish(slug)), year = as.integer(year)) |>
+    distinct()
+  stopifnot(!anyNA(out$year), !anyNA(out$slug))
+  out
+}
+
+#' Flag panel agency-years that carry a newspaper-reconstructed count.
+#' The panel's `slugs` field can hold several slugs joined by ";". An
+#' agency-year is flagged if any of its slugs is newspaper-sourced that year
+#' (no current agency mixes a newspaper slug with another slug in one year).
+#' Pass the full panel: the check below needs every agency-year present.
+flag_newspaper <- function(panel, news_years = load_newspaper_years()) {
+  matched <- panel |>
+    distinct(agency_id, year, slugs) |>
+    filter(!is.na(slugs)) |>
+    separate_longer_delim(slugs, ";") |>
+    mutate(slug = str_to_upper(str_squish(slugs))) |>
+    inner_join(news_years, by = c("slug", "year"))
+  # Every reconstructed slug-year must land on exactly one panel agency-year
+  stopifnot(nrow(anti_join(news_years, matched, by = c("slug", "year"))) == 0,
+            !anyDuplicated(matched[c("slug", "year")]))
+  hits <- matched |> distinct(agency_id, year) |> mutate(newspaper = TRUE)
+  panel |>
+    left_join(hits, by = c("agency_id", "year")) |>
+    mutate(newspaper = coalesce(newspaper, FALSE))
+}
+
+# Series that aren't person-level fatal shootings (see README caveats); used by 06 and 07
+TREND_EXCLUSIONS <- tribble(
+  ~agency_id, ~first, ~last, ~reason,
+  "OHCIP00",  -Inf,   2014,  "Cincinnati before 2015: fatal and nonfatal shootings mixed",
+  "NV00201",  -Inf,   Inf,   "LVMPD: hand-built figures mix fatal and nonfatal shootings"
+)
+
+# Palette ------------------------------------------------------------------------
+
+newspaper_color <- "#e67e22"   # newspaper-reconstructed agency-years
+
 # Legend order follows this vector in every figure (validated with the
 # dataviz palette checker: CVD separation and lightness/chroma bands pass)
 source_colors <- c(
