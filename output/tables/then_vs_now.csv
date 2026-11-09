@@ -17,8 +17,8 @@ TXSPD00,San Antonio Police Department,TX,2.2,8.091,5,11,1990,2015,1994,2025,11,8
 CA03400,Sacramento County Sheriff's Department,CA,2.4,2.364,10,11,1985,2015,1994,2025,24,26,"Sacramento Co. Sheriff, CA",-0.036,TRUE,1,About the same
 OR02602,Portland Police Department,OR,2.857,2.727,7,11,1988,2015,1994,2025,20,30,"Portland, OR",-0.13,TRUE,0.885,About the same
 INIPD00,Indianapolis Metropolitan Police Department,IN,2.909,4.7,22,10,1970,2015,1991,2025,64,47,"Indianapolis, IN",1.791,FALSE,0.014,More now
+MOKPD00,Kansas City Police Department,MO,2.957,3.545,23,11,1972,2015,1994,2025,68,39,"Kansas City, MO",0.589,FALSE,0.355,About the same
 CODPD00,Denver Police Department,CO,3,4.727,5,11,1990,2015,1994,2025,15,52,"Denver, CO",1.727,FALSE,0.146,About the same
-MOKPD00,Kansas City Police Department,MO,3,3.545,20,11,1972,2015,1991,2025,60,39,"Kansas City, MO",0.545,FALSE,0.462,About the same
 GAAPD00,Atlanta Police Department,GA,4.5,2.273,12,11,1980,2015,1991,2025,54,25,"Atlanta, GA",-2.227,TRUE,0.005,Fewer now
 MOSPD00,St. Louis Police Department,MO,5.909,3.273,11,11,1977,2015,1991,2025,65,36,"St. Louis, MO",-2.636,TRUE,0.005,Fewer now
 CA03711,San Diego Police Department,CA,6.263,4.545,19,11,1976,2015,1994,2025,119,50,"San Diego, CA",-1.718,TRUE,0.066,About the same
