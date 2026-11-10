@@ -6,8 +6,8 @@
 #
 # Purpose:
 #   (1) Coverage: how many agencies each source covers, by year.
-#   (2) Sixteen large cities: all five series overlaid (hand-built, WaPo, FE,
-#       MPV on-duty, and FBI SHR), ported from the 2025 merge script's 16-city panel.
+#   (2) Four largest departments (NYPD, Chicago, LAPD, Philadelphia): all five
+#       series overlaid (hand-built, WaPo, FE, MPV on-duty, and FBI SHR).
 #   (3) Agreement: agency totals, WaPo vs FE and hand-built vs WaPo.
 #   (4) SHR benchmark table: SHR deaths per hand-built death, by decade, for
 #       newspaper-reconstructed and other hand-built agency-years. No figure:
@@ -19,9 +19,10 @@
 #
 # Outputs:
 #   - output/figures/coverage_by_year.png
-#   - output/figures/sixteen_cities.png
+#   - output/figures/four_largest.png
 #   - output/figures/source_agreement.png
 #   - output/tables/shr_benchmark.csv
+#   - output/tables/mpv_drift.csv
 #
 # Runtime: < 30 sec
 # ==============================================================================
@@ -63,13 +64,10 @@ p_cov <- ggplot(cov_long, aes(year, agencies, color = source)) +
 ggsave(file.path(fig_dir, "coverage_by_year.png"), p_cov,
        width = 6.5, height = 4, dpi = 300, bg = "white")
 
-# 3. Sixteen cities ------------------------------------------------------------
-city_slugs <- c(
-  "los_angeles_ca", "new_york_city", "philadelphia_pa", "denver_co", "seattle_wa",
-  "chicago_il", "dallas_tx", "houston_tx", "atlanta_ga", "san_diego_ca",
-  "indianapolis_in", "kansas_city_mo", "st_louis_metro_mo",
-  "washington_dc", "san_francisco_ca", "anaheim_ca"
-)
+# 3. Four largest departments ------------------------------------------------
+# The four largest local police departments: a rule, not a pick. They also show
+# the SHR false zeros discussed in the README (NYPD 2007-14, Chicago 2016+).
+city_slugs <- c("new_york_city", "chicago_il", "los_angeles_ca", "philadelphia_pa")
 
 # Panel labels: city + state (city_label() is in scripts/functions.R)
 
@@ -96,7 +94,7 @@ stopifnot(n_distinct(cities$label) == length(city_slugs))
 p_cities <- ggplot(cities, aes(year, n, color = source)) +
   geom_line(linewidth = 0.5, na.rm = TRUE) +
   geom_point(size = 0.6, na.rm = TRUE) +
-  facet_wrap(~ label, ncol = 4, scales = "free_y") +
+  facet_wrap(~ label, ncol = 2, scales = "free_y") +
   scale_x_continuous(breaks = c(1970, 1995, 2020)) +
   scale_y_continuous(limits = c(0, NA), expand = expansion(mult = c(0, 0.08))) +
   scale_color_manual(values = source_colors) +
@@ -109,8 +107,8 @@ p_cities <- ggplot(cities, aes(year, n, color = source)) +
   theme(panel.spacing = unit(0.6, "lines"),
         plot.caption = element_text(hjust = 0, color = "grey35"))
 
-ggsave(file.path(fig_dir, "sixteen_cities.png"), p_cities,
-       width = 6.5, height = 7, dpi = 300, bg = "white")
+ggsave(file.path(fig_dir, "four_largest.png"), p_cities,
+       width = 6.5, height = 5, dpi = 300, bg = "white")
 
 # 4. Agreement -----------------------------------------------------------------
 # Agency totals over the years both series cover; the facet label carries the
@@ -188,5 +186,18 @@ stopifnot(sum(shr_all$agency_years) == nrow(shr_pairs),
 
 write_csv(shr_benchmark |> mutate(across(c(shr_per_hand_built, exact_share), \(x) round(x, 3))),
           file.path(tab_dir, "shr_benchmark.csv"))
+
+# 6. MPV drift -------------------------------------------------------------------
+# MPV on-duty vs hand-built, summed by year over agency-years both cover (same
+# multi-ORI exclusion as source_agreement.csv). MPV's coverage grew over its
+# life, which is why the trend figures prefer WaPo where WaPo exists.
+mpv_drift <- panel |>
+  filter(in_nix, !wapo_multi_ori, !is.na(n_nix), !is.na(n_mpv), year <= 2022) |>
+  group_by(year) |>
+  summarise(agency_years = n(), hand_built = sum(n_nix),
+            mpv_on_duty = sum(n_mpv - coalesce(n_mpv_offduty, 0)), .groups = "drop") |>
+  mutate(pct_diff = round(100 * (mpv_on_duty / hand_built - 1), 1))
+stopifnot(all(mpv_drift$hand_built > 0))
+write_csv(mpv_drift, file.path(tab_dir, "mpv_drift.csv"))
 
 message("06: figures written to output/figures/")

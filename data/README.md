@@ -60,3 +60,25 @@ The published outputs were built from the snapshot dated 2026-11-04.
 Nothing else in the pipeline needs it.
 
 **Without FE, MPV, and the LEAIC**, steps 01–02 still run, and the published `data/clean/` and `output/` files are already in the repo.
+
+## How the national sources were merged
+
+These are the November 2026 merge mechanics, moved here from the main README.
+
+- **Fatal Encounters.** FE identifies agencies only by name, so linking it takes a name → ORI crosswalk, rebuilt from scratch on every run. Every match comes from one of three places:
+  - a hand-checked seed;
+  - an exact match on normalized name + state + agency type, accepted only when no other agency in the state (among every agency in the LEAIC and WaPo) has the same name;
+  - a hand decision, with a note, recorded in `crosswalks/fe_crosswalk_decisions.csv`.
+
+  FE counts gunshot deaths that FE coded as an intentional use of deadly force. Deaths that FE's own disposition field codes as murder/suicide, accidental, or ruled suicide are dropped (89). That leaves 18,749 deaths from 2000 to 2021, of which 16,706 (89%) link to an agency in the panel.
+- **Mapping Police Violence.** MPV records each agency's ORI, so it joins directly, with three fixes, each written to an audit file:
+  - **Same agency, different code.** 23 codes that WaPo lists under a statewide agency (mostly state police troops) are mapped to that agency's primary ORI. Three more aliases are identified from deaths that appear in both MPV and WaPo (`clean/mpv_ori_aliases.csv`); Jacksonville SO, filed under FL01624 in MPV, is one. Every candidate and the reason it passed or failed is in `output/tables/mpv_alias_candidates.csv`.
+  - **Missing ORIs.** Where MPV has no ORI (e.g., Columbus and Cleveland Divisions of Police), the ORI is recovered from the agency name, through an exact, unique name match or a hand decision in `crosswalks/mpv_name_decisions.csv`.
+  - **Off-duty killings** are included in `n_mpv` and counted separately in `n_mpv_offduty`.
+- **FBI Supplementary Homicide Reports.** `n_shr` counts people whose killing the reporting agency coded "felon killed by police" with a firearm: 18,361 people over 1976–2024. SHR is not a census of agencies, so `n_shr` is 0 only when the agency filed some SHR record that year, and NA otherwise. It adds earlier years for agencies already in the panel, not new agencies. Counts are listed in `output/tables/shr_linkage.csv`.
+- **The WaPo merge was rebuilt.** It reads local, checksummed copies of the archived v2 data instead of live URLs. It handles agencies that WaPo lists under several ORIs (the old merge silently missed 96 of them), and it writes the merged file to disk.
+- **Agency key fixes.**
+  - Five wrong ORI codes corrected: Forsyth Co. SO, Macon-Bibb Co. SO, Richmond Co. SO, and Gwinnett Co. PD (all GA), plus Louisville Metro PD.
+  - Missing ORIs filled in for Orange Co. SD (CA), Arlington Co. PD (VA), and two small Minnesota departments.
+  - Every fix was confirmed by year-by-year agreement with WaPo or from the LEAIC. The reasons are recorded in `agency_key.csv`.
+- **Two pairs of columns share an ORI** and are summed in the panel: Savannah PD and Savannah-Chatham Metro PD, and Bibb Co. SO and Macon-Bibb Co. SO. That's why 416 columns become 414 agencies.
