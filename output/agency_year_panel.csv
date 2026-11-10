@@ -16024,10 +16024,10 @@ CA01942,CA01942,Los Angeles Police Department,CA,local_police,TRUE,los_angeles_c
 CA01942,CA01942,Los Angeles Police Department,CA,local_police,TRUE,los_angeles_ca,FALSE,1989,22,FALSE,,,,,,,,25
 CA01942,CA01942,Los Angeles Police Department,CA,local_police,TRUE,los_angeles_ca,FALSE,1990,39,FALSE,,,,,,,,36
 CA01942,CA01942,Los Angeles Police Department,CA,local_police,TRUE,los_angeles_ca,FALSE,1991,23,FALSE,,,,,,,,21
-CA01942,CA01942,Los Angeles Police Department,CA,local_police,TRUE,los_angeles_ca,FALSE,1992,25,FALSE,,,,,,,,28
-CA01942,CA01942,Los Angeles Police Department,CA,local_police,TRUE,los_angeles_ca,FALSE,1993,18,FALSE,,,,,,,,22
-CA01942,CA01942,Los Angeles Police Department,CA,local_police,TRUE,los_angeles_ca,FALSE,1994,29,FALSE,,,,,,,,17
-CA01942,CA01942,Los Angeles Police Department,CA,local_police,TRUE,los_angeles_ca,FALSE,1995,15,FALSE,,,,,,,,18
+CA01942,CA01942,Los Angeles Police Department,CA,local_police,TRUE,los_angeles_ca,FALSE,1992,,,,,,,,,,28
+CA01942,CA01942,Los Angeles Police Department,CA,local_police,TRUE,los_angeles_ca,FALSE,1993,21,FALSE,,,,,,,,22
+CA01942,CA01942,Los Angeles Police Department,CA,local_police,TRUE,los_angeles_ca,FALSE,1994,13,FALSE,,,,,,,,17
+CA01942,CA01942,Los Angeles Police Department,CA,local_police,TRUE,los_angeles_ca,FALSE,1995,,,,,,,,,,18
 CA01942,CA01942,Los Angeles Police Department,CA,local_police,TRUE,los_angeles_ca,FALSE,1996,24,FALSE,,,,,,,,19
 CA01942,CA01942,Los Angeles Police Department,CA,local_police,TRUE,los_angeles_ca,FALSE,1997,20,FALSE,,,,,,,,12
 CA01942,CA01942,Los Angeles Police Department,CA,local_police,TRUE,los_angeles_ca,FALSE,1998,13,FALSE,,,,,,,,7
