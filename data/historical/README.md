@@ -4,7 +4,7 @@
 
 ## Newspaper reconstructions
 
-For twenty agencies, years missing from the hand-built series come from local newspapers, searched through NewsBank's Access World News. For Dallas, they fill the 1992–2002 gap between Geller and Scott and the city's open data; for Austin, 2000–2007 as well.
+For twenty-one agencies, years missing from the hand-built series come from local newspapers, searched through NewsBank's Access World News. For Dallas, they fill the 1992–2002 gap between Geller and Scott and the city's open data; for Austin, 2000–2007 as well.
 
 **What counts.** A death counts when the paper reports that an on-duty officer of that agency shot and killed someone. Off-duty officers (including those working extra jobs), other agencies at the same scene, and suicides during standoffs are left out.
 
@@ -36,3 +36,4 @@ The SHR column is the FBI's count of people killed by the agency's officers with
 | Kansas City (MO) PD | *The Kansas City Star* | 1992–1999 | 18 | 10 | 1992 (2) and 1993 (3) are counts the paper printed, from the department's spokesman, and every death in both years is identified. SHR is not a useful check for this agency: it shows no deaths in 1993–95, years with four identified deaths, and none for most of the 1980s, when Geller and Scott have some every year |
 | Chicago PD | *Chicago Sun-Times* | 1992, 1998–1999 | 41 | 50 | Counts the paper printed from the department, not case-by-case rebuilds: the Sun-Times didn't report most Chicago police killings individually (a search of 1993 found 2 on-duty deaths, against SHR's 8). 1992 is the spokesman's 11 through Sep. 22 plus 2 later on-duty deaths; adding the year's 3 off-duty killings gives SHR's 16. 1993–97 are left blank: the paper cites a *Washington Post* count of 54 for those five years, with no yearly split. The *Chicago Tribune* is not in NewsBank before 2014 |
 | LAPD | *Daily News of Los Angeles* | 1993–1994 | 34 | 39 | The department's own counts (Use of Force Review Section, reported March 1995): 21 suspects killed in 1993, 13 in 1994. These replace values of unrecorded source (18 and 29); the same series' 1992 and 1995 values were dropped for the same reason, so LAPD has no count for 1992 or 1995. An LAPD spokesman later put 1993–97 at 81 |
+| Milwaukee PD | *The Milwaukee Journal*; *Milwaukee Sentinel* | 1990–1994 | 15 | 17 | The Journal starts Jan. 22, 1990. Checked against the Journal's April 1992 list of everyone killed by Milwaukee officers since May 1989, which also covers the weeks before the archive starts. Matches SHR in 3 of 5 years: SHR's extra 1991 death is probably Darryl Veasy, whose shooter an inquest jury could not identify (left out), and its extra 1992 death is an off-duty detective's killing |

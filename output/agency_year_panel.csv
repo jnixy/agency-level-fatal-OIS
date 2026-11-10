@@ -141775,11 +141775,11 @@ WIMPD00,WIMPD00,Milwaukee Police Department,WI,local_police,TRUE,milwaukee_wi,FA
 WIMPD00,WIMPD00,Milwaukee Police Department,WI,local_police,TRUE,milwaukee_wi,FALSE,1987,,,,,,,,,,1
 WIMPD00,WIMPD00,Milwaukee Police Department,WI,local_police,TRUE,milwaukee_wi,FALSE,1988,,,,,,,,,,2
 WIMPD00,WIMPD00,Milwaukee Police Department,WI,local_police,TRUE,milwaukee_wi,FALSE,1989,,,,,,,,,,3
-WIMPD00,WIMPD00,Milwaukee Police Department,WI,local_police,TRUE,milwaukee_wi,FALSE,1990,,,,,,,,,,4
-WIMPD00,WIMPD00,Milwaukee Police Department,WI,local_police,TRUE,milwaukee_wi,FALSE,1991,,,,,,,,,,4
-WIMPD00,WIMPD00,Milwaukee Police Department,WI,local_police,TRUE,milwaukee_wi,FALSE,1992,,,,,,,,,,4
-WIMPD00,WIMPD00,Milwaukee Police Department,WI,local_police,TRUE,milwaukee_wi,FALSE,1993,,,,,,,,,,3
-WIMPD00,WIMPD00,Milwaukee Police Department,WI,local_police,TRUE,milwaukee_wi,FALSE,1994,,,,,,,,,,2
+WIMPD00,WIMPD00,Milwaukee Police Department,WI,local_police,TRUE,milwaukee_wi,FALSE,1990,4,FALSE,,,,,,,,4
+WIMPD00,WIMPD00,Milwaukee Police Department,WI,local_police,TRUE,milwaukee_wi,FALSE,1991,3,FALSE,,,,,,,,4
+WIMPD00,WIMPD00,Milwaukee Police Department,WI,local_police,TRUE,milwaukee_wi,FALSE,1992,3,FALSE,,,,,,,,4
+WIMPD00,WIMPD00,Milwaukee Police Department,WI,local_police,TRUE,milwaukee_wi,FALSE,1993,3,FALSE,,,,,,,,3
+WIMPD00,WIMPD00,Milwaukee Police Department,WI,local_police,TRUE,milwaukee_wi,FALSE,1994,2,FALSE,,,,,,,,2
 WIMPD00,WIMPD00,Milwaukee Police Department,WI,local_police,TRUE,milwaukee_wi,FALSE,1995,,,,,,,,,,1
 WIMPD00,WIMPD00,Milwaukee Police Department,WI,local_police,TRUE,milwaukee_wi,FALSE,1996,,,,,,,,,,3
 WIMPD00,WIMPD00,Milwaukee Police Department,WI,local_police,TRUE,milwaukee_wi,FALSE,1997,,,,,,,,,,4
