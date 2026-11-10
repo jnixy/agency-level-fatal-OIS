@@ -52,7 +52,7 @@ Where they overlap, the sources mostly agree. Each row compares a national sourc
 | *Washington Post* | 2015–2022 | 2,641 | 4.0% fewer | 87% |
 | Fatal Encounters | 2000–2021 | 5,595 | 1.3% fewer | 69% |
 | Mapping Police Violence (on-duty) | 2013–2022 | 3,357 | 2.2% fewer | 71% |
-| FBI SHR | 1976–2022 | 3,431 | 26.9% fewer | 33% |
+| FBI SHR | 1976–2022 | 3,435 | 26.9% fewer | 33% |
 
 Most agency-years have no deaths in either source, which makes any two sources look alike. The last column drops those years, so it's the tougher test.
 - **FE runs about 9% above WaPo** in the hand-built agencies, 2015–2021.
@@ -65,7 +65,7 @@ Correlations and every pairing of the national sources are in [`source_agreement
 
 Some agencies report other homicides to SHR but not their own officers' killings, which produces false zeros. New York's SHR reports list no police killings in 2007–14 (84 by the hand-built count), and Chicago's list none from 2016 on (38 in 2016–22). SHR also files a death under the reporting agency, which is sometimes the investigating agency rather than the one whose officer fired. Treat `n_shr` as a lower bound, and don't read its zeros as zero.
 
-Against the newspaper reconstructions, SHR runs a little high, as you'd expect: it also counts off-duty killings, and a newspaper search can miss a death. In the agency-years both cover, the reconstructions count 471 deaths and SHR 515, with identical counts in 136 of 244.
+Against the newspaper reconstructions, SHR runs a little high, as you'd expect: it also counts off-duty killings, and a newspaper search can miss a death. In the agency-years both cover, the reconstructions count 478 deaths and SHR 525, with identical counts in 137 of 248.
 
 ![The four largest departments, five sources](output/figures/four_largest.png)
 
@@ -78,7 +78,7 @@ The four largest local departments show how the series line up, and SHR's false 
 | 1969 | 1 (Chicago) | — | — | — | — |
 | 1970s | 4–15 | — | — | — | 1,760–1,929 (1976+) |
 | 1980s | 12–26 | — | — | — | 1,695–1,960 |
-| 1990s | 26–34 | — | — | — | 1,459–1,818 |
+| 1990s | 27–34 | — | — | — | 1,459–1,818 |
 | 2000s | 114–172 | — | 2,967 | — | 1,524–1,721 |
 | 2010s | 361–369 | 3,647 (2015+) | 2,967 | 4,622 (2013+) | 1,584–1,841 |
 | 2020s | 225–368 (through 2022) | 3,647 (through 2024) | 2,967 (through 2021) | 4,622 (through 2025) | 1,864–2,098 (through 2024) |
@@ -176,7 +176,7 @@ The method, a note on every agency, and the checks against each paper's own coun
 | Kansas City (MO) PD | *The Kansas City Star* | 1992–1999 | 18 | 10 |
 | Chicago PD | *Chicago Sun-Times* | 1992, 1998–1999 | 41 | 50 |
 | LAPD | *Daily News of Los Angeles* | 1993–1994 | 34 | 39 |
-| Milwaukee PD | *The Milwaukee Journal*; *Milwaukee Sentinel* | 1990–1994 | 15 | 17 |
+| Milwaukee PD | *The Milwaukee Journal*; *Milwaukee Sentinel*; *Milwaukee Journal Sentinel* | 1990–1999 | 25 | 27 |
 
 
 ## Caveats

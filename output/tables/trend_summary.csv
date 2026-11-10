@@ -19,10 +19,10 @@ agencies_starting_2000_plus,375
 wapo_share_lower_bound,0.319
 index_check_balanced_agencies,12
 newspaper_agencies,21
-newspaper_agency_years,261
-newspaper_deaths,486
-newspaper_years_with_shr,244
-newspaper_deaths_in_shr_years,471
-shr_deaths_in_newspaper_years,515
-newspaper_years_exact_shr,136
+newspaper_agency_years,266
+newspaper_deaths,496
+newspaper_years_with_shr,248
+newspaper_deaths_in_shr_years,478
+shr_deaths_in_newspaper_years,525
+newspaper_years_exact_shr,137
 long_panel_with_newspaper,20
