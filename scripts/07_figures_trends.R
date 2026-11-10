@@ -177,6 +177,8 @@ shr_bound <- function(y, shr, newspaper) {
 # Sensitivity: how much the newspaper reconstructions move the headline.
 # "Without" changes both the agency set and some agencies' early windows, so
 # the cleaner like-for-like comparator is the non-newspaper agencies only.
+CHICAGO_ID <- "ILCPD00"
+stopifnot(CHICAGO_ID %in% era_df$agency_id)
 no_news <- trend |> filter(!newspaper)
 news_long <- era_df |> filter(newspaper) |> distinct(agency_id)
 era_sensitivity <- bind_rows(
@@ -194,7 +196,16 @@ era_sensitivity <- bind_rows(
     mutate(sample = "All long-panel agencies, newspaper years raised to SHR where higher"),
   fit_era(era_df |> semi_join(news_long, by = "agency_id") |>
             mutate(y = shr_bound(y, n_shr, newspaper))) |>
-    mutate(sample = "Only agencies with newspaper years, raised to SHR where higher")
+    mutate(sample = "Only agencies with newspaper years, raised to SHR where higher"),
+  # Chicago has one newspaper year (1992) in its early window but outweighs
+  # the rest of the newspaper pool by volume, so show that pool without it
+  fit_era(era_df |> semi_join(news_long, by = "agency_id") |>
+            filter(agency_id != CHICAGO_ID)) |>
+    mutate(sample = "Only agencies with newspaper years, excluding Chicago"),
+  fit_era(era_df |> semi_join(news_long, by = "agency_id") |>
+            filter(agency_id != CHICAGO_ID) |>
+            mutate(y = shr_bound(y, n_shr, newspaper))) |>
+    mutate(sample = "Only agencies with newspaper years, excluding Chicago, raised to SHR where higher")
 ) |> relocate(sample)
 
 # Correctness check of the index construction: on a balanced panel, Poisson
