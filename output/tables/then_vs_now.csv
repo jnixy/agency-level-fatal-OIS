@@ -14,13 +14,14 @@ CA01005,Fresno Police Department,CA,1.25,2.545,8,11,1987,2015,1994,2025,10,28,"F
 CA03404,Sacramento Police Department,CA,1.4,1.545,10,11,1985,2015,1994,2025,14,17,"Sacramento, CA",0.145,FALSE,0.858,About the same
 WASPD00,Seattle Police Department,WA,1.6,2.091,15,11,1980,2015,1994,2025,24,23,"Seattle, WA",0.491,FALSE,0.378,About the same
 CA04313,San Jose Police Department,CA,1.692,2.455,13,11,1976,2015,1994,2025,22,27,"San Jose, CA",0.762,FALSE,0.2,About the same
+NJNPD00,Newark Police Department,NJ,1.778,1,9,11,1976,2015,1994,2025,16,11,"Newark, NJ",-0.778,TRUE,0.175,About the same
 OHCOP00,Columbus Police Department,OH,1.889,4.818,9,11,1986,2015,1994,2025,17,53,"Columbus, OH",2.929,FALSE,0,More now
 OK05506,Oklahoma City Police Department,OK,2.077,4.545,13,11,1982,2015,1994,2025,27,50,"Oklahoma City, OK",2.469,FALSE,0.001,More now
 TXSPD00,San Antonio Police Department,TX,2.2,8.091,5,11,1990,2015,1994,2025,11,89,"San Antonio, TX",5.891,FALSE,0,More now
 CA03400,Sacramento County Sheriff's Department,CA,2.4,2.364,10,11,1985,2015,1994,2025,24,26,"Sacramento Co. Sheriff, CA",-0.036,TRUE,1,About the same
 CA03801,San Francisco Police Department,CA,2.4,2.364,10,11,1985,2015,1994,2025,24,26,"San Francisco, CA",-0.036,TRUE,1,About the same
 OR02602,Portland Police Department,OR,2.857,2.727,7,11,1988,2015,1994,2025,20,30,"Portland, OR",-0.13,TRUE,0.885,About the same
-INIPD00,Indianapolis Metropolitan Police Department,IN,2.909,4.7,22,10,1970,2015,1991,2025,64,47,"Indianapolis, IN",1.791,FALSE,0.014,More now
+INIPD00,Indianapolis Metropolitan Police Department,IN,2.909,4.364,22,11,1970,2015,1991,2025,64,48,"Indianapolis, IN",1.455,FALSE,0.035,More now
 MOKPD00,Kansas City Police Department,MO,2.957,3.545,23,11,1972,2015,1994,2025,68,39,"Kansas City, MO",0.589,FALSE,0.355,About the same
 CODPD00,Denver Police Department,CO,3,4.727,5,11,1990,2015,1994,2025,15,52,"Denver, CO",1.727,FALSE,0.146,About the same
 WIMPD00,Milwaukee Police Department,WI,3,2.182,5,11,1990,2015,1994,2025,15,24,"Milwaukee, WI",-0.818,TRUE,0.387,About the same
@@ -29,8 +30,8 @@ MOSPD00,St. Louis Police Department,MO,5.909,3.273,11,11,1977,2015,1991,2025,65,
 CA03711,San Diego Police Department,CA,6.263,4.545,19,11,1976,2015,1994,2025,119,50,"San Diego, CA",-1.718,TRUE,0.066,About the same
 TXDPD00,Dallas Police Department,TX,7.2,3.091,25,11,1970,2015,1994,2025,180,34,"Dallas, TX",-4.109,TRUE,0,Fewer now
 DCMPD00,Metropolitan Police Department,DC,8.667,2.455,6,11,1989,2015,1994,2025,52,27,"Washington, DC",-6.212,TRUE,0,Fewer now
-TXHPD00,Houston Police Department,TX,9.75,9.8,12,10,1980,2015,1991,2025,117,98,"Houston, TX",0.05,FALSE,1,About the same
+TXHPD00,Houston Police Department,TX,9.75,10.091,12,11,1980,2015,1991,2025,117,111,"Houston, TX",0.341,FALSE,0.842,About the same
 PAPEP00,Philadelphia Police Department,PA,11.24,4.273,25,11,1970,2015,1994,2025,281,47,"Philadelphia, PA",-6.967,TRUE,0,Fewer now
 ILCPD00,Chicago Police Department,IL,20.5,5.727,20,11,1970,2015,1992,2025,410,63,"Chicago, IL",-14.773,TRUE,0,Fewer now
 CA01942,Los Angeles Police Department,CA,22.7,14.818,20,11,1974,2015,1994,2025,454,163,"Los Angeles, CA",-7.882,TRUE,0,Fewer now
-NY03030,New York Police Department,NY,34.24,8.8,25,10,1970,2015,1994,2025,856,88,"New York City, NY",-25.44,TRUE,0,Fewer now
+NY03030,New York Police Department,NY,34.24,9.182,25,11,1970,2015,1994,2025,856,101,"New York City, NY",-25.058,TRUE,0,Fewer now
