@@ -132,7 +132,7 @@ I decided, for now at least, to focus on fatal shootings, since they're more rel
 | [Springfield (MO) PD](https://www.springfieldmo.gov/3755/Officer-Involved-Shootings) | 2008–2022 | Springfield (MO) PD |
 | [Austin open data portal](https://data.austintexas.gov/Public-Safety/Officer-Involved-Shooting-2000-2014/63p6-iegi) | 2008–2014 (2000–07 replaced by the Statesman reconstruction) | Austin PD |
 | [Dallas open data portal](https://www.dallasopendata.com/Public-Safety/Dallas-Police-Officer-Involved-Shootings/4gmt-jyx2) | 2003–2022 | Dallas PD |
-| Local newspapers via NewsBank: see [Newspaper reconstructions](#newspaper-reconstructions) below | 1981–2009 | Omaha, Lincoln, Oklahoma City, Columbus, Denver, Tulsa, San Antonio, Sacramento PD, Sacramento Co. SD, Portland (OR), Austin, Harris Co. SO, Charlotte, Fresno, San Jose, Dallas, San Diego, Kansas City (MO), Chicago, LAPD (1993–94), Milwaukee, San Francisco, Colorado Springs, Orlando, Anchorage |
+| Local newspapers via NewsBank: see [Newspaper reconstructions](#newspaper-reconstructions) below | 1981–2009 | Omaha, Lincoln, Oklahoma City, Columbus, Denver, Tulsa, San Antonio, Sacramento PD, Sacramento Co. SD, Portland (OR), Austin, Harris Co. SO, Charlotte, Fresno, San Jose, Dallas, San Diego, Kansas City (MO), Chicago, LAPD (1993–94), Milwaukee, San Francisco, Colorado Springs, Orlando, Anchorage, Baltimore (1995–96) |
 | Jacksonville Sheriff's Office, [*Police Involved Shootings*](https://web.archive.org/web/20150717050006/http://www.jaxsheriff.org/departments/sheriffs-office/docs/sheriff-john-rutherford/police-involved-shootings-final.aspx) (Jan. 2009; archived copy) | 2007–2008 | Jacksonville SO |
 | [Cincinnati open data portal](https://data.cincinnati-oh.gov/Safety/PDI-Police-Data-Initiative-Officer-Involved-Shooti/r6q4-muts) | 1996–2019 | Cincinnati PD |
 | [Vermont open data portal](https://data.vermont.gov/Public-Safety/Vermont-State-Police-Officer-Involved-Shootings-19/du86-kfnp) | 1977–2022 | Vermont State Police |
@@ -181,6 +181,7 @@ The method, a note on every agency, and the checks against each paper's own coun
 | Colorado Springs PD | *The Gazette* (Colorado Springs) | 1988–1999 | 4 | 2 |
 | Orlando PD | *Orlando Sentinel* | 1986–1999 | 6 | 1 |
 | Anchorage PD | *Anchorage Daily News* | 1986–1999 | 4 | 5 |
+| Baltimore PD | *The Sun* (Baltimore) | 1995–1996 | 21 | 21 |
 
 
 ## Caveats
