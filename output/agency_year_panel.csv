@@ -60672,8 +60672,8 @@ MDBPD00,MDBPD00,Baltimore Police Department,MD,local_police,TRUE,baltimore_md,FA
 MDBPD00,MDBPD00,Baltimore Police Department,MD,local_police,TRUE,baltimore_md,FALSE,1992,,,,,,,,,,9
 MDBPD00,MDBPD00,Baltimore Police Department,MD,local_police,TRUE,baltimore_md,FALSE,1993,,,,,,,,,,8
 MDBPD00,MDBPD00,Baltimore Police Department,MD,local_police,TRUE,baltimore_md,FALSE,1994,,,,,,,,,,7
-MDBPD00,MDBPD00,Baltimore Police Department,MD,local_police,TRUE,baltimore_md,FALSE,1995,,,,,,,,,,13
-MDBPD00,MDBPD00,Baltimore Police Department,MD,local_police,TRUE,baltimore_md,FALSE,1996,,,,,,,,,,8
+MDBPD00,MDBPD00,Baltimore Police Department,MD,local_police,TRUE,baltimore_md,FALSE,1995,12,FALSE,,,,,,,,13
+MDBPD00,MDBPD00,Baltimore Police Department,MD,local_police,TRUE,baltimore_md,FALSE,1996,9,FALSE,,,,,,,,8
 MDBPD00,MDBPD00,Baltimore Police Department,MD,local_police,TRUE,baltimore_md,FALSE,1997,,,,,,,,,,5
 MDBPD00,MDBPD00,Baltimore Police Department,MD,local_police,TRUE,baltimore_md,FALSE,1998,,,,,,,,,,7
 MDBPD00,MDBPD00,Baltimore Police Department,MD,local_police,TRUE,baltimore_md,FALSE,1999,,,,,,,,,,3
