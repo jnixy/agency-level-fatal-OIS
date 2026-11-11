@@ -25,17 +25,17 @@ Are police killing more people now than in decades past? National data can't ans
 
 **How far back it reaches.** Before 2000, the solid line rests on only 4–34 departments, mostly large cities. It describes big cities, not the country.
 
-**What it shows.** The headline compares one fixed set of agencies: the 32 with at least five years of data both before 1995 and since 2015, shown as the dashed line. In those agencies, fatal police shootings since 2015 run 31% below their 1970–1994 level (ratio 0.69, 95% CI 0.48–0.99).
+**What it shows.** The headline compares one fixed set of agencies: the 33 with at least five years of data both before 1995 and since 2015, shown as the dashed line. In those agencies, fatal police shootings since 2015 run 30% below their 1970–1994 level (ratio 0.70, 95% CI 0.49–1.01).
 
-![Then vs. now in 32 long-running agencies](output/figures/then_vs_now.png)
+![Then vs. now in 33 long-running agencies](output/figures/then_vs_now.png)
 
-**Then vs. now.** In the same 32 agencies, 8 kill clearly fewer people a year now than before 1995, 10 kill clearly more, and in 14 the change is too small to tell from chance (exact Poisson test of the two eras' yearly rates, p < .05). The drops are largest in New York, Chicago, and Los Angeles; the biggest increases are in San Antonio, Harris County, and Austin. These are raw counts, not rates per resident: some of these cities grew, while others, like St. Louis and Philadelphia, shrank.
+**Then vs. now.** In the same 33 agencies, 8 kill clearly fewer people a year now than before 1995, 11 kill clearly more, and in 14 the change is too small to tell from chance (exact Poisson test of the two eras' yearly rates, p < .05). The drops are largest in New York, Chicago, and Los Angeles; the biggest increases are in San Antonio, Harris County, and Austin. These are raw counts, not rates per resident: some of these cities grew, while others, like St. Louis and Philadelphia, shrank.
 
-**What the newspaper years do to the headline.** Twenty-one of the 32 agencies include years taken from newspapers, and 16 of them qualify only because of those years.
+**What the newspaper years do to the headline.** Twenty-two of the 33 agencies include years taken from newspapers, and 17 of them qualify only because of those years.
 - Dropping every newspaper year leaves 16 agencies and a ratio of 0.50 (95% CI 0.34–0.73). The 11 agencies with no newspaper years give 0.49 (0.26–0.90).
-- The 19 agencies rebuilt case by case come out at 1.30 (0.87–1.95) on their own. Chicago and Los Angeles are set aside here, because their newspaper years are department counts the papers printed and their size swamps the pool. So the rebuilt cities, many of them fast-growing Sun Belt departments, mostly kill more people now than before 1995.
+- The 20 agencies rebuilt case by case come out at 1.34 (0.89–2.02) on their own. Chicago and Los Angeles are set aside here, because their newspaper years are department counts the papers printed and their size swamps the pool. So the rebuilt cities, many of them fast-growing Sun Belt departments, mostly kill more people now than before 1995.
 
-The reconstructions are floors, because a search can miss deaths but can't invent them. As an upper bound, raising each newspaper year to SHR's count wherever SHR is higher (an overcorrection, since SHR also counts off-duty killings) moves the headline only to 0.67 (0.48–0.96), and the 19 rebuilt cities to 1.19 (0.82–1.73). Every run is in [`era_ratio_sensitivity.csv`](output/tables/era_ratio_sensitivity.csv).
+The reconstructions are floors, because a search can miss deaths but can't invent them. As an upper bound, raising each newspaper year to SHR's count wherever SHR is higher (an overcorrection, since SHR also counts off-duty killings) moves the headline only to 0.69 (0.48–0.97), and the 20 rebuilt cities to 1.23 (0.84–1.80). Every run is in [`era_ratio_sensitivity.csv`](output/tables/era_ratio_sensitivity.csv).
 
 ![Agencies with data before 2000](output/figures/coverage_tiles.png)
 
@@ -132,7 +132,7 @@ I decided, for now at least, to focus on fatal shootings, since they're more rel
 | [Springfield (MO) PD](https://www.springfieldmo.gov/3755/Officer-Involved-Shootings) | 2008–2022 | Springfield (MO) PD |
 | [Austin open data portal](https://data.austintexas.gov/Public-Safety/Officer-Involved-Shooting-2000-2014/63p6-iegi) | 2008–2014 (2000–07 replaced by the Statesman reconstruction) | Austin PD |
 | [Dallas open data portal](https://www.dallasopendata.com/Public-Safety/Dallas-Police-Officer-Involved-Shootings/4gmt-jyx2) | 2003–2022 | Dallas PD |
-| Local newspapers via NewsBank: see [Newspaper reconstructions](#newspaper-reconstructions) below | 1981–2009 | Omaha, Lincoln, Oklahoma City, Columbus, Denver, Tulsa, San Antonio, Sacramento PD, Sacramento Co. SD, Portland (OR), Austin, Harris Co. SO, Charlotte, Fresno, San Jose, Dallas, San Diego, Kansas City (MO), Chicago, LAPD (1993–94), Milwaukee, San Francisco |
+| Local newspapers via NewsBank: see [Newspaper reconstructions](#newspaper-reconstructions) below | 1981–2009 | Omaha, Lincoln, Oklahoma City, Columbus, Denver, Tulsa, San Antonio, Sacramento PD, Sacramento Co. SD, Portland (OR), Austin, Harris Co. SO, Charlotte, Fresno, San Jose, Dallas, San Diego, Kansas City (MO), Chicago, LAPD (1993–94), Milwaukee, San Francisco, Colorado Springs |
 | Jacksonville Sheriff's Office, [*Police Involved Shootings*](https://web.archive.org/web/20150717050006/http://www.jaxsheriff.org/departments/sheriffs-office/docs/sheriff-john-rutherford/police-involved-shootings-final.aspx) (Jan. 2009; archived copy) | 2007–2008 | Jacksonville SO |
 | [Cincinnati open data portal](https://data.cincinnati-oh.gov/Safety/PDI-Police-Data-Initiative-Officer-Involved-Shooti/r6q4-muts) | 1996–2019 | Cincinnati PD |
 | [Vermont open data portal](https://data.vermont.gov/Public-Safety/Vermont-State-Police-Officer-Involved-Shootings-19/du86-kfnp) | 1977–2022 | Vermont State Police |
@@ -178,6 +178,7 @@ The method, a note on every agency, and the checks against each paper's own coun
 | LAPD | *Daily News of Los Angeles* | 1993–1994 | 34 | 39 |
 | Milwaukee PD | *The Milwaukee Journal*; *Milwaukee Sentinel*; *Milwaukee Journal Sentinel* | 1990–1999 | 25 | 27 |
 | San Francisco PD | *San Francisco Chronicle* | 1985–1999 | 35 | 40 |
+| Colorado Springs PD | *The Gazette* (Colorado Springs) | 1988–1999 | 4 | 2 |
 
 
 ## Caveats
