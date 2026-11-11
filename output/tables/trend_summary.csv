@@ -4,7 +4,7 @@ agencies_excluded_entirely,1
 agencies_in_index,413
 agencies_dropped_all_zero,0
 pre2000_agencies_min,4
-pre2000_agencies_max,37
+pre2000_agencies_max,38
 long_panel_agencies,35
 era_ratio_recent_vs_early,0.722
 era_ratio_ci_lo,0.501
@@ -18,11 +18,11 @@ core_tiles_pre2000,44
 agencies_starting_2000_plus,370
 wapo_share_lower_bound,0.319
 index_check_balanced_agencies,12
-newspaper_agencies,26
-newspaper_agency_years,323
-newspaper_deaths,566
-newspaper_years_with_shr,298
-newspaper_deaths_in_shr_years,545
-shr_deaths_in_newspaper_years,594
-newspaper_years_exact_shr,171
+newspaper_agencies,27
+newspaper_agency_years,333
+newspaper_deaths,584
+newspaper_years_with_shr,308
+newspaper_deaths_in_shr_years,563
+shr_deaths_in_newspaper_years,618
+newspaper_years_exact_shr,173
 long_panel_with_newspaper,24
