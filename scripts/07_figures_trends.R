@@ -238,7 +238,9 @@ trend_index <- main$index |>
   mutate(spliced = year %in% SPLICE_YEARS)
 
 pre2000 <- trend_index |> filter(year < 2000)
-wapo_gap <- agreement |> filter(comparison == "Hand-built vs WaPo") |> pull(pct_diff_total)
+# Independent comparison only: most hand-built 2015+ counts were copied from WaPo
+wapo_gap <- agreement |> filter(comparison == "Hand-built (non-WaPo sources) vs WaPo") |> pull(pct_diff_total)
+stopifnot(length(wapo_gap) == 1)
 mpv_gap  <- agreement |> filter(comparison == "Hand-built vs MPV on-duty") |> pull(pct_diff_total)
 x_limits <- c(FIRST_YEAR - 0.5, max(SPLICE_YEARS) + 0.5)
 
@@ -282,7 +284,7 @@ p_n <- ggplot(trend_index, aes(year, agencies)) +
   labs(x = NULL, y = "Agencies",
        caption = str_wrap(sprintf(paste0(
          "Before 2000 the index rests on %d–%d large-city agencies; CIs use t(agencies − 1). ",
-         "Where both exist, WaPo totals run %.0f%% %s hand-built counts (2015–22) and MPV on-duty %.0f%% %s (2013–22). ",
+         "WaPo totals run %.0f%% %s hand-built counts not taken from WaPo (2015–22); MPV on-duty runs %.0f%% %s all hand-built counts (2013–22). ",
          "Excludes series that mix in nonfatal shootings or count incidents."),
          min(pre2000$agencies), max(pre2000$agencies),
          abs(wapo_gap), if (wapo_gap < 0) "below" else "above",

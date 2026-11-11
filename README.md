@@ -49,12 +49,12 @@ Where they overlap, the sources mostly agree. Each row compares a national sourc
 
 | Compared with the hand-built counts | Years | Agency-years | Its total deaths | Same count, in years either recorded a death |
 |---|---|---:|---|---:|
-| *Washington Post* | 2015–2022 | 2,641 | 4.0% fewer | 87% |
+| *Washington Post*, against hand-built counts not taken from WaPo | 2015–2022 | 1,688 | 4.2% fewer | 74% |
 | Fatal Encounters | 2000–2021 | 5,595 | 1.3% fewer | 69% |
 | Mapping Police Violence (on-duty) | 2013–2022 | 3,357 | 2.2% fewer | 71% |
 | FBI SHR | 1976–2022 | 3,450 | 26.7% fewer | 33% |
 
-Most agency-years have no deaths in either source, which makes any two sources look alike. The last column drops those years, so it's the tougher test. The WaPo row is not an independent check: most hand-built counts for 2015–22 were taken from WaPo itself. They differ mainly where I used a newspaper database or an agency's own data instead (see [Background](#background)), and where WaPo has revised its records since I copied them. Fatal Encounters and MPV are the independent comparisons.
+Most agency-years have no deaths in either source, which makes any two sources look alike. The last column drops those years, so it's the tougher test. Most hand-built counts for 2015–22 were copied from WaPo, so the WaPo row uses only the agency-years whose counts came from another documented source: the Georgia, Minnesota, and Hawaii newspaper databases and the NYPD, San Francisco, Houston, Dallas, and Springfield (MO) department data ([`nix_nonwapo_sources.csv`](data/crosswalks/nix_nonwapo_sources.csv)). Against all hand-built counts, which are mostly WaPo's own, WaPo matches in 87% of years with a death.
 - **FE runs about 9% above WaPo** in the hand-built agencies, 2015–2021.
 - **MPV's gap drifts:** 8–10% below the hand-built counts in 2013–15, and 3–9% above in 2020–22 ([`mpv_drift.csv`](output/tables/mpv_drift.csv)). That's why the trend figures prefer WaPo where it exists.
 - Agencies that WaPo lists under several ORIs (mostly state police) are left out.
