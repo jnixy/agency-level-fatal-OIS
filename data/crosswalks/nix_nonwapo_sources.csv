@@ -1,0 +1,9 @@
+scope,key,first,last,source,note
+state,GA,2015,2020,Atlanta Journal-Constitution database,All Georgia agencies; AJC data run 2010-2020
+state,MN,2015,2022,Star Tribune database,All Minnesota agencies; every police-involved death since 2000
+state,HI,2015,2022,Honolulu Civil Beat,Hawaii agencies
+agency,NY03030,2015,2022,NYPD use-of-force reports,New York Police Department
+agency,CA03801,2015,2022,SFPD OIS investigations sheet,San Francisco Police Department
+agency,TXHPD00,2015,2022,Houston PD OIS page,Houston Police Department
+agency,TXDPD00,2015,2022,Dallas open data portal,Dallas Police Department
+agency,MO03903,2015,2022,Springfield (MO) PD OIS page,Springfield (MO) Police Department

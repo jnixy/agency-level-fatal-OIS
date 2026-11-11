@@ -24,6 +24,8 @@
 #   - data/agency_key.csv
 #   - data/clean/{nix,wapo,fe,mpv,shr}_agency_year.csv
 #   - data/clean/wapo_agencies.csv, data/clean/mpv_agencies.csv
+#   - data/crosswalks/nix_nonwapo_sources.csv -- hand-built 2015+ counts not
+#     taken from WaPo (for the independent WaPo comparison)
 #
 # Outputs:
 #   - output/agency_year_panel.csv           -- the published merged file
@@ -179,8 +181,27 @@ nix_panel  <- comparable |> filter(in_nix)
 # Common support: all three sources observed (2015-2021)
 common     <- nix_panel |> filter(!is.na(n_nix), !is.na(n_wapo), !is.na(n_fe))
 
+# Most hand-built counts for 2015 on were copied from WaPo, so comparing the two
+# is mostly circular. The independent check uses only agency-years whose
+# hand-built counts came from another documented source (state newspaper
+# databases or the agency's own data).
+nonwapo_rules <- read_csv(here("data", "crosswalks", "nix_nonwapo_sources.csv"),
+                          show_col_types = FALSE)
+stopifnot(all(nonwapo_rules$scope %in% c("state", "agency")))
+nonwapo_key <- bind_rows(
+  nix_panel |> distinct(agency_id, state, year) |>
+    inner_join(filter(nonwapo_rules, scope == "state"), by = c("state" = "key")),
+  nix_panel |> distinct(agency_id, state, year) |>
+    inner_join(filter(nonwapo_rules, scope == "agency"), by = c("agency_id" = "key"))
+) |>
+  filter(year >= first, year <= last) |>
+  distinct(agency_id, year)
+stopifnot(all(filter(nonwapo_rules, scope == "agency")$key %in% nix_panel$agency_id))
+nix_nonwapo <- nix_panel |> semi_join(nonwapo_key, by = c("agency_id", "year"))
+
 agreement <- bind_rows(
   compare_sources(nix_panel, "n_nix", "n_wapo", "Hand-built vs WaPo"),
+  compare_sources(nix_nonwapo, "n_nix", "n_wapo", "Hand-built (non-WaPo sources) vs WaPo"),
   compare_sources(nix_panel, "n_nix", "n_fe",   "Hand-built vs FE"),
   compare_sources(nix_panel, "n_wapo", "n_fe",  "WaPo vs FE (hand-built agencies)"),
   compare_sources(common, "n_nix", "n_wapo", "Hand-built vs WaPo (common support)"),

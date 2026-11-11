@@ -3,7 +3,7 @@ decade,source,agency_years,agencies,hand_built,shr,exact,shr_per_hand_built,exac
 1980,All hand-built,187,30,1117,1012,79,0.906,0.422
 1990,All hand-built,303,39,1256,1169,145,0.931,0.479
 2000,All hand-built,480,124,785,557,360,0.71,0.75
-2010,All hand-built,1947,352,2738,1877,1373,0.686,0.705
+2010,All hand-built,1942,351,2669,1877,1373,0.703,0.707
 2020,All hand-built,509,247,674,368,321,0.546,0.631
 1980,Newspaper reconstructions,63,16,89,101,45,1.135,0.714
 1990,Newspaper reconstructions,217,27,451,490,110,1.086,0.507
@@ -12,5 +12,5 @@ decade,source,agency_years,agencies,hand_built,shr,exact,shr_per_hand_built,exac
 1980,Other hand-built sources,124,14,1028,911,34,0.886,0.274
 1990,Other hand-built sources,86,18,805,679,35,0.843,0.407
 2000,Other hand-built sources,452,122,762,530,342,0.696,0.757
-2010,Other hand-built sources,1947,352,2738,1877,1373,0.686,0.705
+2010,Other hand-built sources,1942,351,2669,1877,1373,0.703,0.707
 2020,Other hand-built sources,509,247,674,368,321,0.546,0.631

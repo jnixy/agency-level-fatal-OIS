@@ -19,10 +19,11 @@
 #       involving one of these agencies.
 #   (4) Sensitivity: the era ratio with and without newspaper-reconstructed
 #       agency-years.
-#   Hand-built series end in 2022; 2023-2024 are filled with WaPo counts and
-#   2025 with MPV on-duty counts (MPV ran a few % above hand-built counts in
-#   2021-22, WaPo closer, so WaPo is used wherever it exists) for
-#   agencies whose hand-built series runs into 2021-2022 (drawn lighter).
+#   Most hand-built counts for 2015 on were taken from WaPo, so WaPo fills
+#   2015-2024 wherever an agency has no usable hand-built count (hand-built
+#   series end in 2022), and MPV on-duty counts fill 2025 for series that
+#   reach 2024 (MPV ran a few % above hand-built counts in 2021-22, WaPo
+#   closer). Years filled this way are drawn lighter.
 #
 # Inputs:
 #   - output/agency_year_panel.csv                 -- from 05_combine.R
@@ -58,6 +59,7 @@ LAST_NIX      <- 2022L         # last year of hand-built data
 SPLICE_WAPO   <- 2023:2024     # WaPo where it exists: closest to hand-built counts
 SPLICE_MPV    <- 2025L         # MPV (on-duty) after WaPo ended
 SPLICE_YEARS  <- c(SPLICE_WAPO, SPLICE_MPV)
+WAPO_TILE     <- "WaPo (no hand-built count, 2015–24) / MPV (2025)"
 EARLY_ERA     <- 1970:1994
 RECENT_ERA    <- 2015:2025
 MIN_ERA_YEARS <- 5L            # years of data required in each era
@@ -78,24 +80,31 @@ agreement <- read_csv(here("output", "tables", "source_agreement.csv"), show_col
 # Flag on the full panel: flag_newspaper() checks every reconstructed year lands on a row
 nix_agencies <- panel |> flag_newspaper() |> filter(in_nix)
 
-# Splice WaPo only onto series still running at the end of the hand-built
-# data, so 2023-24 extend a series rather than revive one
-splice_ok <- nix_agencies |>
-  filter(year %in% (LAST_NIX - 1):LAST_NIX, !is.na(n_nix)) |>
-  distinct(agency_id)
-
-trend <- nix_agencies |>
-  # A year where only one of an agency's two slugs has data would undercount
-  filter(!(nix_partial %in% TRUE)) |>
-  mutate(spliced = year %in% SPLICE_YEARS & agency_id %in% splice_ok$agency_id,
-         y = case_when(year <= LAST_NIX ~ n_nix,
-                       spliced & year %in% SPLICE_WAPO ~ as.numeric(n_wapo),
-                       spliced & year %in% SPLICE_MPV ~ as.numeric(n_mpv - n_mpv_offduty),
-                       TRUE ~ NA_real_)) |>
+# Which source each agency-year uses. Most hand-built counts for 2015 on were
+# taken from WaPo in the first place, so WaPo fills 2015-24 wherever the
+# hand-built count is missing, partial, or excluded; MPV on-duty extends any
+# series that reaches 2024 into 2025.
+year_source <- nix_agencies |>
   left_join(TREND_EXCLUSIONS |> select(agency_id, first, last), by = "agency_id") |>
-  filter(is.na(first) | !(year >= first & year <= last)) |>
+  mutate(excluded = !is.na(first) & year >= first & year <= last,
+         # A year where only one of an agency's two slugs has data would undercount
+         nix_ok = !is.na(n_nix) & year <= LAST_NIX & !excluded & !(nix_partial %in% TRUE),
+         wapo_ok = year %in% WAPO_YEARS & !is.na(n_wapo),
+         src = case_when(nix_ok ~ "hand-built",
+                         wapo_ok ~ "WaPo",
+                         TRUE ~ NA_character_),
+         y = case_when(src == "hand-built" ~ n_nix,
+                       src == "WaPo" ~ as.numeric(n_wapo)))
+reach_2024 <- year_source |> filter(year == max(WAPO_YEARS), !is.na(y)) |> distinct(agency_id)
+year_source <- year_source |>
+  mutate(mpv_ok = year %in% SPLICE_MPV & agency_id %in% reach_2024$agency_id & !is.na(n_mpv),
+         src = if_else(mpv_ok, "MPV", src),
+         y = if_else(mpv_ok, as.numeric(n_mpv - coalesce(n_mpv_offduty, 0)), y),
+         spliced = src %in% c("WaPo", "MPV"))
+
+trend <- year_source |>
   filter(!is.na(y), year >= FIRST_YEAR) |>
-  select(agency_id, agency_name, state, year, y, spliced, newspaper, n_shr)
+  select(agency_id, agency_name, state, year, y, src, spliced, newspaper, n_shr)
 
 stopifnot(!anyDuplicated(trend[c("agency_id", "year")]))
 
@@ -229,7 +238,9 @@ trend_index <- main$index |>
   mutate(spliced = year %in% SPLICE_YEARS)
 
 pre2000 <- trend_index |> filter(year < 2000)
-wapo_gap <- agreement |> filter(comparison == "Hand-built vs WaPo") |> pull(pct_diff_total)
+# Independent comparison only: most hand-built 2015+ counts were copied from WaPo
+wapo_gap <- agreement |> filter(comparison == "Hand-built (non-WaPo sources) vs WaPo") |> pull(pct_diff_total)
+stopifnot(length(wapo_gap) == 1)
 mpv_gap  <- agreement |> filter(comparison == "Hand-built vs MPV on-duty") |> pull(pct_diff_total)
 x_limits <- c(FIRST_YEAR - 0.5, max(SPLICE_YEARS) + 0.5)
 
@@ -273,7 +284,7 @@ p_n <- ggplot(trend_index, aes(year, agencies)) +
   labs(x = NULL, y = "Agencies",
        caption = str_wrap(sprintf(paste0(
          "Before 2000 the index rests on %d–%d large-city agencies; CIs use t(agencies − 1). ",
-         "Where both exist, WaPo totals run %.0f%% %s hand-built counts (2015–22) and MPV on-duty %.0f%% %s (2013–22). ",
+         "WaPo totals run %.0f%% %s hand-built counts not taken from WaPo (2015–22); MPV on-duty runs %.0f%% %s all hand-built counts (2013–22). ",
          "Excludes series that mix in nonfatal shootings or count incidents."),
          min(pre2000$agencies), max(pre2000$agencies),
          abs(wapo_gap), if (wapo_gap < 0) "below" else "above",
@@ -384,16 +395,15 @@ coverage_share <- tibble(
 )
 stopifnot(coverage_share$wapo_deaths == n_distinct(incidents$id))
 
-tiles <- nix_agencies |>
-  mutate(spliced = year %in% SPLICE_YEARS & agency_id %in% splice_ok$agency_id,
-         status = case_when(year <= LAST_NIX & !is.na(n_nix) & newspaper ~ "Newspaper reconstruction",
+tiles <- year_source |>
+  mutate(status = case_when(year <= LAST_NIX & !is.na(n_nix) & newspaper ~ "Newspaper reconstruction",
                             year <= LAST_NIX & !is.na(n_nix) ~ "Hand-built (other sources)",
-                            spliced ~ "WaPo (2023–24) / MPV (2025)")) |>
+                            spliced ~ WAPO_TILE)) |>
   filter(!is.na(status))
 
 # One labeled row per agency is only readable for the long-run core
 first_year <- tiles |>
-  filter(status != "WaPo (2023–24) / MPV (2025)") |>
+  filter(status != WAPO_TILE) |>
   group_by(agency_id, agency_name, state) |>
   summarise(first = min(year), years = n(), .groups = "drop")
 core <- first_year |>
@@ -407,7 +417,7 @@ p_tiles <- ggplot(tiles |> inner_join(core |> select(agency_id, label), by = "ag
   geom_tile(height = 0.8, width = 0.9) +
   scale_fill_manual(values = c("Hand-built (other sources)" = source_colors[["Hand-built (Nix)"]],
                                "Newspaper reconstruction" = newspaper_color,
-                               "WaPo (2023–24) / MPV (2025)" = spliced_color),
+                               setNames(spliced_color, WAPO_TILE)),
                     name = NULL) +
   guides(fill = guide_legend(nrow = 2, byrow = TRUE)) +
   scale_x_continuous(breaks = seq(1970, 2020, 10), expand = expansion(add = 0.5)) +
@@ -421,8 +431,8 @@ p_tiles <- ggplot(tiles |> inner_join(core |> select(agency_id, label), by = "ag
                           nrow(core), n_later),
        caption = str_wrap(paste0(
          "Share of all deaths in The Washington Post's Fatal Force database. ",
-         "Las Vegas and Cincinnati before 2015 are shown here but left out of the trend ",
-         "figures, because their series mix in nonfatal shootings."), 105)) +
+         "Hand-built counts for Las Vegas and Cincinnati are shown here but left out of the trend ",
+         "figures, because they mix in nonfatal shootings; WaPo stands in for them from 2015."), 105)) +
   theme_project(base_size = 10) +
   theme(panel.grid.major.y = element_blank(), plot.title.position = "plot",
         plot.caption.position = "plot",

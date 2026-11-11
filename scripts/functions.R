@@ -222,10 +222,11 @@ flag_newspaper <- function(panel, news_years = load_newspaper_years()) {
     mutate(newspaper = coalesce(newspaper, FALSE))
 }
 
-# Series that aren't person-level fatal shootings (see README caveats); used by 06 and 07
+# Hand-built years that aren't person-level fatal shootings (see README caveats);
+# used by 06 and 07. In 07, WaPo stands in for these years from 2015 on.
 TREND_EXCLUSIONS <- tribble(
   ~agency_id, ~first, ~last, ~reason,
-  "OHCIP00",  -Inf,   2014,  "Cincinnati before 2015: fatal and nonfatal shootings mixed",
+  "OHCIP00",  -Inf,   2022,  "Cincinnati: hand-built figures mix fatal and nonfatal shootings (2015-19 run far above WaPo)",
   "NV00201",  -Inf,   Inf,   "LVMPD: hand-built figures mix fatal and nonfatal shootings"
 )
 
