@@ -595,8 +595,8 @@ FL00900,FL,Citrus County Sheriff's Office,exact,,11,2
 FL01000,FL,Clay County Sheriff's Office,seed_reviewed,,10,2
 FL01100,FL,Collier County Sheriff's Office,seed_reviewed,,6,2
 FL01200,FL,Columbia County Sheriff's Office,exact,,2,2
-FL01300,FL,Miami-Dade Police Department,seed_reviewed,,132,2
-FL01300,FL,Miami-Dade County Police Department,manual,Name variant,4,2
+FL01300,FL,Miami-Dade Police Department,seed_reviewed,,132,1
+FL01300,FL,Miami-Dade County Police Department,manual,Name variant,4,1
 FL01302,FL,Coral Gables Police Department,seed_reviewed,,2,2
 FL01304,FL,Hialeah Police Department,exact,,12,2
 FL01305,FL,Homestead Police Department,seed_reviewed,,5,2

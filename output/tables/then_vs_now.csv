@@ -17,6 +17,7 @@ CA04313,San Jose Police Department,CA,1.692,2.455,13,11,1976,2015,1994,2025,22,2
 NJNPD00,Newark Police Department,NJ,1.778,1,9,11,1976,2015,1994,2025,16,11,"Newark, NJ",-0.778,TRUE,0.175,About the same
 OHCOP00,Columbus Police Department,OH,1.889,4.818,9,11,1986,2015,1994,2025,17,53,"Columbus, OH",2.929,FALSE,0,More now
 OK05506,Oklahoma City Police Department,OK,2.077,4.545,13,11,1982,2015,1994,2025,27,50,"Oklahoma City, OK",2.469,FALSE,0.001,More now
+FL01300,Miami-Dade Police Department,FL,2.1,4.455,10,11,1985,2015,1994,2025,21,49,"Miami-Dade, FL",2.355,FALSE,0.004,More now
 TXSPD00,San Antonio Police Department,TX,2.2,8.091,5,11,1990,2015,1994,2025,11,89,"San Antonio, TX",5.891,FALSE,0,More now
 CA03400,Sacramento County Sheriff's Department,CA,2.4,2.364,10,11,1985,2015,1994,2025,24,26,"Sacramento Co. Sheriff, CA",-0.036,TRUE,1,About the same
 CA03801,San Francisco Police Department,CA,2.4,2.364,10,11,1985,2015,1994,2025,24,26,"San Francisco, CA",-0.036,TRUE,1,About the same
