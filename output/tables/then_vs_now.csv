@@ -13,6 +13,7 @@ OK07205,Tulsa Police Department,OK,1.167,3.909,6,11,1989,2015,1994,2025,7,43,"Tu
 TX22701,Austin Police Department,TX,1.167,4.273,6,11,1989,2015,1994,2025,7,47,"Austin, TX",3.106,FALSE,0,More now
 CA01005,Fresno Police Department,CA,1.25,2.545,8,11,1987,2015,1994,2025,10,28,"Fresno, CA",1.295,FALSE,0.05,More now
 CA03404,Sacramento Police Department,CA,1.4,1.545,10,11,1985,2015,1994,2025,14,17,"Sacramento, CA",0.145,FALSE,0.858,About the same
+LA02600,Jefferson Parish Sheriff's Office,LA,1.5,2,6,11,1989,2015,1994,2025,9,22,"Jefferson Parish Sheriff's Office, LA",0.5,FALSE,0.574,About the same
 WASPD00,Seattle Police Department,WA,1.6,2.091,15,11,1980,2015,1994,2025,24,23,"Seattle, WA",0.491,FALSE,0.378,About the same
 CA04313,San Jose Police Department,CA,1.692,2.455,13,11,1976,2015,1994,2025,22,27,"San Jose, CA",0.762,FALSE,0.2,About the same
 NJNPD00,Newark Police Department,NJ,1.778,1,9,11,1976,2015,1994,2025,16,11,"Newark, NJ",-0.778,TRUE,0.175,About the same
