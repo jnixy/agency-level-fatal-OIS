@@ -1,12 +1,12 @@
 decade,source,agency_years,agencies,hand_built,shr,exact,shr_per_hand_built,exact_share
 1970,All hand-built,55,15,539,488,9,0.905,0.164
-1980,All hand-built,190,31,1124,1017,80,0.905,0.421
-1990,All hand-built,308,40,1266,1169,145,0.923,0.471
+1980,All hand-built,192,32,1127,1018,80,0.903,0.417
+1990,All hand-built,313,41,1267,1170,150,0.923,0.479
 2000,All hand-built,480,124,785,557,360,0.71,0.75
 2010,All hand-built,1942,351,2669,1877,1373,0.703,0.707
 2020,All hand-built,509,247,674,368,321,0.546,0.631
-1980,Newspaper reconstructions,66,17,96,106,46,1.104,0.697
-1990,Newspaper reconstructions,222,28,461,490,110,1.063,0.495
+1980,Newspaper reconstructions,68,18,99,107,46,1.081,0.676
+1990,Newspaper reconstructions,227,29,462,491,115,1.063,0.507
 2000,Newspaper reconstructions,28,5,23,27,18,1.174,0.643
 1970,Other hand-built sources,55,15,539,488,9,0.905,0.164
 1980,Other hand-built sources,124,14,1028,911,34,0.886,0.274

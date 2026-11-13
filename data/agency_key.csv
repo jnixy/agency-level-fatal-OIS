@@ -270,6 +270,7 @@ olivia_mn,MN06503,Olivia Police Department,MN,local_police,WaPo,
 olmsted_county_mn,MN05500,Olmsted County Sheriff's Office,MN,sheriff,LEAIC 2012,
 omaha_ne,NB02802,Omaha Police Department,NE,local_police,WaPo,
 orange_county,CA03000,Orange County Sheriff's Department,CA,sheriff,WaPo,Orange County SD (CA); ORI matched via exact WaPo agreement 2015-22
+orange_county_fl,FL04800,Orange County Sheriff's Office,FL,sheriff,WaPo,Orange County SO (FL); distinct from orange_county (CA)
 orem_ut,UT02503,Orem Police Department,UT,local_police,WaPo,
 orlando_fl,FL04804,Orlando Police Department,FL,local_police,WaPo,
 orono_mn,MN02715,Orono Police Department,MN,local_police,LEAIC 2012,
