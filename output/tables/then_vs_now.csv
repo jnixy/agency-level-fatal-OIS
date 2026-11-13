@@ -4,6 +4,7 @@ ME00305,Portland Police Department,ME,0.2,0.182,5,11,1990,2015,1994,2025,1,2,"Po
 AK00101,Anchorage Police Department,AK,0.333,2.182,9,11,1986,2015,1994,2025,3,24,"Anchorage, AK",1.848,FALSE,0,More now
 FL04804,Orlando Police Department,FL,0.333,2.364,9,11,1986,2015,1994,2025,3,26,"Orlando, FL",2.03,FALSE,0,More now
 VTVSP00,Vermont State Police,VT,0.389,0.727,18,11,1977,2015,1994,2025,7,8,"Vermont State Police, VT",0.338,FALSE,0.287,About the same
+FL04800,Orange County Sheriff's Office,FL,0.778,2.273,9,11,1986,2015,1994,2025,7,25,"Orange Co. Sheriff, FL",1.495,FALSE,0.012,More now
 TX10100,Harris County Sheriff's Office,TX,0.778,4.545,9,11,1986,2015,1994,2025,7,50,"Harris Co. Sheriff, TX",3.768,FALSE,0,More now
 NB02802,Omaha Police Department,NE,0.786,1.818,14,11,1981,2015,1994,2025,11,20,"Omaha, NE",1.032,FALSE,0.029,More now
 MEMSP00,Maine State Police,ME,1,1.455,5,11,1990,2015,1994,2025,5,16,"Maine State Police, ME",0.455,FALSE,0.639,About the same
