@@ -16,11 +16,7 @@ Annual counts of people shot and killed by on-duty police, by agency, going back
   - the counting rules and analysis plan.
 
   Protocol: [doi.org/10.5281/zenodo.24248721](https://doi.org/10.5281/zenodo.24248721). Code and draw: tag [`protocol-v1.0`](https://github.com/jnixy/agency-level-fatal-OIS/tree/protocol-v1.0); scripts `08_sampling_frame.R`, `08b_coverage_audit.R`, `08c_draw_sample.R`. The headline will be updated when collection is complete.
-- **Three national sources now sit beside the hand-built counts:** Fatal Encounters, Mapping Police Violence, and the FBI's Supplementary Homicide Reports (SHR, from [Jacob Kaplan's concatenated files](https://doi.org/10.3886/E100699V16)). The WaPo merge was rebuilt from checksummed local copies.
 - **Thirty-seven agencies' pre-2000 gaps are filled from local newspapers** (see [Newspaper reconstructions](#newspaper-reconstructions)), plus a period total for the LA County Sheriff (1985–Jul 1990).
-- **Agency key fixes:** five wrong ORI codes corrected and four missing ones filled in.
-
-How each source was linked, and every fix, is documented in [`data/README.md`](data/README.md#how-the-national-sources-were-merged).
 
 ## What these data can show
 
@@ -30,7 +26,7 @@ Are police killing more people now than in decades past? National data can't ans
 
 **How the trend is estimated.** The solid line comes from a Poisson model with agency fixed effects, fit to all 420 hand-built agencies. It compares each agency with itself, so agencies entering or leaving the data don't move the line. Most hand-built counts for 2015 onward were taken from WaPo in the first place (see [Background](#background)), so WaPo fills 2015–24 wherever an agency has no hand-built count; the hand-built series end in 2022. MPV on-duty counts fill 2025 for series that reach 2024. Two hand-built series are left out because they mix in nonfatal shootings, Las Vegas and Cincinnati; WaPo stands in for both from 2015.
 
-**How far back it reaches.** Before 2000, the solid line rests on only 4–48 departments, mostly large cities. It describes big cities, not the country.
+**How far back it reaches.** Before 2000, the solid line rests on only 4–48 departments, mostly large cities. It describes big cities, not the country. The [coverage figure](#coverage-figure) below shows exactly which agency-years each source covers.
 
 **What it shows.** The headline compares one fixed set of agencies: the 47 with at least five years of data both before 1995 and since 2015, shown as the dashed line. In those agencies, fatal police shootings since 2015 run 24% below their 1970–1994 level (ratio 0.76, 95% CI 0.55–1.05).
 
@@ -43,6 +39,8 @@ Are police killing more people now than in decades past? National data can't ans
 - The 34 agencies rebuilt from newspapers come out at 1.28 (0.93–1.76) on their own. Chicago and Los Angeles are set aside here, because their newspaper years are department counts the papers printed and their size swamps the pool. So the rebuilt agencies, many of them fast-growing Sun Belt departments, lean toward killing more people now than before 1995, though the interval includes no change.
 
 The reconstructions are floors, because a search can miss deaths but can't invent them. As an upper bound, raising each newspaper year to SHR's count wherever SHR is higher (an overcorrection, since SHR also counts off-duty killings) moves the headline only to 0.74 (0.54–1.01), and the 34 rebuilt agencies to 1.18 (0.87–1.59). Every run is in [`era_ratio_sensitivity.csv`](output/tables/era_ratio_sensitivity.csv).
+
+<a name="coverage-figure"></a>
 
 ![Agencies with data before 2000](output/figures/coverage_tiles.png)
 
@@ -120,7 +118,7 @@ I decided, for now at least, to focus on fatal shootings, since they're more rel
 
 | Source | Years included | Coverage |
 |---|:---:|---|
-| [Washington Post](https://github.com/washingtonpost/data-police-shootings) | 2015–2024 | Nationwide (most hand-built counts for 2015–22; fills 2015–24 in the trend figures where there is no hand-built count) |
+| [Washington Post](https://github.com/washingtonpost/data-police-shootings) | 2015–2024 | Nationwide (source of most hand-built counts for 2015–22; see [How the trend is estimated](#what-these-data-can-show)) |
 | [Fatal Encounters](https://fatalencounters.org/) | 2000–2021 | Nationwide (separate column; not used to fill gaps) |
 | [Mapping Police Violence](https://mappingpoliceviolence.org/) | 2013–present | Nationwide (separate column; fills 2025 in the trend figures) |
 | [Tampa Bay Times](https://projects.tampabay.com/projects/2017/investigations/florida-police-shootings/database/) | 2009–2014 | Florida |
@@ -157,7 +155,7 @@ I decided, for now at least, to focus on fatal shootings, since they're more rel
 
 ### Newspaper reconstructions
 
-For thirty-seven agencies, years missing from the hand-built series come from local newspapers (plus one period total, for the LA County Sheriff), searched through NewsBank's Access World News. A death counts when the paper reports that an on-duty officer of that agency shot and killed someone; off-duty officers and other agencies at the same scene are left out. Most years were rebuilt case by case and are best read as floors. Chicago's and Los Angeles's are department counts the papers printed. SHR, shown for comparison, also counts off-duty killings.
+For thirty-seven agencies, years missing from the hand-built series come from local newspapers (plus one period total, for the LA County Sheriff), searched through NewsBank's Access World News. A death counts when the paper reports that an on-duty officer of that agency shot and killed someone. Off-duty officers acting on their own are left out, and a shooting involving several agencies counts for each agency whose officer fired (full rules in the README linked below). Most years were rebuilt case by case and are best read as floors. Chicago's and Los Angeles's are department counts the papers printed.
 
 The method, a note on every agency, and the checks against each paper's own counts are in [`data/historical/README.md`](data/historical/README.md). Every case and every exclusion is logged with its source in [`historical_ois_evidence.csv`](data/historical/historical_ois_evidence.csv).
 
@@ -218,8 +216,8 @@ The method, a note on every agency, and the checks against each paper's own coun
 4. **Multi-agency incidents.** In WaPo, FE, and MPV, a death involving several agencies counts once for each agency listed. `n_fe_multi` and `n_mpv_multi` report how many of an agency's deaths were shared. Don't sum the national columns across agencies and call it a national total.
 5. **Agencies WaPo lists under several ORIs** (mostly state police and highway patrols) are each assigned one primary ORI and flagged `wapo_multi_ori`. WaPo also splits Georgia State Patrol into two records; both are assigned to GAGSP00 (see `scripts/02_wapo.R`).
 6. **Off-duty killings.** The hand-built series counts on-duty shootings. MPV includes off-duty killings in `n_mpv` and counts them in `n_mpv_offduty`; subtract them to match the hand-built definition. WaPo includes off-duty officers acting in an official capacity.
-7. **MPV coverage has grown over time.** Against the hand-built counts it runs about 10% low in 2013–15 and a few percent high in 2020–22. Trends built only from MPV may overstate recent increases.
-8. **SHR undercounts, and by different amounts in different decades** (see [How the sources compare](#how-the-sources-compare)). Its zeros can be false, and its 2021 count is depressed by the FBI's move to NIBRS.
+7. **MPV coverage has grown over time** (see [How the sources compare](#how-the-sources-compare)), so trends built only from MPV may overstate recent increases.
+8. **SHR undercounts, by different amounts in different decades, and its zeros can be false** (see [How the sources compare](#how-the-sources-compare)). Its 2021 count is also depressed by the FBI's move to NIBRS.
 
 ## Reproducing the panel
 
@@ -276,5 +274,6 @@ See [`CITATION.cff`](CITATION.cff). Please also cite *The Washington Post*, Fata
 
 ## Earlier updates
 
+- **Early November 2026.** Three national sources now sit beside the hand-built counts: Fatal Encounters, Mapping Police Violence, and the FBI's Supplementary Homicide Reports (SHR, from [Jacob Kaplan's concatenated files](https://doi.org/10.3886/E100699V16)). The WaPo merge was rebuilt from checksummed local copies. In the agency key, five wrong ORI codes were corrected and four missing ones filled in. How each source was linked, and every fix, is documented in [`data/README.md`](data/README.md#how-the-national-sources-were-merged).
 - **11.20.2025.** Ash Bruha found fatal OIS data for **Seattle PD**, 1980 through mid-2001, in [an SPD report](https://s3-us-west-2.amazonaws.com/docs.puppycidedb.com/seattlepd/UseofForce2000.PDF). She also found data for **Denver PD**, 1996–2006, in an [independent monitor's report](https://s3-us-west-2.amazonaws.com/docs.puppycidedb.com/denverpd/OIM/Annual+Reports/2006_Annual+Report.pdf).
 - **1.4.2025.** First WaPo merge (see this [blog post](https://jnix.netlify.app/post/post27-historical-ois-update/)). It now lives in `scripts/02_wapo.R`.

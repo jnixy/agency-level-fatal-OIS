@@ -6,7 +6,11 @@
 
 For thirty-seven agencies, years missing from the hand-built series come from local newspapers, searched through NewsBank's Access World News. For Dallas, they fill the 1992–2002 gap between Geller and Scott and the city's open data; for Austin, 2000–2007 as well.
 
-**What counts.** A death counts when the paper reports that an on-duty officer of that agency shot and killed someone. Off-duty officers (including those working extra jobs), other agencies at the same scene, and suicides during standoffs are left out.
+**What counts.** A death counts when the paper reports that an on-duty officer of that agency shot and killed someone. The rules, applied to every agency:
+- **Joint shootings** count for each agency whose officer fired. A death at a scene where only another agency's officers fired is left out, as is one where the paper doesn't say whose officer fired.
+- **Off-duty officers** acting on their own, including those working extra jobs, are left out. A person killed by an on-duty officer counts even if that person was an off-duty officer committing a crime.
+- **Exchanges of gunfire:** a person who dies in one counts unless an official finding rules the death a suicide. Suicides with no police gunfire are left out.
+- **Custody and vehicle deaths** are left out.
 
 **How each year was searched.** Several ways: full-text searches pairing kill phrases with the agency's name, headline searches, and stories about grand jury or district attorney rulings. Each window runs to January 15 of the next year. Every case and every exclusion is logged with its article and database ID. Where the paper printed its own list, running count, or year-end figure, the reconstruction is checked against it.
 
