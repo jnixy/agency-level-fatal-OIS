@@ -9,6 +9,13 @@ Annual counts of people shot and killed by on-duty police, by agency, going back
 
 ## What's new (November 2026)
 
+- **The long-run comparison is being redone on a pre-specified random sample.** The headline below rests on agencies that were chosen because they had a usable newspaper archive, and it drifted as agencies were added. A protocol deposited before further collection fixes the design:
+  - a frame of 309 police departments and sheriff's offices that served at least 100,000 people in 1985–94;
+  - an outcome-blind audit of each agency's newspaper archive;
+  - a stratified draw (seed 20261115) of 28 certainty and 28 sampled agencies;
+  - the counting rules and analysis plan.
+
+  Protocol: [doi.org/10.5281/zenodo.24248721](https://doi.org/10.5281/zenodo.24248721). Code and draw: tag [`protocol-v1.0`](https://github.com/jnixy/agency-level-fatal-OIS/tree/protocol-v1.0); scripts `08_sampling_frame.R`, `08b_coverage_audit.R`, `08c_draw_sample.R`. The headline will be updated when collection is complete.
 - **Three national sources now sit beside the hand-built counts:** Fatal Encounters, Mapping Police Violence, and the FBI's Supplementary Homicide Reports (SHR, from [Jacob Kaplan's concatenated files](https://doi.org/10.3886/E100699V16)). The WaPo merge was rebuilt from checksummed local copies.
 - **Twenty-two agencies' pre-2000 gaps are filled from local newspapers** (see [Newspaper reconstructions](#newspaper-reconstructions)).
 - **Agency key fixes:** five wrong ORI codes corrected and four missing ones filled in.
