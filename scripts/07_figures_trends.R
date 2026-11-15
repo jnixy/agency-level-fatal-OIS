@@ -429,15 +429,21 @@ coverage_share <- tibble(
 )
 stopifnot(coverage_share$wapo_deaths == n_distinct(incidents$id))
 
+# Each agency-year takes the first source that covers it, so the blank tiles
+# are the true gaps. Newspaper years are hand-built years, so they rank first
+# or they would never show. FE is drawn for reference only: it fills nothing
+# in the trend figures. FE zeros are real only for linked agencies (n_fe not NA).
+FE_TILE <- "Fatal Encounters only (2000–21; not used in the trend figures)"
 tiles <- year_source |>
   mutate(status = case_when(year <= LAST_NIX & !is.na(n_nix) & newspaper ~ "Newspaper reconstruction",
                             year <= LAST_NIX & !is.na(n_nix) ~ "Hand-built (other sources)",
-                            spliced ~ WAPO_TILE)) |>
+                            spliced ~ WAPO_TILE,
+                            !is.na(n_fe) ~ FE_TILE)) |>
   filter(!is.na(status))
 
 # One labeled row per agency is only readable for the long-run core
 first_year <- tiles |>
-  filter(status != WAPO_TILE) |>
+  filter(!status %in% c(WAPO_TILE, FE_TILE)) |>
   group_by(agency_id, agency_name, state) |>
   summarise(first = min(year), years = n(), .groups = "drop")
 core <- first_year |>
@@ -451,9 +457,12 @@ p_tiles <- ggplot(tiles |> inner_join(core |> select(agency_id, label), by = "ag
   geom_tile(height = 0.8, width = 0.9) +
   scale_fill_manual(values = c("Hand-built (other sources)" = source_colors[["Hand-built (Nix)"]],
                                "Newspaper reconstruction" = newspaper_color,
-                               setNames(spliced_color, WAPO_TILE)),
+                               setNames(spliced_color, WAPO_TILE),
+                               setNames(fe_tile_color, FE_TILE)),
+                    breaks = c("Newspaper reconstruction", "Hand-built (other sources)",
+                               WAPO_TILE, FE_TILE),
                     name = NULL) +
-  guides(fill = guide_legend(nrow = 2, byrow = TRUE)) +
+  guides(fill = guide_legend(ncol = 1)) +
   scale_x_continuous(breaks = seq(1970, 2020, 10), expand = expansion(add = 0.5)) +
   labs(x = NULL, y = NULL,
        title = str_wrap(sprintf(paste0("Agencies in these data were involved in at least %s ",
@@ -465,8 +474,10 @@ p_tiles <- ggplot(tiles |> inner_join(core |> select(agency_id, label), by = "ag
                           nrow(core), n_later),
        caption = str_wrap(paste0(
          "Share of all deaths in The Washington Post's Fatal Force database. ",
-         "Hand-built counts for Las Vegas and Cincinnati are shown here but left out of the trend ",
-         "figures, because they mix in nonfatal shootings; WaPo stands in for them from 2015."), 105)) +
+         "Each year takes the first source that covers it, in legend order; blank years have no ",
+         "count from any source. LA County Sheriff's Jan 1985–Jul 1990 period total (no yearly ",
+         "breakdown) is not drawn. Hand-built counts for Las Vegas and Cincinnati are shown here but ",
+         "left out of the trend figures, because they mix in nonfatal shootings; WaPo stands in for them from 2015."), 105)) +
   theme_project(base_size = 10) +
   theme(panel.grid.major.y = element_blank(), plot.title.position = "plot",
         plot.caption.position = "plot",
