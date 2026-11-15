@@ -244,6 +244,8 @@ source_colors <- c(
   "FBI SHR"            = "#5d6d7e"
 )
 spliced_color <- "#9dbfe0"     # lighter tint of the hand-built blue (WaPo-filled years)
+fe_tile_color <- "#c9c9c9"     # neutral grey: FE-only years (reference, unused in trends);
+                               # FE's own gold would clash with the newspaper orange
 neutral_point_color <- "grey30"
 
 # WaPo snapshot checksums (data/README.md); used by 02 and 07
