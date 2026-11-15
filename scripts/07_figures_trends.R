@@ -31,6 +31,9 @@
 #   - data/raw/wapo/fatal-police-shootings-data.csv
 #   - data/clean/wapo_agency_oris.csv              -- from 02_wapo.R
 #   - data/historical/historical_ois_evidence.csv  -- newspaper-sourced years
+#   - data/historical/period_totals.csv            -- multi-year totals with no
+#     yearly breakdown (LASD 1985-Jul 1990); these enter the era comparison
+#     only, with their exposure in years, never the year-by-year index
 #
 # Outputs:
 #   - output/figures/trend_index.png, then_vs_now.png, coverage_tiles.png
@@ -75,6 +78,8 @@ INDEX_BREAKS  <- c(25, 50, 100, 200, 400, 800)
 # 1. Load ----------------------------------------------------------------------
 panel <- read_csv(here("output", "agency_year_panel.csv"), show_col_types = FALSE)
 agreement <- read_csv(here("output", "tables", "source_agreement.csv"), show_col_types = FALSE)
+periods <- read_csv(here("data", "historical", "period_totals.csv"), show_col_types = FALSE,
+                    col_types = cols(start_date = col_date(), end_date = col_date(), .default = col_guess()))
 
 # 2. Trend series ----------------------------------------------------------------
 # Flag on the full panel: flag_newspaper() checks every reconstructed year lands on a row
@@ -111,18 +116,44 @@ stopifnot(!anyDuplicated(trend[c("agency_id", "year")]))
 # One fixed set of agencies for the headline comparison and Figure 2
 era_of <- function(year) case_when(year %in% EARLY_ERA ~ "early",
                                    year %in% RECENT_ERA ~ "recent")
-#' Agencies with at least MIN_ERA_YEARS of data in both eras
+
+# Period totals: a source that gives deaths over a span of years but no yearly
+# breakdown (protocol deviation, LASD). Each becomes one era row whose
+# exposure is the span in years; agency-year rows have exposure 1. The span
+# must not overlap any year the agency already has in the trend data.
+period_rows <- periods |>
+  mutate(exposure = as.numeric(end_date - start_date + 1) / 365.25,
+         year_first = as.integer(format(start_date, "%Y")),
+         year_last = as.integer(format(end_date, "%Y"))) |>
+  inner_join(trend |> distinct(agency_id, agency_name, state), by = "agency_id") |>
+  transmute(agency_id, agency_name, state, year = NA_integer_, era, y = deaths,
+            src = "period total", spliced = FALSE, newspaper = TRUE, n_shr = NA_real_,
+            exposure, year_first, year_last)
+overlap <- period_rows |>
+  inner_join(trend |> select(agency_id, trend_year = year), by = "agency_id",
+             relationship = "many-to-many") |>
+  filter(trend_year >= year_first, trend_year <= year_last)
+stopifnot(nrow(period_rows) == nrow(periods), nrow(overlap) == 0,
+          all(period_rows$era %in% c("early", "recent")),
+          all(era_of(period_rows$year_first) == period_rows$era),
+          all(era_of(period_rows$year_last) == period_rows$era))
+
+trend_era <- bind_rows(trend |> mutate(era = NA_character_, exposure = 1), period_rows)
+
+#' Agencies with at least MIN_ERA_YEARS of data (agency-years plus period
+#' exposure) in both eras
 long_panel_ids <- function(df) {
   df |>
-    mutate(era = era_of(year)) |>
+    mutate(era = coalesce(era, era_of(year))) |>
     filter(!is.na(era)) |>
-    count(agency_id, era) |>
+    group_by(agency_id, era) |>
+    summarise(n = sum(exposure), .groups = "drop") |>
     filter(n >= MIN_ERA_YEARS) |>
     count(agency_id) |>
     filter(n == 2) |>
     select(agency_id)
 }
-long_ids <- long_panel_ids(trend)
+long_ids <- long_panel_ids(trend_era)
 
 # 3. Figure 1: within-agency trend index -----------------------------------------
 #' Fit the year-effects index. Agencies with no deaths in any year carry no
@@ -157,16 +188,17 @@ main <- fit_index(trend)
 long <- fit_index(trend |> semi_join(long_ids, by = "agency_id"))
 
 # Headline: one model, one fixed set of agencies, one ratio with a CI
-to_era <- function(df) df |> mutate(era = era_of(year)) |> filter(!is.na(era))
-era_df <- trend |> semi_join(long_ids, by = "agency_id") |> to_era()
+to_era <- function(df) df |> mutate(era = coalesce(era, era_of(year))) |> filter(!is.na(era))
+era_df <- trend_era |> semi_join(long_ids, by = "agency_id") |> to_era()
 #' Era ratio (recent vs early) with a t(G-1) CI, clustered by agency
 #' @return tibble(agencies, ratio, ci_lo, ci_hi)
 fit_era <- function(df) {
   # All-zero agencies carry no information and fepois drops them; set them
   # aside first so G (clusters, and the t df) counts only agencies used
   kept <- df |> group_by(agency_id) |> filter(sum(y) > 0) |> ungroup()
+  # Exposure is 1 for agency-years and the span in years for period totals
   m <- fepois(y ~ i(era, ref = "early") | agency_id, data = kept,
-              cluster = ~agency_id, notes = FALSE)
+              offset = ~log(exposure), cluster = ~agency_id, notes = FALSE)
   stopifnot(nobs(m) == nrow(kept), rownames(coeftable(m))[1] == "era::recent")
   est <- coeftable(m)[1, ]
   g <- n_distinct(kept$agency_id)
@@ -190,7 +222,7 @@ shr_bound <- function(y, shr, newspaper) {
 # printed, not case-by-case rebuilds, and they outweigh the rest of the pool
 BIG_DEPT_IDS <- c(chicago = "ILCPD00", lapd = "CA01942")
 stopifnot(all(BIG_DEPT_IDS %in% era_df$agency_id))
-no_news <- trend |> filter(!newspaper)
+no_news <- trend_era |> filter(!newspaper)
 news_long <- era_df |> filter(newspaper) |> distinct(agency_id)
 era_sensitivity <- bind_rows(
   fit_era(era_df) |> mutate(sample = "All long-panel agencies (headline)"),
@@ -299,8 +331,10 @@ ggsave(file.path(fig_dir, "trend_index.png"), p_trend,
 # 4. Figure 2: then vs. now -------------------------------------------------------
 then_vs_now <- era_df |>
   group_by(agency_id, agency_name, state, era) |>
-  summarise(years = n(), first = min(year), last = max(year),
-            per_year = mean(y), deaths = sum(y), .groups = "drop") |>
+  # years = exposure, so a period total counts for the span it covers
+  summarise(years = sum(exposure), first = min(coalesce(year, year_first)),
+            last = max(coalesce(year, year_last)),
+            per_year = sum(y) / sum(exposure), deaths = sum(y), .groups = "drop") |>
   pivot_wider(id_cols = c(agency_id, agency_name, state),
               names_from = era, values_from = c(per_year, years, first, last, deaths)) |>
   mutate(label = city_label(agency_name, state),
@@ -478,7 +512,8 @@ trend_summary <- tribble(
   "newspaper_deaths_in_shr_years", sum(news_shr$n_nix),
   "shr_deaths_in_newspaper_years", sum(news_shr$n_shr),
   "newspaper_years_exact_shr",     sum(news_shr$n_nix == news_shr$n_shr),
-  "long_panel_with_newspaper",     nrow(news_long)
+  "long_panel_with_newspaper",     nrow(news_long),
+  "long_panel_with_period_total",  n_distinct(semi_join(period_rows, long_ids, by = "agency_id")$agency_id)
 )
 
 write_csv(trend_index |> mutate(across(where(is.double), \(x) round(x, 4))),

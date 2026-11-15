@@ -8,7 +8,7 @@ NY05101,suffolk county police department,NY,local police department,middle atlan
 CA03711,san diego police department,CA,local police department,pacific,1104594,10,West,250-500k,certainty,TRUE
 MI82349,detroit police department,MI,local police department,east north central,1041863.5,10,Midwest,250-500k,certainty,FALSE
 NY02900,nassau county police department,NY,local police department,middle atlantic,1037238.5,10,Northeast,250-500k,certainty,FALSE
-CA01900,los angeles county sheriff's office,CA,sheriffs office,pacific,1018536.5,10,West,250-500k,certainty,FALSE
+CA01900,los angeles county sheriff's office,CA,sheriffs office,pacific,1018536.5,10,West,250-500k,certainty,TRUE
 TXDPD00,dallas police department,TX,local police department,west south central,1017153,10,South,250-500k,certainty,TRUE
 FL01300,miami-dade (county) police department,FL,local police department,south atlantic,1003555,6,South,250-500k,certainty,TRUE
 AZ00723,phoenix police department,AZ,local police department,mountain,967560,10,West,250-500k,certainty,FALSE
