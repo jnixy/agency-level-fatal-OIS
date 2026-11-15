@@ -200,12 +200,14 @@ The method, a note on every agency, and the checks against each paper's own coun
 | Fairfax County PD (VA) | *The Washington Times* | 1990–1994 | 3 | 3 |
 | Montgomery County PD (MD) | *The Washington Times* | 1990–1994 | 6 | 5 |
 | Prince George's County PD (MD) | *The Washington Times* (paper-stated totals 1992–93) | 1990–1994 | 22 | 28 |
+| LA County Sheriff (period total) | *Daily News of Los Angeles* (Oct. 7, 1990 study) | Jan 1985 – Jul 1990 | 75 | 42 (1985–90) |
 
 
 ## Caveats
 
 1. **Any mistakes are mine.** I did my best to make sure the data permit apples-to-apples comparisons. Each number *should* represent a person fatally shot by an on-duty officer. A few exceptions are known:
    - **Cincinnati before 2015 and all of LVMPD** count fatal and nonfatal shootings together (animal shootings excluded). That's why Cincinnati is the big outlier in [`output/figures/source_agreement.png`](output/figures/source_agreement.png).
+   - **LA County Sheriff, Jan 1985 – Jul 1990,** is a period total, not yearly counts: 75 people killed in on-duty deputy shootings, from a *Daily News* study of every such shooting in that span (Oct. 7, 1990). It enters only the then-vs-now comparison, weighted by its 5.57 years of exposure, and is not used in the year-by-year index. See `data/historical/period_totals.csv`.
    - **Athens-Clarke 2019:** the hand-built count (5) equals WaPo's police department and sheriff's office combined. The AJC data may combine the two agencies.
 2. **Blank is not zero** in the hand-built series. A blank means I have no data for that agency-year.
 3. **How the national sources are counted:**

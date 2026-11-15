@@ -8,7 +8,7 @@ NY05101,suffolk county police department,NY,local police department,middle atlan
 CA03711,san diego police department,CA,local police department,pacific,1104594,10,West,250-500k,certainty,TRUE,NA,NA,NA,NA,already rebuilt
 MI82349,detroit police department,MI,local police department,east north central,1041863.5,10,Midwest,250-500k,certainty,FALSE,Detroit police,NA,0,0,no in-state source
 NY02900,nassau county police department,NY,local police department,middle atlantic,1037238.5,10,Northeast,250-500k,certainty,FALSE,Nassau County police,"Times Union, The (Albany, NY)",0,0,too thin
-CA01900,los angeles county sheriff's office,CA,sheriffs office,pacific,1018536.5,10,West,250-500k,certainty,FALSE,Los Angeles County sheriff,Los Angeles Daily News (CA),5,5,strong
+CA01900,los angeles county sheriff's office,CA,sheriffs office,pacific,1018536.5,10,West,250-500k,certainty,TRUE,Los Angeles County sheriff,Los Angeles Daily News (CA),5,5,already rebuilt
 TXDPD00,dallas police department,TX,local police department,west south central,1017153,10,South,250-500k,certainty,TRUE,NA,NA,NA,NA,already rebuilt
 FL01300,miami-dade (county) police department,FL,local police department,south atlantic,1003555,6,South,250-500k,certainty,TRUE,NA,NA,NA,NA,already rebuilt
 AZ00723,phoenix police department,AZ,local police department,mountain,967560,10,West,250-500k,certainty,FALSE,Phoenix police,"Arizona Daily Star, The (Tucson, AZ)",4,0,too thin

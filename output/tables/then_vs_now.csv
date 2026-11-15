@@ -42,6 +42,7 @@ TXDPD00,Dallas Police Department,TX,7.2,3.091,25,11,1970,2015,1994,2025,180,34,"
 DCMPD00,Metropolitan Police Department,DC,8.667,2.455,6,11,1989,2015,1994,2025,52,27,"Washington, DC",-6.212,TRUE,0,Fewer now
 TXHPD00,Houston Police Department,TX,9.75,10.091,12,11,1980,2015,1991,2025,117,111,"Houston, TX",0.341,FALSE,0.842,About the same
 PAPEP00,Philadelphia Police Department,PA,11.24,4.273,25,11,1970,2015,1994,2025,281,47,"Philadelphia, PA",-6.967,TRUE,0,Fewer now
+CA01900,Los Angeles County Sheriff's Department,CA,16.198,11.455,9.569,11,1985,2015,1994,2025,155,126,"LA Co. Sheriff, CA",-4.744,TRUE,0.004,Fewer now
 ILCPD00,Chicago Police Department,IL,20.5,5.727,20,11,1970,2015,1992,2025,410,63,"Chicago, IL",-14.773,TRUE,0,Fewer now
 CA01942,Los Angeles Police Department,CA,22.7,14.818,20,11,1974,2015,1994,2025,454,163,"Los Angeles, CA",-7.882,TRUE,0,Fewer now
 NY03030,New York Police Department,NY,34.24,9.182,25,11,1970,2015,1994,2025,856,101,"New York City, NY",-25.058,TRUE,0,Fewer now
