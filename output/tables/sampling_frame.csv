@@ -16,7 +16,7 @@ TXSPD00,san antonio police department,TX,local police department,west south cent
 HI00200,honolulu (city and county) police department,HI,local police department,pacific,843807.5,10,West,250-500k,certainty,FALSE
 CA04313,san jose police department,CA,local police department,pacific,770106,10,West,250-500k,certainty,TRUE
 TX10100,harris county sheriff's office,TX,sheriffs office,west south central,767091.5,10,South,250-500k,certainty,TRUE
-VA02901,fairfax county police department,VA,local police department,south atlantic,765167,10,South,250-500k,certainty,FALSE
+VA02901,fairfax county police department,VA,local police department,south atlantic,765167,10,South,250-500k,certainty,TRUE
 MDBPD00,baltimore police department,MD,local police department,south atlantic,759327.5,10,South,250-500k,certainty,FALSE
 CA03801,san francisco police department,CA,local police department,pacific,746056,10,West,250-500k,certainty,TRUE
 MD01604,montgomery county police department,MD,local police department,south atlantic,725404.5,10,South,250-500k,certainty,FALSE
