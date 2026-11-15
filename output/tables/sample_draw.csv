@@ -1,0 +1,156 @@
+ori,agency_name,state_abb,agency_type,division,pop_median_1985_94,years_observed,region,size_tier,stratum,in_long_panel,term,source,years_usable,years_strong,audit_status,pool_n,alloc_n,selected,design_weight
+IL01600,cook county sheriff's office,IL,sheriffs office,east north central,139558,9,Midwest,100-250k,Midwest 100-250k,FALSE,Cook County sheriff,Chicago Sun-Times (IL),5,3,usable,11,3,FALSE,NA
+IL08402,springfield police dept,IL,local police department,east north central,101931,9,Midwest,100-250k,Midwest 100-250k,FALSE,Springfield police,"State Journal-Register, The (Springfield, IL)",5,5,strong,11,3,FALSE,NA
+IN00201,fort wayne police,IN,local police department,east north central,175266.5,10,Midwest,100-250k,Midwest 100-250k,FALSE,Fort Wayne police,"News-Sentinel, The (Fort Wayne, IN)",5,5,strong,11,3,FALSE,NA
+IN04505,gary police,IN,local police department,east north central,126221.5,10,Midwest,100-250k,Midwest 100-250k,FALSE,Gary police,"Post-Tribune, The (Merrillville, IN)",5,5,strong,11,3,FALSE,NA
+MO05000,jefferson county sheriff's office,MO,sheriffs office,west north central,132587,7,Midwest,100-250k,Midwest 100-250k,FALSE,Jefferson County sheriff,St. Louis Post-Dispatch (MO),5,0,usable,11,3,FALSE,NA
+NB05501,lincoln police dept,NE,local police department,west north central,188922,9,Midwest,100-250k,Midwest 100-250k,FALSE,Lincoln police,Omaha World-Herald (NE),5,0,usable,11,3,FALSE,NA
+OH05700,montgomery county sheriff's office,OH,sheriffs office,east north central,118591.5,10,Midwest,100-250k,Midwest 100-250k,FALSE,Montgomery County sheriff,Dayton Daily News (OH),5,2,usable,11,3,FALSE,NA
+OH05702,dayton police department,OH,local police department,east north central,182814.5,10,Midwest,100-250k,Midwest 100-250k,FALSE,Dayton police,Dayton Daily News (OH),5,5,strong,11,3,TRUE,3.6666666666666665
+OH07600,stark county sheriff's office,OH,sheriffs office,east north central,120342.5,8,Midwest,100-250k,Midwest 100-250k,FALSE,Stark County sheriff,Akron Beacon Journal (OH),5,0,usable,11,3,TRUE,3.6666666666666665
+OH07701,akron police department,OH,local police department,east north central,225876,10,Midwest,100-250k,Midwest 100-250k,FALSE,Akron police,Akron Beacon Journal (OH),5,5,strong,11,3,FALSE,NA
+WI01301,madison police department,WI,local police department,east north central,185136,10,Midwest,100-250k,Midwest 100-250k,FALSE,Madison police,Wisconsin State Journal (WI),5,5,strong,11,3,TRUE,3.6666666666666665
+INIPD00,indianapolis police,IN,local police department,east north central,480940,10,Midwest,250-500k,Midwest 250-500k,TRUE,NA,NA,NA,NA,already rebuilt,8,2,FALSE,NA
+KS08703,wichita police department,KS,local police department,west north central,295062,8,Midwest,250-500k,Midwest 250-500k,FALSE,Wichita police,"Wichita Eagle, The (KS)",5,5,strong,8,2,FALSE,NA
+MN02711,minneapolis police department,MN,local police department,west north central,364745,9,Midwest,250-500k,Midwest 250-500k,FALSE,Minneapolis police,"Minnesota Star Tribune, The (Minneapolis, MN)",5,5,strong,8,2,FALSE,NA
+MN06209,st. paul police department,MN,local police department,west north central,270229,10,Midwest,250-500k,Midwest 250-500k,FALSE,St. Paul police,St. Paul Pioneer Press (MN),5,5,strong,8,2,TRUE,4
+MO09500,st. louis county police dept,MO,local police department,west north central,419739,10,Midwest,250-500k,Midwest 250-500k,FALSE,St. Louis County police,St. Louis Post-Dispatch (MO),5,5,strong,8,2,TRUE,4
+MOKPD00,kansas city police department,MO,local police department,west north central,440798.5,10,Midwest,250-500k,Midwest 250-500k,TRUE,NA,NA,NA,NA,already rebuilt,8,2,FALSE,NA
+MOSPD00,st. louis (city) police dept,MO,local police department,west north central,403819.5,10,Midwest,250-500k,Midwest 250-500k,TRUE,NA,NA,NA,NA,already rebuilt,8,2,FALSE,NA
+NB02802,omaha police dept,NE,local police department,west north central,341753,7,Midwest,250-500k,Midwest 250-500k,TRUE,NA,NA,NA,NA,already rebuilt,8,2,FALSE,NA
+CT00093,new haven police department,CT,local police department,new england,125263,10,Northeast,100-250k,Northeast 100-250k,FALSE,New Haven police,New Haven Register (CT),5,5,strong,13,3,FALSE,NA
+MA00718,springfield police department,MA,local police department,new england,152649.5,10,Northeast,100-250k,Northeast 100-250k,FALSE,Springfield police,"Republican, The (Springfield, MA)",5,5,strong,13,3,FALSE,NA
+MA01460,worcester police department,MA,local police department,new england,160655,8,Northeast,100-250k,Northeast 100-250k,FALSE,Worcester police,Worcester Telegram & Gazette (MA),5,5,strong,13,3,TRUE,4.333333333333333
+NJ01608,paterson police,NJ,local police department,middle atlantic,140805.5,10,Northeast,100-250k,Northeast 100-250k,FALSE,Paterson police,"Record, The (Hackensack, NJ)",5,5,strong,13,3,FALSE,NA
+NJ02004,elizabeth police,NJ,local police department,middle atlantic,109045.5,10,Northeast,100-250k,Northeast 100-250k,FALSE,Elizabeth police,"Star-Ledger, The (Newark, NJ)",5,4,usable,13,3,FALSE,NA
+NY00101,albany police department,NY,local police department,middle atlantic,100114.5,10,Northeast,100-250k,Northeast 100-250k,FALSE,Albany police,"Times Union, The (Albany, NY)",5,5,strong,13,3,FALSE,NA
+NY01400,erie county sheriff's office,NY,sheriffs office,middle atlantic,103727,4,Northeast,100-250k,Northeast 100-250k,FALSE,Erie County sheriff,"Buffalo News, The (NY)",5,5,strong,13,3,FALSE,NA
+NY01451,amherst town police department,NY,local police department,middle atlantic,107238,5,Northeast,100-250k,Northeast 100-250k,FALSE,Amherst police,"Buffalo News, The (NY)",5,5,strong,13,3,TRUE,4.333333333333333
+NY03300,onondaga county sheriff's office,NY,sheriffs office,middle atlantic,107997,7,Northeast,100-250k,Northeast 100-250k,FALSE,Onondaga County sheriff,"Post-Standard, The (Syracuse, NY)",5,5,strong,13,3,FALSE,NA
+NY03301,syracuse police department,NY,local police department,middle atlantic,163743,10,Northeast,100-250k,Northeast 100-250k,FALSE,Syracuse police,Syracuse Herald-Journal (NY),5,5,strong,13,3,FALSE,NA
+NY04500,saratoga county sheriff's office,NY,sheriffs office,middle atlantic,111165.5,8,Northeast,100-250k,Northeast 100-250k,FALSE,Saratoga County sheriff,"Times Union, The (Albany, NY)",5,0,usable,13,3,FALSE,NA
+PA03901,allentown police department,PA,local police department,middle atlantic,105661.5,10,Northeast,100-250k,Northeast 100-250k,FALSE,Allentown police,"Morning Call, The (Allentown, PA)",5,5,strong,13,3,FALSE,NA
+RI00409,providence police department,RI,local police department,new england,159078,10,Northeast,100-250k,Northeast 100-250k,FALSE,Providence police,Providence Journal (RI),5,5,strong,13,3,TRUE,4.333333333333333
+NJNPD00,newark police,NJ,local police department,middle atlantic,295691.5,10,Northeast,250-500k,Northeast 250-500k,TRUE,NA,NA,NA,NA,already rebuilt,3,2,TRUE,1.5
+NY01401,buffalo police department,NY,local police department,middle atlantic,326955,10,Northeast,250-500k,Northeast 250-500k,FALSE,Buffalo police,"Buffalo News, The (NY)",5,5,strong,3,2,TRUE,1.5
+PAPPD00,pittsburgh police department,PA,local police department,middle atlantic,376412,9,Northeast,250-500k,Northeast 250-500k,FALSE,Pittsburgh police,Pittsburgh Post-Gazette (PA),5,3,usable,3,2,FALSE,NA
+FL00500,brevard county sheriff's office,FL,sheriffs office,south atlantic,156150.5,6,South,100-250k,South 100-250k,FALSE,Brevard County sheriff,"Orlando Sentinel, The (FL)",8,0,usable,38,7,FALSE,NA
+FL00600,broward county sheriff's office,FL,sheriffs office,south atlantic,161069,6,South,100-250k,South 100-250k,TRUE,NA,NA,NA,NA,already rebuilt,38,7,FALSE,NA
+FL00603,fort lauderdale police department,FL,local police department,south atlantic,154452.5,6,South,100-250k,South 100-250k,FALSE,Fort Lauderdale police,"Miami Herald, The (FL)",5,5,strong,38,7,FALSE,NA
+FL00605,hollywood police department,FL,local police department,south atlantic,125244.5,6,South,100-250k,South 100-250k,FALSE,Hollywood police,"Miami Herald, The (FL)",5,5,strong,38,7,FALSE,NA
+FL01304,hialeah police department,FL,local police department,south atlantic,164265.5,4,South,100-250k,South 100-250k,FALSE,Hialeah police,"Miami Herald, The (FL)",5,1,usable,38,7,FALSE,NA
+FL04100,manatee county sheriff's office,FL,sheriffs office,south atlantic,140172,6,South,100-250k,South 100-250k,FALSE,Manatee County sheriff,"Bradenton Herald, The (FL)",5,5,strong,38,7,FALSE,NA
+FL04804,orlando police department,FL,local police department,south atlantic,160972,6,South,100-250k,South 100-250k,TRUE,NA,NA,NA,NA,already rebuilt,38,7,FALSE,NA
+FL05100,pasco county sheriff's office,FL,sheriffs office,south atlantic,238707,6,South,100-250k,South 100-250k,FALSE,Pasco County sheriff,Tampa Bay Times (FL),5,5,strong,38,7,FALSE,NA
+FL05203,clearwater police department,FL,local police department,south atlantic,100209,6,South,100-250k,South 100-250k,FALSE,Clearwater police,Tampa Bay Times (FL),5,5,strong,38,7,FALSE,NA
+FL05214,st. petersburg police department,FL,local police department,south atlantic,247661,6,South,100-250k,South 100-250k,FALSE,St. Petersburg police,Tampa Bay Times (FL),5,5,strong,38,7,FALSE,NA
+FL05300,polk county sheriff's office,FL,sheriffs office,south atlantic,241543,6,South,100-250k,South 100-250k,FALSE,Polk County sheriff,"Tampa Tribune, The (FL)",5,4,usable,38,7,TRUE,5.428571428571429
+FL05900,seminole county sheriff's office,FL,sheriffs office,south atlantic,140157,6,South,100-250k,South 100-250k,FALSE,Seminole County sheriff,"Orlando Sentinel, The (FL)",5,5,strong,38,7,FALSE,NA
+FL06400,volusia county sheriff's office,FL,sheriffs office,south atlantic,147996,6,South,100-250k,South 100-250k,FALSE,Volusia County sheriff,"Orlando Sentinel, The (FL)",5,5,strong,38,7,TRUE,5.428571428571429
+GA03101,clayton county police department,GA,local police department,south atlantic,137662.5,10,South,100-250k,South 100-250k,FALSE,Clayton County police,"Atlanta Journal-Constitution, The (GA)",5,1,usable,38,7,FALSE,NA
+GA06013,fulton county police department,GA,local police department,south atlantic,141264.5,10,South,100-250k,South 100-250k,FALSE,Fulton County police,"Atlanta Journal-Constitution, The (GA)",5,4,usable,38,7,FALSE,NA
+KY03402,lexington division of police,KY,local police department,east south central,225918,9,South,100-250k,South 100-250k,FALSE,Lexington police,Lexington Herald-Leader (KY),5,5,strong,38,7,FALSE,NA
+LA00901,shreveport police department,LA,local police department,west south central,209205,10,South,100-250k,South 100-250k,FALSE,Shreveport police,"Advocate, The (Baton Rouge, LA)",5,0,usable,38,7,FALSE,NA
+LA01700,east baton rouge parish sheriff's office,LA,sheriffs office,west south central,125089.5,10,South,100-250k,South 100-250k,FALSE,East Baton Rouge Parish sheriff,"Advocate, The (Baton Rouge, LA)",5,1,usable,38,7,TRUE,5.428571428571429
+LA01702,baton rouge police department,LA,local police department,west south central,236421.5,10,South,100-250k,South 100-250k,FALSE,Baton Rouge police,"Advocate, The (Baton Rouge, LA)",5,5,strong,38,7,TRUE,5.428571428571429
+MD01401,howard county police department,MD,local police department,south atlantic,176437,10,South,100-250k,South 100-250k,FALSE,Howard County police,"Sun, The (Baltimore, MD)",5,4,usable,38,7,FALSE,NA
+NC02600,cumberland county sheriff's office,NC,sheriffs office,south atlantic,180433.5,10,South,100-250k,South 100-250k,FALSE,Cumberland County sheriff,"Fayetteville Observer, The (NC)",5,5,strong,38,7,TRUE,5.428571428571429
+NC03402,winston-salem police department,NC,local police department,south atlantic,147679,10,South,100-250k,South 100-250k,FALSE,Winston-Salem police,"News & Record (Greensboro, NC)",5,2,usable,38,7,FALSE,NA
+NC04102,greensboro police department,NC,local police department,south atlantic,183921,10,South,100-250k,South 100-250k,FALSE,Greensboro police,"News & Record (Greensboro, NC)",5,5,strong,38,7,FALSE,NA
+SC03200,lexington county sheriff's office,SC,sheriffs office,south atlantic,120982.5,10,South,100-250k,South 100-250k,FALSE,Lexington County sheriff,"State, The (Columbia, SC)",5,0,usable,38,7,TRUE,5.428571428571429
+SC04000,richland county sheriff's office,SC,sheriffs office,south atlantic,184510.5,10,South,100-250k,South 100-250k,FALSE,Richland County sheriff,"State, The (Columbia, SC)",5,4,usable,38,7,FALSE,NA
+SC04200,spartanburg county sheriff's office,SC,sheriffs office,south atlantic,154161.5,10,South,100-250k,South 100-250k,FALSE,Spartanburg County sheriff,"Herald-Journal (Spartanburg, SC)",5,4,usable,38,7,FALSE,NA
+TX04306,plano police department,TX,local police department,west south central,128713,9,South,100-250k,South 100-250k,FALSE,Plano police,"Dallas Morning News, The (TX)",5,2,usable,38,7,FALSE,NA
+TX05711,garland police department,TX,local police department,west south central,181369,10,South,100-250k,South 100-250k,FALSE,Garland police,"Dallas Morning News, The (TX)",5,0,usable,38,7,FALSE,NA
+TX10115,pasadena police department,TX,local police department,west south central,122029,10,South,100-250k,South 100-250k,FALSE,Pasadena police,Houston Chronicle (TX),5,0,usable,38,7,FALSE,NA
+TX17000,montgomery county sheriff's office,TX,sheriffs office,west south central,150464.5,10,South,100-250k,South 100-250k,FALSE,Montgomery County sheriff,Houston Chronicle (TX),6,0,usable,38,7,FALSE,NA
+VA02101,chesterfield county police department,VA,local police department,south atlantic,197697.5,10,South,100-250k,South 100-250k,FALSE,Chesterfield County police,Richmond Times-Dispatch (VA),5,2,usable,38,7,FALSE,NA
+VA04301,henrico county division of police,VA,local police department,south atlantic,214723.5,10,South,100-250k,South 100-250k,FALSE,Henrico County police,Richmond Times-Dispatch (VA),5,2,usable,38,7,FALSE,NA
+VA09900,alexandria police department,VA,local police department,south atlantic,110584,10,South,100-250k,South 100-250k,FALSE,Alexandria police,"Washington Times, The (DC)",5,0,usable,38,7,FALSE,NA
+VA10300,chesapeake police department,VA,local police department,south atlantic,150903,10,South,100-250k,South 100-250k,FALSE,Chesapeake police,"Virginian-Pilot, The (Norfolk, VA)",5,4,usable,38,7,FALSE,NA
+VA11100,hampton police department,VA,local police department,south atlantic,133194.5,10,South,100-250k,South 100-250k,FALSE,Hampton police,"Daily Press (Newport News, VA)",5,5,strong,38,7,FALSE,NA
+VA11600,newport news police department,VA,local police department,south atlantic,167692.5,10,South,100-250k,South 100-250k,FALSE,Newport News police,"Daily Press (Newport News, VA)",5,5,strong,38,7,FALSE,NA
+VA12000,portsmouth police department,VA,local police department,south atlantic,108033.5,10,South,100-250k,South 100-250k,FALSE,Portsmouth police,"Virginian-Pilot, The (Norfolk, VA)",5,3,usable,38,7,FALSE,NA
+VA12200,richmond police department,VA,local police department,south atlantic,212754,10,South,100-250k,South 100-250k,FALSE,Richmond police,Richmond Times-Dispatch (VA),5,5,strong,38,7,TRUE,5.428571428571429
+FL01306,miami police department,FL,local police department,south atlantic,382534.5,6,South,250-500k,South 250-500k,FALSE,Miami police,"Miami Herald, The (FL)",5,5,strong,18,4,FALSE,NA
+FL02902,tampa police department,FL,local police department,south atlantic,290398.5,6,South,250-500k,South 250-500k,FALSE,Tampa police,"Tampa Tribune, The (FL)",5,5,strong,18,4,FALSE,NA
+FL04800,orange county sheriff's office,FL,sheriffs office,south atlantic,416140.5,6,South,250-500k,South 250-500k,TRUE,NA,NA,NA,NA,already rebuilt,18,4,FALSE,NA
+FL05000,palm beach county sheriff's office,FL,sheriffs office,south atlantic,374046,6,South,250-500k,South 250-500k,FALSE,Palm Beach County sheriff,"Palm Beach Post, The (FL)",5,5,strong,18,4,FALSE,NA
+FL05200,pinellas county sheriff's office,FL,sheriffs office,south atlantic,261844,6,South,250-500k,South 250-500k,FALSE,Pinellas County sheriff,Tampa Bay Times (FL),5,5,strong,18,4,FALSE,NA
+GA03302,cobb county police department,GA,local police department,south atlantic,352004,8,South,250-500k,South 250-500k,TRUE,NA,NA,NA,NA,already rebuilt,18,4,TRUE,4.5
+GA04402,dekalb county police department,GA,local police department,south atlantic,462225,10,South,250-500k,South 250-500k,FALSE,Dekalb County police,"Atlanta Journal-Constitution, The (GA)",5,4,usable,18,4,FALSE,NA
+GA06702,gwinnett county police department,GA,local police department,south atlantic,288347,9,South,250-500k,South 250-500k,FALSE,Gwinnett County police,"Atlanta Journal-Constitution, The (GA)",5,0,usable,18,4,FALSE,NA
+GAAPD00,atlanta police department,GA,local police department,south atlantic,418843,10,South,250-500k,South 250-500k,TRUE,NA,NA,NA,NA,already rebuilt,18,4,FALSE,NA
+KY05602,louisville pd,KY,local police department,east south central,276307,9,South,250-500k,South 250-500k,FALSE,Louisville police,Lexington Herald-Leader (KY),5,0,usable,18,4,TRUE,4.5
+LA02600,jefferson parish sheriff's office,LA,sheriffs office,west south central,349647.5,10,South,250-500k,South 250-500k,TRUE,NA,NA,NA,NA,already rebuilt,18,4,TRUE,4.5
+MD00202,anne arundel county police department,MD,local police department,south atlantic,391853,10,South,250-500k,South 250-500k,FALSE,Anne Arundel County police,"Sun, The (Baltimore, MD)",5,4,usable,18,4,FALSE,NA
+NC06001,charlotte - mecklenburg police department,NC,local police department,south atlantic,384273,10,South,250-500k,South 250-500k,TRUE,NA,NA,NA,NA,already rebuilt,18,4,FALSE,NA
+OK05506,oklahoma city police department,OK,local police department,west south central,444419,10,South,250-500k,South 250-500k,TRUE,NA,NA,NA,NA,already rebuilt,18,4,FALSE,NA
+OK07205,tulsa police department,OK,local police department,west south central,374238.5,10,South,250-500k,South 250-500k,TRUE,NA,NA,NA,NA,already rebuilt,18,4,FALSE,NA
+TX22701,austin police department,TX,local police department,west south central,469224.5,10,South,250-500k,South 250-500k,TRUE,NA,NA,NA,NA,already rebuilt,18,4,FALSE,NA
+VA11700,norfolk police department,VA,local police department,south atlantic,274858.5,10,South,250-500k,South 250-500k,FALSE,Norfolk police,"Virginian-Pilot, The (Norfolk, VA)",5,5,strong,18,4,FALSE,NA
+VA12800,virginia beach police department,VA,local police department,south atlantic,381692.5,10,South,250-500k,South 250-500k,FALSE,Virginia Beach police,"Virginian-Pilot, The (Norfolk, VA)",5,5,strong,18,4,TRUE,4.5
+AK00101,anchorage police department,AK,local police department,pacific,232805,10,West,100-250k,West 100-250k,TRUE,NA,NA,NA,NA,already rebuilt,24,4,FALSE,NA
+CA00100,alameda county sheriff's office,CA,sheriffs office,pacific,123359.5,10,West,100-250k,West 100-250k,FALSE,Alameda County sheriff,"Mercury News, The (San Jose, CA)",8,0,usable,24,4,TRUE,6
+CA00105,fremont police department,CA,local police department,pacific,172169,10,West,100-250k,West 100-250k,FALSE,Fremont police,"Mercury News, The (San Jose, CA)",5,4,usable,24,4,FALSE,NA
+CA01000,fresno county sheriff's office,CA,sheriffs office,pacific,184724,10,West,100-250k,West 100-250k,FALSE,Fresno County sheriff,"Fresno Bee, The (CA)",5,5,strong,24,4,FALSE,NA
+CA01925,glendale police department,CA,local police department,pacific,172482.5,10,West,100-250k,West 100-250k,FALSE,Glendale police,Los Angeles Daily News (CA),5,5,strong,24,4,FALSE,NA
+CA01933,inglewood police department,CA,local police department,pacific,108325.5,10,West,100-250k,West 100-250k,FALSE,Inglewood police,"Daily Breeze (Torrance, CA)",5,1,usable,24,4,FALSE,NA
+CA01972,torrance police department,CA,local police department,pacific,138026,10,West,100-250k,West 100-250k,FALSE,Torrance police,"Daily Breeze (Torrance, CA)",5,5,strong,24,4,TRUE,6
+CA03008,fullerton police department,CA,local police department,pacific,113777,10,West,100-250k,West 100-250k,FALSE,Fullerton police,"Orange County Register, The (Santa Ana, CA)",5,1,usable,24,4,FALSE,NA
+CA03009,garden grove police department,CA,local police department,pacific,141839,10,West,100-250k,West 100-250k,FALSE,Garden Grove police,"Orange County Register, The (Santa Ana, CA)",5,0,usable,24,4,FALSE,NA
+CA03010,huntington beach police department,CA,local police department,pacific,188263,10,West,100-250k,West 100-250k,FALSE,Huntington Beach police,"Orange County Register, The (Santa Ana, CA)",5,0,usable,24,4,FALSE,NA
+CA03015,orange police department,CA,local police department,pacific,109583,10,West,100-250k,West 100-250k,FALSE,Orange police,"Orange County Register, The (Santa Ana, CA)",5,0,usable,24,4,FALSE,NA
+CA03702,chula vista police department,CA,local police department,pacific,132372,10,West,100-250k,West 100-250k,FALSE,Chula Vista police,"San Diego Union-Tribune, The (CA)",8,0,usable,24,4,FALSE,NA
+CA03706,escondido police department,CA,local police department,pacific,103275,10,West,100-250k,West 100-250k,FALSE,Escondido police,"San Diego Union-Tribune, The (CA)",9,0,usable,24,4,FALSE,NA
+CA03710,oceanside police department,CA,local police department,pacific,122004.5,10,West,100-250k,West 100-250k,FALSE,Oceanside police,"San Diego Union-Tribune, The (CA)",5,2,usable,24,4,FALSE,NA
+CA04300,santa clara county sheriff's office,CA,sheriffs office,pacific,109469,10,West,100-250k,West 100-250k,FALSE,Santa Clara County sheriff,"Mercury News, The (San Jose, CA)",5,2,usable,24,4,FALSE,NA
+CA05000,stanislaus county sheriff's office,CA,sheriffs office,pacific,102124.5,10,West,100-250k,West 100-250k,FALSE,Stanislaus County sheriff,"Modesto Bee, The (CA)",5,2,usable,24,4,FALSE,NA
+CA05002,modesto police department,CA,local police department,pacific,158667.5,10,West,100-250k,West 100-250k,FALSE,Modesto police,"Modesto Bee, The (CA)",5,5,strong,24,4,FALSE,NA
+CA05400,tulare county sheriff's office,CA,sheriffs office,pacific,139952.5,10,West,100-250k,West 100-250k,FALSE,Tulare County sheriff,"Fresno Bee, The (CA)",8,2,usable,24,4,FALSE,NA
+CA05604,oxnard police department,CA,local police department,pacific,137869.5,10,West,100-250k,West 100-250k,FALSE,Oxnard police,Los Angeles Daily News (CA),5,3,usable,24,4,FALSE,NA
+CO00101,aurora police department,CO,local police department,mountain,221024,10,West,100-250k,West 100-250k,FALSE,Aurora police,"Rocky Mountain News (Denver, CO)",5,5,strong,24,4,TRUE,6
+CO00300,arapahoe county sheriff's office,CO,sheriffs office,mountain,117214,9,West,100-250k,West 100-250k,FALSE,Arapahoe County sheriff,"Rocky Mountain News (Denver, CO)",5,0,usable,24,4,FALSE,NA
+CO03004,lakewood police department,CO,local police department,mountain,125481.5,10,West,100-250k,West 100-250k,FALSE,Lakewood police,"Rocky Mountain News (Denver, CO)",5,0,usable,24,4,FALSE,NA
+OR00300,clackamas county sheriff's office,OR,sheriffs office,pacific,170522.5,10,West,100-250k,West 100-250k,FALSE,Clackamas County sheriff,"Oregonian, The (Portland, OR)",5,0,usable,24,4,TRUE,6
+UT01803,salt lake city police department,UT,local police department,mountain,164264.5,10,West,100-250k,West 100-250k,FALSE,Salt Lake City police,"Salt Lake Tribune, The (UT)",5,4,usable,24,4,FALSE,NA
+CA00109,oakland police department,CA,local police department,pacific,371399,10,West,250-500k,West 250-500k,FALSE,Oakland police,"Mercury News, The (San Jose, CA)",5,3,usable,12,3,FALSE,NA
+CA01005,fresno police department,CA,local police department,pacific,334710,10,West,250-500k,West 250-500k,TRUE,NA,NA,NA,NA,already rebuilt,12,3,FALSE,NA
+CA01941,long beach police department,CA,local police department,pacific,427729,10,West,250-500k,West 250-500k,FALSE,Long Beach police,Long Beach Press-Telegram (CA),5,5,strong,12,3,FALSE,NA
+CA03000,orange cnty sheriffs dept,CA,sheriffs office,pacific,256536,10,West,250-500k,West 250-500k,FALSE,Orange County sheriff,"Orange County Register, The (Santa Ana, CA)",5,5,strong,12,3,FALSE,NA
+CA03001,anaheim police department,CA,local police department,pacific,258776,10,West,250-500k,West 250-500k,TRUE,NA,NA,NA,NA,already rebuilt,12,3,FALSE,NA
+CA03019,santa ana police department,CA,local police department,pacific,268947.5,10,West,250-500k,West 250-500k,FALSE,Santa Ana police,"Orange County Register, The (Santa Ana, CA)",5,5,strong,12,3,FALSE,NA
+CA03404,sacramento police department,CA,local police department,pacific,358268.5,10,West,250-500k,West 250-500k,TRUE,NA,NA,NA,NA,already rebuilt,12,3,FALSE,NA
+CO02101,colorado springs police department,CO,local police department,mountain,282811,10,West,250-500k,West 250-500k,TRUE,NA,NA,NA,NA,already rebuilt,12,3,TRUE,4
+CODPD00,denver police department,CO,local police department,mountain,499478.5,10,West,250-500k,West 250-500k,TRUE,NA,NA,NA,NA,already rebuilt,12,3,TRUE,4
+OR02602,portland police bureau,OR,local police department,pacific,431553.5,10,West,250-500k,West 250-500k,TRUE,NA,NA,NA,NA,already rebuilt,12,3,FALSE,NA
+UT01800,unified police department of greater salt lake,UT,local police department,mountain,285837,10,West,250-500k,West 250-500k,FALSE,Salt Lake County sheriff,"Deseret News, The (Salt Lake City, UT)",5,5,strong,12,3,FALSE,NA
+WA03100,snohomish county sheriff's office,WA,sheriffs office,pacific,256162.5,10,West,250-500k,West 250-500k,FALSE,Snohomish County sheriff,"Seattle Times, The (WA)",5,5,strong,12,3,TRUE,4
+CA01900,los angeles county sheriff's office,CA,sheriffs office,pacific,1018536.5,10,West,250-500k,certainty,FALSE,Los Angeles County sheriff,Los Angeles Daily News (CA),5,5,strong,NA,NA,TRUE,1
+CA01942,los angeles police department,CA,local police department,pacific,3463423.5,10,West,250-500k,certainty,TRUE,NA,NA,NA,NA,already rebuilt,NA,NA,TRUE,1
+CA03400,sacramento county sheriff's office,CA,sheriffs office,pacific,627415.5,10,West,250-500k,certainty,TRUE,NA,NA,NA,NA,already rebuilt,NA,NA,TRUE,1
+CA03700,san diego county sheriff's office,CA,sheriffs office,pacific,716410,10,West,250-500k,certainty,TRUE,NA,NA,NA,NA,already rebuilt,NA,NA,TRUE,1
+CA03711,san diego police department,CA,local police department,pacific,1104594,10,West,250-500k,certainty,TRUE,NA,NA,NA,NA,already rebuilt,NA,NA,TRUE,1
+CA03801,san francisco police department,CA,local police department,pacific,746056,10,West,250-500k,certainty,TRUE,NA,NA,NA,NA,already rebuilt,NA,NA,TRUE,1
+CA04313,san jose police department,CA,local police department,pacific,770106,10,West,250-500k,certainty,TRUE,NA,NA,NA,NA,already rebuilt,NA,NA,TRUE,1
+DCMPD00,washington metropolitan police department,DC,local police department,south atlantic,605450,10,South,250-500k,certainty,TRUE,NA,NA,NA,NA,already rebuilt,NA,NA,TRUE,1
+FL01300,miami-dade (county) police department,FL,local police department,south atlantic,1003555,6,South,250-500k,certainty,TRUE,NA,NA,NA,NA,already rebuilt,NA,NA,TRUE,1
+FL02900,hillsborough county sheriff's office,FL,sheriffs office,south atlantic,508744,6,South,250-500k,certainty,FALSE,Hillsborough County sheriff,"Tampa Tribune, The (FL)",5,5,strong,NA,NA,TRUE,1
+ILCPD00,chicago police dept,IL,local police department,east north central,2832901,9,Midwest,250-500k,certainty,TRUE,NA,NA,NA,NA,already rebuilt,NA,NA,TRUE,1
+LANPD00,new orleans police department,LA,local police department,west south central,528589,9,South,250-500k,certainty,FALSE,New Orleans police,"Times-Picayune, The (New Orleans, LA)",5,5,strong,NA,NA,TRUE,1
+MD00301,baltimore county police department,MD,local police department,south atlantic,696385.5,10,South,250-500k,certainty,FALSE,Baltimore County police,"Sun, The (Baltimore, MD)",5,4,usable,NA,NA,TRUE,1
+MD01604,montgomery county police department,MD,local police department,south atlantic,725404.5,10,South,250-500k,certainty,FALSE,Montgomery County police,"Washington Times, The (DC)",5,5,strong,NA,NA,TRUE,1
+MD01721,prince george's county police department,MD,local police department,south atlantic,611113.5,10,South,250-500k,certainty,FALSE,Prince George's County police,"Washington Times, The (DC)",5,5,strong,NA,NA,TRUE,1
+MDBPD00,baltimore police department,MD,local police department,south atlantic,759327.5,10,South,250-500k,certainty,FALSE,Baltimore police,"Sun, The (Baltimore, MD)",5,4,usable,NA,NA,TRUE,1
+NY03030,new york city police department,NY,local police department,middle atlantic,7341288,10,Northeast,250-500k,certainty,TRUE,NA,NA,NA,NA,already rebuilt,NA,NA,TRUE,1
+OHCLP00,cleveland police department,OH,local police department,east north central,518696.5,10,Midwest,250-500k,certainty,FALSE,Cleveland police,"Plain Dealer, The (Cleveland, OH)",5,5,strong,NA,NA,TRUE,1
+OHCOP00,columbus police department,OH,local police department,east north central,610669,10,Midwest,250-500k,certainty,TRUE,NA,NA,NA,NA,already rebuilt,NA,NA,TRUE,1
+PAPEP00,philadelphia police department,PA,local police department,middle atlantic,1621870,10,Northeast,250-500k,certainty,TRUE,NA,NA,NA,NA,already rebuilt,NA,NA,TRUE,1
+TX10100,harris county sheriff's office,TX,sheriffs office,west south central,767091.5,10,South,250-500k,certainty,TRUE,NA,NA,NA,NA,already rebuilt,NA,NA,TRUE,1
+TXDPD00,dallas police department,TX,local police department,west south central,1017153,10,South,250-500k,certainty,TRUE,NA,NA,NA,NA,already rebuilt,NA,NA,TRUE,1
+TXHPD00,houston police department,TX,local police department,west south central,1724874,10,South,250-500k,certainty,TRUE,NA,NA,NA,NA,already rebuilt,NA,NA,TRUE,1
+TXSPD00,san antonio police department,TX,local police department,west south central,942812,10,South,250-500k,certainty,TRUE,NA,NA,NA,NA,already rebuilt,NA,NA,TRUE,1
+VA02901,fairfax county police department,VA,local police department,south atlantic,765167,10,South,250-500k,certainty,FALSE,Fairfax County police,"Washington Times, The (DC)",5,3,usable,NA,NA,TRUE,1
+WA01700,king county sheriff's office,WA,sheriffs office,pacific,571957.5,10,West,250-500k,certainty,FALSE,King County police,"Seattle Times, The (WA)",5,5,strong,NA,NA,TRUE,1
+WASPD00,seattle police department,WA,local police department,pacific,515328.5,10,West,250-500k,certainty,TRUE,NA,NA,NA,NA,already rebuilt,NA,NA,TRUE,1
+WIMPD00,milwaukee police department,WI,local police department,east north central,623196,10,Midwest,250-500k,certainty,TRUE,NA,NA,NA,NA,already rebuilt,NA,NA,TRUE,1

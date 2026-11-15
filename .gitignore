@@ -16,3 +16,6 @@ data/raw/mpv/
 data/raw/shr/
 __pycache__/
 *.pyc
+
+# Manuscript drafts, protocol drafts, lit notes and reviewer files stay local
+manuscript/
