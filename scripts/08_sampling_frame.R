@@ -44,6 +44,11 @@ POP_FLOOR   <- 1e5   # frame: median population served >= 100,000
 POP_CERTAIN <- 5e5   # certainty stratum: >= 500,000
 TIER_CUT    <- 2.5e5 # sampling strata split at 250,000
 FRAME_TYPES <- c("local police department", "sheriffs office")
+# Reporting units that are not separate agencies: SHR files some contract
+# cities under their own ORI although the sheriff does the policing
+FRAME_EXCLUDE <- c(
+  "CA0191R" = "Santa Clarita: LA County Sheriff contract city, not its own agency"
+)
 
 REGIONS <- c(
   "new england" = "Northeast", "middle atlantic" = "Northeast",
@@ -92,7 +97,7 @@ frame <- agency_year |>
             pop_median_1985_94 = median(population),
             years_observed = n(),
             .groups = "drop") |>
-  filter(pop_median_1985_94 >= POP_FLOOR) |>
+  filter(pop_median_1985_94 >= POP_FLOOR, !ori %in% names(FRAME_EXCLUDE)) |>
   mutate(region = unname(REGIONS[division]),
          size_tier = if_else(pop_median_1985_94 >= TIER_CUT, "250-500k", "100-250k"),
          stratum = if_else(pop_median_1985_94 >= POP_CERTAIN, "certainty",

@@ -122,7 +122,7 @@ VA07503,prince william county police department,VA,local police department,south
 MS02501,jackson police department,MS,local police department,east south central,200811,10,South,100-250k,South 100-250k,FALSE,Jackson police,NA,0,0,no in-state source
 NC09201,raleigh police department,NC,local police department,south atlantic,198541.5,10,South,100-250k,South 100-250k,FALSE,Raleigh police,"News & Observer, The (Raleigh, NC)",4,4,too thin
 VA02101,chesterfield county police department,VA,local police department,south atlantic,197697.5,10,South,100-250k,South 100-250k,FALSE,Chesterfield County police,Richmond Times-Dispatch (VA),5,2,usable
-NY02700,monroe county sheriff's office,NY,sheriffs office,middle atlantic,195601.5,8,Northeast,100-250k,Northeast 100-250k,FALSE,Monroe County sheriff,NA,0,0,no in-state source
+NY02700,monroe county sheriff's office,NY,sheriffs office,middle atlantic,195601.5,8,Northeast,100-250k,Northeast 100-250k,FALSE,Monroe County sheriff AND Rochester,"Buffalo News, The (NY)",0,0,too thin
 IA07703,des moines police department,IA,local police department,west north central,193305,9,Midwest,100-250k,Midwest 100-250k,FALSE,Des Moines police,"Gazette, The (Cedar Rapids-Iowa City, IA)",0,0,too thin
 AL00301,montgomery police department,AL,local police department,east south central,192834,10,South,100-250k,South 100-250k,FALSE,Montgomery police,"Press-Register (Mobile, AL)",0,0,too thin
 MI41436,grand rapids police department,MI,local police department,east north central,189734.5,10,Midwest,100-250k,Midwest 100-250k,FALSE,Grand Rapids police,NA,0,0,no in-state source
@@ -174,9 +174,9 @@ CA04900,sonoma county sheriff's office,CA,sheriffs office,pacific,155498,10,West
 FL00603,fort lauderdale police department,FL,local police department,south atlantic,154452.5,6,South,100-250k,South 100-250k,FALSE,Fort Lauderdale police,"Miami Herald, The (FL)",5,5,strong
 SC04200,spartanburg county sheriff's office,SC,sheriffs office,south atlantic,154161.5,10,South,100-250k,South 100-250k,FALSE,Spartanburg County sheriff,"Herald-Journal (Spartanburg, SC)",5,4,usable
 MA00718,springfield police department,MA,local police department,new england,152649.5,10,Northeast,100-250k,Northeast 100-250k,FALSE,Springfield police,"Republican, The (Springfield, MA)",5,5,strong
-KS10502,kansas city police department,KS,local police department,west north central,152511,7,Midwest,100-250k,Midwest 100-250k,FALSE,Kansas City police,"Wichita Eagle, The (KS)",0,0,too thin
+KS10502,kansas city police department,KS,local police department,west north central,152511,7,Midwest,100-250k,Midwest 100-250k,FALSE,"Kansas City, Kan. police (cross-state metro: KC Star counted)","Kansas City Star, The (MO)",4,4,too thin
 AL00100,jefferson county sheriff's office,AL,sheriffs office,east south central,152487.5,10,South,100-250k,South 100-250k,FALSE,Jefferson County sheriff,Birmingham News (AL),2,2,too thin
-MI41141,kent county sheriff's office,MI,sheriffs office,east north central,151912.5,8,Midwest,100-250k,Midwest 100-250k,FALSE,Kent County sheriff,NA,0,0,no in-state source
+MI41141,kent county sheriff's office,MI,sheriffs office,east north central,151912.5,8,Midwest,100-250k,Midwest 100-250k,FALSE,Kent County sheriff AND (Michigan OR Grand Rapids),NA,0,0,no in-state source
 VA10300,chesapeake police department,VA,local police department,south atlantic,150903,10,South,100-250k,South 100-250k,FALSE,Chesapeake police,"Virginian-Pilot, The (Norfolk, VA)",5,4,usable
 TX17000,montgomery county sheriff's office,TX,sheriffs office,west south central,150464.5,10,South,100-250k,South 100-250k,FALSE,Montgomery County sheriff,Houston Chronicle (TX),6,0,usable
 CA00700,contra costa county sheriff's office,CA,sheriffs office,pacific,150257,10,West,100-250k,West 100-250k,FALSE,Contra Costa County sheriff,San Francisco Chronicle (CA),0,0,too thin
@@ -214,8 +214,8 @@ VA11100,hampton police department,VA,local police department,south atlantic,1331
 MO05000,jefferson county sheriff's office,MO,sheriffs office,west north central,132587,7,Midwest,100-250k,Midwest 100-250k,FALSE,Jefferson County sheriff,St. Louis Post-Dispatch (MO),5,0,usable
 CA03702,chula vista police department,CA,local police department,pacific,132372,10,West,100-250k,West 100-250k,FALSE,Chula Vista police,"San Diego Union-Tribune, The (CA)",8,0,usable
 CA04400,santa cruz county sheriff's office,CA,sheriffs office,pacific,131998.5,10,West,100-250k,West 100-250k,FALSE,Santa Cruz County sheriff,"Mercury News, The (San Jose, CA)",4,0,too thin
-MI70170,ottawa county sheriff's office,MI,sheriffs office,east north central,130787,5,Midwest,100-250k,Midwest 100-250k,FALSE,Ottawa County sheriff,NA,0,0,no in-state source
-CA03607,ontario police department,CA,local police department,pacific,129912.5,10,West,100-250k,West 100-250k,FALSE,Ontario police,NA,0,0,no in-state source
+MI70170,ottawa county sheriff's office,MI,sheriffs office,east north central,130787,5,Midwest,100-250k,Midwest 100-250k,FALSE,Ottawa County sheriff AND (Michigan OR Grand Haven OR Holland),NA,0,0,no in-state source
+CA03607,ontario police department,CA,local police department,pacific,129912.5,10,West,100-250k,West 100-250k,FALSE,Ontario police AND (California OR San Bernardino OR Riverside),"Press-Enterprise, The (Riverside, CA)",0,0,too thin
 IL02200,du page county sheriff's office,IL,sheriffs office,east north central,129446,7,Midwest,100-250k,Midwest 100-250k,FALSE,Du Page County sheriff,Chicago Sun-Times (IL),0,0,too thin
 IN08201,evansville police,IN,local police department,east north central,129362.5,10,Midwest,100-250k,Midwest 100-250k,FALSE,Evansville police,"Post-Tribune, The (Merrillville, IN)",0,0,too thin
 TX04306,plano police department,TX,local police department,west south central,128713,9,South,100-250k,South 100-250k,FALSE,Plano police,"Dallas Morning News, The (TX)",5,2,usable
@@ -255,7 +255,6 @@ MI50765,sterling heights police department,MI,local police department,east north
 IL07207,peoria police dept,IL,local police department,east north central,114619,9,Midwest,100-250k,Midwest 100-250k,FALSE,Peoria police,"Peoria Journal Star, The (IL)",4,4,too thin
 CA03008,fullerton police department,CA,local police department,pacific,113777,10,West,100-250k,West 100-250k,FALSE,Fullerton police,"Orange County Register, The (Santa Ana, CA)",5,1,usable
 MO04806,independence police department,MO,local police department,west north central,113710.5,10,Midwest,100-250k,Midwest 100-250k,FALSE,Independence police,"Kansas City Star, The (MO)",4,0,too thin
-CA0191R,santa clarita,CA,local police department,pacific,112946,5,West,100-250k,West 100-250k,FALSE,Santa Clarita,Los Angeles Daily News (CA),5,5,strong
 CA04905,santa rosa police department,CA,local police department,pacific,112198.5,10,West,100-250k,West 100-250k,FALSE,Santa Rosa police,"Press Democrat, The (Santa Rosa, CA)",1,0,too thin
 PA02502,erie police department,PA,local police department,middle atlantic,111518.5,10,Northeast,100-250k,Northeast 100-250k,FALSE,Erie police,Pittsburgh Post-Gazette (PA),0,0,too thin
 NC06700,onslow county sheriff's office,NC,sheriffs office,south atlantic,111435,9,South,100-250k,South 100-250k,FALSE,Onslow County sheriff,"StarNews (Wilmington, NC)",0,0,too thin
@@ -267,7 +266,7 @@ SC01000,charleston county sheriff's office,SC,sheriffs office,south atlantic,110
 VA09900,alexandria police department,VA,local police department,south atlantic,110584,10,South,100-250k,South 100-250k,FALSE,Alexandria police,"Washington Times, The (DC)",5,0,usable
 TX22101,abilene police department,TX,local police department,west south central,110539,10,South,100-250k,South 100-250k,FALSE,Abilene police,Fort Worth Star-Telegram (TX),0,0,too thin
 AL00200,mobile county sheriff's office,AL,sheriffs office,east south central,109977,8,South,100-250k,South 100-250k,FALSE,Mobile County sheriff,"Press-Register (Mobile, AL)",2,2,too thin
-IL04900,lake county sheriff's office,IL,sheriffs office,east north central,109631,9,Midwest,100-250k,Midwest 100-250k,FALSE,Lake County sheriff,NA,0,0,no in-state source
+IL04900,lake county sheriff's office,IL,sheriffs office,east north central,109631,9,Midwest,100-250k,Midwest 100-250k,FALSE,Lake County sheriff AND (Illinois OR Waukegan),Chicago Sun-Times (IL),0,0,too thin
 MI81218,ann arbor police department,MI,local police department,east north central,109592,9,Midwest,100-250k,Midwest 100-250k,FALSE,Ann Arbor police,NA,0,0,no in-state source
 CA03015,orange police department,CA,local police department,pacific,109583,10,West,100-250k,West 100-250k,FALSE,Orange police,"Orange County Register, The (Santa Ana, CA)",5,0,usable
 CA04300,santa clara county sheriff's office,CA,sheriffs office,pacific,109469,10,West,100-250k,West 100-250k,FALSE,Santa Clara County sheriff,"Mercury News, The (San Jose, CA)",5,2,usable
@@ -293,19 +292,19 @@ CA02700,monterey county sheriff's office,CA,sheriffs office,pacific,104299,10,We
 CA05607,thousand oaks pd,CA,local police department,pacific,104284.5,10,West,100-250k,West 100-250k,FALSE,Thousand Oaks police,Los Angeles Daily News (CA),0,0,too thin
 NY01400,erie county sheriff's office,NY,sheriffs office,middle atlantic,103727,4,Northeast,100-250k,Northeast 100-250k,FALSE,Erie County sheriff,"Buffalo News, The (NY)",5,5,strong
 CA01922,el monte police department,CA,local police department,pacific,103534,10,West,100-250k,West 100-250k,FALSE,El Monte police,Los Angeles Daily News (CA),0,0,too thin
-OR02402,salem police department,OR,local police department,pacific,103438,10,West,100-250k,West 100-250k,FALSE,Salem police,NA,0,0,no in-state source
+OR02402,salem police department,OR,local police department,pacific,103438,10,West,100-250k,West 100-250k,FALSE,Salem police AND Oregon,"Oregonian, The (Portland, OR)",0,0,too thin
 CA03706,escondido police department,CA,local police department,pacific,103275,10,West,100-250k,West 100-250k,FALSE,Escondido police,"San Diego Union-Tribune, The (CA)",9,0,usable
 MD01100,frederick county sheriff's office,MD,sheriffs office,south atlantic,103212,5,South,100-250k,South 100-250k,FALSE,Frederick County sheriff,"Sun, The (Baltimore, MD)",0,0,too thin
 CA05000,stanislaus county sheriff's office,CA,sheriffs office,pacific,102124.5,10,West,100-250k,West 100-250k,FALSE,Stanislaus County sheriff,"Modesto Bee, The (CA)",5,2,usable
 MI81181,washtenaw county sheriff's office,MI,sheriffs office,east north central,102082,9,Midwest,100-250k,Midwest 100-250k,FALSE,Washtenaw County sheriff,NA,0,0,no in-state source
 IL08402,springfield police dept,IL,local police department,east north central,101931,9,Midwest,100-250k,Midwest 100-250k,FALSE,Springfield police,"State Journal-Register, The (Springfield, IL)",5,5,strong
-KS04606,overland park police department,KS,local police department,west north central,101505,5,Midwest,100-250k,Midwest 100-250k,FALSE,Overland Park police,"Wichita Eagle, The (KS)",0,0,too thin
+KS04606,overland park police department,KS,local police department,west north central,101505,5,Midwest,100-250k,Midwest 100-250k,FALSE,Overland Park police (cross-state metro: KC Star counted),"Kansas City Star, The (MO)",4,2,too thin
 CO05101,pueblo police dept,CO,local police department,mountain,101492,10,West,100-250k,West 100-250k,FALSE,Pueblo police,"Pueblo Chieftain, The (CO)",4,4,too thin
 MI82538,livonia police department,MI,local police department,east north central,101463,7,Midwest,100-250k,Midwest 100-250k,FALSE,Livonia police,NA,0,0,no in-state source
 TX03101,brownsville police department,TX,local police department,west south central,101377.5,10,South,100-250k,South 100-250k,FALSE,Brownsville police,"Brownsville Herald, The (TX)",2,2,too thin
 OR02000,lane county sheriff's office,OR,sheriffs office,pacific,100995,9,West,100-250k,West 100-250k,FALSE,Lane County sheriff,"Oregonian, The (Portland, OR)",0,0,too thin
 NC01100,buncombe county sheriff's office,NC,sheriffs office,south atlantic,100973,10,South,100-250k,South 100-250k,FALSE,Buncombe County sheriff,"Charlotte Observer, The (NC)",0,0,too thin
-MI58158,monroe county sheriff's office,MI,sheriffs office,east north central,100575,9,Midwest,100-250k,Midwest 100-250k,FALSE,Monroe County sheriff,NA,0,0,no in-state source
+MI58158,monroe county sheriff's office,MI,sheriffs office,east north central,100575,9,Midwest,100-250k,Midwest 100-250k,FALSE,Monroe County sheriff AND Michigan,NA,0,0,no in-state source
 HI00500,maui (county) police department,HI,local police department,pacific,100504,9,West,100-250k,West 100-250k,FALSE,Maui police,NA,0,0,no in-state source
 FL05203,clearwater police department,FL,local police department,south atlantic,100209,6,South,100-250k,South 100-250k,FALSE,Clearwater police,Tampa Bay Times (FL),5,5,strong
 NY00101,albany police department,NY,local police department,middle atlantic,100114.5,10,Northeast,100-250k,Northeast 100-250k,FALSE,Albany police,"Times Union, The (Albany, NY)",5,5,strong

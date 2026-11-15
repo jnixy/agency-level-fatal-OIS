@@ -84,7 +84,7 @@ VA07503,Prince William County police,"Washington Times, The (DC)",,,,,0,24,28,25
 MS02501,Jackson police,,,,,,,,,,,,"Akron Beacon Journal (OH):271; Advocate, The (Baton Rouge, LA):149; Columbus Dispatch, The (OH):42; Milwaukee Journal Sentinel (WI):40"
 NC09201,Raleigh police,"News & Observer, The (Raleigh, NC)",,,,,0,,244,335,423,488,"News & Observer, The (Raleigh, NC):1490; Charlotte Observer, The (NC):133; News & Record (Greensboro, NC):80; Fayetteville Observer, The (NC):69"
 VA02101,Chesterfield County police,Richmond Times-Dispatch (VA),,,,,,270,217,136,60,83,
-NY02700,Monroe County sheriff,,,,,,,,,,,,"Herald-Times (Bloomington, IN):828; Miami Herald, The (FL):396; La Crosse Tribune (WI):93; Sun Sentinel (Fort Lauderdale, FL):56"
+NY02700,Monroe County sheriff AND Rochester,"Buffalo News, The (NY)",,,,,4,8,2,5,1,12,rechecked 2026-11-15 with a disambiguated query
 IA07703,Des Moines police,"Gazette, The (Cedar Rapids-Iowa City, IA)",,,,,0,,,31,32,35,"Gazette, The (Cedar Rapids-Iowa City, IA:98; Seattle Times, The (WA):98; Omaha World-Herald (NE):61; USA TODAY (USA):28"
 AL00301,Montgomery police,"Press-Register (Mobile, AL)",,,,,0,,,4,22,19,"Washington Times, The (DC):47; Press-Register (Mobile, AL):45; Birmingham News (AL):44; Star-Ledger, The (Newark, NJ):36"
 MI41436,Grand Rapids police,,,,,,,,,,,,"South Bend Tribune (IN):9; Minnesota Star Tribune, The (Minneapolis:5; St. Paul Pioneer Press (MN):3; Lexington Herald-Leader (KY):2"
@@ -134,9 +134,9 @@ CA04900,Sonoma County sheriff,San Francisco Chronicle (CA),18,35,40,17,31,22,19,
 FL00603,Fort Lauderdale police,"Miami Herald, The (FL)",,,,,,411,378,361,385,357,
 SC04200,Spartanburg County sheriff,"Herald-Journal (Spartanburg, SC)",,,,,,675,634,541,551,137,
 MA00718,Springfield police,"Republican, The (Springfield, MA)",,,,,,827,683,720,561,529,
-KS10502,Kansas City police,"Wichita Eagle, The (KS)",3,1,3,3,6,9,8,7,8,10,"Kansas City Star, The (MO):2941; St. Louis Post-Dispatch (MO):101; Wichita Eagle, The (KS):42; USA TODAY (USA):23"
+KS10502,"Kansas City, Kan. police (cross-state metro: KC Star counted)","Kansas City Star, The (MO)",,,,,0,,855,752,671,667,rechecked 2026-11-15 with a disambiguated query
 AL00100,Jefferson County sheriff,Birmingham News (AL),,,,,0,,,,346,300,"Watertown Daily Times (NY):5127; Birmingham News (AL):646; St. Louis Post-Dispatch (MO):378; Rocky Mountain News (Denver, CO):337"
-MI41141,Kent County sheriff,,,,,,,,,,,,"Daily State News (Dover, DE):145; Daily Press (Newport News, VA):26; Richmond Times-Dispatch (VA):21; Providence Journal (RI):4"
+MI41141,Kent County sheriff AND (Michigan OR Grand Rapids),,,,,,,,,,,,rechecked 2026-11-15 with a disambiguated query
 VA10300,Chesapeake police,"Virginian-Pilot, The (Norfolk, VA)",,,,,,93,169,156,209,176,
 TX17000,Montgomery County sheriff,Houston Chronicle (TX),27,82,82,112,80,60,33,58,31,44,
 CA00700,Contra Costa County sheriff,San Francisco Chronicle (CA),21,13,32,21,10,9,13,16,38,16,"San Francisco Chronicle (CA):92; Mercury News, The (San Jose, CA) :88; Daily Breeze (Torrance, CA):9; Sacramento Bee, The (CA):9"
@@ -174,8 +174,8 @@ VA11100,Hampton police,"Daily Press (Newport News, VA)",,,,,,246,277,288,365,538
 MO05000,Jefferson County sheriff,St. Louis Post-Dispatch (MO),,2,,40,67,52,126,84,72,44,
 CA03702,Chula Vista police,"San Diego Union-Tribune, The (CA)",49,57,76,85,88,69,112,93,31,53,
 CA04400,Santa Cruz County sheriff,"Mercury News, The (San Jose, CA)",12,47,63,71,77,42,31,39,42,53,"Mercury News, The (San Jose, CA) :207; Arizona Daily Star, The (Tucson, AZ):45; San Francisco Chronicle (CA):14; Los Angeles Daily News (CA):6"
-MI70170,Ottawa County sheriff,,,,,,,,,,,,"Tulsa World (OK):55; Oklahoman, The (Oklahoma City, OK):18; Plain Dealer, The (Cleveland, OH):17; South Bend Tribune (IN):9"
-CA03607,Ontario police,,,,,,,,,,,,"Toronto Star, The (Ontario, Canada):472; Toronto Sun, The (Ontario, Canada):256; Hamilton Spectator, The (Ontario, Canada:247; Waterloo Region Record (Ontario, Canada):246"
+MI70170,Ottawa County sheriff AND (Michigan OR Grand Haven OR Holland),,,,,,,,,,,,rechecked 2026-11-15 with a disambiguated query
+CA03607,Ontario police AND (California OR San Bernardino OR Riverside),"Press-Enterprise, The (Riverside, CA)",,,,,0,,,19,17,12,rechecked 2026-11-15 with a disambiguated query
 IL02200,Du Page County sheriff,Chicago Sun-Times (IL),,18,9,7,8,13,21,11,8,4,"Chicago Sun-Times (IL):57; Post-Tribune, The (Merrillville, IN):2; UPI (USA):1; Tulsa World (OK):1"
 IN08201,Evansville police,"Post-Tribune, The (Merrillville, IN)",,,3,3,5,4,13,4,8,2,"Post-Tribune, The (Merrillville, IN):31; Owensboro Messenger-Inquirer (KY):12; Journal Gazette, The (Fort Wayne, IN):8; Herald-Times (Bloomington, IN):6"
 TX04306,Plano police,"Dallas Morning News, The (TX)",,,,,,116,161,139,139,173,
@@ -215,7 +215,6 @@ MI50765,Sterling Heights police,,,,,,,,,,,,"South Bend Tribune (IN):4; Orlando S
 IL07207,Peoria police,"Peoria Journal Star, The (IL)",,,,,0,,240,533,513,504,"Peoria Journal Star, The (IL):1790; Pantagraph, The (Bloomington, IL):149; State Journal-Register, The (Springfield:19; St. Louis Post-Dispatch (MO):11"
 CA03008,Fullerton police,"Orange County Register, The (Santa Ana, CA)",,,,,,157,94,92,63,68,
 MO04806,Independence police,"Kansas City Star, The (MO)",,,,,0,,126,98,75,107,"Kansas City Star, The (MO):406; Gazette, The (Cedar Rapids-Iowa City, IA:67; Plain Dealer, The (Cleveland, OH):51; Star-Ledger, The (Newark, NJ):21"
-CA0191R,Santa Clarita,Los Angeles Daily News (CA),,,,,,3436,2660,2798,2528,2631,
 CA04905,Santa Rosa police,"Press Democrat, The (Santa Rosa, CA)",,,,,0,,,,,120,"Press Democrat, The (Santa Rosa, CA):120; San Francisco Chronicle (CA):56; Mercury News, The (San Jose, CA) :21; Long Beach Press-Telegram (CA):3"
 PA02502,Erie police,Pittsburgh Post-Gazette (PA),,,,,0,6,5,3,10,5,"Pittsburgh Post-Gazette (PA):29; Buffalo News, The (NY):7; Plain Dealer, The (Cleveland, OH):7; Wichita Eagle, The (KS):5"
 NC06700,Onslow County sheriff,"StarNews (Wilmington, NC)",,,,,0,,,,,16,"StarNews (Wilmington, NC):16; Fayetteville Observer, The (NC):9; Charlotte Observer, The (NC):7; News & Observer, The (Raleigh, NC):6"
@@ -227,7 +226,7 @@ SC01000,Charleston County sheriff,"State, The (Columbia, SC)",,,,8,3,,10,11,11,3
 VA09900,Alexandria police,"Washington Times, The (DC)",,,,,,75,55,79,62,62,
 TX22101,Abilene police,Fort Worth Star-Telegram (TX),,,,,0,,5,10,5,2,"Fort Worth Star-Telegram (TX):22; Dallas Morning News, The (TX):12; Houston Chronicle (TX):8; Wichita Eagle, The (KS):4"
 AL00200,Mobile County sheriff,"Press-Register (Mobile, AL)",,,,,0,,,28,242,240,"Press-Register (Mobile, AL):510; Birmingham News (AL):21; Times-Picayune, The (New Orleans, LA):7; Anniston Star, The (AL):6"
-IL04900,Lake County sheriff,,,,,,,,,,,,"Times, The (Munster, IN):1458; Deseret News, The (Salt Lake City, UT):1318; Salt Lake Tribune, The (UT):1258; Orlando Sentinel, The (FL):1207"
+IL04900,Lake County sheriff AND (Illinois OR Waukegan),Chicago Sun-Times (IL),,24,9,13,5,11,29,11,15,21,rechecked 2026-11-15 with a disambiguated query
 MI81218,Ann Arbor police,,,,,,,,,,,,USA TODAY (USA):17; UPI (USA):8; South Bend Tribune (IN):6; Pittsburgh Post-Gazette (PA):6
 CA03015,Orange police,"Orange County Register, The (Santa Ana, CA)",,,,,,125,85,101,125,106,
 CA04300,Santa Clara County sheriff,"Mercury News, The (San Jose, CA)",,,,,,130,109,116,162,155,
@@ -253,19 +252,19 @@ CA02700,Monterey County sheriff,"Mercury News, The (San Jose, CA)",14,30,29,25,3
 CA05607,Thousand Oaks police,Los Angeles Daily News (CA),,15,7,7,11,8,6,5,12,27,"Los Angeles Daily News (CA):58; Daily Breeze (Torrance, CA):1"
 NY01400,Erie County sheriff,"Buffalo News, The (NY)",,,,,,340,317,334,296,310,
 CA01922,El Monte police,Los Angeles Daily News (CA),3,3,5,6,4,1,7,1,1,2,"Los Angeles Daily News (CA):12; Daily Breeze (Torrance, CA):8; Long Beach Press-Telegram (CA):6; Gazette, The (Cedar Rapids-Iowa City, IA:4"
-OR02402,Salem police,,,,,,,,,,,,"News & Record (Greensboro, NC):626; Roanoke Times, The (VA):254; New Hampshire Union Leader / New Hampshi:211; Charlotte Observer, The (NC):102"
+OR02402,Salem police AND Oregon,"Oregonian, The (Portland, OR)",,,,12,14,10,6,8,9,5,rechecked 2026-11-15 with a disambiguated query
 CA03706,Escondido police,"San Diego Union-Tribune, The (CA)",90,79,90,80,103,95,94,77,54,39,
 MD01100,Frederick County sheriff,"Sun, The (Baltimore, MD)",,,,,0,3,9,14,15,14,"Sun, The (Baltimore, MD):55; Richmond Times-Dispatch (VA):21; Washington Times, The (DC):8; Roanoke Times, The (VA):7"
 CA05000,Stanislaus County sheriff,"Modesto Bee, The (CA)",,,,,,111,93,113,169,183,
 MI81181,Washtenaw County sheriff,,,,,,,,,,,,"USA TODAY (USA):4; Chicago Sun-Times (IL):3; Tulsa World (OK):2; Orlando Sentinel, The (FL):2"
 IL08402,Springfield police,"State Journal-Register, The (Springfield, IL)",,,,,,582,416,478,495,602,
-KS04606,Overland Park police,"Wichita Eagle, The (KS)",2,,1,1,3,7,8,5,5,1,"Kansas City Star, The (MO):632; Wichita Eagle, The (KS):26; Lawrence Journal-World (KS):18; Hutchinson News, The (KS):5"
+KS04606,Overland Park police (cross-state metro: KC Star counted),"Kansas City Star, The (MO)",,,,,0,,208,131,150,143,rechecked 2026-11-15 with a disambiguated query
 CO05101,Pueblo police,"Pueblo Chieftain, The (CO)",,,,,0,,455,403,401,380,"Pueblo Chieftain, The (CO):1639; Gazette, The (Colorado Springs, CO):62; Rocky Mountain News (Denver, CO):59; Denver Post, The (CO):27"
 MI82538,Livonia police,,,,,,,,,,,,"Advocate, The (Baton Rouge, LA):17; South Bend Tribune (IN):3; St. Paul Pioneer Press (MN):2; News & Record (Greensboro, NC):1"
 TX03101,Brownsville police,"Brownsville Herald, The (TX)",,,,,0,,,,187,236,"Brownsville Herald, The (TX):423; Houston Chronicle (TX):44; Dallas Morning News, The (TX):31; San Antonio Express-News (TX):28"
 OR02000,Lane County sheriff,"Oregonian, The (Portland, OR)",,,1,4,5,3,1,3,,6,"Oregonian, The (Portland, OR):13; Seattle Times, The (WA):10; Columbian, The (Vancouver, WA):2; Akron Beacon Journal (OH):2"
 NC01100,Buncombe County sheriff,"Charlotte Observer, The (NC)",2,17,8,16,5,8,3,1,3,5,"Charlotte Observer, The (NC):20; News & Record (Greensboro, NC):17; Fayetteville Observer, The (NC):7; News & Observer, The (Raleigh, NC):3"
-MI58158,Monroe County sheriff,,,,,,,,,,,,"Herald-Times (Bloomington, IN):828; Miami Herald, The (FL):396; La Crosse Tribune (WI):93; Sun Sentinel (Fort Lauderdale, FL):56"
+MI58158,Monroe County sheriff AND Michigan,,,,,,,,,,,,rechecked 2026-11-15 with a disambiguated query
 HI00500,Maui police,,,,,,,,,,,,"Anchorage Daily News (AK):2; USA TODAY (USA):2; St. Louis Post-Dispatch (MO):2; Miami Herald, The (FL):2"
 FL05203,Clearwater police,Tampa Bay Times (FL),,,,,,338,298,218,320,301,
 NY00101,Albany police,"Times Union, The (Albany, NY)",,,,,,431,456,364,344,324,
