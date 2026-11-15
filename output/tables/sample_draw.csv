@@ -150,7 +150,7 @@ TX10100,harris county sheriff's office,TX,sheriffs office,west south central,767
 TXDPD00,dallas police department,TX,local police department,west south central,1017153,10,South,250-500k,certainty,TRUE,NA,NA,NA,NA,already rebuilt,NA,NA,TRUE,1
 TXHPD00,houston police department,TX,local police department,west south central,1724874,10,South,250-500k,certainty,TRUE,NA,NA,NA,NA,already rebuilt,NA,NA,TRUE,1
 TXSPD00,san antonio police department,TX,local police department,west south central,942812,10,South,250-500k,certainty,TRUE,NA,NA,NA,NA,already rebuilt,NA,NA,TRUE,1
-VA02901,fairfax county police department,VA,local police department,south atlantic,765167,10,South,250-500k,certainty,FALSE,Fairfax County police,"Washington Times, The (DC)",5,3,usable,NA,NA,TRUE,1
+VA02901,fairfax county police department,VA,local police department,south atlantic,765167,10,South,250-500k,certainty,TRUE,Fairfax County police,"Washington Times, The (DC)",5,3,already rebuilt,NA,NA,TRUE,1
 WA01700,king county sheriff's office,WA,sheriffs office,pacific,571957.5,10,West,250-500k,certainty,FALSE,King County police,"Seattle Times, The (WA)",5,5,strong,NA,NA,TRUE,1
 WASPD00,seattle police department,WA,local police department,pacific,515328.5,10,West,250-500k,certainty,TRUE,NA,NA,NA,NA,already rebuilt,NA,NA,TRUE,1
 WIMPD00,milwaukee police department,WI,local police department,east north central,623196,10,Midwest,250-500k,certainty,TRUE,NA,NA,NA,NA,already rebuilt,NA,NA,TRUE,1
