@@ -34,6 +34,7 @@ INIPD00,Indianapolis Metropolitan Police Department,IN,2.909,4.364,22,11,1970,20
 MOKPD00,Kansas City Police Department,MO,2.957,3.545,23,11,1972,2015,1994,2025,68,39,"Kansas City, MO",0.589,FALSE,0.355,About the same
 CODPD00,Denver Police Department,CO,3,4.727,5,11,1990,2015,1994,2025,15,52,"Denver, CO",1.727,FALSE,0.146,About the same
 WIMPD00,Milwaukee Police Department,WI,3,2.182,5,11,1990,2015,1994,2025,15,24,"Milwaukee, WI",-0.818,TRUE,0.387,About the same
+MD01721,Prince George's County Police Department,MD,4.4,1.091,5,11,1990,2015,1994,2025,22,12,"Prince George's County, MD",-3.309,TRUE,0,Fewer now
 GAAPD00,Atlanta Police Department,GA,4.5,2.273,12,11,1980,2015,1991,2025,54,25,"Atlanta, GA",-2.227,TRUE,0.005,Fewer now
 MOSPD00,St. Louis Police Department,MO,5.909,3.273,11,11,1977,2015,1991,2025,65,36,"St. Louis, MO",-2.636,TRUE,0.005,Fewer now
 CA03711,San Diego Police Department,CA,6.263,4.545,19,11,1976,2015,1994,2025,119,50,"San Diego, CA",-1.718,TRUE,0.066,About the same

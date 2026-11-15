@@ -26,7 +26,7 @@ FL01602,jacksonville city cnty pd,FL,local police department,south atlantic,6468
 TNMPD00,memphis police department,TN,local police department,east south central,639973,10,South,250-500k,certainty,FALSE
 CA03400,sacramento county sheriff's office,CA,sheriffs office,pacific,627415.5,10,West,250-500k,certainty,TRUE
 WIMPD00,milwaukee police department,WI,local police department,east north central,623196,10,Midwest,250-500k,certainty,TRUE
-MD01721,prince george's county police department,MD,local police department,south atlantic,611113.5,10,South,250-500k,certainty,FALSE
+MD01721,prince george's county police department,MD,local police department,south atlantic,611113.5,10,South,250-500k,certainty,TRUE
 OHCOP00,columbus police department,OH,local police department,east north central,610669,10,Midwest,250-500k,certainty,TRUE
 DCMPD00,washington metropolitan police department,DC,local police department,south atlantic,605450,10,South,250-500k,certainty,TRUE
 NV00201,las vegas metro police department,NV,local police department,mountain,576195.5,10,West,250-500k,certainty,FALSE

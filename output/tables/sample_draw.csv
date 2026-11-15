@@ -140,7 +140,7 @@ ILCPD00,chicago police dept,IL,local police department,east north central,283290
 LANPD00,new orleans police department,LA,local police department,west south central,528589,9,South,250-500k,certainty,FALSE,New Orleans police,"Times-Picayune, The (New Orleans, LA)",5,5,strong,NA,NA,TRUE,1
 MD00301,baltimore county police department,MD,local police department,south atlantic,696385.5,10,South,250-500k,certainty,FALSE,Baltimore County police,"Sun, The (Baltimore, MD)",5,4,usable,NA,NA,TRUE,1
 MD01604,montgomery county police department,MD,local police department,south atlantic,725404.5,10,South,250-500k,certainty,TRUE,Montgomery County police,"Washington Times, The (DC)",5,5,already rebuilt,NA,NA,TRUE,1
-MD01721,prince george's county police department,MD,local police department,south atlantic,611113.5,10,South,250-500k,certainty,FALSE,Prince George's County police,"Washington Times, The (DC)",5,5,strong,NA,NA,TRUE,1
+MD01721,prince george's county police department,MD,local police department,south atlantic,611113.5,10,South,250-500k,certainty,TRUE,Prince George's County police,"Washington Times, The (DC)",5,5,already rebuilt,NA,NA,TRUE,1
 MDBPD00,baltimore police department,MD,local police department,south atlantic,759327.5,10,South,250-500k,certainty,FALSE,Baltimore police,"Sun, The (Baltimore, MD)",5,4,usable,NA,NA,TRUE,1
 NY03030,new york city police department,NY,local police department,middle atlantic,7341288,10,Northeast,250-500k,certainty,TRUE,NA,NA,NA,NA,already rebuilt,NA,NA,TRUE,1
 OHCLP00,cleveland police department,OH,local police department,east north central,518696.5,10,Midwest,250-500k,certainty,FALSE,Cleveland police,"Plain Dealer, The (Cleveland, OH)",5,5,strong,NA,NA,TRUE,1

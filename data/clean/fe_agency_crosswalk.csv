@@ -1298,7 +1298,7 @@ MD01604,MD,Montgomery County Department of Police,manual,Name variant,1,1
 MD01700,MD,Prince George's County Sheriff's Office,exact,,12,2
 MD01714,MD,Greenbelt Police Department,exact,,1,2
 MD01715,MD,Hyattsville Police Department,exact,,1,2
-MD01721,MD,Prince George's County Police Department,exact,,31,2
+MD01721,MD,Prince George's County Police Department,exact,,31,1
 MD01800,MD,Queen Anne's County Sheriff's Office,exact,,3,2
 MD300SP,MD,Maryland State Police,exact,,31,2
 MDBPD00,MD,Baltimore Police Department,seed_reviewed,,102,1
