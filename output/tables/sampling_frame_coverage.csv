@@ -26,7 +26,7 @@ FL01602,jacksonville city cnty pd,FL,local police department,south atlantic,6468
 TNMPD00,memphis police department,TN,local police department,east south central,639973,10,South,250-500k,certainty,FALSE,Memphis police,NA,0,0,no in-state source
 CA03400,sacramento county sheriff's office,CA,sheriffs office,pacific,627415.5,10,West,250-500k,certainty,TRUE,NA,NA,NA,NA,already rebuilt
 WIMPD00,milwaukee police department,WI,local police department,east north central,623196,10,Midwest,250-500k,certainty,TRUE,NA,NA,NA,NA,already rebuilt
-MD01721,prince george's county police department,MD,local police department,south atlantic,611113.5,10,South,250-500k,certainty,FALSE,Prince George's County police,"Washington Times, The (DC)",5,5,strong
+MD01721,prince george's county police department,MD,local police department,south atlantic,611113.5,10,South,250-500k,certainty,TRUE,Prince George's County police,"Washington Times, The (DC)",5,5,already rebuilt
 OHCOP00,columbus police department,OH,local police department,east north central,610669,10,Midwest,250-500k,certainty,TRUE,NA,NA,NA,NA,already rebuilt
 DCMPD00,washington metropolitan police department,DC,local police department,south atlantic,605450,10,South,250-500k,certainty,TRUE,NA,NA,NA,NA,already rebuilt
 NV00201,las vegas metro police department,NV,local police department,mountain,576195.5,10,West,250-500k,certainty,FALSE,Las Vegas Metro police,NA,0,0,no in-state source
