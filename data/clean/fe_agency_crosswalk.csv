@@ -1293,8 +1293,8 @@ MD01300,MD,Harford County Sheriff's Office,exact,,8,2
 MD01401,MD,Howard County Police Department,seed_reviewed,,8,2
 MD01600,MD,Montgomery County Sheriff's Office,seed_reviewed,,4,2
 MD01602,MD,Gaithersburg Police Department,exact,,1,2
-MD01604,MD,Montgomery County Police Department,exact,,17,2
-MD01604,MD,Montgomery County Department of Police,manual,Name variant,1,2
+MD01604,MD,Montgomery County Police Department,exact,,17,1
+MD01604,MD,Montgomery County Department of Police,manual,Name variant,1,1
 MD01700,MD,Prince George's County Sheriff's Office,exact,,12,2
 MD01714,MD,Greenbelt Police Department,exact,,1,2
 MD01715,MD,Hyattsville Police Department,exact,,1,2

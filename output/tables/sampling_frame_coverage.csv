@@ -19,7 +19,7 @@ TX10100,harris county sheriff's office,TX,sheriffs office,west south central,767
 VA02901,fairfax county police department,VA,local police department,south atlantic,765167,10,South,250-500k,certainty,TRUE,Fairfax County police,"Washington Times, The (DC)",5,3,already rebuilt
 MDBPD00,baltimore police department,MD,local police department,south atlantic,759327.5,10,South,250-500k,certainty,FALSE,Baltimore police,"Sun, The (Baltimore, MD)",5,4,usable
 CA03801,san francisco police department,CA,local police department,pacific,746056,10,West,250-500k,certainty,TRUE,NA,NA,NA,NA,already rebuilt
-MD01604,montgomery county police department,MD,local police department,south atlantic,725404.5,10,South,250-500k,certainty,FALSE,Montgomery County police,"Washington Times, The (DC)",5,5,strong
+MD01604,montgomery county police department,MD,local police department,south atlantic,725404.5,10,South,250-500k,certainty,TRUE,Montgomery County police,"Washington Times, The (DC)",5,5,already rebuilt
 CA03700,san diego county sheriff's office,CA,sheriffs office,pacific,716410,10,West,250-500k,certainty,TRUE,NA,NA,NA,NA,already rebuilt
 MD00301,baltimore county police department,MD,local police department,south atlantic,696385.5,10,South,250-500k,certainty,FALSE,Baltimore County police,"Sun, The (Baltimore, MD)",5,4,usable
 FL01602,jacksonville city cnty pd,FL,local police department,south atlantic,646893,6,South,250-500k,certainty,FALSE,Jacksonville sheriff,Tampa Bay Times (FL),0,0,too thin

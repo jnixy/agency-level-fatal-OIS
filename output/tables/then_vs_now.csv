@@ -15,6 +15,7 @@ MEMSP00,Maine State Police,ME,1,1.455,5,11,1990,2015,1994,2025,5,16,"Maine State
 NC06001,Charlotte Mecklenburg Police Department,NC,1.1,2.909,10,11,1985,2015,1994,2025,11,32,"Charlotte Mecklenburg, NC",1.809,FALSE,0.004,More now
 OK07205,Tulsa Police Department,OK,1.167,3.909,6,11,1989,2015,1994,2025,7,43,"Tulsa, OK",2.742,FALSE,0.001,More now
 TX22701,Austin Police Department,TX,1.167,4.273,6,11,1989,2015,1994,2025,7,47,"Austin, TX",3.106,FALSE,0,More now
+MD01604,Montgomery County Police Department,MD,1.2,1.182,5,11,1990,2015,1994,2025,6,13,"Montgomery County, MD",-0.018,TRUE,1,About the same
 CA01005,Fresno Police Department,CA,1.25,2.545,8,11,1987,2015,1994,2025,10,28,"Fresno, CA",1.295,FALSE,0.05,More now
 CA03404,Sacramento Police Department,CA,1.4,1.545,10,11,1985,2015,1994,2025,14,17,"Sacramento, CA",0.145,FALSE,0.858,About the same
 CA03700,San Diego County Sheriff's Department,CA,1.455,2,11,11,1984,2015,1994,2025,16,22,"San Diego Co. Sheriff, CA",0.545,FALSE,0.418,About the same
