@@ -247,6 +247,7 @@ mn_bca,MNBCA00,Minnesota Bureau of Criminal Apprehension,MN,state,manual,"Minnes
 mn_state_patrol,MNMHP00,Minnesota State Patrol,MN,state,WaPo,
 monroe_county_ga,GA10200,Monroe County Sheriff's Department,GA,sheriff,WaPo,
 monroe_ga,GA14701,Monroe Police Department,GA,local_police,LEAIC 2012,
+montgomery_county_md,MD01604,Montgomery County Police Department,MD,local_police,LEAIC 2012,"Montgomery County PD (MD); pre-1995 newspaper reconstruction only, WaPo fills 2015-24"
 morrison_county_mn,MN04900,Morrison County Sheriff's Office,MN,sheriff,LEAIC 2012,
 moultrie_ga,GA03501,Moultrie Police Department,GA,local_police,LEAIC 2012,
 mounds_view_mn,MN06205,Mounds View Police Department,MN,local_police,WaPo,
