@@ -1,0 +1,311 @@
+ori,agency_name,state_abb,agency_type,division,pop_median_1985_94,years_observed,region,size_tier,stratum,in_long_panel
+NY03030,new york city police department,NY,local police department,middle atlantic,7341288,10,Northeast,250-500k,certainty,TRUE
+CA01942,los angeles police department,CA,local police department,pacific,3463423.5,10,West,250-500k,certainty,TRUE
+ILCPD00,chicago police dept,IL,local police department,east north central,2832901,9,Midwest,250-500k,certainty,TRUE
+TXHPD00,houston police department,TX,local police department,west south central,1724874,10,South,250-500k,certainty,TRUE
+PAPEP00,philadelphia police department,PA,local police department,middle atlantic,1621870,10,Northeast,250-500k,certainty,TRUE
+NY05101,suffolk county police department,NY,local police department,middle atlantic,1194576.5,10,Northeast,250-500k,certainty,FALSE
+CA03711,san diego police department,CA,local police department,pacific,1104594,10,West,250-500k,certainty,TRUE
+MI82349,detroit police department,MI,local police department,east north central,1041863.5,10,Midwest,250-500k,certainty,FALSE
+NY02900,nassau county police department,NY,local police department,middle atlantic,1037238.5,10,Northeast,250-500k,certainty,FALSE
+CA01900,los angeles county sheriff's office,CA,sheriffs office,pacific,1018536.5,10,West,250-500k,certainty,FALSE
+TXDPD00,dallas police department,TX,local police department,west south central,1017153,10,South,250-500k,certainty,TRUE
+FL01300,miami-dade (county) police department,FL,local police department,south atlantic,1003555,6,South,250-500k,certainty,TRUE
+AZ00723,phoenix police department,AZ,local police department,mountain,967560,10,West,250-500k,certainty,FALSE
+TXSPD00,san antonio police department,TX,local police department,west south central,942812,10,South,250-500k,certainty,TRUE
+HI00200,honolulu (city and county) police department,HI,local police department,pacific,843807.5,10,West,250-500k,certainty,FALSE
+CA04313,san jose police department,CA,local police department,pacific,770106,10,West,250-500k,certainty,TRUE
+TX10100,harris county sheriff's office,TX,sheriffs office,west south central,767091.5,10,South,250-500k,certainty,TRUE
+VA02901,fairfax county police department,VA,local police department,south atlantic,765167,10,South,250-500k,certainty,FALSE
+MDBPD00,baltimore police department,MD,local police department,south atlantic,759327.5,10,South,250-500k,certainty,FALSE
+CA03801,san francisco police department,CA,local police department,pacific,746056,10,West,250-500k,certainty,TRUE
+MD01604,montgomery county police department,MD,local police department,south atlantic,725404.5,10,South,250-500k,certainty,FALSE
+CA03700,san diego county sheriff's office,CA,sheriffs office,pacific,716410,10,West,250-500k,certainty,TRUE
+MD00301,baltimore county police department,MD,local police department,south atlantic,696385.5,10,South,250-500k,certainty,FALSE
+FL01602,jacksonville city cnty pd,FL,local police department,south atlantic,646893,6,South,250-500k,certainty,FALSE
+TNMPD00,memphis police department,TN,local police department,east south central,639973,10,South,250-500k,certainty,FALSE
+CA03400,sacramento county sheriff's office,CA,sheriffs office,pacific,627415.5,10,West,250-500k,certainty,TRUE
+WIMPD00,milwaukee police department,WI,local police department,east north central,623196,10,Midwest,250-500k,certainty,TRUE
+MD01721,prince george's county police department,MD,local police department,south atlantic,611113.5,10,South,250-500k,certainty,FALSE
+OHCOP00,columbus police department,OH,local police department,east north central,610669,10,Midwest,250-500k,certainty,TRUE
+DCMPD00,washington metropolitan police department,DC,local police department,south atlantic,605450,10,South,250-500k,certainty,TRUE
+NV00201,las vegas metro police department,NV,local police department,mountain,576195.5,10,West,250-500k,certainty,FALSE
+MA01301,boston police department,MA,local police department,new england,573619,10,Northeast,250-500k,certainty,FALSE
+WA01700,king county sheriff's office,WA,sheriffs office,pacific,571957.5,10,West,250-500k,certainty,FALSE
+LANPD00,new orleans police department,LA,local police department,west south central,528589,9,South,250-500k,certainty,FALSE
+OHCLP00,cleveland police department,OH,local police department,east north central,518696.5,10,Midwest,250-500k,certainty,FALSE
+TX07102,el paso police department,TX,local police department,west south central,515474.5,10,South,250-500k,certainty,FALSE
+WASPD00,seattle police department,WA,local police department,pacific,515328.5,10,West,250-500k,certainty,TRUE
+FL02900,hillsborough county sheriff's office,FL,sheriffs office,south atlantic,508744,6,South,250-500k,certainty,FALSE
+TN01901,nashville metro police department,TN,local police department,east south central,502078.5,10,South,250-500k,certainty,FALSE
+CODPD00,denver police department,CO,local police department,mountain,499478.5,10,West,250-500k,West 250-500k,TRUE
+INIPD00,indianapolis police,IN,local police department,east north central,480940,10,Midwest,250-500k,Midwest 250-500k,TRUE
+TX22701,austin police department,TX,local police department,west south central,469224.5,10,South,250-500k,South 250-500k,TRUE
+GA04402,dekalb county police department,GA,local police department,south atlantic,462225,10,South,250-500k,South 250-500k,FALSE
+OK05506,oklahoma city police department,OK,local police department,west south central,444419,10,South,250-500k,South 250-500k,TRUE
+MOKPD00,kansas city police department,MO,local police department,west north central,440798.5,10,Midwest,250-500k,Midwest 250-500k,TRUE
+TX22012,fort worth police department,TX,local police department,west south central,440254,10,South,250-500k,South 250-500k,FALSE
+OR02602,portland police bureau,OR,local police department,pacific,431553.5,10,West,250-500k,West 250-500k,TRUE
+CA01941,long beach police department,CA,local police department,pacific,427729,10,West,250-500k,West 250-500k,FALSE
+CA03300,riverside county sheriff's office,CA,sheriffs office,pacific,423682,10,West,250-500k,West 250-500k,FALSE
+MO09500,st. louis county police dept,MO,local police department,west north central,419739,10,Midwest,250-500k,Midwest 250-500k,FALSE
+GAAPD00,atlanta police department,GA,local police department,south atlantic,418843,10,South,250-500k,South 250-500k,TRUE
+FL04800,orange county sheriff's office,FL,sheriffs office,south atlantic,416140.5,6,South,250-500k,South 250-500k,TRUE
+MOSPD00,st. louis (city) police dept,MO,local police department,west north central,403819.5,10,Midwest,250-500k,Midwest 250-500k,TRUE
+AZ01003,tucson police department,AZ,local police department,mountain,401206.5,10,West,250-500k,West 250-500k,FALSE
+MD00202,anne arundel county police department,MD,local police department,south atlantic,391853,10,South,250-500k,South 250-500k,FALSE
+NM00101,albuquerque police department,NM,local police department,mountain,384768.5,10,West,250-500k,West 250-500k,FALSE
+NC06001,charlotte - mecklenburg police department,NC,local police department,south atlantic,384273,10,South,250-500k,South 250-500k,TRUE
+FL01306,miami police department,FL,local police department,south atlantic,382534.5,6,South,250-500k,South 250-500k,FALSE
+VA12800,virginia beach police department,VA,local police department,south atlantic,381692.5,10,South,250-500k,South 250-500k,FALSE
+PAPPD00,pittsburgh police department,PA,local police department,middle atlantic,376412,9,Northeast,250-500k,Northeast 250-500k,FALSE
+OK07205,tulsa police department,OK,local police department,west south central,374238.5,10,South,250-500k,South 250-500k,TRUE
+FL05000,palm beach county sheriff's office,FL,sheriffs office,south atlantic,374046,6,South,250-500k,South 250-500k,FALSE
+CA00109,oakland police department,CA,local police department,pacific,371399,10,West,250-500k,West 250-500k,FALSE
+OHCIP00,cincinnati police department,OH,local police department,east north central,369952.5,10,Midwest,250-500k,Midwest 250-500k,FALSE
+MN02711,minneapolis police department,MN,local police department,west north central,364745,9,Midwest,250-500k,Midwest 250-500k,FALSE
+CA03404,sacramento police department,CA,local police department,pacific,358268.5,10,West,250-500k,West 250-500k,TRUE
+GA03302,cobb county police department,GA,local police department,south atlantic,352004,8,South,250-500k,South 250-500k,TRUE
+LA02600,jefferson parish sheriff's office,LA,sheriffs office,west south central,349647.5,10,South,250-500k,South 250-500k,TRUE
+CA03600,san bernardino county sheriff's office,CA,sheriffs office,pacific,344790,10,West,250-500k,West 250-500k,FALSE
+NB02802,omaha police dept,NE,local police department,west north central,341753,7,Midwest,250-500k,Midwest 250-500k,TRUE
+WA02700,pierce county sheriff's office,WA,sheriffs office,pacific,341223,10,West,250-500k,West 250-500k,FALSE
+OH04807,toledo police department,OH,local police department,east north central,340272,10,Midwest,250-500k,Midwest 250-500k,FALSE
+CA01005,fresno police department,CA,local police department,pacific,334710,10,West,250-500k,West 250-500k,TRUE
+KY05601,jefferson county pd louisville,KY,local police department,east south central,331101,9,South,250-500k,South 250-500k,FALSE
+NY01401,buffalo police department,NY,local police department,middle atlantic,326955,10,Northeast,250-500k,Northeast 250-500k,FALSE
+DE00203,new castle county police department,DE,local police department,south atlantic,326808.5,10,South,250-500k,South 250-500k,FALSE
+NJNPD00,newark police,NJ,local police department,middle atlantic,295691.5,10,Northeast,250-500k,Northeast 250-500k,TRUE
+KS08703,wichita police department,KS,local police department,west north central,295062,8,Midwest,250-500k,Midwest 250-500k,FALSE
+FL02902,tampa police department,FL,local police department,south atlantic,290398.5,6,South,250-500k,South 250-500k,FALSE
+GA06702,gwinnett county police department,GA,local police department,south atlantic,288347,9,South,250-500k,South 250-500k,FALSE
+AZ00717,mesa police department,AZ,local police department,mountain,286987,10,West,250-500k,West 250-500k,FALSE
+UT01800,unified police department of greater salt lake,UT,local police department,mountain,285837,10,West,250-500k,West 250-500k,FALSE
+CO02101,colorado springs police department,CO,local police department,mountain,282811,10,West,250-500k,West 250-500k,TRUE
+CA01500,kern county sheriff's office,CA,sheriffs office,pacific,277714.5,10,West,250-500k,West 250-500k,FALSE
+KY05602,louisville pd,KY,local police department,east south central,276307,9,South,250-500k,South 250-500k,FALSE
+AL00102,birmingham police department,AL,local police department,east south central,275209,10,South,250-500k,South 250-500k,FALSE
+VA11700,norfolk police department,VA,local police department,south atlantic,274858.5,10,South,250-500k,South 250-500k,FALSE
+MN06209,st. paul police department,MN,local police department,west north central,270229,10,Midwest,250-500k,Midwest 250-500k,FALSE
+CA03019,santa ana police department,CA,local police department,pacific,268947.5,10,West,250-500k,West 250-500k,FALSE
+TX17802,corpus christi police department,TX,local police department,west south central,264907,10,South,250-500k,South 250-500k,FALSE
+FL05200,pinellas county sheriff's office,FL,sheriffs office,south atlantic,261844,6,South,250-500k,South 250-500k,FALSE
+TX22001,arlington police department,TX,local police department,west south central,260758.5,10,South,250-500k,South 250-500k,FALSE
+IN04900,marion county sheriff's office,IN,sheriffs office,east north central,260508.5,10,Midwest,250-500k,Midwest 250-500k,FALSE
+CA03001,anaheim police department,CA,local police department,pacific,258776,10,West,250-500k,West 250-500k,TRUE
+CA03000,orange cnty sheriffs dept,CA,sheriffs office,pacific,256536,10,West,250-500k,West 250-500k,FALSE
+WA03100,snohomish county sheriff's office,WA,sheriffs office,pacific,256162.5,10,West,250-500k,West 250-500k,FALSE
+FL05214,st. petersburg police department,FL,local police department,south atlantic,247661,6,South,100-250k,South 100-250k,FALSE
+AZ01000,pima county sheriff's dept.,AZ,sheriffs office,mountain,244482,10,West,100-250k,West 100-250k,FALSE
+FL05300,polk county sheriff's office,FL,sheriffs office,south atlantic,241543,6,South,100-250k,South 100-250k,FALSE
+FL05100,pasco county sheriff's office,FL,sheriffs office,south atlantic,238707,6,South,100-250k,South 100-250k,FALSE
+LA01702,baton rouge police department,LA,local police department,west south central,236421.5,10,South,100-250k,South 100-250k,FALSE
+NY02701,rochester police department,NY,local police department,middle atlantic,235119.5,10,Northeast,100-250k,Northeast 100-250k,FALSE
+AK00101,anchorage police department,AK,local police department,pacific,232805,10,West,100-250k,West 100-250k,TRUE
+NJ00906,jersey city police,NJ,local police department,middle atlantic,227336,10,Northeast,100-250k,Northeast 100-250k,FALSE
+KY03402,lexington division of police,KY,local police department,east south central,225918,9,South,100-250k,South 100-250k,FALSE
+OH07701,akron police department,OH,local police department,east north central,225876,10,Midwest,100-250k,Midwest 100-250k,FALSE
+SC02300,greenville county sheriff's office,SC,sheriffs office,south atlantic,221638,10,South,100-250k,South 100-250k,FALSE
+CA03313,riverside police department,CA,local police department,pacific,221355,10,West,100-250k,West 100-250k,FALSE
+CO00101,aurora police department,CO,local police department,mountain,221024,10,West,100-250k,West 100-250k,FALSE
+AZ00700,maricopa county sheriff's office,AZ,sheriffs office,mountain,217720.5,10,West,100-250k,West 100-250k,FALSE
+MI63163,oakland county sheriff's office,MI,sheriffs office,east north central,215948,8,Midwest,100-250k,Midwest 100-250k,FALSE
+VA04301,henrico county division of police,VA,local police department,south atlantic,214723.5,10,South,100-250k,South 100-250k,FALSE
+VA12200,richmond police department,VA,local police department,south atlantic,212754,10,South,100-250k,South 100-250k,FALSE
+OH03100,hamilton county sheriff's office,OH,sheriffs office,east north central,211778,10,Midwest,100-250k,Midwest 100-250k,FALSE
+FL01700,escambia county sheriff's office,FL,sheriffs office,south atlantic,210737.5,6,South,100-250k,South 100-250k,FALSE
+LA00901,shreveport police department,LA,local police department,west south central,209205,10,South,100-250k,South 100-250k,FALSE
+AL00201,mobile police department,AL,local police department,east south central,205323,10,South,100-250k,South 100-250k,FALSE
+FL03600,lee county sheriff's office,FL,sheriffs office,south atlantic,204187,6,South,100-250k,South 100-250k,FALSE
+CA03905,stockton police department,CA,local police department,pacific,203335,10,West,100-250k,West 100-250k,FALSE
+VA07503,prince william county police department,VA,local police department,south atlantic,202690,10,South,100-250k,South 100-250k,FALSE
+MS02501,jackson police department,MS,local police department,east south central,200811,10,South,100-250k,South 100-250k,FALSE
+NC09201,raleigh police department,NC,local police department,south atlantic,198541.5,10,South,100-250k,South 100-250k,FALSE
+VA02101,chesterfield county police department,VA,local police department,south atlantic,197697.5,10,South,100-250k,South 100-250k,FALSE
+NY02700,monroe county sheriff's office,NY,sheriffs office,middle atlantic,195601.5,8,Northeast,100-250k,Northeast 100-250k,FALSE
+IA07703,des moines police department,IA,local police department,west north central,193305,9,Midwest,100-250k,Midwest 100-250k,FALSE
+AL00301,montgomery police department,AL,local police department,east south central,192834,10,South,100-250k,South 100-250k,FALSE
+MI41436,grand rapids police department,MI,local police department,east north central,189734.5,10,Midwest,100-250k,Midwest 100-250k,FALSE
+TX15202,lubbock police department,TX,local police department,west south central,189273,10,South,100-250k,South 100-250k,FALSE
+NB05501,lincoln police dept,NE,local police department,west north central,188922,9,Midwest,100-250k,Midwest 100-250k,FALSE
+CA03010,huntington beach police department,CA,local police department,pacific,188263,10,West,100-250k,West 100-250k,FALSE
+NY05907,yonkers police department,NY,local police department,middle atlantic,187597.5,10,Northeast,100-250k,Northeast 100-250k,FALSE
+FL05800,sarasota county sheriff's office,FL,sheriffs office,south atlantic,187218,6,South,100-250k,South 100-250k,FALSE
+WI01301,madison police department,WI,local police department,east north central,185136,10,Midwest,100-250k,Midwest 100-250k,FALSE
+CA01000,fresno county sheriff's office,CA,sheriffs office,pacific,184724,10,West,100-250k,West 100-250k,FALSE
+SC04000,richland county sheriff's office,SC,sheriffs office,south atlantic,184510.5,10,South,100-250k,South 100-250k,FALSE
+NC04102,greensboro police department,NC,local police department,south atlantic,183921,10,South,100-250k,South 100-250k,FALSE
+GA10601,columbus police department,GA,local police department,south atlantic,183060,10,South,100-250k,South 100-250k,FALSE
+OH05702,dayton police department,OH,local police department,east north central,182814.5,10,Midwest,100-250k,Midwest 100-250k,FALSE
+TX05711,garland police department,TX,local police department,west south central,181369,10,South,100-250k,South 100-250k,FALSE
+NC02600,cumberland county sheriff's office,NC,sheriffs office,south atlantic,180433.5,10,South,100-250k,South 100-250k,FALSE
+AR06002,little rock police department,AR,local police department,west south central,179211,10,South,100-250k,South 100-250k,FALSE
+WA03204,spokane police department,WA,local police department,pacific,177544.5,10,West,100-250k,West 100-250k,FALSE
+MD01401,howard county police department,MD,local police department,south atlantic,176437,10,South,100-250k,South 100-250k,FALSE
+IN00201,fort wayne police,IN,local police department,east north central,175266.5,10,Midwest,100-250k,Midwest 100-250k,FALSE
+WA03200,spokane county sheriff's office,WA,sheriffs office,pacific,174940.5,10,West,100-250k,West 100-250k,FALSE
+TN04701,knoxville police department,TN,local police department,east south central,172965.5,10,South,100-250k,South 100-250k,FALSE
+CA01925,glendale police department,CA,local police department,pacific,172482.5,10,West,100-250k,West 100-250k,FALSE
+WA02703,tacoma police department,WA,local police department,pacific,172303.5,10,West,100-250k,West 100-250k,FALSE
+WA00600,clark county sheriff's office,WA,sheriffs office,pacific,172289,10,West,100-250k,West 100-250k,FALSE
+CA00105,fremont police department,CA,local police department,pacific,172169,10,West,100-250k,West 100-250k,FALSE
+TX01500,bexar county sheriff's office,TX,sheriffs office,west south central,171945,10,South,100-250k,South 100-250k,FALSE
+OR00300,clackamas county sheriff's office,OR,sheriffs office,pacific,170522.5,10,West,100-250k,West 100-250k,FALSE
+CA01502,bakersfield police department,CA,local police department,pacific,168321.5,10,West,100-250k,West 100-250k,FALSE
+VA11600,newport news police department,VA,local police department,south atlantic,167692.5,10,South,100-250k,South 100-250k,FALSE
+TX18801,amarillo police department,TX,local police department,west south central,166830.5,10,South,100-250k,South 100-250k,FALSE
+VA00701,arlington county police department,VA,local police department,south atlantic,166426.5,10,South,100-250k,South 100-250k,FALSE
+TN04700,knox county sheriff's office,TN,sheriffs office,east south central,165499.5,10,South,100-250k,South 100-250k,FALSE
+FL01304,hialeah police department,FL,local police department,south atlantic,164265.5,4,South,100-250k,South 100-250k,FALSE
+UT01803,salt lake city police department,UT,local police department,mountain,164264.5,10,West,100-250k,West 100-250k,FALSE
+NY03301,syracuse police department,NY,local police department,middle atlantic,163743,10,Northeast,100-250k,Northeast 100-250k,FALSE
+AL04701,huntsville police department,AL,local police department,east south central,161703,9,South,100-250k,South 100-250k,FALSE
+CA04200,santa barbara county sheriff's office,CA,sheriffs office,pacific,161119,10,West,100-250k,West 100-250k,FALSE
+FL00600,broward county sheriff's office,FL,sheriffs office,south atlantic,161069,6,South,100-250k,South 100-250k,TRUE
+FL04804,orlando police department,FL,local police department,south atlantic,160972,6,South,100-250k,South 100-250k,TRUE
+TN03301,chattanooga police department,TN,local police department,east south central,160690,6,South,100-250k,South 100-250k,FALSE
+MA01460,worcester police department,MA,local police department,new england,160655,8,Northeast,100-250k,Northeast 100-250k,FALSE
+RI00409,providence police department,RI,local police department,new england,159078,10,Northeast,100-250k,Northeast 100-250k,FALSE
+CA05002,modesto police department,CA,local police department,pacific,158667.5,10,West,100-250k,West 100-250k,FALSE
+CA03610,san bernardino police department,CA,local police department,pacific,158256,10,West,100-250k,West 100-250k,FALSE
+FL00500,brevard county sheriff's office,FL,sheriffs office,south atlantic,156150.5,6,South,100-250k,South 100-250k,FALSE
+OR03400,washington county sheriff's office,OR,sheriffs office,pacific,155728,10,West,100-250k,West 100-250k,FALSE
+CA04900,sonoma county sheriff's office,CA,sheriffs office,pacific,155498,10,West,100-250k,West 100-250k,FALSE
+FL00603,fort lauderdale police department,FL,local police department,south atlantic,154452.5,6,South,100-250k,South 100-250k,FALSE
+SC04200,spartanburg county sheriff's office,SC,sheriffs office,south atlantic,154161.5,10,South,100-250k,South 100-250k,FALSE
+MA00718,springfield police department,MA,local police department,new england,152649.5,10,Northeast,100-250k,Northeast 100-250k,FALSE
+KS10502,kansas city police department,KS,local police department,west north central,152511,7,Midwest,100-250k,Midwest 100-250k,FALSE
+AL00100,jefferson county sheriff's office,AL,sheriffs office,east south central,152487.5,10,South,100-250k,South 100-250k,FALSE
+MI41141,kent county sheriff's office,MI,sheriffs office,east north central,151912.5,8,Midwest,100-250k,Midwest 100-250k,FALSE
+VA10300,chesapeake police department,VA,local police department,south atlantic,150903,10,South,100-250k,South 100-250k,FALSE
+TX17000,montgomery county sheriff's office,TX,sheriffs office,west south central,150464.5,10,South,100-250k,South 100-250k,FALSE
+CA00700,contra costa county sheriff's office,CA,sheriffs office,pacific,150257,10,West,100-250k,West 100-250k,FALSE
+GA12100,richmond county sheriff's office,GA,sheriffs office,south atlantic,148724,9,South,100-250k,South 100-250k,FALSE
+FL06400,volusia county sheriff's office,FL,sheriffs office,south atlantic,147996,6,South,100-250k,South 100-250k,FALSE
+NC03402,winston-salem police department,NC,local police department,south atlantic,147679,10,South,100-250k,South 100-250k,FALSE
+MI50806,warren police department,MI,local police department,east north central,146533.5,10,Midwest,100-250k,Midwest 100-250k,FALSE
+GA02503,savannah-chatham metropolitan police department,GA,local police department,south atlantic,146423,10,South,100-250k,South 100-250k,FALSE
+AZ00713,glendale police department,AZ,local police department,mountain,145532.5,10,West,100-250k,West 100-250k,FALSE
+AZ00729,tempe police department,AZ,local police department,mountain,145146,9,West,100-250k,West 100-250k,FALSE
+TX05715,irving police department,TX,local police department,west south central,144622,10,South,100-250k,South 100-250k,FALSE
+GA12102,richmond county pd augusta,GA,local police department,south atlantic,142862,1,South,100-250k,South 100-250k,FALSE
+MI25398,flint police department,MI,local police department,east north central,142517.5,10,Midwest,100-250k,Midwest 100-250k,FALSE
+CA03009,garden grove police department,CA,local police department,pacific,141839,10,West,100-250k,West 100-250k,FALSE
+CT00015,bridgeport police department,CT,local police department,new england,141799,10,Northeast,100-250k,Northeast 100-250k,FALSE
+WA01800,kitsap county sheriff's office,WA,sheriffs office,pacific,141757,9,West,100-250k,West 100-250k,FALSE
+MO03903,springfield police dept,MO,local police department,west north central,141689.5,10,Midwest,100-250k,Midwest 100-250k,FALSE
+MD01300,harford county sheriff's office,MD,sheriffs office,south atlantic,141577,7,South,100-250k,South 100-250k,FALSE
+CO03000,jefferson county sheriff's office,CO,sheriffs office,mountain,141420,9,West,100-250k,West 100-250k,FALSE
+GA06013,fulton county police department,GA,local police department,south atlantic,141264.5,10,South,100-250k,South 100-250k,FALSE
+NJ01608,paterson police,NJ,local police department,middle atlantic,140805.5,10,Northeast,100-250k,Northeast 100-250k,FALSE
+FL04100,manatee county sheriff's office,FL,sheriffs office,south atlantic,140172,6,South,100-250k,South 100-250k,FALSE
+FL05900,seminole county sheriff's office,FL,sheriffs office,south atlantic,140157,6,South,100-250k,South 100-250k,FALSE
+CA05400,tulare county sheriff's office,CA,sheriffs office,pacific,139952.5,10,West,100-250k,West 100-250k,FALSE
+FL04200,marion county sheriff's office,FL,sheriffs office,south atlantic,139910.5,6,South,100-250k,South 100-250k,FALSE
+IL01600,cook county sheriff's office,IL,sheriffs office,east north central,139558,9,Midwest,100-250k,Midwest 100-250k,FALSE
+IL10104,rockford police dept,IL,local police department,east north central,138221.5,10,Midwest,100-250k,Midwest 100-250k,FALSE
+CT00064,hartford police department,CT,local police department,new england,138081,10,Northeast,100-250k,Northeast 100-250k,FALSE
+CA01972,torrance police department,CA,local police department,pacific,138026,10,West,100-250k,West 100-250k,FALSE
+CA05604,oxnard police department,CA,local police department,pacific,137869.5,10,West,100-250k,West 100-250k,FALSE
+GA03101,clayton county police department,GA,local police department,south atlantic,137662.5,10,South,100-250k,South 100-250k,FALSE
+CA03900,san joaquin county sheriff's office,CA,sheriffs office,pacific,136508,10,West,100-250k,West 100-250k,FALSE
+CA01953,pasadena police department,CA,local police department,pacific,134146.5,10,West,100-250k,West 100-250k,FALSE
+VA11100,hampton police department,VA,local police department,south atlantic,133194.5,10,South,100-250k,South 100-250k,FALSE
+MO05000,jefferson county sheriff's office,MO,sheriffs office,west north central,132587,7,Midwest,100-250k,Midwest 100-250k,FALSE
+CA03702,chula vista police department,CA,local police department,pacific,132372,10,West,100-250k,West 100-250k,FALSE
+CA04400,santa cruz county sheriff's office,CA,sheriffs office,pacific,131998.5,10,West,100-250k,West 100-250k,FALSE
+MI70170,ottawa county sheriff's office,MI,sheriffs office,east north central,130787,5,Midwest,100-250k,Midwest 100-250k,FALSE
+CA03607,ontario police department,CA,local police department,pacific,129912.5,10,West,100-250k,West 100-250k,FALSE
+IL02200,du page county sheriff's office,IL,sheriffs office,east north central,129446,7,Midwest,100-250k,Midwest 100-250k,FALSE
+IN08201,evansville police,IN,local police department,east north central,129362.5,10,Midwest,100-250k,Midwest 100-250k,FALSE
+TX04306,plano police department,TX,local police department,west south central,128713,9,South,100-250k,South 100-250k,FALSE
+NC09200,wake county sheriff's office,NC,sheriffs office,south atlantic,128566.5,10,South,100-250k,South 100-250k,FALSE
+MI33519,lansing police department,MI,local police department,east north central,128238,10,Midwest,100-250k,Midwest 100-250k,FALSE
+ID00101,boise police department,ID,local police department,mountain,127778.5,8,West,100-250k,West 100-250k,FALSE
+CA01955,pomona police department,CA,local police department,pacific,127691,10,West,100-250k,West 100-250k,FALSE
+NV01601,reno police department,NV,local police department,mountain,127597.5,10,West,100-250k,West 100-250k,FALSE
+NC03201,durham police department,NC,local police department,south atlantic,127162,10,South,100-250k,South 100-250k,FALSE
+FL03703,tallahassee police department,FL,local police department,south atlantic,126544.5,6,South,100-250k,South 100-250k,FALSE
+IN04505,gary police,IN,local police department,east north central,126221.5,10,Midwest,100-250k,Midwest 100-250k,FALSE
+SC01002,charleston county pd charleston heights,SC,local police department,south atlantic,126041,6,South,100-250k,South 100-250k,FALSE
+CO03004,lakewood police department,CO,local police department,mountain,125481.5,10,West,100-250k,West 100-250k,FALSE
+IL09900,will county sheriff's office,IL,sheriffs office,east north central,125342,9,Midwest,100-250k,Midwest 100-250k,FALSE
+CT00093,new haven police department,CT,local police department,new england,125263,10,Northeast,100-250k,Northeast 100-250k,FALSE
+FL00605,hollywood police department,FL,local police department,south atlantic,125244.5,6,South,100-250k,South 100-250k,FALSE
+LA01700,east baton rouge parish sheriff's office,LA,sheriffs office,west south central,125089.5,10,South,100-250k,South 100-250k,FALSE
+TX07900,fort bend county sheriff's office,TX,sheriffs office,west south central,124290,9,South,100-250k,South 100-250k,FALSE
+TX24001,laredo police department,TX,local police department,west south central,124210,10,South,100-250k,South 100-250k,FALSE
+AZ00725,scottsdale police dept,AZ,local police department,mountain,124138,9,West,100-250k,West 100-250k,FALSE
+CA00100,alameda county sheriff's office,CA,sheriffs office,pacific,123359.5,10,West,100-250k,West 100-250k,FALSE
+CA03332,moreno valley police dept,CA,local police department,pacific,123196,5,West,100-250k,West 100-250k,FALSE
+TX10115,pasadena police department,TX,local police department,west south central,122029,10,South,100-250k,South 100-250k,FALSE
+CA03710,oceanside police department,CA,local police department,pacific,122004.5,10,West,100-250k,West 100-250k,FALSE
+FL01100,collier county sheriff's office,FL,sheriffs office,south atlantic,121590,6,South,100-250k,South 100-250k,FALSE
+SC03200,lexington county sheriff's office,SC,sheriffs office,south atlantic,120982.5,10,South,100-250k,South 100-250k,FALSE
+OH07600,stark county sheriff's office,OH,sheriffs office,east north central,120342.5,8,Midwest,100-250k,Midwest 100-250k,FALSE
+KS08901,topeka police department,KS,local police department,west north central,120064,7,Midwest,100-250k,Midwest 100-250k,FALSE
+OH05700,montgomery county sheriff's office,OH,sheriffs office,east north central,118591.5,10,Midwest,100-250k,Midwest 100-250k,FALSE
+IN00200,allen county sheriff's office,IN,sheriffs office,east north central,118444,9,Midwest,100-250k,Midwest 100-250k,FALSE
+TX12301,beaumont police department,TX,local police department,west south central,118297,10,South,100-250k,South 100-250k,FALSE
+CA04316,sunnyvale department of public safety,CA,local police department,pacific,118242,10,West,100-250k,West 100-250k,FALSE
+TX10800,hidalgo county sheriff's office,TX,sheriffs office,west south central,117676.5,10,South,100-250k,South 100-250k,FALSE
+CO00300,arapahoe county sheriff's office,CO,sheriffs office,mountain,117214,9,West,100-250k,West 100-250k,FALSE
+GA01101,macon police department,GA,local police department,south atlantic,115710,10,South,100-250k,South 100-250k,FALSE
+MI50765,sterling heights police department,MI,local police department,east north central,115132,7,Midwest,100-250k,Midwest 100-250k,FALSE
+IL07207,peoria police dept,IL,local police department,east north central,114619,9,Midwest,100-250k,Midwest 100-250k,FALSE
+CA03008,fullerton police department,CA,local police department,pacific,113777,10,West,100-250k,West 100-250k,FALSE
+MO04806,independence police department,MO,local police department,west north central,113710.5,10,Midwest,100-250k,Midwest 100-250k,FALSE
+CA0191R,santa clarita,CA,local police department,pacific,112946,5,West,100-250k,West 100-250k,FALSE
+CA04905,santa rosa police department,CA,local police department,pacific,112198.5,10,West,100-250k,West 100-250k,FALSE
+PA02502,erie police department,PA,local police department,middle atlantic,111518.5,10,Northeast,100-250k,Northeast 100-250k,FALSE
+NC06700,onslow county sheriff's office,NC,sheriffs office,south atlantic,111435,9,South,100-250k,South 100-250k,FALSE
+OR02002,eugene police department,OR,local police department,pacific,111394,10,West,100-250k,West 100-250k,FALSE
+NY04500,saratoga county sheriff's office,NY,sheriffs office,middle atlantic,111165.5,8,Northeast,100-250k,Northeast 100-250k,FALSE
+CA00704,concord police department,CA,local police department,pacific,111124,10,West,100-250k,West 100-250k,FALSE
+NC03400,forsyth county sheriff's office,NC,sheriffs office,south atlantic,111033,10,South,100-250k,South 100-250k,FALSE
+SC01000,charleston county sheriff's office,SC,sheriffs office,south atlantic,110892.5,4,South,100-250k,South 100-250k,FALSE
+VA09900,alexandria police department,VA,local police department,south atlantic,110584,10,South,100-250k,South 100-250k,FALSE
+TX22101,abilene police department,TX,local police department,west south central,110539,10,South,100-250k,South 100-250k,FALSE
+AL00200,mobile county sheriff's office,AL,sheriffs office,east south central,109977,8,South,100-250k,South 100-250k,FALSE
+IL04900,lake county sheriff's office,IL,sheriffs office,east north central,109631,9,Midwest,100-250k,Midwest 100-250k,FALSE
+MI81218,ann arbor police department,MI,local police department,east north central,109592,9,Midwest,100-250k,Midwest 100-250k,FALSE
+CA03015,orange police department,CA,local police department,pacific,109583,10,West,100-250k,West 100-250k,FALSE
+CA04300,santa clara county sheriff's office,CA,sheriffs office,pacific,109469,10,West,100-250k,West 100-250k,FALSE
+NJ02004,elizabeth police,NJ,local police department,middle atlantic,109045.5,10,Northeast,100-250k,Northeast 100-250k,FALSE
+CA00106,hayward police department,CA,local police department,pacific,108920,10,West,100-250k,West 100-250k,FALSE
+CA01933,inglewood police department,CA,local police department,pacific,108325.5,10,West,100-250k,West 100-250k,FALSE
+IA05701,cedar rapids police department,IA,local police department,west north central,108281,4,Midwest,100-250k,Midwest 100-250k,FALSE
+VA12000,portsmouth police department,VA,local police department,south atlantic,108033.5,10,South,100-250k,South 100-250k,FALSE
+NY03300,onondaga county sheriff's office,NY,sheriffs office,middle atlantic,107997,7,Northeast,100-250k,Northeast 100-250k,FALSE
+NY01451,amherst town police department,NY,local police department,middle atlantic,107238,5,Northeast,100-250k,Northeast 100-250k,FALSE
+IN07102,south bend police,IN,local police department,east north central,107235,9,Midwest,100-250k,Midwest 100-250k,FALSE
+CA00103,berkeley police department,CA,local police department,pacific,106473.5,10,West,100-250k,West 100-250k,FALSE
+CA04807,vallejo police department,CA,local police department,pacific,106297.5,10,West,100-250k,West 100-250k,FALSE
+CA02708,salinas police department,CA,local police department,pacific,106271.5,10,West,100-250k,West 100-250k,FALSE
+TX15512,waco police department,TX,local police department,west south central,106120,10,South,100-250k,South 100-250k,FALSE
+NM00100,bernalillo county sheriff's office,NM,sheriffs office,mountain,105888,4,West,100-250k,West 100-250k,FALSE
+CT00151,waterbury police department,CT,local police department,new england,105743,10,Northeast,100-250k,Northeast 100-250k,FALSE
+PA03901,allentown police department,PA,local police department,middle atlantic,105661.5,10,Northeast,100-250k,Northeast 100-250k,FALSE
+CT00135,stamford police department,CT,local police department,new england,105249.5,10,Northeast,100-250k,Northeast 100-250k,FALSE
+WV02000,kanawha county sheriff's office,WV,sheriffs office,south atlantic,104630,10,South,100-250k,South 100-250k,FALSE
+FL00800,charlotte county sheriff's office,FL,sheriffs office,south atlantic,104488,5,South,100-250k,South 100-250k,FALSE
+CA02700,monterey county sheriff's office,CA,sheriffs office,pacific,104299,10,West,100-250k,West 100-250k,FALSE
+CA05607,thousand oaks pd,CA,local police department,pacific,104284.5,10,West,100-250k,West 100-250k,FALSE
+NY01400,erie county sheriff's office,NY,sheriffs office,middle atlantic,103727,4,Northeast,100-250k,Northeast 100-250k,FALSE
+CA01922,el monte police department,CA,local police department,pacific,103534,10,West,100-250k,West 100-250k,FALSE
+OR02402,salem police department,OR,local police department,pacific,103438,10,West,100-250k,West 100-250k,FALSE
+CA03706,escondido police department,CA,local police department,pacific,103275,10,West,100-250k,West 100-250k,FALSE
+MD01100,frederick county sheriff's office,MD,sheriffs office,south atlantic,103212,5,South,100-250k,South 100-250k,FALSE
+CA05000,stanislaus county sheriff's office,CA,sheriffs office,pacific,102124.5,10,West,100-250k,West 100-250k,FALSE
+MI81181,washtenaw county sheriff's office,MI,sheriffs office,east north central,102082,9,Midwest,100-250k,Midwest 100-250k,FALSE
+IL08402,springfield police dept,IL,local police department,east north central,101931,9,Midwest,100-250k,Midwest 100-250k,FALSE
+KS04606,overland park police department,KS,local police department,west north central,101505,5,Midwest,100-250k,Midwest 100-250k,FALSE
+CO05101,pueblo police dept,CO,local police department,mountain,101492,10,West,100-250k,West 100-250k,FALSE
+MI82538,livonia police department,MI,local police department,east north central,101463,7,Midwest,100-250k,Midwest 100-250k,FALSE
+TX03101,brownsville police department,TX,local police department,west south central,101377.5,10,South,100-250k,South 100-250k,FALSE
+OR02000,lane county sheriff's office,OR,sheriffs office,pacific,100995,9,West,100-250k,West 100-250k,FALSE
+NC01100,buncombe county sheriff's office,NC,sheriffs office,south atlantic,100973,10,South,100-250k,South 100-250k,FALSE
+MI58158,monroe county sheriff's office,MI,sheriffs office,east north central,100575,9,Midwest,100-250k,Midwest 100-250k,FALSE
+HI00500,maui (county) police department,HI,local police department,pacific,100504,9,West,100-250k,West 100-250k,FALSE
+FL05203,clearwater police department,FL,local police department,south atlantic,100209,6,South,100-250k,South 100-250k,FALSE
+NY00101,albany police department,NY,local police department,middle atlantic,100114.5,10,Northeast,100-250k,Northeast 100-250k,FALSE
