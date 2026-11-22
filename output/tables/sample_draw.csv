@@ -137,7 +137,7 @@ DCMPD00,washington metropolitan police department,DC,local police department,sou
 FL01300,miami-dade (county) police department,FL,local police department,south atlantic,1003555,6,South,250-500k,certainty,TRUE,NA,NA,NA,NA,already rebuilt,NA,NA,TRUE,1
 FL02900,hillsborough county sheriff's office,FL,sheriffs office,south atlantic,508744,6,South,250-500k,certainty,FALSE,Hillsborough County sheriff,"Tampa Tribune, The (FL)",5,5,strong,NA,NA,TRUE,1
 ILCPD00,chicago police dept,IL,local police department,east north central,2832901,9,Midwest,250-500k,certainty,TRUE,NA,NA,NA,NA,already rebuilt,NA,NA,TRUE,1
-LANPD00,new orleans police department,LA,local police department,west south central,528589,9,South,250-500k,certainty,FALSE,New Orleans police,"Times-Picayune, The (New Orleans, LA)",5,5,strong,NA,NA,TRUE,1
+LANPD00,new orleans police department,LA,local police department,west south central,528589,9,South,250-500k,certainty,TRUE,New Orleans police,"Times-Picayune, The (New Orleans, LA)",5,5,already rebuilt,NA,NA,TRUE,1
 MD00301,baltimore county police department,MD,local police department,south atlantic,696385.5,10,South,250-500k,certainty,FALSE,Baltimore County police,"Sun, The (Baltimore, MD)",5,4,usable,NA,NA,TRUE,1
 MD01604,montgomery county police department,MD,local police department,south atlantic,725404.5,10,South,250-500k,certainty,TRUE,Montgomery County police,"Washington Times, The (DC)",5,5,already rebuilt,NA,NA,TRUE,1
 MD01721,prince george's county police department,MD,local police department,south atlantic,611113.5,10,South,250-500k,certainty,TRUE,Prince George's County police,"Washington Times, The (DC)",5,5,already rebuilt,NA,NA,TRUE,1
