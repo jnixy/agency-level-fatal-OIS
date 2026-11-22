@@ -257,7 +257,7 @@ murray_county_ga,GA10500,Murray County Sheriffs Office,GA,sheriff,LEAIC 2012,
 nashville_metro_tn,TN01901,Nashville Police Department,TN,local_police,WaPo,
 new_brighton_mn,MN06206,New Brighton Dept Of Public Safety,MN,local_police,LEAIC 2012,
 new_hope_mn,MN02714,New Hope Police Department,MN,local_police,WaPo,
-new_orleans_la,LANPD00,New Orleans Police Department,LA,local_police,WaPo,
+new_orleans_la,LANPD00,New Orleans Police Department,LA,local_police,WaPo,"New Orleans PD; 1989-94 newspaper reconstruction (Times-Picayune), WaPo fills 2015-24"
 new_york_city,NY03030,New York Police Department,NY,local_police,WaPo,
 newark_nj,NJNPD00,Newark Police Department,NJ,local_police,WaPo,
 newton_county_ga,GA10700,Newton County Sheriff's Office,GA,sheriff,WaPo,

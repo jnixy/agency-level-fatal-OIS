@@ -57806,11 +57806,12 @@ LANPD00,LANPD00,New Orleans Police Department,LA,local_police,TRUE,new_orleans_l
 LANPD00,LANPD00,New Orleans Police Department,LA,local_police,TRUE,new_orleans_la,FALSE,1986,,,,,,,,,,1
 LANPD00,LANPD00,New Orleans Police Department,LA,local_police,TRUE,new_orleans_la,FALSE,1987,,,,,,,,,,3
 LANPD00,LANPD00,New Orleans Police Department,LA,local_police,TRUE,new_orleans_la,FALSE,1988,,,,,,,,,,3
-LANPD00,LANPD00,New Orleans Police Department,LA,local_police,TRUE,new_orleans_la,FALSE,1989,,,,,,,,,,6
-LANPD00,LANPD00,New Orleans Police Department,LA,local_police,TRUE,new_orleans_la,FALSE,1990,,,,,,,,,,0
-LANPD00,LANPD00,New Orleans Police Department,LA,local_police,TRUE,new_orleans_la,FALSE,1992,,,,,,,,,,4
-LANPD00,LANPD00,New Orleans Police Department,LA,local_police,TRUE,new_orleans_la,FALSE,1993,,,,,,,,,,4
-LANPD00,LANPD00,New Orleans Police Department,LA,local_police,TRUE,new_orleans_la,FALSE,1994,,,,,,,,,,1
+LANPD00,LANPD00,New Orleans Police Department,LA,local_police,TRUE,new_orleans_la,FALSE,1989,5,FALSE,,,,,,,,6
+LANPD00,LANPD00,New Orleans Police Department,LA,local_police,TRUE,new_orleans_la,FALSE,1990,1,FALSE,,,,,,,,0
+LANPD00,LANPD00,New Orleans Police Department,LA,local_police,TRUE,new_orleans_la,FALSE,1991,3,FALSE,,,,,,,,
+LANPD00,LANPD00,New Orleans Police Department,LA,local_police,TRUE,new_orleans_la,FALSE,1992,2,FALSE,,,,,,,,4
+LANPD00,LANPD00,New Orleans Police Department,LA,local_police,TRUE,new_orleans_la,FALSE,1993,6,FALSE,,,,,,,,4
+LANPD00,LANPD00,New Orleans Police Department,LA,local_police,TRUE,new_orleans_la,FALSE,1994,1,FALSE,,,,,,,,1
 LANPD00,LANPD00,New Orleans Police Department,LA,local_police,TRUE,new_orleans_la,FALSE,1995,,,,,,,,,,3
 LANPD00,LANPD00,New Orleans Police Department,LA,local_police,TRUE,new_orleans_la,FALSE,1996,,,,,,,,,,2
 LANPD00,LANPD00,New Orleans Police Department,LA,local_police,TRUE,new_orleans_la,FALSE,1997,,,,,,,,,,3
