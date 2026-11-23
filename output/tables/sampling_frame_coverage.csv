@@ -136,7 +136,7 @@ CA01000,fresno county sheriff's office,CA,sheriffs office,pacific,184724,10,West
 SC04000,richland county sheriff's office,SC,sheriffs office,south atlantic,184510.5,10,South,100-250k,South 100-250k,FALSE,Richland County sheriff,"State, The (Columbia, SC)",5,4,usable
 NC04102,greensboro police department,NC,local police department,south atlantic,183921,10,South,100-250k,South 100-250k,FALSE,Greensboro police,"News & Record (Greensboro, NC)",5,5,strong
 GA10601,columbus police department,GA,local police department,south atlantic,183060,10,South,100-250k,South 100-250k,FALSE,Columbus police,"Ledger-Enquirer (Columbus, GA)",1,0,too thin
-OH05702,dayton police department,OH,local police department,east north central,182814.5,10,Midwest,100-250k,Midwest 100-250k,FALSE,Dayton police,Dayton Daily News (OH),5,5,strong
+OH05702,dayton police department,OH,local police department,east north central,182814.5,10,Midwest,100-250k,Midwest 100-250k,TRUE,Dayton police,Dayton Daily News (OH),5,5,already rebuilt
 TX05711,garland police department,TX,local police department,west south central,181369,10,South,100-250k,South 100-250k,FALSE,Garland police,"Dallas Morning News, The (TX)",5,0,usable
 NC02600,cumberland county sheriff's office,NC,sheriffs office,south atlantic,180433.5,10,South,100-250k,South 100-250k,FALSE,Cumberland County sheriff,"Fayetteville Observer, The (NC)",5,5,strong
 AR06002,little rock police department,AR,local police department,west south central,179211,10,South,100-250k,South 100-250k,FALSE,Little Rock police,"Arkansas Democrat-Gazette (Little Rock, AR)",1,1,too thin
