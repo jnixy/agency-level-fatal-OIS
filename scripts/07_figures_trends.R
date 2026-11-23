@@ -349,6 +349,11 @@ then_vs_now <- era_df |>
                                TRUE ~ "More now")) |>
   arrange(per_year_early)
 
+# Agencies with no deaths in either era carry no information for the era
+# ratio (fepois drops them), so set them aside here too and report the count
+n_all_zero <- sum(then_vs_now$deaths_early + then_vs_now$deaths_recent == 0)
+then_vs_now <- then_vs_now |> filter(deaths_early + deaths_recent > 0)
+
 n_lower <- sum(then_vs_now$lower_now)
 n_total <- nrow(then_vs_now)
 n_fewer <- sum(then_vs_now$direction == "Fewer now")
@@ -504,6 +509,7 @@ trend_summary <- tribble(
   "pre2000_agencies_min",          min(pre2000$agencies),
   "pre2000_agencies_max",          max(pre2000$agencies),
   "long_panel_agencies",           g_long,
+  "long_panel_all_zero_set_aside", n_all_zero,
   "era_ratio_recent_vs_early",     round(era_ratio, 3),
   "era_ratio_ci_lo",               round(era_ci[1], 3),
   "era_ratio_ci_hi",               round(era_ci[2], 3),
