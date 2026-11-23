@@ -30,6 +30,7 @@ FL01300,Miami-Dade Police Department,FL,2.1,4.455,10,11,1985,2015,1994,2025,21,4
 TXSPD00,San Antonio Police Department,TX,2.2,8.091,5,11,1990,2015,1994,2025,11,89,"San Antonio, TX",5.891,FALSE,0,More now
 CA03400,Sacramento County Sheriff's Department,CA,2.4,2.364,10,11,1985,2015,1994,2025,24,26,"Sacramento Co. Sheriff, CA",-0.036,TRUE,1,About the same
 CA03801,San Francisco Police Department,CA,2.4,2.364,10,11,1985,2015,1994,2025,24,26,"San Francisco, CA",-0.036,TRUE,1,About the same
+OHCLP00,Cleveland Police Department,OH,2.6,0.727,5,11,1990,2015,1994,2025,13,8,"Cleveland, OH",-1.873,TRUE,0.004,Fewer now
 OR02602,Portland Police Department,OR,2.857,2.727,7,11,1988,2015,1994,2025,20,30,"Portland, OR",-0.13,TRUE,0.885,About the same
 INIPD00,Indianapolis Metropolitan Police Department,IN,2.909,4.364,22,11,1970,2015,1991,2025,64,48,"Indianapolis, IN",1.455,FALSE,0.035,More now
 MOKPD00,Kansas City Police Department,MO,2.957,3.545,23,11,1972,2015,1994,2025,68,39,"Kansas City, MO",0.589,FALSE,0.355,About the same

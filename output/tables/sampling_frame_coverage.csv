@@ -33,7 +33,7 @@ NV00201,las vegas metro police department,NV,local police department,mountain,57
 MA01301,boston police department,MA,local police department,new england,573619,10,Northeast,250-500k,certainty,FALSE,Boston police,Boston Herald (MA),4,4,too thin
 WA01700,king county sheriff's office,WA,sheriffs office,pacific,571957.5,10,West,250-500k,certainty,TRUE,King County police,"Seattle Times, The (WA)",5,5,already rebuilt
 LANPD00,new orleans police department,LA,local police department,west south central,528589,9,South,250-500k,certainty,TRUE,New Orleans police,"Times-Picayune, The (New Orleans, LA)",5,5,already rebuilt
-OHCLP00,cleveland police department,OH,local police department,east north central,518696.5,10,Midwest,250-500k,certainty,FALSE,Cleveland police,"Plain Dealer, The (Cleveland, OH)",5,5,strong
+OHCLP00,cleveland police department,OH,local police department,east north central,518696.5,10,Midwest,250-500k,certainty,TRUE,Cleveland police,"Plain Dealer, The (Cleveland, OH)",5,5,already rebuilt
 TX07102,el paso police department,TX,local police department,west south central,515474.5,10,South,250-500k,certainty,FALSE,El Paso police,"Dallas Morning News, The (TX)",0,0,too thin
 WASPD00,seattle police department,WA,local police department,pacific,515328.5,10,West,250-500k,certainty,TRUE,NA,NA,NA,NA,already rebuilt
 FL02900,hillsborough county sheriff's office,FL,sheriffs office,south atlantic,508744,6,South,250-500k,certainty,FALSE,Hillsborough County sheriff,"Tampa Tribune, The (FL)",5,5,strong
