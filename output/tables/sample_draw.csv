@@ -135,7 +135,7 @@ CA03801,san francisco police department,CA,local police department,pacific,74605
 CA04313,san jose police department,CA,local police department,pacific,770106,10,West,250-500k,certainty,TRUE,NA,NA,NA,NA,already rebuilt,NA,NA,TRUE,1
 DCMPD00,washington metropolitan police department,DC,local police department,south atlantic,605450,10,South,250-500k,certainty,TRUE,NA,NA,NA,NA,already rebuilt,NA,NA,TRUE,1
 FL01300,miami-dade (county) police department,FL,local police department,south atlantic,1003555,6,South,250-500k,certainty,TRUE,NA,NA,NA,NA,already rebuilt,NA,NA,TRUE,1
-FL02900,hillsborough county sheriff's office,FL,sheriffs office,south atlantic,508744,6,South,250-500k,certainty,FALSE,Hillsborough County sheriff,"Tampa Tribune, The (FL)",5,5,strong,NA,NA,TRUE,1
+FL02900,hillsborough county sheriff's office,FL,sheriffs office,south atlantic,508744,6,South,250-500k,certainty,TRUE,Hillsborough County sheriff,"Tampa Tribune, The (FL)",5,5,already rebuilt,NA,NA,TRUE,1
 ILCPD00,chicago police dept,IL,local police department,east north central,2832901,9,Midwest,250-500k,certainty,TRUE,NA,NA,NA,NA,already rebuilt,NA,NA,TRUE,1
 LANPD00,new orleans police department,LA,local police department,west south central,528589,9,South,250-500k,certainty,TRUE,New Orleans police,"Times-Picayune, The (New Orleans, LA)",5,5,already rebuilt,NA,NA,TRUE,1
 MD00301,baltimore county police department,MD,local police department,south atlantic,696385.5,10,South,250-500k,certainty,FALSE,Baltimore County police,"Sun, The (Baltimore, MD)",5,4,usable,NA,NA,TRUE,1

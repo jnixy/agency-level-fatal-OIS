@@ -26,25 +26,25 @@ Are police killing more people now than in decades past? National data can't ans
 
 **How the trend is estimated.** The solid line comes from a Poisson model with agency fixed effects, fit to all 422 hand-built agencies. It compares each agency with itself, so agencies entering or leaving the data don't move the line. Most hand-built counts for 2015 onward were taken from WaPo in the first place (see [Background](#background)), so WaPo fills 2015–24 wherever an agency has no hand-built count; the hand-built series end in 2022. MPV on-duty counts fill 2025 for series that reach 2024. Two hand-built series are left out because they mix in nonfatal shootings, Las Vegas and Cincinnati; WaPo stands in for both from 2015.
 
-**How far back it reaches.** Before 2000, the solid line rests on only 4–53 departments, mostly large cities. It describes big cities, not the country. The [coverage figure](#coverage-figure) below shows exactly which agency-years each source covers.
+**How far back it reaches.** Before 2000, the solid line rests on only 4–54 departments, mostly large cities. It describes big cities, not the country. The [coverage figure](#coverage-figure) below shows exactly which agency-years each source covers.
 
-**What it shows.** The headline compares one fixed set of agencies: the 51 with at least five years of data both before 1995 and since 2015, shown as the dashed line. In those agencies, fatal police shootings since 2015 run 25% below their 1970–1994 level (ratio 0.75, 95% CI 0.54–1.02).
+**What it shows.** The headline compares one fixed set of agencies: the 52 with at least five years of data both before 1995 and since 2015, shown as the dashed line. In those agencies, fatal police shootings since 2015 run 25% below their 1970–1994 level (ratio 0.75, 95% CI 0.55–1.03).
 
-![Then vs. now in 51 long-running agencies](output/figures/then_vs_now.png)
+![Then vs. now in 52 long-running agencies](output/figures/then_vs_now.png)
 
-**Then vs. now.** In the same 51 agencies, 13 kill clearly fewer people a year now than before 1995, 18 kill clearly more, and in 20 the change is too small to tell from chance (exact Poisson test of the two eras' yearly rates, p < .05). The drops are largest in New York, Chicago, and Los Angeles; the biggest increases are in San Antonio, Harris County, and Austin. These are raw counts, not rates per resident: some of these cities grew, while others, like St. Louis and Philadelphia, shrank.
+**Then vs. now.** In the same 52 agencies, 13 kill clearly fewer people a year now than before 1995, 18 kill clearly more, and in 21 the change is too small to tell from chance (exact Poisson test of the two eras' yearly rates, p < .05). The drops are largest in New York, Chicago, and Los Angeles; the biggest increases are in San Antonio, Harris County, and Austin. These are raw counts, not rates per resident: some of these cities grew, while others, like St. Louis and Philadelphia, shrank.
 
-**What the newspaper years do to the headline.** Forty of the 51 agencies include years taken from newspapers, and 35 of them qualify only because of those years.
+**What the newspaper years do to the headline.** Forty-one of the 52 agencies include years taken from newspapers, and 36 of them qualify only because of those years.
 - Dropping every newspaper year leaves 16 agencies and a ratio of 0.50 (95% CI 0.34–0.73). The 11 agencies with no newspaper years give 0.49 (0.27–0.90).
-- The 38 agencies rebuilt from newspapers come out at 1.20 (0.89–1.61) on their own. Chicago and Los Angeles are set aside here, because their newspaper years are department counts the papers printed and their size swamps the pool. So the rebuilt agencies, many of them fast-growing Sun Belt departments, lean toward killing more people now than before 1995, though the interval includes no change.
+- The 39 agencies rebuilt from newspapers come out at 1.20 (0.89–1.62) on their own. Chicago and Los Angeles are set aside here, because their newspaper years are department counts the papers printed and their size swamps the pool. So the rebuilt agencies, many of them fast-growing Sun Belt departments, lean toward killing more people now than before 1995, though the interval includes no change.
 
-The reconstructions are floors, because a search can miss deaths but can't invent them. As an upper bound, raising each newspaper year to SHR's count wherever SHR is higher (an overcorrection, since SHR also counts off-duty killings) moves the headline only to 0.72 (0.53–0.98), and the 38 rebuilt agencies to 1.10 (0.83–1.45). Every run is in [`era_ratio_sensitivity.csv`](output/tables/era_ratio_sensitivity.csv).
+The reconstructions are floors, because a search can miss deaths but can't invent them. As an upper bound, raising each newspaper year to SHR's count wherever SHR is higher (an overcorrection, since SHR also counts off-duty killings) moves the headline only to 0.72 (0.54–0.98), and the 39 rebuilt agencies to 1.11 (0.84–1.46). Every run is in [`era_ratio_sensitivity.csv`](output/tables/era_ratio_sensitivity.csv).
 
 <a name="coverage-figure"></a>
 
 ![Agencies with data before 2000](output/figures/coverage_tiles.png)
 
-**Reach.** The 58 agencies above carry the long-run record back before 2000. Each year shows the first source that covers it: newspaper reconstruction (orange), other hand-built sources (dark blue), WaPo or MPV where there is no hand-built count (light blue), and Fatal Encounters alone (grey; FE is not used in the trend figures). Blank years are true gaps. Overall, the hand-built agencies were involved in at least 33% of everyone shot and killed by police in WaPo's data, 2015–2024 ("at least" because deaths are matched through each WaPo agency's primary ORI, so some matches are missed).
+**Reach.** The 59 agencies above carry the long-run record back before 2000. Each year shows the first source that covers it: newspaper reconstruction (orange), other hand-built sources (dark blue), WaPo or MPV where there is no hand-built count (light blue), and Fatal Encounters alone (grey; FE is not used in the trend figures). Blank years are true gaps. Overall, the hand-built agencies were involved in at least 33% of everyone shot and killed by police in WaPo's data, 2015–2024 ("at least" because deaths are matched through each WaPo agency's primary ORI, so some matches are missed).
 
 Numbers in this section come from [`trend_summary.csv`](output/tables/trend_summary.csv), [`trend_index.csv`](output/tables/trend_index.csv), [`then_vs_now.csv`](output/tables/then_vs_now.csv), [`era_ratio_sensitivity.csv`](output/tables/era_ratio_sensitivity.csv), and [`coverage_share.csv`](output/tables/coverage_share.csv), all written by [`scripts/07_figures_trends.R`](scripts/07_figures_trends.R).
 
@@ -83,7 +83,7 @@ The four largest local departments show how the series line up, and SHR's false 
 | 1969 | 1 (Chicago) | — | — | — | — |
 | 1970s | 4–15 | — | — | — | 1,760–1,929 (1976+) |
 | 1980s | 13–39 | — | — | — | 1,695–1,960 |
-| 1990s | 40–54 | — | — | — | 1,459–1,818 |
+| 1990s | 40–55 | — | — | — | 1,459–1,818 |
 | 2000s | 114–172 | — | 2,967 | — | 1,524–1,721 |
 | 2010s | 361–369 | 3,647 (2015+) | 2,967 | 4,622 (2013+) | 1,584–1,841 |
 | 2020s | 225–368 (through 2022) | 3,647 (through 2024) | 2,967 (through 2021) | 4,622 (through 2025) | 1,864–2,098 (through 2024) |
@@ -202,6 +202,7 @@ The method, a note on every agency, and the checks against each paper's own coun
 | King County (WA) | *The Seattle Times* | 1985–1994 | 5 | 3 |
 | New Orleans PD | *The Times-Picayune* | 1989–1994 | 18 | 15 (1991 not filed) |
 | Cleveland PD | *The Plain Dealer* | 1990–1994 | 13 | 15 |
+| Hillsborough County SO (FL) | *St. Petersburg Times*; *The Tampa Tribune* | 1987–1994 | 8 | 1 (1988–91 not filed) |
 | LA County Sheriff (period total) | *Daily News of Los Angeles* (Oct. 7, 1990 study) | Jan 1985 – Jul 1990 | 75 | 42 (1985–90) |
 
 
