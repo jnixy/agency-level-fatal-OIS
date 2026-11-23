@@ -9,7 +9,7 @@ OH05700,montgomery county sheriff's office,OH,sheriffs office,east north central
 OH05702,dayton police department,OH,local police department,east north central,182814.5,10,Midwest,100-250k,Midwest 100-250k,FALSE,Dayton police,Dayton Daily News (OH),5,5,strong,11,3,TRUE,3.6666666666666665
 OH07600,stark county sheriff's office,OH,sheriffs office,east north central,120342.5,8,Midwest,100-250k,Midwest 100-250k,FALSE,Stark County sheriff,Akron Beacon Journal (OH),5,0,usable,11,3,TRUE,3.6666666666666665
 OH07701,akron police department,OH,local police department,east north central,225876,10,Midwest,100-250k,Midwest 100-250k,FALSE,Akron police,Akron Beacon Journal (OH),5,5,strong,11,3,FALSE,NA
-WI01301,madison police department,WI,local police department,east north central,185136,10,Midwest,100-250k,Midwest 100-250k,FALSE,Madison police,Wisconsin State Journal (WI),5,5,strong,11,3,TRUE,3.6666666666666665
+WI01301,madison police department,WI,local police department,east north central,185136,10,Midwest,100-250k,Midwest 100-250k,TRUE,Madison police,Wisconsin State Journal (WI),5,5,already rebuilt,11,3,TRUE,3.6666666666666665
 INIPD00,indianapolis police,IN,local police department,east north central,480940,10,Midwest,250-500k,Midwest 250-500k,TRUE,NA,NA,NA,NA,already rebuilt,8,2,FALSE,NA
 KS08703,wichita police department,KS,local police department,west north central,295062,8,Midwest,250-500k,Midwest 250-500k,FALSE,Wichita police,"Wichita Eagle, The (KS)",5,5,strong,8,2,FALSE,NA
 MN02711,minneapolis police department,MN,local police department,west north central,364745,9,Midwest,250-500k,Midwest 250-500k,FALSE,Minneapolis police,"Minnesota Star Tribune, The (Minneapolis, MN)",5,5,strong,8,2,FALSE,NA

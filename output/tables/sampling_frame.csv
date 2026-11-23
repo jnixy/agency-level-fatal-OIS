@@ -131,7 +131,7 @@ NB05501,lincoln police dept,NE,local police department,west north central,188922
 CA03010,huntington beach police department,CA,local police department,pacific,188263,10,West,100-250k,West 100-250k,FALSE
 NY05907,yonkers police department,NY,local police department,middle atlantic,187597.5,10,Northeast,100-250k,Northeast 100-250k,FALSE
 FL05800,sarasota county sheriff's office,FL,sheriffs office,south atlantic,187218,6,South,100-250k,South 100-250k,FALSE
-WI01301,madison police department,WI,local police department,east north central,185136,10,Midwest,100-250k,Midwest 100-250k,FALSE
+WI01301,madison police department,WI,local police department,east north central,185136,10,Midwest,100-250k,Midwest 100-250k,TRUE
 CA01000,fresno county sheriff's office,CA,sheriffs office,pacific,184724,10,West,100-250k,West 100-250k,FALSE
 SC04000,richland county sheriff's office,SC,sheriffs office,south atlantic,184510.5,10,South,100-250k,South 100-250k,FALSE
 NC04102,greensboro police department,NC,local police department,south atlantic,183921,10,South,100-250k,South 100-250k,FALSE
