@@ -86,7 +86,7 @@ CA01500,kern county sheriff's office,CA,sheriffs office,pacific,277714.5,10,West
 KY05602,louisville pd,KY,local police department,east south central,276307,9,South,250-500k,South 250-500k,FALSE
 AL00102,birmingham police department,AL,local police department,east south central,275209,10,South,250-500k,South 250-500k,FALSE
 VA11700,norfolk police department,VA,local police department,south atlantic,274858.5,10,South,250-500k,South 250-500k,FALSE
-MN06209,st. paul police department,MN,local police department,west north central,270229,10,Midwest,250-500k,Midwest 250-500k,FALSE
+MN06209,st. paul police department,MN,local police department,west north central,270229,10,Midwest,250-500k,Midwest 250-500k,TRUE
 CA03019,santa ana police department,CA,local police department,pacific,268947.5,10,West,250-500k,West 250-500k,FALSE
 TX17802,corpus christi police department,TX,local police department,west south central,264907,10,South,250-500k,South 250-500k,FALSE
 FL05200,pinellas county sheriff's office,FL,sheriffs office,south atlantic,261844,6,South,250-500k,South 250-500k,FALSE
