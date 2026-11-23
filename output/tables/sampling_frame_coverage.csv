@@ -86,7 +86,7 @@ CA01500,kern county sheriff's office,CA,sheriffs office,pacific,277714.5,10,West
 KY05602,louisville pd,KY,local police department,east south central,276307,9,South,250-500k,South 250-500k,FALSE,Louisville police,Lexington Herald-Leader (KY),5,0,usable
 AL00102,birmingham police department,AL,local police department,east south central,275209,10,South,250-500k,South 250-500k,FALSE,Birmingham police,Birmingham News (AL),2,2,too thin
 VA11700,norfolk police department,VA,local police department,south atlantic,274858.5,10,South,250-500k,South 250-500k,FALSE,Norfolk police,"Virginian-Pilot, The (Norfolk, VA)",5,5,strong
-MN06209,st. paul police department,MN,local police department,west north central,270229,10,Midwest,250-500k,Midwest 250-500k,FALSE,St. Paul police,St. Paul Pioneer Press (MN),5,5,strong
+MN06209,st. paul police department,MN,local police department,west north central,270229,10,Midwest,250-500k,Midwest 250-500k,TRUE,St. Paul police,St. Paul Pioneer Press (MN),5,5,already rebuilt
 CA03019,santa ana police department,CA,local police department,pacific,268947.5,10,West,250-500k,West 250-500k,FALSE,Santa Ana police,"Orange County Register, The (Santa Ana, CA)",5,5,strong
 TX17802,corpus christi police department,TX,local police department,west south central,264907,10,South,250-500k,South 250-500k,FALSE,Corpus Christi police,"Dallas Morning News, The (TX)",0,0,too thin
 FL05200,pinellas county sheriff's office,FL,sheriffs office,south atlantic,261844,6,South,250-500k,South 250-500k,FALSE,Pinellas County sheriff,Tampa Bay Times (FL),5,5,strong
