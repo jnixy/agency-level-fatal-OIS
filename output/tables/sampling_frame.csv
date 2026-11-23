@@ -36,7 +36,7 @@ LANPD00,new orleans police department,LA,local police department,west south cent
 OHCLP00,cleveland police department,OH,local police department,east north central,518696.5,10,Midwest,250-500k,certainty,TRUE
 TX07102,el paso police department,TX,local police department,west south central,515474.5,10,South,250-500k,certainty,FALSE
 WASPD00,seattle police department,WA,local police department,pacific,515328.5,10,West,250-500k,certainty,TRUE
-FL02900,hillsborough county sheriff's office,FL,sheriffs office,south atlantic,508744,6,South,250-500k,certainty,FALSE
+FL02900,hillsborough county sheriff's office,FL,sheriffs office,south atlantic,508744,6,South,250-500k,certainty,TRUE
 TN01901,nashville metro police department,TN,local police department,east south central,502078.5,10,South,250-500k,certainty,FALSE
 CODPD00,denver police department,CO,local police department,mountain,499478.5,10,West,250-500k,West 250-500k,TRUE
 INIPD00,indianapolis police,IN,local police department,east north central,480940,10,Midwest,250-500k,Midwest 250-500k,TRUE

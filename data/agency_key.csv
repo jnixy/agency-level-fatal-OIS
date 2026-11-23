@@ -172,7 +172,7 @@ hennepin_county_mn,MN02700,Hennepin County Sheriff's Office,MN,sheriff,LEAIC 201
 henry_county_police_ga,GA07505,Henry County Police Department,GA,local_police,WaPo,
 henry_county_sheriff_ga,GA07500,Henry County Sheriff's Department,GA,sheriff,WaPo,
 hermantown_mn,MN06917,Hermantown Police Department,MN,local_police,WaPo,
-hillsborough_county_fl,FL02900,Hillsborough County Sheriff's Office,FL,sheriff,WaPo,
+hillsborough_county_fl,FL02900,Hillsborough County Sheriff's Office,FL,sheriff,WaPo,"Hillsborough County SO; 1987-94 newspaper reconstruction (St. Petersburg Times, Tampa Tribune), WaPo fills 2015-24"
 hogansville_ga,GA14101,Hogansville Police Department,GA,local_police,WaPo,
 honolulu,HI00200,Honolulu Police Department,HI,local_police,WaPo,
 houston_county_ga,GA07600,Houston County Sheriff's Office,GA,sheriff,WaPo,

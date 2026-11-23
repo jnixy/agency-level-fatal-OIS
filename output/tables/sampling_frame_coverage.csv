@@ -36,7 +36,7 @@ LANPD00,new orleans police department,LA,local police department,west south cent
 OHCLP00,cleveland police department,OH,local police department,east north central,518696.5,10,Midwest,250-500k,certainty,TRUE,Cleveland police,"Plain Dealer, The (Cleveland, OH)",5,5,already rebuilt
 TX07102,el paso police department,TX,local police department,west south central,515474.5,10,South,250-500k,certainty,FALSE,El Paso police,"Dallas Morning News, The (TX)",0,0,too thin
 WASPD00,seattle police department,WA,local police department,pacific,515328.5,10,West,250-500k,certainty,TRUE,NA,NA,NA,NA,already rebuilt
-FL02900,hillsborough county sheriff's office,FL,sheriffs office,south atlantic,508744,6,South,250-500k,certainty,FALSE,Hillsborough County sheriff,"Tampa Tribune, The (FL)",5,5,strong
+FL02900,hillsborough county sheriff's office,FL,sheriffs office,south atlantic,508744,6,South,250-500k,certainty,TRUE,Hillsborough County sheriff,"Tampa Tribune, The (FL)",5,5,already rebuilt
 TN01901,nashville metro police department,TN,local police department,east south central,502078.5,10,South,250-500k,certainty,FALSE,Nashville Metro police,NA,0,0,no in-state source
 CODPD00,denver police department,CO,local police department,mountain,499478.5,10,West,250-500k,West 250-500k,TRUE,NA,NA,NA,NA,already rebuilt
 INIPD00,indianapolis police,IN,local police department,east north central,480940,10,Midwest,250-500k,Midwest 250-500k,TRUE,NA,NA,NA,NA,already rebuilt

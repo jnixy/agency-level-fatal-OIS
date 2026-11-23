@@ -12,6 +12,7 @@ TX10100,Harris County Sheriff's Office,TX,0.778,4.545,9,11,1986,2015,1994,2025,7
 NB02802,Omaha Police Department,NE,0.786,1.818,14,11,1981,2015,1994,2025,11,20,"Omaha, NE",1.032,FALSE,0.029,More now
 CA03001,Anaheim Police Department,CA,0.867,1.909,15,11,1980,2015,1994,2025,13,21,"Anaheim, CA",1.042,FALSE,0.024,More now
 FL00600,Broward County Sheriff's Office,FL,0.889,2.273,9,11,1986,2015,1994,2025,8,25,"Broward Co. Sheriff, FL",1.384,FALSE,0.022,More now
+FL02900,Hillsborough County Sheriff's Office,FL,1,2,8,11,1987,2015,1994,2025,8,22,"Hillsborough Co. Sheriff, FL",1,FALSE,0.098,About the same
 MEMSP00,Maine State Police,ME,1,1.455,5,11,1990,2015,1994,2025,5,16,"Maine State Police, ME",0.455,FALSE,0.639,About the same
 NC06001,Charlotte Mecklenburg Police Department,NC,1.1,2.909,10,11,1985,2015,1994,2025,11,32,"Charlotte Mecklenburg, NC",1.809,FALSE,0.004,More now
 OK07205,Tulsa Police Department,OK,1.167,3.909,6,11,1989,2015,1994,2025,7,43,"Tulsa, OK",2.742,FALSE,0.001,More now
