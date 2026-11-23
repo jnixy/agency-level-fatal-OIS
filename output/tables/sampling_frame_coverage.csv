@@ -131,7 +131,7 @@ NB05501,lincoln police dept,NE,local police department,west north central,188922
 CA03010,huntington beach police department,CA,local police department,pacific,188263,10,West,100-250k,West 100-250k,FALSE,Huntington Beach police,"Orange County Register, The (Santa Ana, CA)",5,0,usable
 NY05907,yonkers police department,NY,local police department,middle atlantic,187597.5,10,Northeast,100-250k,Northeast 100-250k,FALSE,Yonkers police,"Times Union, The (Albany, NY)",0,0,too thin
 FL05800,sarasota county sheriff's office,FL,sheriffs office,south atlantic,187218,6,South,100-250k,South 100-250k,FALSE,Sarasota County sheriff,"Tampa Tribune, The (FL)",3,1,too thin
-WI01301,madison police department,WI,local police department,east north central,185136,10,Midwest,100-250k,Midwest 100-250k,FALSE,Madison police,Wisconsin State Journal (WI),5,5,strong
+WI01301,madison police department,WI,local police department,east north central,185136,10,Midwest,100-250k,Midwest 100-250k,TRUE,Madison police,Wisconsin State Journal (WI),5,5,already rebuilt
 CA01000,fresno county sheriff's office,CA,sheriffs office,pacific,184724,10,West,100-250k,West 100-250k,FALSE,Fresno County sheriff,"Fresno Bee, The (CA)",5,5,strong
 SC04000,richland county sheriff's office,SC,sheriffs office,south atlantic,184510.5,10,South,100-250k,South 100-250k,FALSE,Richland County sheriff,"State, The (Columbia, SC)",5,4,usable
 NC04102,greensboro police department,NC,local police department,south atlantic,183921,10,South,100-250k,South 100-250k,FALSE,Greensboro police,"News & Record (Greensboro, NC)",5,5,strong

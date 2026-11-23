@@ -223,7 +223,7 @@ lubbock_tx,TX15202,Lubbock Police Department,TX,local_police,WaPo,
 lumpkin_county_ga,GA09300,Lumpkin County Sheriff's Department,GA,sheriff,WaPo,
 macon_bibb_county_ga,GA01100,Bibb County Sheriff's Department,GA,sheriff,WaPo,Macon-Bibb County SO (Bibb ORI); 2025 list had GA09600 (Macon County SO). Same agency as bibb_county_ga (consolidated 2014); summed in panel
 macon_ga,GA01101,Macon Police Department,GA,local_police,LEAIC 2012,
-madison_wi,WI01301,Madison Police Department,WI,local_police,WaPo,
+madison_wi,WI01301,Madison Police Department,WI,local_police,WaPo,"Madison PD; 1980-94 newspaper reconstruction (1980-88 from a 1994 paper-stated list) (Wisconsin State Journal, Capital Times), WaPo fills 2015-24"
 mankato_mn,MN00701,Mankato Police Department,MN,local_police,WaPo,
 maplewood_mn,MN06204,Maplewood Police Department,MN,local_police,LEAIC 2012,
 marietta_ga,GA03303,Marietta Police Department,GA,local_police,WaPo,

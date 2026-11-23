@@ -1,4 +1,5 @@
 agency_id,agency_name,state,per_year_early,per_year_recent,years_early,years_recent,first_early,first_recent,last_early,last_recent,deaths_early,deaths_recent,label,change,lower_now,p_change,direction
+WI01301,Madison Police Department,WI,0.133,0.273,15,11,1980,2015,1994,2025,2,3,"Madison, WI",0.139,FALSE,0.656,About the same
 CO02101,Colorado Springs Police Department,CO,0.143,3.091,7,11,1988,2015,1994,2025,1,34,"Colorado Springs, CO",2.948,FALSE,0,More now
 ME00305,Portland Police Department,ME,0.2,0.182,5,11,1990,2015,1994,2025,1,2,"Portland, ME",-0.018,TRUE,1,About the same
 AK00101,Anchorage Police Department,AK,0.333,2.182,9,11,1986,2015,1994,2025,3,24,"Anchorage, AK",1.848,FALSE,0,More now
