@@ -33,7 +33,7 @@ NV00201,las vegas metro police department,NV,local police department,mountain,57
 MA01301,boston police department,MA,local police department,new england,573619,10,Northeast,250-500k,certainty,FALSE
 WA01700,king county sheriff's office,WA,sheriffs office,pacific,571957.5,10,West,250-500k,certainty,TRUE
 LANPD00,new orleans police department,LA,local police department,west south central,528589,9,South,250-500k,certainty,TRUE
-OHCLP00,cleveland police department,OH,local police department,east north central,518696.5,10,Midwest,250-500k,certainty,FALSE
+OHCLP00,cleveland police department,OH,local police department,east north central,518696.5,10,Midwest,250-500k,certainty,TRUE
 TX07102,el paso police department,TX,local police department,west south central,515474.5,10,South,250-500k,certainty,FALSE
 WASPD00,seattle police department,WA,local police department,pacific,515328.5,10,West,250-500k,certainty,TRUE
 FL02900,hillsborough county sheriff's office,FL,sheriffs office,south atlantic,508744,6,South,250-500k,certainty,FALSE

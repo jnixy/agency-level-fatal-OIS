@@ -94621,11 +94621,11 @@ OHCLP00,OHCLP00,Cleveland Police Department,OH,local_police,TRUE,cleveland_oh,FA
 OHCLP00,OHCLP00,Cleveland Police Department,OH,local_police,TRUE,cleveland_oh,FALSE,1987,,,,,,,,,,5
 OHCLP00,OHCLP00,Cleveland Police Department,OH,local_police,TRUE,cleveland_oh,FALSE,1988,,,,,,,,,,3
 OHCLP00,OHCLP00,Cleveland Police Department,OH,local_police,TRUE,cleveland_oh,FALSE,1989,,,,,,,,,,1
-OHCLP00,OHCLP00,Cleveland Police Department,OH,local_police,TRUE,cleveland_oh,FALSE,1990,,,,,,,,,,3
-OHCLP00,OHCLP00,Cleveland Police Department,OH,local_police,TRUE,cleveland_oh,FALSE,1991,,,,,,,,,,3
-OHCLP00,OHCLP00,Cleveland Police Department,OH,local_police,TRUE,cleveland_oh,FALSE,1992,,,,,,,,,,0
-OHCLP00,OHCLP00,Cleveland Police Department,OH,local_police,TRUE,cleveland_oh,FALSE,1993,,,,,,,,,,4
-OHCLP00,OHCLP00,Cleveland Police Department,OH,local_police,TRUE,cleveland_oh,FALSE,1994,,,,,,,,,,5
+OHCLP00,OHCLP00,Cleveland Police Department,OH,local_police,TRUE,cleveland_oh,FALSE,1990,3,FALSE,,,,,,,,3
+OHCLP00,OHCLP00,Cleveland Police Department,OH,local_police,TRUE,cleveland_oh,FALSE,1991,2,FALSE,,,,,,,,3
+OHCLP00,OHCLP00,Cleveland Police Department,OH,local_police,TRUE,cleveland_oh,FALSE,1992,0,FALSE,,,,,,,,0
+OHCLP00,OHCLP00,Cleveland Police Department,OH,local_police,TRUE,cleveland_oh,FALSE,1993,3,FALSE,,,,,,,,4
+OHCLP00,OHCLP00,Cleveland Police Department,OH,local_police,TRUE,cleveland_oh,FALSE,1994,5,FALSE,,,,,,,,5
 OHCLP00,OHCLP00,Cleveland Police Department,OH,local_police,TRUE,cleveland_oh,FALSE,1995,,,,,,,,,,2
 OHCLP00,OHCLP00,Cleveland Police Department,OH,local_police,TRUE,cleveland_oh,FALSE,1996,,,,,,,,,,6
 OHCLP00,OHCLP00,Cleveland Police Department,OH,local_police,TRUE,cleveland_oh,FALSE,1997,,,,,,,,,,3

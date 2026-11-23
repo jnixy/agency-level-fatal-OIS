@@ -143,7 +143,7 @@ MD01604,montgomery county police department,MD,local police department,south atl
 MD01721,prince george's county police department,MD,local police department,south atlantic,611113.5,10,South,250-500k,certainty,TRUE,Prince George's County police,"Washington Times, The (DC)",5,5,already rebuilt,NA,NA,TRUE,1
 MDBPD00,baltimore police department,MD,local police department,south atlantic,759327.5,10,South,250-500k,certainty,TRUE,Baltimore police,"Sun, The (Baltimore, MD)",5,4,already rebuilt,NA,NA,TRUE,1
 NY03030,new york city police department,NY,local police department,middle atlantic,7341288,10,Northeast,250-500k,certainty,TRUE,NA,NA,NA,NA,already rebuilt,NA,NA,TRUE,1
-OHCLP00,cleveland police department,OH,local police department,east north central,518696.5,10,Midwest,250-500k,certainty,FALSE,Cleveland police,"Plain Dealer, The (Cleveland, OH)",5,5,strong,NA,NA,TRUE,1
+OHCLP00,cleveland police department,OH,local police department,east north central,518696.5,10,Midwest,250-500k,certainty,TRUE,Cleveland police,"Plain Dealer, The (Cleveland, OH)",5,5,already rebuilt,NA,NA,TRUE,1
 OHCOP00,columbus police department,OH,local police department,east north central,610669,10,Midwest,250-500k,certainty,TRUE,NA,NA,NA,NA,already rebuilt,NA,NA,TRUE,1
 PAPEP00,philadelphia police department,PA,local police department,middle atlantic,1621870,10,Northeast,250-500k,certainty,TRUE,NA,NA,NA,NA,already rebuilt,NA,NA,TRUE,1
 TX10100,harris county sheriff's office,TX,sheriffs office,west south central,767091.5,10,South,250-500k,certainty,TRUE,NA,NA,NA,NA,already rebuilt,NA,NA,TRUE,1
