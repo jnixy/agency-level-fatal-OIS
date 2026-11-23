@@ -36,9 +36,9 @@ Are police killing more people now than in decades past? National data can't ans
 
 **What the newspaper years do to the headline.** Forty-two of the 53 agencies include years taken from newspapers, and 37 of them qualify only because of those years.
 - Dropping every newspaper year leaves 16 agencies and a ratio of 0.50 (95% CI 0.34–0.73). The 11 agencies with no newspaper years give 0.49 (0.27–0.90).
-- The 40 agencies rebuilt from newspapers come out at 1.20 (0.90–1.61) on their own. Chicago and Los Angeles are set aside here, because their newspaper years are department counts the papers printed and their size swamps the pool. So the rebuilt agencies, many of them fast-growing Sun Belt departments, lean toward killing more people now than before 1995, though the interval includes no change.
+- The 40 agencies rebuilt from newspapers come out at 1.20 (0.90–1.62) on their own. Chicago and Los Angeles are set aside here, because their newspaper years are department counts the papers printed and their size swamps the pool. So the rebuilt agencies, many of them fast-growing Sun Belt departments, lean toward killing more people now than before 1995, though the interval includes no change.
 
-The reconstructions are floors, because a search can miss deaths but can't invent them. As an upper bound, raising each newspaper year to SHR's count wherever SHR is higher (an overcorrection, since SHR also counts off-duty killings) moves the headline only to 0.72 (0.54–0.98), and the 40 rebuilt agencies to 1.10 (0.84–1.46). Every run is in [`era_ratio_sensitivity.csv`](output/tables/era_ratio_sensitivity.csv).
+The reconstructions are floors, because a search can miss deaths but can't invent them. As an upper bound, raising each newspaper year to SHR's count wherever SHR is higher (an overcorrection, since SHR also counts off-duty killings) moves the headline only to 0.72 (0.54–0.98), and the 40 rebuilt agencies to 1.11 (0.84–1.46). Every run is in [`era_ratio_sensitivity.csv`](output/tables/era_ratio_sensitivity.csv).
 
 <a name="coverage-figure"></a>
 
@@ -82,7 +82,7 @@ The four largest local departments show how the series line up, and SHR's false 
 |---|---:|---:|---:|---:|---:|
 | 1969 | 1 (Chicago) | — | — | — | — |
 | 1970s | 4–15 | — | — | — | 1,760–1,929 (1976+) |
-| 1980s | 13–39 | — | — | — | 1,695–1,960 |
+| 1980s | 14–41 | — | — | — | 1,695–1,960 |
 | 1990s | 40–56 | — | — | — | 1,459–1,818 |
 | 2000s | 114–172 | — | 2,967 | — | 1,524–1,721 |
 | 2010s | 361–369 | 3,647 (2015+) | 2,967 | 4,622 (2013+) | 1,584–1,841 |
@@ -203,7 +203,7 @@ The method, a note on every agency, and the checks against each paper's own coun
 | New Orleans PD | *The Times-Picayune* | 1989–1994 | 18 | 15 (1991 not filed) |
 | Cleveland PD | *The Plain Dealer* | 1990–1994 | 13 | 15 |
 | Hillsborough County SO (FL) | *St. Petersburg Times*; *The Tampa Tribune* | 1987–1994 | 8 | 1 (1988–91 not filed) |
-| Madison PD (WI) | *Wisconsin State Journal*; *The Capital Times* | 1989–1994 | 2 | 2 |
+| Madison PD (WI) | *Wisconsin State Journal*; *The Capital Times* (1980–88 from a 1994 list) | 1980–1994 | 2 | 2 |
 | LA County Sheriff (period total) | *Daily News of Los Angeles* (Oct. 7, 1990 study) | Jan 1985 – Jul 1990 | 75 | 42 (1985–90) |
 
 
