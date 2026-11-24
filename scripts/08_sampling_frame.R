@@ -23,6 +23,8 @@
 #   - data/raw/shr/shr_1976_2024.rds -- Kaplan's concatenated SHR (not
 #     redistributed, see data/README.md)
 #   - output/tables/then_vs_now.csv  -- current long-panel agencies (07)
+#   - data/clean/wapo_agency_oris.csv -- WaPo ORI groups (02), to match a
+#     frame ORI to the primary ORI the panel uses
 #
 # Outputs:
 #   - output/tables/sampling_frame.csv -- one row per frame agency: ORI,
@@ -67,6 +69,14 @@ check_sha256(SHR_PATH, SHR_SHA256, strict = FALSE)
 shr <- readRDS(SHR_PATH)
 long_panel <- read_csv(here("output", "tables", "then_vs_now.csv"),
                        show_col_types = FALSE)
+# The panel keys an agency on WaPo's primary ORI, while SHR (and so the frame)
+# may file it under another ORI in the same WaPo group (Providence PD: RI00400
+# in the panel, RI00409 in SHR). Map each frame ORI to its WaPo primary too.
+wapo_primary <- read_csv(here("data", "clean", "wapo_agency_oris.csv"),
+                         col_types = cols(.default = "c")) |>
+  distinct(ori7, primary_ori7)
+long_panel_oris <- c(long_panel$agency_id,
+                     wapo_primary$ori7[wapo_primary$primary_ori7 %in% long_panel$agency_id])
 
 # 2. Clean ---------------------------------------------------------------------
 # SHR has one row per incident; population is an agency-year attribute, so
@@ -102,7 +112,7 @@ frame <- agency_year |>
          size_tier = if_else(pop_median_1985_94 >= TIER_CUT, "250-500k", "100-250k"),
          stratum = if_else(pop_median_1985_94 >= POP_CERTAIN, "certainty",
                            paste(region, size_tier)),
-         in_long_panel = ori %in% long_panel$agency_id) |>
+         in_long_panel = ori %in% long_panel_oris) |>
   arrange(desc(pop_median_1985_94))
 
 stopifnot(!anyDuplicated(frame$ori), !anyNA(frame$region))
