@@ -365,6 +365,7 @@ st_cloud_mn,MN07304,St. Cloud Police Department,MN,local_police,WaPo,
 st_george_ut,UT02701,St. George Police Department,UT,local_police,WaPo,
 st_james_mn,MN08302,St. James Police Department,MN,local_police,WaPo,
 st_louis_county_mn,MN06900,St. Louis County Sheriff's Office,MN,sheriff,WaPo,
+st_louis_county_mo,MO09500,St. Louis County Police Department,MO,local_police,WaPo,"St. Louis County PD (MO); 1988-94 newspaper reconstruction (St. Louis Post-Dispatch), WaPo fills 2015-24"
 st_louis_metro_mo,MOSPD00,St. Louis Police Department,MO,local_police,WaPo,
 st_louis_park_mn,MN02721,St. Louis Park Police Department,MN,local_police,WaPo,
 st_paul_mn,MN06209,St. Paul Police Department,MN,local_police,WaPo,"St. Paul PD; 1989-94 newspaper reconstruction (Pioneer Press), MN database 2000+"

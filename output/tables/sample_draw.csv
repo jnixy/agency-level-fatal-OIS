@@ -14,7 +14,7 @@ INIPD00,indianapolis police,IN,local police department,east north central,480940
 KS08703,wichita police department,KS,local police department,west north central,295062,8,Midwest,250-500k,Midwest 250-500k,FALSE,Wichita police,"Wichita Eagle, The (KS)",5,5,strong,8,2,FALSE,NA
 MN02711,minneapolis police department,MN,local police department,west north central,364745,9,Midwest,250-500k,Midwest 250-500k,FALSE,Minneapolis police,"Minnesota Star Tribune, The (Minneapolis, MN)",5,5,strong,8,2,FALSE,NA
 MN06209,st. paul police department,MN,local police department,west north central,270229,10,Midwest,250-500k,Midwest 250-500k,TRUE,St. Paul police,St. Paul Pioneer Press (MN),5,5,already rebuilt,8,2,TRUE,4
-MO09500,st. louis county police dept,MO,local police department,west north central,419739,10,Midwest,250-500k,Midwest 250-500k,FALSE,St. Louis County police,St. Louis Post-Dispatch (MO),5,5,strong,8,2,TRUE,4
+MO09500,st. louis county police dept,MO,local police department,west north central,419739,10,Midwest,250-500k,Midwest 250-500k,TRUE,St. Louis County police,St. Louis Post-Dispatch (MO),5,5,already rebuilt,8,2,TRUE,4
 MOKPD00,kansas city police department,MO,local police department,west north central,440798.5,10,Midwest,250-500k,Midwest 250-500k,TRUE,NA,NA,NA,NA,already rebuilt,8,2,FALSE,NA
 MOSPD00,st. louis (city) police dept,MO,local police department,west north central,403819.5,10,Midwest,250-500k,Midwest 250-500k,TRUE,NA,NA,NA,NA,already rebuilt,8,2,FALSE,NA
 NB02802,omaha police dept,NE,local police department,west north central,341753,7,Midwest,250-500k,Midwest 250-500k,TRUE,NA,NA,NA,NA,already rebuilt,8,2,FALSE,NA
