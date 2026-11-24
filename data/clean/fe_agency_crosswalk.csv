@@ -2298,7 +2298,7 @@ PAPPD00,PA,Pittsburgh Bureau of Police,seed_reviewed,,32,1
 PAUSM01,PA,U.S. Marshals Service,exact,,9,2
 RI00203,RI,Warwick Police Department,seed_reviewed,,1,2
 RI00305,RI,Tiverton Police Department,exact,,1,2
-RI00400,RI,Providence Police Department,manual,Other same-name ORIs are Providence PD sub-units,5,2
+RI00400,RI,Providence Police Department,manual,Other same-name ORIs are Providence PD sub-units,5,1
 RI00408,RI,Pawtucket Police Department,manual,RI10408 is a Pawtucket PD sub-unit (same county),7,2
 RI301SP,RI,Rhode Island State Police,exact,,4,2
 SC00100,SC,Abbeville County Sheriff's Office,exact,,1,2

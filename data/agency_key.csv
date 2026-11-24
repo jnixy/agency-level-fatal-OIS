@@ -307,6 +307,7 @@ port_wentworth_ga,GA02505,Port Wentworth Police Department,GA,local_police,WaPo,
 portland_me,ME00305,Portland Police Department,ME,local_police,WaPo,
 portland_or,OR02602,Portland Police Department,OR,local_police,WaPo,
 prince_georges_county_md,MD01721,Prince George's County Police Department,MD,local_police,LEAIC 2012,"Prince George's County PD (MD); pre-1995 newspaper reconstruction only, WaPo fills 2015-24"
+providence_ri,RI00400,Providence Police Department,RI,local_police,WaPo,"Providence PD (RI); 1985-94 newspaper reconstruction (Providence Journal), WaPo fills 2015-24. RI00400 is WaPo primary ORI; SHR files the department as RI00409"
 provo_ut,UT02506,Provo Police Department,UT,local_police,WaPo,
 putnam_county_ga,GA11700,Putnam County Sheriff's Office,GA,sheriff,WaPo,
 raleigh_nc,NC09201,Raleigh Police Department,NC,local_police,WaPo,
