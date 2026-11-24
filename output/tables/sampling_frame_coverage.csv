@@ -73,7 +73,7 @@ WA02700,pierce county sheriff's office,WA,sheriffs office,pacific,341223,10,West
 OH04807,toledo police department,OH,local police department,east north central,340272,10,Midwest,250-500k,Midwest 250-500k,FALSE,Toledo police,"Plain Dealer, The (Cleveland, OH)",0,0,too thin
 CA01005,fresno police department,CA,local police department,pacific,334710,10,West,250-500k,West 250-500k,TRUE,NA,NA,NA,NA,already rebuilt
 KY05601,jefferson county pd louisville,KY,local police department,east south central,331101,9,South,250-500k,South 250-500k,FALSE,Jefferson County police,Lexington Herald-Leader (KY),0,0,too thin
-NY01401,buffalo police department,NY,local police department,middle atlantic,326955,10,Northeast,250-500k,Northeast 250-500k,FALSE,Buffalo police,"Buffalo News, The (NY)",5,5,strong
+NY01401,buffalo police department,NY,local police department,middle atlantic,326955,10,Northeast,250-500k,Northeast 250-500k,TRUE,Buffalo police,"Buffalo News, The (NY)",5,5,already rebuilt
 DE00203,new castle county police department,DE,local police department,south atlantic,326808.5,10,South,250-500k,South 250-500k,FALSE,New Castle County police,"Daily State News (Dover, DE)",3,2,too thin
 NJNPD00,newark police,NJ,local police department,middle atlantic,295691.5,10,Northeast,250-500k,Northeast 250-500k,TRUE,NA,NA,NA,NA,already rebuilt
 KS08703,wichita police department,KS,local police department,west north central,295062,8,Midwest,250-500k,Midwest 250-500k,FALSE,Wichita police,"Wichita Eagle, The (KS)",5,5,strong

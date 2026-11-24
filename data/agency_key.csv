@@ -47,7 +47,7 @@ brooklyn_park_mn,MN02703,Brooklyn Park Police Department,MN,local_police,LEAIC 2
 broward_county_fl,FL00600,Broward County Sheriff's Office,FL,sheriff,WaPo,
 brownsville_tx,TX03101,Brownsville Police Department,TX,local_police,WaPo,
 buchanan_ga,GA07103,Buchanan Police Department,GA,local_police,LEAIC 2012,
-buffalo_ny,NY01401,Buffalo Police Department,NY,local_police,WaPo,
+buffalo_ny,NY01401,Buffalo Police Department,NY,local_police,WaPo,"1989-94 newspaper reconstruction (Buffalo News); 2015-22 hand-built"
 bulloch_county_ga,GA01600,Bulloch County Sheriff's Office,GA,sheriff,WaPo,
 burke_county_ga,GA01700,Burke County Sheriff's Department,GA,sheriff,WaPo,
 burnsville_mn,MN01901,Burnsville Police Department,MN,local_police,WaPo,
