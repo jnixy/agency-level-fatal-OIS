@@ -164,7 +164,7 @@ CA04200,santa barbara county sheriff's office,CA,sheriffs office,pacific,161119,
 FL00600,broward county sheriff's office,FL,sheriffs office,south atlantic,161069,6,South,100-250k,South 100-250k,TRUE
 FL04804,orlando police department,FL,local police department,south atlantic,160972,6,South,100-250k,South 100-250k,TRUE
 TN03301,chattanooga police department,TN,local police department,east south central,160690,6,South,100-250k,South 100-250k,FALSE
-MA01460,worcester police department,MA,local police department,new england,160655,8,Northeast,100-250k,Northeast 100-250k,FALSE
+MA01460,worcester police department,MA,local police department,new england,160655,8,Northeast,100-250k,Northeast 100-250k,TRUE
 RI00409,providence police department,RI,local police department,new england,159078,10,Northeast,100-250k,Northeast 100-250k,FALSE
 CA05002,modesto police department,CA,local police department,pacific,158667.5,10,West,100-250k,West 100-250k,FALSE
 CA03610,san bernardino police department,CA,local police department,pacific,158256,10,West,100-250k,West 100-250k,FALSE

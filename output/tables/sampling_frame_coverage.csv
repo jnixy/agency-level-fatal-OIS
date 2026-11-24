@@ -164,7 +164,7 @@ CA04200,santa barbara county sheriff's office,CA,sheriffs office,pacific,161119,
 FL00600,broward county sheriff's office,FL,sheriffs office,south atlantic,161069,6,South,100-250k,South 100-250k,TRUE,NA,NA,NA,NA,already rebuilt
 FL04804,orlando police department,FL,local police department,south atlantic,160972,6,South,100-250k,South 100-250k,TRUE,NA,NA,NA,NA,already rebuilt
 TN03301,chattanooga police department,TN,local police department,east south central,160690,6,South,100-250k,South 100-250k,FALSE,Chattanooga police,NA,0,0,no in-state source
-MA01460,worcester police department,MA,local police department,new england,160655,8,Northeast,100-250k,Northeast 100-250k,FALSE,Worcester police,Worcester Telegram & Gazette (MA),5,5,strong
+MA01460,worcester police department,MA,local police department,new england,160655,8,Northeast,100-250k,Northeast 100-250k,TRUE,Worcester police,Worcester Telegram & Gazette (MA),5,5,already rebuilt
 RI00409,providence police department,RI,local police department,new england,159078,10,Northeast,100-250k,Northeast 100-250k,FALSE,Providence police,Providence Journal (RI),5,5,strong
 CA05002,modesto police department,CA,local police department,pacific,158667.5,10,West,100-250k,West 100-250k,FALSE,Modesto police,"Modesto Bee, The (CA)",5,5,strong
 CA03610,san bernardino police department,CA,local police department,pacific,158256,10,West,100-250k,West 100-250k,FALSE,San Bernardino police,"Press-Enterprise, The (Riverside, CA)",1,0,too thin
