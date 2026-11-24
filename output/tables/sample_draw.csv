@@ -20,7 +20,7 @@ MOSPD00,st. louis (city) police dept,MO,local police department,west north centr
 NB02802,omaha police dept,NE,local police department,west north central,341753,7,Midwest,250-500k,Midwest 250-500k,TRUE,NA,NA,NA,NA,already rebuilt,8,2,FALSE,NA
 CT00093,new haven police department,CT,local police department,new england,125263,10,Northeast,100-250k,Northeast 100-250k,FALSE,New Haven police,New Haven Register (CT),5,5,strong,13,3,FALSE,NA
 MA00718,springfield police department,MA,local police department,new england,152649.5,10,Northeast,100-250k,Northeast 100-250k,FALSE,Springfield police,"Republican, The (Springfield, MA)",5,5,strong,13,3,FALSE,NA
-MA01460,worcester police department,MA,local police department,new england,160655,8,Northeast,100-250k,Northeast 100-250k,FALSE,Worcester police,Worcester Telegram & Gazette (MA),5,5,strong,13,3,TRUE,4.333333333333333
+MA01460,worcester police department,MA,local police department,new england,160655,8,Northeast,100-250k,Northeast 100-250k,TRUE,Worcester police,Worcester Telegram & Gazette (MA),5,5,already rebuilt,13,3,TRUE,4.333333333333333
 NJ01608,paterson police,NJ,local police department,middle atlantic,140805.5,10,Northeast,100-250k,Northeast 100-250k,FALSE,Paterson police,"Record, The (Hackensack, NJ)",5,5,strong,13,3,FALSE,NA
 NJ02004,elizabeth police,NJ,local police department,middle atlantic,109045.5,10,Northeast,100-250k,Northeast 100-250k,FALSE,Elizabeth police,"Star-Ledger, The (Newark, NJ)",5,4,usable,13,3,FALSE,NA
 NY00101,albany police department,NY,local police department,middle atlantic,100114.5,10,Northeast,100-250k,Northeast 100-250k,FALSE,Albany police,"Times Union, The (Albany, NY)",5,5,strong,13,3,FALSE,NA
