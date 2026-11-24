@@ -16,6 +16,7 @@ NY01401,Buffalo Police Department,NY,0.667,0.364,6,11,1989,2015,1994,2025,4,4,"B
 GA03302,Cobb County Police Department,GA,0.7,1.818,10,11,1985,2015,1994,2025,7,20,"Cobb County, GA",1.118,FALSE,0.032,More now
 FL04800,Orange County Sheriff's Office,FL,0.778,2.273,9,11,1986,2015,1994,2025,7,25,"Orange Co. Sheriff, FL",1.495,FALSE,0.012,More now
 TX10100,Harris County Sheriff's Office,TX,0.778,4.545,9,11,1986,2015,1994,2025,7,50,"Harris Co. Sheriff, TX",3.768,FALSE,0,More now
+VA12200,Richmond Police Department,VA,0.778,0.909,9,11,1986,2015,1994,2025,7,10,"Richmond, VA",0.131,FALSE,0.812,About the same
 NB02802,Omaha Police Department,NE,0.786,1.818,14,11,1981,2015,1994,2025,11,20,"Omaha, NE",1.032,FALSE,0.029,More now
 OH05702,Dayton Police Department,OH,0.8,0.636,5,11,1990,2015,1994,2025,4,7,"Dayton, OH",-0.164,TRUE,0.749,About the same
 CA03001,Anaheim Police Department,CA,0.867,1.909,15,11,1980,2015,1994,2025,13,21,"Anaheim, CA",1.042,FALSE,0.024,More now

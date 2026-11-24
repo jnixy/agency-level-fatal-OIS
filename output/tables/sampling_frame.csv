@@ -111,7 +111,7 @@ CO00101,aurora police department,CO,local police department,mountain,221024,10,W
 AZ00700,maricopa county sheriff's office,AZ,sheriffs office,mountain,217720.5,10,West,100-250k,West 100-250k,FALSE
 MI63163,oakland county sheriff's office,MI,sheriffs office,east north central,215948,8,Midwest,100-250k,Midwest 100-250k,FALSE
 VA04301,henrico county division of police,VA,local police department,south atlantic,214723.5,10,South,100-250k,South 100-250k,FALSE
-VA12200,richmond police department,VA,local police department,south atlantic,212754,10,South,100-250k,South 100-250k,FALSE
+VA12200,richmond police department,VA,local police department,south atlantic,212754,10,South,100-250k,South 100-250k,TRUE
 OH03100,hamilton county sheriff's office,OH,sheriffs office,east north central,211778,10,Midwest,100-250k,Midwest 100-250k,FALSE
 FL01700,escambia county sheriff's office,FL,sheriffs office,south atlantic,210737.5,6,South,100-250k,South 100-250k,FALSE
 LA00901,shreveport police department,LA,local police department,west south central,209205,10,South,100-250k,South 100-250k,FALSE
