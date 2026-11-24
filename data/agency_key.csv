@@ -29,6 +29,7 @@ bakersfield_ca,CA01502,Bakersfield Police Department,CA,local_police,WaPo,
 baltimore_md,MDBPD00,Baltimore Police Department,MD,local_police,WaPo,
 baltimore_county_md,MD00301,Baltimore County Police Department,MD,local_police,LEAIC 2012,"Baltimore County PD (MD); pre-1995 newspaper reconstruction only (Sun from Sep 10, 1990), WaPo fills 2015-24"
 bartow_county_ga,GA00800,Bartow County Sheriff's Office,GA,sheriff,WaPo,
+baton_rouge_la,LA01702,Baton Rouge Police Department,LA,local_police,WaPo,"Baton Rouge PD (LA); 1986-94 newspaper reconstruction (The Advocate), WaPo fills 2015-24"
 beaumont_tx,TX12301,Beaumont Police Department,TX,local_police,WaPo,
 beltrami_county_mn,MN00400,Beltrami County Sheriff's Office,MN,sheriff,LEAIC 2012,
 bemidji_mn,MN00401,Bemidji Police Department,MN,local_police,WaPo,

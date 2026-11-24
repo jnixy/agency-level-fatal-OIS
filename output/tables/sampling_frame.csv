@@ -99,7 +99,7 @@ FL05214,st. petersburg police department,FL,local police department,south atlant
 AZ01000,pima county sheriff's dept.,AZ,sheriffs office,mountain,244482,10,West,100-250k,West 100-250k,FALSE
 FL05300,polk county sheriff's office,FL,sheriffs office,south atlantic,241543,6,South,100-250k,South 100-250k,FALSE
 FL05100,pasco county sheriff's office,FL,sheriffs office,south atlantic,238707,6,South,100-250k,South 100-250k,FALSE
-LA01702,baton rouge police department,LA,local police department,west south central,236421.5,10,South,100-250k,South 100-250k,FALSE
+LA01702,baton rouge police department,LA,local police department,west south central,236421.5,10,South,100-250k,South 100-250k,TRUE
 NY02701,rochester police department,NY,local police department,middle atlantic,235119.5,10,Northeast,100-250k,Northeast 100-250k,FALSE
 AK00101,anchorage police department,AK,local police department,pacific,232805,10,West,100-250k,West 100-250k,TRUE
 NJ00906,jersey city police,NJ,local police department,middle atlantic,227336,10,Northeast,100-250k,Northeast 100-250k,FALSE
