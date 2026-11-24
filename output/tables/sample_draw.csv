@@ -32,7 +32,7 @@ NY04500,saratoga county sheriff's office,NY,sheriffs office,middle atlantic,1111
 PA03901,allentown police department,PA,local police department,middle atlantic,105661.5,10,Northeast,100-250k,Northeast 100-250k,FALSE,Allentown police,"Morning Call, The (Allentown, PA)",5,5,strong,13,3,FALSE,NA
 RI00409,providence police department,RI,local police department,new england,159078,10,Northeast,100-250k,Northeast 100-250k,TRUE,Providence police,Providence Journal (RI),5,5,already rebuilt,13,3,TRUE,4.333333333333333
 NJNPD00,newark police,NJ,local police department,middle atlantic,295691.5,10,Northeast,250-500k,Northeast 250-500k,TRUE,NA,NA,NA,NA,already rebuilt,3,2,TRUE,1.5
-NY01401,buffalo police department,NY,local police department,middle atlantic,326955,10,Northeast,250-500k,Northeast 250-500k,FALSE,Buffalo police,"Buffalo News, The (NY)",5,5,strong,3,2,TRUE,1.5
+NY01401,buffalo police department,NY,local police department,middle atlantic,326955,10,Northeast,250-500k,Northeast 250-500k,TRUE,Buffalo police,"Buffalo News, The (NY)",5,5,already rebuilt,3,2,TRUE,1.5
 PAPPD00,pittsburgh police department,PA,local police department,middle atlantic,376412,9,Northeast,250-500k,Northeast 250-500k,FALSE,Pittsburgh police,Pittsburgh Post-Gazette (PA),5,3,usable,3,2,FALSE,NA
 FL00500,brevard county sheriff's office,FL,sheriffs office,south atlantic,156150.5,6,South,100-250k,South 100-250k,FALSE,Brevard County sheriff,"Orlando Sentinel, The (FL)",8,0,usable,38,7,FALSE,NA
 FL00600,broward county sheriff's office,FL,sheriffs office,south atlantic,161069,6,South,100-250k,South 100-250k,TRUE,NA,NA,NA,NA,already rebuilt,38,7,FALSE,NA

@@ -11,6 +11,7 @@ VTVSP00,Vermont State Police,VT,0.389,0.727,18,11,1977,2015,1994,2025,7,8,"Vermo
 RI00400,Providence Police Department,RI,0.4,0.182,10,11,1985,2015,1994,2025,4,2,"Providence, RI",-0.218,TRUE,0.434,About the same
 WA01700,King County Sheriff's Office,WA,0.5,1.091,10,11,1985,2015,1994,2025,5,12,"King Co. Sheriff, WA",0.591,FALSE,0.151,About the same
 VA02901,Fairfax County Police Department,VA,0.6,0.727,5,11,1990,2015,1994,2025,3,8,"Fairfax County, VA",0.127,FALSE,1,About the same
+NY01401,Buffalo Police Department,NY,0.667,0.364,6,11,1989,2015,1994,2025,4,4,"Buffalo, NY",-0.303,TRUE,0.465,About the same
 GA03302,Cobb County Police Department,GA,0.7,1.818,10,11,1985,2015,1994,2025,7,20,"Cobb County, GA",1.118,FALSE,0.032,More now
 FL04800,Orange County Sheriff's Office,FL,0.778,2.273,9,11,1986,2015,1994,2025,7,25,"Orange Co. Sheriff, FL",1.495,FALSE,0.012,More now
 TX10100,Harris County Sheriff's Office,TX,0.778,4.545,9,11,1986,2015,1994,2025,7,50,"Harris Co. Sheriff, TX",3.768,FALSE,0,More now
