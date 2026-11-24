@@ -1,9 +1,9 @@
 sample,agencies,ratio,ci_lo,ci_hi
-All long-panel agencies (headline),60,0.76,0.556,1.039
+All long-panel agencies (headline),61,0.761,0.557,1.04
 Without newspaper-reconstructed years,16,0.502,0.343,0.735
-Only agencies with newspaper-reconstructed years,49,0.934,0.673,1.298
+Only agencies with newspaper-reconstructed years,50,0.936,0.675,1.297
 Only agencies without newspaper-reconstructed years,11,0.49,0.266,0.902
-"All long-panel agencies, newspaper years raised to SHR where higher",60,0.734,0.544,0.99
-"Only agencies with newspaper years, raised to SHR where higher",49,0.883,0.649,1.201
-"Only agencies with newspaper years, excluding Chicago and LAPD",47,1.22,0.914,1.628
-"Only agencies with newspaper years, excluding Chicago and LAPD, raised to SHR where higher",47,1.119,0.854,1.465
+"All long-panel agencies, newspaper years raised to SHR where higher",61,0.735,0.545,0.99
+"Only agencies with newspaper years, raised to SHR where higher",50,0.883,0.651,1.198
+"Only agencies with newspaper years, excluding Chicago and LAPD",48,1.22,0.916,1.624
+"Only agencies with newspaper years, excluding Chicago and LAPD, raised to SHR where higher",48,1.117,0.855,1.459

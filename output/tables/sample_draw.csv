@@ -71,7 +71,7 @@ VA10300,chesapeake police department,VA,local police department,south atlantic,1
 VA11100,hampton police department,VA,local police department,south atlantic,133194.5,10,South,100-250k,South 100-250k,FALSE,Hampton police,"Daily Press (Newport News, VA)",5,5,strong,38,7,FALSE,NA
 VA11600,newport news police department,VA,local police department,south atlantic,167692.5,10,South,100-250k,South 100-250k,FALSE,Newport News police,"Daily Press (Newport News, VA)",5,5,strong,38,7,FALSE,NA
 VA12000,portsmouth police department,VA,local police department,south atlantic,108033.5,10,South,100-250k,South 100-250k,FALSE,Portsmouth police,"Virginian-Pilot, The (Norfolk, VA)",5,3,usable,38,7,FALSE,NA
-VA12200,richmond police department,VA,local police department,south atlantic,212754,10,South,100-250k,South 100-250k,FALSE,Richmond police,Richmond Times-Dispatch (VA),5,5,strong,38,7,TRUE,5.428571428571429
+VA12200,richmond police department,VA,local police department,south atlantic,212754,10,South,100-250k,South 100-250k,TRUE,Richmond police,Richmond Times-Dispatch (VA),5,5,already rebuilt,38,7,TRUE,5.428571428571429
 FL01306,miami police department,FL,local police department,south atlantic,382534.5,6,South,250-500k,South 250-500k,FALSE,Miami police,"Miami Herald, The (FL)",5,5,strong,18,4,FALSE,NA
 FL02902,tampa police department,FL,local police department,south atlantic,290398.5,6,South,250-500k,South 250-500k,FALSE,Tampa police,"Tampa Tribune, The (FL)",5,5,strong,18,4,FALSE,NA
 FL04800,orange county sheriff's office,FL,sheriffs office,south atlantic,416140.5,6,South,250-500k,South 250-500k,TRUE,NA,NA,NA,NA,already rebuilt,18,4,FALSE,NA
