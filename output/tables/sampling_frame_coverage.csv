@@ -99,7 +99,7 @@ FL05214,st. petersburg police department,FL,local police department,south atlant
 AZ01000,pima county sheriff's dept.,AZ,sheriffs office,mountain,244482,10,West,100-250k,West 100-250k,FALSE,Pima County sheriff,"Arizona Daily Star, The (Tucson, AZ)",4,4,too thin
 FL05300,polk county sheriff's office,FL,sheriffs office,south atlantic,241543,6,South,100-250k,South 100-250k,FALSE,Polk County sheriff,"Tampa Tribune, The (FL)",5,4,usable
 FL05100,pasco county sheriff's office,FL,sheriffs office,south atlantic,238707,6,South,100-250k,South 100-250k,FALSE,Pasco County sheriff,Tampa Bay Times (FL),5,5,strong
-LA01702,baton rouge police department,LA,local police department,west south central,236421.5,10,South,100-250k,South 100-250k,FALSE,Baton Rouge police,"Advocate, The (Baton Rouge, LA)",5,5,strong
+LA01702,baton rouge police department,LA,local police department,west south central,236421.5,10,South,100-250k,South 100-250k,TRUE,Baton Rouge police,"Advocate, The (Baton Rouge, LA)",5,5,already rebuilt
 NY02701,rochester police department,NY,local police department,middle atlantic,235119.5,10,Northeast,100-250k,Northeast 100-250k,FALSE,Rochester police,"Buffalo News, The (NY)",0,0,too thin
 AK00101,anchorage police department,AK,local police department,pacific,232805,10,West,100-250k,West 100-250k,TRUE,NA,NA,NA,NA,already rebuilt
 NJ00906,jersey city police,NJ,local police department,middle atlantic,227336,10,Northeast,100-250k,Northeast 100-250k,FALSE,Jersey City police,"Star-Ledger, The (Newark, NJ)",1,0,too thin
