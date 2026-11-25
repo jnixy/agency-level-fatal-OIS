@@ -138,7 +138,7 @@ NC04102,greensboro police department,NC,local police department,south atlantic,1
 GA10601,columbus police department,GA,local police department,south atlantic,183060,10,South,100-250k,South 100-250k,FALSE,Columbus police,"Ledger-Enquirer (Columbus, GA)",1,0,too thin
 OH05702,dayton police department,OH,local police department,east north central,182814.5,10,Midwest,100-250k,Midwest 100-250k,TRUE,Dayton police,Dayton Daily News (OH),5,5,already rebuilt
 TX05711,garland police department,TX,local police department,west south central,181369,10,South,100-250k,South 100-250k,FALSE,Garland police,"Dallas Morning News, The (TX)",5,0,usable
-NC02600,cumberland county sheriff's office,NC,sheriffs office,south atlantic,180433.5,10,South,100-250k,South 100-250k,FALSE,Cumberland County sheriff,"Fayetteville Observer, The (NC)",5,5,strong
+NC02600,cumberland county sheriff's office,NC,sheriffs office,south atlantic,180433.5,10,South,100-250k,South 100-250k,TRUE,Cumberland County sheriff,"Fayetteville Observer, The (NC)",5,5,already rebuilt
 AR06002,little rock police department,AR,local police department,west south central,179211,10,South,100-250k,South 100-250k,FALSE,Little Rock police,"Arkansas Democrat-Gazette (Little Rock, AR)",1,1,too thin
 WA03204,spokane police department,WA,local police department,pacific,177544.5,10,West,100-250k,West 100-250k,FALSE,Spokane police,"Spokesman-Review, The (Spokane, WA)",1,1,too thin
 MD01401,howard county police department,MD,local police department,south atlantic,176437,10,South,100-250k,South 100-250k,FALSE,Howard County police,"Sun, The (Baltimore, MD)",5,4,usable
