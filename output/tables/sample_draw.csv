@@ -57,7 +57,7 @@ MD01401,howard county police department,MD,local police department,south atlanti
 NC02600,cumberland county sheriff's office,NC,sheriffs office,south atlantic,180433.5,10,South,100-250k,South 100-250k,TRUE,Cumberland County sheriff,"Fayetteville Observer, The (NC)",5,5,already rebuilt,38,7,TRUE,5.428571428571429
 NC03402,winston-salem police department,NC,local police department,south atlantic,147679,10,South,100-250k,South 100-250k,FALSE,Winston-Salem police,"News & Record (Greensboro, NC)",5,2,usable,38,7,FALSE,NA
 NC04102,greensboro police department,NC,local police department,south atlantic,183921,10,South,100-250k,South 100-250k,FALSE,Greensboro police,"News & Record (Greensboro, NC)",5,5,strong,38,7,FALSE,NA
-SC03200,lexington county sheriff's office,SC,sheriffs office,south atlantic,120982.5,10,South,100-250k,South 100-250k,FALSE,Lexington County sheriff,"State, The (Columbia, SC)",5,0,usable,38,7,TRUE,5.428571428571429
+SC03200,lexington county sheriff's office,SC,sheriffs office,south atlantic,120982.5,10,South,100-250k,South 100-250k,TRUE,Lexington County sheriff,"State, The (Columbia, SC)",5,0,already rebuilt,38,7,TRUE,5.428571428571429
 SC04000,richland county sheriff's office,SC,sheriffs office,south atlantic,184510.5,10,South,100-250k,South 100-250k,FALSE,Richland County sheriff,"State, The (Columbia, SC)",5,4,usable,38,7,FALSE,NA
 SC04200,spartanburg county sheriff's office,SC,sheriffs office,south atlantic,154161.5,10,South,100-250k,South 100-250k,FALSE,Spartanburg County sheriff,"Herald-Journal (Spartanburg, SC)",5,4,usable,38,7,FALSE,NA
 TX04306,plano police department,TX,local police department,west south central,128713,9,South,100-250k,South 100-250k,FALSE,Plano police,"Dallas Morning News, The (TX)",5,2,usable,38,7,FALSE,NA

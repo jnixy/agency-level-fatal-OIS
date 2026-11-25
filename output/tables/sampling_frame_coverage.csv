@@ -241,7 +241,7 @@ CA03332,moreno valley police dept,CA,local police department,pacific,123196,5,We
 TX10115,pasadena police department,TX,local police department,west south central,122029,10,South,100-250k,South 100-250k,FALSE,Pasadena police,Houston Chronicle (TX),5,0,usable
 CA03710,oceanside police department,CA,local police department,pacific,122004.5,10,West,100-250k,West 100-250k,FALSE,Oceanside police,"San Diego Union-Tribune, The (CA)",5,2,usable
 FL01100,collier county sheriff's office,FL,sheriffs office,south atlantic,121590,6,South,100-250k,South 100-250k,FALSE,Collier County sheriff,"Miami Herald, The (FL)",4,1,too thin
-SC03200,lexington county sheriff's office,SC,sheriffs office,south atlantic,120982.5,10,South,100-250k,South 100-250k,FALSE,Lexington County sheriff,"State, The (Columbia, SC)",5,0,usable
+SC03200,lexington county sheriff's office,SC,sheriffs office,south atlantic,120982.5,10,South,100-250k,South 100-250k,TRUE,Lexington County sheriff,"State, The (Columbia, SC)",5,0,already rebuilt
 OH07600,stark county sheriff's office,OH,sheriffs office,east north central,120342.5,8,Midwest,100-250k,Midwest 100-250k,FALSE,Stark County sheriff,Akron Beacon Journal (OH),5,0,usable
 KS08901,topeka police department,KS,local police department,west north central,120064,7,Midwest,100-250k,Midwest 100-250k,FALSE,Topeka police,"Wichita Eagle, The (KS)",0,0,too thin
 OH05700,montgomery county sheriff's office,OH,sheriffs office,east north central,118591.5,10,Midwest,100-250k,Midwest 100-250k,FALSE,Montgomery County sheriff,Dayton Daily News (OH),5,2,usable
