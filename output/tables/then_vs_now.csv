@@ -11,6 +11,7 @@ MN06209,St. Paul Police Department,MN,0.333,1.364,6,11,1989,2015,1994,2025,2,15,
 VTVSP00,Vermont State Police,VT,0.389,0.727,18,11,1977,2015,1994,2025,7,8,"Vermont State Police, VT",0.338,FALSE,0.287,About the same
 RI00400,Providence Police Department,RI,0.4,0.182,10,11,1985,2015,1994,2025,4,2,"Providence, RI",-0.218,TRUE,0.434,About the same
 WA01700,King County Sheriff's Office,WA,0.5,1.091,10,11,1985,2015,1994,2025,5,12,"King Co. Sheriff, WA",0.591,FALSE,0.151,About the same
+NC02600,Cumberland County Sheriff's Office,NC,0.571,0.273,7,11,1988,2015,1994,2025,4,3,"Cumberland Co. Sheriff, NC",-0.299,TRUE,0.442,About the same
 VA02901,Fairfax County Police Department,VA,0.6,0.727,5,11,1990,2015,1994,2025,3,8,"Fairfax County, VA",0.127,FALSE,1,About the same
 NY01401,Buffalo Police Department,NY,0.667,0.364,6,11,1989,2015,1994,2025,4,4,"Buffalo, NY",-0.303,TRUE,0.465,About the same
 GA03302,Cobb County Police Department,GA,0.7,1.818,10,11,1985,2015,1994,2025,7,20,"Cobb County, GA",1.118,FALSE,0.032,More now
