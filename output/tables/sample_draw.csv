@@ -46,7 +46,7 @@ FL05203,clearwater police department,FL,local police department,south atlantic,1
 FL05214,st. petersburg police department,FL,local police department,south atlantic,247661,6,South,100-250k,South 100-250k,FALSE,St. Petersburg police,Tampa Bay Times (FL),5,5,strong,38,7,FALSE,NA
 FL05300,polk county sheriff's office,FL,sheriffs office,south atlantic,241543,6,South,100-250k,South 100-250k,FALSE,Polk County sheriff,"Tampa Tribune, The (FL)",5,4,usable,38,7,TRUE,5.428571428571429
 FL05900,seminole county sheriff's office,FL,sheriffs office,south atlantic,140157,6,South,100-250k,South 100-250k,FALSE,Seminole County sheriff,"Orlando Sentinel, The (FL)",5,5,strong,38,7,FALSE,NA
-FL06400,volusia county sheriff's office,FL,sheriffs office,south atlantic,147996,6,South,100-250k,South 100-250k,FALSE,Volusia County sheriff,"Orlando Sentinel, The (FL)",5,5,strong,38,7,TRUE,5.428571428571429
+FL06400,volusia county sheriff's office,FL,sheriffs office,south atlantic,147996,6,South,100-250k,South 100-250k,TRUE,Volusia County sheriff,"Orlando Sentinel, The (FL)",5,5,already rebuilt,38,7,TRUE,5.428571428571429
 GA03101,clayton county police department,GA,local police department,south atlantic,137662.5,10,South,100-250k,South 100-250k,FALSE,Clayton County police,"Atlanta Journal-Constitution, The (GA)",5,1,usable,38,7,FALSE,NA
 GA06013,fulton county police department,GA,local police department,south atlantic,141264.5,10,South,100-250k,South 100-250k,FALSE,Fulton County police,"Atlanta Journal-Constitution, The (GA)",5,4,usable,38,7,FALSE,NA
 KY03402,lexington division of police,KY,local police department,east south central,225918,9,South,100-250k,South 100-250k,FALSE,Lexington police,Lexington Herald-Leader (KY),5,5,strong,38,7,FALSE,NA

@@ -181,7 +181,7 @@ VA10300,chesapeake police department,VA,local police department,south atlantic,1
 TX17000,montgomery county sheriff's office,TX,sheriffs office,west south central,150464.5,10,South,100-250k,South 100-250k,FALSE
 CA00700,contra costa county sheriff's office,CA,sheriffs office,pacific,150257,10,West,100-250k,West 100-250k,FALSE
 GA12100,richmond county sheriff's office,GA,sheriffs office,south atlantic,148724,9,South,100-250k,South 100-250k,FALSE
-FL06400,volusia county sheriff's office,FL,sheriffs office,south atlantic,147996,6,South,100-250k,South 100-250k,FALSE
+FL06400,volusia county sheriff's office,FL,sheriffs office,south atlantic,147996,6,South,100-250k,South 100-250k,TRUE
 NC03402,winston-salem police department,NC,local police department,south atlantic,147679,10,South,100-250k,South 100-250k,FALSE
 MI50806,warren police department,MI,local police department,east north central,146533.5,10,Midwest,100-250k,Midwest 100-250k,FALSE
 GA02503,savannah-chatham metropolitan police department,GA,local police department,south atlantic,146423,10,South,100-250k,South 100-250k,FALSE
