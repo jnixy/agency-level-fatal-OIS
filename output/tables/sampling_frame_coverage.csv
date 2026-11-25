@@ -232,7 +232,7 @@ CO03004,lakewood police department,CO,local police department,mountain,125481.5,
 IL09900,will county sheriff's office,IL,sheriffs office,east north central,125342,9,Midwest,100-250k,Midwest 100-250k,FALSE,Will County sheriff,Chicago Sun-Times (IL),0,0,too thin
 CT00093,new haven police department,CT,local police department,new england,125263,10,Northeast,100-250k,Northeast 100-250k,FALSE,New Haven police,New Haven Register (CT),5,5,strong
 FL00605,hollywood police department,FL,local police department,south atlantic,125244.5,6,South,100-250k,South 100-250k,FALSE,Hollywood police,"Miami Herald, The (FL)",5,5,strong
-LA01700,east baton rouge parish sheriff's office,LA,sheriffs office,west south central,125089.5,10,South,100-250k,South 100-250k,FALSE,East Baton Rouge Parish sheriff,"Advocate, The (Baton Rouge, LA)",5,1,usable
+LA01700,east baton rouge parish sheriff's office,LA,sheriffs office,west south central,125089.5,10,South,100-250k,South 100-250k,TRUE,East Baton Rouge Parish sheriff,"Advocate, The (Baton Rouge, LA)",5,1,already rebuilt
 TX07900,fort bend county sheriff's office,TX,sheriffs office,west south central,124290,9,South,100-250k,South 100-250k,FALSE,Fort Bend County sheriff,Houston Chronicle (TX),3,0,too thin
 TX24001,laredo police department,TX,local police department,west south central,124210,10,South,100-250k,South 100-250k,FALSE,Laredo police,San Antonio Express-News (TX),0,0,too thin
 AZ00725,scottsdale police dept,AZ,local police department,mountain,124138,9,West,100-250k,West 100-250k,FALSE,Scottsdale police,"Arizona Daily Star, The (Tucson, AZ)",0,0,too thin

@@ -177,6 +177,7 @@ city_label <- function(name, state) {
     str_remove("( Metropolitan)? Police Department$") |>
     str_replace("^New York$", "New York City") |>
     str_replace(" County Sheriff's (Department|Office)$", " Co. Sheriff") |>
+    str_replace(" Parish Sheriff's (Department|Office)$", " Parish Sheriff") |>
     str_replace("^Los Angeles Co\\.", "LA Co.")
   # DC's agency is "Metropolitan Police Department", which names no city
   city <- if_else(state == "DC", "Washington", city)

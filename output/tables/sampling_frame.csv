@@ -232,7 +232,7 @@ CO03004,lakewood police department,CO,local police department,mountain,125481.5,
 IL09900,will county sheriff's office,IL,sheriffs office,east north central,125342,9,Midwest,100-250k,Midwest 100-250k,FALSE
 CT00093,new haven police department,CT,local police department,new england,125263,10,Northeast,100-250k,Northeast 100-250k,FALSE
 FL00605,hollywood police department,FL,local police department,south atlantic,125244.5,6,South,100-250k,South 100-250k,FALSE
-LA01700,east baton rouge parish sheriff's office,LA,sheriffs office,west south central,125089.5,10,South,100-250k,South 100-250k,FALSE
+LA01700,east baton rouge parish sheriff's office,LA,sheriffs office,west south central,125089.5,10,South,100-250k,South 100-250k,TRUE
 TX07900,fort bend county sheriff's office,TX,sheriffs office,west south central,124290,9,South,100-250k,South 100-250k,FALSE
 TX24001,laredo police department,TX,local police department,west south central,124210,10,South,100-250k,South 100-250k,FALSE
 AZ00725,scottsdale police dept,AZ,local police department,mountain,124138,9,West,100-250k,West 100-250k,FALSE

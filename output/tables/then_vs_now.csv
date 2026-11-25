@@ -1,5 +1,6 @@
 agency_id,agency_name,state,per_year_early,per_year_recent,years_early,years_recent,first_early,first_recent,last_early,last_recent,deaths_early,deaths_recent,label,change,lower_now,p_change,direction
 MA01460,Worcester Police Department,MA,0,0.091,5,11,1990,2015,1994,2025,0,1,"Worcester, MA",0.091,FALSE,1,About the same
+LA01700,East Baton Rouge Parish Sheriff's Office,LA,0.111,0.909,9,11,1986,2015,1994,2025,1,10,"East Baton Rouge Parish Sheriff, LA",0.798,FALSE,0.016,More now
 WI01301,Madison Police Department,WI,0.133,0.273,15,11,1980,2015,1994,2025,2,3,"Madison, WI",0.139,FALSE,0.656,About the same
 CO02101,Colorado Springs Police Department,CO,0.143,3.091,7,11,1988,2015,1994,2025,1,34,"Colorado Springs, CO",2.948,FALSE,0,More now
 ME00305,Portland Police Department,ME,0.2,0.182,5,11,1990,2015,1994,2025,1,2,"Portland, ME",-0.018,TRUE,1,About the same
@@ -32,7 +33,7 @@ MD01604,Montgomery County Police Department,MD,1.2,1.182,5,11,1990,2015,1994,202
 CA01005,Fresno Police Department,CA,1.25,2.545,8,11,1987,2015,1994,2025,10,28,"Fresno, CA",1.295,FALSE,0.05,More now
 CA03404,Sacramento Police Department,CA,1.4,1.545,10,11,1985,2015,1994,2025,14,17,"Sacramento, CA",0.145,FALSE,0.858,About the same
 CA03700,San Diego County Sheriff's Department,CA,1.455,2,11,11,1984,2015,1994,2025,16,22,"San Diego Co. Sheriff, CA",0.545,FALSE,0.418,About the same
-LA02600,Jefferson Parish Sheriff's Office,LA,1.5,2,6,11,1989,2015,1994,2025,9,22,"Jefferson Parish Sheriff's Office, LA",0.5,FALSE,0.574,About the same
+LA02600,Jefferson Parish Sheriff's Office,LA,1.5,2,6,11,1989,2015,1994,2025,9,22,"Jefferson Parish Sheriff, LA",0.5,FALSE,0.574,About the same
 WASPD00,Seattle Police Department,WA,1.6,2.091,15,11,1980,2015,1994,2025,24,23,"Seattle, WA",0.491,FALSE,0.378,About the same
 CA04313,San Jose Police Department,CA,1.692,2.455,13,11,1976,2015,1994,2025,22,27,"San Jose, CA",0.762,FALSE,0.2,About the same
 NJNPD00,Newark Police Department,NJ,1.778,1,9,11,1976,2015,1994,2025,16,11,"Newark, NJ",-0.778,TRUE,0.175,About the same
