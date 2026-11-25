@@ -181,7 +181,7 @@ VA10300,chesapeake police department,VA,local police department,south atlantic,1
 TX17000,montgomery county sheriff's office,TX,sheriffs office,west south central,150464.5,10,South,100-250k,South 100-250k,FALSE,Montgomery County sheriff,Houston Chronicle (TX),6,0,usable
 CA00700,contra costa county sheriff's office,CA,sheriffs office,pacific,150257,10,West,100-250k,West 100-250k,FALSE,Contra Costa County sheriff,San Francisco Chronicle (CA),0,0,too thin
 GA12100,richmond county sheriff's office,GA,sheriffs office,south atlantic,148724,9,South,100-250k,South 100-250k,FALSE,Richmond County sheriff,"Augusta Chronicle, The (GA)",1,1,too thin
-FL06400,volusia county sheriff's office,FL,sheriffs office,south atlantic,147996,6,South,100-250k,South 100-250k,FALSE,Volusia County sheriff,"Orlando Sentinel, The (FL)",5,5,strong
+FL06400,volusia county sheriff's office,FL,sheriffs office,south atlantic,147996,6,South,100-250k,South 100-250k,TRUE,Volusia County sheriff,"Orlando Sentinel, The (FL)",5,5,already rebuilt
 NC03402,winston-salem police department,NC,local police department,south atlantic,147679,10,South,100-250k,South 100-250k,FALSE,Winston-Salem police,"News & Record (Greensboro, NC)",5,2,usable
 MI50806,warren police department,MI,local police department,east north central,146533.5,10,Midwest,100-250k,Midwest 100-250k,FALSE,Warren police,NA,0,0,no in-state source
 GA02503,savannah-chatham metropolitan police department,GA,local police department,south atlantic,146423,10,South,100-250k,South 100-250k,FALSE,Savannah police,"Atlanta Journal-Constitution, The (GA)",2,0,too thin
