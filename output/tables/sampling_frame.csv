@@ -205,7 +205,7 @@ FL04200,marion county sheriff's office,FL,sheriffs office,south atlantic,139910.
 IL01600,cook county sheriff's office,IL,sheriffs office,east north central,139558,9,Midwest,100-250k,Midwest 100-250k,FALSE
 IL10104,rockford police dept,IL,local police department,east north central,138221.5,10,Midwest,100-250k,Midwest 100-250k,FALSE
 CT00064,hartford police department,CT,local police department,new england,138081,10,Northeast,100-250k,Northeast 100-250k,FALSE
-CA01972,torrance police department,CA,local police department,pacific,138026,10,West,100-250k,West 100-250k,FALSE
+CA01972,torrance police department,CA,local police department,pacific,138026,10,West,100-250k,West 100-250k,TRUE
 CA05604,oxnard police department,CA,local police department,pacific,137869.5,10,West,100-250k,West 100-250k,FALSE
 GA03101,clayton county police department,GA,local police department,south atlantic,137662.5,10,South,100-250k,South 100-250k,FALSE
 CA03900,san joaquin county sheriff's office,CA,sheriffs office,pacific,136508,10,West,100-250k,West 100-250k,FALSE
