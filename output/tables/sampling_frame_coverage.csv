@@ -57,7 +57,7 @@ MD00202,anne arundel county police department,MD,local police department,south a
 NM00101,albuquerque police department,NM,local police department,mountain,384768.5,10,West,250-500k,West 250-500k,FALSE,Albuquerque police,"Santa Fe New Mexican, The (NM)",0,0,too thin
 NC06001,charlotte - mecklenburg police department,NC,local police department,south atlantic,384273,10,South,250-500k,South 250-500k,TRUE,NA,NA,NA,NA,already rebuilt
 FL01306,miami police department,FL,local police department,south atlantic,382534.5,6,South,250-500k,South 250-500k,FALSE,Miami police,"Miami Herald, The (FL)",5,5,strong
-VA12800,virginia beach police department,VA,local police department,south atlantic,381692.5,10,South,250-500k,South 250-500k,FALSE,Virginia Beach police,"Virginian-Pilot, The (Norfolk, VA)",5,5,strong
+VA12800,virginia beach police department,VA,local police department,south atlantic,381692.5,10,South,250-500k,South 250-500k,TRUE,Virginia Beach police,"Virginian-Pilot, The (Norfolk, VA)",5,5,already rebuilt
 PAPPD00,pittsburgh police department,PA,local police department,middle atlantic,376412,9,Northeast,250-500k,Northeast 250-500k,FALSE,Pittsburgh police,Pittsburgh Post-Gazette (PA),5,3,usable
 OK07205,tulsa police department,OK,local police department,west south central,374238.5,10,South,250-500k,South 250-500k,TRUE,NA,NA,NA,NA,already rebuilt
 FL05000,palm beach county sheriff's office,FL,sheriffs office,south atlantic,374046,6,South,250-500k,South 250-500k,FALSE,Palm Beach County sheriff,"Palm Beach Post, The (FL)",5,5,strong

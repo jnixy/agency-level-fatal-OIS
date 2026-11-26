@@ -89,7 +89,7 @@ OK05506,oklahoma city police department,OK,local police department,west south ce
 OK07205,tulsa police department,OK,local police department,west south central,374238.5,10,South,250-500k,South 250-500k,TRUE,NA,NA,NA,NA,already rebuilt,18,4,FALSE,NA
 TX22701,austin police department,TX,local police department,west south central,469224.5,10,South,250-500k,South 250-500k,TRUE,NA,NA,NA,NA,already rebuilt,18,4,FALSE,NA
 VA11700,norfolk police department,VA,local police department,south atlantic,274858.5,10,South,250-500k,South 250-500k,FALSE,Norfolk police,"Virginian-Pilot, The (Norfolk, VA)",5,5,strong,18,4,FALSE,NA
-VA12800,virginia beach police department,VA,local police department,south atlantic,381692.5,10,South,250-500k,South 250-500k,FALSE,Virginia Beach police,"Virginian-Pilot, The (Norfolk, VA)",5,5,strong,18,4,TRUE,4.5
+VA12800,virginia beach police department,VA,local police department,south atlantic,381692.5,10,South,250-500k,South 250-500k,TRUE,Virginia Beach police,"Virginian-Pilot, The (Norfolk, VA)",5,5,already rebuilt,18,4,TRUE,4.5
 AK00101,anchorage police department,AK,local police department,pacific,232805,10,West,100-250k,West 100-250k,TRUE,NA,NA,NA,NA,already rebuilt,24,4,FALSE,NA
 CA00100,alameda county sheriff's office,CA,sheriffs office,pacific,123359.5,10,West,100-250k,West 100-250k,FALSE,Alameda County sheriff,"Mercury News, The (San Jose, CA)",8,0,usable,24,4,TRUE,6
 CA00105,fremont police department,CA,local police department,pacific,172169,10,West,100-250k,West 100-250k,FALSE,Fremont police,"Mercury News, The (San Jose, CA)",5,4,usable,24,4,FALSE,NA
