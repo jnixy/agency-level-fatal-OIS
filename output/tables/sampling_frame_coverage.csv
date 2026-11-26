@@ -150,7 +150,7 @@ WA02703,tacoma police department,WA,local police department,pacific,172303.5,10,
 WA00600,clark county sheriff's office,WA,sheriffs office,pacific,172289,10,West,100-250k,West 100-250k,FALSE,Clark County sheriff,"Columbian, The (Vancouver, WA)",1,1,too thin
 CA00105,fremont police department,CA,local police department,pacific,172169,10,West,100-250k,West 100-250k,FALSE,Fremont police,"Mercury News, The (San Jose, CA)",5,4,usable
 TX01500,bexar county sheriff's office,TX,sheriffs office,west south central,171945,10,South,100-250k,South 100-250k,FALSE,Bexar County sheriff,San Antonio Express-News (TX),4,2,too thin
-OR00300,clackamas county sheriff's office,OR,sheriffs office,pacific,170522.5,10,West,100-250k,West 100-250k,FALSE,Clackamas County sheriff,"Oregonian, The (Portland, OR)",5,0,usable
+OR00300,clackamas county sheriff's office,OR,sheriffs office,pacific,170522.5,10,West,100-250k,West 100-250k,TRUE,Clackamas County sheriff,"Oregonian, The (Portland, OR)",5,0,already rebuilt
 CA01502,bakersfield police department,CA,local police department,pacific,168321.5,10,West,100-250k,West 100-250k,FALSE,Bakersfield police,Los Angeles Daily News (CA),0,0,too thin
 VA11600,newport news police department,VA,local police department,south atlantic,167692.5,10,South,100-250k,South 100-250k,FALSE,Newport News police,"Daily Press (Newport News, VA)",5,5,strong
 TX18801,amarillo police department,TX,local police department,west south central,166830.5,10,South,100-250k,South 100-250k,FALSE,Amarillo police,"Dallas Morning News, The (TX)",0,0,too thin

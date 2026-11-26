@@ -150,7 +150,7 @@ WA02703,tacoma police department,WA,local police department,pacific,172303.5,10,
 WA00600,clark county sheriff's office,WA,sheriffs office,pacific,172289,10,West,100-250k,West 100-250k,FALSE
 CA00105,fremont police department,CA,local police department,pacific,172169,10,West,100-250k,West 100-250k,FALSE
 TX01500,bexar county sheriff's office,TX,sheriffs office,west south central,171945,10,South,100-250k,South 100-250k,FALSE
-OR00300,clackamas county sheriff's office,OR,sheriffs office,pacific,170522.5,10,West,100-250k,West 100-250k,FALSE
+OR00300,clackamas county sheriff's office,OR,sheriffs office,pacific,170522.5,10,West,100-250k,West 100-250k,TRUE
 CA01502,bakersfield police department,CA,local police department,pacific,168321.5,10,West,100-250k,West 100-250k,FALSE
 VA11600,newport news police department,VA,local police department,south atlantic,167692.5,10,South,100-250k,South 100-250k,FALSE
 TX18801,amarillo police department,TX,local police department,west south central,166830.5,10,South,100-250k,South 100-250k,FALSE
