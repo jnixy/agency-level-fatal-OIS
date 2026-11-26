@@ -96,7 +96,7 @@ CA00105,fremont police department,CA,local police department,pacific,172169,10,W
 CA01000,fresno county sheriff's office,CA,sheriffs office,pacific,184724,10,West,100-250k,West 100-250k,FALSE,Fresno County sheriff,"Fresno Bee, The (CA)",5,5,strong,24,4,FALSE,NA
 CA01925,glendale police department,CA,local police department,pacific,172482.5,10,West,100-250k,West 100-250k,FALSE,Glendale police,Los Angeles Daily News (CA),5,5,strong,24,4,FALSE,NA
 CA01933,inglewood police department,CA,local police department,pacific,108325.5,10,West,100-250k,West 100-250k,FALSE,Inglewood police,"Daily Breeze (Torrance, CA)",5,1,usable,24,4,FALSE,NA
-CA01972,torrance police department,CA,local police department,pacific,138026,10,West,100-250k,West 100-250k,FALSE,Torrance police,"Daily Breeze (Torrance, CA)",5,5,strong,24,4,TRUE,6
+CA01972,torrance police department,CA,local police department,pacific,138026,10,West,100-250k,West 100-250k,TRUE,Torrance police,"Daily Breeze (Torrance, CA)",5,5,already rebuilt,24,4,TRUE,6
 CA03008,fullerton police department,CA,local police department,pacific,113777,10,West,100-250k,West 100-250k,FALSE,Fullerton police,"Orange County Register, The (Santa Ana, CA)",5,1,usable,24,4,FALSE,NA
 CA03009,garden grove police department,CA,local police department,pacific,141839,10,West,100-250k,West 100-250k,FALSE,Garden Grove police,"Orange County Register, The (Santa Ana, CA)",5,0,usable,24,4,FALSE,NA
 CA03010,huntington beach police department,CA,local police department,pacific,188263,10,West,100-250k,West 100-250k,FALSE,Huntington Beach police,"Orange County Register, The (Santa Ana, CA)",5,0,usable,24,4,FALSE,NA

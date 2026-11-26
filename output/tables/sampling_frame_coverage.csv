@@ -205,7 +205,7 @@ FL04200,marion county sheriff's office,FL,sheriffs office,south atlantic,139910.
 IL01600,cook county sheriff's office,IL,sheriffs office,east north central,139558,9,Midwest,100-250k,Midwest 100-250k,FALSE,Cook County sheriff,Chicago Sun-Times (IL),5,3,usable
 IL10104,rockford police dept,IL,local police department,east north central,138221.5,10,Midwest,100-250k,Midwest 100-250k,FALSE,Rockford police,"Pantagraph, The (Bloomington, IL)",0,0,too thin
 CT00064,hartford police department,CT,local police department,new england,138081,10,Northeast,100-250k,Northeast 100-250k,FALSE,Hartford police,"Hartford Courant, The (CT)",4,3,too thin
-CA01972,torrance police department,CA,local police department,pacific,138026,10,West,100-250k,West 100-250k,FALSE,Torrance police,"Daily Breeze (Torrance, CA)",5,5,strong
+CA01972,torrance police department,CA,local police department,pacific,138026,10,West,100-250k,West 100-250k,TRUE,Torrance police,"Daily Breeze (Torrance, CA)",5,5,already rebuilt
 CA05604,oxnard police department,CA,local police department,pacific,137869.5,10,West,100-250k,West 100-250k,FALSE,Oxnard police,Los Angeles Daily News (CA),5,3,usable
 GA03101,clayton county police department,GA,local police department,south atlantic,137662.5,10,South,100-250k,South 100-250k,FALSE,Clayton County police,"Atlanta Journal-Constitution, The (GA)",5,1,usable
 CA03900,san joaquin county sheriff's office,CA,sheriffs office,pacific,136508,10,West,100-250k,West 100-250k,FALSE,San Joaquin County sheriff,"Modesto Bee, The (CA)",3,0,too thin
