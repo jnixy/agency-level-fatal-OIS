@@ -112,7 +112,7 @@ CA05604,oxnard police department,CA,local police department,pacific,137869.5,10,
 CO00101,aurora police department,CO,local police department,mountain,221024,10,West,100-250k,West 100-250k,TRUE,Aurora police,"Rocky Mountain News (Denver, CO)",5,5,already rebuilt,24,4,TRUE,6
 CO00300,arapahoe county sheriff's office,CO,sheriffs office,mountain,117214,9,West,100-250k,West 100-250k,FALSE,Arapahoe County sheriff,"Rocky Mountain News (Denver, CO)",5,0,usable,24,4,FALSE,NA
 CO03004,lakewood police department,CO,local police department,mountain,125481.5,10,West,100-250k,West 100-250k,FALSE,Lakewood police,"Rocky Mountain News (Denver, CO)",5,0,usable,24,4,FALSE,NA
-OR00300,clackamas county sheriff's office,OR,sheriffs office,pacific,170522.5,10,West,100-250k,West 100-250k,FALSE,Clackamas County sheriff,"Oregonian, The (Portland, OR)",5,0,usable,24,4,TRUE,6
+OR00300,clackamas county sheriff's office,OR,sheriffs office,pacific,170522.5,10,West,100-250k,West 100-250k,TRUE,Clackamas County sheriff,"Oregonian, The (Portland, OR)",5,0,already rebuilt,24,4,TRUE,6
 UT01803,salt lake city police department,UT,local police department,mountain,164264.5,10,West,100-250k,West 100-250k,FALSE,Salt Lake City police,"Salt Lake Tribune, The (UT)",5,4,usable,24,4,FALSE,NA
 CA00109,oakland police department,CA,local police department,pacific,371399,10,West,250-500k,West 250-500k,FALSE,Oakland police,"Mercury News, The (San Jose, CA)",5,3,usable,12,3,FALSE,NA
 CA01005,fresno police department,CA,local police department,pacific,334710,10,West,250-500k,West 250-500k,TRUE,NA,NA,NA,NA,already rebuilt,12,3,FALSE,NA
