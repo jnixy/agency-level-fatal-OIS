@@ -16,7 +16,7 @@ Annual counts of people shot and killed by on-duty police, by agency, going back
   - the counting rules and analysis plan.
 
   Protocol: [doi.org/10.5281/zenodo.24248721](https://doi.org/10.5281/zenodo.24248721). Code and draw: tag [`protocol-v1.0`](https://github.com/jnixy/agency-level-fatal-OIS/tree/protocol-v1.0); scripts `08_sampling_frame.R`, `08b_coverage_audit.R`, `08c_draw_sample.R`. The headline will be updated when collection is complete.
-- **Sixty-one agencies' pre-2000 gaps are filled from local newspapers** (see [Newspaper reconstructions](#newspaper-reconstructions)), plus a period total for the LA County Sheriff (1985–Jul 1990).
+- **Sixty-two agencies' pre-2000 gaps are filled from local newspapers** (see [Newspaper reconstructions](#newspaper-reconstructions)), plus a period total for the LA County Sheriff (1985–Jul 1990).
 
 ## What these data can show
 
