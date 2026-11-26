@@ -236,7 +236,7 @@ LA01700,east baton rouge parish sheriff's office,LA,sheriffs office,west south c
 TX07900,fort bend county sheriff's office,TX,sheriffs office,west south central,124290,9,South,100-250k,South 100-250k,FALSE,Fort Bend County sheriff,Houston Chronicle (TX),3,0,too thin
 TX24001,laredo police department,TX,local police department,west south central,124210,10,South,100-250k,South 100-250k,FALSE,Laredo police,San Antonio Express-News (TX),0,0,too thin
 AZ00725,scottsdale police dept,AZ,local police department,mountain,124138,9,West,100-250k,West 100-250k,FALSE,Scottsdale police,"Arizona Daily Star, The (Tucson, AZ)",0,0,too thin
-CA00100,alameda county sheriff's office,CA,sheriffs office,pacific,123359.5,10,West,100-250k,West 100-250k,FALSE,Alameda County sheriff,"Mercury News, The (San Jose, CA)",8,0,usable
+CA00100,alameda county sheriff's office,CA,sheriffs office,pacific,123359.5,10,West,100-250k,West 100-250k,TRUE,Alameda County sheriff,"Mercury News, The (San Jose, CA)",8,0,already rebuilt
 CA03332,moreno valley police dept,CA,local police department,pacific,123196,5,West,100-250k,West 100-250k,FALSE,Moreno Valley police,"Press-Enterprise, The (Riverside, CA)",3,2,too thin
 TX10115,pasadena police department,TX,local police department,west south central,122029,10,South,100-250k,South 100-250k,FALSE,Pasadena police,Houston Chronicle (TX),5,0,usable
 CA03710,oceanside police department,CA,local police department,pacific,122004.5,10,West,100-250k,West 100-250k,FALSE,Oceanside police,"San Diego Union-Tribune, The (CA)",5,2,usable
