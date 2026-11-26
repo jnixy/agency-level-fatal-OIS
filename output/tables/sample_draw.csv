@@ -109,7 +109,7 @@ CA05000,stanislaus county sheriff's office,CA,sheriffs office,pacific,102124.5,1
 CA05002,modesto police department,CA,local police department,pacific,158667.5,10,West,100-250k,West 100-250k,FALSE,Modesto police,"Modesto Bee, The (CA)",5,5,strong,24,4,FALSE,NA
 CA05400,tulare county sheriff's office,CA,sheriffs office,pacific,139952.5,10,West,100-250k,West 100-250k,FALSE,Tulare County sheriff,"Fresno Bee, The (CA)",8,2,usable,24,4,FALSE,NA
 CA05604,oxnard police department,CA,local police department,pacific,137869.5,10,West,100-250k,West 100-250k,FALSE,Oxnard police,Los Angeles Daily News (CA),5,3,usable,24,4,FALSE,NA
-CO00101,aurora police department,CO,local police department,mountain,221024,10,West,100-250k,West 100-250k,FALSE,Aurora police,"Rocky Mountain News (Denver, CO)",5,5,strong,24,4,TRUE,6
+CO00101,aurora police department,CO,local police department,mountain,221024,10,West,100-250k,West 100-250k,TRUE,Aurora police,"Rocky Mountain News (Denver, CO)",5,5,already rebuilt,24,4,TRUE,6
 CO00300,arapahoe county sheriff's office,CO,sheriffs office,mountain,117214,9,West,100-250k,West 100-250k,FALSE,Arapahoe County sheriff,"Rocky Mountain News (Denver, CO)",5,0,usable,24,4,FALSE,NA
 CO03004,lakewood police department,CO,local police department,mountain,125481.5,10,West,100-250k,West 100-250k,FALSE,Lakewood police,"Rocky Mountain News (Denver, CO)",5,0,usable,24,4,FALSE,NA
 OR00300,clackamas county sheriff's office,OR,sheriffs office,pacific,170522.5,10,West,100-250k,West 100-250k,FALSE,Clackamas County sheriff,"Oregonian, The (Portland, OR)",5,0,usable,24,4,TRUE,6
