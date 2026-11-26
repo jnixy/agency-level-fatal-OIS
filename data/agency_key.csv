@@ -223,7 +223,7 @@ loganville_ga,GA14702,Loganville Police Department,GA,local_police,LEAIC 2012,
 long_beach_ca,CA01941,Long Beach Police Department,CA,local_police,WaPo,
 los_angeles_ca,CA01942,Los Angeles Police Department,CA,local_police,WaPo,
 los_angeles_county_ca,CA01900,Los Angeles County Sheriff's Department,CA,sheriff,WaPo,
-louisville_ky,KY05680,Louisville Metro Police Department,KY,local_police,WaPo,Louisville Metro PD; 2025 list had KY05602 (pre-merger Louisville PD). Matches WaPo exactly 2015-22
+louisville_ky,KY05680,Louisville Metro Police Department,KY,local_police,WaPo,Louisville Metro PD; 2025 list had KY05602 (pre-merger Louisville PD). Matches WaPo exactly 2015-22. 1983-94 sum the two pre-merger departments (Louisville PD KY05602 and Jefferson County PD KY05601; merged 2003) so both eras cover the same territory
 lowndes_county_ga,GA09200,Lowndes County Sheriff's Office,GA,sheriff,WaPo,
 lubbock_tx,TX15202,Lubbock Police Department,TX,local_police,WaPo,
 lumpkin_county_ga,GA09300,Lumpkin County Sheriff's Department,GA,sheriff,WaPo,
