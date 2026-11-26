@@ -19,6 +19,7 @@ NC02600,Cumberland County Sheriff's Office,NC,0.571,0.273,7,11,1988,2015,1994,20
 VA02901,Fairfax County Police Department,VA,0.6,0.727,5,11,1990,2015,1994,2025,3,8,"Fairfax County, VA",0.127,FALSE,1,About the same
 NY01401,Buffalo Police Department,NY,0.667,0.364,6,11,1989,2015,1994,2025,4,4,"Buffalo, NY",-0.303,TRUE,0.465,About the same
 GA03302,Cobb County Police Department,GA,0.7,1.818,10,11,1985,2015,1994,2025,7,20,"Cobb County, GA",1.118,FALSE,0.032,More now
+KY05680,Louisville Metro Police Department,KY,0.75,3.182,12,11,1983,2015,1994,2025,9,35,"Louisville Metro, KY",2.432,FALSE,0,More now
 FL04800,Orange County Sheriff's Office,FL,0.778,2.273,9,11,1986,2015,1994,2025,7,25,"Orange Co. Sheriff, FL",1.495,FALSE,0.012,More now
 TX10100,Harris County Sheriff's Office,TX,0.778,4.545,9,11,1986,2015,1994,2025,7,50,"Harris Co. Sheriff, TX",3.768,FALSE,0,More now
 VA12200,Richmond Police Department,VA,0.778,0.909,9,11,1986,2015,1994,2025,7,10,"Richmond, VA",0.131,FALSE,0.812,About the same
