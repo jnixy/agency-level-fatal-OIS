@@ -2,7 +2,7 @@ slug,ori7,agency_name,state,agency_type,name_source,note
 abilene_tx,TX22101,Abilene Police Department,TX,local_police,WaPo,
 adairsville_ga,GA00802,Adairsville Police Department,GA,local_police,LEAIC 2012,
 aitkin_county_mn,MN00100,Aitkin County Sheriff's Office,MN,sheriff,WaPo,
-alameda_county_ca,CA00100,Alameda County Sheriff's Office,CA,sheriff,WaPo,
+alameda_county_ca,CA00100,Alameda County Sheriff's Office,CA,sheriff,WaPo,"Alameda County SO (CA); 1985-94 newspaper reconstruction (San Francisco Chronicle + San Jose Mercury News), WaPo fills 2015-24"
 albany_ga,GA04701,Albany Police Department,GA,local_police,WaPo,
 albert_lea_mn,MN02401,Albert Lea Police Department,MN,local_police,WaPo,
 albuquerque_nm,NM00101,Albuquerque Police Department,NM,local_police,WaPo,
