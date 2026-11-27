@@ -2,6 +2,8 @@
 
 [`historical_ois_evidence.csv`](historical_ois_evidence.csv) logs every pre-series count found for the hand-built panel: one row per agency-year (or per source, where a count was found but not used), with its source, page or database ID, a verbatim quote, and notes. Rows with `use_in_panel = yes` feed `n_nix`. Counts of incidents, or of everyone shot rather than people killed, are logged but kept out of the panel. The search tools are in `tools/historical_ois/`.
 
+[`recall_checks.csv`](recall_checks.csv) records the recall check for each of the 56 agencies in the protocol-v1.0 sample: the share of an agency's Fatal Encounters gunshot deaths in a later window (usually 2000-05) that its newspaper carried, found by name or, where the story gave no name, by a fatal shooting by that agency on that date. The protocol treats an agency below 70% as a non-respondent. Agencies whose early years are department or published series, not newspaper rebuilds, are marked not applicable.
+
 ## Newspaper reconstructions
 
 For sixty-five agencies, years missing from the hand-built series come from local newspapers, searched through NewsBank's Access World News. For Dallas, they fill the 1992–2002 gap between Geller and Scott and the city's open data; for Austin, 2000–2007 as well.
