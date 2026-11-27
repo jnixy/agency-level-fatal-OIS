@@ -7,7 +7,12 @@ authors:
     given-names: Justin
     affiliation: "University of Nebraska Omaha"
 repository-code: "https://github.com/jnixy/agency-level-fatal-OIS"
-date-released: 2026-11-04
+version: "1.0"
+date-released: 2026-11-27
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.24248721
+    description: "Sampling and analysis protocol, version 1.0"
 license:
   - CC-BY-NC-SA-4.0
   - MIT
