@@ -15,7 +15,7 @@ Annual counts of people shot and killed by on-duty police, by agency, going back
   - a stratified draw (seed 20261115) of 28 certainty and 28 sampled agencies;
   - the counting rules and analysis plan.
 
-  Protocol: [doi.org/10.5281/zenodo.24248721](https://doi.org/10.5281/zenodo.24248721). Code and draw: tag [`protocol-v1.0`](https://github.com/jnixy/agency-level-fatal-OIS/tree/protocol-v1.0); scripts `08_sampling_frame.R`, `08b_coverage_audit.R`, `08c_draw_sample.R`. **Collection is complete, and the results are [below](#results-from-the-pre-registered-sample).**
+  Protocol: [doi.org/10.5281/zenodo.24248721](https://doi.org/10.5281/zenodo.24248721). Code and draw: tag [`protocol-v1.0`](https://github.com/jnixy/agency-level-fatal-OIS/tree/protocol-v1.0); scripts `08_sampling_frame.R`, `08b_coverage_audit.R`, `08c_draw_sample.R`. **Collection is complete, and the results are [below](#results-from-the-pre-registered-sample).** The data and code as of that analysis are archived on Zenodo as v1.0: [doi.org/10.5281/zenodo.24593865](https://doi.org/10.5281/zenodo.24593865).
 - **Sixty-five agencies' pre-2000 gaps are filled from local newspapers** (see [Newspaper reconstructions](#newspaper-reconstructions)), plus a period total for the LA County Sheriff (1985–Jul 1990).
 
 ## Results from the pre-registered sample
@@ -366,7 +366,7 @@ Found an error, or a source I've missed? Open an issue. Thanks to [Ash Bruha](ht
 
 ## Citation
 
-See [`CITATION.cff`](CITATION.cff). Please also cite *The Washington Post*, Fatal Encounters, and Mapping Police Violence if you use their series. If you use `n_shr`, cite Kaplan, J. *Jacob Kaplan's Concatenated Files: Uniform Crime Reporting (UCR) Program Data: Supplementary Homicide Reports (SHR), 1976–2024.* Ann Arbor, MI: Inter-university Consortium for Political and Social Research [distributor]. https://doi.org/10.3886/E100699V16
+Cite the archived release: Nix, J. (2026). *agency-level-fatal-OIS: Agency-year counts of people shot and killed by police, with the protocol v1.0 sample (v1.0)* [Data set]. Zenodo. https://doi.org/10.5281/zenodo.24593865. To cite every version, use the concept DOI, [10.5281/zenodo.24593864](https://doi.org/10.5281/zenodo.24593864). See [`CITATION.cff`](CITATION.cff). Please also cite *The Washington Post*, Fatal Encounters, and Mapping Police Violence if you use their series. If you use `n_shr`, cite Kaplan, J. *Jacob Kaplan's Concatenated Files: Uniform Crime Reporting (UCR) Program Data: Supplementary Homicide Reports (SHR), 1976–2024.* Ann Arbor, MI: Inter-university Consortium for Political and Social Research [distributor]. https://doi.org/10.3886/E100699V16
 
 ## License
 
