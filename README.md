@@ -68,6 +68,27 @@ All of these runs, the rate versions, and the zero-handling and finite-populatio
 
 So against the late 1980s and early 1990s, the pooled count is somewhat higher now, not level. The pre-registered estimate of about no change rests partly on the early 1970s in a handful of cities.
 
+**Two more checks added after the results (not pre-registered).**
+
+- **How many early deaths did both the newspaper and the SHR miss?** This is a two-list capture-recapture check. It covers the 271 early agency-years, in 42 agencies, that were rebuilt case by case from a newspaper and where the agency also filed SHR.
+  - Every newspaper case is listed, with the deaths left out and why, in [`early_cases.csv`](data/historical/early_cases.csv). Names are omitted.
+  - Each of SHR's 293 police killings in those years was matched to a case by month and, where both give them, age and sex:
+    - 197 match a counted death;
+    - 35 match a death left out (off-duty officers, other agencies, suicides);
+    - 61 match nothing and are taken as deaths the paper missed.
+  - Chapman's estimator, agency by agency, puts the true total at about 410 (95% CI 381–440) against the papers' 299, so 37% more. Every match decision is in [`sample_capture_recapture_matches.csv`](output/tables/sample_capture_recapture_matches.csv).
+  - Raising those years accordingly gives:
+    - pooled ratio 0.90 (0.65–1.23);
+    - typical-agency ratio 1.77 (1.16–2.69).
+  - Both lists largely depend on the department making the death public, so this is still a floor.
+- **Police killings per homicide.** The denominator is the agency's SHR murder victims, in years it filed SHR, through 2020 (the FBI's switch to NIBRS in 2021 left many SHR files incomplete). It covers 47 agencies.
+  - Police killed 2.10 people per 100 murders before 1995, and 2.77 in 2015–20.
+  - Pooled ratio per homicide: 1.60 (1.28–1.99).
+  - Typical-agency ratio per homicide: 2.15 (1.46–3.16).
+  - Homicide fell steeply in the largest cities, and police killings fell less, so relative to crime even the pooled ratio is above 1.
+
+Both are in [`sample_capture_recapture.csv`](output/tables/sample_capture_recapture.csv), [`sample_homicide_check.csv`](output/tables/sample_homicide_check.csv), and [`sample_estimates.csv`](output/tables/sample_estimates.csv), and below the dashed rule in the figure.
+
 ![Every robustness run](output/figures/figA1_robustness.png)
 
 **How much the SHR misses (RQ3).** In the agency-years where both exist, the SHR records 94% of the deaths counted here before 1995 (2,057 of 2,196), but only 56% since 2015 (760 of 1,358). Limited to the 51 agencies with SHR filings in both eras, the figures are 94% and 57%. The SHR's undercount grew, so any comparison of eras built on the SHR alone will overstate the decline.
@@ -105,7 +126,7 @@ These are the departures from protocol v1.0, and the choices the protocol left o
    - the 2012 LEAIC population for Volusia County's recent era, because Florida files no SHR.
 
    Alternatives to the first three are in [`sample_estimates.csv`](output/tables/sample_estimates.csv).
-9. **Added analyses:** a run excluding the LA County Sheriff, the finite-population run, two zero-handling runs, and the SHR comparison limited to the same agencies in both eras.
+9. **Added analyses:** a run excluding the LA County Sheriff, the finite-population run, two zero-handling runs, and the SHR comparison limited to the same agencies in both eras. Added after the results and not pre-registered: the 1985–94 early era, the capture-recapture run, and police killings per homicide.
 
 ## What these data can show
 

@@ -501,8 +501,12 @@ run_order <- c("Main",
                "Finite-population correction (certainty agencies fixed)",
                "Typical agency: all-zero agencies kept as no change",
                "Typical agency: continuity correction only for agencies with a zero era",
-               "Early era 1985-94 only (not pre-registered)")
+               "Early era 1985-94 only (not pre-registered)",
+               "Early newspaper years raised to a capture-recapture estimate (not pre-registered)",
+               "Deaths per SHR homicide, years filed through 2020 (not pre-registered)")
 stopifnot(setequal(run_order, unique(estimates$run)))
+# Runs added after the results sit at the bottom, below a rule
+n_post_hoc <- sum(str_detect(run_order, "not pre-registered"))
 # Agencies the "adding" run brings in: its count-run agencies beyond the main 52
 n_added <- estimates |> filter(str_starts(run, "Adding"), estimand == "pooled", measure == "count") |>
   pull(agencies) - nrow(informative)
@@ -516,33 +520,38 @@ rob <- estimates |>
            str_replace("\\blasd\\b", "LASD") |>
            str_replace("\\bshr\\b", "SHR") |>
            str_replace("1985-94", "1985–94") |>
+           str_remove(fixed(" (not pre-registered)")) |>
            str_wrap(34),
          run_lab = fct_rev(factor(run_lab, levels = unique(run_lab[order(match(run, run_order))]))),
          estimand_lab = if_else(estimand == "pooled", "Pooled ratio", "Typical-agency ratio"),
-         measure_lab = if_else(measure == "count", "Deaths a year", "Deaths per resident"))
-
-# The one run that was not pre-registered sits last (bottom row), below a rule
-stopifnot(str_detect(last(run_order), "not pre-registered"))
+         measure_lab = case_when(measure == "count" ~ "Deaths a year",
+                                 measure == "rate" ~ "Deaths per resident",
+                                 measure == "per homicide" ~ "Deaths per homicide"),
+         measure_lab = factor(measure_lab, c("Deaths a year", "Deaths per resident",
+                                             "Deaths per homicide")))
+stopifnot(!anyNA(rob$measure_lab),
+          all(str_detect(tail(run_order, n_post_hoc), "not pre-registered")))
 p_rob <- ggplot(rob, aes(est, run_lab, color = measure_lab)) +
   geom_vline(xintercept = 1, color = "grey60", linewidth = 0.4) +
-  geom_hline(yintercept = 1.5, color = "grey50", linewidth = 0.3, linetype = "22") +
+  geom_hline(yintercept = n_post_hoc + 0.5, color = "grey50", linewidth = 0.3, linetype = "22") +
   geom_errorbar(aes(xmin = ci_lo, xmax = ci_hi), width = 0, orientation = "y", linewidth = 0.8,
                  position = position_dodge(width = 0.6)) +
   geom_point(size = 2, position = position_dodge(width = 0.6)) +
   facet_wrap(~estimand_lab) +
   scale_color_manual(values = c("Deaths a year" = "grey25",
-                                "Deaths per resident" = source_colors[["Hand-built (Nix)"]]),
+                                "Deaths per resident" = source_colors[["Hand-built (Nix)"]],
+                                "Deaths per homicide" = newspaper_color),
                      name = NULL) +
   scale_x_continuous(trans = "log", breaks = c(0.5, 0.75, 1, 1.5, 2, 3),
                      labels = c("0.5", "0.75", "1", "1.5", "2", "3")) +
-  labs(x = "Ratio, 2015–25 to before 1995 (log scale, 95% CI)", y = NULL,
-       title = str_wrap(paste0("The typical-agency ratio stays near 2 in every run; the pooled ratio ",
+  labs(x = "Ratio, recent era to early era (log scale, 95% CI)", y = NULL,
+       title = str_wrap(paste0("The typical-agency ratio stays well above 1 in every run; the pooled ratio ",
                                "depends on a few large departments and on the early 1970s"), 70),
        subtitle = str_wrap(paste0(
          "The pooled ratio rises without the four largest departments, and when the early era ",
-         "starts in 1985 (below the rule: not pre-registered), since a few large cities ran far ",
-         "higher in the 1970s. Zero-handling runs apply to the typical-agency ratio only. ",
-         "Every run is in sample_estimates.csv."), 100)) +
+         "starts in 1985, since a few large cities ran far higher in the 1970s. Runs below the ",
+         "dashed rule were added after the results and were not pre-registered. Zero-handling ",
+         "runs apply to the typical-agency ratio only. Every run is in sample_estimates.csv."), 100)) +
   theme_project(base_size = 10) +
   theme(plot.title.position = "plot", plot.subtitle = element_text(size = 8.5),
         panel.grid.major.y = element_blank(), legend.position = "top",

@@ -4,6 +4,13 @@
 
 [`recall_checks.csv`](recall_checks.csv) records the recall check for each of the 56 agencies in the protocol-v1.0 sample: the share of an agency's Fatal Encounters gunshot deaths in a later window (usually 2000-05) that its newspaper carried, found by name or, where the story gave no name, by a fatal shooting by that agency on that date. The protocol treats an agency below 70% as a non-respondent. Agencies whose early years are department or published series, not newspaper rebuilds, are marked not applicable.
 
+[`early_cases.csv`](early_cases.csv) lists, case by case, the early-era deaths rebuilt from newspapers in the 42 sample agencies where the agency also filed SHR in those years. Each row is one person:
+- **status:** `counted`, or `excluded` with a reason (off-duty, another agency, custody, vehicle, suicide, not police gunfire, unresolved shooter).
+- **details:** year, month, day, age and sex where the paper gave them; race is rarely given.
+- **source:** NewsBank document IDs.
+
+Names are omitted. The counted rows reproduce the panel's yearly counts exactly. Script 09 matches these cases to SHR's victim records for the capture-recapture check.
+
 ## Newspaper reconstructions
 
 For sixty-five agencies, years missing from the hand-built series come from local newspapers, searched through NewsBank's Access World News. For Dallas, they fill the 1992–2002 gap between Geller and Scott and the city's open data; for Austin, 2000–2007 as well.
