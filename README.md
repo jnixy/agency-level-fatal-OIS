@@ -15,8 +15,77 @@ Annual counts of people shot and killed by on-duty police, by agency, going back
   - a stratified draw (seed 20261115) of 28 certainty and 28 sampled agencies;
   - the counting rules and analysis plan.
 
-  Protocol: [doi.org/10.5281/zenodo.24248721](https://doi.org/10.5281/zenodo.24248721). Code and draw: tag [`protocol-v1.0`](https://github.com/jnixy/agency-level-fatal-OIS/tree/protocol-v1.0); scripts `08_sampling_frame.R`, `08b_coverage_audit.R`, `08c_draw_sample.R`. The headline will be updated when collection is complete.
+  Protocol: [doi.org/10.5281/zenodo.24248721](https://doi.org/10.5281/zenodo.24248721). Code and draw: tag [`protocol-v1.0`](https://github.com/jnixy/agency-level-fatal-OIS/tree/protocol-v1.0); scripts `08_sampling_frame.R`, `08b_coverage_audit.R`, `08c_draw_sample.R`. **Collection is complete, and the results are [below](#results-from-the-pre-registered-sample).**
 - **Sixty-five agencies' pre-2000 gaps are filled from local newspapers** (see [Newspaper reconstructions](#newspaper-reconstructions)), plus a period total for the LA County Sheriff (1985–Jul 1990).
+
+## Results from the pre-registered sample
+
+Of the 56 drawn agencies, 54 have at least five years of data in each era and enter the comparison. Polk County SO (FL) and Baltimore County PD (MD) fall short, because their papers enter NewsBank in August and September 1990. No agency was dropped for low recall. The LA County Sheriff is below the 70% line, but it enters on the *Daily News* period total under an approved deviation (see below). The Stark County SO (OH) and the Amherst (NY) PD had no deaths in either era, so they carry no information about change and are set aside. That leaves 52 agencies, with 3,025 deaths before 1995 and 1,585 since 2015.
+
+The protocol fixed two estimands in advance, each in counts and in rates per 100,000 residents:
+
+| | Counts | Rates per 100,000 |
+|---|---|---|
+| **Pooled ratio:** all deaths since 2015 vs. before 1995, per year | 0.97 (95% CI 0.69–1.35) | 0.83 (0.61–1.13) |
+| **Typical-agency ratio:** the change in the typical agency | 2.01 (1.40–2.89) | 1.71 (1.28–2.27) |
+
+**The two answers diverge, as the protocol expected.**
+- **Pooled across agencies,** fatal police shootings are about where they were before 1995: 3% lower in counts, and 17% lower per resident. Neither difference is distinguishable from no change.
+- **The pooled ratio is dominated by a few very large departments.** New York, Chicago, Philadelphia, Dallas, and the LAPD kill far fewer people now than they did then. Without the four largest departments (New York, Los Angeles, Chicago, and Houston), the pooled ratio rises to 1.39 (1.02–1.88).
+- **The typical agency in the universe kills about twice as many people a year now as before 1995** (1.7 times as many per resident). Many of the agencies that rose are fast-growing suburban and Sun Belt departments: Aurora (CO), Colorado Springs, Harris County, San Antonio, and the Lexington County (SC) SO.
+- **Agency by agency** (exact Poisson test of the two eras' yearly counts, p < .05), 11 of the 52 agencies kill clearly fewer people now, 13 clearly more, and in 28 the change is too small to tell from chance. In rates per resident, the split is 12 fewer, 11 more, and 29 the same.
+
+**What these estimates generalize to.** The sample stands for the 155 frame agencies with a usable newspaper archive, not for every agency that served 100,000 people. Compared with the 154 agencies without a usable archive, those agencies had higher SHR rates of police killings in 1985–94: an agency average of 0.26 vs. 0.16 per 100,000 a year (Wilcoxon p < .001). Their *Post* rates in 2015–24 are about the same (0.45 vs. 0.44, p = .82). So agencies with an archive started higher and ended about level with the rest. If the SHR's 1985–94 rates track the true ones, the agencies left out fell less (or rose more), and limiting the study to agencies with an archive tilts the estimates toward a decline.
+
+The 11 certainty agencies with no usable archive are listed with their SHR, Fatal Encounters, and *Post* counts in [`sample_certainty_unusable.csv`](output/tables/sample_certainty_unusable.csv): Suffolk County, Detroit, Nassau County, Phoenix, Honolulu, Jacksonville, Memphis, Las Vegas, Boston, El Paso, and Nashville.
+
+**Robustness.** Neither estimand is driven by the measurement choices:
+
+| Run | Pooled (counts) | Typical agency (counts) |
+|---|---|---|
+| Main | 0.97 (0.69–1.35) | 2.01 (1.40–2.89) |
+| Newspaper years raised to SHR's count where SHR is higher (upper bound) | 0.93 (0.67–1.27) | 1.84 (1.27–2.67) |
+| Excluding paper-stated years | 0.97 (0.68–1.39) | 1.91 (1.34–2.73) |
+| Excluding the four largest departments | 1.39 (1.02–1.88) | 2.10 (1.45–3.04) |
+| Adding the 20 agencies rebuilt before the protocol but not drawn | 1.03 (0.76–1.39) | 1.99 (1.45–2.73) |
+| Excluding the LA County Sheriff | 0.98 (0.69–1.40) | 2.03 (1.41–2.92) |
+
+All of these runs, the rate versions, and the zero-handling and finite-population alternatives are in [`sample_estimates.csv`](output/tables/sample_estimates.csv). Treating the certainty agencies as fixed rather than as random draws narrows the pooled interval to 0.86–1.09 (counts) and 0.74–0.92 (rates).
+
+**How much the SHR misses (RQ3).** In the agency-years where both exist, the SHR records 94% of the deaths counted here before 1995 (2,057 of 2,196), but only 56% since 2015 (760 of 1,358). Limited to the 51 agencies with SHR filings in both eras, the figures are 94% and 57%. The SHR's undercount grew, so any comparison of eras built on the SHR alone will overstate the decline.
+
+**Method.** The pooled ratio comes from a design-weighted Poisson model with agency fixed effects. The typical-agency ratio is the design-weighted mean of each agency's log rate ratio, with 0.5 added to each era's count so that agencies with a zero era still have a ratio.
+- **Variance:** both are linearization estimates, stratified and clustered on agency, with intervals from *t* on the design's 45 degrees of freedom.
+- **Population:** the SHR's median population served in 1985–94 and in 2015–24.
+- **Per-agency results:** [`sample_agencies.csv`](output/tables/sample_agencies.csv). Every number in this section is in [`sample_summary.csv`](output/tables/sample_summary.csv), [`sample_estimates.csv`](output/tables/sample_estimates.csv), [`sample_representativeness.csv`](output/tables/sample_representativeness.csv), and [`sample_shr_undercount.csv`](output/tables/sample_shr_undercount.csv), all written by [`scripts/09_sample_analysis.R`](scripts/09_sample_analysis.R).
+
+### Departures from the protocol
+
+These are the departures from protocol v1.0, and the choices the protocol left open, made during collection and analysis:
+
+1. **LA County Sheriff below the recall line.** Recall in a later window was 29%, under the 70% non-respondent rule. The agency was instead entered on the *Daily News*'s period total (75 deaths, January 1985 to July 1990, from its review of every deputy shooting) plus Special Counsel Bobb's 1991–94 counts. The period total enters with its 5.57 years of exposure. A run excluding the agency is reported.
+2. **Recall windows.** The protocol said the window would "usually" be 2000–05. That was the window for 22 of the 42 agencies with a measured recall. For the other 20 it differed, mostly running later (as late as 2014), because 2000–05 had too few Fatal Encounters cases. Recall counts a Fatal Encounters death as found when the paper reports the event, even without naming the person.
+3. **The 50-hit rule.** The coverage audit's bar was at least 50 stories a year mentioning the agency. During collection it was also applied to sources and recall windows: a paper below that bar in a given span was not used, either to fill years or to measure recall.
+4. **Recall that could not be measured.** The protocol allowed a paper-stated count to stand in where Fatal Encounters had too few cases. Six agencies had no usable recall window, and each was kept on a check recorded in [`recall_checks.csv`](data/historical/recall_checks.csv):
+   - **Montgomery County and Prince George's County (MD):** the *Washington Times* falls below the 50-hit bar after 2000. The checks are agreement with SHR, a county homicide tally, and paper-stated year totals.
+   - **Stark County (OH) and Amherst (NY):** no agency-specific cases to test. Stark rests on agreement with SHR. Amherst rests on the *Buffalo News* finding 11 of 11 Erie County police deaths.
+   - **Worcester (MA):** no agency-specific cases to test. The *Telegram & Gazette* found 6 of 6 Fatal Encounters deaths by other Worcester County agencies.
+   - **Volusia County (FL):** Fatal Encounters lists no Volusia deaths before 2006, and the *Orlando Sentinel* thins out of NewsBank after 2002. The same channels found 6 of 6 Orange County SO deaths in 2000–03.
+
+   Recall does not apply to the eight agencies whose pre-1995 counts are department or paper-stated series.
+5. **Partial years count as fractions toward the five-year rule.** A paper that enters NewsBank mid-year gives a partial year of exposure. Polk County (4.4 exposure-years) and Baltimore County (4.3) fall short for this reason.
+6. **Agencies that fail the five-year rule are handled like non-respondents.** In a sampled stratum, the remaining agencies' weights are scaled up to the stratum's usable pool (South, 100–250k: 38 over 6, not 38 over 7). Baltimore County is a certainty agency, so it simply drops out.
+7. **A merged agency.** Louisville PD was drawn. Its series sums the Louisville PD and the Jefferson County PD into today's Louisville Metro PD, and its 1985–94 population sums both.
+8. **Analysis choices the protocol left open:**
+   - the 0.5 continuity correction, applied to every agency;
+   - all-zero agencies set aside;
+   - no finite-population correction in the main variance;
+   - paper-stated years identified from the evidence log ([`sample_paper_stated_years.csv`](output/tables/sample_paper_stated_years.csv));
+   - the Wilcoxon test for representativeness;
+   - the 2012 LEAIC population for Volusia County's recent era, because Florida files no SHR.
+
+   Alternatives to the first three are in [`sample_estimates.csv`](output/tables/sample_estimates.csv).
+9. **Added analyses:** a run excluding the LA County Sheriff, the finite-population run, two zero-handling runs, and the SHR comparison limited to the same agencies in both eras.
 
 ## What these data can show
 
@@ -155,7 +224,7 @@ I decided, for now at least, to focus on fatal shootings, since they're more rel
 
 ### Newspaper reconstructions
 
-For thirty-seven agencies, years missing from the hand-built series come from local newspapers (plus one period total, for the LA County Sheriff), searched through NewsBank's Access World News. A death counts when the paper reports that an on-duty officer of that agency shot and killed someone. Off-duty officers acting on their own are left out, and a shooting involving several agencies counts for each agency whose officer fired (full rules in the README linked below). Most years were rebuilt case by case and are best read as floors. Chicago's and Los Angeles's are department counts the papers printed.
+For sixty-five agencies, years missing from the hand-built series come from local newspapers (plus one period total, for the LA County Sheriff), searched through NewsBank's Access World News. A death counts when the paper reports that an on-duty officer of that agency shot and killed someone. Off-duty officers acting on their own are left out, and a shooting involving several agencies counts for each agency whose officer fired (full rules in the README linked below). Most years were rebuilt case by case and are best read as floors. Chicago's and Los Angeles's are department counts the papers printed.
 
 The method, a note on every agency, and the checks against each paper's own counts are in [`data/historical/README.md`](data/historical/README.md). Every case and every exclusion is logged with its source in [`historical_ois_evidence.csv`](data/historical/historical_ois_evidence.csv).
 
@@ -249,7 +318,7 @@ The method, a note on every agency, and the checks against each paper's own coun
 
 ## Reproducing the panel
 
-Requires R (≥ 4.3) and the packages `tidyverse`, `here`, `janitor`, `digest`, `scales`, `fixest`, and `patchwork`. To use a newer MPV snapshot, first run (Python, with `requests` and `pandas`):
+Requires R (≥ 4.3) and the packages `tidyverse`, `here`, `janitor`, `digest`, `scales`, `fixest`, `patchwork`, and `survey`. To use a newer MPV snapshot, first run (Python, with `requests` and `pandas`):
 
 ```sh
 python tools/fetch_mpv/fetch_mpv.py
@@ -272,6 +341,10 @@ Rscript scripts/00_run_all.R
 | `05_combine.R` | Builds the panel, the agreement and coverage tables |
 | `06_figures.R` | Draws the source-comparison figures |
 | `07_figures_trends.R` | Draws the trend, then-vs-now, and coverage figures |
+| `08_sampling_frame.R` | Builds the protocol's sampling frame from SHR population |
+| `08b_coverage_audit.R` | Applies the outcome-blind NewsBank coverage audit |
+| `08c_draw_sample.R` | Draws the stratified sample (seed 20261115) |
+| `09_sample_analysis.R` | Runs the protocol's analysis on the drawn agencies |
 
 The WaPo raw files are in the repo, with checksums. Four inputs are not:
 - **Fatal Encounters final release** (needed for steps 03–04): linked rather than redistributed.
