@@ -30,7 +30,7 @@
 #   - output/figures/fig1_sample_map.png, fig2_estimates.png,
 #     fig3_rate_scatter.png, fig4_then_vs_now.png, fig5_trend_shr.png,
 #     figA1_robustness.png
-#   - output/figures/manuscript/ -- the same six figures for the paper: no
+#   - output/figures/print/ -- the same six figures for the paper: no
 #     in-figure titles (they become captions), sized so figure plus a
 #     double-spaced caption fits a page
 #   - output/tables/sample_trend_index.csv -- the Fig 5 index
@@ -52,7 +52,8 @@ source(here("scripts", "functions.R"))
 
 fig_dir <- here("output", "figures")
 tab_dir <- here("output", "tables")
-ms_dir  <- here("output", "figures", "manuscript")
+# Not "manuscript": .gitignore keeps every folder of that name local
+ms_dir  <- here("output", "figures", "print")
 dir.create(fig_dir, recursive = TRUE, showWarnings = FALSE)
 dir.create(ms_dir, recursive = TRUE, showWarnings = FALSE)
 MS_MAX_HEIGHT <- 7   # inches: figure plus double-spaced caption must fit in 9in
