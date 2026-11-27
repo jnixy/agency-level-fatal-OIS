@@ -452,7 +452,8 @@ run_order <- c("Main",
                "Adding the agencies rebuilt before the protocol but not drawn (weight 1; in-frame ones also in their pools)",
                "Finite-population correction (certainty agencies fixed)",
                "Typical agency: all-zero agencies kept as no change",
-               "Typical agency: continuity correction only for agencies with a zero era")
+               "Typical agency: continuity correction only for agencies with a zero era",
+               "Early era 1985-94 only (not pre-registered)")
 stopifnot(setequal(run_order, unique(estimates$run)))
 # Agencies the "adding" run brings in: its count-run agencies beyond the main 52
 n_added <- estimates |> filter(str_starts(run, "Adding"), estimand == "pooled", measure == "count") |>
@@ -466,13 +467,17 @@ rob <- estimates |>
            str_to_sentence() |>
            str_replace("\\blasd\\b", "LASD") |>
            str_replace("\\bshr\\b", "SHR") |>
+           str_replace("1985-94", "1985–94") |>
            str_wrap(34),
          run_lab = fct_rev(factor(run_lab, levels = unique(run_lab[order(match(run, run_order))]))),
          estimand_lab = if_else(estimand == "pooled", "Pooled ratio", "Typical-agency ratio"),
          measure_lab = if_else(measure == "count", "Deaths a year", "Deaths per resident"))
 
+# The one run that was not pre-registered sits last (bottom row), below a rule
+stopifnot(str_detect(last(run_order), "not pre-registered"))
 p_rob <- ggplot(rob, aes(est, run_lab, color = measure_lab)) +
   geom_vline(xintercept = 1, color = "grey60", linewidth = 0.4) +
+  geom_hline(yintercept = 1.5, color = "grey50", linewidth = 0.3, linetype = "22") +
   geom_errorbar(aes(xmin = ci_lo, xmax = ci_hi), width = 0, orientation = "y", linewidth = 0.8,
                  position = position_dodge(width = 0.6)) +
   geom_point(size = 2, position = position_dodge(width = 0.6)) +
@@ -483,17 +488,20 @@ p_rob <- ggplot(rob, aes(est, run_lab, color = measure_lab)) +
   scale_x_continuous(trans = "log", breaks = c(0.5, 0.75, 1, 1.5, 2, 3),
                      labels = c("0.5", "0.75", "1", "1.5", "2", "3")) +
   labs(x = "Ratio, 2015–25 to before 1995 (log scale, 95% CI)", y = NULL,
-       title = "Robustness: the pooled ratio stays near 1 and the typical-agency ratio near 2",
+       title = str_wrap(paste0("The typical-agency ratio stays near 2 in every run; the pooled ratio ",
+                               "depends on a few large departments and on the early 1970s"), 70),
        subtitle = str_wrap(paste0(
-         "Except without the four largest departments, where the pooled ratio rises. Zero-handling ",
-         "runs apply to the typical-agency ratio only. Every run is in sample_estimates.csv."), 100)) +
+         "The pooled ratio rises without the four largest departments, and when the early era ",
+         "starts in 1985 (below the rule: not pre-registered), since a few large cities ran far ",
+         "higher in the 1970s. Zero-handling runs apply to the typical-agency ratio only. ",
+         "Every run is in sample_estimates.csv."), 100)) +
   theme_project(base_size = 10) +
   theme(plot.title.position = "plot", plot.subtitle = element_text(size = 8.5),
         panel.grid.major.y = element_blank(), legend.position = "top",
         legend.justification = "left", axis.text.y = element_text(size = 8))
 
 ggsave(file.path(fig_dir, "figA1_robustness.png"), p_rob,
-       width = FIG_WIDTH, height = 6.2, dpi = 300, bg = "white")
+       width = FIG_WIDTH, height = 6.8, dpi = 300, bg = "white")
 
 # 8. Export ----------------------------------------------------------------------
 write_csv(trend |>

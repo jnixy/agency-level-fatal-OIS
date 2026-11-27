@@ -496,6 +496,16 @@ largest <- entered |> slice_max(pop_median_1985_94, n = N_LARGEST) |> pull(agenc
 extra_agencies <- extra |> select(all_of(agency_cols))
 
 paper_wide <- build_wide(drawn_rows |> filter(!paper), drawn_agencies)
+# Not pre-registered (added 2026-11-27, after the results): the early era cut
+# to 1985-94, the years nearly every sampled agency has. The protocol's era
+# reaches back to 1970 where an existing series does, and a few large cities
+# ran far higher in the 1970s. The entry rule is reapplied to the shorter era.
+# Period totals stay in when they fall inside the window (LASD 1985-90).
+window_rows <- drawn_rows |>
+  filter(era == "recent" | coalesce(year, year_first) >= min(POP_EARLY_YEARS))
+stopifnot(all(window_rows$era == "recent" |
+                coalesce(window_rows$year, window_rows$year_last) <= max(POP_EARLY_YEARS)))
+window_wide <- build_wide(window_rows, drawn_agencies)
 estimates <- bind_rows(
   estimates_main,
   fit_all(build_wide(drawn_rows |> mutate(y = shr_bound(y, n_shr, newspaper)), drawn_agencies),
@@ -511,7 +521,8 @@ estimates <- bind_rows(
   fit_all(main_wide, "Typical agency: all-zero agencies kept as no change", zero = "as no change"),
   fit_all(main_wide, "Typical agency: continuity correction only for agencies with a zero era",
           cc_zero_only = TRUE),
-  fit_all(main_wide, "Finite-population correction (certainty agencies fixed)", fpc = TRUE)
+  fit_all(main_wide, "Finite-population correction (certainty agencies fixed)", fpc = TRUE),
+  fit_all(window_wide, "Early era 1985-94 only (not pre-registered)")
 ) |>
   # The zero-handling runs change only the typical-agency estimate
   filter(!(str_starts(run, "Typical agency") & estimand == "pooled"))
@@ -635,6 +646,7 @@ summary_tbl <- tribble(
   "excluded_short_early", sum(main_wide$status == "fewer than 5 years before 1995"),
   "excluded_short_recent", sum(main_wide$status == "fewer than 5 years since 2015"),
   "entered_all_zero", sum(entered$deaths_early + entered$deaths_recent == 0),
+  "window_1985_94_entered", sum(window_wide$status == "entered"),
   "entered_certainty", sum(entered$stratum == "certainty"),
   "entered_sampled", sum(entered$stratum != "certainty"),
   "deaths_early", sum(entered$deaths_early),

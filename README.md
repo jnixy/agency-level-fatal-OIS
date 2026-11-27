@@ -62,6 +62,12 @@ The 11 certainty agencies with no usable archive are listed with their SHR, Fata
 
 All of these runs, the rate versions, and the zero-handling and finite-population alternatives are in [`sample_estimates.csv`](output/tables/sample_estimates.csv). Treating the certainty agencies as fixed rather than as random draws narrows the pooled interval to 0.86–1.09 (counts) and 0.74–0.92 (rates).
 
+**One check that was not pre-registered: when the early era starts.** The protocol's early era runs from 1970, wherever an existing series reaches that far. Only a few large cities do, and they killed far more people in the early 1970s than later (Figure 5). This check was added after the results were in: cut the early era to 1985–94, the years nearly every sampled agency has. All 54 agencies still enter.
+- The pooled ratio rises to 1.20 (0.91–1.59) in counts, and to 1.01 (0.79–1.31) in rates.
+- The typical-agency ratio does not move: 2.01 (1.40–2.88).
+
+So against the late 1980s and early 1990s, the pooled count is somewhat higher now, not level. The pre-registered estimate of about no change rests partly on the early 1970s in a handful of cities.
+
 ![Every robustness run](output/figures/figA1_robustness.png)
 
 **How much the SHR misses (RQ3).** In the agency-years where both exist, the SHR records 94% of the deaths counted here before 1995 (2,057 of 2,196), but only 56% since 2015 (760 of 1,358). Limited to the 51 agencies with SHR filings in both eras, the figures are 94% and 57%. The SHR's undercount grew, so any comparison of eras built on the SHR alone will overstate the decline.
