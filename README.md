@@ -22,6 +22,8 @@ Annual counts of people shot and killed by on-duty police, by agency, going back
 
 Of the 56 drawn agencies, 54 have at least five years of data in each era and enter the comparison. Polk County SO (FL) and Baltimore County PD (MD) fall short, because their papers enter NewsBank in August and September 1990. No agency was dropped for low recall. The LA County Sheriff is below the 70% line, but it enters on the *Daily News* period total under an approved deviation (see below). The Stark County SO (OH) and the Amherst (NY) PD had no deaths in either era, so they carry no information about change and are set aside. That leaves 52 agencies, with 3,025 deaths before 1995 and 1,585 since 2015.
 
+![The 56 drawn agencies](output/figures/fig1_sample_map.png)
+
 The protocol fixed two estimands in advance, each in counts and in rates per 100,000 residents:
 
 | | Counts | Rates per 100,000 |
@@ -29,11 +31,19 @@ The protocol fixed two estimands in advance, each in counts and in rates per 100
 | **Pooled ratio:** all deaths since 2015 vs. before 1995, per year | 0.97 (95% CI 0.69–1.35) | 0.83 (0.61–1.13) |
 | **Typical-agency ratio:** the change in the typical agency | 2.01 (1.40–2.89) | 1.71 (1.28–2.27) |
 
+![Pooled and typical-agency ratios](output/figures/fig2_estimates.png)
+
 **The two answers diverge, as the protocol expected.**
 - **Pooled across agencies,** fatal police shootings are about where they were before 1995: 3% lower in counts, and 17% lower per resident. Neither difference is distinguishable from no change.
 - **The pooled ratio is dominated by a few very large departments.** New York, Chicago, Philadelphia, Dallas, and the LAPD kill far fewer people now than they did then. Without the four largest departments (New York, Los Angeles, Chicago, and Houston), the pooled ratio rises to 1.39 (1.02–1.88).
 - **The typical agency in the universe kills about twice as many people a year now as before 1995** (1.7 times as many per resident). Many of the agencies that rose are fast-growing suburban and Sun Belt departments: Aurora (CO), Colorado Springs, Harris County, San Antonio, and the Lexington County (SC) SO.
 - **Agency by agency** (exact Poisson test of the two eras' yearly counts, p < .05), 11 of the 52 agencies kill clearly fewer people now, 13 clearly more, and in 28 the change is too small to tell from chance. In rates per resident, the split is 12 fewer, 11 more, and 29 the same.
+
+**Why the two answers differ.** Most of the largest departments had high rates before 1995 and fell. Most of the smaller ones rose. The pooled ratio weights agencies by their deaths, so it follows the large departments. The typical-agency ratio gives each agency equal say (within its stratum's weight), so it follows the many smaller ones.
+
+![Each agency's rate before 1995 and since 2015](output/figures/fig3_rate_scatter.png)
+
+![Rates then and now, agency by agency](output/figures/fig4_then_vs_now.png)
 
 **What these estimates generalize to.** The sample stands for the 155 frame agencies with a usable newspaper archive, not for every agency that served 100,000 people. Compared with the 154 agencies without a usable archive, those agencies had higher SHR rates of police killings in 1985–94: an agency average of 0.26 vs. 0.16 per 100,000 a year (Wilcoxon p < .001). Their *Post* rates in 2015–24 are about the same (0.45 vs. 0.44, p = .82). So agencies with an archive started higher and ended about level with the rest. If the SHR's 1985–94 rates track the true ones, the agencies left out fell less (or rose more), and limiting the study to agencies with an archive tilts the estimates toward a decline.
 
@@ -52,7 +62,17 @@ The 11 certainty agencies with no usable archive are listed with their SHR, Fata
 
 All of these runs, the rate versions, and the zero-handling and finite-population alternatives are in [`sample_estimates.csv`](output/tables/sample_estimates.csv). Treating the certainty agencies as fixed rather than as random draws narrows the pooled interval to 0.86–1.09 (counts) and 0.74–0.92 (rates).
 
+**One check that was not pre-registered: when the early era starts.** The protocol's early era runs from 1970, wherever an existing series reaches that far. Only a few large cities do, and they killed far more people in the early 1970s than later (Figure 5). This check was added after the results were in: cut the early era to 1985–94, the years nearly every sampled agency has. All 54 agencies still enter.
+- The pooled ratio rises to 1.20 (0.91–1.59) in counts, and to 1.01 (0.79–1.31) in rates.
+- The typical-agency ratio does not move: 2.01 (1.40–2.88).
+
+So against the late 1980s and early 1990s, the pooled count is somewhat higher now, not level. The pre-registered estimate of about no change rests partly on the early 1970s in a handful of cities.
+
+![Every robustness run](output/figures/figA1_robustness.png)
+
 **How much the SHR misses (RQ3).** In the agency-years where both exist, the SHR records 94% of the deaths counted here before 1995 (2,057 of 2,196), but only 56% since 2015 (760 of 1,358). Limited to the 51 agencies with SHR filings in both eras, the figures are 94% and 57%. The SHR's undercount grew, so any comparison of eras built on the SHR alone will overstate the decline.
+
+![The sample's year-by-year counts beside the SHR](output/figures/fig5_trend_shr.png)
 
 **Method.** The pooled ratio comes from a design-weighted Poisson model with agency fixed effects. The typical-agency ratio is the design-weighted mean of each agency's log rate ratio, with 0.5 added to each era's count so that agencies with a zero era still have a ratio.
 - **Variance:** both are linearization estimates, stratified and clustered on agency, with intervals from *t* on the design's 45 degrees of freedom.
@@ -318,7 +338,7 @@ The method, a note on every agency, and the checks against each paper's own coun
 
 ## Reproducing the panel
 
-Requires R (≥ 4.3) and the packages `tidyverse`, `here`, `janitor`, `digest`, `scales`, `fixest`, `patchwork`, and `survey`. To use a newer MPV snapshot, first run (Python, with `requests` and `pandas`):
+Requires R (≥ 4.3) and the packages `tidyverse`, `here`, `janitor`, `digest`, `scales`, `fixest`, `patchwork`, `survey`, `sf`, `usmap`, and `ggrepel`. To use a newer MPV snapshot, first run (Python, with `requests` and `pandas`):
 
 ```sh
 python tools/fetch_mpv/fetch_mpv.py
@@ -345,6 +365,7 @@ Rscript scripts/00_run_all.R
 | `08b_coverage_audit.R` | Applies the outcome-blind NewsBank coverage audit |
 | `08c_draw_sample.R` | Draws the stratified sample (seed 20261115) |
 | `09_sample_analysis.R` | Runs the protocol's analysis on the drawn agencies |
+| `10_sample_figures.R` | Draws the sample figures (map, estimates, rates then vs. now, SHR trend) |
 
 The WaPo raw files are in the repo, with checksums. Four inputs are not:
 - **Fatal Encounters final release** (needed for steps 03–04): linked rather than redistributed.

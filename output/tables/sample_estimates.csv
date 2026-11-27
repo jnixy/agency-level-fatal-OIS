@@ -31,3 +31,7 @@ Finite-population correction (certainty agencies fixed),pooled,count,52,0.9678,0
 Finite-population correction (certainty agencies fixed),pooled,rate,52,0.8276,0.7439,0.9207,19
 Finite-population correction (certainty agencies fixed),typical agency,count,52,2.0132,1.4399,2.815,19
 Finite-population correction (certainty agencies fixed),typical agency,rate,52,1.7092,1.3134,2.2244,19
+Early era 1985-94 only (not pre-registered),pooled,count,52,1.1998,0.9063,1.5883,45
+Early era 1985-94 only (not pre-registered),pooled,rate,52,1.0135,0.7857,1.3074,45
+Early era 1985-94 only (not pre-registered),typical agency,count,52,2.0121000000000002,1.4038,2.8839,45
+Early era 1985-94 only (not pre-registered),typical agency,rate,52,1.7083,1.2831,2.2744,45
