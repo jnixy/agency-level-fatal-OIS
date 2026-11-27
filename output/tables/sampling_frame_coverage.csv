@@ -94,7 +94,7 @@ TX22001,arlington police department,TX,local police department,west south centra
 IN04900,marion county sheriff's office,IN,sheriffs office,east north central,260508.5,10,Midwest,250-500k,Midwest 250-500k,FALSE,Marion County sheriff,NA,0,0,no in-state source
 CA03001,anaheim police department,CA,local police department,pacific,258776,10,West,250-500k,West 250-500k,TRUE,NA,NA,NA,NA,already rebuilt
 CA03000,orange cnty sheriffs dept,CA,sheriffs office,pacific,256536,10,West,250-500k,West 250-500k,FALSE,Orange County sheriff,"Orange County Register, The (Santa Ana, CA)",5,5,strong
-WA03100,snohomish county sheriff's office,WA,sheriffs office,pacific,256162.5,10,West,250-500k,West 250-500k,FALSE,Snohomish County sheriff,"Seattle Times, The (WA)",5,5,strong
+WA03100,snohomish county sheriff's office,WA,sheriffs office,pacific,256162.5,10,West,250-500k,West 250-500k,TRUE,Snohomish County sheriff,"Seattle Times, The (WA)",5,5,already rebuilt
 FL05214,st. petersburg police department,FL,local police department,south atlantic,247661,6,South,100-250k,South 100-250k,FALSE,St. Petersburg police,Tampa Bay Times (FL),5,5,strong
 AZ01000,pima county sheriff's dept.,AZ,sheriffs office,mountain,244482,10,West,100-250k,West 100-250k,FALSE,Pima County sheriff,"Arizona Daily Star, The (Tucson, AZ)",4,4,too thin
 FL05300,polk county sheriff's office,FL,sheriffs office,south atlantic,241543,6,South,100-250k,South 100-250k,FALSE,Polk County sheriff,"Tampa Tribune, The (FL)",5,4,usable
