@@ -1,0 +1,9 @@
+size,group,agencies,median_pop_1985_94,shr_agencies,shr_rate_mean,shr_rate_pooled,wapo_agencies,wapo_rate_mean,wapo_rate_pooled,p_shr,p_wapo
+All,No usable archive,154,143742,154,0.1645,0.2111,147,0.4434,0.4319,1e-4,0.824
+All,Usable archive (study universe),155,214723.5,155,0.2561,0.3486,153,0.4545,0.335,1e-4,0.824
+500k+,No usable archive,11,646893,11,0.2824,0.2898,10,0.3615,0.4018,0.2589,0.5901
+500k+,Usable archive (study universe),28,752691.75,28,0.3829,0.4159,28,0.325,0.2786,0.2589,0.5901
+250-500k,No usable archive,16,335686.5,16,0.2549,0.2624,14,0.7325,0.6949,0.484,0.0257
+250-500k,Usable archive (study universe),41,364745,41,0.3101,0.3275,41,0.4602,0.4268,0.484,0.0257
+100-250k,No usable archive,127,130787,127,0.1429,0.1548,123,0.4171,0.3783,0.0634,0.7578
+100-250k,Usable archive (study universe),86,144759,86,0.189,0.1864,84,0.4949,0.3609,0.0634,0.7578

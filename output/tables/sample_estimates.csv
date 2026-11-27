@@ -1,0 +1,33 @@
+run,estimand,measure,agencies,est,ci_lo,ci_hi,df
+Main,pooled,count,52,0.9678,0.6936,1.3504,45
+Main,pooled,rate,52,0.8276,0.6052,1.1316,45
+Main,typical agency,count,52,2.0132,1.4033,2.8883,45
+Main,typical agency,rate,52,1.7092,1.2843,2.2748,45
+Newspaper years raised to SHR where higher (upper bound),pooled,count,52,0.9252,0.674,1.27,45
+Newspaper years raised to SHR where higher (upper bound),pooled,rate,52,0.792,0.589,1.0649,45
+Newspaper years raised to SHR where higher (upper bound),typical agency,count,52,1.8398,1.2687,2.6679,45
+Newspaper years raised to SHR where higher (upper bound),typical agency,rate,52,1.562,1.1624,2.0989,45
+Excluding paper-stated years,pooled,count,48,0.9708,0.6773,1.3915,41
+Excluding paper-stated years,pooled,rate,48,0.8217,0.5873,1.1496,41
+Excluding paper-stated years,typical agency,count,48,1.913,1.3429,2.7252,41
+Excluding paper-stated years,typical agency,rate,48,1.625,1.2285,2.1495,41
+Excluding the 4 largest departments,pooled,count,48,1.3877,1.0237,1.8812,41
+Excluding the 4 largest departments,pooled,rate,48,1.1722,0.8978,1.5305,41
+Excluding the 4 largest departments,typical agency,count,48,2.0967,1.4456,3.0412,41
+Excluding the 4 largest departments,typical agency,rate,48,1.7784,1.3248,2.3873,41
+Adding the agencies rebuilt before the protocol but not drawn (weight 1; in-frame ones also in their pools),pooled,count,72,1.0262,0.7599,1.386,64
+Adding the agencies rebuilt before the protocol but not drawn (weight 1; in-frame ones also in their pools),pooled,rate,71,0.8782,0.6589,1.1705,63
+Adding the agencies rebuilt before the protocol but not drawn (weight 1; in-frame ones also in their pools),typical agency,count,72,1.988,1.4482,2.7291,64
+Adding the agencies rebuilt before the protocol but not drawn (weight 1; in-frame ones also in their pools),typical agency,rate,71,1.712,1.3244,2.213,63
+Excluding LASD (recall deviation),pooled,count,51,0.9833,0.6899,1.4015,44
+Excluding LASD (recall deviation),pooled,rate,51,0.8331,0.5982,1.1603,44
+Excluding LASD (recall deviation),typical agency,count,51,2.0278,1.4095,2.9174,44
+Excluding LASD (recall deviation),typical agency,rate,51,1.7193,1.289,2.2934,44
+Typical agency: all-zero agencies kept as no change,typical agency,count,54,1.9414,1.3848,2.7216,45
+Typical agency: all-zero agencies kept as no change,typical agency,rate,54,1.6576,1.2701,2.1633,45
+Typical agency: continuity correction only for agencies with a zero era,typical agency,count,52,2.2278,1.4964,3.3169,45
+Typical agency: continuity correction only for agencies with a zero era,typical agency,rate,52,1.8914,1.366,2.6189,45
+Finite-population correction (certainty agencies fixed),pooled,count,52,0.9678,0.8561,1.0941,19
+Finite-population correction (certainty agencies fixed),pooled,rate,52,0.8276,0.7439,0.9207,19
+Finite-population correction (certainty agencies fixed),typical agency,count,52,2.0132,1.4399,2.815,19
+Finite-population correction (certainty agencies fixed),typical agency,rate,52,1.7092,1.3134,2.2244,19
