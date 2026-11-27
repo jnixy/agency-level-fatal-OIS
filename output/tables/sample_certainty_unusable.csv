@@ -1,0 +1,12 @@
+ori,agency_id,agency_name,state_abb,pop_median_1985_94,shr_deaths_1985_94,shr_years_filed_1985_94,fe_2000_21,wapo_2015_24
+NY05101,NY05101,suffolk county police department,NY,1194576.5,2,10,NA,NA
+MI82349,MI82349,detroit police department,MI,1041863.5,82,10,74,28
+NY02900,NY02900,nassau county police department,NY,1037238.5,6,10,12,6
+AZ00723,AZ00723,phoenix police department,AZ,967560,46,10,216,125
+HI00200,HI00200,honolulu (city and county) police department,HI,843807.5,8,10,40,28
+FL01602,FL01602,jacksonville city cnty pd,FL,646893,4,6,106,54
+TNMPD00,TNMPD00,memphis police department,TN,639973,36,10,69,21
+NV00201,NV00201,las vegas metro police department,NV,576195.5,37,10,168,77
+MA01301,MA01301,boston police department,MA,573619,3,10,35,12
+TX07102,TX07102,el paso police department,TX,515474.5,7,10,32,20
+TN01901,TN01901,nashville metro police department,TN,502078.5,9,10,37,14

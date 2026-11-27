@@ -39,7 +39,8 @@
 #   - output/figures/trend_index.png, then_vs_now.png, coverage_tiles.png
 #   - output/tables/trend_index.csv, then_vs_now.csv, coverage_share.csv,
 #     era_ratio_sensitivity.csv, trend_summary.csv (every number quoted in
-#     the README)
+#     the README), era_series.csv (the agency-year and period-total series
+#     behind the era comparison; read by 09)
 #
 # Runtime: < 30 sec
 # ==============================================================================
@@ -542,6 +543,10 @@ write_csv(coverage_share |> mutate(share = round(share, 4)),
 write_csv(era_sensitivity |> mutate(across(where(is.double), \(x) round(x, 3))),
           file.path(tab_dir, "era_ratio_sensitivity.csv"))
 write_csv(trend_summary, file.path(tab_dir, "trend_summary.csv"))
+# The exact series behind the era comparison, for the protocol analysis (09)
+write_csv(trend_era |> select(agency_id, agency_name, state, year, era, y, exposure, src,
+                              newspaper, n_shr, year_first, year_last),
+          file.path(tab_dir, "era_series.csv"))
 # Fitted models are not saved: fixest objects carry their environment, which
 # would publish local paths, and every estimate used is in the tables above
 

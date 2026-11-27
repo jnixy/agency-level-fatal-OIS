@@ -1,0 +1,5 @@
+agencies_set,era,agencies,agency_years,deaths,shr_deaths,shr_share,shr_share_weighted,years_shr_below,years_shr_equal,years_shr_above
+all,early,52,445,2196,2057,0.9367,0.9135,130,220,95
+all,recent,52,486,1358,760,0.5596,0.5087,238,202,46
+SHR filed in both eras,early,51,440,2194,2056,0.9371,0.9156,129,216,95
+SHR filed in both eras,recent,51,476,1328,754,0.5678,0.5263,228,202,46
