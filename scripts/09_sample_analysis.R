@@ -35,6 +35,8 @@
 #   - data/historical/historical_ois_evidence.csv -- to find paper-stated years
 #   - data/clean/wapo_agency_oris.csv          -- 02: ORI groups
 #   - data/clean/shr_agency_year.csv           -- 04c: SHR killings by ORI-year
+#   - data/historical/early_cases.csv          -- case-level early newspaper deaths
+#     (counted and excluded), for the capture-recapture check
 #   - data/raw/shr/shr_1976_2024.rds           -- population served (not
 #     redistributed, see data/README.md)
 #   - data/raw/35158-0001-Data.rda             -- LEAIC 2012 population, used
@@ -50,6 +52,9 @@
 #   - sample_paper_stated_years.csv -- agency-years treated as paper-stated
 #   - sample_attrition.csv         -- drawn, entered, and excluded by stratum
 #   - sample_summary.csv           -- every number quoted from this script
+#   - sample_homicide_check.csv    -- deaths per SHR homicide by era (not pre-registered)
+#   - sample_capture_recapture.csv -- two-list estimates by agency (not pre-registered)
+#   - sample_capture_recapture_matches.csv -- each SHR victim's match decision
 #
 # Runtime: ~1 min (reading the SHR .rds)
 # ==============================================================================
@@ -83,6 +88,12 @@ WAPO_YEARS       <- 2015:2024   # representativeness: WaPo's full years
 FE_YEARS         <- 2000:2021   # Fatal Encounters' coverage
 N_EXTRA          <- 20          # protocol: rebuilt before the protocol, not drawn
 USABLE           <- c("strong", "usable", "already rebuilt")  # as in 08c
+MURDER_TYPES     <- c("murder and nonnegligent manslaughter", "murder and non-negligent manslaughter")
+HOMICIDE_LAST    <- 2020        # deaths-per-homicide check: before the FBI's NIBRS switch
+POLICE_CIRC      <- "felon killed by police"   # as in 04c
+FIREARMS         <- c("handgun", "rifle", "shotgun", "other firearm", "firearm (type not stated)")
+MATCH_MONTH_TOL  <- 1           # capture-recapture: months apart a newspaper case and an SHR victim may be
+MATCH_AGE_TOL    <- 2           # capture-recapture: years of age apart
 # Recall statuses with no recall value that still count as respondents:
 # no FE cases to test, or a department/paper-stated series with no recall run
 RECALL_NA_OK     <- c("not measurable", "not applicable")
@@ -133,6 +144,11 @@ wapo_groups <- read_csv(here("data", "clean", "wapo_agency_oris.csv"),
                         col_types = cols(.default = "c")) |>
   distinct(ori7, primary_ori7)
 shr_counts <- read_csv(here("data", "clean", "shr_agency_year.csv"), show_col_types = FALSE)
+# Case-level list of the early newspaper rebuilds (counted and excluded deaths),
+# extracted from the rebuild notes for the capture-recapture check
+early_cases <- read_csv(here("data", "historical", "early_cases.csv"),
+                        col_types = cols(year = "i", month = "i", day = "i", age = "i",
+                                         .default = "c"))
 leaic_env <- new.env()
 load(LEAIC_PATH, envir = leaic_env)
 leaic <- get(ls(leaic_env)[1], envir = leaic_env) |>
@@ -160,7 +176,43 @@ shr_pop <- shr_raw |>
   filter(year %in% c(POP_EARLY_YEARS, POP_RECENT_YEARS), !is.na(population), population > 0) |>
   group_by(ori, year) |>
   summarise(pop = max(population), .groups = "drop")
-rm(shr_raw)
+
+# 2b'. SHR murder victims per ORI-year, for the deaths-per-homicide check (not
+# pre-registered; added 2026-11-27). Exact duplicate records are dropped as in
+# 04c. Only agency-years with at least one SHR record appear: a year an agency
+# filed with no homicides at all leaves no record and drops out of the check.
+shr_murders <- shr_raw |>
+  distinct() |>
+  mutate(ori = toupper(str_squish(ori)), year = as.integer(year),
+         murder = str_to_lower(str_squish(as.character(homicide_type))) %in% MURDER_TYPES,
+         people = 1L + coalesce(as.integer(additional_victim_count), 0L)) |>
+  group_by(ori, year) |>
+  summarise(murders = sum(people[murder]), .groups = "drop")
+
+# 2b''. SHR police-killing victims, one row per person, for the capture-recapture
+# check (not pre-registered; added 2026-11-27). Same definition as 04c: an
+# offender slot with the police circumstance and a firearm.
+circ_cols <- paste0("offender_", 1:11, "_circumstance")
+weapon_cols <- paste0("offender_", 1:11, "_weapon")
+norm_code <- function(x) str_to_lower(str_squish(as.character(x)))
+shr_pk <- shr_raw |> distinct()
+police_gun <- Reduce(`|`, map2(circ_cols, weapon_cols, \(cc, wc)
+  norm_code(shr_pk[[cc]]) %in% POLICE_CIRC & norm_code(shr_pk[[wc]]) %in% FIREARMS))
+shr_pk <- shr_pk[police_gun, ] |>
+  mutate(ori = toupper(str_squish(ori)), year = as.integer(year),
+         month = match(norm_code(month_of_offense), str_to_lower(month.name)),
+         people = 1L + coalesce(as.integer(additional_victim_count), 0L),
+         rec = row_number())
+shr_victims <- map_dfr(1:max(shr_pk$people), \(k) shr_pk |>
+  filter(people >= k) |>
+  transmute(ori, year, month, rec, k = k,
+            age = suppressWarnings(as.integer(.data[[paste0("victim_", k, "_age")]])),
+            sex = recode(norm_code(.data[[paste0("victim_", k, "_sex")]]),
+                         male = "M", female = "F", .default = NA_character_)))
+rm(shr_pk, police_gun, shr_raw)
+# SHR codes age as a number of years (unknown -> NA after coercion); 99 means
+# "99 or older", never "unknown"
+stopifnot(all(shr_victims$age %in% c(NA, 0:99)))
 
 # Agencies needing a population: the frame, plus the long-panel agencies
 # outside it (the "adding the earlier rebuilds" sensitivity run)
@@ -215,6 +267,28 @@ agency_pop <- tibble(agency_id = pop_ids) |>
                                        !is.na(leaic_pop) ~ "LEAIC 2012"),
          pop_recent = coalesce(pop_recent, leaic_pop)) |>
   select(agency_id, pop_early, pop_years_early, pop_recent, pop_years_recent, pop_recent_source)
+
+# Murders per agency-year (deaths-per-homicide check): the agency's own ORIs
+# only, taking the largest filing in a year, so a larger jurisdiction in its
+# WaPo group can't inflate the denominator. A merged agency's early years sum
+# its predecessors, only in years all of them filed.
+pred_members <- enframe(POP_PREDECESSORS, name = "agency_id", value = "member") |>
+  unnest(member)
+agency_murders <- bind_rows(
+  pop_members |>
+    filter(own) |>
+    inner_join(shr_murders, by = c("member" = "ori"), relationship = "many-to-many") |>
+    filter(!(agency_id %in% names(POP_PREDECESSORS) & year %in% EARLY_ERA)) |>
+    group_by(agency_id, year) |>
+    summarise(murders = max(murders), .groups = "drop"),
+  pred_members |>
+    inner_join(shr_murders |> filter(year %in% EARLY_ERA), by = c("member" = "ori")) |>
+    group_by(agency_id, year) |>
+    summarise(murders = sum(murders), n = n(), .groups = "drop") |>
+    filter(n == lengths(POP_PREDECESSORS)[agency_id]) |>
+    select(-n)
+)
+stopifnot(!anyDuplicated(agency_murders[c("agency_id", "year")]))
 
 # 2c. Paper-stated years: an evidence row used in the panel whose note opens
 # "Paper-stated", or whose scope says the series is paper-stated and not
@@ -506,6 +580,160 @@ window_rows <- drawn_rows |>
 stopifnot(all(window_rows$era == "recent" |
                 coalesce(window_rows$year, window_rows$year_last) <= max(POP_EARLY_YEARS)))
 window_wide <- build_wide(window_rows, drawn_agencies)
+
+# Not pre-registered (added 2026-11-27): deaths per SHR murder victim, a crude
+# control for crime. Agency-years where the agency filed SHR, through 2020: the
+# FBI's 2021 switch to NIBRS left many agencies' SHR files empty or partial.
+# The rate denominator becomes the agency's murders a year over the same years,
+# so the "rate" ratio is the change in police killings per homicide. Agencies
+# with no murders in an era have no ratio and drop from the fit.
+hom_rows <- drawn_rows |>
+  filter(!is.na(year), year <= HOMICIDE_LAST) |>
+  inner_join(agency_murders, by = c("agency_id", "year")) |>
+  # An agency with no murders in an era has no ratio. Drop its rows before
+  # build_wide, so it is treated as not entering and the stratum is reweighted.
+  group_by(agency_id) |>
+  filter(sum(murders[era == "early"]) > 0, sum(murders[era == "recent"]) > 0) |>
+  ungroup()
+hom_den <- hom_rows |>
+  group_by(agency_id, era) |>
+  summarise(murders_per_year = mean(murders), .groups = "drop") |>
+  pivot_wider(names_from = era, values_from = murders_per_year, names_prefix = "hom_")
+hom_wide <- build_wide(hom_rows, drawn_agencies) |>
+  left_join(hom_den, by = "agency_id") |>
+  mutate(pop_early = hom_early, pop_recent = hom_recent)
+stopifnot(!anyNA(hom_wide$pop_early[hom_wide$status == "entered"]),
+          !anyNA(hom_wide$pop_recent[hom_wide$status == "entered"]))
+HOM_RUN <- "Deaths per SHR homicide, years filed through 2020 (not pre-registered)"
+
+# Not pre-registered (added 2026-11-27): two-list capture-recapture on the early
+# years that were rebuilt case by case from a newspaper in an agency that also
+# filed SHR. List 1 is the newspaper's counted deaths; list 2 is SHR's police
+# killings with a firearm. Each SHR victim is matched to a newspaper case
+# (counted or excluded) by month and, where both give them, age and sex.
+# SHR victims that match an excluded case (off-duty, another agency, suicide...)
+# are out of scope; unmatched SHR victims are taken as deaths the paper missed,
+# which leans high (an SHR death the rebuild never logged, e.g. an off-duty
+# killing it did not note, also lands there).
+# Chapman's estimator per agency then gives the deaths both lists missed. The
+# lists are probably positively dependent (both rely on the department
+# disclosing the death), so this is still a floor, a higher one.
+cr_years <- drawn_rows |>
+  filter(agency_id %in% entered$agency_id, era == "early", newspaper, !paper,
+         !is.na(n_shr), !is.na(year)) |>
+  select(agency_id, year, y, n_shr)
+cr_cases <- early_cases |>
+  semi_join(cr_years, by = c("agency_id", "year")) |>
+  mutate(case_id = row_number(), counted = status == "counted")
+# The case list reproduces the counts it stands for, year by year
+case_check <- cr_years |>
+  left_join(cr_cases |> filter(counted) |> count(agency_id, year, name = "n_cases"),
+            by = c("agency_id", "year")) |>
+  mutate(n_cases = coalesce(n_cases, 0L))
+stopifnot(all(cr_cases$status %in% c("counted", "excluded")),
+          all(case_check$n_cases == case_check$y))
+# SHR victims filed under the agency's own ORIs in those years; their total
+# must equal the n_shr the series carries
+own_oris <- pop_members |> filter(own) |> distinct(agency_id, ori = member)
+cr_shr <- shr_victims |>
+  inner_join(own_oris, by = "ori", relationship = "many-to-many") |>
+  semi_join(cr_years, by = c("agency_id", "year")) |>
+  mutate(shr_id = row_number())
+# No SHR victim may be credited to two agencies
+stopifnot(!anyDuplicated(cr_shr[c("rec", "k")]))
+
+#' Greedy one-to-one match of SHR victims to newspaper cases within an agency.
+#' A pair is compatible when the months are within MATCH_MONTH_TOL (a case with
+#' no month matches any month of its year) and, where both are known, ages are
+#' within MATCH_AGE_TOL and sexes agree. Pairs are taken best first: exact
+#' month, then known and closer ages, then sex, then counted before excluded
+#' cases. Greedy, not globally optimal; with a handful of deaths per agency the
+#' difference is negligible.
+#' @return the SHR victims with the matched case's status (NA if unmatched)
+match_cases <- function(shr, cases) {
+  if (nrow(shr) == 0 || nrow(cases) == 0) return(shr |> mutate(status = NA_character_))
+  pairs <- cross_join(shr |> select(shr_id, s_year = year, s_month = month, s_age = age, s_sex = sex),
+                      cases |> select(case_id, counted, c_year = year, c_month = month,
+                                      c_age = age, c_sex = sex)) |>
+    mutate(gap = abs((s_year * 12 + s_month) - (c_year * 12 + c_month)),
+           month_ok = if_else(is.na(c_month) | is.na(s_month), s_year == c_year,
+                              gap <= MATCH_MONTH_TOL),
+           age_ok = is.na(s_age) | is.na(c_age) | abs(s_age - c_age) <= MATCH_AGE_TOL,
+           sex_ok = is.na(s_sex) | is.na(c_sex) | s_sex == c_sex) |>
+    filter(month_ok, age_ok, sex_ok) |>
+    mutate(age_gap = coalesce(abs(s_age - c_age), 0L),
+           score = 4 * coalesce(gap == 0, FALSE) + 2 * (!is.na(s_age) & !is.na(c_age)) +
+             (!is.na(s_sex) & !is.na(c_sex)) + 0.5 * counted - 0.1 * age_gap) |>
+    arrange(desc(score), shr_id, case_id)
+  taken_s <- integer(0); taken_c <- integer(0); hits <- list()
+  for (i in seq_len(nrow(pairs))) {
+    if (pairs$shr_id[i] %in% taken_s || pairs$case_id[i] %in% taken_c) next
+    taken_s <- c(taken_s, pairs$shr_id[i]); taken_c <- c(taken_c, pairs$case_id[i])
+    hits[[length(hits) + 1]] <- pairs[i, c("shr_id", "counted")]
+  }
+  hits <- bind_rows(tibble(shr_id = integer(0), counted = logical(0)), hits)
+  shr |> left_join(hits, by = "shr_id") |>
+    mutate(status = case_when(is.na(counted) ~ NA_character_, counted ~ "counted", TRUE ~ "excluded"))
+}
+
+cr_matched <- cr_shr |>
+  group_by(agency_id) |>
+  group_modify(\(s, k) match_cases(s, cr_cases |> filter(agency_id == k$agency_id))) |>
+  ungroup()
+#' Chapman's two-list estimate of the total, and of the deaths both lists missed
+chapman <- function(n1, n2, m) (n1 + 1) * (n2 + 1) / (m + 1) - 1
+#' Its variance (Seber 1982)
+chapman_var <- function(n1, n2, m) (n1 + 1) * (n2 + 1) * (n1 - m) * (n2 - m) / ((m + 1)^2 * (m + 2))
+cr_agencies <- cr_years |>
+  group_by(agency_id) |>
+  summarise(years = n(), newspaper = sum(y), shr_filed = sum(n_shr), .groups = "drop") |>
+  left_join(cr_matched |>
+              group_by(agency_id) |>
+              summarise(shr_victims = n(), both = sum(status %in% "counted"),
+                        shr_out_of_scope = sum(status %in% "excluded"),
+                        shr_only = sum(is.na(status)), .groups = "drop"),
+            by = "agency_id") |>
+  mutate(across(c(shr_victims, both, shr_out_of_scope, shr_only), \(x) coalesce(x, 0L)),
+         shr_in_scope = both + shr_only,
+         seen = newspaper + shr_only,
+         est_total = chapman(newspaper, shr_in_scope, both),
+         est_var = chapman_var(newspaper, shr_in_scope, both),
+         unseen = est_total - seen,
+         added = est_total - newspaper)
+stopifnot(all(cr_agencies$shr_victims == cr_agencies$shr_filed),
+          all(cr_agencies$unseen >= -1e-9))
+cr_total <- cr_agencies |>
+  summarise(agency_id = "All (sum of agency estimates)", years = sum(years),
+            across(c(newspaper, shr_filed, shr_victims, both, shr_out_of_scope, shr_only,
+                     shr_in_scope, seen, est_total, est_var, unseen, added), sum)) |>
+  bind_rows(cr_agencies |>
+              summarise(agency_id = "All (one pooled estimate)", years = sum(years),
+                        across(c(newspaper, shr_filed, shr_victims, both, shr_out_of_scope,
+                                 shr_only, shr_in_scope, seen), sum)) |>
+              mutate(est_total = chapman(newspaper, shr_in_scope, both),
+                     est_var = chapman_var(newspaper, shr_in_scope, both),
+                     unseen = est_total - seen, added = est_total - newspaper))
+capture_recapture <- bind_rows(cr_agencies, cr_total) |>
+  mutate(est_lo = pmax(seen, est_total - qnorm(CI_Q) * sqrt(est_var)),
+         est_hi = est_total + qnorm(CI_Q) * sqrt(est_var))
+# The run spreads each agency's added deaths evenly over its rebuilt years
+CR_RUN <- "Early newspaper years raised to a capture-recapture estimate (not pre-registered)"
+cr_rows <- drawn_rows |>
+  left_join(cr_years |> select(agency_id, year) |> mutate(cr = TRUE), by = c("agency_id", "year")) |>
+  left_join(cr_agencies |> transmute(agency_id, add_per_year = added / years), by = "agency_id") |>
+  mutate(y = if_else(coalesce(cr, FALSE), y + add_per_year, y)) |>
+  select(-cr, -add_per_year)
+stopifnot(abs(sum(cr_rows$y) - sum(drawn_rows$y) - sum(cr_agencies$added)) < 1e-6)
+homicide_check <- hom_wide |>
+  filter(status == "entered") |>
+  # murders before years: summarise() would otherwise see the summed years
+  summarise(agencies = n(),
+            murders_early = sum(hom_early * years_early), murders_recent = sum(hom_recent * years_recent),
+            deaths_early = sum(deaths_early), deaths_recent = sum(deaths_recent),
+            years_early = sum(years_early), years_recent = sum(years_recent)) |>
+  mutate(per_100_murders_early = 100 * deaths_early / murders_early,
+         per_100_murders_recent = 100 * deaths_recent / murders_recent)
+
 estimates <- bind_rows(
   estimates_main,
   fit_all(build_wide(drawn_rows |> mutate(y = shr_bound(y, n_shr, newspaper)), drawn_agencies),
@@ -522,7 +750,10 @@ estimates <- bind_rows(
   fit_all(main_wide, "Typical agency: continuity correction only for agencies with a zero era",
           cc_zero_only = TRUE),
   fit_all(main_wide, "Finite-population correction (certainty agencies fixed)", fpc = TRUE),
-  fit_all(window_wide, "Early era 1985-94 only (not pre-registered)")
+  fit_all(window_wide, "Early era 1985-94 only (not pre-registered)"),
+  fit_all(build_wide(cr_rows, drawn_agencies), CR_RUN),
+  # Only the "rate" fits are per homicide; the count fits repeat the main question
+  fit_all(hom_wide, HOM_RUN) |> filter(measure == "rate") |> mutate(measure = "per homicide")
 ) |>
   # The zero-handling runs change only the typical-agency estimate
   filter(!(str_starts(run, "Typical agency") & estimand == "pooled"))
@@ -705,6 +936,11 @@ write_csv(certainty_unusable, file.path(tab_dir, "sample_certainty_unusable.csv"
 write_csv(paper_stated |> arrange(agency_id, year), file.path(tab_dir, "sample_paper_stated_years.csv"))
 write_csv(summary_tbl |> mutate(value = round(value, 4)), file.path(tab_dir, "sample_summary.csv"))
 write_csv(attrition, file.path(tab_dir, "sample_attrition.csv"))
+write_csv(homicide_check |> round_dbl(4), file.path(tab_dir, "sample_homicide_check.csv"))
+write_csv(capture_recapture |> round_dbl(2), file.path(tab_dir, "sample_capture_recapture.csv"))
+write_csv(cr_matched |> select(agency_id, year, month, age, sex, matched = status) |>
+            arrange(agency_id, year, month),
+          file.path(tab_dir, "sample_capture_recapture_matches.csv"))
 
 message(sprintf(paste0("09: %d of %d drawn agencies entered; pooled ratio %.2f ",
                        "(%.2f-%.2f) counts, %.2f rates; typical agency %.2f counts, %.2f rates"),

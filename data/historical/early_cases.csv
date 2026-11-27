@@ -1,0 +1,456 @@
+slug,agency_id,status,year,month,day,age,sex,race,reason,doc_ids
+alameda_county_ca,CA00100,counted,1988,8,4,20,F,,,...DD4286;...1E3414
+alameda_county_ca,CA00100,excluded,1994,10,,,,,off-duty,
+torrance_ca,CA01972,excluded,1986,4,17,,M,,suicide,
+torrance_ca,CA01972,counted,1987,1,21,29,M,,,...A4D920
+torrance_ca,CA01972,counted,1987,7,26,27,M,,,...425898
+torrance_ca,CA01972,counted,1987,9,21,,M,,,...2C9508
+torrance_ca,CA01972,counted,1989,7,12,24,F,,,...5454D0
+torrance_ca,CA01972,counted,1989,9,17,20,M,,,...359E10
+torrance_ca,CA01972,counted,1989,11,15,18,M,,,...10F280
+torrance_ca,CA01972,counted,1991,1,14,27,M,,,...F18EB0
+torrance_ca,CA01972,excluded,1992,2,,,,,off-duty,
+torrance_ca,CA01972,counted,1992,12,30,42,M,,,...6E9480
+torrance_ca,CA01972,counted,1994,7,10,18,M,,,...A5D048
+torrance_ca,CA01972,counted,1994,9,2,,M,,,...854A30
+sacramento_county_ca,CA03400,counted,1985,12,31,22,M,,,
+sacramento_county_ca,CA03400,counted,1986,4,17,35,,,,
+sacramento_county_ca,CA03400,counted,1986,6,23,,M,,,
+sacramento_county_ca,CA03400,counted,1986,9,16,,M,,,
+sacramento_county_ca,CA03400,counted,1987,2,8,46,M,,,
+sacramento_county_ca,CA03400,counted,1988,1,21,,,,,
+sacramento_county_ca,CA03400,counted,1988,5,6,,M,,,
+sacramento_county_ca,CA03400,excluded,1988,6,18,,,,off-duty,
+sacramento_county_ca,CA03400,counted,1988,10,9,15,M,,,
+sacramento_county_ca,CA03400,counted,1989,1,28,,,,,
+sacramento_county_ca,CA03400,counted,1989,2,8,,,,,
+sacramento_county_ca,CA03400,counted,1989,7,1,,M,,,
+sacramento_county_ca,CA03400,counted,1989,10,11,48,M,,,
+sacramento_county_ca,CA03400,excluded,1989,12,4,,,,off-duty,
+sacramento_county_ca,CA03400,excluded,1990,,,,,,other agency,
+sacramento_county_ca,CA03400,counted,1990,4,10,,M,,,
+sacramento_county_ca,CA03400,counted,1990,11,19,37,M,,,
+sacramento_county_ca,CA03400,excluded,1991,,,,,,off-duty,
+sacramento_county_ca,CA03400,counted,1991,4,4,,M,,,0EB0D95B1524C61A
+sacramento_county_ca,CA03400,counted,1991,4,4,,M,,,0EB0D95B1524C61A
+sacramento_county_ca,CA03400,counted,1991,4,4,,M,,,0EB0D95B1524C61A
+sacramento_county_ca,CA03400,excluded,1991,4,19,,,,off-duty,
+sacramento_county_ca,CA03400,counted,1991,7,,,F,,,
+sacramento_county_ca,CA03400,counted,1991,7,12,,M,,,0EB0D971E23D891F
+sacramento_county_ca,CA03400,excluded,1991,9,6,,M,,off-duty,
+sacramento_county_ca,CA03400,counted,1992,11,11,,M,,,
+sacramento_county_ca,CA03400,counted,1993,2,9,,,,,
+sacramento_county_ca,CA03400,counted,1993,4,11,37,M,,,
+sacramento_county_ca,CA03400,excluded,1993,7,28,,,,other agency,
+sacramento_county_ca,CA03400,excluded,1993,8,,,M,,custody,
+sacramento_county_ca,CA03400,counted,1994,1,,,M,,,
+sacramento_county_ca,CA03400,counted,1994,8,18,,M,Hispanic,,
+san_diego_county_ca,CA03700,counted,1985,1,14,43,M,,,...4AC06D;...94CC1F
+san_diego_county_ca,CA03700,excluded,1985,6,16,,M,,suicide,
+san_diego_county_ca,CA03700,excluded,1986,,,,,,suicide,
+san_diego_county_ca,CA03700,counted,1986,6,12,18,M,,,...47AD49
+san_diego_county_ca,CA03700,counted,1986,9,26,,M,,,...DB09A5
+san_diego_county_ca,CA03700,excluded,1987,4,,,,,other agency,
+san_diego_county_ca,CA03700,counted,1987,9,,21,M,,,...702E8B;...73A8B1
+san_diego_county_ca,CA03700,counted,1987,12,5,37,M,,,...E7B1F6;...97A899;...8E30CC
+san_diego_county_ca,CA03700,excluded,1988,,,,,,other agency,
+san_diego_county_ca,CA03700,excluded,1988,,,,,,other agency,
+san_diego_county_ca,CA03700,excluded,1988,,,,,,not police gunfire,
+san_diego_county_ca,CA03700,excluded,1989,1,,,,,other agency,
+san_diego_county_ca,CA03700,counted,1989,5,5,28,M,,,...380DF1;...C3B1EB
+san_diego_county_ca,CA03700,counted,1989,9,22,,M,,,...5D23F5;...ACFA9C
+san_diego_county_ca,CA03700,excluded,1990,,,,,,suicide,...E315FF
+san_diego_county_ca,CA03700,counted,1990,5,18,21,M,,,...355E62;...3C995E;...3C9C06
+san_diego_county_ca,CA03700,counted,1991,7,3,36,M,,,...21B2F0
+san_diego_county_ca,CA03700,counted,1991,7,15,28,M,,,...EBFFD9
+san_diego_county_ca,CA03700,counted,1991,12,25,60,M,,,...80C2FF;...CC172F
+san_diego_county_ca,CA03700,counted,1992,2,18,44,M,,,...8264CE;...19CD4C
+san_diego_county_ca,CA03700,excluded,1992,3,,,M,,suicide,
+san_diego_county_ca,CA03700,counted,1992,7,25,,M,,,...C7FD8E
+san_diego_county_ca,CA03700,excluded,1993,6,11,,,,vehicle,...589007
+san_diego_county_ca,CA03700,counted,1993,7,6,23,M,,,...9AD405
+san_diego_county_ca,CA03700,counted,1993,7,18,26,M,,,...984A50
+san_diego_county_ca,CA03700,counted,1994,3,3,,M,,,...E6D7C7;...3E9431
+san_diego_county_ca,CA03700,excluded,1994,8,,,,,off-duty,
+san_francisco_ca,CA03801,counted,1985,4,8,,M,,,...8140AE
+san_francisco_ca,CA03801,counted,1986,5,20,25,M,,,...E00CA7;...5CAFA5
+san_francisco_ca,CA03801,counted,1986,7,15,,M,,,...A83F56
+san_francisco_ca,CA03801,counted,1986,12,22,15,,,,...20C45B;...726889
+san_francisco_ca,CA03801,counted,1988,2,17,13,M,,,...E77AE0
+san_francisco_ca,CA03801,counted,1988,3,16,,M,,,...4F9A9C
+san_francisco_ca,CA03801,counted,1988,9,8,21,M,,,...163C9C
+san_francisco_ca,CA03801,counted,1989,10,13,31,M,,,...B812BF
+san_francisco_ca,CA03801,counted,1990,5,17,,M,,,...F22D74
+san_francisco_ca,CA03801,counted,1990,9,11,,,,,...6C8990
+san_francisco_ca,CA03801,counted,1990,10,16,56,M,,,...F6535B;...1E89F6
+san_francisco_ca,CA03801,counted,1990,10,23,,,,,...292054
+san_francisco_ca,CA03801,counted,1991,2,,34,M,,,...84E69C
+san_francisco_ca,CA03801,counted,1991,5,20,31,M,,,...DAB19D;...232344
+san_francisco_ca,CA03801,counted,1991,7,29,,M,,,...ED9EFD
+san_francisco_ca,CA03801,counted,1992,9,28,,M,,,...AD395D
+san_francisco_ca,CA03801,counted,1992,11,15,,M,,,...FB6083
+san_francisco_ca,CA03801,counted,1993,3,18,,M,,,...B023FE
+san_francisco_ca,CA03801,counted,1993,4,25,56,M,,,...58617E;...A6B79E
+san_francisco_ca,CA03801,counted,1993,7,,,M,,,...1EE3C5
+san_francisco_ca,CA03801,counted,1993,8,26,,,,,...28CCA2
+san_francisco_ca,CA03801,counted,1994,7,,22,,,,...9647A6;...8B5222
+san_francisco_ca,CA03801,counted,1994,11,,,M,,,...30722F;...AB1A15
+san_francisco_ca,CA03801,counted,1994,12,6,,M,,,...243E0C
+san_jose_ca,CA04313,counted,1986,11,1,31,M,,,0EB729956F05BB31
+san_jose_ca,CA04313,excluded,1988,1,,,M,,not police gunfire,
+san_jose_ca,CA04313,excluded,1988,1,,,M,,not police gunfire,
+san_jose_ca,CA04313,counted,1988,11,,,M,,,0EB72EEE19655758
+san_jose_ca,CA04313,counted,1989,1,18,34,M,,,
+san_jose_ca,CA04313,counted,1989,1,20,35,M,,,
+san_jose_ca,CA04313,counted,1989,1,26,,,,,0EB72F46E798046C
+san_jose_ca,CA04313,counted,1989,11,28,42,M,,,0EB7312E8B4B6E0E
+san_jose_ca,CA04313,excluded,1990,9,,,F,,not police gunfire,
+san_jose_ca,CA04313,counted,1991,3,19,,,,,0EB717EBC6A84F4B
+san_jose_ca,CA04313,counted,1991,4,,,,,,0EB718078450887E
+san_jose_ca,CA04313,counted,1991,4,6,22,M,,,0EB7180005BAA5D8
+san_jose_ca,CA04313,counted,1994,2,4,33,M,,,0EB71C814A93965F;0EB71CA90BD781C4
+san_jose_ca,CA04313,counted,1994,9,27,68,M,,,0EB71D9D1DDDC0CD
+san_jose_ca,CA04313,counted,1994,11,3,24,M,,,0EB71DC33AF5E7E0
+aurora_co,CO00101,excluded,1990,12,,,M,,not police gunfire,
+aurora_co,CO00101,excluded,1993,12,,,M,,not police gunfire,
+aurora_co,CO00101,counted,1994,4,7,29,M,,,...05E521;...566F91;...902CC5
+denver_co,CODPD00,counted,1990,1,4,,M,,,
+denver_co,CODPD00,counted,1990,12,9,28,M,,,
+denver_co,CODPD00,counted,1990,12,23,,M,,,
+denver_co,CODPD00,excluded,1991,,,,M,,not police gunfire,
+denver_co,CODPD00,excluded,1991,,,,M,,other agency,
+denver_co,CODPD00,counted,1991,1,31,34,M,,,
+denver_co,CODPD00,counted,1991,1,31,22,M,,,
+denver_co,CODPD00,counted,1991,8,17,17,M,,,
+denver_co,CODPD00,counted,1991,11,16,56,M,,,
+denver_co,CODPD00,counted,1992,4,26,,M,,,
+denver_co,CODPD00,counted,1992,5,15,60,F,,,0EB4DADEC6B637E1
+denver_co,CODPD00,counted,1992,6,29,41,M,,,
+denver_co,CODPD00,counted,1992,9,1,,M,,,
+denver_co,CODPD00,excluded,1992,11,8,,M,,off-duty,
+denver_co,CODPD00,counted,1992,12,6,,,,,
+denver_co,CODPD00,excluded,1993,1,31,,M,,suicide,
+denver_co,CODPD00,counted,1994,3,13,42,F,,,
+denver_co,CODPD00,counted,1994,5,31,44,M,,,
+denver_co,CODPD00,counted,1994,11,3,,M,,,
+denver_co,CODPD00,excluded,1994,12,,,,,off-duty,
+miami_dade_fl,FL01300,counted,1985,3,26,,,,,...CDCB60
+miami_dade_fl,FL01300,counted,1985,11,13,22,M,,,...12721B;...B00F5A
+miami_dade_fl,FL01300,counted,1986,5,16,,M,,,...441548;...2C2E65
+miami_dade_fl,FL01300,counted,1987,1,6,,,,,...A341F7
+miami_dade_fl,FL01300,counted,1987,2,27,,,,,...3F325B
+miami_dade_fl,FL01300,counted,1987,3,2,23,M,,,...06CD5C
+miami_dade_fl,FL01300,excluded,1987,9,,,,,off-duty,
+miami_dade_fl,FL01300,counted,1987,10,8,,M,,,...C92528;...942E3C
+miami_dade_fl,FL01300,counted,1992,2,1,16,M,,,...D6562A;...449097
+miami_dade_fl,FL01300,counted,1992,2,7,,M,,,...CDEFC8
+miami_dade_fl,FL01300,counted,1993,2,15,,M,,,...FC240C
+miami_dade_fl,FL01300,counted,1993,5,3,,M,,,...36C3B1
+miami_dade_fl,FL01300,counted,1994,1,27,,,,,...85F098
+miami_dade_fl,FL01300,counted,1994,4,16,,M,,,...8173A5
+miami_dade_fl,FL01300,counted,1994,11,28,,,Hispanic,,...5D52CB
+hillsborough_county_fl,FL02900,counted,1993,7,2,,M,,,0EB0F291274EFACA
+hillsborough_county_fl,FL02900,counted,1993,8,20,49,M,,,0EB52C4A29F3D606;0EB0F2BD71C15690
+hillsborough_county_fl,FL02900,counted,1994,2,27,,M,,,0EB0F374316FAEC8;0EB52CA58C39DA4C
+hillsborough_county_fl,FL02900,counted,1994,10,15,30,M,,,0EB52D0E3AB7E3E1
+volusia_county_fl,FL06400,counted,1992,8,20,,M,,,...744C52
+volusia_county_fl,FL06400,excluded,1992,11,,,M,,suicide,
+volusia_county_fl,FL06400,excluded,1994,,,,,,vehicle,
+volusia_county_fl,FL06400,counted,1994,1,24,44,M,,,...FBCFE4
+cobb_county_pd_ga,GA03302,excluded,1985,8,,,M,,other agency,
+cobb_county_pd_ga,GA03302,counted,1989,7,8,41,M,,,...7E96E6;...7FA977
+cobb_county_pd_ga,GA03302,excluded,1991,,,,M,,not police gunfire,
+cobb_county_pd_ga,GA03302,counted,1992,5,9,46,M,,,...189E33;...C796B8
+cobb_county_pd_ga,GA03302,counted,1992,12,4,29,M,,,...60D0B2
+cobb_county_pd_ga,GA03302,excluded,1993,9,11,,M,,other agency,...B932DA;...1D84FC
+cobb_county_pd_ga,GA03302,counted,1993,12,23,,,,,...937717
+cobb_county_pd_ga,GA03302,counted,1994,3,29,32,M,,,...796192;...4A3DE2
+cobb_county_pd_ga,GA03302,excluded,1994,7,,,M,,not police gunfire,
+cobb_county_pd_ga,GA03302,counted,1994,9,8,46,M,,,...88E7BC
+east_baton_rouge_parish_la,LA01700,excluded,1990,9,3,40,F,,off-duty,
+east_baton_rouge_parish_la,LA01700,counted,1992,4,25,15,M,,,...10F814
+east_baton_rouge_parish_la,LA01700,excluded,1993,,,,,,custody,
+baton_rouge_la,LA01702,excluded,1986,4,6,20,M,,custody,
+baton_rouge_la,LA01702,excluded,1987,4,,,M,,other agency,
+baton_rouge_la,LA01702,excluded,1990,9,3,40,F,,off-duty,
+baton_rouge_la,LA01702,counted,1990,12,17,32,M,,,
+baton_rouge_la,LA01702,counted,1992,4,23,28,M,,,
+baton_rouge_la,LA01702,excluded,1992,4,25,15,M,,other agency,...10F814
+baton_rouge_la,LA01702,excluded,1993,1,,,F,,not police gunfire,
+baton_rouge_la,LA01702,excluded,1994,2,18,23,,,off-duty,
+jefferson_parish_la,LA02600,excluded,1989,1,27,,,,other agency,...31F078
+jefferson_parish_la,LA02600,excluded,1990,2,,,M,,custody,
+jefferson_parish_la,LA02600,counted,1990,11,10,27,M,,,...36D64A;...7A09AD
+jefferson_parish_la,LA02600,counted,1992,10,29,43,M,,,...3929AF
+jefferson_parish_la,LA02600,excluded,1993,,,,,,not police gunfire,
+jefferson_parish_la,LA02600,excluded,1993,,,,M,,vehicle,
+jefferson_parish_la,LA02600,counted,1993,3,3,27,,,,...7ABA8D
+jefferson_parish_la,LA02600,counted,1993,3,21,18,M,,,...B73E1C;...C35EAA
+jefferson_parish_la,LA02600,counted,1993,8,,34,M,,,...C3C25D
+jefferson_parish_la,LA02600,counted,1993,9,28,47,M,,,...705084
+jefferson_parish_la,LA02600,counted,1994,2,19,47,M,,,...E477ED;...7F6C40
+jefferson_parish_la,LA02600,excluded,1994,3,,,M,,custody,
+jefferson_parish_la,LA02600,counted,1994,4,15,28,,,,...ABED10
+jefferson_parish_la,LA02600,counted,1994,12,5,,M,,,...2CC360;...EAF1D1
+new_orleans_la,LANPD00,counted,1989,1,1,41,M,,,...F09341;...AB0041
+new_orleans_la,LANPD00,counted,1989,1,21,36,M,,,...D66FB9
+new_orleans_la,LANPD00,counted,1989,1,27,,,,,...1370F4;...31F078
+new_orleans_la,LANPD00,excluded,1989,6,,,,,off-duty,
+new_orleans_la,LANPD00,counted,1989,6,3,19,M,,,...35AC6B
+new_orleans_la,LANPD00,counted,1989,9,25,33,M,,,...866BF9
+new_orleans_la,LANPD00,excluded,1990,3,,,M,,custody,
+new_orleans_la,LANPD00,counted,1990,5,19,22,M,,,...8027;...5CA9E4
+new_orleans_la,LANPD00,excluded,1990,7,,,M,,not police gunfire,
+new_orleans_la,LANPD00,excluded,1992,,,,,,vehicle,
+new_orleans_la,LANPD00,excluded,1992,7,,,,,off-duty,
+new_orleans_la,LANPD00,excluded,1992,7,,,,,off-duty,
+new_orleans_la,LANPD00,excluded,1992,8,,,M,,not police gunfire,
+new_orleans_la,LANPD00,counted,1992,10,5,18,M,,,...6149;...13C8
+new_orleans_la,LANPD00,counted,1992,12,9,35,F,,,...9A94;...3664
+new_orleans_la,LANPD00,counted,1993,2,,24,M,,,
+new_orleans_la,LANPD00,counted,1993,6,8,15,M,,,
+new_orleans_la,LANPD00,counted,1993,8,27,33,M,,,
+new_orleans_la,LANPD00,counted,1993,8,28,24,,,,
+new_orleans_la,LANPD00,counted,1993,10,,15,M,,,
+new_orleans_la,LANPD00,counted,1993,12,,14,,,,
+new_orleans_la,LANPD00,excluded,1994,5,,,M,,off-duty,
+new_orleans_la,LANPD00,counted,1994,10,29,40,M,,,
+montgomery_county_md,MD01604,excluded,1991,3,,,M,,other agency,...469A1F
+montgomery_county_md,MD01604,counted,1991,5,23,20,F,,,...C5DB2B
+montgomery_county_md,MD01604,counted,1991,10,11,30,M,,,...EBA1A6
+montgomery_county_md,MD01604,counted,1993,11,10,20,M,,,...F14A7F;...982D9B
+montgomery_county_md,MD01604,counted,1994,4,21,40,M,,,...51B801
+montgomery_county_md,MD01604,counted,1994,5,13,31,M,,,...46FACE
+montgomery_county_md,MD01604,counted,1994,7,21,,F,,,...451B8D
+prince_georges_county_md,MD01721,excluded,1990,3,,,,,off-duty,...FAE43C
+prince_georges_county_md,MD01721,counted,1990,7,31,37,M,,,...6A1E40
+prince_georges_county_md,MD01721,counted,1990,11,10,22,M,,,...8E30DE
+prince_georges_county_md,MD01721,counted,1991,2,25,16,M,,,...EADE8A
+prince_georges_county_md,MD01721,counted,1991,6,,,,,,...42778D
+prince_georges_county_md,MD01721,excluded,1991,7,,,,,off-duty,
+prince_georges_county_md,MD01721,excluded,1991,8,,,M,,off-duty,...0B74B4
+prince_georges_county_md,MD01721,counted,1991,9,28,,M,,,...9360E6;...BDD8E7
+prince_georges_county_md,MD01721,counted,1991,10,29,41,M,,,...E16BD2
+prince_georges_county_md,MD01721,excluded,1994,2,,,,,other agency,...6B74CB
+prince_georges_county_md,MD01721,counted,1994,3,28,31,M,,,...C4234C;...6D2583
+prince_georges_county_md,MD01721,counted,1994,3,31,19,M,,,...49DA1A
+prince_georges_county_md,MD01721,counted,1994,4,1,36,M,,,...49DA1A
+baltimore_md,MDBPD00,counted,1990,,,,,,paper-count only,...AF6155
+baltimore_md,MDBPD00,counted,1990,,,,,,paper-count only,...AF6155
+baltimore_md,MDBPD00,counted,1990,10,14,,M,,,...7C2335
+baltimore_md,MDBPD00,counted,1990,12,,,M,,,...D35D35
+baltimore_md,MDBPD00,counted,1991,5,30,,M,,,...0EB2DFCF2742AB59
+baltimore_md,MDBPD00,counted,1991,8,28,,M,,,...421212;...7436AD
+baltimore_md,MDBPD00,excluded,1991,9,,,M,,suicide,...5A51DC
+baltimore_md,MDBPD00,counted,1991,10,30,29,M,,,...742FD6;...DFD65C;...D5FA5F
+baltimore_md,MDBPD00,counted,1991,12,27,,M,,,...D84D24
+st_paul_mn,MN06209,excluded,1989,11,,,,,other agency,
+st_paul_mn,MN06209,excluded,1989,11,,,,,other agency,
+st_paul_mn,MN06209,counted,1990,9,18,27,M,,,
+st_paul_mn,MN06209,counted,1990,9,22,34,M,,,
+st_paul_mn,MN06209,excluded,1993,10,12,,,,off-duty,
+st_paul_mn,MN06209,excluded,1993,10,12,,,,off-duty,
+st_paul_mn,MN06209,excluded,1994,8,10,,M,,other agency,
+st_paul_mn,MN06209,excluded,1994,10,,,M,,suicide,
+st_louis_county_mo,MO09500,counted,1988,4,28,30,M,,,...DBD654
+st_louis_county_mo,MO09500,excluded,1990,1,19,45,M,,other agency,...96D775
+st_louis_county_mo,MO09500,excluded,1991,1,9,,,,other agency,
+st_louis_county_mo,MO09500,excluded,1991,7,16,,M,,suicide,
+st_louis_county_mo,MO09500,excluded,1992,7,,,,,other agency,
+st_louis_county_mo,MO09500,excluded,1992,8,,,,,off-duty,
+st_louis_county_mo,MO09500,counted,1993,5,24,38,M,,,...6FB21A
+st_louis_county_mo,MO09500,excluded,1993,11,,,,,other agency,
+st_louis_county_mo,MO09500,excluded,1994,5,3,,M,,other agency,
+cumberland_county_nc,NC02600,excluded,1988,9,,,,,other agency,
+cumberland_county_nc,NC02600,counted,1991,6,27,44,M,,,...9F70AD
+cumberland_county_nc,NC02600,counted,1991,8,22,28,M,,,...954BE9
+cumberland_county_nc,NC02600,counted,1991,11,26,49,M,,,...91662B;...708FB5
+cumberland_county_nc,NC02600,excluded,1993,9,,,,,other agency,
+cumberland_county_nc,NC02600,excluded,1993,9,16,,M,,other agency,...1AF79D
+cumberland_county_nc,NC02600,counted,1994,5,25,39,M,,,...F08C5F;...B5762F
+cumberland_county_nc,NC02600,excluded,1994,12,24,,M,,off-duty,...42406B
+newark_nj,NJNPD00,counted,1990,8,31,17,M,,,...E31F30
+newark_nj,NJNPD00,counted,1991,3,26,66,M,,,...4FC308
+newark_nj,NJNPD00,counted,1991,6,9,16,F,,,...304CE0
+newark_nj,NJNPD00,counted,1991,6,9,20,M,,,...304CE0
+newark_nj,NJNPD00,counted,1992,4,18,,M,,,...222D98
+newark_nj,NJNPD00,excluded,1992,7,3,,M,,off-duty,...88D1B0
+newark_nj,NJNPD00,excluded,1992,8,,,M,,off-duty,...8CF480
+newark_nj,NJNPD00,counted,1992,9,6,24,M,,,...13CE08
+newark_nj,NJNPD00,counted,1992,9,8,24,M,,,...CFA0B0
+newark_nj,NJNPD00,counted,1992,10,23,29,M,,,...F5C800
+newark_nj,NJNPD00,counted,1992,11,7,39,M,,,...B65020
+newark_nj,NJNPD00,excluded,1993,3,,,,,off-duty,...5D0B10
+newark_nj,NJNPD00,excluded,1994,2,,,M,,other agency,...1EE210
+buffalo_ny,NY01401,counted,1989,9,2,31,F,,,...C8B979;...6D9045;...A040DB
+buffalo_ny,NY01401,excluded,1989,10,,20,M,,off-duty,
+buffalo_ny,NY01401,counted,1990,2,9,37,M,,,...C46068
+buffalo_ny,NY01401,counted,1991,12,5,19,M,,,...0030CD;...225BC7;...BF3B55
+buffalo_ny,NY01401,counted,1992,10,7,23,M,,,...3605F8;...C30E40;...6C162E
+dayton_oh,OH05702,counted,1991,6,26,26,M,,,...0F5050018A606A26;...0F504F2A9DE50B31;...0F5050328C0D62A3
+dayton_oh,OH05702,counted,1991,6,26,18,M,,,...0F5050018A606A26;...0F504F2A9DE50B31;...0F5050328C0D62A3
+dayton_oh,OH05702,excluded,1992,1,,,,,other agency,
+dayton_oh,OH05702,counted,1993,6,15,14,M,,,...0F51A91D142E0537;...0F51A954F2CA8A74
+dayton_oh,OH05702,counted,1993,12,5,23,M,,,...0F51A85F761C8C1D
+dayton_oh,OH05702,excluded,1994,10,21,,M,,other agency,
+cleveland_oh,OHCLP00,counted,1990,2,5,47,M,,,...173EA6D342F68B80
+cleveland_oh,OHCLP00,counted,1990,4,15,34,F,,,...173D9D1BA56E90B8
+cleveland_oh,OHCLP00,counted,1990,5,28,,M,,,...173EA80039892428
+cleveland_oh,OHCLP00,excluded,1991,8,,,M,,custody,
+cleveland_oh,OHCLP00,counted,1991,9,14,31,M,,,...0F8033A2E2092CAD;...0F8033F89CC92CFB
+cleveland_oh,OHCLP00,counted,1991,9,28,33,M,,,...0F8033E7E375F1D4
+cleveland_oh,OHCLP00,excluded,1991,10,29,28,M,,other agency,
+cleveland_oh,OHCLP00,excluded,1992,12,28,23,M,,not police gunfire,...0F803F10D204AE68;...0F806FB35C89FADB
+cleveland_oh,OHCLP00,excluded,1993,,,,M,,not police gunfire,
+cleveland_oh,OHCLP00,counted,1993,1,17,20,M,,,...0F806FCDA428325F;...0F806FD256266F94
+cleveland_oh,OHCLP00,excluded,1993,10,5,,M,,off-duty,...0F8077C6831FC889
+cleveland_oh,OHCLP00,counted,1993,11,12,54,M,,,...0F8078BB21BAF656
+cleveland_oh,OHCLP00,counted,1993,11,29,20,M,,,...0F807929995EB592
+cleveland_oh,OHCLP00,counted,1994,3,23,33,M,,,...0F807CA1B1E4FDA5
+cleveland_oh,OHCLP00,counted,1994,5,13,19,F,,,...0F807CEA16E7FFA1
+cleveland_oh,OHCLP00,counted,1994,6,6,22,F,,,...0F807D0A51826B65;...0F807D26A3A03CAD
+cleveland_oh,OHCLP00,counted,1994,10,26,24,M,,,...0F807DCDB7F2FD8E
+cleveland_oh,OHCLP00,excluded,1994,11,4,,M,,other agency,
+cleveland_oh,OHCLP00,counted,1994,12,30,35,M,,,...0F8083E474738155
+columbus_oh,OHCOP00,excluded,1986,3,18,27,M,,off-duty,
+columbus_oh,OHCOP00,excluded,1986,10,13,,M,,not police gunfire,
+columbus_oh,OHCOP00,excluded,1987,5,,,,,other agency,
+columbus_oh,OHCOP00,excluded,1987,6,,,,,other agency,
+columbus_oh,OHCOP00,counted,1987,12,31,28,M,,,
+columbus_oh,OHCOP00,excluded,1988,4,18,,M,,other agency,
+columbus_oh,OHCOP00,counted,1988,9,28,35,M,,,
+columbus_oh,OHCOP00,counted,1988,10,1,25,M,,,
+columbus_oh,OHCOP00,counted,1989,2,8,16,M,,,
+columbus_oh,OHCOP00,counted,1989,4,24,,M,,,
+columbus_oh,OHCOP00,counted,1989,8,25,44,M,,,
+columbus_oh,OHCOP00,excluded,1989,12,,,,,suicide,
+columbus_oh,OHCOP00,counted,1990,1,29,47,M,,,
+columbus_oh,OHCOP00,counted,1990,5,2,25,M,,,
+columbus_oh,OHCOP00,excluded,1990,6,9,,,,unresolved shooter,
+columbus_oh,OHCOP00,counted,1990,7,14,21,M,,,
+columbus_oh,OHCOP00,counted,1991,7,5,30,M,,,
+columbus_oh,OHCOP00,excluded,1991,7,9,,M,,off-duty,
+columbus_oh,OHCOP00,excluded,1991,11,30,,M,,off-duty,
+columbus_oh,OHCOP00,counted,1992,5,19,32,M,,,10E0D45013FDA918
+columbus_oh,OHCOP00,counted,1992,5,21,20,M,,,10E0D45013FDA918
+columbus_oh,OHCOP00,counted,1992,7,6,19,M,,,10E0D45013FDA918
+columbus_oh,OHCOP00,counted,1993,4,27,19,M,,,
+columbus_oh,OHCOP00,counted,1993,6,3,,M,,,
+columbus_oh,OHCOP00,counted,1993,11,13,47,M,,,
+columbus_oh,OHCOP00,counted,1993,12,10,29,M,,,
+columbus_oh,OHCOP00,excluded,1994,11,24,24,M,,off-duty,
+clackamas_county_or,OR00300,counted,1988,4,1,25,M,,,...CFFF95
+clackamas_county_or,OR00300,counted,1988,6,13,25,M,,,...EF8285
+clackamas_county_or,OR00300,counted,1989,10,2,34,M,,,...9ACA93
+harris_county_tx,TX10100,excluded,1986,1,3,,M,,other agency,0ED7ABD9EFEFDE16
+harris_county_tx,TX10100,excluded,1986,2,,,M,,off-duty,
+harris_county_tx,TX10100,excluded,1986,6,,,,,other agency,
+harris_county_tx,TX10100,excluded,1987,3,,,,,not police gunfire,
+harris_county_tx,TX10100,excluded,1987,3,10,20,M,,off-duty,0ED7ACF98776788D
+harris_county_tx,TX10100,counted,1988,11,5,28,M,,,0ED7AEC68DF7DF57
+harris_county_tx,TX10100,counted,1989,2,24,22,M,,,0ED7AEE021C50FE9
+harris_county_tx,TX10100,excluded,1989,4,29,,M,,other agency,
+harris_county_tx,TX10100,excluded,1989,9,,,M,,other agency,
+harris_county_tx,TX10100,counted,1989,11,11,34,F,,,0ED7AF855754F667
+harris_county_tx,TX10100,counted,1990,7,7,22,M,,,0ED7B019D1B1EC2D;0ED7B01AB1BD8B44
+harris_county_tx,TX10100,counted,1990,8,22,27,M,,,0ED7B03543640158
+harris_county_tx,TX10100,excluded,1990,11,,,,,off-duty,
+harris_county_tx,TX10100,excluded,1990,11,,,,,off-duty,
+harris_county_tx,TX10100,excluded,1991,6,,,M,,off-duty,
+harris_county_tx,TX10100,excluded,1991,7,,,M,,off-duty,
+harris_county_tx,TX10100,excluded,1991,10,,,M,,off-duty,
+harris_county_tx,TX10100,excluded,1991,11,,,,,other agency,
+harris_county_tx,TX10100,counted,1992,8,25,42,F,,,0ED7B201F83ED7AE;0ED7B228C827DF42
+harris_county_tx,TX10100,counted,1993,1,8,19,M,,,0ED7B2540796403D
+harris_county_tx,TX10100,excluded,1993,8,,,M,,not police gunfire,
+harris_county_tx,TX10100,excluded,1994,2,,,,,vehicle,
+harris_county_tx,TX10100,excluded,1994,3,,,M,,off-duty,
+dallas_tx,TXDPD00,excluded,1992,1,22,,,,officer killed by fellow officer,
+dallas_tx,TXDPD00,counted,1992,4,6,18,M,,,BAB3CB
+dallas_tx,TXDPD00,counted,1992,8,26,,M,,,3135D9
+dallas_tx,TXDPD00,counted,1993,3,10,26,,,,F6D359
+dallas_tx,TXDPD00,counted,1993,6,9,,,,,F359D1
+dallas_tx,TXDPD00,excluded,1993,8,,67,,,other agency,
+dallas_tx,TXDPD00,counted,1993,9,2,38,M,,,E70705
+dallas_tx,TXDPD00,counted,1993,9,10,76,,,,B0FF55
+dallas_tx,TXDPD00,excluded,1993,11,9,,,,off-duty,
+dallas_tx,TXDPD00,excluded,1993,12,7,,,,off-duty,
+dallas_tx,TXDPD00,excluded,1994,,,,,,custody,
+dallas_tx,TXDPD00,counted,1994,4,5,25,M,,,8F40F2
+dallas_tx,TXDPD00,counted,1994,4,21,39,,,,4FE4B7
+san_antonio_tx,TXSPD00,counted,1990,,,,,,paper-count only,0F2230454EEA8318
+san_antonio_tx,TXSPD00,counted,1990,,,,,,paper-count only,0F2230454EEA8318
+san_antonio_tx,TXSPD00,excluded,1991,3,14,,,,suicide,
+san_antonio_tx,TXSPD00,counted,1991,5,23,40,M,,,0F2230266E5B0358
+san_antonio_tx,TXSPD00,counted,1991,7,30,23,,,,
+san_antonio_tx,TXSPD00,counted,1991,8,1,44,,,,
+san_antonio_tx,TXSPD00,counted,1991,8,18,33,M,,,0F22304A8E9DE06D
+san_antonio_tx,TXSPD00,counted,1991,12,25,37,M,,,
+san_antonio_tx,TXSPD00,counted,1992,5,25,26,,,,0F2230D88258B857
+san_antonio_tx,TXSPD00,counted,1992,8,9,21,M,,,0F2230EE5E004E35
+san_antonio_tx,TXSPD00,counted,1993,3,6,23,M,,,
+san_antonio_tx,TXSPD00,excluded,1993,8,,,,,off-duty,
+san_antonio_tx,TXSPD00,excluded,1994,4,,,,,off-duty,
+san_antonio_tx,TXSPD00,excluded,1994,8,,,,,off-duty,
+san_antonio_tx,TXSPD00,excluded,1994,9,25,,,,off-duty,
+san_antonio_tx,TXSPD00,counted,1994,12,22,,M,,,
+fairfax_county_va,VA02901,excluded,1990,11,,,,,other agency,
+fairfax_county_va,VA02901,counted,1993,8,8,,F,,,2756CC
+fairfax_county_va,VA02901,excluded,1993,10,,,,,other agency,
+fairfax_county_va,VA02901,counted,1993,10,24,41,,,,18AFB4
+fairfax_county_va,VA02901,counted,1993,11,2,,,,,FABF87
+richmond_va,VA12200,excluded,1986,11,24,,,,suicide,
+richmond_va,VA12200,counted,1987,1,6,23,M,,,DAB54D;3C0BE9
+richmond_va,VA12200,excluded,1987,5,,,,,other agency,
+richmond_va,VA12200,counted,1987,12,20,,M,,,E63348;3C0BE9
+richmond_va,VA12200,counted,1988,1,26,24,,,,0EDDD2
+richmond_va,VA12200,counted,1988,10,28,34,,,,F02D6F
+richmond_va,VA12200,counted,1989,3,24,,,,,225C77
+richmond_va,VA12200,excluded,1989,9,15,28,,,suicide,89EB09
+richmond_va,VA12200,counted,1989,10,3,45,,,,7F3413
+richmond_va,VA12200,excluded,1990,,,,,,other agency,
+richmond_va,VA12200,excluded,1992,,,,,,other agency,
+richmond_va,VA12200,counted,1992,6,15,27,,,,1CA306;7BB55A
+richmond_va,VA12200,excluded,1993,,,,,,other agency,
+richmond_va,VA12200,excluded,1993,8,,,F,,not police gunfire,
+virginia_beach_va,VA12800,excluded,1992,5,29,,,,other agency,
+virginia_beach_va,VA12800,counted,1992,8,21,18,M,,,0B6CAC;8FD73B;FB07D1
+king_county_wa,WA01700,counted,1988,2,4,32,,,,0EB532B4AEF09540;0EB532D31D0A6AF1
+king_county_wa,WA01700,excluded,1990,2,3,33,,,not police gunfire,
+king_county_wa,WA01700,counted,1992,12,15,36,M,,,0EB536188367F350;0EB535E88E34FDC0
+king_county_wa,WA01700,counted,1993,11,1,17,,,,0EB536CB0D88D61A;0EB53708C76F1207
+king_county_wa,WA01700,counted,1994,3,31,19,,,,0EB5371B9E9F1D4F
+king_county_wa,WA01700,counted,1994,11,23,24,,,,0EB5378B6AD3B6F7
+snohomish_county_wa,WA03100,counted,1992,1,30,38,,,,0D8188;960A84
+snohomish_county_wa,WA03100,counted,1992,3,28,28,,,,8F2ECD;98BE9B
+snohomish_county_wa,WA03100,counted,1992,10,20,28,,,,4CAF4B;8450EB;34FDC0
+madison_wi,WI01301,excluded,1992,6,5,38,,,suicide,
+madison_wi,WI01301,counted,1992,7,,40,,,,0EAF078324C5D769;0EAF0B73623C1A3D
+madison_wi,WI01301,excluded,1993,7,6,,,,unresolved shooter,
+madison_wi,WI01301,counted,1994,5,24,,M,,,0EAF0B72E0B97A15;0EAF0B7364B82B01
+milwaukee_wi,WIMPD00,counted,1990,7,25,32,,,,BA5CD7;4F58F5;1040F6
+milwaukee_wi,WIMPD00,counted,1990,9,,34,,,,915890;1040F6
+milwaukee_wi,WIMPD00,counted,1990,12,16,30,,,,8BF88B;4B536A;1040F6
+milwaukee_wi,WIMPD00,counted,1990,12,21,,,,,D4F009;1040F6
+milwaukee_wi,WIMPD00,excluded,1991,2,,,,,other agency,
+milwaukee_wi,WIMPD00,excluded,1991,3,,,,,other agency,
+milwaukee_wi,WIMPD00,counted,1991,4,7,17,,,,F53318;1040F6
+milwaukee_wi,WIMPD00,excluded,1991,5,,,,,other agency,
+milwaukee_wi,WIMPD00,counted,1991,5,19,24,,,,2C5309;1040F6
+milwaukee_wi,WIMPD00,excluded,1991,7,,,,,other agency,
+milwaukee_wi,WIMPD00,excluded,1991,7,17,,,,other agency,
+milwaukee_wi,WIMPD00,counted,1991,12,7,24,,,,358D55;EC3634
+milwaukee_wi,WIMPD00,excluded,1991,12,7,26,,,unresolved shooter,358D55
+milwaukee_wi,WIMPD00,counted,1992,2,12,85,,,,1040F6
+milwaukee_wi,WIMPD00,counted,1992,4,19,20,,,,4ADE12;1040F6
+milwaukee_wi,WIMPD00,excluded,1992,7,2,,,,other agency,
+milwaukee_wi,WIMPD00,excluded,1992,7,7,21,,,off-duty,C38EE0;CF3AFC
+milwaukee_wi,WIMPD00,counted,1992,11,6,33,M,,,821B8A
+milwaukee_wi,WIMPD00,excluded,1993,,,,,,not police gunfire,
+milwaukee_wi,WIMPD00,excluded,1993,4,,,,,other agency,
+milwaukee_wi,WIMPD00,counted,1993,9,27,30,M,,,E3EFB5;F679E4;5140DB
+milwaukee_wi,WIMPD00,counted,1993,10,28,30,,,,549B23;FC5594
+milwaukee_wi,WIMPD00,counted,1993,11,24,38,,,,F01596;051C25
+milwaukee_wi,WIMPD00,counted,1994,2,17,26,,,,5C3639;B0B91A
+milwaukee_wi,WIMPD00,excluded,1994,5,15,,,,other agency,
+milwaukee_wi,WIMPD00,counted,1994,9,21,17,,,,D27A47;06DCC8
