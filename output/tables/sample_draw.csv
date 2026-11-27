@@ -125,7 +125,7 @@ CO02101,colorado springs police department,CO,local police department,mountain,2
 CODPD00,denver police department,CO,local police department,mountain,499478.5,10,West,250-500k,West 250-500k,TRUE,NA,NA,NA,NA,already rebuilt,12,3,TRUE,4
 OR02602,portland police bureau,OR,local police department,pacific,431553.5,10,West,250-500k,West 250-500k,TRUE,NA,NA,NA,NA,already rebuilt,12,3,FALSE,NA
 UT01800,unified police department of greater salt lake,UT,local police department,mountain,285837,10,West,250-500k,West 250-500k,FALSE,Salt Lake County sheriff,"Deseret News, The (Salt Lake City, UT)",5,5,strong,12,3,FALSE,NA
-WA03100,snohomish county sheriff's office,WA,sheriffs office,pacific,256162.5,10,West,250-500k,West 250-500k,FALSE,Snohomish County sheriff,"Seattle Times, The (WA)",5,5,strong,12,3,TRUE,4
+WA03100,snohomish county sheriff's office,WA,sheriffs office,pacific,256162.5,10,West,250-500k,West 250-500k,TRUE,Snohomish County sheriff,"Seattle Times, The (WA)",5,5,already rebuilt,12,3,TRUE,4
 CA01900,los angeles county sheriff's office,CA,sheriffs office,pacific,1018536.5,10,West,250-500k,certainty,TRUE,Los Angeles County sheriff,Los Angeles Daily News (CA),5,5,already rebuilt,NA,NA,TRUE,1
 CA01942,los angeles police department,CA,local police department,pacific,3463423.5,10,West,250-500k,certainty,TRUE,NA,NA,NA,NA,already rebuilt,NA,NA,TRUE,1
 CA03400,sacramento county sheriff's office,CA,sheriffs office,pacific,627415.5,10,West,250-500k,certainty,TRUE,NA,NA,NA,NA,already rebuilt,NA,NA,TRUE,1

@@ -10,6 +10,7 @@ ME00305,Portland Police Department,ME,0.2,0.182,5,11,1990,2015,1994,2025,1,2,"Po
 VA12800,Virginia Beach Police Department,VA,0.2,1.091,5,11,1990,2015,1994,2025,1,12,"Virginia Beach, VA",0.891,FALSE,0.076,About the same
 LA01702,Baton Rouge Police Department,LA,0.222,0.909,9,11,1986,2015,1994,2025,2,10,"Baton Rouge, LA",0.687,FALSE,0.078,About the same
 MO09500,St. Louis County Police Department,MO,0.286,1.545,7,11,1988,2015,1994,2025,2,17,"St. Louis County, MO",1.26,FALSE,0.009,More now
+WA03100,Snohomish County Sheriff's Office,WA,0.3,0.818,10,11,1985,2015,1994,2025,3,9,"Snohomish Co. Sheriff, WA",0.518,FALSE,0.151,About the same
 AK00101,Anchorage Police Department,AK,0.333,2.182,9,11,1986,2015,1994,2025,3,24,"Anchorage, AK",1.848,FALSE,0,More now
 FL04804,Orlando Police Department,FL,0.333,2.364,9,11,1986,2015,1994,2025,3,26,"Orlando, FL",2.03,FALSE,0,More now
 FL06400,Volusia County Sheriff's Office,FL,0.333,1.636,9,11,1986,2015,1994,2025,3,18,"Volusia Co. Sheriff, FL",1.303,FALSE,0.004,More now
