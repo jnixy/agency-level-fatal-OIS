@@ -30,7 +30,12 @@
 #   - output/figures/fig1_sample_map.png, fig2_estimates.png,
 #     fig3_rate_scatter.png, fig4_then_vs_now.png, fig5_trend_shr.png,
 #     figA1_robustness.png
+#   - output/figures/print/ -- the same six figures for the paper: no
+#     in-figure titles (they become captions), sized so figure plus a
+#     double-spaced caption fits a page
 #   - output/tables/sample_trend_index.csv -- the Fig 5 index
+#   - output/tables/sample_figure_captions.csv -- each figure's title, subtitle
+#     and note, for the manuscript captions
 #
 # Runtime: < 30 sec
 # ==============================================================================
@@ -47,7 +52,34 @@ source(here("scripts", "functions.R"))
 
 fig_dir <- here("output", "figures")
 tab_dir <- here("output", "tables")
+# Not "manuscript": .gitignore keeps every folder of that name local
+ms_dir  <- here("output", "figures", "print")
 dir.create(fig_dir, recursive = TRUE, showWarnings = FALSE)
+dir.create(ms_dir, recursive = TRUE, showWarnings = FALSE)
+MS_MAX_HEIGHT <- 7   # inches: figure plus double-spaced caption must fit in 9in
+
+#' Record a figure's title, subtitle and note as caption text, one line each
+captions <- list()
+record_caption <- function(name, title, subtitle = NA, note = NA) {
+  one_line <- \(x) if (is.null(x) || all(is.na(x))) NA_character_ else str_squish(x)
+  captions[[name]] <<- tibble(figure = name, title = one_line(title),
+                              subtitle = one_line(subtitle), note = one_line(note))
+}
+
+#' Save a figure twice: the README version as drawn, and a manuscript version
+#' with the title, subtitle and caption removed (they go in the paper's
+#' caption) at `ms_height`. `ms_plot` replaces the plot when the manuscript
+#' layout differs (Fig 4).
+save_both <- function(p, name, height, ms_height, ms_plot = NULL) {
+  labs_ <- get_labs(p)
+  record_caption(name, labs_$title, labs_$subtitle, labs_$caption)
+  ggsave(file.path(fig_dir, paste0(name, ".png")), p,
+         width = FIG_WIDTH, height = height, dpi = 300, bg = "white")
+  stopifnot(ms_height <= MS_MAX_HEIGHT)
+  ms <- (ms_plot %||% p) + labs(title = NULL, subtitle = NULL, caption = NULL)
+  ggsave(file.path(ms_dir, paste0(name, ".png")), ms,
+         width = FIG_WIDTH, height = ms_height, dpi = 300, bg = "white")
+}
 
 LEAIC_PATH   <- here("data", "raw", "35158-0001-Data.rda")
 INDEX_EARLY  <- 1970:1994   # the pre-registered early era
@@ -190,8 +222,7 @@ p_map <- plot_usmap(regions = "states", exclude = c("AK", "HI"),
         legend.title.position = "top", legend.spacing.y = unit(2, "pt"),
         axis.title = element_blank())
 
-ggsave(file.path(fig_dir, "fig1_sample_map.png"), p_map,
-       width = FIG_WIDTH, height = 6, dpi = 300, bg = "white")
+save_both(p_map, "fig1_sample_map", height = 6, ms_height = 5.2)
 
 # 3. Fig 2: headline estimates -----------------------------------------------------
 est_plot <- main |>
@@ -227,8 +258,7 @@ p_est <- ggplot(est_plot, aes(est, row, color = estimand)) +
   theme(plot.title.position = "plot", plot.subtitle = element_text(size = 9),
         panel.grid.major.y = element_blank(), axis.text.y = element_text(hjust = 0))
 
-ggsave(file.path(fig_dir, "fig2_estimates.png"), p_est,
-       width = FIG_WIDTH, height = 3.6, dpi = 300, bg = "white")
+save_both(p_est, "fig2_estimates", height = 3.6, ms_height = 2.6)
 
 # 4. Fig 3: rate then vs. now ------------------------------------------------------
 scatter <- informative |>
@@ -276,8 +306,7 @@ p_scatter <- ggplot(scatter, aes(rate_early, rate_recent)) +
         legend.position = "inside", legend.position.inside = c(0.98, 0.3),
         legend.justification = c(1, 0))
 
-ggsave(file.path(fig_dir, "fig3_rate_scatter.png"), p_scatter,
-       width = FIG_WIDTH, height = 7, dpi = 300, bg = "white")
+save_both(p_scatter, "fig3_rate_scatter", height = 7, ms_height = 6.2)
 
 # 5. Fig 4: dumbbell ---------------------------------------------------------------
 dumbbell <- informative |>
@@ -312,8 +341,19 @@ p_dumbbell <- ggplot(dumbbell, aes(y = short)) +
         plot.subtitle = element_text(size = 9), legend.position = "top",
         legend.justification = "left", strip.text.y = element_text(angle = 270))
 
-ggsave(file.path(fig_dir, "fig4_then_vs_now.png"), p_dumbbell,
-       width = FIG_WIDTH, height = 1.8 + 0.17 * nrow(dumbbell), dpi = 300, bg = "white")
+# One column of 52 rows is too tall for a manuscript page, so the paper's
+# version puts the certainty and sampled agencies side by side
+ms_rows <- max(count(dumbbell, design)$n)
+p_dumbbell_ms <- p_dumbbell +
+  facet_wrap(~design, ncol = 2, scales = "free_y") +
+  # Half-width panels have room for fewer ticks
+  scale_x_continuous(trans = scales::pseudo_log_trans(sigma = PSEUDO_SIGMA),
+                     breaks = c(0, 0.1, 0.5, 2), labels = c("0", "0.1", "0.5", "2"),
+                     expand = expansion(mult = c(0.02, 0.1))) +
+  labs(x = "Deaths per 100,000 residents a year (log-like scale)") +
+  theme(strip.text = element_text(size = 9, hjust = 0), panel.spacing.x = unit(10, "pt"))
+save_both(p_dumbbell, "fig4_then_vs_now", height = 1.8 + 0.17 * nrow(dumbbell),
+          ms_height = 1.2 + 0.2 * ms_rows, ms_plot = p_dumbbell_ms)
 
 # 6. Fig 5: year index and the SHR's coverage --------------------------------------
 # Top: a design-weighted Poisson index with agency fixed effects, fit to the
@@ -439,9 +479,17 @@ p_n <- ggplot(agencies_by_year, aes(year, agencies)) +
   theme(panel.grid.major.x = element_blank(), plot.caption = element_text(hjust = 0, size = 8),
         plot.caption.position = "plot")
 
+# Three stacked panels: save_both takes one ggplot, so this figure is saved here
+fig5_heights <- c(3.2, 1.3, 0.9)
+record_caption("fig5_trend_shr", get_labs(p_trend)$title, get_labs(p_trend)$subtitle,
+               get_labs(p_n)$caption)
 ggsave(file.path(fig_dir, "fig5_trend_shr.png"),
-       p_trend / p_cov / p_n + plot_layout(heights = c(3.2, 1.3, 0.9)),
+       p_trend / p_cov / p_n + plot_layout(heights = fig5_heights),
        width = FIG_WIDTH, height = 6.4, dpi = 300, bg = "white")
+strip_labs <- labs(title = NULL, subtitle = NULL, caption = NULL)
+ggsave(file.path(ms_dir, "fig5_trend_shr.png"),
+       (p_trend + strip_labs) / p_cov / (p_n + strip_labs) + plot_layout(heights = fig5_heights),
+       width = FIG_WIDTH, height = 5.4, dpi = 300, bg = "white")
 
 # 7. Fig A1: robustness ------------------------------------------------------------
 run_order <- c("Main",
@@ -500,8 +548,7 @@ p_rob <- ggplot(rob, aes(est, run_lab, color = measure_lab)) +
         panel.grid.major.y = element_blank(), legend.position = "top",
         legend.justification = "left", axis.text.y = element_text(size = 8))
 
-ggsave(file.path(fig_dir, "figA1_robustness.png"), p_rob,
-       width = FIG_WIDTH, height = 6.8, dpi = 300, bg = "white")
+save_both(p_rob, "figA1_robustness", height = 6.8, ms_height = 6)
 
 # 8. Export ----------------------------------------------------------------------
 write_csv(trend |>
@@ -510,6 +557,10 @@ write_csv(trend |>
                                          shr_share = share), by = "year") |>
             mutate(across(where(is.double), \(x) round(x, 4))),
           file.path(tab_dir, "sample_trend_index.csv"))
+caption_tbl <- bind_rows(captions)
+stopifnot(nrow(caption_tbl) == 6, !anyNA(caption_tbl$title),
+          all(file.exists(file.path(ms_dir, paste0(caption_tbl$figure, ".png")))))
+write_csv(caption_tbl, file.path(tab_dir, "sample_figure_captions.csv"))
 
 message("10: six figures; index from ", n_distinct(own$agency_id), " agencies; 2015-25 mean ",
         round(recent_mean), " vs. ", min(INDEX_BASE), "-", max(INDEX_BASE), " = 100")
