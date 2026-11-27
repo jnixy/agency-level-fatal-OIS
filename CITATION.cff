@@ -6,6 +6,7 @@ authors:
   - family-names: Nix
     given-names: Justin
     affiliation: "University of Nebraska Omaha"
+    orcid: "https://orcid.org/0000-0002-3812-8590"
 repository-code: "https://github.com/jnixy/agency-level-fatal-OIS"
 version: "1.0"
 doi: 10.5281/zenodo.24593865
