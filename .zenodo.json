@@ -1,0 +1,35 @@
+{
+  "title": "agency-level-fatal-OIS: Agency-year counts of people shot and killed by police, with the protocol v1.0 sample (v1.0)",
+  "upload_type": "dataset",
+  "version": "1.0",
+  "creators": [
+    {
+      "name": "Nix, Justin",
+      "affiliation": "University of Nebraska Omaha"
+    }
+  ],
+  "description": "<p>Annual counts of people shot and killed by on-duty police officers, by U.S. law enforcement agency, going back as far as sources allow (1969 for Chicago). Hand-built series for 438 agencies sit beside four national sources keyed to the same FBI ORI codes: The Washington Post's Fatal Force (2015-2024), Fatal Encounters (2000-2021), Mapping Police Violence (2013-2025), and the FBI's Supplementary Homicide Reports (1976-2024). The merged panel covers 4,624 agencies and 145,657 agency-years.</p><p>This release completes the collection fixed by the pre-registered protocol (version 1.0, doi:10.5281/zenodo.24248721): pre-1995 counts for all 56 agencies in its stratified draw, rebuilt case by case from local newspapers, with a recall check for each agency. It includes the protocol's analysis (scripts/09_sample_analysis.R). Of the 56 agencies, 54 enter the comparison and 52 have at least one death. Pooled across agencies, fatal police shootings in 2015-2025 are about where they were in 1985-1994 (ratio 0.97, 95% CI 0.69-1.35; per resident 0.83, 0.61-1.13). The typical agency kills about twice as many people a year now (2.01, 1.40-2.89; per resident 1.71, 1.28-2.27). The Supplementary Homicide Reports record 94% of the deaths counted here before 1995 but 56% since 2015. Departures from the protocol are listed in the README.</p><p>Every newspaper-sourced death is logged with its source in data/historical/historical_ois_evidence.csv. Fatal Encounters, Mapping Police Violence, the Supplementary Homicide Reports, and the Law Enforcement Agency Identifiers Crosswalk are linked rather than redistributed; data/README.md says where to get each. Code is MIT-licensed; data are CC BY-NC-SA 4.0, because the panel adapts The Washington Post's Fatal Force data.</p>",
+  "license": "cc-by-nc-sa-4.0",
+  "keywords": [
+    "police use of deadly force",
+    "fatal police shootings",
+    "officer-involved shootings",
+    "Supplementary Homicide Reports",
+    "newspaper reconstruction",
+    "stratified sampling",
+    "preregistration"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.5281/zenodo.24248721",
+      "relation": "isDocumentedBy",
+      "scheme": "doi",
+      "resource_type": "publication-other"
+    },
+    {
+      "identifier": "https://github.com/jnixy/agency-level-fatal-OIS/tree/v1.0",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}
