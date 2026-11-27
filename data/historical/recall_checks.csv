@@ -1,0 +1,57 @@
+ori,slug,stratum,phase,pre_source_type,recall_window,fe_found,fe_checked,recall,status,note
+CA01900,los_angeles_county_ca,certainty,protocol,paper-stated period total,2001-02,10,34,0.294,below 70%,"Generous name test across all LA-area papers. JN decision 2026-11-15: enter on the Daily News study period total (75 deaths in 5.57 exposure-years, 1985 to Jul 1990) plus Bobb 1991-94; list as a protocol deviation"
+VA02901,fairfax_county_va,certainty,protocol,case-by-case,2000-05,2,2,1.000,pass (thin window),"Only 2 FE cases in the window; later windows unusable (Washington Times thins after 2000; JN 50-hit rule, 2026-11-15)"
+MD01604,montgomery_county_md,certainty,protocol,case-by-case,,,,,not measurable,"FE window unusable under the JN 50-hit rule (3 FE cases, all 2004, where the Times is below the audit floor); completeness rests on SHR agreement and a Dec 1991 county homicide tally"
+MD01721,prince_georges_county_md,certainty,protocol,case-by-case + paper year totals,,,,,not measurable,FE window unusable (Times thins after 2000); 1992 and 1993 are paper-stated year totals; 17 of 22 deaths named
+MD00301,baltimore_county_md,certainty,protocol,case-by-case,2000-05,11,11,1.000,pass,"Sep 1990-94 only (about 4.3 exposure-years), so outside the main comparison (JN 2026-11-22)"
+MDBPD00,baltimore_md,certainty,protocol,case-by-case + paper year totals,2000-05,16,19,0.842,pass,1992-94 paper-stated (Sun 1995-02-03)
+WA01700,king_county_wa,certainty,protocol,case-by-case,2000-05,8,8,1.000,pass,
+LANPD00,new_orleans_la,certainty,protocol,case-by-case,2000-05,19,24,0.792,pass,
+OHCLP00,cleveland_oh,certainty,protocol,case-by-case,2000-05,17,17,1.000,pass,
+FL02900,hillsborough_county_fl,certainty,protocol,case-by-case,2000-05,11,11,1.000,pass,11 of 11 in each paper
+OH05702,dayton_oh,Midwest 100-250k,protocol,case-by-case,2000-05,10,10,1.000,pass,
+OH07600,stark_county_oh,Midwest 100-250k,protocol,case-by-case,,,,,not measurable,"FE, WaPo and MPV list no Stark County SO killings (their one 2013 entry was Canton PD); no deaths found 1990-94, matching SHR"
+WI01301,madison_wi,Midwest 100-250k,protocol,case-by-case + paper-stated,2000-05,3,3,1.000,pass,
+MN06209,st_paul_mn,Midwest 250-500k,protocol,case-by-case,2000-05,4,5,0.800,pass,
+MO09500,st_louis_county_mo,Midwest 250-500k,protocol,case-by-case,2001-05,7,7,1.000,pass,
+MA01460,worcester_ma,Northeast 100-250k,protocol,case-by-case,,,,,not measurable,No FE Worcester PD cases to test; coverage check instead: 6 of 6 FE gunshot deaths by other agencies in Worcester County 2002-12 found in the Telegram & Gazette
+NY01451,amherst_ny,Northeast 100-250k,protocol,case-by-case,,,,,not measurable,"FE, WaPo, MPV and SHR list no Amherst PD killings in any year; coverage check instead: 11 of 11 FE Erie County police gunshot deaths 2003-12 found in the Buffalo News"
+RI00409,providence_ri,Northeast 100-250k,protocol,case-by-case,2000-14,4,4,1.000,pass,Evidence rows filed under ORI RI00400
+NY01401,buffalo_ny,Northeast 250-500k,protocol,case-by-case,2003-12,9,9,1.000,pass,
+FL05300,polk_county_fl,South 100-250k,protocol,case-by-case,2001-06,5,5,1.000,pass,"Aug 1990-94 only, so outside the main comparison"
+FL06400,volusia_county_fl,South 100-250k,protocol,case-by-case,,,,,not measurable,FE lists no Volusia SO deaths before 2006 and the Orlando Sentinel thins out of NewsBank after 2002; the same channels found 6 of 6 Orange County SO FE gunshot deaths 2000-03
+LA01700,east_baton_rouge_parish_la,South 100-250k,protocol,case-by-case,2000-14,4,4,1.000,pass,
+LA01702,baton_rouge_la,South 100-250k,protocol,case-by-case,2000-06,6,6,1.000,pass,
+NC02600,cumberland_county_nc,South 100-250k,protocol,case-by-case,2001-14,3,3,1.000,pass,
+SC03200,lexington_county_sc,South 100-250k,protocol,case-by-case,2000-13,5,5,1.000,pass,
+VA12200,richmond_va,South 100-250k,protocol,case-by-case,2000-06,11,11,1.000,pass,
+KY05602,louisville_ky,South 250-500k,protocol,case-by-case,2000-05,9,11,0.818,pass,"Louisville PD + Jefferson County PD summed into KY05680; 2006-13 only 4 of 13, so the Herald-Leader thins later"
+VA12800,virginia_beach_va,South 250-500k,protocol,case-by-case,2003-13,11,11,1.000,pass,
+CA00100,alameda_county_ca,West 100-250k,protocol,case-by-case,2003-14,12,15,0.800,pass,
+CA01972,torrance_ca,West 100-250k,protocol,case-by-case,2001-13,11,11,1.000,pass,
+CO00101,aurora_co,West 100-250k,protocol,case-by-case,2000-06,11,11,1.000,pass,
+OR00300,clackamas_county_or,West 100-250k,protocol,case-by-case,2004-14,12,13,0.923,pass,
+WA03100,snohomish_county_wa,West 250-500k,protocol,case-by-case,2003-14,11,15,0.733,pass,Closest to the 70% line
+NJNPD00,newark_nj,Northeast 250-500k,pre-protocol,case-by-case,2004-05,,,0.85,pass (approximate),Calibration recorded only as 'about 85%' of FE on-duty deaths; counts not logged
+GA03302,cobb_county_pd_ga,South 250-500k,pre-protocol,case-by-case + paper list,2001-03,6,7,0.857,pass,
+LA02600,jefferson_parish_la,South 250-500k,pre-protocol,case-by-case,2002-09,5,5,1.000,pass,
+CODPD00,denver_co,West 250-500k,pre-protocol,case-by-case,2000-05,20,20,1.000,pass (checked 2026-11-26),"Denver Post + Rocky Mountain News; 18 by name, 2 by event (Baca-Salcido Apr 2000, Martinez Apr 2001)"
+CO02101,colorado_springs_co,West 250-500k,pre-protocol,paper-stated anchors + case-by-case,2000-05,9,9,1.000,pass (checked 2026-11-26),"Gazette; 8 by name, 1 by event (Alverado Nov 2005, an unnamed fugitive)"
+CA03700,san_diego_county_ca,certainty,pre-protocol,case-by-case,2000-04,10,10,1.000,pass,10 of 10 FE deaths the paper covered; 3 of 13 FE cases were not in the paper or not deputy killings (10 of 13 = 0.77 if counted)
+CA03400,sacramento_county_ca,certainty,pre-protocol,case-by-case,2000-05,6,6,1.000,pass (checked 2026-11-26),Sacramento Bee; 2 FE cases with names withheld (Jul 2000) not testable
+CA03711,san_diego_ca,certainty,pre-protocol,case-by-case,2000-05,29,31,0.935,pass (checked 2026-11-26),"San Diego Union-Tribune; 26 by name, 3 by event (Vizzuett Apr 2001, Olson Mar 2002, Lopez Oct 2003); missed Bowen Mar 2001"
+CA03801,san_francisco_ca,certainty,pre-protocol,case-by-case,2000-05,11,12,0.917,pass (checked 2026-11-26),"San Francisco Chronicle; 9 by name, 2 by event (Stevenson Jul 2001, Ruffin Jun 2002); missed Tan Nov 2002"
+CA04313,san_jose_ca,certainty,pre-protocol,case-by-case,2000-05,13,13,1.000,pass (checked 2026-11-26),"Mercury News; 12 by name, 1 by event (Ho Jun 2004)"
+FL01300,miami_dade_fl,certainty,pre-protocol,case-by-case,2000-05,17,20,0.850,pass (checked 2026-11-26),"Miami Herald; 2 FE cases dropped as City of Miami PD killings miscoded in FE (Singleton Apr 2001, Beatty Jun 2001) and 1 name withheld; missed Perez Feb 2000, Coloma Sep 2000 (with North Bay Village PD), D. Smith Nov 2003. Earlier calibration on named late-1980s cases about 100%"
+TX10100,harris_county_tx,certainty,pre-protocol,case-by-case,2000-05,17,17,1.000,pass (checked 2026-11-26),"Houston Chronicle; FE count includes any off-duty deaths, which the rebuild excludes"
+TXDPD00,dallas_tx,certainty,pre-protocol,case-by-case,2000-05,15,16,0.938,pass (checked 2026-11-26),"Dallas Morning News; 14 by name, 1 by event (Spencer Apr 2003); missed Arana Mar 2004. Newspaper years are 1992-2002 only; earlier years from Geller and Scott"
+TXSPD00,san_antonio_tx,certainty,pre-protocol,case-by-case,2000-05,10,11,0.909,pass (checked 2026-11-26),"San Antonio Express-News; 8 by name, 2 by event (Olivarez Jul 2005, Guioco Sep 2005); missed Karnuth Mar 2005"
+WIMPD00,milwaukee_wi,certainty,pre-protocol,case-by-case,2000-05,15,15,1.000,pass (checked 2026-11-26),Milwaukee Journal Sentinel; 14 by name plus Rodriguez Jun 2002 (inquest story); 2 FE cases with names withheld not testable
+OHCOP00,columbus_oh,certainty,pre-protocol,paper-stated counts,,,,,not applicable,"Paper's running counts and a 2001 published list; FE has 8 Columbus gunshot deaths in 2000 against the list's 4, so the list is a cross-check only"
+ILCPD00,chicago_il,certainty,pre-protocol,paper-stated department counts,,,,,not applicable,
+CA01942,los_angeles_ca,certainty,pre-protocol,department counts (via paper),,,,,not applicable,1993-94 from the Use of Force Review Section
+NY03030,new_york_city,certainty,pre-protocol,department or published series,,,,,not applicable,
+PAPEP00,philadelphia_pa,certainty,pre-protocol,department or published series,,,,,not applicable,
+TXHPD00,houston_tx,certainty,pre-protocol,department or published series,,,,,not applicable,
+DCMPD00,washington_dc,certainty,pre-protocol,department or published series,,,,,not applicable,
+WASPD00,seattle_wa,certainty,pre-protocol,department or published series,,,,,not applicable,
